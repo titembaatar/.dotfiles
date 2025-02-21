@@ -1,0 +1,73 @@
+# General
+[font]
+normal.family = "JetBrainsMono Nerd Font"
+normal.style = "Regular"
+bold.family = "JetBrainsMono Nerd Font"
+bold.style = "Bold"
+italic.family = "JetBrainsMono Nerd Font"
+italic.style = "Italic"
+size = 16.0
+
+[selection]
+save_to_clipboard = true
+
+# sarnai theme
+[colors]
+primary.background = "#0d1615"
+primary.foreground  = "#d8e1e5"
+cursor.text = "#0d1615"
+cursor.cursor = "#d8e1e5"
+
+[colors.normal]
+black = "#0d1615"
+red = "#9d4a40"
+green = "#4a7d6a"
+yellow = "#b0a87a"
+blue = "#6d8dad"
+magenta = "#c7958d"
+cyan = "#5a9b9e"
+white = "#d8e1e5"
+
+[colors.bright]
+black = "#1a2328"
+red = "#c76a5d"
+green = "#689f8e"
+yellow = "#c8c192"
+blue = "#8fb3d9"
+magenta = "#e0aeaa"
+cyan = "#7dbfc5"
+white = "#2a363c"
+
+# Rose-Pine theme
+# [colors]
+# primary.background = "#191724"
+# primary.foreground = "#e0def4"
+# cursor.background = "#e0def4"
+# cursor.foreground = "#191724"
+#
+# [colors.normal]
+# black = "#191724"
+# red = "#eb6f92"
+# green = "#31748f"
+# yellow = "#f6c177"
+# blue = "#9ccfd8"
+# magenta = "#c4a7e7"
+# cyan = "#31748f"
+# white = "#e0def4"
+#
+# [colors.bright]
+# black = "#6e6a86"
+# red = "#eb6f92"
+# green = "#9ccfd8"
+# yellow = "#f6c177"
+# blue = "#9ccfd8"
+# magenta = "#c4a7e7"
+# cyan = "#ebbcba"
+# white = "#e0def4"
+
+
+# [terminal.shell]
+# program = "/usr/bin/tmux"
+
+# [env]
+# term = "xterm-256color"
