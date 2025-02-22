@@ -1,0 +1,2 @@
+#!/bin/bash
+DOTNET_ROOT="/home/linuxbrew/.linuxbrew/opt/dotnet@8/libexec" exec "/home/linuxbrew/.linuxbrew/Cellar/marksman/2024-12-18/libexec/marksman"  "$@"

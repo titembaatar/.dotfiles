@@ -1,0 +1,2 @@
+#!/bin/bash
+exec -a lua-language-server /home/linuxbrew/.linuxbrew/Cellar/lua-language-server/3.13.5/libexec/bin/lua-language-server   --logpath="${XDG_CACHE_HOME:-${HOME}/.cache}/lua-language-server/log"   --metapath="${XDG_CACHE_HOME:-${HOME}/.cache}/lua-language-server/meta"   "$@"
