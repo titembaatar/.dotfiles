@@ -114,6 +114,9 @@ exec waybar
 	bindsym $mod+space focus mode_toggle
 	# Move focus to the parent container
 	bindsym $mod+a focus parent
+	# Switch audio output
+	bindsym $mod+Shift+F11 exec pactl set-default-sink 198
+	bindsym $mod+Shift+F12 exec pactl set-default-sink 199
 # Scratchpad:
 	# Sway has a "scratchpad", which is a bag of holding for windows.
 	# You can send windows there and get them back later.
