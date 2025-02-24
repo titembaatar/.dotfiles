@@ -5,12 +5,12 @@ configuration {
 
 * {
     /* Sarnai colors */
-    base:	#0a1a0f;
-    surface:    #132a1a;
-    overlay:    #1d3a26;
-    muted:      #5a7261;
-    subtle:     #9bb0a2;
-    text:       #e2e9e4;
+    base:				#172620;
+    surface:    #21362d;
+    overlay:    #2d493d;
+    muted:      #4e7e6b;
+    subtle:     #90bbaa;
+    text:       #dfece7;
     sarnai:     #f0c3cb;
     anis:       #ff6b6b;
     els:        #cca24d;
@@ -72,13 +72,13 @@ prompt {
 }
 
 textbox-prompt-colon {
-	font: "JetBrainsMono Nerd Font 24";
+	font: "Iosevka 24";
 	str: "❱";
 	color: @sarnai;
 }
 
 entry {
-	font: "JetBrainsMono Nerd Font bold 24";
+	font: "Iosevka bold 24";
 	placeholder: "";
 	color: @sarnai;
 }
