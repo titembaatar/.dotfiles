@@ -1,0 +1,60 @@
+{
+	"name": "main",
+  "layer": "top", 
+	"height": 32,
+
+  "modules-left": ["sway/workspaces"],
+  "modules-center": ["sway/window"],
+  "modules-right": [
+		"pulseaudio",
+		"custom/separator",
+		"network",
+		"custom/separator",
+		"clock#date",
+		"custom/separator",
+		"clock#hour",
+		"custom/spacer",
+	],
+
+	"pulseaudio": {
+		"format": "{icon} {volume}",
+		"format-muted": " 00",
+		"format-icons": {
+			"default": ["", ""]
+		},
+		"scroll-step": 1,
+		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"on-click-right": "pavucontrol",
+	},
+
+	"network": {
+		"tooltip": false,
+		"format": "  up",
+		"format-disabled": "  nil",
+		"format-disconnected": "  down",
+	},
+	
+  "clock#date": {
+		"tooltip": false,
+    "format": " {:%y%m%d}",
+		"interval": 60,
+  },
+  "clock#hour": {
+		"tooltip": false,
+    "format": " {:%H:%M}",
+		"interval": 30,
+  },
+
+	// separator/spacer
+	"custom/separator": {
+		"tooltip": false,
+		"format": " /// ",
+		"interval": "once",
+	},
+
+	"custom/spacer": {
+		"tooltip": false,
+		"format": " ",
+		"interval": "once",
+	},
+}

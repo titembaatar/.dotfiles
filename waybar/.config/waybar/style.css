@@ -1,0 +1,91 @@
+/* GLOBAL */
+* {
+	font-family: Iosevka;
+	font-size: 14pt;
+}
+window#waybar {
+	color: #dfece7;
+	background-color: #172620;
+}
+
+/* LEFT /// WORKSPACES */
+#workspaces button {
+	color: #9deaea;
+	background-color: #21362d;
+	border-radius:0;
+	padding: 0 .5em;
+}
+
+#workspaces button:hover {
+	color: inherit;
+	background: inherit;
+}
+
+#workspaces button.active {
+	color: #172620;
+	background-color: #f0cacb;
+}
+
+#workspaces button.visible {
+	color: #172620;
+	background-color: #f0cacb;
+}
+
+#workspaces button.urgent {
+	color: #172620;
+	background-color: #ff6b6b;
+}
+
+#workspaces button.empty {
+	color: #172620;
+	background-color: #4e7e6b;
+}
+
+/* CENTER /// SWAY WINDOW */
+#window {
+	color: #90bbaa;
+}
+
+/* RIGHT /// MODULES */
+#pulseaudio {
+	color: #9deaea;
+}
+
+#pulseaudio.muted {
+	color: #4e7e6b;
+}
+
+#network {
+	font-family: Iosevka Nerd Font;
+	color: #2b879e;
+}
+
+#network.disabled {
+	color: #4e7e6b;
+}
+
+#network.disconnected {
+	color: #4e7e6b;
+}
+
+#clock.date {
+	color: #80b946;
+}
+
+#clock.hour {
+	color: #cca24d;
+}
+
+/* RIGHT /// CUSTOM POWEROFF MENU */
+#custom-power {
+	color: #ff6b6b;
+}
+
+/* RIGHT /// SEPARTOR/SPACER */
+#custom-separator {
+	color: #2d493d;
+}
+
+#custom-spacer {
+	margin: 0 .5em 0 0;
+}
