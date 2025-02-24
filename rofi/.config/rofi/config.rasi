@@ -20,7 +20,7 @@ configuration {
 
     /* Theme settings */
     highlight: bold italic;
-		font: "JetBrainsMono Nerd Font 16";
+		font: "Iosevka 16";
 
     /* Theme colors */
     background:                  @base;

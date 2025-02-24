@@ -1,11 +1,10 @@
 # General
 [font]
-normal.family = "JetBrainsMono Nerd Font"
+normal.family = "Iosevka"
 normal.style = "Regular"
-bold.family = "JetBrainsMono Nerd Font"
 bold.style = "Bold"
-italic.family = "JetBrainsMono Nerd Font"
 italic.style = "Italic"
+bold_italic.style = "Italic"
 size = 16.0
 
 [selection]
