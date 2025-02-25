@@ -1,7 +1,8 @@
-{
+[{
 	"name": "main",
   "layer": "top", 
 	"height": 32,
+	"output": "DP-1",
 
   "modules-left": ["sway/workspaces"],
   "modules-center": ["sway/window"],
@@ -15,6 +16,10 @@
 		"clock#hour",
 		"custom/spacer",
 	],
+
+	"sway/window": {
+		"max-length": 50,
+	},
 
 	"pulseaudio": {
 		"format": "{icon} {volume}",
@@ -57,4 +62,33 @@
 		"format": " ",
 		"interval": "once",
 	},
-}
+},
+{
+	"name": "second",
+  "layer": "top", 
+	"height": 32,
+	"output": "DP-2",
+
+  "modules-left": ["sway/workspaces"],
+  "modules-center": ["sway/window"],
+  "modules-right": [
+		"clock#date2",
+		"custom/spacer",
+	],
+
+	"sway/window": {
+		"max-length": 50,
+	},
+
+  "clock#date2": {
+		"tooltip": false,
+    "format": "{:%y%m%d}",
+		"interval": 60,
+  },
+
+	"custom/spacer": {
+		"tooltip": false,
+		"format": " ",
+		"interval": "once",
+	},
+}]

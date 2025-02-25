@@ -18,7 +18,8 @@ include /etc/sway/config.d/*
 
 ### Output configuration
 	# Wallpaper 
-	output * bg /home/titem/Pictures/gowall/OI001188.jpg fill
+	output DP-1 bg /home/titem/Pictures/gowall/OI001188.jpg fill
+	output DP-2 bg /home/titem/Pictures/gowall/OI001236.jpg fill
 	# Displays
 	output DP-1 resolution 2560x1440 position 2560,0
 	output DP-2 resolution 1440x2560 transform 270 position 0,0
@@ -35,7 +36,7 @@ include /etc/sway/config.d/*
 	workspace 10 output DP-2
 
 # Cursor
-	seat seat0 xcursor_theme BreezeX-RosePineDawn-Linux 40
+	seat seat0 xcursor_theme phinger-cursors-light 40
 
 # Window 
 	# Border
