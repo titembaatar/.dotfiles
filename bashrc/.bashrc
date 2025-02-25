@@ -1,5 +1,11 @@
 # .bashrc
 
+# Perso
+eval "$(oh-my-posh init bash --config $HOME/.config/ohmyposh/titem.toml)"
+export PATH=$PATH:/home/titem/.local/bin
+
+# . "$HOME/.cargo/env"
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
@@ -12,9 +18,6 @@ fi
 export PATH
 export PATH=$PATH:$(go env GOPATH)/bin
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
-
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
     for rc in ~/.bashrc.d/*; do
@@ -25,7 +28,3 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-# eval "$(starship init bash)"
-eval "$(oh-my-posh init bash --config $HOME/.config/ohmyposh/titem.toml)"
-. "$HOME/.cargo/env"
