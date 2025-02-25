@@ -1,7 +1,7 @@
 # A complete reference of available options can be found in `man 5 tofi`.
 
 ### Fonts
-	font = "Iosevka"
+	font = "Iosevka Regular"
 	font-size = 14pt
 	hint-font = true
 
