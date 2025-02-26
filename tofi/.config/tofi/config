@@ -2,48 +2,61 @@
 
 ### Fonts
 	font = "Iosevka Regular"
-	font-size = 14pt
+	font-size = 12pt
 	hint-font = true
 
 ### Text theming
 	text-color = #dfece7
-	prompt-color = #2b879e
-	input-color = #2b879e
-	selection-color = #f0c3cd
-	selection-match-color = #9deaea
+	# Prompt
+	prompt-color = #172620
+	prompt-background = #f0c3cb
+	prompt-background-padding = -1,15
+	# Placeholder
+	# placeholder-color = #172620
+	# placeholder-background = #f0c3cb
+	# placeholder-background-padding = 8,8,8,16
+	# Input
+	input-color = #dfece7
+	# input-background = #f0c3cb
+	# input-background-padding = 16
+	# Default
+	default-result-color = #172620
+	default-result-background = #4e7e6b
+	default-result-background-padding = 8
+	# Selection
+	selection-color = #172620
+	selection-background = #2b879e
+	selection-background-padding = 8
+	# Selection Match
+	selection-match-color = #dfece7
 
 ### Text cursor theme
 	text-cursor-style = block
-	text-cursor-color = #dfece7
-	text-cursor-background = #172620
-	text-cursor-corner-radius = 0
 
 ### Text layout
-	prompt-text = "; "
-	prompt-padding = 0
+	prompt-text = " ; "
+	prompt-padding = 12
 	placeholder-text = ""
-	num-results = 10
-	result-spacing = 20
+	result-spacing = 32
 	horizontal = true
-	min-input-width = 150
+	min-input-width = 120
 
 ### Window theming
-	width = 100%
+	width = 70%
 	height = 32
 	background-color = #172620
 	outline-width = 0
 	border-width = 0
 	corner-radius = 0
-	padding-top = 3
-	padding-bottom = 3
-	padding-left = 6
-	padding-right = 6
-	clip-to-padding = true
+	padding-top = 5
+	padding-bottom = 0
+	padding-left = 20
+	clip-to-padding = false
 	scale = true
 
 ### Window positioning
 	output = ""
-	anchor = top
+	anchor = top-left
 	exclusive-zone = -1
 	margin-top = 0
 	margin-bottom = 0
@@ -52,9 +65,9 @@
 
 ### Behaviour
 	hide-cursor = false
-	text-cursor = false
+	text-cursor = true
 	history = true
-	matching-algorithm = normal
+	matching-algorithm = fuzzy
 	require-match = true
 	auto-accept-single = false
 	hide-input = false
@@ -62,6 +75,7 @@
 	physical-keybindings = true
 	print-index = false
 	drun-launch = false
+	terminal= kitty
 	late-keyboard-init = false
 	multi-instance = false
 	ascii-input = false
