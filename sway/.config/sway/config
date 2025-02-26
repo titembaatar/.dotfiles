@@ -16,6 +16,38 @@ include /etc/sway/config.d/*
 	set $menu tofi-drun | xargs swaymsg exec --
 	set $exit tofi-run | xargs swaymsg exec --
 
+	# Sarnai
+	set $base			#172620
+	set $surface	#21362d
+	set $overlay	#2d493d
+	set $muted		#4e7e6b
+	set $subtle		#90bbaa
+	set $text			#dfece7
+	set $sarnai		#f0c3cb
+	set $anis			#ff6b6b
+	set $els			#cca24d
+	set $nuur			#2b879e
+	set $mus			#9deaea
+	set $uvs			#80b946
+
+### User :
+	# waybar:
+	exec_always waybar
+
+	# tofi 
+	bindsym $mod+d exec $menu
+	bindsym $mod+x exec $exit
+	# Keyboard 
+	input "type:keyboard" {
+		xkb_layout us,us(intl)
+		xkb_options grp:rctrl_toggle
+	}
+	# Cursor
+	seat seat0 xcursor_theme phinger-cursors-light 40
+	# Screenshot
+	bindsym $mod+Shift+s exec grimshot savecopy window --notify
+	bindsym $mod+Alt+s exec grimshot savecopy active --notify
+
 ### Output configuration
 	# Wallpaper 
 	output DP-1 bg /home/titem/Pictures/gowall/OI001188.jpg fill
@@ -35,32 +67,23 @@ include /etc/sway/config.d/*
 	workspace 9 output DP-2
 	workspace 10 output DP-2
 
-# Cursor
-	seat seat0 xcursor_theme phinger-cursors-light 40
-
-# Window 
+### Window 
 	# Border
 	default_border 					pixel 2
 	default_floating_border normal
-	# Color
-	client.focused						#f0c3cb #f0c3cb #172620 #f0c3cb #f0c3cb
-	client.focused_inactive		#9deaea #9deaea #172620 #9deaea #9deaea
-	client.focused_tab_title	#2d493d #2d493d #90bbaa #2d493d #2d493d
-	client.unfocused					#2d493d #2d493d #90bbaa #2d493d #2d493d
-	client.urgent							#ff6b6b #ff6b6b #172620 #ff6b6b #ff6b6b
-	client.placeholder				#2d493d #2d493d #90bbaa #2d493d #2d493d
-
-# Status Bar:
-exec waybar
+	# target									title			bg			text		indicator	border
+	client.focused						$base			$sarnai	$base		$sarnai		$sarnai
+	client.focused_inactive		$muted		$base		$muted	$muted		$muted
+	client.unfocused					$muted		$base		$muted	$sarnai		$muted
+	client.urgent							$anis			$base		$anis		$surface	$anis
+	client.placeholder				$surface	$base		$text		$surface	$surface
+	client.background					$base
 
 ### Key bindings
 	# Start a terminal
 	bindsym $mod+Return exec $term
 	# Kill focused window
 	bindsym $mod+Shift+q kill
-	# Start your launcher
-	bindsym $mod+d exec $menu
-	bindsym $mod+x exec $exit
 	# Drag floating windows by holding down $mod and left mouse button.
 	# Resize them with right mouse button + $mod.
 	floating_modifier $mod normal
@@ -115,9 +138,6 @@ exec waybar
 	bindsym $mod+space focus mode_toggle
 	# Move focus to the parent container
 	bindsym $mod+a focus parent
-	# Switch audio output
-	bindsym $mod+Shift+F11 exec pactl set-default-sink 198
-	bindsym $mod+Shift+F12 exec pactl set-default-sink 199
 # Scratchpad:
 	# Sway has a "scratchpad", which is a bag of holding for windows.
 	# You can send windows there and get them back later.
@@ -145,5 +165,3 @@ bindsym $mod+r mode "resize"
 	# Special keys to adjust brightness via brightnessctl
 	bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 	bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
-	# Special key to take a screenshot with grim
-	bindsym Print exec grim
