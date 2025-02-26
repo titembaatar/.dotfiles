@@ -4,21 +4,43 @@
 	"height": 32,
 	"output": "DP-1",
 
-  "modules-left": ["sway/workspaces"],
+  "modules-left": [
+		"custom/spacer",
+		"sway/workspaces",
+		"custom/spacer",
+		"sway/mode",
+	],
   "modules-center": ["sway/window"],
   "modules-right": [
+		"sway/language",
+		"custom/spacer",
 		"pulseaudio",
-		"custom/separator",
+		"custom/spacer",
 		"network",
-		"custom/separator",
+		"custom/spacer",
+		"disk",
+		"custom/spacer",
 		"clock#date",
-		"custom/separator",
-		"clock#hour",
 		"custom/spacer",
 	],
 
+	"sway/workspaces": {
+		"disable-scroll": true,
+		"disable-click": true,
+	},
+
+	"sway/mode": {
+		"format": "; {}",
+    "max-length": 50
+	},
+
 	"sway/window": {
 		"max-length": 50,
+	},
+
+	"sway/language": {
+		"format": "󰌌 {short}",
+		"on-click": "swaymsg input type:keyboard xkb_switch_layout next",
 	},
 
 	"pulseaudio": {
@@ -34,26 +56,27 @@
 
 	"network": {
 		"tooltip": false,
-		"format": "  up",
-		"format-disabled": "  nil",
-		"format-disconnected": "  down",
+		"format": "󰈀 up",
+		"format-disabled": "󰈀 nil",
+		"format-disconnected": "󰈀 down",
+	},
+
+	"disk": {
+		"interval": 60,
+		"format": "󰋊 {percentage_free}%",
+		"path": "/mnt/nvme2/",
 	},
 	
   "clock#date": {
 		"tooltip": false,
-    "format": " {:%y%m%d}",
-		"interval": 60,
-  },
-  "clock#hour": {
-		"tooltip": false,
-    "format": " {:%H:%M}",
+    "format": " {:%y%m%d.%H:%M}",
 		"interval": 30,
   },
 
 	// separator/spacer
 	"custom/separator": {
 		"tooltip": false,
-		"format": " /// ",
+		"format": "///",
 		"interval": "once",
 	},
 
@@ -69,21 +92,36 @@
 	"height": 32,
 	"output": "DP-2",
 
-  "modules-left": ["sway/workspaces"],
+  "modules-left": [
+		"custom/spacer",
+		"sway/workspaces",
+		"custom/spacer",
+		"sway/mode",
+	],
   "modules-center": ["sway/window"],
   "modules-right": [
-		"clock#date2",
+		"clock#date",
 		"custom/spacer",
 	],
+
+	"sway/workspaces": {
+		"disable-scroll": true,
+		"disable-click": true,
+	},
+
+	"sway/mode": {
+		"format": "; {}",
+    "max-length": 50
+	},
 
 	"sway/window": {
 		"max-length": 50,
 	},
 
-  "clock#date2": {
+  "clock#date": {
 		"tooltip": false,
-    "format": "{:%y%m%d}",
-		"interval": 60,
+    "format": " {:%y%m%d.%H:%M}",
+		"interval": 30,
   },
 
 	"custom/spacer": {

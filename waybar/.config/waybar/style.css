@@ -1,95 +1,114 @@
+/* SARNAI COLORS */
+@define-color base				rgb ( 23,  38, 	32);
+@define-color surface			rgb ( 33,  54, 	45);
+@define-color overlay			rgb ( 45,  73, 	61);
+@define-color muted 			rgb ( 78, 126, 107);
+@define-color subtle			rgb (144, 187, 170);
+@define-color text				rgb (223, 236, 231);
+@define-color sarnai			rgb (240, 195, 203);
+@define-color anis				rgb (255, 107, 107);
+@define-color	chatsalgan	rgb (229, 149, 	26);
+@define-color els					rgb (204, 162,  77);
+@define-color uvs					rgb (128, 185, 	70);
+@define-color nuur				rgb ( 43, 135, 158);
+@define-color mus					rgb (157, 234, 234);
+@define-color yargui			rgb (213, 179, 229);
+
 /* GLOBAL */
 * {
 	font-family: Iosevka;
-	font-size: 14pt;
+	font-size: 12pt;
 }
+
 window#waybar {
-	color: #dfece7;
-	background-color: #172620;
+	background-color: @base;
+}
+
+label.module {
+	color: @base;
+	padding: 0 .5em;
 }
 
 /* LEFT /// WORKSPACES */
 #workspaces button {
-	color: #9deaea;
-	background-color: #21362d;
-	border-radius:0;
+	color: @subtle;
+	background-color: @surface;
+	border-radius: 0;
 	padding: 0 .5em;
 }
 
-#workspaces button:hover {
-	color: inherit;
-	background: inherit;
-}
-
 #workspaces button.active {
-	color: #172620;
-	background-color: #f0cacb;
+	color: @base;
+	background-color: @sarnai;
 }
 
 #workspaces button.visible {
-	color: #172620;
-	background-color: #f0cacb;
+	color: @base;
+	background-color: @sarnai;
 }
 
 #workspaces button.urgent {
-	color: #172620;
-	background-color: #ff6b6b;
+	color: @base;
+	background-color: @anis;
 }
 
 #workspaces button.empty {
-	color: #172620;
-	background-color: #4e7e6b;
+	color: @base;
+	background-color: @muted;
+}
+
+/* LEFT /// MODE */
+#mode {
+	color: @base;
+	background-color: @anis;
 }
 
 /* CENTER /// SWAY WINDOW */
 #window {
-	color: #90bbaa;
+	color: @subtle;
 }
 
 /* RIGHT /// MODULES */
+#language {
+	background-color: @els;
+}
+
 #pulseaudio {
-	color: #9deaea;
+	background-color: @uvs;
 }
 
 #pulseaudio.muted {
-	color: #4e7e6b;
+	background-color: @muted;
 }
 
 #network {
-	font-family: Iosevka Nerd Font;
-	color: #2b879e;
+	background-color: @nuur;
 }
 
 #network.disabled {
-	color: #4e7e6b;
+	background-color: @muted;
 }
 
 #network.disconnected {
-	color: #4e7e6b;
+	background-color: @anis;
+}
+
+#disk {
+	background-color: @mus;
 }
 
 #clock.date {
-	color: #80b946;
-}
-
-#clock.date2 {
-	color: #4e7e6b;
-}
-
-#clock.hour {
-	color: #cca24d;
-}
-
-/* RIGHT /// CUSTOM POWEROFF MENU */
-#custom-power {
-	color: #ff6b6b;
+	background-color: @yargui;
 }
 
 /* RIGHT /// SEPARTOR/SPACER */
 #custom-separator {
-	color: #2d493d;
+	color: @overlay;
+	padding: 0;
+	margin: 0 .25em;
 }
 
 #custom-spacer {
-	margin: 0 .5em 0 0;
+	padding: 0;
+	margin: 0 .25em;
 }
