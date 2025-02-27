@@ -14,8 +14,6 @@ include /etc/sway/config.d/*
 	set $term kitty
 	# Launcher
 	set $menu tofi-drun | xargs swaymsg exec --
-	set $exit tofi-run | xargs swaymsg exec --
-
 	# Sarnai
 	set $base			#172620
 	set $surface	#21362d
@@ -32,18 +30,37 @@ include /etc/sway/config.d/*
 
 ### User :
 	# waybar:
-	exec_always waybar
+	exec_always "killall waybar || true; waybar"
+
+	# Exit mode
+	set $exit "[l]ogout [s]sleep [h]ibernate [p]poweroff [r]reboot"
+	mode $exit {
+		bindsym --to-code {
+			l exec swaymsg exit
+			s exec systemctl suspend, mode "default"
+			h exec systemctl hibernate, mode "default"
+			p exec systemctl poweroff
+			r exec systemctl reboot
+
+			Return mode "default"
+			Escape mode "default"
+			$mod+x mode "default"
+		}
+	}
+	bindsym --to-code $mod+x mode $exit
 
 	# tofi 
 	bindsym $mod+d exec $menu
-	bindsym $mod+x exec $exit
+
 	# Keyboard 
 	input "type:keyboard" {
 		xkb_layout us,us(intl)
 		xkb_options grp:rctrl_toggle
 	}
+
 	# Cursor
 	seat seat0 xcursor_theme phinger-cursors-light 40
+
 	# Screenshot
 	bindsym $mod+Shift+s exec grimshot savecopy window --notify
 	bindsym $mod+Alt+s exec grimshot savecopy active --notify
@@ -148,10 +165,10 @@ include /etc/sway/config.d/*
 	bindsym $mod+minus scratchpad show
 # Resizing containers:
 mode "resize" {
-	bindsym $left resize shrink width 10px
-	bindsym $down resize grow height 10px
-	bindsym $up resize shrink height 10px
-	bindsym $right resize grow width 10px
+	bindsym $left resize shrink width 5%
+	bindsym $down resize grow height 5%
+	bindsym $up resize shrink height 5%
+	bindsym $right resize grow width 5%
 	# Return to default mode
 	bindsym Escape mode "default"
 }
