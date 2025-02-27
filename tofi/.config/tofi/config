@@ -2,7 +2,7 @@
 
 ### Fonts
 	font = "Iosevka Regular"
-	font-size = 12pt
+	font-size = 14pt
 	hint-font = true
 
 ### Text theming
@@ -10,15 +10,9 @@
 	# Prompt
 	prompt-color = #172620
 	prompt-background = #f0c3cb
-	prompt-background-padding = -1,15
-	# Placeholder
-	# placeholder-color = #172620
-	# placeholder-background = #f0c3cb
-	# placeholder-background-padding = 8,8,8,16
+	prompt-background-padding = 16
 	# Input
 	input-color = #dfece7
-	# input-background = #f0c3cb
-	# input-background-padding = 16
 	# Default
 	default-result-color = #172620
 	default-result-background = #4e7e6b
@@ -34,12 +28,12 @@
 	text-cursor-style = block
 
 ### Text layout
-	prompt-text = " ; "
-	prompt-padding = 12
+	prompt-text = " : "
+	prompt-padding = 14
 	placeholder-text = ""
-	result-spacing = 32
+	result-spacing = 28
 	horizontal = true
-	min-input-width = 120
+	min-input-width = 140
 
 ### Window theming
 	width = 70%
@@ -48,7 +42,7 @@
 	outline-width = 0
 	border-width = 0
 	corner-radius = 0
-	padding-top = 5
+	padding-top = 3
 	padding-bottom = 0
 	padding-left = 20
 	clip-to-padding = false
