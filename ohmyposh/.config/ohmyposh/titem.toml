@@ -12,7 +12,21 @@ final_space = true
 		style = 'plain'
 		background = 'transparent'
 		foreground = 'magenta'
-		template = '{{ .UserName }} '
+		template = '{{ if not .Root }}{{ .UserName }}{{ if not .SSHSession }} {{ end }}{{ end }}'
+
+	[[blocks.segments]]
+		type = 'session'
+		style = 'plain'
+		background = 'transparent'
+		foreground = 'red'
+		template = '{{ if .Root }}{{ .UserName }}{{ if not .SSHSession }} {{ end }}{{ end }}'
+
+	[[blocks.segments]]
+		type = 'session'
+		style = 'plain'
+		background = 'transparent'
+		foreground = 'cyan'
+		template = '{{ if .SSHSession }}@{{ .HostName }}{{ end }} '
 
 	[[blocks.segments]]
 		type = 'path'
