@@ -13,7 +13,7 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.wrap = false
 
 -- Appearance
-vim.o.guifont = "Iosevka:h12,Noto Color Emoji"
+vim.o.guifont = "Iosevka Regular,Noto Color Emoji"
 vim.cmd [[colorscheme sarnai]]
 
 -- Highlight when yanking text
