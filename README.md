@@ -14,6 +14,11 @@ cd ~/code
 git clone git@github.com:titembaatar/sarnai.nvim.git
 sudo dnf install neovim
 ```
+If the config need to be used with `sudo` :
+```bash
+sudo mkdir -p /root/.config/
+sudo ln -r ~/.config/nvim/ /root/.config/nvim/
+```
 
 ## terminal stuff
 ```bash
@@ -33,12 +38,6 @@ tmux source ~/.config/tmux/tmux.conf
 ```
 
 ## sway
-```bash
-cd ~/.dotfiles
-stow cursors fonts sway waybar
-sudo dnf install sway waybar grimshot
-```
-
 ### tofi install
 ```bash
 cd ~/.dotfiles
@@ -49,4 +48,27 @@ cd ~/git
 git clone https://github.com/philj56/tofi.git
 cd tofi
 meson build && ninja -C build install
+```
+
+### utils
+```bash
+cd ~/.dotfiles
+stow cursors fonts waybar
+sudo dnf install waybar grimshot
+```
+
+### sway
+```bash
+cd ~/.dotfiles
+stow sway 
+sudo dnf install sway 
+```
+If `nvidia gpu` :
+```bash
+cd /usr/share/wayland-sessions
+sudo nvim sway.desktop
+```
+and replace `Exec` with :
+```
+Exec=sway --unsupported-gpu
 ```
