@@ -31,7 +31,7 @@
 
 	"sway/mode": {
 		"format": "; {}",
-    "max-length": 50
+    "max-length": 75
 	},
 
 	"sway/window": {
@@ -111,7 +111,7 @@
 
 	"sway/mode": {
 		"format": "; {}",
-    "max-length": 50
+    "max-length": 75
 	},
 
 	"sway/window": {
