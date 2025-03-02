@@ -33,13 +33,13 @@ include /etc/sway/config.d/*
 	exec_always "killall waybar || true; waybar"
 
 	# Exit mode
-	set $exit "[l]ogout [s]sleep [h]ibernate [p]poweroff [r]reboot"
+	set $exit "[l]ogout [s]sleep [h]ibernate [r]reboot"
 	mode $exit {
 		bindsym --to-code {
 			l exec swaymsg exit
 			s exec systemctl suspend, mode "default"
 			h exec systemctl hibernate, mode "default"
-			p exec systemctl poweroff
+			# p exec systemctl poweroff
 			r exec systemctl reboot
 
 			Return mode "default"
@@ -64,6 +64,9 @@ include /etc/sway/config.d/*
 	# Screenshot
 	bindsym $mod+Shift+s exec grimshot savecopy window --notify
 	bindsym $mod+Alt+s exec grimshot savecopy active --notify
+
+	# Default browser
+	# xdg-settings set default-web-browser <insert the filename>.desktop
 
 ### Output configuration
 	# Wallpaper 
