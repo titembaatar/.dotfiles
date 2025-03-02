@@ -64,7 +64,7 @@
 	"disk": {
 		"interval": 60,
 		"format": "󰋊 {percentage_free}%",
-		"path": "/mnt/nvme2/",
+		"path": "/mnt/yesugei/",
 	},
 	
   "clock#date": {
