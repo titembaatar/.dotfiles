@@ -1,3 +1,2 @@
-./zen/*
-!./zen/.zen/f2pnfr0k.titem/chrome/
-
+zen/*
+!zen/.zen/f2pnfr0k.titem/chrome/*
