@@ -9,9 +9,6 @@ sudo dnf install stow
 ```bash
 cd ~/.dotfiles
 stow nvim
-mkdir -p ~/code
-cd ~/code
-git clone git@github.com:titembaatar/sarnai.nvim.git
 sudo dnf install neovim
 ```
 If the config need to be used with `sudo` :
@@ -23,8 +20,8 @@ sudo ln -r ~/.config/nvim/ /root/.config/nvim/
 ## terminal stuff
 ```bash
 cd ~/.dotfiles
-stow kitty bash zsh ohmyposh
-sudo dnf install kitty zsh
+stow kitty zsh ohmyposh
+sudo dnf install kitty zsh curl unzip
 curl -s https://ohmyposh.dev/install.sh | bash -s
 ```
 
@@ -32,6 +29,7 @@ curl -s https://ohmyposh.dev/install.sh | bash -s
 ```bash
 cd ~/.dotfiles
 stow tmux
+mkdir -p ~/.config/tmux/plugins/tpm
 sudo dnf install tmux 
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 tmux source ~/.config/tmux/tmux.conf
