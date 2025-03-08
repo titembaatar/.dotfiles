@@ -1,2 +1,10 @@
+# Ignore zen directory but keep specific chrome directory
 zen/*
-!zen/.zen/f2pnfr0k.titem/chrome/*
+!zen/.zen/
+zen/.zen/*
+!zen/.zen/f2pnfr0k.titem/
+zen/.zen/f2pnfr0k.titem/*
+!zen/.zen/f2pnfr0k.titem/chrome/
+
+# Ignore nvim lazy-lock.json
+nvim/.config/nvim/lazy-lock.json
