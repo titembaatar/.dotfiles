@@ -1,31 +1,35 @@
-# Stuff to install
+# 📄 dotfiles
+My personal configuration files.
 
-## stow
+## 📦 Installation Guide
+### 📌 stow
 ```bash
 sudo dnf install stow
 ```
 
-## neovim
+### 🚀 neovim
 ```bash
 cd ~/.dotfiles
 stow nvim
 sudo dnf install neovim
 ```
-If the config need to be used with `sudo` :
+
+If the config needs to be used with `sudo`:
 ```bash
 sudo mkdir -p /root/.config/
 sudo ln -r ~/.config/nvim/ /root/.config/nvim/
 ```
 
-## terminal stuff
+### 🖥️ terminal enhancements
 ```bash
 cd ~/.dotfiles
 stow kitty zsh ohmyposh
 sudo dnf install kitty zsh curl unzip
+chsh -s $(which zsh)
 curl -s https://ohmyposh.dev/install.sh | bash -s
 ```
 
-### tmux
+### 🪟 tmux
 ```bash
 cd ~/.dotfiles
 stow tmux
@@ -35,12 +39,12 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 tmux source ~/.config/tmux/tmux.conf
 ```
 
-## sway
-### tofi install
+## 🌳 sway window manager
+### 🔍 tofi launcher
 ```bash
 cd ~/.dotfiles
 stow tofi
-sudo dnf intall meson scdoc wayland-protocols-devel freetype-devel cairo-devel pango-devel wayland-devel libxkbcommon-devel harfbuzz
+sudo dnf install meson scdoc wayland-protocols-devel freetype-devel cairo-devel pango-devel wayland-devel libxkbcommon-devel harfbuzz
 mkdir -p ~/git
 cd ~/git
 git clone https://github.com/philj56/tofi.git
@@ -48,25 +52,25 @@ cd tofi
 meson build && ninja -C build install
 ```
 
-### utils
+### 🛠️ wayland utilities
 ```bash
 cd ~/.dotfiles
 stow cursors fonts waybar
 sudo dnf install waybar grimshot
 ```
 
-### sway
+### 🌲 sway setup
 ```bash
 cd ~/.dotfiles
 stow sway 
 sudo dnf install sway 
 ```
-If `nvidia gpu` :
+If using an `nvidia gpu`:
 ```bash
 cd /usr/share/wayland-sessions
 sudo nvim sway.desktop
 ```
-and replace `Exec` with :
+and replace `Exec` with:
 ```
 Exec=sway --unsupported-gpu
 ```
