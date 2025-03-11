@@ -156,5 +156,24 @@
 	.bookmark-item[label="nvim"]>.toolbarbutton-text {
 		display: none !important;
 	}
-	
+}
+
+/* Zen Overall style */
+/* Modify tool bar height and add a margin on top and bottom */
+#titlebar {
+	margin-top: 0.4rem !important;
+}
+
+#zen-appcontent-navbar-container {
+	margin: 8px 0;
+}
+
+/* Change url bar width */
+#urlbar-container {
+	min-width: 24rem !important;
+}
+
+/* Remove the spacer between top and essential container */
+#zen-sidebar-top-buttons {
+	display: none !important;
 }
