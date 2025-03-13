@@ -67,32 +67,56 @@ include /etc/sway/config.d/*
 	bindsym $mod+Shift+s exec grimshot savecopy window --notify
 	bindsym $mod+Alt+s exec grimshot savecopy active --notify
 
-	# Default browser
-	# xdg-settings set default-web-browser <insert the filename>.desktop
-
 ### Output configuration
-	# Wallpaper 
-	output DP-1 bg /home/titem/Pictures/gowall/OI001188.jpg fill
-	output DP-2 bg /home/titem/Pictures/gowall/OI001236.jpg fill
-	# Displays
-	output DP-1 resolution 2560x1440 position 2560,0
-	output DP-2 resolution 1440x2560 transform 270 position 0,0
+	# Displays 
+	output DP-1 {
+		bg /home/titem/Pictures/gowall/OI001188.jpg fill
+		resolution 2560x1440 position 2560,0
+	}
+	output DP-2 {
+		bg /home/titem/Pictures/gowall/OI001236.jpg fill
+		resolution 1440x2560 transform 270 position 0,0
+	}
 	# Workspace
 	workspace 1 output DP-1
 	workspace 2 output DP-1
 	workspace 3 output DP-1
 	workspace 4 output DP-1
 	workspace 5 output DP-1
-	workspace 6 output DP-2
-	workspace 7 output DP-2
-	workspace 8 output DP-2
-	workspace 9 output DP-2
-	workspace 10 output DP-2
+	workspace 6 {
+		output DP-2
+		layout splitv
+	}
+	workspace 7 {
+		output DP-2
+		layout splitv
+	}
+	workspace 8 {
+		output DP-2
+		layout splitv
+	}
+	workspace 9 {
+		output DP-2
+		layout splitv
+	}
+	workspace 10 {
+		output DP-2
+		layout splitv
+	}
 
 ### Window 
 	# Border
 	default_border 					pixel 2
 	default_floating_border normal
+	for_window {
+		[window_role="pop-up"] floating enable
+		[window_role="bubble"] floating enable
+		[window_role="dialog"] floating enable
+		[window_type="dialog"] floating enable
+		[title="Plexamp"] move up, resize set 100 ppt 512 px
+		[workspace="[6-9]|10"] exec "swaymsg '[title="Plexamp"]' resize set height 512 px"
+	}
+
 	# target									title			bg			text		indicator	border
 	client.focused						$base			$sarnai	$base		$sarnai		$sarnai
 	client.focused_inactive		$muted		$base		$muted	$muted		$muted
