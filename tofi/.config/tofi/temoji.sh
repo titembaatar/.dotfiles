@@ -34,10 +34,8 @@ if [ -s "$EMOJI_FREQ" ]; then
     # Get all emojis that aren't in the frequency file
     remaining_emojis=$(grep -v -F "$frequent_emojis" "$EMOJI_FILE" || echo "")
     
-    # Combine the frequent emojis (sorted by count) with remaining emojis
-    combined_list=$(awk -F'|' '{print $2}' "$EMOJI_FREQ" | sort -r -t'|' -k1,1n)
     if [ -n "$remaining_emojis" ]; then
-        combined_list=$(echo "$combined_list"; echo "$remaining_emojis")
+        combined_list=$(echo "$frequent_emojis"; echo "$remaining_emojis")
     fi
 else
     combined_list=$(cat "$EMOJI_FILE")
