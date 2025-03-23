@@ -17,26 +17,15 @@ return {
 		},
 		config = function()
 			local capabilities = require('blink.cmp').get_lsp_capabilities()
-			require("lspconfig").bashls.setup { capabilities = capabilities }
-			require("lspconfig").docker_compose_language_service.setup { capabilities = capabilities }
-			require("lspconfig").dockerls.setup { capabilities = capabilities }
-			require("lspconfig").gopls.setup { capabilities = capabilities }
-			require("lspconfig").lua_ls.setup { capabilities = capabilities }
-			require("lspconfig").marksman.setup { capabilities = capabilities }
-			require("lspconfig").yamlls.setup { capabilities = capabilities }
-			require("lspconfig").pylsp.setup {
-				capabilities = capabilities,
-				settings = {
-					pylsp = {
-						plugins = {
-							pycodestyle = { enabled = true },
-							pyls_black = { enabled = true },
-							isort = { enabled = true },
-							mypy = { enabled = true },
-						},
-					},
-				},
-			}
+			local lspconfig = require('lspconfig')
+			lspconfig['bashls'].setup { capabilities = capabilities }
+			lspconfig['docker_compose_language_service'].setup { capabilities = capabilities }
+			lspconfig['dockerls'].setup { capabilities = capabilities }
+			lspconfig['gopls'].setup { capabilities = capabilities }
+			lspconfig['lua_ls'].setup { capabilities = capabilities }
+			lspconfig['marksman'].setup { capabilities = capabilities }
+			lspconfig['yamlls'].setup { capabilities = capabilities }
+			lspconfig['pylsp'].setup { capabilities = capabilities }
 
 			vim.api.nvim_create_autocmd('LspAttach', {
 				callback = function(args)
