@@ -4,7 +4,7 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
-local keymap = vim.keymap 
+local keymap = vim.keymap
 
 ---------------------
 -- General Keymaps --
@@ -28,15 +28,15 @@ keymap.set("n", "<leader>tx", ":tabclose<CR>", { desc = "Close current tab" })
 keymap.set("n", "<leader>tn", ":tabn<CR>", { desc = "Go to next tab" })
 keymap.set("n", "<leader>tp", ":tabp<CR>", { desc = "Go to previous tab" })
 
--- Move between windows using Ctrl + {h,j,k,l}
+-- Windows navigation
 keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move to left window" })
 keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move to bottom window" })
 keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move to top window" })
 keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move to right window" })
 
 -- Buffer navigation
-keymap.set("n", "<leader>bn", ":bnext<CR>", { desc = "Next buffer" })
-keymap.set("n", "<leader>bp", ":bprevious<CR>", { desc = "Previous buffer" })
+keymap.set("n", "H", ":bprevious<CR>", { desc = "Previous buffer" })
+keymap.set("n", "L", ":bnext<CR>", { desc = "Next buffer" })
 keymap.set("n", "<leader>bd", ":bdelete<CR>", { desc = "Delete buffer" })
 
 -- Indentation management
