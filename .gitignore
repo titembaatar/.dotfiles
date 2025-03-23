@@ -1,3 +1,4 @@
 # Ignore nvim lazy-lock.json
 nvim/.config/nvim/lazy-lock.json
 zen/chrome/zen-themes.css
+tofi/.config/tofi/emoji_frequency.txt
