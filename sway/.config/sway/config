@@ -33,13 +33,13 @@ include /etc/sway/config.d/*
 	exec_always "killall waybar || true; waybar"
 
 	# Exit mode
-	set $exit "[l]ogout [s]sleep [h]ibernate [r]reboot"
+	set $exit "[l]ogout [s]sleep [h]ibernate [r]reboot [p]oweroff"
 	mode $exit {
 		bindsym --to-code {
 			l exec swaymsg exit
 			s exec systemctl suspend, mode "default"
 			h exec systemctl hibernate, mode "default"
-			# p exec systemctl poweroff
+			p exec systemctl poweroff
 			r exec systemctl reboot
 
 			Return mode "default"
@@ -66,6 +66,7 @@ include /etc/sway/config.d/*
 	# Screenshot
 	bindsym $mod+Shift+s exec grimshot savecopy window --notify
 	bindsym $mod+Alt+s exec grimshot savecopy active --notify
+	bindsym $mod+Ctrl+Alt+s exec grimshot savecopy area --notify
 
 ### Output configuration
 	# Displays 
@@ -114,7 +115,9 @@ include /etc/sway/config.d/*
 		[window_role="dialog"] floating enable
 		[window_type="dialog"] floating enable
 		[title="Plexamp"] move up, resize set 100 ppt 512 px
+		[title=".*Discord$"] move up, resize set 100 ppt 40 ppt
 		[workspace="[6-9]|10"] exec "swaymsg '[title="Plexamp"]' resize set height 512 px"
+		[workspace="[6-9]|10"] exec "swaymsg '[title=".*Discord$"]' resize set height 40 ppt"
 	}
 
 	# target									title			bg			text		indicator	border
