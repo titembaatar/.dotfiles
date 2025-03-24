@@ -57,38 +57,34 @@ keymap.set("n", "H", ":bprevious<CR>", { noremap = true, silent = true, desc = "
 keymap.set("n", "L", ":bnext<CR>", { noremap = true, silent = true, desc = "Next buffer" })
 
 --------------------------
--- Which Key Standalone --
+-- Plugin-Based Keymaps --
 --------------------------
 
--- Which-key
+-- Which-key <leader>? --
 keymap.set("n", "<leader>?", function()
   require("which-key").show({ global = false })
-end, { desc = "Buffer Local Keymaps (which-key)" })
+end, { desc = "Help" })
 
--- Zen Mode
+-- Zen Mode <leader>z --
 keymap.set("n", "<leader>z", "<cmd>ZenMode<cr>", { desc = "Zen Mode" })
 
--- Mason
+-- Mason <leader>m --
 keymap.set("n", "<leader>m", "<cmd>Mason<cr>", { desc = "Mason" })
 
--- FZF-Lua
+-- Quick FZF access
 keymap.set("n", "<leader><leader>", "<cmd>FzfLua files<cr>", { desc = "Find files" })
 
 ----------------------
--- Which Key Groups --
+-- Grouped Keymaps  --
 ----------------------
 
 -- Buffers <leader>b --
--- mini.bufremove
 keymap.set("n", "<leader>bd", ":lua MiniBufferRemove.delete()<CR>",
   { noremap = true, silent = true, desc = "Delete buffer" })
 keymap.set("n", "<leader>bD", ":lua MiniBufferRemove.delete(true)<CR>",
   { noremap = true, silent = true, desc = "Force delete buffer" })
 
--- Code <leader>c --
-
 -- Debug <leader>d --
--- Debug keymaps
 keymap.set("n", "<leader>dc", function() require("dap").continue() end, { desc = "Continue" })
 keymap.set("n", "<leader>dq", function() require("dap").terminate() end, { desc = "Terminate" })
 keymap.set("n", "<leader>dn", function() require("dap").step_over() end, { desc = "Step Over" })
@@ -98,40 +94,43 @@ keymap.set("n", "<leader>db", function() require("dap").toggle_breakpoint() end,
 keymap.set("n", "<leader>dB", function() require("dap").set_breakpoint(vim.fn.input("Breakpoint condition: ")) end,
   { desc = "Conditional Breakpoint" })
 keymap.set("n", "<leader>du", function() require("dapui").toggle() end, { desc = "Toggle DAP UI" })
-keymap.set("n", "<leader>de", function() require("dapui").eval() end, { desc = "Eval", mode = { "n", "v" } })
 
 -- Find <leader>f --
 -- mini.files
 keymap.set("n", "<leader>fe", ":lua require('mini.files').open()<CR>",
   { noremap = true, silent = true, desc = "Open file explorer" })
 -- FZF-Lua
+keymap.set("n", "<leader>ff", "<cmd>FzfLua files<cr>", { desc = "Find files" })
 keymap.set("n", "<leader>fg", "<cmd>FzfLua live_grep<cr>", { desc = "Grep in files" })
 keymap.set("n", "<leader>fb", "<cmd>FzfLua buffers<cr>", { desc = "Find buffers" })
 keymap.set("n", "<leader>fw", "<cmd>FzfLua grep_cword<cr>", { desc = "Find word under cursor" })
 keymap.set("n", "<leader>fh", "<cmd>FzfLua help_tags<cr>", { desc = "Help tags" })
 keymap.set("n", "<leader>fn", "<cmd>FzfLua files cwd=~/.config/nvim<cr>", { desc = "Find in Neovim config" })
-keymap.set("n", "<leader>fp", "<cmd>FzfProjects<CR>", { desc = "Projects" })
+keymap.set("n", "<leader>fp", "<cmd>Telescope projects<CR>", { desc = "Projects" })
 keymap.set("n", "<leader>fd", "<cmd>FzfLua files cwd=~/.dotfiles/<cr>", { desc = "Find in .dotfiles" })
 
 -- Git <leader>g --
 -- LazyGit
-keymap.set("n", "<leader>gg", function() require("snacks.lazygit").open() end, { desc = "LazyGit" })
-keymap.set("n", "<leader>gf", function() require("snacks.lazygit").open({ cwd = vim.fn.expand("%:p:h") }) end,
-  { desc = "LazyGit Current Directory" })
+keymap.set("n", "<leader>gg", "<cmd>LazyGit<CR>", { desc = "LazyGit" })
+keymap.set("n", "<leader>gf", "<cmd>LazyGitCurrentFile<CR>", { desc = "LazyGit Current File" })
 -- Git with FZF-Lua
 keymap.set("n", "<leader>gc", "<cmd>FzfLua git_commits<cr>", { desc = "Git Commits" })
 keymap.set("n", "<leader>gs", "<cmd>FzfLua git_status<cr>", { desc = "Git Status" })
 keymap.set("n", "<leader>gb", "<cmd>FzfLua git_branches<cr>", { desc = "Git Branches" })
+-- GitSigns
+keymap.set("n", "<leader>gb", "<cmd>Gitsigns blame_line", { desc = "Blame Line" })
+keymap.set("n", "<leader>gd", "<cmd>Gitsigns toggle_word_diff", { desc = "Word Diff" })
+keymap.set("n", "<leader>gh", "<cmd>Gitsigns preview_hunk_inline", { desc = "Preview Hunk" })
+keymap.set("n", "]h", "<cmd>Gitsigns nav_hunks next", { desc = "Next Hunk" })
+keymap.set("n", "[h", "<cmd>Gitsigns nav_hunks prev", { desc = "Prev Hunk" })
 
 -- Sessions <leader>q --
--- Persistence
-keymap.set("n", "<leader>qs", function() require("persistence").load() end, { desc = "Restore Session" })
-keymap.set("n", "<leader>ql", function() require("persistence").load({ last = true }) end,
-  { desc = "Restore Last Session" })
-keymap.set("n", "<leader>qd", function() require("persistence").stop() end, { desc = "Don't Save Current Session" })
+keymap.set("n", "<leader>qs", function() require("persistence").load() end, { desc = "Load Session" })
+keymap.set("n", "<leader>qS", function() require("persistence").select() end, { desc = "Select Session" })
+keymap.set("n", "<leader>ql", function() require("persistence").load({ last = true }) end, { desc = "Last Session" })
+keymap.set("n", "<leader>qd", function() require("persistence").stop() end, { desc = "Don't Save Session" })
 
 -- Trouble <leader>x --
--- Trouble
 keymap.set("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Diagnostics" })
 keymap.set("n", "<leader>xX", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>", { desc = "Buffer Diagnostics" })
 keymap.set("n", "<leader>xs", "<cmd>Trouble symbols toggle focus=false<cr>", { desc = "Symbols" })
@@ -140,18 +139,17 @@ keymap.set("n", "<leader>xl", "<cmd>Trouble lsp toggle focus=false win.position=
 keymap.set("n", "<leader>xL", "<cmd>Trouble loclist toggle<cr>", { desc = "Location List" })
 keymap.set("n", "<leader>xQ", "<cmd>Trouble qflist toggle<cr>", { desc = "Quickfix List" })
 
-
 --------------------------
 -- LSP Related Keymaps  --
 --------------------------
 
--- LSP with FZF-Lua
+-- LSP navigation with FZF-Lua
 keymap.set("n", "gd", "<cmd>FzfLua lsp_definitions<cr>", { desc = "Go to Definition" })
 keymap.set("n", "gr", "<cmd>FzfLua lsp_references<cr>", { desc = "Go to References" })
 keymap.set("n", "gI", "<cmd>FzfLua lsp_implementations<cr>", { desc = "Go to Implementation" })
 keymap.set("n", "gt", "<cmd>FzfLua lsp_typedefs<cr>", { desc = "Go to Type Definition" })
 
--- LSP attachments are managed in lsp.lua via autocmd
+-- LSP keymaps to be set on LSP attach
 local lsp_keymaps = {
   ["on_attach"] = function(client, buffer)
     -- Navigation
@@ -171,4 +169,3 @@ local lsp_keymaps = {
 }
 
 return lsp_keymaps
-
