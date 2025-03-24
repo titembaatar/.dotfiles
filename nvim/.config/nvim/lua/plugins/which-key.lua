@@ -10,6 +10,7 @@ return {
         { "<leader>d", group = "Debug" },
         { "<leader>f", group = "Find" },
         { "<leader>g", group = "Git" },
+        { "<leader>n", hidden = true },
         { "<leader>q", group = "Session" },
         { "<leader>t", group = "Tab/Toggle" },
         { "<leader>w", group = "Window" },

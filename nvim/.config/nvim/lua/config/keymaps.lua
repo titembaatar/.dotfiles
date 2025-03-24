@@ -66,13 +66,13 @@ keymap.set("n", "<leader>?", function()
 end, { desc = "Help" })
 
 -- Zen Mode <leader>z --
-keymap.set("n", "<leader>z", "<cmd>ZenMode<cr>", { desc = "Zen Mode" })
+keymap.set("n", "<leader>z", "<cmd>ZenMode<CR>", { desc = "Zen Mode" })
 
 -- Mason <leader>m --
-keymap.set("n", "<leader>m", "<cmd>Mason<cr>", { desc = "Mason" })
+keymap.set("n", "<leader>m", "<cmd>Mason<CR>", { desc = "Mason" })
 
 -- Quick FZF access
-keymap.set("n", "<leader><leader>", "<cmd>FzfLua files<cr>", { desc = "Find files" })
+keymap.set("n", "<leader><leader>", "<cmd>FzfLua files<CR>", { desc = "Find files" })
 
 ----------------------
 -- Grouped Keymaps  --
@@ -100,29 +100,29 @@ keymap.set("n", "<leader>du", function() require("dapui").toggle() end, { desc =
 keymap.set("n", "<leader>fe", ":lua require('mini.files').open()<CR>",
   { noremap = true, silent = true, desc = "Open file explorer" })
 -- FZF-Lua
-keymap.set("n", "<leader>ff", "<cmd>FzfLua files<cr>", { desc = "Find files" })
-keymap.set("n", "<leader>fg", "<cmd>FzfLua live_grep<cr>", { desc = "Grep in files" })
-keymap.set("n", "<leader>fb", "<cmd>FzfLua buffers<cr>", { desc = "Find buffers" })
-keymap.set("n", "<leader>fw", "<cmd>FzfLua grep_cword<cr>", { desc = "Find word under cursor" })
-keymap.set("n", "<leader>fh", "<cmd>FzfLua help_tags<cr>", { desc = "Help tags" })
-keymap.set("n", "<leader>fn", "<cmd>FzfLua files cwd=~/.config/nvim<cr>", { desc = "Find in Neovim config" })
-keymap.set("n", "<leader>fp", "<cmd>Telescope projects<CR>", { desc = "Projects" })
-keymap.set("n", "<leader>fd", "<cmd>FzfLua files cwd=~/.dotfiles/<cr>", { desc = "Find in .dotfiles" })
+keymap.set("n", "<leader>ff", "<cmd>FzfLua files<CR>", { desc = "Find files" })
+keymap.set("n", "<leader>fg", "<cmd>FzfLua live_grep<CR>", { desc = "Grep in files" })
+keymap.set("n", "<leader>fb", "<cmd>FzfLua buffers<CR>", { desc = "Find buffers" })
+keymap.set("n", "<leader>fw", "<cmd>FzfLua grep_cword<CR>", { desc = "Find word under cursor" })
+keymap.set("n", "<leader>fh", "<cmd>FzfLua help_tags<CR>", { desc = "Help tags" })
+keymap.set("n", "<leader>fn", "<cmd>FzfLua files cwd=~/.config/nvim<CR>", { desc = "Find in Neovim config" })
+keymap.set("n", "<leader>fp", "<cmd>FzfLua projects<CR>", { desc = "Projects" })
+keymap.set("n", "<leader>fd", "<cmd>FzfLua files cwd=~/.dotfiles/<CR>", { desc = "Find in .dotfiles" })
 
 -- Git <leader>g --
 -- LazyGit
 keymap.set("n", "<leader>gg", "<cmd>LazyGit<CR>", { desc = "LazyGit" })
 keymap.set("n", "<leader>gf", "<cmd>LazyGitCurrentFile<CR>", { desc = "LazyGit Current File" })
 -- Git with FZF-Lua
-keymap.set("n", "<leader>gc", "<cmd>FzfLua git_commits<cr>", { desc = "Git Commits" })
-keymap.set("n", "<leader>gs", "<cmd>FzfLua git_status<cr>", { desc = "Git Status" })
-keymap.set("n", "<leader>gb", "<cmd>FzfLua git_branches<cr>", { desc = "Git Branches" })
+keymap.set("n", "<leader>gc", "<cmd>FzfLua git_commits<CR>", { desc = "Git Commits" })
+keymap.set("n", "<leader>gs", "<cmd>FzfLua git_status<CR>", { desc = "Git Status" })
+keymap.set("n", "<leader>gb", "<cmd>FzfLua git_branches<CR>", { desc = "Git Branches" })
 -- GitSigns
-keymap.set("n", "<leader>gb", "<cmd>Gitsigns blame_line", { desc = "Blame Line" })
-keymap.set("n", "<leader>gd", "<cmd>Gitsigns toggle_word_diff", { desc = "Word Diff" })
-keymap.set("n", "<leader>gh", "<cmd>Gitsigns preview_hunk_inline", { desc = "Preview Hunk" })
-keymap.set("n", "]h", "<cmd>Gitsigns nav_hunks next", { desc = "Next Hunk" })
-keymap.set("n", "[h", "<cmd>Gitsigns nav_hunks prev", { desc = "Prev Hunk" })
+keymap.set("n", "<leader>gb", "<cmd>Gitsigns blame_line<CR>", { desc = "Blame Line" })
+keymap.set("n", "<leader>gd", "<cmd>Gitsigns toggle_word_diff<CR>", { desc = "Word Diff" })
+keymap.set("n", "<leader>gh", "<cmd>Gitsigns preview_hunk_inline<CR>", { desc = "Preview Hunk" })
+keymap.set("n", "]h", "<cmd>Gitsigns nav_hunks next<CR>", { desc = "Next Hunk" })
+keymap.set("n", "[h", "<cmd>Gitsigns nav_hunks prev<CR>", { desc = "Prev Hunk" })
 
 -- Sessions <leader>q --
 keymap.set("n", "<leader>qs", function() require("persistence").load() end, { desc = "Load Session" })
@@ -131,23 +131,23 @@ keymap.set("n", "<leader>ql", function() require("persistence").load({ last = tr
 keymap.set("n", "<leader>qd", function() require("persistence").stop() end, { desc = "Don't Save Session" })
 
 -- Trouble <leader>x --
-keymap.set("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Diagnostics" })
-keymap.set("n", "<leader>xX", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>", { desc = "Buffer Diagnostics" })
-keymap.set("n", "<leader>xs", "<cmd>Trouble symbols toggle focus=false<cr>", { desc = "Symbols" })
-keymap.set("n", "<leader>xl", "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
+keymap.set("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<CR>", { desc = "Diagnostics" })
+keymap.set("n", "<leader>xX", "<cmd>Trouble diagnostics toggle filter.buf=0<CR>", { desc = "Buffer Diagnostics" })
+keymap.set("n", "<leader>xs", "<cmd>Trouble symbols toggle focus=false<CR>", { desc = "Symbols" })
+keymap.set("n", "<leader>xl", "<cmd>Trouble lsp toggle focus=false win.position=right<CR>",
   { desc = "LSP Definitions / references / ..." })
-keymap.set("n", "<leader>xL", "<cmd>Trouble loclist toggle<cr>", { desc = "Location List" })
-keymap.set("n", "<leader>xQ", "<cmd>Trouble qflist toggle<cr>", { desc = "Quickfix List" })
+keymap.set("n", "<leader>xL", "<cmd>Trouble loclist toggle<CR>", { desc = "Location List" })
+keymap.set("n", "<leader>xQ", "<cmd>Trouble qflist toggle<CR>", { desc = "Quickfix List" })
 
 --------------------------
 -- LSP Related Keymaps  --
 --------------------------
 
 -- LSP navigation with FZF-Lua
-keymap.set("n", "gd", "<cmd>FzfLua lsp_definitions<cr>", { desc = "Go to Definition" })
-keymap.set("n", "gr", "<cmd>FzfLua lsp_references<cr>", { desc = "Go to References" })
-keymap.set("n", "gI", "<cmd>FzfLua lsp_implementations<cr>", { desc = "Go to Implementation" })
-keymap.set("n", "gt", "<cmd>FzfLua lsp_typedefs<cr>", { desc = "Go to Type Definition" })
+keymap.set("n", "gd", "<cmd>FzfLua lsp_definitions<CR>", { desc = "Go to Definition" })
+keymap.set("n", "gr", "<cmd>FzfLua lsp_references<CR>", { desc = "Go to References" })
+keymap.set("n", "gI", "<cmd>FzfLua lsp_implementations<CR>", { desc = "Go to Implementation" })
+keymap.set("n", "gt", "<cmd>FzfLua lsp_typedefs<CR>", { desc = "Go to Type Definition" })
 
 -- LSP keymaps to be set on LSP attach
 local lsp_keymaps = {
