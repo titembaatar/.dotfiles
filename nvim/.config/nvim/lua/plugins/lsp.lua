@@ -48,6 +48,16 @@ return {
     },
     opts = {
       capabilities = {},
+      diagnostics = {
+        underline = true,
+        update_in_insert = false,
+        virtual_text = {
+          prefix = "●",
+        },
+        severity_sort = true,
+        -- Disable specific diagnostic types
+        disabled = { "spell" }
+      },
       -- Default LSP server configuration
       servers = {
         bashls = {

@@ -1,35 +1,38 @@
 -- General Neovim settings and options
-local opt = vim.opt 
+local opt = vim.opt
 
 -- Line numbers
-opt.number = true -- show line numbers
+opt.number = true         -- show line numbers
 opt.relativenumber = true -- show relative line numbers
 
--- Tabs & indentation
-opt.tabstop = 2 -- 2 spaces for tabs
-opt.shiftwidth = 2 -- 2 spaces for indent width
-opt.expandtab = true -- expand tab to spaces
-opt.autoindent = true -- copy indent from current line when starting new one
-opt.smartindent = true -- do smart autoindenting when starting a new line
+-- Set default tab behavior
+opt.tabstop = 2        -- Number of spaces a tab counts for
+opt.shiftwidth = 2     -- Number of spaces to use for auto-indent
+opt.softtabstop = 2    -- Number of spaces a tab counts for during editing
+opt.expandtab = true   -- Use spaces instead of tabs by default
+opt.autoindent = true  -- Copy indent from current line when starting new one
+opt.smartindent = true -- Auto-indent new lines
 
--- Line wrapping
-opt.wrap = false -- disable line wrapping
+-- Line width and visualization
+opt.textwidth = 100     -- Default text width
+opt.colorcolumn = "100" -- Visual marker for line length
+opt.wrap = false        -- Don't wrap lines by default
 
 -- Search settings
 opt.ignorecase = true -- ignore case when searching
-opt.smartcase = true -- if include mixed case in search, assumes case-sensitive
-opt.hlsearch = true -- highlight all matches on previous search pattern
-opt.incsearch = true -- show search matches as you type
+opt.smartcase = true  -- if include mixed case in search, assumes case-sensitive
+opt.hlsearch = true   -- highlight all matches on previous search pattern
+opt.incsearch = true  -- show search matches as you type
 
 -- Cursor line
 opt.cursorline = false -- highlight the current cursor line
 
 -- Appearance
 opt.termguicolors = true -- true color support
-opt.background = "dark" -- colorschemes that can be light or dark will be made dark
-opt.signcolumn = "yes" -- show sign column so that text doesn't shift
-opt.scrolloff = 8 -- minimal number of screen lines to keep above and below the cursor
-opt.sidescrolloff = 8 -- minimal number of screen columns to keep to the left and right of the cursor
+opt.background = "dark"  -- colorschemes that can be light or dark will be made dark
+opt.signcolumn = "yes"   -- show sign column so that text doesn't shift
+opt.scrolloff = 8        -- minimal number of screen lines to keep above and below the cursor
+opt.sidescrolloff = 8    -- minimal number of screen columns to keep to the left and right of the cursor
 
 -- Backspace
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
@@ -73,10 +76,10 @@ opt.showmode = false
 opt.cmdheight = 1
 
 -- Improve UI
-opt.pumheight = 10 -- pop up menu height
+opt.pumheight = 10  -- pop up menu height
 opt.showtabline = 2 -- always show tabs
-opt.winblend = 0 -- transparency for floating windows
-opt.pumblend = 0 -- transparency for popup menu
+opt.winblend = 0    -- transparency for floating windows
+opt.pumblend = 0    -- transparency for popup menu
 
 -- Faster scrolling
 opt.ttyfast = true
@@ -86,3 +89,17 @@ opt.formatoptions:append { "j" } -- remove comment leader when joining lines
 
 -- For nvim-tree or similar file explorers (empty or hidden by default)
 opt.fillchars:append { eob = " " }
+
+-- Highlight on yank
+local highlight_group = vim.api.nvim_create_augroup("YankHighlight", { clear = true })
+vim.api.nvim_create_autocmd("TextYankPost", {
+  callback = function()
+    vim.highlight.on_yank({
+      higroup = "IncSearch", -- You can use different highlight groups: Visual, Search, etc.
+      timeout = 200,         -- Time in milliseconds the highlight remains
+      on_macro = true,       -- Also highlight when running a macro
+      on_visual = true       -- Also highlight when yanking a visual selection
+    })
+  end,
+  group = highlight_group,
+})
