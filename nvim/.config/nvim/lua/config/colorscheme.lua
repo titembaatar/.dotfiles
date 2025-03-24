@@ -1,1 +1,1 @@
-vim.cmd[[colorscheme sarnai]]
+vim.cmd [[colorscheme rose-pine]]
