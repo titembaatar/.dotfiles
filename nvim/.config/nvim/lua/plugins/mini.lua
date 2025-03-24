@@ -2,6 +2,7 @@ return {
   {
     "echasnovski/mini.nvim",
     version = false,
+    event = "VeryLazy",
     config = function()
       -- mini.files
       require("mini.files").setup({
@@ -10,13 +11,6 @@ return {
         },
       })
 
-      vim.api.nvim_set_keymap(
-        "n",
-        "<leader>e",
-        ":lua require('mini.files').open()<CR>",
-        { noremap = true, silent = true, desc = "Open file explorer" }
-      )
-
       -- mini.comment
       require("mini.comment").setup({
         options = {
@@ -24,22 +18,24 @@ return {
         },
       })
 
+      -- mini.icons
+      require("mini.icons").setup({})
+
       -- mini.pairs
-      require("mini.pairs").setup({
-      })
+      require("mini.pairs").setup({})
 
       -- mini.surround
-      require("mini.surround").setup({
-      })
+      require("mini.surround").setup({})
 
       -- mini.ai
-      require("mini.ai").setup({
-      })
+      require("mini.ai").setup({})
 
       -- mini.indentscope
       require("mini.indentscope").setup({
         draw = {
-          animation = function() return 0 end,
+          animation = function()
+            return 0
+          end,
         },
       })
 
@@ -48,12 +44,14 @@ return {
         use_icons = true,
       })
 
+      -- mini.git
+      require("mini.git").setup({})
+
+      -- mini.diff
+      require("mini.diff").setup({})
+
       -- mini.bufremove
       require("mini.bufremove").setup({})
-      vim.api.nvim_set_keymap("n", "<leader>bd", ":lua MiniBufremove.delete()<CR>",
-        { noremap = true, silent = true, desc = "Delete buffer" })
-      vim.api.nvim_set_keymap("n", "<leader>bD", ":lua MiniBufremove.delete(true)<CR>",
-        { noremap = true, silent = true, desc = "Force delete buffer" })
 
       -- mini.cursorword
       require("mini.cursorword").setup({})
@@ -70,8 +68,7 @@ return {
       })
 
       -- mini.jump2d
-      require("mini.jump2d").setup({
-      })
+      require("mini.jump2d").setup({})
 
       -- mini.trailspace
       require("mini.trailspace").setup({})
@@ -82,6 +79,9 @@ return {
           require("mini.trailspace").trim()
         end,
       })
+
+      -- mini.bracketed
+      require("mini.bracketed").setup({})
 
       -- mini.tabline
       require("mini.tabline").setup({})
