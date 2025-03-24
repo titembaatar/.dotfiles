@@ -124,6 +124,29 @@ return {
     "nvimtools/none-ls.nvim",
     event = "VeryLazy",
     dependencies = { "williamboman/mason.nvim" },
+    opts = function(_, opts)
+      local null_ls = require("null-ls")
+
+      vim.list_extend(opts.sources or {}, {
+        -- Lua formatting
+        null_ls.builtins.formatting.stylua,
+
+        -- Shell script formatting
+        null_ls.builtins.formatting.shfmt,
+
+        -- Python formatting
+        null_ls.builtins.formatting.black,
+        null_ls.builtins.formatting.isort,
+
+        -- Go formatting
+        null_ls.builtins.formatting.gofmt,
+
+        -- JSON/YAML formatting
+        null_ls.builtins.formatting.prettier.with({
+          filetypes = { "json", "yaml", "html", "css", "javascript" },
+        }),
+      })
+    end,
   },
 
   {
