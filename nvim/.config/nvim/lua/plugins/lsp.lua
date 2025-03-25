@@ -55,8 +55,6 @@ return {
           prefix = "●",
         },
         severity_sort = true,
-        -- Disable specific diagnostic types
-        disabled = { "spell" }
       },
       -- Default LSP server configuration
       servers = {

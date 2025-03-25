@@ -4,9 +4,8 @@ local set = vim.opt_local
 set.tabstop = 2
 set.shiftwidth = 2
 set.softtabstop = 2
-set.expandtab = true          -- JSON uses spaces by convention
-set.textwidth = 0             -- Disable auto wrapping for JSON
-set.formatoptions = "croqnlj" -- Smart formatting with comments
+set.expandtab = true -- JSON uses spaces by convention
+set.textwidth = 0    -- Disable auto wrapping for JSON
 
 -- Enable folding by syntax for JSON
 set.foldmethod = "syntax"
@@ -20,4 +19,3 @@ vim.cmd([[
     autocmd BufNewFile,BufRead tsconfig.json,package.json,*.jsonc setlocal commentstring=//\ %s
   augroup END
 ]])
-

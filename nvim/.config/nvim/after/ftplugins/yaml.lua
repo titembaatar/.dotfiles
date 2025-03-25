@@ -4,10 +4,9 @@ local set = vim.opt_local
 set.tabstop = 2
 set.shiftwidth = 2
 set.softtabstop = 2
-set.expandtab = true          -- YAML requires spaces
-set.textwidth = 80            -- Common for configuration files
-set.colorcolumn = "80"        -- Show visual marker
-set.formatoptions = "croqnlj" -- Smart formatting with comments
+set.expandtab = true   -- YAML requires spaces
+set.textwidth = 80     -- Common for configuration files
+set.colorcolumn = "80" -- Show visual marker
 
 -- Detect common YAML files even without extension
 vim.cmd([[
@@ -17,4 +16,3 @@ vim.cmd([[
     autocmd BufNewFile,BufRead .yamllint,.yamlfmt setfiletype yaml
   augroup END
 ]])
-
