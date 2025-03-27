@@ -1,6 +1,7 @@
 return {
   {
     "mfussenegger/nvim-dap",
+    enabled = false,
     dependencies = {
       { "rcarriga/nvim-dap-ui",         dependencies = { "nvim-neotest/nvim-nio", }, },
       { "jay-babu/mason-nvim-dap.nvim", dependencies = { "williamboman/mason.nvim", }, },

@@ -13,7 +13,6 @@ return {
         "lua_ls",
         "marksman",
         "pyright",
-        "harper_ls",
         "yamlls",
 
         -- Linters

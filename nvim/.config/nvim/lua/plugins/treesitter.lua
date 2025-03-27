@@ -41,7 +41,7 @@ return {
 
       vim.opt.foldmethod = "expr"
       vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-      vim.opt.foldenable = false -- Disable folding at startup
+      vim.opt.foldenable = true
     end,
   },
 }

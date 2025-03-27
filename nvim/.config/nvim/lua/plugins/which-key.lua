@@ -12,18 +12,19 @@ return {
         { "<leader>g", group = "Git" },
         { "<leader>n", hidden = true },
         { "<leader>q", group = "Session" },
-        { "<leader>t", group = "Tab/Toggle" },
+        { "<leader>t", group = "Toggle" },
         { "<leader>w", group = "Window" },
         { "<leader>x", group = "Diagnostics" },
+        { "gs", group = "Surroundings", icon = "󰘦 " },
       },
       icons = {
         breadcrumb = ";",
-        separator = "|",
+        separator = "│",
       },
       win = {
         width = 32,
         height = { min = 4, max = 50 },
-        row = 0,
+        row = 1,
         col = math.huge,
       },
       layout = {

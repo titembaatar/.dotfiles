@@ -4,12 +4,9 @@ return {
     version = false,
     event = "VeryLazy",
     config = function()
-      -- mini.files
-      require("mini.files").setup({
-        options = {
-          show_hidden = true,
-        },
-      })
+      -- Text editing --
+      -- mini.ai
+      require("mini.ai").setup({})
 
       -- mini.comment
       require("mini.comment").setup({
@@ -18,17 +15,53 @@ return {
         },
       })
 
-      -- mini.icons
-      require("mini.icons").setup({})
-
       -- mini.pairs
       require("mini.pairs").setup({})
 
       -- mini.surround
-      require("mini.surround").setup({})
+      require("mini.surround").setup({
+        mappings = {
+          add = "gsa",
+          delete = "gsd",
+          find = "gsf",
+          find_left = "gsF",
+          highlight = "gsh",
+          replace = "gsr",
+          update_n_lines = "gsn",
+        },
+      })
 
-      -- mini.ai
-      require("mini.ai").setup({})
+      -- General workflow --
+      -- mini.bracketed
+      require("mini.bracketed").setup({})
+
+      -- mini.bufremove
+      require("mini.bufremove").setup({})
+
+      -- mini.files
+      require("mini.files").setup({
+        options = {
+          show_hidden = true,
+        },
+      })
+
+      -- Appearance --
+      -- mini.cursorword
+      require("mini.cursorword").setup({})
+
+      -- mini.hipatterns
+      require("mini.hipatterns").setup({
+        highlighters = {
+          todo = { pattern = "%f[%w]()TODO()%f[%W]", group = "MiniHipatternsTodo" },
+          fixme = { pattern = "%f[%w]()FIXME()%f[%W]", group = "MiniHipatternsFixme" },
+          hack = { pattern = "%f[%w]()HACK()%f[%W]", group = "MiniHipatternsHack" },
+          note = { pattern = "%f[%w]()NOTE()%f[%W]", group = "MiniHipatternsNote" },
+          deprecated = { pattern = "%f[%w]()DEPRECATED()%f[%W]", group = "MiniHipatternsDeprecated" },
+        },
+      })
+
+      -- mini.icons
+      require("mini.icons").setup({})
 
       -- mini.indentscope
       require("mini.indentscope").setup({
@@ -37,6 +70,13 @@ return {
             return 0
           end,
         },
+        mappings = {
+          object_scope = "",
+          object_scope_with_border = "",
+          goto_top = "",
+          goto_bottom = "",
+        },
+        symbol = "│",
       })
 
       -- mini.statusline
@@ -44,31 +84,8 @@ return {
         use_icons = true,
       })
 
-      -- mini.git
-      require("mini.git").setup({})
-
-      -- mini.diff
-      require("mini.diff").setup({})
-
-      -- mini.bufremove
-      require("mini.bufremove").setup({})
-
-      -- mini.cursorword
-      require("mini.cursorword").setup({})
-
-      -- mini.hipatterns
-      require("mini.hipatterns").setup({
-        highlighters = {
-          todo = { pattern = "%f[%w]()TODO()%f[%W]", group = "MiniHipatternsFixme" },
-          fixme = { pattern = "%f[%w]()FIXME()%f[%W]", group = "MiniHipatternsFixme" },
-          hack = { pattern = "%f[%w]()HACK()%f[%W]", group = "MiniHipatternsHack" },
-          note = { pattern = "%f[%w]()NOTE()%f[%W]", group = "MiniHipatternsNote" },
-          deprecated = { pattern = "%f[%w]()DEPRECATED()%f[%W]", group = "MiniHipatternsDeprecated" },
-        },
-      })
-
-      -- mini.jump2d
-      require("mini.jump2d").setup({})
+      -- mini.tabline
+      require("mini.tabline").setup({})
 
       -- mini.trailspace
       require("mini.trailspace").setup({})
@@ -79,12 +96,6 @@ return {
           require("mini.trailspace").trim()
         end,
       })
-
-      -- mini.bracketed
-      require("mini.bracketed").setup({})
-
-      -- mini.tabline
-      require("mini.tabline").setup({})
     end,
   },
 }
