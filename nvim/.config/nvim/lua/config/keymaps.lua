@@ -3,169 +3,167 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
-local keymap = vim.keymap
+local k = vim.keymap
 
 ---------------------
 -- General Keymaps --
 ---------------------
 
 -- Clear search highlights
-keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
+k.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
 -- Delete single character without copying into register
-keymap.set("n", "x", '"_x', { desc = "Delete character without copying" })
+k.set("n", "x", '"_x', { desc = "Delete character without copying" })
 
 -- Window management (using 'w' group for window)
-keymap.set("n", "<leader>wv", "<C-w>v", { desc = "Split window vertically" })
-keymap.set("n", "<leader>ws", "<C-w>s", { desc = "Split window horizontally" })
-keymap.set("n", "<leader>we", "<C-w>=", { desc = "Make splits equal size" })
-keymap.set("n", "<leader>wx", ":close<CR>", { desc = "Close current split" })
+k.set("n", "<leader>wv", "<C-w>v", { desc = "Split window vertically" })
+k.set("n", "<leader>ws", "<C-w>s", { desc = "Split window horizontally" })
+k.set("n", "<leader>we", "<C-w>=", { desc = "Make splits equal size" })
+k.set("n", "<leader>wx", ":close<CR>", { desc = "Close current split" })
 
 -- Windows navigation
-keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move to left window" })
-keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move to bottom window" })
-keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move to top window" })
-keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move to right window" })
+k.set("n", "<C-h>", "<C-w>h", { desc = "Move to left window" })
+k.set("n", "<C-j>", "<C-w>j", { desc = "Move to bottom window" })
+k.set("n", "<C-k>", "<C-w>k", { desc = "Move to top window" })
+k.set("n", "<C-l>", "<C-w>l", { desc = "Move to right window" })
 
 -- Indentation management
-keymap.set("v", "<", "<gv", { desc = "Decrease indent and reselect" })
-keymap.set("v", ">", ">gv", { desc = "Increase indent and reselect" })
+k.set("v", "<", "<gv", { desc = "Decrease indent and reselect" })
+k.set("v", ">", ">gv", { desc = "Increase indent and reselect" })
 
 -- Move lines up and down
-keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move lines down" })
-keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move lines up" })
+k.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move lines down" })
+k.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move lines up" })
 
 -- Keep cursor in place when joining lines
-keymap.set("n", "J", "mzJ`z", { desc = "Join lines and keep cursor in place" })
+k.set("n", "J", "mzJ`z", { desc = "Join lines and keep cursor in place" })
 
 -- Keep cursor centered when scrolling
-keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scroll down and center" })
-keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll up and center" })
+k.set("n", "<C-d>", "<C-d>zz", { desc = "Scroll down and center" })
+k.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll up and center" })
 
 -- Keep cursor centered when searching
-keymap.set("n", "n", "nzzzv", { desc = "Next search result and center" })
-keymap.set("n", "N", "Nzzzv", { desc = "Previous search result and center" })
+k.set("n", "n", "nzzzv", { desc = "Next search result and center" })
+k.set("n", "N", "Nzzzv", { desc = "Previous search result and center" })
 
 -- Paste without overwriting register
-keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste without overwriting register" })
+k.set("x", "<leader>p", [["_dP]], { desc = "Paste without overwriting register" })
 
 -- Escape in terminal mode
-keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+k.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
 -- Buffer navigation
-keymap.set("n", "H", ":bprevious<CR>", { noremap = true, silent = true, desc = "Previous buffer" })
-keymap.set("n", "L", ":bnext<CR>", { noremap = true, silent = true, desc = "Next buffer" })
+k.set("n", "H", ":bprevious<CR>", { noremap = true, silent = true, desc = "Previous buffer" })
+k.set("n", "L", ":bnext<CR>", { noremap = true, silent = true, desc = "Next buffer" })
+
+-- Inspect highlights
+k.set("n", "<leader>ci", "<Cmd>Inspect<CR>", { desc = "Inspect highlights" })
 
 --------------------------
 -- Plugin-Based Keymaps --
 --------------------------
 
 -- Which-key <leader>? --
-keymap.set("n", "<leader>?", function()
+k.set("n", "<leader>?", function()
   require("which-key").show({ global = false })
 end, { desc = "Help" })
 
 -- Zen Mode <leader>z --
-keymap.set("n", "<leader>z", "<cmd>ZenMode<CR>", { desc = "Zen Mode" })
+k.set("n", "<leader>z", "<Cmd>ZenMode<CR>", { desc = "Zen Mode" })
 
 -- Mason <leader>m --
-keymap.set("n", "<leader>m", "<cmd>Mason<CR>", { desc = "Mason" })
+k.set("n", "<leader>m", "<Cmd>Mason<CR>", { desc = "Mason" })
 
 -- Quick FZF access
-keymap.set("n", "<leader><leader>", "<cmd>FzfLua files<CR>", { desc = "Find files" })
+k.set("n", "<leader><leader>", "<Cmd>FzfLua files<CR>", { desc = "Find files" })
 
 ----------------------
 -- Grouped Keymaps  --
 ----------------------
 
 -- Buffers <leader>b --
-keymap.set("n", "<leader>bd", ":lua MiniBufferRemove.delete()<CR>",
-  { noremap = true, silent = true, desc = "Delete buffer" })
-keymap.set("n", "<leader>bD", ":lua MiniBufferRemove.delete(true)<CR>",
-  { noremap = true, silent = true, desc = "Force delete buffer" })
+k.set("n", "<leader>bd", "<Cmd>lua MiniBufremove.delete()<CR>", { desc = "Delete buffer" })
+k.set("n", "<leader>bD", "<Cmd>lua MiniBufremove.delete(true)<CR>", { desc = "Force delete buffer" })
+k.set("n", "<leader>br", "<Cmd>lua Util.DeleteBuffersOnRight()<CR>", { desc = "Delete buffers on right" })
+k.set("n", "<leader>bl", "<Cmd>lua Util.DeleteBuffersOnLeft()<CR>", { desc = "Delete buffers on left" })
 
 -- Debug <leader>d --
-keymap.set("n", "<leader>dc", function() require("dap").continue() end, { desc = "Continue" })
-keymap.set("n", "<leader>dq", function() require("dap").terminate() end, { desc = "Terminate" })
-keymap.set("n", "<leader>dn", function() require("dap").step_over() end, { desc = "Step Over" })
-keymap.set("n", "<leader>di", function() require("dap").step_into() end, { desc = "Step Into" })
-keymap.set("n", "<leader>do", function() require("dap").step_out() end, { desc = "Step Out" })
-keymap.set("n", "<leader>db", function() require("dap").toggle_breakpoint() end, { desc = "Toggle Breakpoint" })
-keymap.set("n", "<leader>dB", function() require("dap").set_breakpoint(vim.fn.input("Breakpoint condition: ")) end,
+k.set("n", "<leader>dc", function() require("dap").continue() end, { desc = "Continue" })
+k.set("n", "<leader>dq", function() require("dap").terminate() end, { desc = "Terminate" })
+k.set("n", "<leader>dn", function() require("dap").step_over() end, { desc = "Step Over" })
+k.set("n", "<leader>di", function() require("dap").step_into() end, { desc = "Step Into" })
+k.set("n", "<leader>do", function() require("dap").step_out() end, { desc = "Step Out" })
+k.set("n", "<leader>db", function() require("dap").toggle_breakpoint() end, { desc = "Toggle Breakpoint" })
+k.set("n", "<leader>dB", function() require("dap").set_breakpoint(vim.fn.input("Breakpoint condition: ")) end,
   { desc = "Conditional Breakpoint" })
-keymap.set("n", "<leader>du", function() require("dapui").toggle() end, { desc = "Toggle DAP UI" })
+k.set("n", "<leader>du", function() require("dapui").toggle() end, { desc = "Toggle DAP UI" })
 
 -- Find <leader>f --
 -- mini.files
-keymap.set("n", "<leader>fe", ":lua require('mini.files').open()<CR>",
+k.set("n", "<leader>fe", ":lua require('mini.files').open()<CR>",
   { noremap = true, silent = true, desc = "Open file explorer" })
 -- FZF-Lua
-keymap.set("n", "<leader>ff", "<cmd>FzfLua files<CR>", { desc = "Find files" })
-keymap.set("n", "<leader>fg", "<cmd>FzfLua live_grep<CR>", { desc = "Grep in files" })
-keymap.set("n", "<leader>fb", "<cmd>FzfLua buffers<CR>", { desc = "Find buffers" })
-keymap.set("n", "<leader>fw", "<cmd>FzfLua grep_cword<CR>", { desc = "Find word under cursor" })
-keymap.set("n", "<leader>fh", "<cmd>FzfLua help_tags<CR>", { desc = "Help tags" })
-keymap.set("n", "<leader>fn", "<cmd>FzfLua files cwd=~/.config/nvim<CR>", { desc = "Find in Neovim config" })
-keymap.set("n", "<leader>fp", "<cmd>FzfLua projects<CR>", { desc = "Projects" })
-keymap.set("n", "<leader>fd", "<cmd>FzfLua files cwd=~/.dotfiles/<CR>", { desc = "Find in .dotfiles" })
+k.set("n", "<leader>ff", "<Cmd>FzfLua files<CR>", { desc = "Find files" })
+k.set("n", "<leader>fg", "<Cmd>FzfLua live_grep<CR>", { desc = "Grep in files" })
+k.set("n", "<leader>fb", "<Cmd>FzfLua buffers<CR>", { desc = "Find buffers" })
+k.set("n", "<leader>fw", "<Cmd>FzfLua grep_cword<CR>", { desc = "Find word under cursor" })
+k.set("n", "<leader>fh", "<Cmd>FzfLua help_tags<CR>", { desc = "Help tags" })
+k.set("n", "<leader>fn", "<Cmd>FzfLua files cwd=~/.config/nvim<CR>", { desc = "Find in Neovim config" })
+k.set("n", "<leader>fp", "<Cmd>FzfLua projects<CR>", { desc = "Projects" })
+k.set("n", "<leader>fd", "<Cmd>FzfLua files cwd=~/.dotfiles/<CR>", { desc = "Find in .dotfiles" })
 
 -- Git <leader>g --
 -- LazyGit
-keymap.set("n", "<leader>gg", "<cmd>LazyGit<CR>", { desc = "LazyGit" })
-keymap.set("n", "<leader>gf", "<cmd>LazyGitCurrentFile<CR>", { desc = "LazyGit Current File" })
+k.set("n", "<leader>gg", "<Cmd>LazyGit<CR>", { desc = "LazyGit" })
+k.set("n", "<leader>gf", "<Cmd>LazyGitCurrentFile<CR>", { desc = "LazyGit Current File" })
 -- Git with FZF-Lua
-keymap.set("n", "<leader>gc", "<cmd>FzfLua git_commits<CR>", { desc = "Git Commits" })
-keymap.set("n", "<leader>gs", "<cmd>FzfLua git_status<CR>", { desc = "Git Status" })
-keymap.set("n", "<leader>gb", "<cmd>FzfLua git_branches<CR>", { desc = "Git Branches" })
+k.set("n", "<leader>gc", "<Cmd>FzfLua git_commits<CR>", { desc = "Git Commits" })
+k.set("n", "<leader>gs", "<Cmd>FzfLua git_status<CR>", { desc = "Git Status" })
+k.set("n", "<leader>gb", "<Cmd>FzfLua git_branches<CR>", { desc = "Git Branches" })
 -- GitSigns
-keymap.set("n", "<leader>gb", "<cmd>Gitsigns blame_line<CR>", { desc = "Blame Line" })
-keymap.set("n", "<leader>gd", "<cmd>Gitsigns toggle_word_diff<CR>", { desc = "Word Diff" })
-keymap.set("n", "<leader>gh", "<cmd>Gitsigns preview_hunk_inline<CR>", { desc = "Preview Hunk" })
-keymap.set("n", "]h", "<cmd>Gitsigns nav_hunks next<CR>", { desc = "Next Hunk" })
-keymap.set("n", "[h", "<cmd>Gitsigns nav_hunks prev<CR>", { desc = "Prev Hunk" })
+k.set("n", "<leader>gb", "<Cmd>Gitsigns blame_line<CR>", { desc = "Blame Line" })
+k.set("n", "<leader>gd", "<Cmd>Gitsigns toggle_word_diff<CR>", { desc = "Word Diff" })
+k.set("n", "<leader>gh", "<Cmd>Gitsigns preview_hunk_inline<CR>", { desc = "Preview Hunk" })
+k.set("n", "]h", "<Cmd>Gitsigns nav_hunks next<CR>", { desc = "Next Hunk" })
+k.set("n", "[h", "<Cmd>Gitsigns nav_hunks prev<CR>", { desc = "Prev Hunk" })
 
 -- Sessions <leader>q --
-keymap.set("n", "<leader>qs", function() require("persistence").load() end, { desc = "Load Session" })
-keymap.set("n", "<leader>qS", function() require("persistence").select() end, { desc = "Select Session" })
-keymap.set("n", "<leader>ql", function() require("persistence").load({ last = true }) end, { desc = "Last Session" })
-keymap.set("n", "<leader>qd", function() require("persistence").stop() end, { desc = "Don't Save Session" })
+k.set("n", "<leader>qs", function() require("persistence").load() end, { desc = "Load Session" })
+k.set("n", "<leader>qS", function() require("persistence").select() end, { desc = "Select Session" })
+k.set("n", "<leader>ql", function() require("persistence").load({ last = true }) end, { desc = "Last Session" })
+k.set("n", "<leader>qd", function() require("persistence").stop() end, { desc = "Don't Save Session" })
+
+-- Toggle <leader>t --
+k.set("n", "<leader>tc", "<Cmd>lua Util.ToggleColorColumn()<CR>", { desc = "Toggle Color Column" })
 
 -- Trouble <leader>x --
-keymap.set("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<CR>", { desc = "Diagnostics" })
-keymap.set("n", "<leader>xX", "<cmd>Trouble diagnostics toggle filter.buf=0<CR>", { desc = "Buffer Diagnostics" })
-keymap.set("n", "<leader>xs", "<cmd>Trouble symbols toggle focus=false<CR>", { desc = "Symbols" })
-keymap.set("n", "<leader>xl", "<cmd>Trouble lsp toggle focus=false win.position=right<CR>",
+k.set("n", "<leader>xx", "<Cmd>Trouble diagnostics toggle<CR>", { desc = "Diagnostics" })
+k.set("n", "<leader>xX", "<Cmd>Trouble diagnostics toggle filter.buf=0<CR>", { desc = "Buffer Diagnostics" })
+k.set("n", "<leader>xs", "<Cmd>Trouble symbols toggle focus=false<CR>", { desc = "Symbols" })
+k.set("n", "<leader>xl", "<Cmd>Trouble lsp toggle focus=false win.position=right<CR>",
   { desc = "LSP Definitions / references / ..." })
-keymap.set("n", "<leader>xL", "<cmd>Trouble loclist toggle<CR>", { desc = "Location List" })
-keymap.set("n", "<leader>xQ", "<cmd>Trouble qflist toggle<CR>", { desc = "Quickfix List" })
+k.set("n", "<leader>xL", "<Cmd>Trouble loclist toggle<CR>", { desc = "Location List" })
+k.set("n", "<leader>xQ", "<Cmd>Trouble qflist toggle<CR>", { desc = "Quickfix List" })
 
---------------------------
+-------------------------
 -- LSP Related Keymaps  --
 --------------------------
 
 -- LSP navigation with FZF-Lua
-keymap.set("n", "gd", "<cmd>FzfLua lsp_definitions<CR>", { desc = "Go to Definition" })
-keymap.set("n", "gr", "<cmd>FzfLua lsp_references<CR>", { desc = "Go to References" })
-keymap.set("n", "gI", "<cmd>FzfLua lsp_implementations<CR>", { desc = "Go to Implementation" })
-keymap.set("n", "gt", "<cmd>FzfLua lsp_typedefs<CR>", { desc = "Go to Type Definition" })
+k.set("n", "gd", "<Cmd>FzfLua lsp_definitions<CR>", { desc = "Go to Definition" })
+k.set("n", "gr", "<Cmd>FzfLua lsp_references<CR>", { desc = "Go to References" })
+k.set("n", "gI", "<Cmd>FzfLua lsp_implementations<CR>", { desc = "Go to Implementation" })
+k.set("n", "gt", "<Cmd>FzfLua lsp_typedefs<CR>", { desc = "Go to Type Definition" })
 
--- LSP keymaps to be set on LSP attach
-local lsp_keymaps = {
-  ["on_attach"] = function(client, buffer)
-    -- Navigation
-    keymap.set("n", "gD", vim.lsp.buf.declaration, { buffer = buffer, desc = "Go to Declaration" })
-    keymap.set("n", "K", vim.lsp.buf.hover, { buffer = buffer, desc = "Hover Documentation" })
+-- Navigation
+k.set("n", "gD", vim.lsp.buf.declaration, { desc = "Go to Declaration" })
+k.set("n", "K", vim.lsp.buf.hover, { desc = "Hover Documentation" })
 
-    -- Actions
-    keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { buffer = buffer, desc = "Code Action" })
-    keymap.set("n", "<leader>cr", vim.lsp.buf.rename, { buffer = buffer, desc = "Rename" })
-    keymap.set("n", "<leader>cf", function() vim.lsp.buf.format({ async = true }) end,
-      { buffer = buffer, desc = "Format Document" })
+-- Actions
+k.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
+k.set("n", "<leader>cr", vim.lsp.buf.rename, { desc = "Rename" })
+k.set("n", "<leader>cf", function() vim.lsp.buf.format({ async = true }) end, { desc = "Format Document" })
 
-    -- Diagnostic navigation
-    keymap.set("n", "[d", vim.diagnostic.goto_prev, { buffer = buffer, desc = "Previous Diagnostic" })
-    keymap.set("n", "]d", vim.diagnostic.goto_next, { buffer = buffer, desc = "Next Diagnostic" })
-  end
-}
-
-return lsp_keymaps
+-- Diagnostic navigation
+k.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Previous Diagnostic" })
+k.set("n", "]d", vim.diagnostic.goto_next, { desc = "Next Diagnostic" })
