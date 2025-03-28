@@ -124,8 +124,8 @@ k.set("n", "<leader>gb", "<Cmd>FzfLua git_branches<CR>", { desc = "Git Branches"
 k.set("n", "<leader>gb", "<Cmd>Gitsigns blame_line<CR>", { desc = "Blame Line" })
 k.set("n", "<leader>gd", "<Cmd>Gitsigns toggle_word_diff<CR>", { desc = "Word Diff" })
 k.set("n", "<leader>gh", "<Cmd>Gitsigns preview_hunk_inline<CR>", { desc = "Preview Hunk" })
-k.set("n", "]h", "<Cmd>Gitsigns nav_hunks next<CR>", { desc = "Next Hunk" })
-k.set("n", "[h", "<Cmd>Gitsigns nav_hunks prev<CR>", { desc = "Prev Hunk" })
+k.set("n", "]h", "<Cmd>Gitsigns nav_hunk next<CR>", { desc = "Next Hunk" })
+k.set("n", "[h", "<Cmd>Gitsigns nav_hunk prev<CR>", { desc = "Prev Hunk" })
 
 -- Sessions <leader>q --
 k.set("n", "<leader>qs", function() require("persistence").load() end, { desc = "Load Session" })
