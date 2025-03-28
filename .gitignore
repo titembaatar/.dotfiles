@@ -3,3 +3,4 @@ nvim/.config/nvim/lazy-lock.json
 zen/chrome/zen-themes.css
 tofi/.config/tofi/emoji_frequency.txt
 nvim/.config/nvim/telescope.bak.notlua
+nvim/.config/nvim/doc/plugins.md
