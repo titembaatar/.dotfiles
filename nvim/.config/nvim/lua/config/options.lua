@@ -1,6 +1,9 @@
 -- General Neovim settings and options
 local opt = vim.opt
 
+-- test
+opt.guicursor = "n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor/lCursor,r-cr:hor20,o:hor50"
+
 -- Line numbers
 opt.number = true         -- show line numbers
 opt.relativenumber = true -- show relative line numbers
