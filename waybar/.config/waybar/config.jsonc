@@ -1,6 +1,6 @@
 [{
 	"name": "main",
-  "layer": "top", 
+  "layer": "top",
 	"height": 32,
 	"output": "DP-1",
 
@@ -66,7 +66,7 @@
 		"format": "󰋊 {percentage_free}%",
 		"path": "/mnt/yesugei/",
 	},
-	
+
   "clock#date": {
 		"tooltip": false,
     "format": " {:%y%m%d.%H:%M}",
@@ -88,7 +88,7 @@
 },
 {
 	"name": "second",
-  "layer": "top", 
+  "layer": "top",
 	"height": 32,
 	"output": "DP-2",
 
