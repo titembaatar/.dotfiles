@@ -49,12 +49,12 @@ include /etc/sway/config.d/*
 	}
 	bindsym --to-code $mod+x mode $exit
 
-	# tofi 
+	# tofi
 	bindsym $mod+d exec $menu
 	# emoji picker
-	bindsym $mod+period exec ~/.config/tofi/temoji.sh 
+	bindsym $mod+period exec ~/.config/tofi/temoji.sh
 
-	# Keyboard 
+	# Keyboard
 	input "type:keyboard" {
 		xkb_layout us,us(intl)
 		xkb_options grp:rctrl_toggle
@@ -69,7 +69,7 @@ include /etc/sway/config.d/*
 	bindsym $mod+Ctrl+Alt+s exec grimshot savecopy area --notify
 
 ### Output configuration
-	# Displays 
+	# Displays
 	output DP-1 {
 		bg /home/titem/Pictures/gowall/OI001188.jpg fill
 		resolution 2560x1440 position 2560,0
@@ -105,7 +105,7 @@ include /etc/sway/config.d/*
 		layout splitv
 	}
 
-### Window 
+### Window
 	# Border
 	default_border 					pixel 2
 	default_floating_border normal
@@ -114,10 +114,10 @@ include /etc/sway/config.d/*
 		[window_role="bubble"] floating enable
 		[window_role="dialog"] floating enable
 		[window_type="dialog"] floating enable
-		[title="Plexamp"] move up, resize set 100 ppt 512 px
-		[title=".*Discord$"] move up, resize set 100 ppt 40 ppt
-		[workspace="[6-9]|10"] exec "swaymsg '[title="Plexamp"]' resize set height 512 px"
-		[workspace="[6-9]|10"] exec "swaymsg '[title=".*Discord$"]' resize set height 40 ppt"
+		# [title="Plexamp"] move up, resize set 100 ppt 512 px
+		# [title=".*Discord$"] move up, resize set 100 ppt 40 ppt
+		# [workspace="[6-9]|10"] exec "swaymsg '[title="Plexamp"]' resize set height 512 px"
+		# [workspace="[6-9]|10"] exec "swaymsg '[title=".*Discord$"]' resize set height 40 ppt"
 	}
 
 	# target									title			bg			text		indicator	border
@@ -191,10 +191,10 @@ include /etc/sway/config.d/*
 	# Sway has a "scratchpad", which is a bag of holding for windows.
 	# You can send windows there and get them back later.
 	# Move the currently focused window to the scratchpad
-	bindsym $mod+Shift+minus move scratchpad
+	# bindsym $mod+Shift+minus move scratchpad
 	# Show the next scratchpad window or hide the focused scratchpad window.
 	# If there are multiple scratchpad windows, this command cycles through them.
-	bindsym $mod+minus scratchpad show
+	# bindsym $mod+minus scratchpad show
 # Resizing containers:
 mode "resize" {
 	bindsym $left resize shrink width 5%
