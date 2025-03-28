@@ -90,7 +90,6 @@ return {
         },
         marksman = {},
         pyright = {},
-        harper_ls = {},
         yamlls = {},
       },
     },
@@ -177,6 +176,13 @@ return {
             module = "lazydev.integrations.blink",
             score_offset = 100,
           },
+        },
+      },
+      fuzzy = {
+        implementation = 'prefer_rust_with_warning',
+        prebuilt_binaries = {
+          download = true,
+          force_version = "v1.0.0",
         },
       },
     },
