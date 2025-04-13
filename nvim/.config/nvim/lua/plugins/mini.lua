@@ -89,13 +89,13 @@ return {
 
       -- mini.trailspace
       require("mini.trailspace").setup({})
-      -- Auto-trim whitespace on save
-      vim.api.nvim_create_autocmd("BufWritePre", {
-        pattern = "*",
-        callback = function()
-          require("mini.trailspace").trim()
-        end,
-      })
+      -- -- Auto-trim whitespace on save
+      -- vim.api.nvim_create_autocmd("BufWritePre", {
+      --   pattern = "*",
+      --   callback = function()
+      --     require("mini.trailspace").trim()
+      --   end,
+      -- })
     end,
   },
 }

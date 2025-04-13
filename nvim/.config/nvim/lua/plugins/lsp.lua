@@ -13,6 +13,7 @@ return {
         "lua_ls",
         "marksman",
         "pyright",
+        "ruby_lsp",
         "yamlls",
 
         -- Linters
@@ -20,7 +21,6 @@ return {
         "selene", -- Lua
 
         -- Formatters
-        "shfmt",
         "stylua",
         "isort",
         "black",
@@ -90,6 +90,7 @@ return {
         },
         marksman = {},
         pyright = {},
+        ruby_lsp = {},
         yamlls = {},
       },
     },
@@ -104,7 +105,6 @@ return {
           null_ls.builtins.formatting.stylua,
           null_ls.builtins.formatting.black,
           null_ls.builtins.formatting.isort,
-          null_ls.builtins.formatting.shfmt,
         },
       })
 
@@ -136,9 +136,6 @@ return {
       vim.list_extend(opts.sources or {}, {
         -- Lua formatting
         null_ls.builtins.formatting.stylua,
-
-        -- Shell script formatting
-        null_ls.builtins.formatting.shfmt,
 
         -- Python formatting
         null_ls.builtins.formatting.black,
