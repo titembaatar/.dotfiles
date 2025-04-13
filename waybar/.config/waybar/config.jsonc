@@ -8,25 +8,27 @@
 		"custom/spacer",
 		"sway/workspaces",
 		"custom/spacer",
-		"sway/mode",
+		"sway/mode"
 	],
   "modules-center": ["sway/window"],
   "modules-right": [
 		"sway/language",
-		"custom/spacer",
+		"custom/mini-spacer",
 		"pulseaudio",
-		"custom/spacer",
+		"custom/mini-spacer",
 		"network",
-		"custom/spacer",
+		"custom/mini-spacer",
 		"disk",
-		"custom/spacer",
+		"custom/mini-spacer",
+		"clock#hour",
+		"custom/mini-spacer",
 		"clock#date",
-		"custom/spacer",
+		"custom/spacer"
 	],
 
 	"sway/workspaces": {
 		"disable-scroll": true,
-		"disable-click": true,
+		"disable-click": true
 	},
 
 	"sway/mode": {
@@ -35,12 +37,12 @@
 	},
 
 	"sway/window": {
-		"max-length": 50,
+		"max-length": 50
 	},
 
 	"sway/language": {
 		"format": "󰌌 {short}",
-		"on-click": "swaymsg input type:keyboard xkb_switch_layout next",
+		"on-click": "swaymsg input type:keyboard xkb_switch_layout next"
 	},
 
 	"pulseaudio": {
@@ -51,40 +53,46 @@
 		},
 		"scroll-step": 1,
 		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-		"on-click-right": "pavucontrol",
+		"on-click-right": "pavucontrol"
 	},
 
 	"network": {
 		"tooltip": false,
 		"format": "󰈀 up",
 		"format-disabled": "󰈀 nil",
-		"format-disconnected": "󰈀 down",
+		"format-disconnected": "󰈀 down"
 	},
 
 	"disk": {
 		"interval": 60,
 		"format": "󰋊 {percentage_free}%",
-		"path": "/mnt/yesugei/",
+		"path": "/mnt/yesugei/"
 	},
+
+  "clock#hour": {
+    // "format": " {:%y%m%d.%H:%M}",
+		"tooltip": false,
+    "format": " {:%H:%M}",
+		"interval": 30
+  },
 
   "clock#date": {
 		"tooltip": false,
-    "format": " {:%y%m%d.%H:%M}",
-		"interval": 30,
+    "format": " {:%y%m%d}",
+		"interval": 30
   },
-
-	// separator/spacer
-	"custom/separator": {
-		"tooltip": false,
-		"format": "///",
-		"interval": "once",
-	},
 
 	"custom/spacer": {
 		"tooltip": false,
 		"format": " ",
-		"interval": "once",
+		"interval": "once"
 	},
+
+	"custom/mini-spacer": {
+		"tooltip": false,
+		"format": " ",
+		"interval": "once"
+	}
 },
 {
 	"name": "second",
@@ -96,17 +104,17 @@
 		"custom/spacer",
 		"sway/workspaces",
 		"custom/spacer",
-		"sway/mode",
+		"sway/mode"
 	],
   "modules-center": ["sway/window"],
   "modules-right": [
 		"clock#date",
-		"custom/spacer",
+		"custom/spacer"
 	],
 
 	"sway/workspaces": {
 		"disable-scroll": true,
-		"disable-click": true,
+		"disable-click": true
 	},
 
 	"sway/mode": {
@@ -115,18 +123,18 @@
 	},
 
 	"sway/window": {
-		"max-length": 50,
+		"max-length": 50
 	},
 
   "clock#date": {
 		"tooltip": false,
-    "format": " {:%y%m%d.%H:%M}",
-		"interval": 30,
+    "format": " {:%y%m%d %H:%M}",
+		"interval": 30
   },
 
 	"custom/spacer": {
 		"tooltip": false,
 		"format": " ",
-		"interval": "once",
-	},
+		"interval": "once"
+	}
 }]

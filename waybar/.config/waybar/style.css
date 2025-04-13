@@ -97,8 +97,12 @@ label.module {
 	background-color: @mus;
 }
 
-#clock.date {
+#clock.hour {
 	background-color: @yargui;
+}
+
+#clock.date {
+	background-color: @sarnai;
 }
 
 /* RIGHT /// SEPARTOR/SPACER */
@@ -111,4 +115,9 @@ label.module {
 #custom-spacer {
 	padding: 0;
 	margin: 0 .25em;
+}
+
+#custom-mini-spacer {
+	padding: 0;
+	margin: 0 -2px;
 }
