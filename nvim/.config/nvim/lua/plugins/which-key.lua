@@ -12,6 +12,7 @@ return {
         { "<leader>g", group = "Git" },
         { "<leader>n", hidden = true },
         { "<leader>q", group = "Session" },
+        { "<leader>s", group = "Search" },
         { "<leader>t", group = "Toggle" },
         { "<leader>w", group = "Window" },
         { "<leader>x", group = "Diagnostics" },

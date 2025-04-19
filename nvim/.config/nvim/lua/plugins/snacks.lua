@@ -2,6 +2,10 @@ return {
   {
     "folke/snacks.nvim",
     opts = {
+      picker = {
+        layout = { preset = "ivy", layout = { position = "bottom" } },
+      },
+      explorer = {},
       notifier = {},
       lazygit = {},
       dashboard = {
@@ -9,7 +13,7 @@ return {
           keys = {
             { icon = " ", key = "f", desc = "find file", action = ":lua Snacks.dashboard.pick('files')" },
             { icon = "󱎸 ", key = "g", desc = "find text", action = ":lua Snacks.dashboard.pick('live_grep')" },
-            { icon = " ", key = "p", desc = "projects", action = ":FzfLua grep_project" },
+            { icon = " ", key = "p", desc = "projects", action = ":lua Snacks.dashboard.pick('projects')" },
             { icon = " ", key = "G", desc = "lazygit", action = ":LazyGit" },
             { icon = "󰣖 ", key = "c", desc = "config", action = ":lua Snacks.dashboard.pick('files', {cwd = vim.fn.stdpath('config')})" },
             { icon = " ", key = "s", desc = "restore session", section = "session" },
