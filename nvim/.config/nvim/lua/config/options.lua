@@ -31,11 +31,11 @@ opt.incsearch = true  -- show search matches as you type
 opt.cursorline = false -- highlight the current cursor line
 
 -- Appearance
-opt.termguicolors = true -- true color support
-opt.background = "dark"  -- colorschemes that can be light or dark will be made dark
-opt.signcolumn = "yes"   -- show sign column so that text doesn't shift
-opt.scrolloff = 8        -- minimal number of screen lines to keep above and below the cursor
-opt.sidescrolloff = 8    -- minimal number of screen columns to keep to the left and right of the cursor
+vim.o.termguicolors = true -- true color support
+opt.background = "dark"    -- colorschemes that can be light or dark will be made dark
+opt.signcolumn = "yes"     -- show sign column so that text doesn't shift
+opt.scrolloff = 8          -- minimal number of screen lines to keep above and below the cursor
+opt.sidescrolloff = 8      -- minimal number of screen columns to keep to the left and right of the cursor
 
 -- Backspace
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position

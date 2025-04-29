@@ -3,87 +3,51 @@ focus:
   - 1
 
 workspaces:
-  2:
-    layout: h
-    containers:
-      # - app: davinciresolve
-      #   cmd: "/opt/resolve/bin/resolve"
-      #   delay: 5
-      - app: kitty
-      - split: t
-        size: 70
-        containers:
-          - app: zen
-            cmd: "zen-browser --browser"
-            size: 70
-            delay: 1
-            post:
-              - "zen-browser --new-tab claude.ai"
-              - "zen-browser --new-tab reddit.com"
-              - "wtype -M ctrl -M alt h"
-          - app: kitty
-            rerun-post: true
-            post:
-              - "wtype cd ~/Downloads -k Return clear -k Return"
+  # 2:
+  #   layout: h
+  #   containers:
+  #     - app: davinciresolve
+  #       cmd: "/opt/resolve/bin/resolve"
+  #       delay: 5
   6:
     layout: v
     containers:
       - app: plexamp
         cmd: "/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=startplexamp com.plexamp.Plexamp"
-        size: 20
+        size: 25
         delay: 3
-      - app: zen
-        cmd: "zen-browser --browser"
-        size: 85
+      - app: firefox
         delay: 1
         post:
-          - "wtype -M ctrl -M alt 1"
-          - "zen-browser --new-tab plex.titem.top"
-          - "zen-browser --new-tab reddit.com"
-          - "wtype -M ctrl -M alt h"
+          - "firefox --new-tab home.titem.top"
   7:
     layout: v
     containers:
       - app: discord
-        cmd: "/usr/bin/Discord"
+        cmd: "gtk-launch discord"
         size: 60
         delay: 3
-      - app: zen
-        cmd: "zen-browser --browser"
+      - app: firefox
         size: 40
         delay: 1
-        post:
-          - "wtype -M ctrl -M alt 4"
-          - "wtype -M alt 9"
       - app: kitty
+        cmd: "kitty -d /mnt/yesugei/souen/mega/"
         size: 10
-        rerun-post: true
-        post:
-          - "wtype cd /mnt/yesugei/souen/mega/ -k Return clear -k Return"
   8:
     layout: v
     containers:
-      - app: zen
-        cmd: "zen-browser --browser"
+      - app: firefox
         size: 33
         delay: 1
         post:
-        - "wtype -M ctrl -M alt 3"
-        - "zen-browser --new-tab home.titem.top"
-      - app: zen
-        cmd: "zen-browser --browser"
-        size: 67
-        delay: 1
-        post:
-          - "wtype -M ctrl -M alt 3"
-          - "zen-browser --new-tab uptime.titem.top"
-          - "zen-browser --new-tab beszel.titem.top"
-          - "wtype -M ctrl -M alt h"
-  10:
-    layout: h
-    containers:
-      - app: mega
-        cmd: "megasync"
+        - "firefox --new-tab home.titem.top"
+        - "firefox --new-tab uptime.titem.top"
+        - "firefox --new-tab beszel.titem.top"
+  # 10:
+  #   layout: h
+  #   containers:
+  #     - app: mega
+  #       cmd: "megasync"
         # post:
         #   - "wtype -k Escape"
 
