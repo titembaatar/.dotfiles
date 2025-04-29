@@ -13,3 +13,13 @@ eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/titem.toml)"
 
 # aliases
 alias lzg="lazygit"
+
+# directories
+## work
+export draw=/mnt/yesugei/souen/raw/
+export drender=/mnt/yesugei/souen/render/
+export dmega=/mnt/yesugei/souen/mega/
+
+## homelab
+export dcompose=/mnt/borte/homelab/compose/
+export dvolume=/mnt/borte/homelab/volumes/
