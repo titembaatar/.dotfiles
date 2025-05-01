@@ -3,6 +3,7 @@ return {
     "folke/snacks.nvim",
     opts = {
       picker = {
+        prompt = " ; ",
         layout = { preset = "ivy", layout = { position = "bottom" } },
       },
       explorer = {},
@@ -11,7 +12,7 @@ return {
       dashboard = {
         preset = {
           keys = {
-            { icon = " ", key = "f", desc = "find file", action = ":lua Snacks.dashboard.pick('files')" },
+            { icon = "󰭎 ", key = "f", desc = "find file", action = ":lua Snacks.dashboard.pick('files')" },
             { icon = "󱎸 ", key = "g", desc = "find text", action = ":lua Snacks.dashboard.pick('live_grep')" },
             { icon = " ", key = "p", desc = "projects", action = ":lua Snacks.dashboard.pick('projects')" },
             { icon = " ", key = "G", desc = "lazygit", action = ":LazyGit" },

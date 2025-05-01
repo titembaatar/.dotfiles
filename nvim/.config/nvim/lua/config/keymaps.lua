@@ -75,6 +75,9 @@ k.set("n", "<leader>m", "<Cmd>Mason<CR>", { desc = "Mason" })
 -- Quick picker access
 k.set("n", "<leader><space>", "<Cmd>lua Snacks.picker.smart()<CR>", { desc = "Smart Find Files" })
 
+-- Snacks Dashboard
+k.set("n", "<leader><Esc>", "<Cmd>lua Snacks.dashboard()<CR>", { desc = "Dashboard" })
+
 ----------------------
 -- Grouped Keymaps  --
 ----------------------
