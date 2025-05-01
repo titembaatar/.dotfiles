@@ -17,7 +17,7 @@
 /* GLOBAL */
 * {
 	font-family: Iosevka;
-	font-size: 14pt;
+	font-size: 12pt;
 }
 
 window#waybar {
@@ -26,41 +26,32 @@ window#waybar {
 
 label.module {
 	color: @base;
-	padding: 0 .5em;
+	padding: 0 .4em;
 }
 
 /* LEFT /// WORKSPACES */
 #workspaces button {
-	color: @subtle;
-	background-color: @surface;
+	color: @muted;
 	border-radius: 0;
-	padding: 0 .5em;
-}
-
-#workspaces button.active {
-	color: @base;
-	background-color: @sarnai;
+	padding: 0 .4em;
 }
 
 #workspaces button.visible {
-	color: @base;
-	background-color: @sarnai;
+	color: @sarnai;
+  font-weight: bold;
 }
 
 #workspaces button.urgent {
-	color: @base;
-	background-color: @anis;
+	color: @anis;
 }
 
 #workspaces button.empty {
-	color: @base;
-	background-color: @muted;
+	color: @muted;
 }
 
 /* LEFT /// MODE */
 #mode {
-	color: @base;
-	background-color: @chatsalgan;
+	color: @chatsalgan;
 }
 
 /* CENTER /// SWAY WINDOW */
@@ -69,52 +60,44 @@ label.module {
 }
 
 /* RIGHT /// MODULES */
-#language {
-	background-color: @els;
-}
-
 #pulseaudio {
-	background-color: @uvs;
+	color: @uvs;
 }
 
 #pulseaudio.muted {
-	background-color: @muted;
+	color: @muted;
 }
 
 #network {
-	background-color: @nuur;
+	color: @mus;
 }
 
 #network.disabled {
-	background-color: @muted;
+	color: @muted;
 }
 
 #network.disconnected {
-	background-color: @anis;
+	color: @anis;
 }
 
 #disk {
-	background-color: @mus;
+	color: @els;
 }
 
-#clock.hour {
-	background-color: @yargui;
-}
-
-#clock.date {
-	background-color: @sarnai;
+#clock.clock {
+	color: @sarnai;
 }
 
 /* RIGHT /// SEPARTOR/SPACER */
 #custom-separator {
 	color: @overlay;
 	padding: 0;
-	margin: 0 .25em;
+	margin: 0 .2em;
 }
 
 #custom-spacer {
 	padding: 0;
-	margin: 0 .25em;
+	margin: 0 .2em;
 }
 
 #custom-mini-spacer {
