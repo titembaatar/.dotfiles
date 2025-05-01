@@ -1,7 +1,29 @@
 3|🦥 sloth
+2|🐻 bear
+2|🖥️ desktop computer
+2|🗄️ file cabinet
+2|💻 laptop
+2|😉 winking face
+1|📷 camera
+1|💽 computer disk
+1|🐕 dog
 1|🤮 face vomiting
+1|📁 file folder
+1|⚙️ gear
+1|❤️‍🔥 heart on fire
+1|🕳️ hole
+1|🐎 horse
+1|🏇 horse racing
+1|🏡 house with garden
+1|🏷️ label
+1|🦙 llama
+1|🔒 locked
+1|🤓 nerd face
+1|📖 open book
+1|🧩 puzzle piece
 1|🏵️ rosette
 1|❄️ snowflake
 1|⚠️ warning
+1|🔫 water pistol
+1|🐋 whale
 1|💮 white flower
-1|😉 winking face
