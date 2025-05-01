@@ -83,6 +83,9 @@ for_window [window_role="bubble"] floating enable
 for_window [window_role="dialog"] floating enable
 for_window [window_type="dialog"] floating enable
 
+# Floating Apps
+for_window [class="MEGAsync" title="MEGAsync"] floating enable
+
 # target									title			bg			text		indicator	border
 client.focused						$base			$sarnai	$base		$sarnai		$sarnai
 client.focused_inactive		$muted		$base		$muted	$muted		$muted
@@ -144,7 +147,7 @@ bindsym $mod+o exec $chat
 bindsym $mod+p exec $browser
 bindsym $mod+d exec $menu
 
-# emoji picker
+# Emoji picker
 bindsym $mod+period exec ~/.config/tofi/temoji.sh
 
 # Screenshot
@@ -181,6 +184,8 @@ bindsym $mod+Shift+$up move up
 bindsym $mod+Shift+$right move right
 
 # Switch to workspace
+bindsym $mod+Ctrl+$left workspace prev
+bindsym $mod+Ctrl+$right workspace next
 bindsym $mod+1 workspace number 1
 bindsym $mod+2 workspace number 2
 bindsym $mod+3 workspace number 3
