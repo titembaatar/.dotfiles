@@ -110,3 +110,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 -- Disable mini.trailspace in snacks.dashboard
 local disableTrailspace = function(args) vim.b[args.buf].minitrailspace_disable = true end
 vim.api.nvim_create_autocmd('User', { pattern = 'SnacksDashboardOpened', callback = disableTrailspace })
+
+-- Disable mini.sessions, conflict with snacks.picker projects
+vim.g.minisessions_disable = true
