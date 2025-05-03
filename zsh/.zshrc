@@ -13,6 +13,7 @@ eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/titem.toml)"
 
 # aliases
 alias lzg="lazygit"
+alias lzd="lazydocker"
 
 # directories
 ## work
@@ -23,3 +24,7 @@ export dmega=/mnt/yesugei/souen/mega/
 ## homelab
 export dcompose=/mnt/borte/homelab/compose/
 export dvolume=/mnt/borte/homelab/volumes/
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
