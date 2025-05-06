@@ -141,19 +141,19 @@ bindsym $mod+r mode "resize"
 # User keybinds
 
 # Apps
-bindsym $mod+Return exec $term
-bindsym $mod+i exec $music
-bindsym $mod+o exec $chat
-bindsym $mod+p exec $browser
-bindsym $mod+d exec $menu
+bindsym $mod+Return       exec $term
+bindsym $mod+bracketleft  exec $music
+bindsym $mod+bracketright exec $chat
+bindsym $mod+backslash    exec $browser
+bindsym $mod+d            exec $menu
 
 # Emoji picker
 bindsym $mod+period exec ~/.config/tofi/temoji.sh
 
 # Screenshot
-bindsym $mod+Shift+s exec grimshot savecopy window --notify
-bindsym $mod+Alt+s exec grimshot savecopy active --notify
-bindsym $mod+Ctrl+Alt+s exec grimshot savecopy area --notify
+bindsym $mod+p       exec grimshot savecopy active
+bindsym $mod+Shift+p exec grimshot savecopy window
+bindsym $mod+Alt+p   exec grimshot savecopy area
 
 # Special keys to adjust volume via PulseAudio
 bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
