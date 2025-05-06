@@ -1,106 +1,94 @@
 /* SARNAI COLORS */
-@define-color base				rgb ( 23,  38, 	32);
-@define-color surface			rgb ( 33,  54, 	45);
-@define-color overlay			rgb ( 45,  73, 	61);
-@define-color muted 			rgb ( 78, 126, 107);
-@define-color subtle			rgb (144, 187, 170);
-@define-color text				rgb (223, 236, 231);
-@define-color sarnai			rgb (240, 195, 203);
-@define-color anis				rgb (255, 107, 107);
-@define-color	chatsalgan	rgb (229, 149, 	26);
-@define-color els					rgb (204, 162,  77);
-@define-color uvs					rgb (128, 185, 	70);
-@define-color nuur				rgb ( 43, 135, 158);
-@define-color mus					rgb (157, 234, 234);
-@define-color yargui			rgb (213, 179, 229);
+@define-color base rgb (23, 38, 32);
+@define-color surface rgb (33, 54, 45);
+@define-color overlay rgb (45, 73, 61);
+@define-color muted rgb (78, 126, 107);
+@define-color subtle rgb (144, 187, 170);
+@define-color text rgb (223, 236, 231);
+@define-color sarnai rgb (240, 195, 203);
+@define-color anis rgb (255, 107, 107);
+@define-color	chatsalgan rgb (229, 149, 26);
+@define-color els rgb (204, 162, 77);
+@define-color uvs rgb (128, 185, 70);
+@define-color nuur rgb (43, 135, 158);
+@define-color mus rgb (157, 234, 234);
+@define-color yargui rgb (213, 179, 229);
 
 /* GLOBAL */
 * {
-	font-family: Iosevka;
-	font-size: 12pt;
+  font-family: Iosevka;
+  font-size: 12pt;
 }
 
 window#waybar {
-	background-color: @base;
+  background-color: @base;
 }
 
 label.module {
-	color: @base;
-	padding: 0 .4em;
+  color: @base;
+  padding: 0 .4em;
 }
 
 /* LEFT /// WORKSPACES */
+#workspaces {
+  margin-left: 1rem;
+}
+
 #workspaces button {
-	color: @muted;
-	border-radius: 0;
-	padding: 0 .4em;
+  color: @muted;
+  border-radius: 0;
+  padding: 0 .4em;
 }
 
 #workspaces button.visible {
-	color: @sarnai;
+  color: @sarnai;
   font-weight: bold;
 }
 
 #workspaces button.urgent {
-	color: @anis;
+  color: @anis;
 }
 
 #workspaces button.empty {
-	color: @muted;
+  color: @muted;
 }
 
 /* LEFT /// MODE */
 #mode {
-	color: @chatsalgan;
+  color: @chatsalgan;
 }
 
 /* CENTER /// SWAY WINDOW */
 #window {
-	color: @subtle;
+  color: @subtle;
 }
 
 /* RIGHT /// MODULES */
 #pulseaudio {
-	color: @uvs;
+  color: @mus;
 }
 
 #pulseaudio.muted {
-	color: @muted;
+  color: @muted;
 }
 
 #network {
-	color: @mus;
+  color: @nuur;
 }
 
 #network.disabled {
-	color: @muted;
+  color: @muted;
 }
 
 #network.disconnected {
-	color: @anis;
+  color: @anis;
 }
 
 #disk {
-	color: @els;
+  color: @uvs;
 }
 
 #clock.clock {
-	color: @sarnai;
-}
-
-/* RIGHT /// SEPARTOR/SPACER */
-#custom-separator {
-	color: @overlay;
-	padding: 0;
-	margin: 0 .2em;
-}
-
-#custom-spacer {
-	padding: 0;
-	margin: 0 .2em;
-}
-
-#custom-mini-spacer {
-	padding: 0;
-	margin: 0 -2px;
+  margin-right: 1rem;
+  color: @yargui;
 }

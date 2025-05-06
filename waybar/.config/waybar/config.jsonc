@@ -5,23 +5,17 @@
 	"output": "DP-1",
 
   "modules-left": [
-		"custom/spacer",
 		"sway/workspaces",
-		"custom/spacer",
 		"sway/mode"
 	],
-  "modules-center": ["sway/window"],
+
+  "modules-center": [ "sway/window" ],
+
   "modules-right": [
-		"sway/language",
-		"custom/mini-spacer",
 		"pulseaudio",
-		"custom/mini-spacer",
 		"network",
-		"custom/mini-spacer",
 		"disk",
-		"custom/mini-spacer",
-		"clock#clock",
-		"custom/spacer"
+		"clock#clock"
 	],
 
 	"sway/workspaces": {
@@ -56,7 +50,6 @@
 	},
 
 	"disk": {
-		"interval": 60,
 		"format": "[disk {percentage_free}%]",
 		"path": "/mnt/yesugei/"
 	},
@@ -65,19 +58,7 @@
 		"tooltip": false,
     "format": "[{:%y%m%d.%H:%M}]",
 		"interval": 30
-  },
-
-	"custom/spacer": {
-		"tooltip": false,
-		"format": " ",
-		"interval": "once"
-	},
-
-	"custom/mini-spacer": {
-		"tooltip": false,
-		"format": " ",
-		"interval": "once"
-	}
+  }
 },
 {
 	"name": "second",
@@ -116,11 +97,5 @@
 		"tooltip": false,
     "format": "[{:%y%m%d.%H:%M}]",
 		"interval": 30
-  },
-
-	"custom/spacer": {
-		"tooltip": false,
-		"format": " ",
-		"interval": "once"
-	}
+  }
 }]
