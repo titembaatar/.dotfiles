@@ -2,19 +2,22 @@
 2|🐻 bear
 2|🖥️ desktop computer
 2|🗄️ file cabinet
+2|🏡 house with garden
 2|💻 laptop
 2|😉 winking face
+1|💣 bomb
+1|📑 bookmark tabs
 1|📷 camera
 1|💽 computer disk
 1|🐕 dog
 1|🤮 face vomiting
 1|📁 file folder
+1|🔥 fire
 1|⚙️ gear
 1|❤️‍🔥 heart on fire
 1|🕳️ hole
 1|🐎 horse
 1|🏇 horse racing
-1|🏡 house with garden
 1|🏷️ label
 1|🦙 llama
 1|🔒 locked

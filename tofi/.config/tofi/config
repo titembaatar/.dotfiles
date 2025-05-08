@@ -1,72 +1,69 @@
-# A complete reference of available options can be found in `man 5 tofi`.
+# `man 5 tofi`.
 
-### Fonts
-	font = "Iosevka Regular"
-	font-size = 12pt
-	hint-font = true
+# Fonts
+font = "Iosevka Regular"
+font-size = 12pt
+hint-font = true
 
-### Text theming
-	text-color = #dfece7
-	# Prompt
-	prompt-color = #f0c3cb
-	prompt-background-padding = 14
-	# Input
-	input-color = #dfece7
-	# Default
-	default-result-color = #4e7e6b
-	default-result-background-padding = 8
-	# Selection
-	selection-color = #2b879e
-	selection-background-padding = 8
-	# Selection Match
-	selection-match-color = #f0c3cb
+# Layout
+result-spacing = 28
+horizontal = true
+min-input-width = 140
 
-### Text cursor theme
-	text-cursor-style = block
+# Text
+text-color = #dfece7
+prompt-color = #f0c3cb
+prompt-background-padding = 14
+input-color = #dfece7
+default-result-color = #4e7e6b
+default-result-background-padding = 8
+selection-color = #2b879e
+selection-background-padding = 8
+selection-match-color = #f0c3cb
 
-### Text layout
-	prompt-text = " : "
-	prompt-padding = 14
-	placeholder-text = ""
-	result-spacing = 28
-	horizontal = true
-	min-input-width = 140
+# Cursor
+text-cursor-style = block
 
-### Window theming
-	width = 70%
-	height = 25
-	background-color = #172620
-	outline-width = 0
-	border-width = 0
-	corner-radius = 0
-	padding-top = 2
-	padding-bottom = 0
-	padding-left = 16
-	clip-to-padding = false
-	scale = true
+# Prompt
+prompt-text = " : "
+prompt-padding = 12
+placeholder-text = ""
 
-### Window positioning
-	output = ""
-	anchor = top-left
-	exclusive-zone = -1
-	margin-top = 0
-	margin-bottom = 0
-	margin-left = 0
-	margin-right = 0
+# Window
+width = 70%
+height = 25
+background-color = #172620
+outline-width = 0
+border-width = 0
+corner-radius = 0
+padding-top = 2
+padding-bottom = 0
+padding-left = 16
+clip-to-padding = false
+scale = true
 
-### Behaviour
-	hide-cursor = false
-	text-cursor = true
-	history = true
-	matching-algorithm = fuzzy
-	require-match = true
-	auto-accept-single = false
-	hide-input = false
-	hidden-character = "*"
-	physical-keybindings = true
-	print-index = false
-	drun-launch = false
-	terminal= kitty
-	late-keyboard-init = false
-	multi-instance = false
-	ascii-input = false
+# Window position
+output = "DP-1"
+anchor = top-left
+exclusive-zone = -1
+margin-top = 0
+margin-bottom = 0
+margin-left = 0
+margin-right = 0
+
+# Behaviour
+hide-cursor = false
+text-cursor = true
+history = true
+matching-algorithm = fuzzy
+require-match = true
+auto-accept-single = false
+hide-input = false
+hidden-character = "*"
+physical-keybindings = true
+print-index = false
+drun-launch = false
+terminal= kitty
+late-keyboard-init = false
+multi-instance = false
+ascii-input = false
