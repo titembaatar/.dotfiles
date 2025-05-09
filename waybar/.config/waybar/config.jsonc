@@ -5,6 +5,7 @@
 	"output": "DP-1",
 
   "modules-left": [
+		"custom/homelab",
 		"sway/workspaces",
 		"sway/mode"
 	],
@@ -12,14 +13,21 @@
   "modules-center": [ "sway/window" ],
 
   "modules-right": [
-		"pulseaudio",
-		"network",
+    "network",
 		"disk",
-		"clock#clock"
+    "pulseaudio",
+		"clock"
 	],
 
+  "custom/homelab": {
+    "format": "[<span rise='1pt'> {text}</span>]",
+    "exec": "$HOME/.config/waybar/scripts/homelab.sh 2> /dev/null",
+    "interval": 30,
+    "return-type": "json"
+  },
+
 	"sway/workspaces": {
-		"format": "[{name}]",
+    "format": "[{name}]",
 		"disable-scroll": true,
 		"disable-click": true
 	},
@@ -34,30 +42,42 @@
 		"max-length": 50
 	},
 
-	"pulseaudio": {
-		"format": "[vol {volume}]",
-		"format-muted": "[00]",
-		"scroll-step": 1,
-		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-		"on-click-right": "pavucontrol"
-	},
-
 	"network": {
 		"tooltip": false,
-		"format": "[net up]",
-		"format-disabled": "[net nil]",
-		"format-disconnected": "[net down]"
+		"format": "[<span rise='1pt'>󰈀 up</span>]",
+		"format-disabled": "[<span rise='1pt'>󰈀 nil</span>]",
+		"format-disconnected": "[<span rise='1pt'>󰈀 down</span>]"
 	},
 
 	"disk": {
-		"format": "[disk {percentage_free}%]",
-		"path": "/mnt/yesugei/"
+		"format": "[<span rise='1pt'>󰋊</span> {percentage_free}%]",
+		"path": "/mnt/yesugei/",
+    "states": {
+      "warning": 50,
+      "critical": 80
+    }
 	},
 
-  "clock#clock": {
-		"tooltip": false,
-    "format": "[{:%y%m%d.%H:%M}]",
-		"interval": 30
+	"pulseaudio": {
+		"format": "[<span rise='1pt'>{icon}</span> {volume}]",
+    "format-muted": "[<span rise='1pt'></span> 00]",
+    "format-icons": {
+      "default": ["", "", ""]
+    },
+		"scroll-step": 1,
+		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"on-click-right": "pavucontrol",
+    "states": {
+      "high": 100,
+      "mid": 40,
+      "low": 10
+    }
+	},
+
+  "clock": {
+    "format": "[<span rise='1pt'>󰨳</span> {:%m%d.%H%M}]",
+		"interval": 60,
+    "tooltip-format": "<tt>{calendar}</tt>"
   }
 },
 {
@@ -74,7 +94,7 @@
 	],
   "modules-center": ["sway/window"],
   "modules-right": [
-		"clock#clock",
+		"clock",
 		"custom/spacer"
 	],
 
@@ -93,7 +113,7 @@
 		"max-length": 50
 	},
 
-  "clock#clock": {
+  "clock": {
 		"tooltip": false,
     "format": "[{:%y%m%d.%H:%M}]",
 		"interval": 30

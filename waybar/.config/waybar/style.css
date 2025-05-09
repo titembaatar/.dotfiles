@@ -30,8 +30,16 @@ label.module {
 }
 
 /* LEFT /// WORKSPACES */
-#workspaces {
+#custom-homelab {
   margin-left: 1rem;
+}
+
+#custom-homelab.up {
+  color: @uvs;
+}
+
+#custom-homelab.down {
+  color: @anis;
 }
 
 #workspaces button {
@@ -64,16 +72,8 @@ label.module {
 }
 
 /* RIGHT /// MODULES */
-#pulseaudio {
-  color: @mus;
-}
-
-#pulseaudio.muted {
-  color: @muted;
-}
-
 #network {
-  color: @nuur;
+  color: @uvs;
 }
 
 #network.disabled {
@@ -85,10 +85,38 @@ label.module {
 }
 
 #disk {
-  color: @uvs;
+  color: @nuur;
 }
 
-#clock.clock {
+#disk.warning {
+  color: @chatsalgan;
+}
+
+#disk.critical {
+  color: @anis;
+}
+
+#pulseaudio {
+  color: @chatsalgan;
+}
+
+#pulseaudio.high {
+  color: @mus;
+}
+
+#pulseaudio.mid {
+  color: @subtle;
+}
+
+#pulseaudio.low {
+  color: @muted;
+}
+
+#pulseaudio.muted {
+  color: @muted;
+}
+
+#clock {
   margin-right: 1rem;
   color: @yargui;
 }
