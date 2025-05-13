@@ -25,11 +25,13 @@ set $browser zen-browser
 set $music   gtk-launch com.plexamp.Plexamp
 set $chat    gtk-launch dev.vencord.Vesktop
 set $menu    tofi-drun | xargs swaymsg exec --
-set $ssh     ~/.config/tofi/tssh.sh
-set $emoji   ~/.config/tofi/temoji.sh
+
+# Scripts
+set $tofi-ssh     $HOME/.config/tofi/ssh.sh
+set $tofi-emoji   $HOME/.config/tofi/emoji.sh
 
 # Exit mode
-set $exit "[l]ogout [s]leep [h]ibernate [r]eboot [p]oweroff"
+set $exit "[l]ogout [s]leep [r]eboot [p]oweroff"
 
 # Colorscheme sarnai
 set $base			  #172620
@@ -117,7 +119,6 @@ mode $exit {
   bindsym --to-code {
     l exec swaymsg exit
     s exec systemctl suspend,   mode "default"
-    h exec systemctl hibernate, mode "default"
     p exec systemctl poweroff
     r exec systemctl reboot
 
@@ -144,8 +145,8 @@ bindsym $mod+r mode "resize"
 
 # tofi
 bindsym $mod+d      exec $menu
-bindsym $mod+q      exec $ssh
-bindsym $mod+period exec $emoji
+bindsym $mod+q      exec $tofi-ssh
+bindsym $mod+period exec $tofi-emoji
 
 # Apps
 bindsym $mod+Return       exec $term

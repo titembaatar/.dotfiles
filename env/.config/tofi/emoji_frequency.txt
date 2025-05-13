@@ -1,4 +1,5 @@
 3|🦥 sloth
+3|🐋 whale
 2|🐻 bear
 2|🖥️ desktop computer
 2|🗄️ file cabinet
@@ -28,5 +29,4 @@
 1|❄️ snowflake
 1|⚠️ warning
 1|🔫 water pistol
-1|🐋 whale
 1|💮 white flower

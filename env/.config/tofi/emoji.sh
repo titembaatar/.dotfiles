@@ -1,8 +1,10 @@
 #!/bin/bash
 
-EMOJI_FILE="$HOME/.dotfiles/tofi/.config/tofi/emoji.txt"
-EMOJI_FREQ="$HOME/.dotfiles/tofi/.config/tofi/emoji_frequency.txt"
-TOFI_CONFIG="$HOME/.dotfiles/tofi/.config/tofi/config"
+TOFI="$HOME/.dotfiles/env/.config/tofi"
+
+EMOJI_FILE="$TOFI/emoji.txt"
+EMOJI_FREQ="$TOFI/emoji_frequency.txt"
+TOFI_CONFIG="$TOFI/config"
 
 download_emoji_list() {
     curl -s "https://unicode.org/Public/emoji/latest/emoji-test.txt" | \
@@ -48,7 +50,7 @@ if [ -n "$emoji" ]; then
                 split($0, parts, "|")
                 count = parts[1] + 1
                 print count "|" selected
-            } 
+            }
             $0 !~ selected {
                 print $0
             }
