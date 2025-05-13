@@ -1,0 +1,63 @@
+#!/usr/bin/env bash
+
+# All credits go to ThePrimeagen
+# https://github.com/ThePrimeagen/tmux-sessionizer
+
+set -e
+
+FZF_DEFAULT_OPTS='
+  --color=fg:-1,fg+:#90bbaa,bg:-1,bg+:#21362d
+  --color=hl:#f0c3cb,hl+:#ff6b6b,info:#afaf87,marker:#2b879e
+  --color=prompt:#f0c3cb,spinner:#d5b3e5,pointer:#d5b3e5,header:#87afaf
+  --color=border:#2d493d,label:#aeaeae,query:#d9d9d9
+  --padding="1" --prompt="; " --marker="&" --pointer="*"'
+
+switch_to() {
+  if [[ -z $TMUX ]]; then
+    tmux attach-session -t "$1"
+  else
+    tmux switch-client -t "$1"
+  fi
+}
+
+has_session() {
+  tmux list-sessions | grep -q "^$1:"
+}
+
+hydrate() {
+  if [ -f "$2"/.tmux-sessionizer ]; then
+    tmux send-keys -t "$1" "source $2/.tmux-sessionizer" c-M
+  elif [ -f "$HOME"/.tmux-sessionizer ]; then
+    tmux send-keys -t "$1" "source $HOME/.tmux-sessionizer" c-M
+  fi
+}
+
+if [[ $# -eq 1 ]]; then
+  selected=$1
+else
+  selected=$(find \
+    "$HOME" \
+    "$HOME"/projects/ \
+    "$HOME"/.dotfiles/env/.config/ \
+    -mindepth 1 -maxdepth 1 -type d | \
+    FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS" fzf)
+fi
+
+if [[ -z $selected ]]; then
+  exit 0
+fi
+
+selected_name=$(basename "$selected" | tr . _)
+tmux_running=$(pgrep tmux)
+
+if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
+  tmux new-session -ds "$selected_name" -c "$selected"
+  hydrate "$selected_name" "$selected"
+fi
+
+if ! has_session "$selected_name"; then
+  tmux new-session -ds "$selected_name" -c "$selected"
+  hydrate "$selected_name" "$selected"
+fi
+
+switch_to "$selected_name"
