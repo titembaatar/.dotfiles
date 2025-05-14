@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -e
+
+SRC="$HOME/src/tofi"
+
+sudo dnf install -y meson scdoc wayland-protocols-devel
+sudo dnf mark install -y freetype-devel cairo-devel pango-devel wayland-devel libxkbcommon-devel harfbuzz
+
+if [ ! -d "$SRC" ]; then
+  git clone https://github.com/philj56/tofi.git "$SRC"
+fi
+
+cd "$SRC"
+git pull origin master
+meson build
+ninja -C build install

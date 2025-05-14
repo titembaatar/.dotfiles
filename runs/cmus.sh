@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+set -e
 
-sudo dnf install mark cmus
+sudo dnf mark install -y cmus
