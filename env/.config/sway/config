@@ -22,7 +22,7 @@ set $d2 "DP-2"
 # Apps
 set $term    alacritty
 set $browser zen-browser
-set $music   gtk-launch com.plexamp.Plexamp
+set $music   alacritty -e cmus
 set $chat    gtk-launch dev.vencord.Vesktop
 set $menu    tofi-drun | xargs swaymsg exec --
 
