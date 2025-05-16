@@ -39,6 +39,7 @@ else
     "$HOME" \
     "$HOME"/projects/ \
     "$HOME"/.dotfiles/env/.config/ \
+    /mnt/yesugen/ \
     -mindepth 1 -maxdepth 1 -type d | \
     FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS" fzf)
 fi
