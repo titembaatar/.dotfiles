@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 set -e
 
-sudo dnf mark install -y waybar
+sudo dnf install -y waybar
+sudo dnf mark user waybar

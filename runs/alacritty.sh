@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 set -e
 
-sudo dnf mark install -y alacritty
+sudo dnf install -y alacritty
+sudo dnf mark user alacritty

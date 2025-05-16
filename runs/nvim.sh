@@ -4,6 +4,7 @@ set -e
 SRC="$HOME/src/neovim"
 
 sudo dnf install -y ninja-build cmake gcc make gettext curl glibc-gconv-extra
+sudo dnf mark dependency ninja-build cmake gcc make gettext curl glibc-gconv-extra
 
 if [ ! -d "$SRC" ]; then
   git clone https://github.com/neovim/neovim "$SRC"

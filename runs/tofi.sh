@@ -4,7 +4,8 @@ set -e
 SRC="$HOME/src/tofi"
 
 sudo dnf install -y meson scdoc wayland-protocols-devel
-sudo dnf mark install -y freetype-devel cairo-devel pango-devel wayland-devel libxkbcommon-devel harfbuzz
+sudo dnf install -y freetype-devel cairo-devel pango-devel wayland-devel libxkbcommon-devel harfbuzz
+sudo dnf mark dependency freetype-devel cairo-devel pango-devel wayland-devel libxkbcommon-devel harfbuzz
 
 if [ ! -d "$SRC" ]; then
   git clone https://github.com/philj56/tofi.git "$SRC"

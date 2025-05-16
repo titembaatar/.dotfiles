@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 set -e
 
-sudo dnf mark install -y cmus
+sudo dnf install -y cmus
+sudo dnf mark user cmus
