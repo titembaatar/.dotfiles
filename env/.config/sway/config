@@ -8,6 +8,7 @@ include /etc/sway/config.d/*
 
 # Mod4 = logo key, Mod1 = Alt
 set $mod Mod4
+set $alt Mod1
 
 # VIIIIIIIIM
 set $left  h
@@ -22,32 +23,31 @@ set $d2 "DP-2"
 # Apps
 set $term    alacritty
 set $browser zen-browser
-set $music   alacritty -e cmus
+set $music   $term -e cmus
 set $chat    gtk-launch dev.vencord.Vesktop
 set $menu    tofi-drun | xargs swaymsg exec --
 
 # Scripts
-set $tofi-ssh     $HOME/.config/tofi/ssh.sh
-set $tofi-emoji   $HOME/.config/tofi/emoji.sh
+set $tofi-emoji $HOME/.config/tofi/emoji.sh
 
 # Exit mode
 set $exit "[l]ogout [s]leep [r]eboot [p]oweroff"
 
 # Colorscheme sarnai
-set $base			  #172620
-set $surface	  #21362d
-set $overlay	  #2d493d
-set $muted		  #4e7e6b
-set $subtle		  #90bbaa
-set $text			  #dfece7
-set $sarnai		  #f0c3cb
+set $base       #172620
+set $surface    #21362d
+set $overlay    #2d493d
+set $muted      #4e7e6b
+set $subtle     #90bbaa
+set $text       #dfece7
+set $sarnai     #f0c3cb
 set $anis       #ff6b6b
 set $chatsalgan #e5951a
-set $els			  #cca24d
-set $uvs			  #80b946
+set $els        #cca24d
+set $uvs        #80b946
 set $nuur       #2b879e
 set $mus        #9deaea
-set $yargui			#d5b3e5
+set $yargui     #d5b3e5
 
 ###
 ##  EXEC
@@ -143,9 +143,8 @@ bindsym $mod+r mode "resize"
 
 # User keybinds
 
-# tofi
+# Launcher
 bindsym $mod+d      exec $menu
-bindsym $mod+q      exec $tofi-ssh
 bindsym $mod+period exec $tofi-emoji
 
 # Apps
@@ -153,6 +152,7 @@ bindsym $mod+Return       exec $term
 bindsym $mod+bracketleft  exec $music
 bindsym $mod+bracketright exec $chat
 bindsym $mod+backslash    exec $browser
+bindsym $mod+Shift+backslash exec wine ~/.wine/drive_c/users/titem/AppData/Roaming/Path\ of\ Building\ Community\ \(PoE2\)/Path\ of\ Building-PoE2.exe
 
 # Screenshot
 bindsym $mod+p       exec grimshot savecopy active
