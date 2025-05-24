@@ -1,8 +1,10 @@
+3|🍻 clinking beer mugs
 3|🦥 sloth
 3|🐋 whale
 2|🐻 bear
 2|🖥️ desktop computer
 2|🗄️ file cabinet
+2|⚙️ gear
 2|🏡 house with garden
 2|💻 laptop
 2|😉 winking face
@@ -11,10 +13,14 @@
 1|📷 camera
 1|💽 computer disk
 1|🐕 dog
+1|👀 eyes
 1|🤮 face vomiting
 1|📁 file folder
 1|🔥 fire
-1|⚙️ gear
+1|🇩🇪 flag: Germany
+1|🇮🇹 flag: Italy
+1|🇵🇹 flag: Portugal
+1|🇬🇧 flag: United Kingdom
 1|❤️‍🔥 heart on fire
 1|🕳️ hole
 1|🐎 horse
@@ -25,8 +31,11 @@
 1|🤓 nerd face
 1|📖 open book
 1|🧩 puzzle piece
+1|🚀 rocket
 1|🏵️ rosette
+1|😥 sad but relieved face
 1|❄️ snowflake
+1|🤔 thinking face
 1|⚠️ warning
 1|🔫 water pistol
 1|💮 white flower
