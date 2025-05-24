@@ -15,7 +15,7 @@ eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/titem.toml)"
 alias rzsh="source $HOME/.zshrc"
 alias vim="nvim"
 alias dot="cd $HOME/.dotfiles"
-alias souen="cd /mnt/yesugei/souen/"
+alias souen="cd /mnt/yesugei/souen/ && yazi"
 alias lzg="lazygit"
 alias lzd="lazydocker"
 
