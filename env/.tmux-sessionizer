@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if [[ "$(pwd)" == $HOME/projects/ ]]; then
+  clear
+  return
+fi
+
 tmux new-window -dn scratch
 clear
 vim
