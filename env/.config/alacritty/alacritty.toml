@@ -1,10 +1,10 @@
 # General
 [font]
-normal.family = "Iosevka"
+normal.family = "Iosevka Nerd Font"
 normal.style = "Regular"
 bold.style = "Bold"
 italic.style = "Italic"
-bold_italic.style = "Italic"
+bold_italic.style = "BoldItalic"
 size = 20.0
 
 [selection]

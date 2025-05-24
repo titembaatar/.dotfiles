@@ -20,7 +20,7 @@ configuration {
 
     /* Theme settings */
     highlight: bold italic;
-		font: "Iosevka 16";
+		font: "Iosevka Nerd Font 16";
 
     /* Theme colors */
     background:                  @base;
@@ -72,13 +72,13 @@ prompt {
 }
 
 textbox-prompt-colon {
-	font: "Iosevka 24";
+	font: "Iosevka Nerd Font 24";
 	str: "❱";
 	color: @sarnai;
 }
 
 entry {
-	font: "Iosevka bold 24";
+	font: "Iosevka Nerd Font bold 24";
 	placeholder: "";
 	color: @sarnai;
 }
