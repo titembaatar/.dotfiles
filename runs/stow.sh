@@ -4,4 +4,5 @@ source "$HOME"/.dotfiles/pkg
 
 install stow
 
-stow "$HOME"/.dotfiles/env/
+cd "$HOME"/.dotfiles/
+stow env

@@ -7,14 +7,15 @@ if ! command -v git &>/dev/null; then
 fi
 
 git_clone() {
-  if [ -d "$4$3" ]; then
+  if [ -d "$3" ]; then
+    log_info "$3.git exists, skipping"
     return 0
   fi
 
   if [ "$1" = 1 ]; then
-    git clone --recurse-submodules git@github.com:"$2"/"$3".git "$4"
+    git clone --recurse-submodules git@github.com:"$2"/"$3".git
   else
-      git clone git@github.com:"$2"/"$3".git "$4"
+    git clone git@github.com:"$2"/"$3".git
   fi
 }
 
@@ -29,12 +30,17 @@ make_dir "personal"
 make_dir "forks"
 make_dir "src"
 
-git_clone 1 "titembaatar" ".dotfiles" "$HOME/"
+cd "$HOME"
+git_clone 1 "titembaatar" ".dotfiles" "$HOME/.dotfiles"
 
-git_clone 0 "titembaatar" "sarnai" "$HOME/personal/"
-git_clone 0 "titembaatar" "sarnai.nvim" "$HOME/personal/"
+cd "$HOME/personal/"
+git_clone 0 "titembaatar" "sarnai"
+git_clone 0 "titembaatar" "sarnai.nvim"
+git_clone 0 "titembaatar" "homelab"
 
-git_clone 0 "titembaatar" "glance" "$HOME/forks/"
-git_clone 0 "titembaatar" "glance-widgets" "$HOME/forks/"
+cd "$HOME/forks/"
+git_clone 0 "titembaatar" "glance"
+git_clone 0 "titembaatar" "glance-widgets"
 
-git_clone 0 "neovim" "neovim" "$HOME/src/"
+cd "$HOME/src/"
+git_clone 0 "neovim" "neovim"

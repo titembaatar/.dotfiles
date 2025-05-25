@@ -4,6 +4,11 @@ source "$HOME"/.dotfiles/pkg
 
 SRC="$HOME/src/tofi"
 
+if [ -d "$SRC" ]; then
+  log_info "tofi already installed"
+  exit 0
+fi
+
 install meson scdoc wayland-protocols-devel freetype-devel cairo-devel pango-devel wayland-devel libxkbcommon-devel harfbuzz
 
 if [ ! -d "$SRC" ]; then

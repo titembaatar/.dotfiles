@@ -3,7 +3,7 @@ set -e
 source "$HOME"/.dotfiles/pkg
 
 if [ -f "$HOME"/.dotfiles/env/.local/share/fonts/IosevkaNerdFont/IosevkaNerdFont-Regular.ttf ]; then
-  echo "Custom Iosevka font already installed."
+  log_info "Custom Iosevka font already installed."
   exit 0
 fi
 
@@ -37,7 +37,7 @@ npm run build -- ttf-unhinted::Iosevka
 
 TEMP_DIR="/tmp/iosevka-build"
 if [[ -z "$TEMP_DIR" || "$TEMP_DIR" == "/" || "$TEMP_DIR" == "/tmp" ]]; then
-  echo "Error: Invalid TEMP_DIR value: '$TEMP_DIR'"
+  log_error "invalid TEMP_DIR value: '$TEMP_DIR'"
   exit 1
 fi
 
@@ -49,7 +49,7 @@ cp dist/Iosevka/TTF-Unhinted/*.ttf "$TEMP_DIR/"
 cd "$NERD_FONTS_PATCHER"
 
 for font_file in "$TEMP_DIR"/*.ttf; do
-  echo "Patching $(basename "$font_file")..."
+  log_info "patching $(basename "$font_file")..."
   fontforge -script font-patcher \
     --complete \
     --careful \
@@ -66,7 +66,9 @@ if [[ -d "$TEMP_DIR" && "$TEMP_DIR" != "/" && "$TEMP_DIR" != "/tmp" ]]; then
 fi
 
 fc-cache -fv
-stow "$HOME"/.dotfiles/env/
+
+cd "$HOME"/.dotfiles
+stow env
 
 echo
-echo "Iosevka Nerd Font installation completed!"
+log_success "Iosevka Nerd Font installation completed!"

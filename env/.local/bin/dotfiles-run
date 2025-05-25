@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 set -e
+source "$HOME"/.dotfiles/pkg
 
 dotfiles_dir="$HOME/.dotfiles"
 runs_dir="$dotfiles_dir/runs"
-env_dir="$dotfiles_dir/env"
 
 if [[ ! -d "$dotfiles_dir" ]]; then
-  echo "[ERROR] $dotfiles_dir not found"
+  log_error "$dotfiles_dir not found"
   exit 1
 fi
 
 if [[ ! -d "$runs_dir" ]]; then
-  echo "[ERROR] $runs_dir not found"
+  log_error "$runs_dir not found"
   exit 1
 fi
 
@@ -24,7 +24,7 @@ fi
 scripts=$(find "$runs_dir" -mindepth 1 -maxdepth 1 -executable)
 
 if [[ -z "$scripts" ]]; then
-  echo "[WARN ] no executable scripts found in $runs_dir"
+  log_warn "no executable scripts found in $runs_dir"
   exit 1
 fi
 
@@ -32,19 +32,20 @@ for script in $scripts; do
   script_name=$(basename "$script")
 
   if echo "$script_name" | grep -vq "$grep"; then
-    echo "grep '$grep' filtered out $script_name"
+    log_info "grep '$grep' filtered out $script_name"
     continue
   fi
 
   if ! "$script"; then
-    echo "[ERROR] $script_name failed"
+    log_error "$script_name failed"
     exit 1
   fi
 
-  echo "[INFO ] completed $script_name"
+  log_success "completed $script_name"
 done
 
-stow "$env_dir"
+cd "$dotfiles_dir"
+stow env
 
-echo "[INFO ] all scripts completed successfully!"
+log_success "all scripts completed successfully!"
 
