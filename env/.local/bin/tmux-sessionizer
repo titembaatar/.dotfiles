@@ -37,7 +37,9 @@ if [[ $# -eq 1 ]]; then
 else
   selected=$(find \
     "$HOME" \
-    "$HOME"/projects/ \
+    "$HOME"/personal/ \
+    "$HOME"/forks/ \
+    "$HOME"/src/ \
     "$HOME"/.dotfiles/env/.config/ \
     /mnt/yesugen/ \
     -mindepth 1 -maxdepth 1 -type d | \
