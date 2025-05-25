@@ -1,13 +1,18 @@
 #!/usr/bin/env bash
 set -e
+source "$HOME"/.dotfiles/pkg
+
+if [ -f "$HOME"/.dotfiles/env/.local/share/fonts/IosevkaNerdFont/IosevkaNerdFont-Regular.ttf ]; then
+  echo "Custom Iosevka font already installed."
+  exit 0
+fi
 
 IOSEVKA_SRC="$HOME/src/Iosevka"
 NERD_FONTS_PATCHER="$HOME/src/nerd-fonts-patcher"
 FONT_OUTPUT_DIR="$HOME/.dotfiles/env/.local/share/fonts/IosevkaNerdFont"
 TEMP_DIR="/tmp/iosevka-build"
 
-sudo dnf install -y nodejs npm ttfautohint fontforge python3 wget unzip
-sudo dnf mark dependency -y nodejs npm ttfautohint fontforge python3 wget unzip
+install nodejs npm ttfautohint fontforge python3 wget unzip
 
 if [ ! -d "$IOSEVKA_SRC" ]; then
   mkdir -p "$(dirname "$IOSEVKA_SRC")"

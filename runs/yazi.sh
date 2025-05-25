@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
+source "$HOME"/.dotfiles/pkg
 
 sudo dnf copr enable -y lihaohong/yazi
-sudo dnf install -y yazi
-sudo dnf mark user yazi
+install yazi
 

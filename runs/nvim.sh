@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -e
+source "$HOME"/.dotfiles/pkg
 
 src_dir="$HOME/src/neovim"
 
-sudo dnf install -y ninja-build cmake gcc make gettext curl glibc-gconv-extra
-sudo dnf mark dependency ninja-build cmake gcc make gettext curl glibc-gconv-extra
+install ninja-build cmake gcc make gettext curl glibc-gconv-extra
 
 if [ ! -d "$src_dir" ]; then
   mkdir -p "$src_dir"

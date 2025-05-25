@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -e
+source "$HOME"/.dotfiles/pkg
 
 SRC="$HOME/src/davinci-resolve"
 RUN="$SRC/run"
@@ -12,8 +13,7 @@ if dnf repo list | grep -q 'rpmfusion-free'; then
 fi
 
 # dependencies
-sudo dnf install -y libxcrypt-compat libcurl libcurl-devel mesa-libGLU fuse-libs unzip
-sudo dnf mark dependency libxcrypt-compat libcurl libcurl-devel mesa-libGLU fuse-libs unzip
+install libxcrypt-compat libcurl libcurl-devel mesa-libGLU fuse-libs unzip
 
 # wget davinci resolve
 mkdir -p "$SRC"
@@ -27,8 +27,7 @@ SKIP_PACKAGE_CHECK=1 "$RUN"/*.run
 # rm -rf "$RUN"
 
 # nvidia drivers
-sudo dnf install -y akmod-nvidia xorg-x11-drv-nvidia-cuda
-sudo dnf mark user akmod-nvidia xorg-x11-drv-nvidia-cuda
+install akmod-nvidia xorg-x11-drv-nvidia-cuda
 
 # codecs
 sudo dnf upgrade @multimedia --setopt='install_weak_deps=False' --exclude=PackageKit-gstreamer-plugin

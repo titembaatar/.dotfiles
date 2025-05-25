@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -e
+source "$HOME"/.dotfiles/pkg
 
-sudo dnf install -y tmux
-sudo dnf mark user tmux
+install tmux
+
 git clone https://github.com/tmux-plugins/tpm ~/.dotfiles/env/.config/tmux/plugins/tpm

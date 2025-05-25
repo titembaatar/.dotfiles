@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -e
+source "$HOME"/.dotfiles/pkg
 
-sudo dnf install -y stow
-sudo dnf mark user stow
+install stow
+
 stow "$HOME"/.dotfiles/env/

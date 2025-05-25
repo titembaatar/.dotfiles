@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 set -e
+source "$HOME"/.dotfiles/pkg
 
-sudo dnf install -y cmus
-sudo dnf mark user cmus
+install cmus

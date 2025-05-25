@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 set -e
+source "$HOME"/.dotfiles/pkg
 
-sudo dnf install -y alacritty
-sudo dnf mark user alacritty
+install alacritty

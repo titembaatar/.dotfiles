@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 set -e
+source "$HOME"/.dotfiles/pkg
+
+if ! command -v git &>/dev/null; then
+  install git
+fi
 
 git_clone() {
   if [ -d "$4$3" ]; then
