@@ -61,12 +61,7 @@ if [[ -d "$TEMP_DIR" && "$TEMP_DIR" != "/" && "$TEMP_DIR" != "/tmp" ]]; then
 fi
 
 fc-cache -fv
+stow "$HOME"/.dotfiles/env/
 
+echo
 echo "Iosevka Nerd Font installation completed!"
-echo "Font files installed to: $FONT_OUTPUT_DIR"
-echo ""
-echo "Available font names should include:"
-echo "- Iosevka Nerd Font"
-echo "- Iosevka Nerd Font Mono"
-echo ""
-echo "Update your terminal/editor config to use 'Iosevka Nerd Font' or 'Iosevka Nerd Font Mono'"
