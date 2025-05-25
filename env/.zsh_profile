@@ -1,0 +1,33 @@
+# path
+addToPath() {
+    if [[ ! -z "$2" ]] || [[ "$PATH" != *"$1"* ]]; then
+        export PATH=$1:$PATH
+    fi
+}
+
+addToPath "$HOME/.local/bin"
+
+# aliases
+alias rzsh="source $HOME/.zshrc"
+alias vim="nvim"
+alias lzg="lazygit"
+alias lzd="lazydocker"
+
+alias souen="cd /mnt/yesugei/souen/ && yazi"
+
+# defaults
+export EDITOR="nvim"
+export BROWSER="zen-browser"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.cache"
+export FZF_DEFAULT_OPTS='
+  --color=fg:-1,fg+:#90bbaa,bg:-1,bg+:#21362d
+  --color=hl:#f0c3cb,hl+:#ff6b6b,info:#afaf87,marker:#2b879e
+  --color=prompt:#f0c3cb,spinner:#d5b3e5,pointer:#d5b3e5,header:#87afaf
+  --color=border:#2d493d,label:#aeaeae,query:#d9d9d9
+  --padding="1" --prompt="; " --marker="&" --pointer="*"'
+
+# ohmyposh
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/titem.toml)"
+
