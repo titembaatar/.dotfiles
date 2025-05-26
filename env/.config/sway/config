@@ -50,6 +50,7 @@ set $chat    gtk-launch dev.vencord.Vesktop
 set $sessioniser     $HOME/.dotfiles/env/.local/bin/tmux-sessioniser
 set $ssh-sessioniser $HOME/.dotfiles/env/.local/bin/ssh-sessioniser
 set $fzf-cmus        $HOME/.dotfiles/env/.local/bin/fzf-cmus
+set $fzf-emoji       $HOME/.dotfiles/env/.local/bin/fzf-emoji
 
 # exit mode
 set $exit "[l]ogout [s]leep [r]eboot [p]oweroff"
@@ -146,10 +147,11 @@ bindsym $mod+r mode "resize"
 
 
 # launcher
-bindsym $mod+d exec $menu
-bindsym $mod+u exec $term -T sessioniser -e $sessioniser
-bindsym $mod+i exec $term -T sessioniser -e $ssh-sessioniser
-bindsym $mod+m exec $term -T sessioniser -e $fzf-cmus
+bindsym $mod+d      exec $menu
+bindsym $mod+u      exec $term -T sessioniser -e $sessioniser
+bindsym $mod+i      exec $term -T sessioniser -e $ssh-sessioniser
+bindsym $mod+m      exec $term -T sessioniser -e $fzf-cmus
+bindsym $mod+period exec $term -T sessioniser -e $fzf-emoji
 
 # apps
 bindsym $mod+Return       exec $term

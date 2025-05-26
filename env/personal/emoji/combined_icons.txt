@@ -1,0 +1,7384 @@
+glyph  cod account
+glyph  cod activate breakpoints
+glyph  cod add
+glyph  cod archive
+glyph  cod arrow both
+glyph  cod arrow circle down
+glyph  cod arrow circle left
+glyph  cod arrow circle right
+glyph  cod arrow circle up
+glyph  cod arrow down
+glyph  cod arrow left
+glyph  cod arrow right
+glyph  cod arrow small down
+glyph  cod arrow small left
+glyph  cod arrow small right
+glyph  cod arrow small up
+glyph  cod arrow swap
+glyph  cod arrow up
+glyph  cod azure
+glyph  cod azure devops
+glyph  cod beaker
+glyph  cod beaker stop
+glyph  cod bell
+glyph  cod bell dot
+glyph  cod bell slash
+glyph  cod bell slash dot
+glyph  cod blank
+glyph  cod bold
+glyph  cod book
+glyph  cod bookmark
+glyph  cod bracket dot
+glyph  cod bracket error
+glyph  cod briefcase
+glyph  cod broadcast
+glyph  cod browser
+glyph  cod bug
+glyph  cod calendar
+glyph  cod call incoming
+glyph  cod call outgoing
+glyph  cod case sensitive
+glyph  cod check
+glyph  cod check all
+glyph  cod checklist
+glyph  cod chevron down
+glyph  cod chevron left
+glyph  cod chevron right
+glyph  cod chevron up
+glyph  cod chip
+glyph  cod chrome close
+glyph  cod chrome maximize
+glyph  cod chrome minimize
+glyph  cod chrome restore
+glyph  cod circle
+glyph  cod circle filled
+glyph  cod circle large
+glyph  cod circle large filled
+glyph  cod circle slash
+glyph  cod circle small
+glyph  cod circle small filled
+glyph  cod circuit board
+glyph  cod clear all
+glyph  cod clippy
+glyph  cod close
+glyph  cod close all
+glyph  cod cloud
+glyph  cod cloud download
+glyph  cod cloud upload
+glyph  cod code
+glyph  cod coffee
+glyph  cod collapse all
+glyph  cod color mode
+glyph  cod combine
+glyph  cod comment
+glyph  cod comment discussion
+glyph  cod comment draft
+glyph  cod comment unresolved
+glyph  cod compass
+glyph  cod compass active
+glyph  cod compass dot
+glyph  cod copilot
+glyph  cod copy
+glyph  cod credit card
+glyph  cod dash
+glyph  cod dashboard
+glyph  cod database
+glyph  cod debug
+glyph  cod debug all
+glyph  cod debug alt
+glyph  cod debug alt small
+glyph  cod debug breakpoint conditional
+glyph  cod debug breakpoint conditional unverified
+glyph  cod debug breakpoint data
+glyph  cod debug breakpoint data unverified
+glyph  cod debug breakpoint function
+glyph  cod debug breakpoint function unverified
+glyph  cod debug breakpoint log
+glyph  cod debug breakpoint log unverified
+glyph  cod debug breakpoint unsupported
+glyph  cod debug console
+glyph  cod debug continue
+glyph  cod debug continue small
+glyph  cod debug coverage
+glyph  cod debug disconnect
+glyph  cod debug line by line
+glyph  cod debug pause
+glyph  cod debug rerun
+glyph  cod debug restart
+glyph  cod debug restart frame
+glyph  cod debug reverse continue
+glyph  cod debug stackframe
+glyph  cod debug stackframe active
+glyph  cod debug start
+glyph  cod debug step back
+glyph  cod debug step into
+glyph  cod debug step out
+glyph  cod debug step over
+glyph  cod debug stop
+glyph  cod desktop download
+glyph  cod device camera
+glyph  cod device camera video
+glyph  cod device mobile
+glyph  cod diff
+glyph  cod diff added
+glyph  cod diff ignored
+glyph  cod diff modified
+glyph  cod diff removed
+glyph  cod diff renamed
+glyph  cod discard
+glyph  cod edit
+glyph  cod editor layout
+glyph  cod ellipsis
+glyph  cod empty window
+glyph  cod error
+glyph  cod error small
+glyph  cod exclude
+glyph  cod expand all
+glyph  cod export
+glyph  cod extensions
+glyph  cod eye
+glyph  cod eye closed
+glyph  cod feedback
+glyph  cod file
+glyph  cod file binary
+glyph  cod file code
+glyph  cod file media
+glyph  cod file pdf
+glyph  cod files
+glyph  cod file submodule
+glyph  cod file symlink directory
+glyph  cod file symlink file
+glyph  cod file zip
+glyph  cod filter
+glyph  cod filter filled
+glyph  cod flame
+glyph  cod fold
+glyph  cod fold down
+glyph  cod folder
+glyph  cod folder active
+glyph  cod folder library
+glyph  cod folder opened
+glyph  cod fold up
+glyph  cod game
+glyph  cod gear
+glyph  cod gift
+glyph  cod gist secret
+glyph  cod git commit
+glyph  cod git compare
+glyph  cod git fetch
+glyph  cod github
+glyph  cod github action
+glyph  cod github alt
+glyph  cod github inverted
+glyph  cod git merge
+glyph  cod git pull request
+glyph  cod git pull request closed
+glyph  cod git pull request create
+glyph  cod git pull request draft
+glyph  cod git pull request go to changes
+glyph  cod git pull request new changes
+glyph  cod globe
+glyph  cod go to file
+glyph  cod grabber
+glyph  cod graph
+glyph  cod graph left
+glyph  cod graph line
+glyph  cod graph scatter
+glyph  cod gripper
+glyph  cod group by ref type
+glyph  cod heart
+glyph  cod heart filled
+glyph  cod history
+glyph  cod home
+glyph  cod horizontal rule
+glyph  cod hubot
+glyph  cod inbox
+glyph  cod indent
+glyph  cod info
+glyph  cod insert
+glyph  cod inspect
+glyph  cod issue draft
+glyph  cod issue reopened
+glyph  cod issues
+glyph  cod italic
+glyph  cod jersey
+glyph  cod json
+glyph  cod kebab vertical
+glyph  cod key
+glyph  cod law
+glyph  cod layers
+glyph  cod layers active
+glyph  cod layers dot
+glyph  cod layout
+glyph  cod layout activitybar left
+glyph  cod layout activitybar right
+glyph  cod layout centered
+glyph  cod layout menubar
+glyph  cod layout panel
+glyph  cod layout panel center
+glyph  cod layout panel justify
+glyph  cod layout panel left
+glyph  cod layout panel off
+glyph  cod layout panel right
+glyph  cod layout sidebar left
+glyph  cod layout sidebar left off
+glyph  cod layout sidebar right
+glyph  cod layout sidebar right off
+glyph  cod layout statusbar
+glyph  cod library
+glyph  cod lightbulb
+glyph  cod lightbulb autofix
+glyph  cod link
+glyph  cod link external
+glyph  cod list filter
+glyph  cod list flat
+glyph  cod list ordered
+glyph  cod list selection
+glyph  cod list tree
+glyph  cod list unordered
+glyph  cod live share
+glyph  cod loading
+glyph  cod location
+glyph  cod lock
+glyph  cod lock small
+glyph  cod magnet
+glyph  cod mail
+glyph  cod mail read
+glyph  cod map
+glyph  cod map filled
+glyph  cod markdown
+glyph  cod megaphone
+glyph  cod mention
+glyph  cod menu
+glyph  cod merge
+glyph  cod mic
+glyph  cod mic filled
+glyph  cod milestone
+glyph  cod mirror
+glyph  cod mortar board
+glyph  cod move
+glyph  cod multiple windows
+glyph  cod music
+glyph  cod mute
+glyph  cod new file
+glyph  cod new folder
+glyph  cod newline
+glyph  cod no newline
+glyph  cod note
+glyph  cod notebook
+glyph  cod notebook template
+glyph  cod octoface
+glyph  cod open preview
+glyph  cod organization
+glyph  cod output
+glyph  cod package
+glyph  cod paintcan
+glyph  cod pass
+glyph  cod pass filled
+glyph  cod person
+glyph  cod person add
+glyph  cod piano
+glyph  cod pie chart
+glyph  cod pin
+glyph  cod pinned
+glyph  cod pinned dirty
+glyph  cod play
+glyph  cod play circle
+glyph  cod plug
+glyph  cod preserve case
+glyph  cod preview
+glyph  cod primitive square
+glyph  cod project
+glyph  cod pulse
+glyph  cod question
+glyph  cod quote
+glyph  cod radio tower
+glyph  cod reactions
+glyph  cod record
+glyph  cod record keys
+glyph  cod record small
+glyph  cod redo
+glyph  cod references
+glyph  cod refresh
+glyph  cod regex
+glyph  cod remote
+glyph  cod remote explorer
+glyph  cod remove
+glyph  cod replace
+glyph  cod replace all
+glyph  cod reply
+glyph  cod repo
+glyph  cod repo clone
+glyph  cod repo force push
+glyph  cod repo forked
+glyph  cod repo pull
+glyph  cod repo push
+glyph  cod report
+glyph  cod request changes
+glyph  cod rocket
+glyph  cod root folder
+glyph  cod root folder opened
+glyph  cod rss
+glyph  cod ruby
+glyph  cod run above
+glyph  cod run all
+glyph  cod run below
+glyph  cod run errors
+glyph  cod save
+glyph  cod save all
+glyph  cod save as
+glyph  cod screen full
+glyph  cod screen normal
+glyph  cod search
+glyph  cod search fuzzy
+glyph  cod search stop
+glyph  cod send
+glyph  cod server
+glyph  cod server environment
+glyph  cod server process
+glyph  cod settings
+glyph  cod settings gear
+glyph  cod shield
+glyph  cod sign in
+glyph  cod sign out
+glyph  cod smiley
+glyph  cod snake
+glyph  cod sort precedence
+glyph  cod source control
+glyph  cod sparkle
+glyph  cod split horizontal
+glyph  cod split vertical
+glyph  cod squirrel
+glyph  cod star empty
+glyph  cod star full
+glyph  cod star half
+glyph  cod stop circle
+glyph  cod symbol array
+glyph  cod symbol boolean
+glyph  cod symbol class
+glyph  cod symbol color
+glyph  cod symbol constant
+glyph  cod symbol enum
+glyph  cod symbol enum member
+glyph  cod symbol event
+glyph  cod symbol field
+glyph  cod symbol file
+glyph  cod symbol interface
+glyph  cod symbol key
+glyph  cod symbol keyword
+glyph  cod symbol method
+glyph  cod symbol misc
+glyph  cod symbol namespace
+glyph  cod symbol numeric
+glyph  cod symbol operator
+glyph  cod symbol parameter
+glyph  cod symbol property
+glyph  cod symbol ruler
+glyph  cod symbol snippet
+glyph  cod symbol string
+glyph  cod symbol structure
+glyph  cod symbol variable
+glyph  cod sync
+glyph  cod sync ignored
+glyph  cod table
+glyph  cod tag
+glyph  cod target
+glyph  cod tasklist
+glyph  cod telescope
+glyph  cod terminal
+glyph  cod terminal bash
+glyph  cod terminal cmd
+glyph  cod terminal debian
+glyph  cod terminal linux
+glyph  cod terminal powershell
+glyph  cod terminal tmux
+glyph  cod terminal ubuntu
+glyph  cod text size
+glyph  cod three bars
+glyph  cod thumbsdown
+glyph  cod thumbsdown filled
+glyph  cod thumbsup
+glyph  cod thumbsup filled
+glyph  cod tools
+glyph  cod trash
+glyph  cod triangle down
+glyph  cod triangle left
+glyph  cod triangle right
+glyph  cod triangle up
+glyph  cod twitter
+glyph  cod type hierarchy
+glyph  cod type hierarchy sub
+glyph  cod type hierarchy super
+glyph  cod unfold
+glyph  cod ungroup by ref type
+glyph  cod unlock
+glyph  cod unmute
+glyph  cod unverified
+glyph  cod variable group
+glyph  cod verified
+glyph  cod verified filled
+glyph  cod versions
+glyph  cod vm
+glyph  cod vm active
+glyph  cod vm connect
+glyph  cod vm outline
+glyph  cod vm running
+glyph  cod vr
+glyph  cod wand
+glyph  cod warning
+glyph  cod watch
+glyph  cod whitespace
+glyph  cod whole word
+glyph  cod window
+glyph  cod word wrap
+glyph  cod workspace trusted
+glyph  cod workspace unknown
+glyph  cod workspace untrusted
+glyph  cod zoom in
+glyph  cod zoom out
+glyph  custom ada
+glyph  custom asm
+glyph  custom astro
+glyph  custom bazel
+glyph  custom c
+glyph  custom chuck
+glyph  custom common lisp
+glyph  custom cpp
+glyph  custom crystal
+glyph  custom css
+glyph  custom default
+glyph  custom electron
+glyph  custom elixir
+glyph  custom elm
+glyph  custom emacs
+glyph  custom fennel
+glyph  custom firebase
+glyph  custom folder
+glyph  custom folder config
+glyph  custom folder git
+glyph  custom folder github
+glyph  custom folder npm
+glyph  custom folder oct
+glyph  custom folder open
+glyph  custom go
+glyph  custom home
+glyph  custom kotlin
+glyph  custom msdos
+glyph  custom neovim
+glyph  custom orgmode
+glyph  custom play arrow
+glyph  custom prettier
+glyph  custom purescript
+glyph  custom ruby
+glyph  custom scheme
+glyph  custom toml
+glyph  custom vim
+glyph  custom vitruvian
+glyph  custom v lang
+glyph  custom windows
+glyph  dev aarch64
+glyph  dev adonisjs
+glyph  dev aftereffects
+glyph  dev akka
+glyph  dev algolia
+glyph  dev alpinejs
+glyph  dev amazonwebservices
+glyph  dev anaconda
+glyph  dev android
+glyph  dev androidstudio
+glyph  dev angular
+glyph  dev angularjs
+glyph  dev angularmaterial
+glyph  dev ansible
+glyph  dev antdesign
+glyph  dev apache
+glyph  dev apacheairflow
+glyph  dev apachekafka
+glyph  dev apachespark
+glyph  dev apl
+glyph  dev appcelerator
+glyph  dev apple
+glyph  dev appwrite
+glyph  dev archlinux
+glyph  dev arduino
+glyph  dev argocd
+glyph  dev astro
+glyph  dev atom
+glyph  dev awk
+glyph  dev axios
+glyph  dev azure
+glyph  dev azuredevops
+glyph  dev azuresqldatabase
+glyph  dev babel
+glyph  dev backbonejs
+glyph  dev ballerina
+glyph  dev bamboo
+glyph  dev bash
+glyph  dev beats
+glyph  dev behance
+glyph  dev bitbucket
+glyph  dev blazor
+glyph  dev blender
+glyph  dev bootstrap
+glyph  dev bower
+glyph  dev browserstack
+glyph  dev bulma
+glyph  dev bun
+glyph  dev cairo
+glyph  dev cakephp
+glyph  dev canva
+glyph  dev capacitor
+glyph  dev carbon
+glyph  dev cassandra
+glyph  dev centos
+glyph  dev ceylon
+glyph  dev chrome
+glyph  dev circleci
+glyph  dev c lang
+glyph  dev clarity
+glyph  dev clion
+glyph  dev clojure
+glyph  dev clojure alt
+glyph  dev clojurescript
+glyph  dev cloudflare
+glyph  dev cloudflareworkers
+glyph  dev cmake
+glyph  dev codeac
+glyph  dev codecov
+glyph  dev codeigniter
+glyph  dev codepen
+glyph  dev coffeescript
+glyph  dev composer
+glyph  dev confluence
+glyph  dev consul
+glyph  dev contao
+glyph  dev corejs
+glyph  dev cosmosdb
+glyph  dev couchbase
+glyph  dev couchdb
+glyph  dev cplusplus
+glyph  dev crystal
+glyph  dev csharp
+glyph  dev css3
+glyph  dev css3 full
+glyph  dev cucumber
+glyph  dev cypressio
+glyph  dev d3js
+glyph  dev dart
+glyph  dev database
+glyph  dev datagrip
+glyph  dev dataspell
+glyph  dev dbeaver
+glyph  dev debian
+glyph  dev denojs
+glyph  dev devicon
+glyph  dev digitalocean
+glyph  dev discordjs
+glyph  dev django
+glyph  dev djangorest
+glyph  dev dlang
+glyph  dev docker
+glyph  dev doctrine
+glyph  dev dotnet
+glyph  dev dotnetcore
+glyph  dev dreamweaver
+glyph  dev dropbox
+glyph  dev dropwizard
+glyph  dev drupal
+glyph  dev dynamodb
+glyph  dev eclipse
+glyph  dev ecto
+glyph  dev elasticsearch
+glyph  dev electron
+glyph  dev eleventy
+glyph  dev elixir
+glyph  dev elm
+glyph  dev emacs
+glyph  dev embeddedc
+glyph  dev ember
+glyph  dev envoy
+glyph  dev erlang
+glyph  dev eslint
+glyph  dev express
+glyph  dev facebook
+glyph  dev fastapi
+glyph  dev fastify
+glyph  dev faunadb
+glyph  dev feathersjs
+glyph  dev fedora
+glyph  dev figma
+glyph  dev filezilla
+glyph  dev firebase
+glyph  dev firefox
+glyph  dev flask
+glyph  dev flutter
+glyph  dev fortran
+glyph  dev foundation
+glyph  dev framermotion
+glyph  dev framework7
+glyph  dev fsharp
+glyph  dev gatling
+glyph  dev gatsby
+glyph  dev gazebo
+glyph  dev gcc
+glyph  dev gentoo
+glyph  dev ghost
+glyph  dev ghost small
+glyph  dev gimp
+glyph  dev git
+glyph  dev gitbook
+glyph  dev git branch
+glyph  dev git commit
+glyph  dev git compare
+glyph  dev github
+glyph  dev githubactions
+glyph  dev githubcodespaces
+glyph  dev github full
+glyph  dev gitlab
+glyph  dev git merge
+glyph  dev gitpod
+glyph  dev git pull request
+glyph  dev gitter
+glyph  dev gnu
+glyph  dev go
+glyph  dev godot
+glyph  dev goland
+glyph  dev google
+glyph  dev googlecloud
+glyph  dev gradle
+glyph  dev grafana
+glyph  dev grails
+glyph  dev graphql
+glyph  dev groovy
+glyph  dev grpc
+glyph  dev grunt
+glyph  dev gulp
+glyph  dev hadoop
+glyph  dev handlebars
+glyph  dev hardhat
+glyph  dev harvester
+glyph  dev haskell
+glyph  dev haxe
+glyph  dev helm
+glyph  dev heroku
+glyph  dev hibernate
+glyph  dev homebrew
+glyph  dev html5
+glyph  dev hugo
+glyph  dev ie
+glyph  dev ifttt
+glyph  dev illustrator
+glyph  dev influxdb
+glyph  dev inkscape
+glyph  dev insomnia
+glyph  dev intellij
+glyph  dev ionic
+glyph  dev jaegertracing
+glyph  dev jamstack
+glyph  dev jasmine
+glyph  dev java
+glyph  dev javascript
+glyph  dev javascript alt
+glyph  dev jeet
+glyph  dev jekyll
+glyph  dev jenkins
+glyph  dev jest
+glyph  dev jetbrains
+glyph  dev jetpackcompose
+glyph  dev jira
+glyph  dev jiraalign
+glyph  dev jquery
+glyph  dev json
+glyph  dev jule
+glyph  dev julia
+glyph  dev junit
+glyph  dev jupyter
+glyph  dev k3os
+glyph  dev k3s
+glyph  dev k6
+glyph  dev kaggle
+glyph  dev karatelabs
+glyph  dev karma
+glyph  dev kdeneon
+glyph  dev keras
+glyph  dev kibana
+glyph  dev knexjs
+glyph  dev knockout
+glyph  dev kotlin
+glyph  dev krakenjs
+glyph  dev ktor
+glyph  dev kubernetes
+glyph  dev labview
+glyph  dev laravel
+glyph  dev latex
+glyph  dev less
+glyph  dev linkedin
+glyph  dev linux
+glyph  dev liquibase
+glyph  dev livewire
+glyph  dev llvm
+glyph  dev lodash
+glyph  dev logstash
+glyph  dev lua
+glyph  dev lumen
+glyph  dev magento
+glyph  dev mariadb
+glyph  dev markdown
+glyph  dev materializecss
+glyph  dev materialui
+glyph  dev matlab
+glyph  dev matplotlib
+glyph  dev maven
+glyph  dev maya
+glyph  dev meteor
+glyph  dev meteorfull
+glyph  dev microsoftsqlserver
+glyph  dev minitab
+glyph  dev mithril
+glyph  dev mobx
+glyph  dev mocha
+glyph  dev modx
+glyph  dev moleculer
+glyph  dev mongodb
+glyph  dev mongoose
+glyph  dev moodle
+glyph  dev mootools badge
+glyph  dev mozilla
+glyph  dev msdos
+glyph  dev mysql
+glyph  dev nano
+glyph  dev neo4j
+glyph  dev neovim
+glyph  dev nestjs
+glyph  dev netlify
+glyph  dev networkx
+glyph  dev nextjs
+glyph  dev nginx
+glyph  dev ngrx
+glyph  dev nhibernate
+glyph  dev nim
+glyph  dev nimble
+glyph  dev nixos
+glyph  dev nodejs
+glyph  dev nodejs small
+glyph  dev nodemon
+glyph  dev nodewebkit
+glyph  dev nomad
+glyph  dev norg
+glyph  dev notion
+glyph  dev npm
+glyph  dev nuget
+glyph  dev numpy
+glyph  dev nuxtjs
+glyph  dev oauth
+glyph  dev objectivec
+glyph  dev ocaml
+glyph  dev ohmyzsh
+glyph  dev okta
+glyph  dev openal
+glyph  dev openapi
+glyph  dev opencl
+glyph  dev opencv
+glyph  dev opengl
+glyph  dev openstack
+glyph  dev opensuse
+glyph  dev opentelemetry
+glyph  dev opera
+glyph  dev oracle
+glyph  dev ory
+glyph  dev p5js
+glyph  dev packer
+glyph  dev pandas
+glyph  dev perl
+glyph  dev pfsense
+glyph  dev phalcon
+glyph  dev phoenix
+glyph  dev photonengine
+glyph  dev photoshop
+glyph  dev php
+glyph  dev phpstorm
+glyph  dev playwright
+glyph  dev plotly
+glyph  dev pnpm
+glyph  dev podman
+glyph  dev poetry
+glyph  dev polygon
+glyph  dev portainer
+glyph  dev postcss
+glyph  dev postgresql
+glyph  dev postman
+glyph  dev powershell
+glyph  dev premierepro
+glyph  dev prisma
+glyph  dev processing
+glyph  dev prolog
+glyph  dev prometheus
+glyph  dev protractor
+glyph  dev pulsar
+glyph  dev pulumi
+glyph  dev puppeteer
+glyph  dev purescript
+glyph  dev putty
+glyph  dev pycharm
+glyph  dev pypi
+glyph  dev pyscript
+glyph  dev pytest
+glyph  dev python
+glyph  dev pytorch
+glyph  dev qodana
+glyph  dev qt
+glyph  dev quarkus
+glyph  dev quasar
+glyph  dev qwik
+glyph  dev r
+glyph  dev rabbitmq
+glyph  dev rails
+glyph  dev railway
+glyph  dev rancher
+glyph  dev raspberry pi
+glyph  dev reach
+glyph  dev react
+glyph  dev reactbootstrap
+glyph  dev reactnavigation
+glyph  dev reactrouter
+glyph  dev readthedocs
+glyph  dev realm
+glyph  dev rect
+glyph  dev redhat
+glyph  dev redis
+glyph  dev redux
+glyph  dev renpy
+glyph  dev replit
+glyph  dev requirejs
+glyph  dev rider
+glyph  dev rocksdb
+glyph  dev rockylinux
+glyph  dev rollup
+glyph  dev ros
+glyph  dev rspec
+glyph  dev rstudio
+glyph  dev ruby
+glyph  dev rubymine
+glyph  dev ruby rough
+glyph  dev rust
+glyph  dev rxjs
+glyph  dev safari
+glyph  dev salesforce
+glyph  dev sanity
+glyph  dev sass
+glyph  dev scala
+glyph  dev scalingo
+glyph  dev scikitlearn
+glyph  dev sdl
+glyph  dev selenium
+glyph  dev sema
+glyph  dev sentry
+glyph  dev sequelize
+glyph  dev shopware
+glyph  dev shotgrid
+glyph  dev sketch
+glyph  dev slack
+glyph  dev smashing magazine
+glyph  dev socketio
+glyph  dev solidity
+glyph  dev solidjs
+glyph  dev sonarqube
+glyph  dev sourcetree
+glyph  dev spack
+glyph  dev splunk
+glyph  dev spring
+glyph  dev spss
+glyph  dev spyder
+glyph  dev sqlalchemy
+glyph  dev sqldeveloper
+glyph  dev sqlite
+glyph  dev ssh
+glyph  dev stackoverflow
+glyph  dev stata
+glyph  dev storybook
+glyph  dev streamlit
+glyph  dev stylus
+glyph  dev sublime
+glyph  dev subversion
+glyph  dev supabase
+glyph  dev svelte
+glyph  dev swagger
+glyph  dev swift
+glyph  dev swiper
+glyph  dev symfony
+glyph  dev tailwindcss
+glyph  dev tauri
+glyph  dev tensorflow
+glyph  dev terminal
+glyph  dev terraform
+glyph  dev tex
+glyph  dev thealgorithms
+glyph  dev threedsmax
+glyph  dev threejs
+glyph  dev titaniumsdk
+glyph  dev tomcat
+glyph  dev tortoisegit
+glyph  dev towergit
+glyph  dev traefikmesh
+glyph  dev traefikproxy
+glyph  dev travis
+glyph  dev trello
+glyph  dev trpc
+glyph  dev twitter
+glyph  dev typescript
+glyph  dev typo3
+glyph  dev ubuntu
+glyph  dev unifiedmodelinglanguage
+glyph  dev unity
+glyph  dev unix
+glyph  dev unrealengine
+glyph  dev uwsgi
+glyph  dev v8
+glyph  dev vagrant
+glyph  dev vala
+glyph  dev vault
+glyph  dev vercel
+glyph  dev vertx
+glyph  dev vim
+glyph  dev visualbasic
+glyph  dev visualstudio
+glyph  dev vite
+glyph  dev vitejs
+glyph  dev vitess
+glyph  dev vitest
+glyph  dev vscode
+glyph  dev vsphere
+glyph  dev vuejs
+glyph  dev vuestorefront
+glyph  dev vuetify
+glyph  dev vyper
+glyph  dev wasm
+glyph  dev webflow
+glyph  dev weblate
+glyph  dev webpack
+glyph  dev webstorm
+glyph  dev windows
+glyph  dev windows11
+glyph  dev woocommerce
+glyph  dev wordpress
+glyph  dev xamarin
+glyph  dev xcode
+glyph  dev xd
+glyph  dev xml
+glyph  dev yaml
+glyph  dev yarn
+glyph  dev yii
+glyph  dev yugabytedb
+glyph  dev yunohost
+glyph  dev zend
+glyph  dev zig
+glyph  fa 500px
+glyph  fa accessible icon
+glyph  fa accusoft
+glyph  fa address book
+glyph  fa address book o
+glyph  fa address card
+glyph  fa address card o
+glyph  fa adn
+glyph  fa adversal
+glyph  fa affiliatetheme
+glyph  fa airbnb
+glyph  fa algolia
+glyph  fa align center
+glyph  fa align justify
+glyph  fa align left
+glyph  fa align right
+glyph  fa alipay
+glyph  fa amazon
+glyph  fa amazon pay
+glyph  fa amilia
+glyph  fa anchor
+glyph  fa android
+glyph  fa angellist
+glyph  fa angle down
+glyph  fa angle left
+glyph  fa angle right
+glyph  fa angles down
+glyph  fa angles left
+glyph  fa angles right
+glyph  fa angles up
+glyph  fa angle up
+glyph  fa angrycreative
+glyph  fa angular
+glyph  fa ankh
+glyph  fa apper
+glyph  fa apple
+glyph  fa apple pay
+glyph  fa apple whole
+glyph  fa app store
+glyph  fa app store ios
+glyph  fa archway
+glyph  fa arrow down
+glyph  fa arrow down 1 9
+glyph  fa arrow down 9 1
+glyph  fa arrow down a z
+glyph  fa arrow down long
+glyph  fa arrow down short wide
+glyph  fa arrow down wide short
+glyph  fa arrow down z a
+glyph  fa arrow left
+glyph  fa arrow left long
+glyph  fa arrow pointer
+glyph  fa arrow right
+glyph  fa arrow right arrow left
+glyph  fa arrow right from bracket
+glyph  fa arrow right long
+glyph  fa arrow right to bracket
+glyph  fa arrow rotate left
+glyph  fa arrow rotate right
+glyph  fa arrows left right
+glyph  fa arrows rotate
+glyph  fa arrows up down
+glyph  fa arrows up down left right
+glyph  fa arrow turn down
+glyph  fa arrow turn up
+glyph  fa arrow up
+glyph  fa arrow up 1 9
+glyph  fa arrow up 9 1
+glyph  fa arrow up a z
+glyph  fa arrow up long
+glyph  fa arrow up right from square
+glyph  fa arrow up short wide
+glyph  fa arrow up wide short
+glyph  fa arrow up z a
+glyph  fa artstation
+glyph  fa asterisk
+glyph  fa asymmetrik
+glyph  fa at
+glyph  fa atlassian
+glyph  fa atom
+glyph  fa audible
+glyph  fa audio description
+glyph  fa autoprefixer
+glyph  fa avianex
+glyph  fa aviato
+glyph  fa award
+glyph  fa aws
+glyph  fa baby
+glyph  fa baby carriage
+glyph  fa backward
+glyph  fa backward fast
+glyph  fa backward step
+glyph  fa bacon
+glyph  fa bag shopping
+glyph  fa bahai
+glyph  fa ban
+glyph  fa bandage
+glyph  fa bandcamp
+glyph  fa ban smoking
+glyph  fa barcode
+glyph  fa bars
+glyph  fa bars progress
+glyph  fa bars staggered
+glyph  fa baseball
+glyph  fa baseball bat ball
+glyph  fa basketball
+glyph  fa basket shopping
+glyph  fa bath
+glyph  fa battery empty
+glyph  fa battery full
+glyph  fa battery half
+glyph  fa battery quarter
+glyph  fa battery three quarters
+glyph  fa battle net
+glyph  fa bed
+glyph  fa bed pulse
+glyph  fa beer mug empty
+glyph  fa behance
+glyph  fa bell
+glyph  fa bell concierge
+glyph  fa bell o
+glyph  fa bell slash
+glyph  fa bell slash o
+glyph  fa bezier curve
+glyph  fa bicycle
+glyph  fa bimobject
+glyph  fa binoculars
+glyph  fa biohazard
+glyph  fa bitbucket
+glyph  fa bitcoin
+glyph  fa bity
+glyph  fa blackberry
+glyph  fa black tie
+glyph  fa blender
+glyph  fa blender phone
+glyph  fa blog
+glyph  fa blogger
+glyph  fa blogger b
+glyph  fa bluetooth
+glyph  fa bluetooth b
+glyph  fa bold
+glyph  fa bolt
+glyph  fa bomb
+glyph  fa bone
+glyph  fa bong
+glyph  fa book
+glyph  fa book atlas
+glyph  fa book bible
+glyph  fa book journal whills
+glyph  fa bookmark
+glyph  fa bookmark o
+glyph  fa book medical
+glyph  fa book open
+glyph  fa book open reader
+glyph  fa book quran
+glyph  fa book skull
+glyph  fa book tanakh
+glyph  fa bootstrap
+glyph  fa border all
+glyph  fa border none
+glyph  fa border top left
+glyph  fa bowling ball
+glyph  fa box
+glyph  fa box archive
+glyph  fa boxes stacked
+glyph  fa box open
+glyph  fa braille
+glyph  fa brain
+glyph  fa bread slice
+glyph  fa briefcase
+glyph  fa briefcase medical
+glyph  fa broom
+glyph  fa broom ball
+glyph  fa brush
+glyph  fa btc
+glyph  fa buffer
+glyph  fa bug
+glyph  fa building
+glyph  fa building columns
+glyph  fa building o
+glyph  fa bullhorn
+glyph  fa bullseye
+glyph  fa burger
+glyph  fa buromobelexperte
+glyph  fa bus
+glyph  fa business time
+glyph  fa bus simple
+glyph  fa buy n large
+glyph  fa buysellads
+glyph  fa cable car
+glyph  fa cake candles
+glyph  fa calculator
+glyph  fa calendar check
+glyph  fa calendar day
+glyph  fa calendar days
+glyph  fa calendar minus
+glyph  fa calendar o
+glyph  fa calendar plus
+glyph  fa calendar week
+glyph  fa calendar xmark
+glyph  fa camera
+glyph  fa camera retro
+glyph  fa campground
+glyph  fa canadian maple leaf
+glyph  fa candy cane
+glyph  fa cannabis
+glyph  fa capsules
+glyph  fa car
+glyph  fa caravan
+glyph  fa car battery
+glyph  fa car burst
+glyph  fa caret down
+glyph  fa caret left
+glyph  fa caret right
+glyph  fa caret up
+glyph  fa car rear
+glyph  fa carrot
+glyph  fa car side
+glyph  fa cart arrow down
+glyph  fa cart flatbed
+glyph  fa cart flatbed suitcase
+glyph  fa cart plus
+glyph  fa cart shopping
+glyph  fa cash register
+glyph  fa cat
+glyph  fa cc amazon pay
+glyph  fa cc amex
+glyph  fa cc apple pay
+glyph  fa cc diners club
+glyph  fa cc discover
+glyph  fa cc jcb
+glyph  fa cc mastercard
+glyph  fa cc paypal
+glyph  fa cc stripe
+glyph  fa cc visa
+glyph  fa centercode
+glyph  fa centos
+glyph  fa certificate
+glyph  fa chair
+glyph  fa chalkboard
+glyph  fa chalkboard user
+glyph  fa champagne glasses
+glyph  fa charging station
+glyph  fa chart area
+glyph  fa chart bar
+glyph  fa chart line
+glyph  fa chart pie
+glyph  fa check
+glyph  fa check double
+glyph  fa check square o
+glyph  fa check to slot
+glyph  fa cheese
+glyph  fa chess
+glyph  fa chess bishop
+glyph  fa chess board
+glyph  fa chess king
+glyph  fa chess knight
+glyph  fa chess pawn
+glyph  fa chess queen
+glyph  fa chess rook
+glyph  fa chevron down
+glyph  fa chevron left
+glyph  fa chevron right
+glyph  fa chevron up
+glyph  fa child
+glyph  fa chrome
+glyph  fa chromecast
+glyph  fa church
+glyph  fa circle
+glyph  fa circle arrow down
+glyph  fa circle arrow left
+glyph  fa circle arrow right
+glyph  fa circle arrow up
+glyph  fa circle check
+glyph  fa circle chevron down
+glyph  fa circle chevron left
+glyph  fa circle chevron right
+glyph  fa circle chevron up
+glyph  fa circle dollar to slot
+glyph  fa circle dot
+glyph  fa circle down
+glyph  fa circle exclamation
+glyph  fa circle h
+glyph  fa circle half stroke
+glyph  fa circle info
+glyph  fa circle left
+glyph  fa circle minus
+glyph  fa circle notch
+glyph  fa circle o
+glyph  fa circle pause
+glyph  fa circle play
+glyph  fa circle plus
+glyph  fa circle question
+glyph  fa circle radiation
+glyph  fa circle right
+glyph  fa circle stop
+glyph  fa circle thin
+glyph  fa circle up
+glyph  fa circle user
+glyph  fa circle xmark
+glyph  fa city
+glyph  fa clipboard alt
+glyph  fa clipboard check
+glyph  fa clipboard list
+glyph  fa clipboard user
+glyph  fa clock
+glyph  fa clock rotate left
+glyph  fa clone
+glyph  fa closed captioning
+glyph  fa cloud
+glyph  fa cloud arrow down
+glyph  fa cloud arrow up
+glyph  fa cloud bolt
+glyph  fa cloud meatball
+glyph  fa cloud moon
+glyph  fa cloud moon rain
+glyph  fa cloud rain
+glyph  fa cloudscale
+glyph  fa cloud showers heavy
+glyph  fa cloudsmith
+glyph  fa cloud sun
+glyph  fa cloud sun rain
+glyph  fa cloudversify
+glyph  fa code
+glyph  fa code branch
+glyph  fa code commit
+glyph  fa code merge
+glyph  fa codepen
+glyph  fa codiepie
+glyph  fa coins
+glyph  fa comment
+glyph  fa comment dollar
+glyph  fa comment dots
+glyph  fa comment medical
+glyph  fa comment o
+glyph  fa comments
+glyph  fa comments dollar
+glyph  fa comment slash
+glyph  fa comment sms
+glyph  fa comments o
+glyph  fa compact disc
+glyph  fa compass
+glyph  fa compass drafting
+glyph  fa compress
+glyph  fa computer mouse
+glyph  fa confluence
+glyph  fa connectdevelop
+glyph  fa contao
+glyph  fa cookie
+glyph  fa cookie bite
+glyph  fa copy
+glyph  fa copyright
+glyph  fa cotton bureau
+glyph  fa couch
+glyph  fa cow
+glyph  fa cpanel
+glyph  fa creative commons
+glyph  fa creative commons by
+glyph  fa creative commons nc
+glyph  fa creative commons nc eu
+glyph  fa creative commons nc jp
+glyph  fa creative commons nd
+glyph  fa creative commons pd
+glyph  fa creative commons pd alt
+glyph  fa creative commons remix
+glyph  fa creative commons sa
+glyph  fa creative commons sampling
+glyph  fa creative commons sampling plus
+glyph  fa creative commons share
+glyph  fa creative commons zero
+glyph  fa credit card
+glyph  fa credit card alt
+glyph  fa critical role
+glyph  fa crop
+glyph  fa crop simple
+glyph  fa cross
+glyph  fa crosshairs
+glyph  fa crow
+glyph  fa crown
+glyph  fa crutch
+glyph  fa css3
+glyph  fa css3 alt
+glyph  fa cube
+glyph  fa cubes
+glyph  fa cuttlefish
+glyph  fa d and d
+glyph  fa d and d beyond
+glyph  fa dashcube
+glyph  fa database
+glyph  fa delete left
+glyph  fa delicious
+glyph  fa democrat
+glyph  fa deploydog
+glyph  fa deskpro
+glyph  fa desktop
+glyph  fa dev
+glyph  fa deviantart
+glyph  fa dharmachakra
+glyph  fa dhl
+glyph  fa diagram project
+glyph  fa diamond
+glyph  fa diamond turn right
+glyph  fa diaspora
+glyph  fa dice
+glyph  fa dice d20
+glyph  fa dice d6
+glyph  fa dice five
+glyph  fa dice four
+glyph  fa dice one
+glyph  fa dice six
+glyph  fa dice three
+glyph  fa dice two
+glyph  fa digg
+glyph  fa digital ocean
+glyph  fa discord
+glyph  fa discourse
+glyph  fa disease
+glyph  fa divide
+glyph  fa dna
+glyph  fa dochub
+glyph  fa docker
+glyph  fa dog
+glyph  fa dollar sign
+glyph  fa dolly
+glyph  fa door closed
+glyph  fa door open
+glyph  fa dove
+glyph  fa down left and up right to center
+glyph  fa download
+glyph  fa down long
+glyph  fa draft2digital
+glyph  fa dragon
+glyph  fa draw polygon
+glyph  fa dribbble
+glyph  fa dropbox
+glyph  fa droplet
+glyph  fa droplet slash
+glyph  fa drum
+glyph  fa drum steelpan
+glyph  fa drumstick bite
+glyph  fa drupal
+glyph  fa dumbbell
+glyph  fa dumpster
+glyph  fa dumpster fire
+glyph  fa dungeon
+glyph  fa dyalog
+glyph  fae apple fruit
+glyph  fa ear deaf
+glyph  fa ear listen
+glyph  fa earlybirds
+glyph  fa earth africa
+glyph  fa earth americas
+glyph  fa earth asia
+glyph  fa earth europe
+glyph  fae atom
+glyph  fae bacteria
+glyph  fae banana
+glyph  fae bath
+glyph  fa ebay
+glyph  fae bed
+glyph  fae benzene
+glyph  fae bigger
+glyph  fae biohazard
+glyph  fae blogger circle
+glyph  fae blogger square
+glyph  fae bones
+glyph  fae book open
+glyph  fae book open o
+glyph  fae brain
+glyph  fae bread
+glyph  fae butterfly
+glyph  fae carot
+glyph  fae cc by
+glyph  fae cc cc
+glyph  fae cc nc
+glyph  fae cc nc eu
+glyph  fae cc nc jp
+glyph  fae cc nd
+glyph  fae cc remix
+glyph  fae cc sa
+glyph  fae cc share
+glyph  fae cc zero
+glyph  fae checklist o
+glyph  fae cheese
+glyph  fae cherry
+glyph  fae chess bishop
+glyph  fae chess horse
+glyph  fae chess king
+glyph  fae chess pawn
+glyph  fae chess queen
+glyph  fae chess tower
+glyph  fae chicken thigh
+glyph  fae chilli
+glyph  fae chip
+glyph  fae cicling
+glyph  fae cloud
+glyph  fae cockroach
+glyph  fae coffe beans
+glyph  fae coins
+glyph  fae comb
+glyph  fae comet
+glyph  fae crown
+glyph  fae cup coffe
+glyph  fa edge
+glyph  fae dice
+glyph  fae disco
+glyph  fae dna
+glyph  fae donut
+glyph  fae dress
+glyph  fae drop
+glyph  fae ello
+glyph  fae envelope open
+glyph  fae envelope open o
+glyph  fae equal
+glyph  fae equal bigger
+glyph  fae feedly
+glyph  fae file export
+glyph  fae file import
+glyph  fae fingerprint
+glyph  fae floppy
+glyph  fae footprint
+glyph  fae freecodecamp
+glyph  fae galaxy
+glyph  fae galery
+glyph  fa egg
+glyph  fae gift card
+glyph  fae glass
+glyph  fae google drive
+glyph  fae google play
+glyph  fae gps
+glyph  fae grav
+glyph  fae guitar
+glyph  fae gut
+glyph  fae halter
+glyph  fae hamburger
+glyph  fae hat
+glyph  fae hexagon
+glyph  fae high heel
+glyph  fae hotdog
+glyph  fae ice cream
+glyph  fae id card
+glyph  fae imdb
+glyph  fae infinity
+glyph  fae injection
+glyph  fae isle
+glyph  fae java
+glyph  fa eject
+glyph  fae layers
+glyph  fa elementor
+glyph  fae lips
+glyph  fae lipstick
+glyph  fae liver
+glyph  fa ellipsis
+glyph  fa ellipsis vertical
+glyph  fa ello
+glyph  fae lollipop
+glyph  fae loyalty card
+glyph  fae lung
+glyph  fae makeup brushes
+glyph  fae maximize
+glyph  fa ember
+glyph  fae meat
+glyph  fae medicine
+glyph  fae microscope
+glyph  fae milk bottle
+glyph  fae minimize
+glyph  fae molecule
+glyph  fae moon cloud
+glyph  fae mountains
+glyph  fa empire
+glyph  fae mushroom
+glyph  fae mustache
+glyph  fae mysql
+glyph  fae nintendo
+glyph  fa envelope
+glyph  fa envelope o
+glyph  fa envelope open
+glyph  fa envelope open o
+glyph  fa envelope open text
+glyph  fa envelopes bulk
+glyph  fa envira
+glyph  fae orange
+glyph  fae palette color
+glyph  fae peach
+glyph  fae pear
+glyph  fae pi
+glyph  fae pizza
+glyph  fae planet
+glyph  fae plant
+glyph  fae playstation
+glyph  fae poison
+glyph  fae popcorn
+glyph  fae popsicle
+glyph  fae pulse
+glyph  fae python
+glyph  fa equals
+glyph  fae quora circle
+glyph  fae quora square
+glyph  fae radioactive
+glyph  fae raining
+glyph  fa eraser
+glyph  fae real heart
+glyph  fae refrigerator
+glyph  fae restore
+glyph  fae ring
+glyph  fa erlang
+glyph  fae ruby
+glyph  fae ruby o
+glyph  fae ruler
+glyph  fae shirt
+glyph  fae slash
+glyph  fae smaller
+glyph  fae snowing
+glyph  fae soda
+glyph  fae sofa
+glyph  fae soup
+glyph  fae spermatozoon
+glyph  fae spin double
+glyph  fae stomach
+glyph  fae storm
+glyph  fae sun cloud
+glyph  fae sushi
+glyph  fae tacos
+glyph  fae telegram
+glyph  fae telegram circle
+glyph  fae telescope
+glyph  fa ethereum
+glyph  fae thermometer
+glyph  fae thermometer high
+glyph  fae thermometer low
+glyph  fa ethernet
+glyph  fae thin close
+glyph  fae toilet
+glyph  fae tools
+glyph  fae tooth
+glyph  fae tree
+glyph  fae triangle ruler
+glyph  fa etsy
+glyph  fae umbrella
+glyph  fa euro sign
+glyph  fae uterus
+glyph  fa evernote
+glyph  fae virus
+glyph  fae w3c
+glyph  fae walking
+glyph  fae wallet
+glyph  fae wind
+glyph  fae xbox
+glyph  fa exclamation
+glyph  fa expand
+glyph  fa expeditedssl
+glyph  fa eye
+glyph  fa eye dropper
+glyph  fa eye low vision
+glyph  fa eye slash
+glyph  fa face angry
+glyph  fa facebook
+glyph  fa facebook f
+glyph  fa facebook messenger
+glyph  fa face dizzy
+glyph  fa face flushed
+glyph  fa face frown
+glyph  fa face frown open
+glyph  fa face grimace
+glyph  fa face grin
+glyph  fa face grin beam
+glyph  fa face grin beam sweat
+glyph  fa face grin hearts
+glyph  fa face grin squint
+glyph  fa face grin squint tears
+glyph  fa face grin stars
+glyph  fa face grin tears
+glyph  fa face grin tongue
+glyph  fa face grin tongue squint
+glyph  fa face grin tongue wink
+glyph  fa face grin wide
+glyph  fa face grin wink
+glyph  fa face kiss
+glyph  fa face kiss beam
+glyph  fa face kiss wink heart
+glyph  fa face laugh
+glyph  fa face laugh beam
+glyph  fa face laugh squint
+glyph  fa face laugh wink
+glyph  fa face meh
+glyph  fa face meh blank
+glyph  fa face rolling eyes
+glyph  fa face sad cry
+glyph  fa face sad tear
+glyph  fa face smile
+glyph  fa face smile beam
+glyph  fa face smile wink
+glyph  fa face surprise
+glyph  fa face tired
+glyph  fa fan
+glyph  fa fantasy flight games
+glyph  fa fax
+glyph  fa feather
+glyph  fa feather pointed
+glyph  fa fedex
+glyph  fa fedora
+glyph  fa figma
+glyph  fa file
+glyph  fa file arrow down
+glyph  fa file arrow up
+glyph  fa file audio
+glyph  fa file code
+glyph  fa file contract
+glyph  fa file csv
+glyph  fa file excel
+glyph  fa file export
+glyph  fa file image
+glyph  fa file import
+glyph  fa file invoice
+glyph  fa file invoice dollar
+glyph  fa file lines
+glyph  fa file medical
+glyph  fa file o
+glyph  fa file pdf
+glyph  fa file pen
+glyph  fa file powerpoint
+glyph  fa file prescription
+glyph  fa file signature
+glyph  fa file text o
+glyph  fa file video
+glyph  fa file waveform
+glyph  fa file word
+glyph  fa file zipper
+glyph  fa fill
+glyph  fa fill drip
+glyph  fa film
+glyph  fa filter
+glyph  fa filter circle dollar
+glyph  fa fingerprint
+glyph  fa fire
+glyph  fa fire extinguisher
+glyph  fa fire flame curved
+glyph  fa fire flame simple
+glyph  fa firefox
+glyph  fa firstdraft
+glyph  fa first order
+glyph  fa first order alt
+glyph  fa fish
+glyph  fa flag
+glyph  fa flag checkered
+glyph  fa flag o
+glyph  fa flag usa
+glyph  fa flask
+glyph  fa flickr
+glyph  fa flipboard
+glyph  fa floppy disk
+glyph  fa fly
+glyph  fa folder
+glyph  fa folder minus
+glyph  fa folder o
+glyph  fa folder open
+glyph  fa folder open o
+glyph  fa folder plus
+glyph  fa folder tree
+glyph  fa font
+glyph  fa font awesome
+glyph  fa fonticons
+glyph  fa fonticons fi
+glyph  fa football
+glyph  fa fort awesome
+glyph  fa fort awesome alt
+glyph  fa forumbee
+glyph  fa forward
+glyph  fa forward fast
+glyph  fa forward step
+glyph  fa foursquare
+glyph  fa freebsd
+glyph  fa free code camp
+glyph  fa frog
+glyph  fa fulcrum
+glyph  fa futbol
+glyph  fa galactic republic
+glyph  fa galactic senate
+glyph  fa gamepad
+glyph  fa gas pump
+glyph  fa gauge
+glyph  fa gauge high
+glyph  fa gauge simple
+glyph  fa gauge simple high
+glyph  fa gavel
+glyph  fa gear
+glyph  fa gears
+glyph  fa gem
+glyph  fa genderless
+glyph  fa get pocket
+glyph  fa gg
+glyph  fa gg circle
+glyph  fa ghost
+glyph  fa gift
+glyph  fa gifts
+glyph  fa git
+glyph  fa git alt
+glyph  fa github
+glyph  fa github alt
+glyph  fa gitkraken
+glyph  fa gitlab
+glyph  fa gitter
+glyph  fa glasses
+glyph  fa glide
+glyph  fa glide g
+glyph  fa globe
+glyph  fa gofore
+glyph  fa golf ball tee
+glyph  fa goodreads
+glyph  fa goodreads g
+glyph  fa google
+glyph  fa google drive
+glyph  fa google play
+glyph  fa google plus
+glyph  fa google plus circle
+glyph  fa google wallet
+glyph  fa gopuram
+glyph  fa graduation cap
+glyph  fa gratipay
+glyph  fa grav
+glyph  fa greater than
+glyph  fa greater than equal
+glyph  fa grip
+glyph  fa gripfire
+glyph  fa grip lines
+glyph  fa grip lines vertical
+glyph  fa grip vertical
+glyph  fa grunt
+glyph  fa guitar
+glyph  fa gulp
+glyph  fa hacker news
+glyph  fa hackerrank
+glyph  fa hammer
+glyph  fa hamsa
+glyph  fa hand
+glyph  fa hand back fist
+glyph  fa hand dots
+glyph  fa hand fist
+glyph  fa hand holding
+glyph  fa hand holding dollar
+glyph  fa hand holding droplet
+glyph  fa hand holding heart
+glyph  fa hand lizard
+glyph  fa hand middle finger
+glyph  fa hand peace
+glyph  fa hand point down
+glyph  fa hand pointer
+glyph  fa hand point left
+glyph  fa hand point right
+glyph  fa hand point up
+glyph  fa hands
+glyph  fa hands asl interpreting
+glyph  fa hand scissors
+glyph  fa handshake
+glyph  fa handshake angle
+glyph  fa handshake simple
+glyph  fa hands holding
+glyph  fa hand spock
+glyph  fa hands praying
+glyph  fa hanukiah
+glyph  fa hard drive
+glyph  fa hashtag
+glyph  fa hat cowboy
+glyph  fa hat cowboy side
+glyph  fa hat wizard
+glyph  fa heading
+glyph  fa headphones
+glyph  fa headphones simple
+glyph  fa headset
+glyph  fa heard o
+glyph  fa heart
+glyph  fa heart crack
+glyph  fa heart pulse
+glyph  fa helicopter
+glyph  fa helmet safety
+glyph  fa highlighter
+glyph  fa hippo
+glyph  fa hips
+glyph  fa hire a helper
+glyph  fa hockey puck
+glyph  fa holly berry
+glyph  fa hooli
+glyph  fa hornbill
+glyph  fa horse
+glyph  fa horse head
+glyph  fa hospital
+glyph  fa hospital user
+glyph  fa hotdog
+glyph  fa hotel building
+glyph  fa hotjar
+glyph  fa hot tub person
+glyph  fa hourglass
+glyph  fa hourglass end
+glyph  fa hourglass half
+glyph  fa hourglass o
+glyph  fa hourglass start
+glyph  fa house
+glyph  fa house chimney
+glyph  fa house chimney crack
+glyph  fa house chimney medical
+glyph  fa houzz
+glyph  fa hryvnia sign
+glyph  fa html5
+glyph  fa hubspot
+glyph  fa hurricane
+glyph  fa ice cream
+glyph  fa icicles
+glyph  fa icons
+glyph  fa i cursor
+glyph  fa id badge
+glyph  fa id card
+glyph  fa id card clip
+glyph  fa id card o
+glyph  fa igloo
+glyph  fa image
+glyph  fa image portrait
+glyph  fa images
+glyph  fa imdb
+glyph  fa inbox
+glyph  fa indent
+glyph  fa industry
+glyph  fa infinity
+glyph  fa info
+glyph  fa instagram
+glyph  fa intercom
+glyph  fa internet explorer
+glyph  fa invision
+glyph  fa ioxhost
+glyph  fa italic
+glyph  fa itch io
+glyph  fa itunes
+glyph  fa itunes note
+glyph  fa java
+glyph  fa jedi
+glyph  fa jedi order
+glyph  fa jenkins
+glyph  fa jet fighter
+glyph  fa jira
+glyph  fa joget
+glyph  fa joint
+glyph  fa joomla
+glyph  fa js
+glyph  fa jsfiddle
+glyph  fa kaaba
+glyph  fa kaggle
+glyph  fa key
+glyph  fa keybase
+glyph  fa keyboard
+glyph  fa keycdn
+glyph  fa khanda
+glyph  fa kickstarter
+glyph  fa kickstarter k
+glyph  fa kit medical
+glyph  fa kiwi bird
+glyph  fa korvue
+glyph  fa landmark
+glyph  fa landmark dome
+glyph  fa language
+glyph  fa laptop
+glyph  fa laptop code
+glyph  fa laptop medical
+glyph  fa laravel
+glyph  fa lastfm
+glyph  fa layer group
+glyph  fa leaf
+glyph  fa leanpub
+glyph  fa left long
+glyph  fa left right
+glyph  fa lemon
+glyph  fa less
+glyph  fa less than
+glyph  fa less than equal
+glyph  fa life ring
+glyph  fa lightbulb
+glyph  fa line
+glyph  fa link
+glyph  fa linkedin in
+glyph  fa linkedin square
+glyph  fa link slash
+glyph  fa linode
+glyph  fa linux
+glyph  fa lira sign
+glyph  fa list
+glyph  fa list check
+glyph  fa list ol
+glyph  fa list ul
+glyph  fa location arrow
+glyph  fa location crosshairs
+glyph  fa location dot
+glyph  fa location pin
+glyph  fa lock
+glyph  fa lock open
+glyph  fa lungs
+glyph  fa lyft
+glyph  fa magento
+glyph  fa magnet
+glyph  fa magnifying glass
+glyph  fa magnifying glass dollar
+glyph  fa magnifying glass location
+glyph  fa magnifying glass minus
+glyph  fa magnifying glass plus
+glyph  fa mailchimp
+glyph  fa mandalorian
+glyph  fa map
+glyph  fa map location
+glyph  fa map location dot
+glyph  fa map o
+glyph  fa map pin
+glyph  fa markdown
+glyph  fa marker
+glyph  fa mars
+glyph  fa mars double
+glyph  fa mars stroke
+glyph  fa mars stroke right
+glyph  fa mars stroke up
+glyph  fa martini glass
+glyph  fa martini glass citrus
+glyph  fa martini glass empty
+glyph  fa mask
+glyph  fa masks theater
+glyph  fa mastodon
+glyph  fa maxcdn
+glyph  fa maximize
+glyph  fa mdb
+glyph  fa medal
+glyph  fa medapps
+glyph  fa medium
+glyph  fa medrt
+glyph  fa meetup
+glyph  fa megaport
+glyph  fa memory
+glyph  fa mendeley
+glyph  fa menorah
+glyph  fa mercury
+glyph  fa message
+glyph  fa meteor
+glyph  fa microchip
+glyph  fa microphone
+glyph  fa microphone lines
+glyph  fa microphone lines slash
+glyph  fa microphone slash
+glyph  fa microscope
+glyph  fa microsoft
+glyph  fa minimize
+glyph  fa minus
+glyph  fa minus square o
+glyph  fa mitten
+glyph  fa mix
+glyph  fa mixcloud
+glyph  fa mizuni
+glyph  fa mobile
+glyph  fa mobile button
+glyph  fa mobile screen
+glyph  fa mobile screen button
+glyph  fa modx
+glyph  fa monero
+glyph  fa money bill
+glyph  fa money bill 1
+glyph  fa money bill 1 wave
+glyph  fa money bill wave
+glyph  fa money check
+glyph  fa money check dollar
+glyph  fa monument
+glyph  fa moon
+glyph  fa mortar pestle
+glyph  fa mosque
+glyph  fa motorcycle
+glyph  fa mountain
+glyph  fa mug hot
+glyph  fa mug saucer
+glyph  fa music
+glyph  fa napster
+glyph  fa neos
+glyph  fa network wired
+glyph  fa neuter
+glyph  fa newspaper
+glyph  fa nimblr
+glyph  fa node
+glyph  fa node js
+glyph  fa not equal
+glyph  fa notes medical
+glyph  fa note sticky
+glyph  fa npm
+glyph  fa ns8
+glyph  fa nutritionix
+glyph  fa object group
+glyph  fa object ungroup
+glyph  fa odnoklassniki
+glyph  fa oil can
+glyph  fa ok sign
+glyph  fa old republic
+glyph  fa om
+glyph  fa opencart
+glyph  fa openid
+glyph  fa opera
+glyph  fa optin monster
+glyph  fa orcid
+glyph  fa osi
+glyph  fa otter
+glyph  fa outdent
+glyph  fa page4
+glyph  fa pagelines
+glyph  fa pager
+glyph  fa paintbrush
+glyph  fa paint roller
+glyph  fa palette
+glyph  fa palfed
+glyph  fa pallet
+glyph  fa paperclip
+glyph  fa paper plane
+glyph  fa paper plane o
+glyph  fa parachute box
+glyph  fa paragraph
+glyph  fa passport
+glyph  fa paste
+glyph  fa patreon
+glyph  fa pause
+glyph  fa pause circle o
+glyph  fa paw
+glyph  fa paypal
+glyph  fa peace
+glyph  fa pen
+glyph  fa pencil
+glyph  fa pen clip
+glyph  fa pen fancy
+glyph  fa pen nib
+glyph  fa pen ruler
+glyph  fa pen to square
+glyph  fa people carry box
+glyph  fa pepper hot
+glyph  fa percent
+glyph  fa periscope
+glyph  fa person
+glyph  fa person biking
+glyph  fa person booth
+glyph  fa person digging
+glyph  fa person dots from line
+glyph  fa person dress
+glyph  fa person hiking
+glyph  fa person praying
+glyph  fa person running
+glyph  fa person skating
+glyph  fa person skiing
+glyph  fa person skiing nordic
+glyph  fa person snowboarding
+glyph  fa person swimming
+glyph  fa person walking
+glyph  fa person walking with cane
+glyph  fa phabricator
+glyph  fa phoenix framework
+glyph  fa phoenix squadron
+glyph  fa phone
+glyph  fa phone flip
+glyph  fa phone slash
+glyph  fa phone volume
+glyph  fa photo film
+glyph  fa php
+glyph  fa pied piper
+glyph  fa pied piper alt
+glyph  fa pied piper hat
+glyph  fa pied piper pp
+glyph  fa piggy bank
+glyph  fa pills
+glyph  fa pinterest
+glyph  fa pinterest p
+glyph  fa pizza slice
+glyph  fa place of worship
+glyph  fa plane
+glyph  fa plane arrival
+glyph  fa plane departure
+glyph  fa play
+glyph  fa play circle o
+glyph  fa playstation
+glyph  fa plug
+glyph  fa plus
+glyph  fa plus square o
+glyph  fa podcast
+glyph  fa poo
+glyph  fa poop
+glyph  fa poo storm
+glyph  fa power off
+glyph  fa prescription
+glyph  fa prescription bottle
+glyph  fa prescription bottle medical
+glyph  fa print
+glyph  fa product hunt
+glyph  fa pushed
+glyph  fa puzzle piece
+glyph  fa python
+glyph  fa qq
+glyph  fa qrcode
+glyph  fa question
+glyph  fa question circle o
+glyph  fa quinscape
+glyph  fa quora
+glyph  fa quote left
+glyph  fa quote right
+glyph  fa radiation
+glyph  fa radio
+glyph  fa rainbow
+glyph  fa raspberry pi
+glyph  fa ravelry
+glyph  fa react
+glyph  fa reacteurope
+glyph  fa readme
+glyph  fa rebel
+glyph  fa receipt
+glyph  fa record vinyl
+glyph  fa rectangle ad
+glyph  fa rectangle list
+glyph  fa rectangle xmark
+glyph  fa recycle
+glyph  fa reddit
+glyph  fa reddit alien
+glyph  fa redhat
+glyph  fa red river
+glyph  fa registered
+glyph  fa remove sign
+glyph  fa renren
+glyph  fa repeat alt
+glyph  fa reply
+glyph  fa reply all
+glyph  fa replyd
+glyph  fa republican
+glyph  fa researchgate
+glyph  fa resolving
+glyph  fa restroom
+glyph  fa retweet
+glyph  fa rev
+glyph  fa ribbon
+glyph  fa right from bracket
+glyph  fa right left
+glyph  fa right to bracket
+glyph  fa ring
+glyph  fa road
+glyph  fa robot
+glyph  fa rocket
+glyph  fa rocketchat
+glyph  fa rockrms
+glyph  fa rotate
+glyph  fa rotate left
+glyph  fa rotate right
+glyph  fa route
+glyph  fa r project
+glyph  fa rss
+glyph  fa ruble sign
+glyph  fa ruler
+glyph  fa ruler combined
+glyph  fa ruler horizontal
+glyph  fa ruler vertical
+glyph  fa rupee sign
+glyph  fa sack dollar
+glyph  fa safari
+glyph  fa salesforce
+glyph  fa sass
+glyph  fa satellite
+glyph  fa satellite dish
+glyph  fa scale balanced
+glyph  fa scale unbalanced
+glyph  fa scale unbalanced flip
+glyph  fa schlix
+glyph  fa school
+glyph  fa scissors
+glyph  fa screwdriver
+glyph  fa screwdriver wrench
+glyph  fa scribd
+glyph  fa scroll
+glyph  fa scroll torah
+glyph  fa sd card
+glyph  fa searchengin
+glyph  fa seedling
+glyph  fa sellcast
+glyph  fa sellsy
+glyph  fa server
+glyph  fa servicestack
+glyph  fa shapes
+glyph  fa share
+glyph  fa share from square
+glyph  fa share nodes
+glyph  fa share square o
+glyph  fa shekel sign
+glyph  fa shield
+glyph  fa shield halved
+glyph  fa ship
+glyph  fa shirt
+glyph  fa shirtsinbulk
+glyph  fa shoe prints
+glyph  fa shop
+glyph  fa shopware
+glyph  fa shower
+glyph  fa shuffle
+glyph  fa shuttle space
+glyph  fa signal
+glyph  fa signature
+glyph  fa sign hanging
+glyph  fa signs post
+glyph  fa sim card
+glyph  fa simplybuilt
+glyph  fa sistrix
+glyph  fa sitemap
+glyph  fa sith
+glyph  fa sketch
+glyph  fa skull
+glyph  fa skull crossbones
+glyph  fa skyatlas
+glyph  fa skype
+glyph  fa slack
+glyph  fa slash
+glyph  fa sleigh
+glyph  fa sliders
+glyph  fa slideshare
+glyph  fa smog
+glyph  fa smoking
+glyph  fa snapchat
+glyph  fa snowflake
+glyph  fa snowman
+glyph  fa snowplow
+glyph  fa socks
+glyph  fa solar panel
+glyph  fa sort
+glyph  fa sort down
+glyph  fa sort up
+glyph  fa soundcloud
+glyph  fa sourcetree
+glyph  fa spa
+glyph  fa spaghetti monster flying
+glyph  fa speakap
+glyph  fa speaker deck
+glyph  fa spell check
+glyph  fa spider
+glyph  fa spinner
+glyph  fa splotch
+glyph  fa spoon
+glyph  fa spotify
+glyph  fa spray can
+glyph  fa spray can sparkles
+glyph  fa square
+glyph  fa square arrow up right
+glyph  fa square behance
+glyph  fa square caret down
+glyph  fa square caret left
+glyph  fa square caret right
+glyph  fa square caret up
+glyph  fa square check
+glyph  fa square dribbble
+glyph  fa square envelope
+glyph  fa square facebook
+glyph  fa square font awesome stroke
+glyph  fa square full
+glyph  fa square git
+glyph  fa square github
+glyph  fa square google plus
+glyph  fa square h
+glyph  fa square hacker news
+glyph  fa square js
+glyph  fa square lastfm
+glyph  fa square minus
+glyph  fa square o
+glyph  fa square odnoklassniki
+glyph  fa square parking
+glyph  fa square pen
+glyph  fa square phone
+glyph  fa square phone flip
+glyph  fa square pinterest
+glyph  fa square plus
+glyph  fa square poll horizontal
+glyph  fa square poll vertical
+glyph  fa square reddit
+glyph  fa square root variable
+glyph  fa square rss
+glyph  fa square share nodes
+glyph  fa square snapchat
+glyph  fa squarespace
+glyph  fa square steam
+glyph  fa square tumblr
+glyph  fa square twitter
+glyph  fa square up right
+glyph  fa square viadeo
+glyph  fa square vimeo
+glyph  fa square whatsapp
+glyph  fa square xing
+glyph  fa square xmark
+glyph  fa square youtube
+glyph  fa stack exchange
+glyph  fa stack overflow
+glyph  fa stackpath
+glyph  fa stamp
+glyph  fa star
+glyph  fa star and crescent
+glyph  fa star half
+glyph  fa star half o
+glyph  fa star half stroke
+glyph  fa star o
+glyph  fa star of david
+glyph  fa star of life
+glyph  fa staylinked
+glyph  fa steam
+glyph  fa steam symbol
+glyph  fa sterling sign
+glyph  fa stethoscope
+glyph  fa sticker mule
+glyph  fa sticky note o
+glyph  fa stop
+glyph  fa stop circle o
+glyph  fa stopwatch
+glyph  fa store
+glyph  fa strava
+glyph  fa street view
+glyph  fa strikethrough
+glyph  fa stripe
+glyph  fa stripe s
+glyph  fa stroopwafel
+glyph  fa studiovinari
+glyph  fa stumbleupon
+glyph  fa stumbleupon circle
+glyph  fa subscript
+glyph  fa suitcase
+glyph  fa suitcase medical
+glyph  fa suitcase rolling
+glyph  fa sun
+glyph  fa superpowers
+glyph  fa superscript
+glyph  fa supple
+glyph  fa suse
+glyph  fa swatchbook
+glyph  fa swift
+glyph  fa symfony
+glyph  fa synagogue
+glyph  fa syringe
+glyph  fa table
+glyph  fa table cells
+glyph  fa table cells large
+glyph  fa table columns
+glyph  fa table list
+glyph  fa tablet
+glyph  fa tablet button
+glyph  fa table tennis paddle ball
+glyph  fa tablets
+glyph  fa tablet screen button
+glyph  fa tachograph digital
+glyph  fa tag
+glyph  fa tags
+glyph  fa tape
+glyph  fa taxi
+glyph  fa teamspeak
+glyph  fa teeth
+glyph  fa teeth open
+glyph  fa telegram
+glyph  fa temperature empty
+glyph  fa temperature full
+glyph  fa temperature half
+glyph  fa temperature high
+glyph  fa temperature low
+glyph  fa temperature quarter
+glyph  fa temperature three quarters
+glyph  fa tencent weibo
+glyph  fa tenge sign
+glyph  fa terminal
+glyph  fa text height
+glyph  fa text slash
+glyph  fa text width
+glyph  fa themeco
+glyph  fa themeisle
+glyph  fa the red yeti
+glyph  fa thermometer alt
+glyph  fa think peaks
+glyph  fa thumbs down
+glyph  fa thumbs o down
+glyph  fa thumbs o up
+glyph  fa thumbs up
+glyph  fa thumbtack
+glyph  fa ticket
+glyph  fa ticket simple
+glyph  fa toggle off
+glyph  fa toggle on
+glyph  fa toilet
+glyph  fa toilet paper
+glyph  fa toolbox
+glyph  fa tooth
+glyph  fa torii gate
+glyph  fa tornado
+glyph  fa tower broadcast
+glyph  fa tractor
+glyph  fa trade federation
+glyph  fa trademark
+glyph  fa traffic light
+glyph  fa train
+glyph  fa train subway
+glyph  fa transgender
+glyph  fa transgender alt
+glyph  fa trash
+glyph  fa trash arrow up
+glyph  fa trash can
+glyph  fa trash can arrow up
+glyph  fa tree
+glyph  fa trello
+glyph  fa triangle exclamation
+glyph  fa trophy
+glyph  fa truck
+glyph  fa truck fast
+glyph  fa truck medical
+glyph  fa truck monster
+glyph  fa truck moving
+glyph  fa truck pickup
+glyph  fa truck ramp box
+glyph  fa tty
+glyph  fa tumblr
+glyph  fa turn down
+glyph  fa turn up
+glyph  fa tv
+glyph  fa twitch
+glyph  fa twitter
+glyph  fa typo3
+glyph  fa uber
+glyph  fa ubuntu
+glyph  fa uikit
+glyph  fa umbraco
+glyph  fa umbrella
+glyph  fa umbrella beach
+glyph  fa underline
+glyph  fa uniregistry
+glyph  fa universal access
+glyph  fa unlock
+glyph  fa unlock keyhole
+glyph  fa untappd
+glyph  fa up down
+glyph  fa up down left right
+glyph  fa upload
+glyph  fa up right and down left from center
+glyph  fa up right from square
+glyph  fa ups
+glyph  fa usb
+glyph  fa user
+glyph  fa user astronaut
+glyph  fa user check
+glyph  fa user circle o
+glyph  fa user clock
+glyph  fa user doctor
+glyph  fa user gear
+glyph  fa user graduate
+glyph  fa user group
+glyph  fa user injured
+glyph  fa user large
+glyph  fa user large slash
+glyph  fa user lock
+glyph  fa user minus
+glyph  fa user ninja
+glyph  fa user nurse
+glyph  fa user o
+glyph  fa user pen
+glyph  fa user plus
+glyph  fa users
+glyph  fa user secret
+glyph  fa users gear
+glyph  fa user shield
+glyph  fa user slash
+glyph  fa user tag
+glyph  fa user tie
+glyph  fa user xmark
+glyph  fa usps
+glyph  fa ussunnah
+glyph  fa utensils
+glyph  fa vaadin
+glyph  fa van shuttle
+glyph  fa vector square
+glyph  fa venus
+glyph  fa venus double
+glyph  fa venus mars
+glyph  fa viacoin
+glyph  fa viadeo
+glyph  fa vial
+glyph  fa vials
+glyph  fa viber
+glyph  fa video
+glyph  fa video slash
+glyph  fa vihara
+glyph  fa vimeo
+glyph  fa vimeo v
+glyph  fa vine
+glyph  fa vk
+glyph  fa vnv
+glyph  fa voicemail
+glyph  fa volcano
+glyph  fa volleyball
+glyph  fa volume high
+glyph  fa volume low
+glyph  fa volume off
+glyph  fa volume xmark
+glyph  fa vr cardboard
+glyph  fa vuejs
+glyph  fa walkie talkie
+glyph  fa wallet
+glyph  fa wand magic
+glyph  fa wand sparkles
+glyph  fa warehouse
+glyph  fa water
+glyph  fa water ladder
+glyph  fa wave square
+glyph  fa waze
+glyph  fa weebly
+glyph  fa weibo
+glyph  fa weight hanging
+glyph  fa weight scale
+glyph  fa weixin
+glyph  fa whatsapp
+glyph  fa wheelchair
+glyph  fa whiskey glass
+glyph  fa whmcs
+glyph  fa wifi
+glyph  fa wikipedia w
+glyph  fa wind
+glyph  fa window maximize
+glyph  fa window minimize
+glyph  fa window restore
+glyph  fa windows
+glyph  fa wine bottle
+glyph  fa wine glass
+glyph  fa wine glass empty
+glyph  fa wix
+glyph  fa wizards of the coast
+glyph  fa wolf pack battalion
+glyph  fa won sign
+glyph  fa wordpress
+glyph  fa wordpress simple
+glyph  fa wpbeginner
+glyph  fa wpexplorer
+glyph  fa wpforms
+glyph  fa wpressr
+glyph  fa wrench
+glyph  fa xbox
+glyph  fa xing
+glyph  fa xmark
+glyph  fa x ray
+glyph  fa yahoo
+glyph  fa yammer
+glyph  fa yandex
+glyph  fa yandex international
+glyph  fa yarn
+glyph  fa y combinator
+glyph  fa yelp
+glyph  fa yen sign
+glyph  fa yin yang
+glyph  fa yoast
+glyph  fa youtube
+glyph  fa zhihu
+glyph ﬃ mdi priority low
+glyph ﬄ mdi qqchat
+glyph ﬀ mdi page last
+glyph ﬁ mdi phone classic
+glyph ﬂ mdi priority high
+glyph  indent line
+glyph  mdi access point
+glyph  mdi access point network
+glyph  mdi account
+glyph  mdi account alert
+glyph  mdi account box
+glyph  mdi account box outline
+glyph  mdi account check
+glyph  mdi account circle
+glyph  mdi account convert
+glyph ﮺ mdi account edit
+glyph  mdi account key
+glyph  mdi account location
+glyph  mdi account minus
+glyph  mdi account multiple
+glyph  mdi account multiple outline
+glyph  mdi account multiple plus
+glyph  mdi account network
+glyph  mdi account off
+glyph  mdi account outline
+glyph  mdi account plus
+glyph  mdi account remove
+glyph  mdi account search
+glyph  mdi account star
+glyph  mdi account switch
+glyph  mdi adjust
+glyph  mdi airballoon
+glyph  mdi air conditioner
+glyph  mdi airplane
+glyph  mdi airplane off
+glyph  mdi airplay
+glyph  mdi alarm
+glyph  mdi alarm check
+glyph  mdi alarm multiple
+glyph  mdi alarm off
+glyph  mdi alarm plus
+glyph  mdi album
+glyph  mdi alert
+glyph  mdi alert box
+glyph  mdi alert circle
+glyph ﮻ mdi alert decagram
+glyph  mdi alert octagon
+glyph  mdi alert outline
+glyph ﮼ mdi all inclusive
+glyph  mdi alpha
+glyph  mdi alphabetical
+glyph  mdi amazon
+glyph  mdi amazon clouddrive
+glyph  mdi ambulance
+glyph  mdi amplifier
+glyph  mdi anchor
+glyph  mdi android
+glyph  mdi android debug bridge
+glyph  mdi android studio
+glyph ﮽ mdi angularjs
+glyph  mdi apple
+glyph  mdi apple finder
+glyph  mdi apple ios
+glyph  mdi apple mobileme
+glyph  mdi apple safari
+glyph  mdi apps
+glyph  mdi archive
+glyph  mdi arrange bring forward
+glyph  mdi arrange bring to front
+glyph  mdi arrange send backward
+glyph  mdi arrange send to back
+glyph  mdi arrow all
+glyph  mdi arrow bottom left
+glyph  mdi arrow bottom right
+glyph  mdi arrow collapse all
+glyph  mdi arrow down
+glyph  mdi arrow down bold circle
+glyph  mdi arrow down bold circle outline
+glyph  mdi arrow down bold hexagon outline
+glyph ﮾ mdi arrow down box
+glyph  mdi arrow down drop circle
+glyph  mdi arrow down drop circle outline
+glyph  mdi arrow down thick
+glyph  mdi arrow expand all
+glyph  mdi arrow left
+glyph  mdi arrow left bold circle
+glyph  mdi arrow left bold circle outline
+glyph  mdi arrow left bold hexagon outline
+glyph ﮿ mdi arrow left box
+glyph  mdi arrow left drop circle
+glyph  mdi arrow left drop circle outline
+glyph  mdi arrow left thick
+glyph  mdi arrow right
+glyph  mdi arrow right bold circle
+glyph  mdi arrow right bold circle outline
+glyph  mdi arrow right bold hexagon outline
+glyph ﯀ mdi arrow right box
+glyph  mdi arrow right drop circle
+glyph  mdi arrow right drop circle outline
+glyph  mdi arrow right thick
+glyph  mdi arrow top left
+glyph  mdi arrow top right
+glyph  mdi arrow up
+glyph  mdi arrow up bold circle
+glyph  mdi arrow up bold circle outline
+glyph  mdi arrow up bold hexagon outline
+glyph ﯁ mdi arrow up box
+glyph  mdi arrow up drop circle
+glyph  mdi arrow up drop circle outline
+glyph  mdi arrow up thick
+glyph  mdi assistant
+glyph ﯂ mdi asterisk
+glyph  mdi at
+glyph  mdi attachment
+glyph  mdi audiobook
+glyph  mdi auto fix
+glyph  mdi autorenew
+glyph  mdi auto upload
+glyph  mdi av timer
+glyph  mdi baby
+glyph  mdi backburger
+glyph  mdi backspace
+glyph  mdi backup restore
+glyph  mdi bank
+glyph  mdi barcode
+glyph  mdi barcode scan
+glyph  mdi barley
+glyph  mdi barrel
+glyph  mdi basecamp
+glyph  mdi basket
+glyph  mdi basket fill
+glyph  mdi basket unfill
+glyph  mdi battery
+glyph  mdi battery 10
+glyph  mdi battery 20
+glyph  mdi battery 30
+glyph  mdi battery 40
+glyph  mdi battery 50
+glyph  mdi battery 60
+glyph  mdi battery 70
+glyph  mdi battery 80
+glyph  mdi battery 90
+glyph  mdi battery alert
+glyph  mdi battery charging
+glyph  mdi battery charging 100
+glyph  mdi battery charging 20
+glyph  mdi battery charging 30
+glyph  mdi battery charging 40
+glyph  mdi battery charging 60
+glyph  mdi battery charging 80
+glyph  mdi battery charging 90
+glyph  mdi battery minus
+glyph  mdi battery negative
+glyph  mdi battery outline
+glyph  mdi battery plus
+glyph  mdi battery positive
+glyph  mdi battery unknown
+glyph  mdi beach
+glyph  mdi beats
+glyph  mdi beer
+glyph  mdi behance
+glyph  mdi bell
+glyph  mdi bell off
+glyph  mdi bell outline
+glyph  mdi bell plus
+glyph  mdi bell ring
+glyph  mdi bell ring outline
+glyph  mdi bell sleep
+glyph  mdi beta
+glyph  mdi bible
+glyph  mdi bike
+glyph  mdi bing
+glyph  mdi binoculars
+glyph  mdi bio
+glyph  mdi biohazard
+glyph  mdi bitbucket
+glyph  mdi blackberry
+glyph  mdi black mesa
+glyph  mdi blender
+glyph  mdi blinds
+glyph  mdi block helper
+glyph  mdi blogger
+glyph  mdi bluetooth
+glyph  mdi bluetooth audio
+glyph  mdi bluetooth connect
+glyph  mdi bluetooth off
+glyph  mdi bluetooth settings
+glyph  mdi bluetooth transfer
+glyph  mdi blur
+glyph  mdi blur linear
+glyph  mdi blur off
+glyph  mdi blur radial
+glyph ﯃ mdi bomb off
+glyph  mdi bone
+glyph  mdi book
+glyph  mdi bookmark
+glyph  mdi bookmark check
+glyph  mdi bookmark music
+glyph  mdi bookmark outline
+glyph  mdi bookmark plus
+glyph  mdi bookmark plus outline
+glyph  mdi bookmark remove
+glyph  mdi book multiple
+glyph  mdi book multiple variant
+glyph  mdi book open
+glyph  mdi book open variant
+glyph 﫚 mdi book plus
+glyph  mdi book variant
+glyph 﫛 mdi boombox
+glyph ﯄ mdi bootstrap
+glyph  mdi border all
+glyph  mdi border bottom
+glyph  mdi border color
+glyph  mdi border horizontal
+glyph  mdi border inside
+glyph  mdi border left
+glyph  mdi border none
+glyph  mdi border outside
+glyph  mdi border right
+glyph  mdi border style
+glyph  mdi border top
+glyph  mdi border vertical
+glyph  mdi bowling
+glyph  mdi box
+glyph  mdi box cutter
+glyph  mdi briefcase
+glyph  mdi briefcase check
+glyph  mdi briefcase download
+glyph  mdi briefcase upload
+glyph  mdi brightness 1
+glyph  mdi brightness 2
+glyph  mdi brightness 3
+glyph  mdi brightness 4
+glyph  mdi brightness 5
+glyph  mdi brightness 6
+glyph  mdi brightness 7
+glyph  mdi brightness auto
+glyph  mdi broom
+glyph  mdi brush
+glyph ﬘ mdi buffer
+glyph  mdi bug
+glyph  mdi bulletin board
+glyph  mdi bullhorn
+glyph 﫜 mdi bullseye
+glyph  mdi bus
+glyph  mdi cached
+glyph  mdi cake
+glyph  mdi cake layered
+glyph  mdi cake variant
+glyph  mdi calculator
+glyph  mdi calendar
+glyph  mdi calendar blank
+glyph  mdi calendar check
+glyph  mdi calendar clock
+glyph  mdi calendar multiple
+glyph  mdi calendar multiple check
+glyph  mdi calendar plus
+glyph  mdi calendar remove
+glyph  mdi calendar text
+glyph  mdi calendar today
+glyph  mdi call made
+glyph  mdi call merge
+glyph  mdi call missed
+glyph  mdi call received
+glyph  mdi call split
+glyph  mdi camcorder
+glyph  mdi camcorder box
+glyph  mdi camcorder box off
+glyph  mdi camcorder off
+glyph  mdi camera
+glyph  mdi camera enhance
+glyph  mdi camera front
+glyph  mdi camera front variant
+glyph  mdi camera iris
+glyph 﫞 mdi camera off
+glyph  mdi camera party mode
+glyph  mdi camera rear
+glyph  mdi camera rear variant
+glyph  mdi camera switch
+glyph  mdi camera timer
+glyph 﫡 mdi candle
+glyph  mdi candycane
+glyph  mdi car
+glyph  mdi car battery
+glyph  mdi car connected
+glyph ﬷ mdi cards
+glyph ﯅ mdi cards variant
+glyph  mdi carrot
+glyph  mdi cart
+glyph  mdi cart outline
+glyph  mdi cart plus
+glyph  mdi car wash
+glyph  mdi case sensitive alt
+glyph  mdi cash
+glyph  mdi cash 100
+glyph  mdi cash multiple
+glyph  mdi cash usd
+glyph  mdi cast
+glyph  mdi cast connected
+glyph  mdi castle
+glyph  mdi cat
+glyph  mdi cellphone
+glyph  mdi cellphone android
+glyph  mdi cellphone basic
+glyph  mdi cellphone dock
+glyph  mdi cellphone iphone
+glyph  mdi cellphone link
+glyph  mdi cellphone link off
+glyph  mdi cellphone settings
+glyph  mdi certificate
+glyph  mdi chair school
+glyph  mdi chart arc
+glyph  mdi chart areaspline
+glyph  mdi chart bar
+glyph 﫢 mdi chart bubble
+glyph  mdi chart histogram
+glyph  mdi chart line
+glyph  mdi chart pie
+glyph  mdi check
+glyph  mdi check all
+glyph  mdi checkbox blank
+glyph  mdi checkbox blank circle
+glyph  mdi checkbox blank circle outline
+glyph  mdi checkbox blank outline
+glyph  mdi checkbox marked
+glyph  mdi checkbox marked circle
+glyph  mdi checkbox marked circle outline
+glyph  mdi checkbox marked outline
+glyph  mdi checkbox multiple blank
+glyph  mdi checkbox multiple blank outline
+glyph  mdi checkbox multiple marked
+glyph ﬽ mdi checkbox multiple marked circle outline
+glyph  mdi checkbox multiple marked outline
+glyph 﫟 mdi check circle
+glyph 﫠 mdi check circle outline
+glyph  mdi checkerboard
+glyph  mdi chemical weapon
+glyph  mdi chevron double down
+glyph  mdi chevron double left
+glyph  mdi chevron double right
+glyph  mdi chevron double up
+glyph  mdi chevron down
+glyph  mdi chevron left
+glyph  mdi chevron right
+glyph  mdi chevron up
+glyph ﬙ mdi chip
+glyph  mdi church
+glyph ﱣ mdi circle
+glyph  mdi cisco webex
+glyph  mdi city
+glyph  mdi clipboard
+glyph  mdi clipboard account
+glyph  mdi clipboard alert
+glyph  mdi clipboard arrow down
+glyph  mdi clipboard arrow left
+glyph  mdi clipboard check
+glyph ﯆ mdi clipboard flow
+glyph  mdi clipboard outline
+glyph  mdi clipboard text
+glyph  mdi clippy
+glyph  mdi clock
+glyph  mdi clock end
+glyph  mdi clock fast
+glyph  mdi clock in
+glyph  mdi clock out
+glyph  mdi clock start
+glyph  mdi close
+glyph  mdi close box
+glyph  mdi close box outline
+glyph  mdi close circle
+glyph  mdi close circle outline
+glyph  mdi closed caption
+glyph  mdi close network
+glyph  mdi close octagon
+glyph  mdi close octagon outline
+glyph ﯇ mdi close outline
+glyph  mdi cloud
+glyph  mdi cloud check
+glyph  mdi cloud circle
+glyph  mdi cloud download
+glyph  mdi cloud off outline
+glyph  mdi cloud outline
+glyph  mdi cloud print
+glyph  mdi cloud print outline
+glyph  mdi cloud upload
+glyph  mdi code array
+glyph  mdi code braces
+glyph  mdi code brackets
+glyph  mdi code equal
+glyph  mdi code greater than
+glyph  mdi code greater than or equal
+glyph  mdi code less than
+glyph  mdi code less than or equal
+glyph  mdi code not equal
+glyph  mdi code not equal variant
+glyph  mdi code parentheses
+glyph  mdi codepen
+glyph  mdi code string
+glyph  mdi code tags
+glyph  mdi coffee
+glyph ﯈ mdi coffee outline
+glyph  mdi coffee to go
+glyph  mdi coin
+glyph ﬿ mdi collage
+glyph  mdi color helper
+glyph  mdi comment
+glyph  mdi comment account
+glyph  mdi comment account outline
+glyph  mdi comment alert
+glyph  mdi comment alert outline
+glyph  mdi comment check
+glyph  mdi comment check outline
+glyph  mdi comment multiple outline
+glyph  mdi comment outline
+glyph  mdi comment plus outline
+glyph  mdi comment processing
+glyph  mdi comment processing outline
+glyph  mdi comment question outline
+glyph 﫝 mdi comment remove
+glyph  mdi comment remove outline
+glyph  mdi comment text
+glyph  mdi comment text outline
+glyph  mdi compare
+glyph  mdi compass
+glyph  mdi compass outline
+glyph  mdi console
+glyph  mdi contact mail
+glyph ﯉ mdi contacts
+glyph  mdi content copy
+glyph  mdi content cut
+glyph  mdi content duplicate
+glyph  mdi content paste
+glyph  mdi content save
+glyph  mdi content save all
+glyph ﬚ mdi content save settings
+glyph  mdi contrast
+glyph  mdi contrast box
+glyph  mdi contrast circle
+glyph  mdi cookie
+glyph 﫥 mdi copyright
+glyph  mdi counter
+glyph  mdi cow
+glyph  mdi creation
+glyph  mdi credit card
+glyph  mdi credit card multiple
+glyph 﫣 mdi credit card off
+glyph  mdi credit card scan
+glyph  mdi crop
+glyph  mdi crop free
+glyph  mdi crop landscape
+glyph  mdi crop portrait
+glyph  mdi crop square
+glyph  mdi crosshairs
+glyph  mdi crosshairs gps
+glyph  mdi crown
+glyph  mdi cube
+glyph  mdi cube outline
+glyph  mdi cube send
+glyph  mdi cube unfolded
+glyph  mdi cup
+glyph 﫤 mdi cup off
+glyph  mdi cup water
+glyph  mdi currency btc
+glyph  mdi currency eur
+glyph  mdi currency gbp
+glyph  mdi currency inr
+glyph  mdi currency ngn
+glyph  mdi currency rub
+glyph  mdi currency try
+glyph  mdi currency usd
+glyph  mdi cursor default
+glyph  mdi cursor default outline
+glyph  mdi cursor move
+glyph  mdi cursor pointer
+glyph 﫦 mdi cursor text
+glyph  mdi database
+glyph  mdi database minus
+glyph  mdi database plus
+glyph  mdi debug step into
+glyph  mdi debug step out
+glyph  mdi debug step over
+glyph  mdi decimal decrease
+glyph  mdi decimal increase
+glyph  mdi delete
+glyph ﯊ mdi delete empty
+glyph 﫧 mdi delete forever
+glyph 﫨 mdi delete sweep
+glyph  mdi delete variant
+glyph  mdi delta
+glyph  mdi deskphone
+glyph  mdi desktop mac
+glyph  mdi desktop tower
+glyph  mdi details
+glyph  mdi deviantart
+glyph ﬛ mdi dialpad
+glyph  mdi diamond
+glyph  mdi dice 1
+glyph  mdi dice 2
+glyph  mdi dice 3
+glyph  mdi dice 4
+glyph  mdi dice 5
+glyph  mdi dice 6
+glyph 﫩 mdi dice d20
+glyph 﫪 mdi dice d4
+glyph 﫫 mdi dice d6
+glyph 﫬 mdi dice d8
+glyph ﬜ mdi dictionary
+glyph  mdi directions
+glyph 﫭 mdi disk
+glyph  mdi disk alert
+glyph  mdi disqus
+glyph  mdi disqus outline
+glyph  mdi division
+glyph  mdi division box
+glyph  mdi dns
+glyph  mdi domain
+glyph  mdi dots horizontal
+glyph  mdi dots vertical
+glyph  mdi download
+glyph  mdi drag
+glyph  mdi drag horizontal
+glyph  mdi drag vertical
+glyph  mdi drawing
+glyph  mdi drawing box
+glyph  mdi dribbble
+glyph  mdi dribbble box
+glyph  mdi drone
+glyph  mdi dropbox
+glyph  mdi drupal
+glyph  mdi duck
+glyph  mdi dumbbell
+glyph  mdi earth
+glyph ﯋ mdi earth box
+glyph ﯌ mdi earth box off
+glyph  mdi earth off
+glyph  mdi edge
+glyph  mdi eject
+glyph  mdi elevation decline
+glyph  mdi elevation rise
+glyph  mdi elevator
+glyph  mdi email
+glyph ﯍ mdi email alert
+glyph  mdi email open
+glyph 﫮 mdi email open outline
+glyph  mdi email outline
+glyph  mdi email secure
+glyph 﫯 mdi email variant
+glyph ﮲ mdi emby
+glyph  mdi emoticon
+glyph  mdi emoticon cool
+glyph  mdi emoticon devil
+glyph  mdi emoticon happy
+glyph  mdi emoticon neutral
+glyph  mdi emoticon poop
+glyph  mdi emoticon sad
+glyph  mdi emoticon tongue
+glyph  mdi engine
+glyph  mdi engine outline
+glyph  mdi equal
+glyph  mdi equal box
+glyph  mdi eraser
+glyph  mdi escalator
+glyph  mdi ethernet
+glyph  mdi ethernet cable
+glyph  mdi ethernet cable off
+glyph  mdi etsy
+glyph  mdi evernote
+glyph 﫰 mdi ev station
+glyph  mdi exclamation
+glyph  mdi exit to app
+glyph  mdi export
+glyph  mdi eye
+glyph  mdi eyedropper
+glyph  mdi eyedropper variant
+glyph  mdi eye off
+glyph ﯏ mdi eye off outline
+glyph ﯎ mdi eye outline
+glyph ﭂ mdi face
+glyph  mdi facebook
+glyph  mdi facebook box
+glyph  mdi facebook messenger
+glyph  mdi factory
+glyph  mdi fan
+glyph  mdi fast forward
+glyph ﯐ mdi fast forward outline
+glyph  mdi fax
+glyph ﯑ mdi feather
+glyph  mdi ferry
+glyph  mdi file
+glyph  mdi file chart
+glyph  mdi file check
+glyph  mdi file cloud
+glyph  mdi file delimited
+glyph  mdi file document
+glyph  mdi file document box
+glyph  mdi file excel
+glyph  mdi file excel box
+glyph  mdi file export
+glyph  mdi file find
+glyph ﬒ mdi file hidden
+glyph  mdi file image
+glyph  mdi file import
+glyph  mdi file lock
+glyph  mdi file multiple
+glyph  mdi file music
+glyph  mdi file outline
+glyph  mdi file pdf
+glyph  mdi file pdf box
+glyph  mdi file powerpoint
+glyph  mdi file powerpoint box
+glyph  mdi file presentation box
+glyph  mdi file send
+glyph  mdi file video
+glyph  mdi file word
+glyph  mdi file word box
+glyph  mdi file xml
+glyph  mdi film
+glyph  mdi filmstrip
+glyph  mdi filmstrip off
+glyph  mdi filter
+glyph  mdi filter outline
+glyph  mdi filter remove
+glyph  mdi filter remove outline
+glyph  mdi filter variant
+glyph ﯒ mdi find replace
+glyph  mdi fingerprint
+glyph  mdi fire
+glyph  mdi firefox
+glyph  mdi fish
+glyph  mdi flag
+glyph  mdi flag checkered
+glyph  mdi flag outline
+glyph  mdi flag triangle
+glyph  mdi flag variant
+glyph  mdi flag variant outline
+glyph  mdi flash
+glyph  mdi flash auto
+glyph  mdi flashlight
+glyph  mdi flashlight off
+glyph  mdi flash off
+glyph  mdi flask
+glyph  mdi flask empty
+glyph  mdi flask empty outline
+glyph  mdi flask outline
+glyph  mdi flattr
+glyph  mdi flip to back
+glyph  mdi flip to front
+glyph  mdi floppy
+glyph  mdi flower
+glyph  mdi folder
+glyph  mdi folder account
+glyph  mdi folder download
+glyph  mdi folder google drive
+glyph  mdi folder image
+glyph  mdi folder lock
+glyph  mdi folder lock open
+glyph  mdi folder move
+glyph  mdi folder multiple
+glyph  mdi folder multiple image
+glyph  mdi folder multiple outline
+glyph  mdi folder outline
+glyph  mdi folder plus
+glyph  mdi folder remove
+glyph  mdi folder upload
+glyph  mdi font awesome
+glyph  mdi food
+glyph  mdi food apple
+glyph 﫱 mdi food fork drink
+glyph 﫲 mdi food off
+glyph  mdi food variant
+glyph  mdi football
+glyph  mdi football australian
+glyph  mdi football helmet
+glyph  mdi format align center
+glyph  mdi format align justify
+glyph  mdi format align left
+glyph  mdi format align right
+glyph ﭅ mdi format annotation plus
+glyph  mdi format bold
+glyph  mdi format clear
+glyph  mdi format color fill
+glyph  mdi format float center
+glyph  mdi format float left
+glyph  mdi format float none
+glyph  mdi format float right
+glyph  mdi format header 1
+glyph  mdi format header 2
+glyph  mdi format header 3
+glyph  mdi format header 4
+glyph  mdi format header 5
+glyph  mdi format header 6
+glyph  mdi format header decrease
+glyph  mdi format header equal
+glyph  mdi format header increase
+glyph  mdi format header pound
+glyph ﬞ mdi format horizontal align left
+glyph  mdi format indent decrease
+glyph  mdi format indent increase
+glyph  mdi format italic
+glyph  mdi format line spacing
+glyph  mdi format list bulleted
+glyph  mdi format list bulleted type
+glyph  mdi format list numbers
+glyph  mdi format paint
+glyph  mdi format paragraph
+glyph  mdi format quote close
+glyph  mdi format size
+glyph  mdi format strikethrough
+glyph  mdi format strikethrough variant
+glyph  mdi format subscript
+glyph  mdi format superscript
+glyph  mdi format text
+glyph  mdi format textdirection l to r
+glyph  mdi format textdirection r to l
+glyph 﫳 mdi format title
+glyph  mdi format underline
+glyph  mdi format wrap inline
+glyph  mdi format wrap square
+glyph  mdi format wrap tight
+glyph  mdi format wrap top bottom
+glyph  mdi forum
+glyph  mdi forward
+glyph  mdi foursquare
+glyph  mdi fridge
+glyph  mdi fridge filled
+glyph  mdi fridge filled bottom
+glyph  mdi fridge filled top
+glyph  mdi fullscreen
+glyph  mdi fullscreen exit
+glyph  mdi function
+glyph  mdi gamepad
+glyph  mdi gamepad variant
+glyph  mdi gas station
+glyph  mdi gate
+glyph  mdi gauge
+glyph  mdi gavel
+glyph  mdi gender female
+glyph  mdi gender male
+glyph  mdi gender male female
+glyph  mdi gender transgender
+glyph  mdi ghost
+glyph  mdi gift
+glyph  mdi git
+glyph  mdi github box
+glyph  mdi github circle
+glyph  mdi glassdoor
+glyph  mdi glasses
+glyph  mdi glass flute
+glyph  mdi glass mug
+glyph  mdi glass stange
+glyph  mdi glass tulip
+glyph  mdi gmail
+glyph  mdi gnome
+glyph  mdi google
+glyph  mdi google cardboard
+glyph  mdi google chrome
+glyph  mdi google circles
+glyph  mdi google circles communities
+glyph  mdi google circles extended
+glyph  mdi google circles group
+glyph  mdi google controller
+glyph  mdi google controller off
+glyph  mdi google drive
+glyph  mdi google earth
+glyph  mdi google glass
+glyph 﫴 mdi google maps
+glyph  mdi google nearby
+glyph  mdi google pages
+glyph  mdi google physical web
+glyph  mdi google play
+glyph  mdi google plus
+glyph  mdi google plus box
+glyph  mdi google translate
+glyph  mdi google wallet
+glyph  mdi grid
+glyph  mdi grid off
+glyph  mdi group
+glyph  mdi guitar electric
+glyph  mdi guitar pick
+glyph  mdi guitar pick outline
+glyph  mdi hand pointing right
+glyph  mdi hanger
+glyph  mdi hangouts
+glyph  mdi harddisk
+glyph  mdi headphones
+glyph  mdi headphones box
+glyph  mdi headphones settings
+glyph  mdi headset
+glyph  mdi headset dock
+glyph  mdi headset off
+glyph  mdi heart
+glyph  mdi heart box
+glyph  mdi heart box outline
+glyph  mdi heart broken
+glyph  mdi heart outline
+glyph 﫵 mdi heart pulse
+glyph  mdi help
+glyph  mdi help circle
+glyph  mdi hexagon
+glyph  mdi hexagon outline
+glyph 﫶 mdi highway
+glyph  mdi history
+glyph  mdi hololens
+glyph  mdi home
+glyph 﫷 mdi home map marker
+glyph  mdi home modern
+glyph  mdi home variant
+glyph  mdi hops
+glyph  mdi hospital
+glyph  mdi hospital building
+glyph  mdi hospital marker
+glyph  mdi hotel
+glyph  mdi houzz
+glyph  mdi houzz box
+glyph  mdi human
+glyph  mdi human child
+glyph  mdi human male female
+glyph  mdi image
+glyph  mdi image album
+glyph  mdi image area
+glyph  mdi image area close
+glyph  mdi image broken
+glyph  mdi image broken variant
+glyph  mdi image filter
+glyph  mdi image filter black white
+glyph  mdi image filter center focus
+glyph  mdi image filter center focus weak
+glyph  mdi image filter drama
+glyph  mdi image filter frames
+glyph  mdi image filter hdr
+glyph  mdi image filter none
+glyph  mdi image filter tilt shift
+glyph  mdi image filter vintage
+glyph  mdi image multiple
+glyph  mdi import
+glyph  mdi inbox arrow down
+glyph  mdi inbox arrow up
+glyph 﫸 mdi incognito
+glyph  mdi information
+glyph  mdi information outline
+glyph  mdi instagram
+glyph  mdi instapaper
+glyph  mdi internet explorer
+glyph  mdi invert colors
+glyph  mdi jeepney
+glyph  mdi jira
+glyph  mdi jsfiddle
+glyph  mdi keg
+glyph 﫹 mdi kettle
+glyph  mdi key
+glyph  mdi keyboard
+glyph  mdi keyboard backspace
+glyph  mdi keyboard caps
+glyph  mdi keyboard close
+glyph  mdi keyboard off
+glyph  mdi keyboard return
+glyph  mdi keyboard tab
+glyph  mdi keyboard variant
+glyph  mdi key change
+glyph  mdi key minus
+glyph  mdi key plus
+glyph  mdi key remove
+glyph  mdi key variant
+glyph  mdi kodi
+glyph  mdi label
+glyph  mdi label outline
+glyph ﮳ mdi lamp
+glyph  mdi lan
+glyph  mdi lan connect
+glyph  mdi lan disconnect
+glyph  mdi language csharp
+glyph  mdi language css3
+glyph  mdi language html5
+glyph  mdi language javascript
+glyph  mdi language php
+glyph  mdi language python
+glyph  mdi language python text
+glyph  mdi lan pending
+glyph  mdi laptop
+glyph  mdi laptop chromebook
+glyph  mdi laptop mac
+glyph  mdi laptop windows
+glyph  mdi lastfm
+glyph  mdi launch
+glyph  mdi layers
+glyph  mdi layers off
+glyph  mdi leaf
+glyph  mdi led off
+glyph  mdi led on
+glyph  mdi led outline
+glyph  mdi led variant off
+glyph  mdi led variant on
+glyph  mdi led variant outline
+glyph  mdi library
+glyph  mdi library books
+glyph  mdi library music
+glyph  mdi library plus
+glyph  mdi lightbulb
+glyph  mdi lightbulb outline
+glyph  mdi link
+glyph  mdi linkedin
+glyph  mdi linkedin box
+glyph  mdi link off
+glyph  mdi link variant
+glyph  mdi link variant off
+glyph  mdi linux
+glyph  mdi lock
+glyph  mdi lock open
+glyph  mdi lock open outline
+glyph  mdi lock outline
+glyph 﫺 mdi lock plus
+glyph  mdi login
+glyph 﫻 mdi login variant
+glyph  mdi logout
+glyph 﫼 mdi logout variant
+glyph  mdi looks
+glyph  mdi loupe
+glyph  mdi lumx
+glyph  mdi magnet
+glyph  mdi magnet on
+glyph  mdi magnify
+glyph  mdi magnify minus
+glyph  mdi magnify plus
+glyph  mdi mail ru
+glyph  mdi map
+glyph  mdi map marker
+glyph  mdi map marker circle
+glyph  mdi map marker multiple
+glyph  mdi map marker off
+glyph  mdi map marker radius
+glyph  mdi margin
+glyph  mdi markdown
+glyph  mdi marker check
+glyph  mdi martini
+glyph  mdi material ui
+glyph  mdi math compass
+glyph  mdi maxcdn
+glyph  mdi medium
+glyph  mdi memory
+glyph  mdi menu
+glyph  mdi menu down
+glyph ﮴ mdi menu down outline
+glyph  mdi menu left
+glyph  mdi menu right
+glyph  mdi menu up
+glyph ﮵ mdi menu up outline
+glyph  mdi message
+glyph  mdi message alert
+glyph  mdi message draw
+glyph  mdi message image
+glyph  mdi message outline
+glyph  mdi message processing
+glyph  mdi message reply
+glyph  mdi message reply text
+glyph  mdi message text
+glyph  mdi message text outline
+glyph  mdi message video
+glyph  mdi microphone
+glyph  mdi microphone off
+glyph  mdi microphone outline
+glyph  mdi microphone settings
+glyph  mdi microphone variant
+glyph  mdi microphone variant off
+glyph  mdi microsoft
+glyph  mdi minecraft
+glyph  mdi minus
+glyph  mdi minus box
+glyph  mdi minus circle
+glyph  mdi minus circle outline
+glyph  mdi minus network
+glyph ﬩ mdi mixcloud
+glyph  mdi monitor
+glyph  mdi monitor multiple
+glyph  mdi more
+glyph  mdi motorbike
+glyph  mdi mouse
+glyph  mdi mouse off
+glyph  mdi mouse variant
+glyph  mdi mouse variant off
+glyph  mdi movie
+glyph  mdi multiplication
+glyph  mdi multiplication box
+glyph  mdi music box
+glyph  mdi music box outline
+glyph  mdi music circle
+glyph  mdi music note
+glyph 﫽 mdi music note bluetooth
+glyph 﫾 mdi music note bluetooth off
+glyph  mdi music note eighth
+glyph  mdi music note half
+glyph  mdi music note off
+glyph  mdi music note quarter
+glyph  mdi music note sixteenth
+glyph  mdi music note whole
+glyph  mdi nature
+glyph  mdi nature people
+glyph  mdi navigation
+glyph  mdi needle
+glyph  mdi nest protect
+glyph  mdi nest thermostat
+glyph  mdi new box
+glyph  mdi newspaper
+glyph  mdi nfc
+glyph  mdi nfc tap
+glyph  mdi nfc variant
+glyph  mdi nodejs
+glyph  mdi note
+glyph ﮶ mdi note multiple
+glyph ﮷ mdi note multiple outline
+glyph  mdi note outline
+glyph  mdi note plus
+glyph  mdi note plus outline
+glyph  mdi note text
+glyph  mdi notification clear all
+glyph  mdi numeric
+glyph  mdi numeric 0 box
+glyph  mdi numeric 0 box multiple outline
+glyph  mdi numeric 0 box outline
+glyph  mdi numeric 1 box
+glyph  mdi numeric 1 box multiple outline
+glyph  mdi numeric 1 box outline
+glyph  mdi numeric 2 box
+glyph  mdi numeric 2 box multiple outline
+glyph  mdi numeric 2 box outline
+glyph  mdi numeric 3 box
+glyph  mdi numeric 3 box multiple outline
+glyph  mdi numeric 3 box outline
+glyph  mdi numeric 4 box
+glyph  mdi numeric 4 box multiple outline
+glyph  mdi numeric 4 box outline
+glyph  mdi numeric 5 box
+glyph  mdi numeric 5 box multiple outline
+glyph  mdi numeric 5 box outline
+glyph  mdi numeric 6 box
+glyph  mdi numeric 6 box multiple outline
+glyph  mdi numeric 6 box outline
+glyph  mdi numeric 7 box
+glyph  mdi numeric 7 box multiple outline
+glyph  mdi numeric 7 box outline
+glyph  mdi numeric 8 box
+glyph  mdi numeric 8 box multiple outline
+glyph  mdi numeric 8 box outline
+glyph  mdi numeric 9 box
+glyph  mdi numeric 9 box multiple outline
+glyph  mdi numeric 9 box outline
+glyph  mdi numeric 9 plus box
+glyph  mdi numeric 9 plus box multiple outline
+glyph  mdi numeric 9 plus box outline
+glyph  mdi nutrition
+glyph  mdi octagon
+glyph  mdi octagon outline
+glyph  mdi odnoklassniki
+glyph  mdi office
+glyph  mdi oil
+glyph  mdi oil temperature
+glyph  mdi omega
+glyph  mdi onedrive
+glyph  mdi openid
+glyph  mdi open in app
+glyph  mdi open in new
+glyph  mdi opera
+glyph  mdi orbit
+glyph  mdi ornament
+glyph  mdi ornament variant
+glyph  mdi owl
+glyph  mdi package
+glyph  mdi package down
+glyph  mdi package up
+glyph  mdi package variant
+glyph  mdi package variant closed
+glyph 﫿 mdi page first
+glyph  mdi palette
+glyph  mdi palette advanced
+glyph  mdi panda
+glyph  mdi pandora
+glyph  mdi panorama
+glyph  mdi panorama fisheye
+glyph  mdi panorama horizontal
+glyph  mdi panorama vertical
+glyph  mdi panorama wide angle
+glyph  mdi paperclip
+glyph  mdi paper cut vertical
+glyph  mdi parking
+glyph  mdi pause
+glyph  mdi pause circle
+glyph  mdi pause circle outline
+glyph  mdi pause octagon
+glyph  mdi pause octagon outline
+glyph  mdi paw
+glyph  mdi pen
+glyph  mdi pencil
+glyph  mdi pencil box
+glyph  mdi pencil box outline
+glyph  mdi pencil lock
+glyph  mdi pencil off
+glyph  mdi percent
+glyph  mdi pharmacy
+glyph  mdi phone
+glyph  mdi phone bluetooth
+glyph  mdi phone forward
+glyph  mdi phone hangup
+glyph  mdi phone incoming
+glyph  mdi phone in talk
+glyph  mdi phone locked
+glyph  mdi phone log
+glyph  mdi phone missed
+glyph  mdi phone outgoing
+glyph  mdi phone paused
+glyph  mdi phone settings
+glyph  mdi phone voip
+glyph  mdi pi
+glyph  mdi pi box
+glyph ﮹ mdi plane shield
+glyph ﮸ mdi plex
+glyph ﬇ mdi rowing
+glyph ﬈ mdi saxophone
+glyph ﬉ mdi signal variant
+glyph ﱢ mdi square
+glyph ﱡ mdi square outline
+glyph ﬊ mdi stackexchange
+glyph ﬋ mdi subdirectory arrow left
+glyph ﬌ mdi subdirectory arrow right
+glyph ﱠ mdi taco
+glyph ﳲ mdi television classic
+glyph ﬍ mdi textbox
+glyph ﳳ mdi textbox password
+glyph ﳴ mdi thought bubble
+glyph ﱞ mdi unfold less vertical
+glyph ﱟ mdi unfold more vertical
+glyph  mdi vector square
+glyph ﴾ mdi video input component
+glyph ﴿ mdi video input hdmi
+glyph ﵀ mdi video input svideo
+glyph ﵁ mdi view dashboard variant
+glyph 﩮 mdi view day
+glyph 﩯 mdi view grid
+glyph ﬎ mdi violin
+glyph ﬏ mdi visualstudio
+glyph ﵂ mdi vuejs
+glyph ﬑ mdi watermark
+glyph ﬐ mdi wechat
+glyph ﵃ mdi xamarin
+glyph ﵄ mdi xamarin outline
+glyph ﵅ mdi youtube creator studio
+glyph ﵆ mdi youtube gaming
+glyph  oct accessibility
+glyph  oct accessibility inset
+glyph  oct alert
+glyph  oct alert fill
+glyph  oct apps
+glyph  oct archive
+glyph  oct arrow both
+glyph  oct arrow down
+glyph  oct arrow down left
+glyph  oct arrow down right
+glyph  oct arrow left
+glyph  oct arrow right
+glyph  oct arrow switch
+glyph  oct arrow up
+glyph  oct arrow up left
+glyph  oct arrow up right
+glyph  oct beaker
+glyph  oct bell
+glyph  oct bell fill
+glyph  oct bell slash
+glyph  oct blocked
+glyph  oct bold
+glyph  oct book
+glyph  oct bookmark
+glyph  oct bookmark fill
+glyph  oct bookmark slash
+glyph  oct bookmark slash fill
+glyph  oct briefcase
+glyph  oct broadcast
+glyph  oct browser
+glyph  oct bug
+glyph  oct cache
+glyph  oct calendar
+glyph  oct check
+glyph  oct checkbox
+glyph  oct check circle
+glyph  oct check circle fill
+glyph  oct checklist
+glyph  oct chevron down
+glyph  oct chevron left
+glyph  oct chevron right
+glyph  oct chevron up
+glyph  oct circle
+glyph  oct circle slash
+glyph  oct clock
+glyph  oct clock fill
+glyph  oct cloud
+glyph  oct cloud offline
+glyph  oct code
+glyph  oct code of conduct
+glyph  oct code review
+glyph  oct codescan
+glyph  oct codescan checkmark
+glyph  oct codespaces
+glyph  oct code square
+glyph  oct columns
+glyph  oct command palette
+glyph  oct comment
+glyph  oct comment discussion
+glyph  oct commit
+glyph  oct container
+glyph  oct copilot
+glyph  oct copilot error
+glyph  oct copilot warning
+glyph  oct copy
+glyph  oct cpu
+glyph  oct credit card
+glyph  oct cross reference
+glyph  oct dash
+glyph  oct database
+glyph  oct dependabot
+glyph  oct desktop download
+glyph  oct device camera
+glyph  oct device camera video
+glyph  oct device desktop
+glyph  oct device mobile
+glyph  oct diamond
+glyph  oct diff
+glyph  oct diff added
+glyph  oct diff ignored
+glyph  oct diff modified
+glyph  oct diff removed
+glyph  oct diff renamed
+glyph  oct discussion closed
+glyph  oct discussion duplicate
+glyph  oct discussion outdated
+glyph  oct dot
+glyph  oct dot fill
+glyph  oct download
+glyph  oct duplicate
+glyph  oct ellipsis
+glyph  oct eye
+glyph  oct eye closed
+glyph  oct feed discussion
+glyph  oct feed forked
+glyph  oct feed heart
+glyph  oct feed merged
+glyph  oct feed person
+glyph  oct feed repo
+glyph  oct feed rocket
+glyph  oct feed star
+glyph  oct feed tag
+glyph  oct feed trophy
+glyph  oct file
+glyph  oct file added
+glyph  oct file badge
+glyph  oct file binary
+glyph  oct file code
+glyph  oct file diff
+glyph  oct file directory
+glyph  oct file directory fill
+glyph  oct file directory open fill
+glyph  oct file media
+glyph  oct file moved
+glyph  oct file removed
+glyph  oct file submodule
+glyph  oct file symlink directory
+glyph  oct file symlink file
+glyph  oct file zip
+glyph  oct filter
+glyph  oct fiscal host
+glyph  oct flame
+glyph  oct fold
+glyph  oct fold down
+glyph  oct fold up
+glyph  oct gear
+glyph  oct gift
+glyph  oct git branch
+glyph  oct git commit
+glyph  oct git compare
+glyph  oct git merge
+glyph  oct git merge queue
+glyph  oct git pull request
+glyph  oct git pull request closed
+glyph  oct git pull request draft
+glyph  oct globe
+glyph  oct goal
+glyph  oct grabber
+glyph  oct graph
+glyph  oct hash
+glyph  oct heading
+glyph ♥ oct heart
+glyph  oct heart fill
+glyph  oct history
+glyph  oct home
+glyph  oct home fill
+glyph  oct horizontal rule
+glyph  oct hourglass
+glyph  oct hubot
+glyph  oct id badge
+glyph  oct image
+glyph  oct inbox
+glyph  oct infinity
+glyph  oct info
+glyph  oct issue closed
+glyph  oct issue draft
+glyph  oct issue opened
+glyph  oct issue reopened
+glyph  oct issue tracked by
+glyph  oct issue tracks
+glyph  oct italic
+glyph  oct iterations
+glyph  oct kebab horizontal
+glyph  oct key
+glyph  oct key asterisk
+glyph  oct law
+glyph  oct light bulb
+glyph  oct link
+glyph  oct link external
+glyph  oct list ordered
+glyph  oct list unordered
+glyph  oct location
+glyph  oct lock
+glyph  oct log
+glyph  oct logo gist
+glyph  oct logo github
+glyph  oct mail
+glyph  oct markdown
+glyph  oct mark github
+glyph  oct megaphone
+glyph  oct mention
+glyph  oct meter
+glyph  oct milestone
+glyph  oct mirror
+glyph  oct moon
+glyph  oct mortar board
+glyph  oct move to bottom
+glyph  oct move to end
+glyph  oct move to start
+glyph  oct move to top
+glyph  oct multi select
+glyph  oct mute
+glyph  oct no entry
+glyph  oct north star
+glyph  oct note
+glyph  oct number
+glyph  oct organization
+glyph  oct package
+glyph  oct package dependencies
+glyph  oct package dependents
+glyph  oct paintbrush
+glyph  oct paper airplane
+glyph  oct paperclip
+glyph  oct passkey fill
+glyph  oct paste
+glyph  oct pencil
+glyph  oct people
+glyph  oct person
+glyph  oct person add
+glyph  oct person fill
+glyph  oct pin
+glyph  oct play
+glyph  oct plug
+glyph  oct plus
+glyph  oct plus circle
+glyph  oct project
+glyph  oct project roadmap
+glyph  oct project symlink
+glyph  oct project template
+glyph  oct pulse
+glyph  oct question
+glyph  oct quote
+glyph  oct read
+glyph  oct rel file path
+glyph  oct reply
+glyph  oct repo
+glyph  oct repo clone
+glyph  oct repo deleted
+glyph  oct repo forked
+glyph  oct repo locked
+glyph  oct repo pull
+glyph  oct repo push
+glyph  oct report
+glyph  oct repo template
+glyph  oct rocket
+glyph  oct rows
+glyph  oct rss
+glyph  oct ruby
+glyph  oct screen full
+glyph  oct screen normal
+glyph  oct search
+glyph  oct server
+glyph  oct share
+glyph  oct share android
+glyph  oct shield
+glyph  oct shield check
+glyph  oct shield lock
+glyph  oct shield slash
+glyph  oct shield x
+glyph  oct sidebar collapse
+glyph  oct sidebar expand
+glyph  oct sign in
+glyph  oct sign out
+glyph  oct single select
+glyph  oct skip
+glyph  oct skip fill
+glyph  oct sliders
+glyph  oct smiley
+glyph  oct sort asc
+glyph  oct sort desc
+glyph  oct sparkle fill
+glyph  oct sponsor tiers
+glyph  oct square
+glyph  oct square fill
+glyph  oct squirrel
+glyph  oct stack
+glyph  oct star
+glyph  oct star fill
+glyph  oct stop
+glyph  oct stopwatch
+glyph  oct strikethrough
+glyph  oct sun
+glyph  oct sync
+glyph  oct tab
+glyph  oct tab external
+glyph  oct table
+glyph  oct tag
+glyph  oct tasklist
+glyph  oct telescope
+glyph  oct telescope fill
+glyph  oct terminal
+glyph  oct three bars
+glyph  oct thumbsdown
+glyph  oct thumbsup
+glyph  oct tools
+glyph  oct trash
+glyph  oct triangle down
+glyph  oct triangle left
+glyph  oct triangle right
+glyph  oct triangle up
+glyph  oct trophy
+glyph  oct typography
+glyph  oct unfold
+glyph  oct unlink
+glyph  oct unlock
+glyph  oct unmute
+glyph  oct unread
+glyph  oct unverified
+glyph  oct upload
+glyph  oct verified
+glyph  oct versions
+glyph  oct video
+glyph  oct webhook
+glyph  oct workflow
+glyph  oct x
+glyph  oct x circle
+glyph  oct x circle fill
+glyph ⚡ oct zap
+glyph  oct zoom in
+glyph  oct zoom out
+glyph  pl branch
+glyph  ple backslash separator
+glyph  ple backslash separator redundant
+glyph  ple column number
+glyph  ple flame thick
+glyph  ple flame thick mirrored
+glyph  ple flame thin
+glyph  ple flame thin mirrored
+glyph  ple forwardslash separator
+glyph  ple forwardslash separator redundant
+glyph  ple honeycomb
+glyph  ple honeycomb outline
+glyph  ple ice waveform
+glyph  ple ice waveform mirrored
+glyph  ple left half circle thick
+glyph  ple left half circle thin
+glyph  ple left hard divider inverse
+glyph  ple lego block facing
+glyph  ple lego block sideways
+glyph  ple lego separator
+glyph  ple lego separator thin
+glyph  ple lower left triangle
+glyph  ple lower right triangle
+glyph  ple pixelated squares big
+glyph  ple pixelated squares big mirrored
+glyph  ple pixelated squares small
+glyph  ple pixelated squares small mirrored
+glyph  ple right half circle thick
+glyph  ple right half circle thin
+glyph  ple right hard divider inverse
+glyph  ple trapezoid top bottom
+glyph  ple trapezoid top bottom mirrored
+glyph  ple upper left triangle
+glyph  ple upper right triangle
+glyph  pl hostname
+glyph  pl left hard divider
+glyph  pl left soft divider
+glyph  pl line number
+glyph  pl right hard divider
+glyph  pl right soft divider
+glyph  pom away
+glyph  pom clean code
+glyph  pom external interruption
+glyph  pom internal interruption
+glyph  pom long pause
+glyph  pom pair programming
+glyph  pom pomodoro done
+glyph  pom pomodoro estimated
+glyph  pom pomodoro squashed
+glyph  pom pomodoro ticking
+glyph  pom short pause
+glyph  seti apple
+glyph  seti argdown
+glyph  seti asm
+glyph  seti audio
+glyph  seti babel
+glyph  seti bicep
+glyph  seti bower
+glyph  seti bsl
+glyph  seti c
+glyph  seti cake
+glyph  seti cake php
+glyph  seti checkbox
+glyph  seti checkbox unchecked
+glyph  seti clock
+glyph  seti clojure
+glyph  seti code climate
+glyph  seti code search
+glyph  seti coffee
+glyph  seti coldfusion
+glyph  seti config
+glyph  seti cpp
+glyph  seti crystal embedded
+glyph  seti c sharp
+glyph  seti css
+glyph  seti csv
+glyph  seti cu
+glyph  seti d
+glyph  seti dart
+glyph  seti db
+glyph  seti default
+glyph  seti deprecation cop
+glyph  seti docker
+glyph  seti editorconfig
+glyph  seti ejs
+glyph  seti elixir script
+glyph  seti error
+glyph  seti eslint
+glyph  seti ethereum
+glyph  seti favicon
+glyph  seti firefox
+glyph  seti folder
+glyph  seti font
+glyph  seti f sharp
+glyph  seti git
+glyph  seti github
+glyph  seti gitlab
+glyph  seti go
+glyph  seti go2
+glyph  seti godot
+glyph  seti gradle
+glyph  seti grails
+glyph  seti graphql
+glyph  seti grunt
+glyph  seti gulp
+glyph  seti hacklang
+glyph  seti haml
+glyph  seti happenings
+glyph  seti haskell
+glyph  seti haxe
+glyph  seti heroku
+glyph  seti hex
+glyph  seti html
+glyph  seti ignored
+glyph  seti illustrator
+glyph  seti image
+glyph  seti info
+glyph  seti ionic
+glyph  seti jade
+glyph  seti java
+glyph  seti javascript
+glyph  seti jenkins
+glyph  seti jinja
+glyph  seti json
+glyph  seti julia
+glyph  seti karma
+glyph  seti license
+glyph  seti liquid
+glyph  seti livescript
+glyph  seti lock
+glyph  seti lua
+glyph  seti makefile
+glyph  seti markdown
+glyph  seti maven
+glyph  seti mdo
+glyph  seti mustache
+glyph  seti new file
+glyph  seti nim
+glyph  seti notebook
+glyph  seti npm
+glyph  seti nunjucks
+glyph  seti ocaml
+glyph  seti odata
+glyph  seti pddl
+glyph  seti pdf
+glyph  seti perl
+glyph  seti photoshop
+glyph  seti php
+glyph  seti pipeline
+glyph  seti plan
+glyph  seti platformio
+glyph  seti powershell
+glyph  seti prisma
+glyph  seti project
+glyph  seti prolog
+glyph  seti pug
+glyph  seti puppet
+glyph  seti python
+glyph  seti r
+glyph  seti rails
+glyph  seti react
+glyph  seti reasonml
+glyph  seti rescript
+glyph  seti rollup
+glyph  seti rust
+glyph  seti salesforce
+glyph  seti sass
+glyph  seti sbt
+glyph  seti scala
+glyph  seti search
+glyph  seti settings
+glyph  seti shell
+glyph  seti slim
+glyph  seti smarty
+glyph  seti spring
+glyph  seti stylelint
+glyph  seti stylus
+glyph  seti sublime
+glyph  seti svelte
+glyph  seti svg
+glyph  seti swift
+glyph  seti terraform
+glyph  seti tex
+glyph  seti todo
+glyph  seti tsconfig
+glyph  seti twig
+glyph  seti typescript
+glyph  seti vala
+glyph  seti video
+glyph  seti vue
+glyph  seti wasm
+glyph  seti wat
+glyph  seti webpack
+glyph  seti wgt
+glyph  seti word
+glyph  seti xls
+glyph  seti xml
+glyph  seti yarn
+glyph  seti yml
+glyph  seti zig
+glyph  seti zip
+glyph ﬅ mdi pool
+glyph ﬆ mdi rounded corner
+glyph  weather alien
+glyph  weather aliens
+glyph  weather barometer
+glyph  weather celsius
+glyph  weather cloud
+glyph  weather cloud down
+glyph  weather cloud refresh
+glyph  weather cloud up
+glyph  weather cloudy
+glyph  weather cloudy gusts
+glyph  weather cloudy windy
+glyph  weather day cloudy
+glyph  weather day cloudy gusts
+glyph  weather day cloudy high
+glyph  weather day cloudy windy
+glyph  weather day fog
+glyph  weather day hail
+glyph  weather day haze
+glyph  weather day lightning
+glyph  weather day light wind
+glyph  weather day rain
+glyph  weather day rain mix
+glyph  weather day rain wind
+glyph  weather day showers
+glyph  weather day sleet
+glyph  weather day sleet storm
+glyph  weather day snow
+glyph  weather day snow thunderstorm
+glyph  weather day snow wind
+glyph  weather day sprinkle
+glyph  weather day storm showers
+glyph  weather day sunny
+glyph  weather day sunny overcast
+glyph  weather day thunderstorm
+glyph  weather day windy
+glyph  weather degrees
+glyph  weather direction down
+glyph  weather direction down left
+glyph  weather direction down right
+glyph  weather direction left
+glyph  weather direction right
+glyph  weather direction up
+glyph  weather direction up left
+glyph  weather direction up right
+glyph  weather dust
+glyph  weather earthquake
+glyph  weather fahrenheit
+glyph  weather fire
+glyph  weather flood
+glyph  weather fog
+glyph  weather gale warning
+glyph  weather hail
+glyph  weather horizon
+glyph  weather horizon alt
+glyph  weather hot
+glyph  weather humidity
+glyph  weather hurricane
+glyph  weather hurricane warning
+glyph  weather lightning
+glyph  weather lunar eclipse
+glyph  weather meteor
+glyph  weather moon alt first quarter
+glyph  weather moon alt full
+glyph  weather moon alt new
+glyph  weather moon alt third quarter
+glyph  weather moon alt waning crescent 1
+glyph  weather moon alt waning crescent 2
+glyph  weather moon alt waning crescent 3
+glyph  weather moon alt waning crescent 4
+glyph  weather moon alt waning crescent 5
+glyph  weather moon alt waning crescent 6
+glyph  weather moon alt waning gibbous 1
+glyph  weather moon alt waning gibbous 2
+glyph  weather moon alt waning gibbous 3
+glyph  weather moon alt waning gibbous 4
+glyph  weather moon alt waning gibbous 5
+glyph  weather moon alt waning gibbous 6
+glyph  weather moon alt waxing crescent 1
+glyph  weather moon alt waxing crescent 2
+glyph  weather moon alt waxing crescent 3
+glyph  weather moon alt waxing crescent 4
+glyph  weather moon alt waxing crescent 5
+glyph  weather moon alt waxing crescent 6
+glyph  weather moon alt waxing gibbous 1
+glyph  weather moon alt waxing gibbous 2
+glyph  weather moon alt waxing gibbous 3
+glyph  weather moon alt waxing gibbous 4
+glyph  weather moon alt waxing gibbous 5
+glyph  weather moon alt waxing gibbous 6
+glyph  weather moon first quarter
+glyph  weather moon full
+glyph  weather moon new
+glyph  weather moonrise
+glyph  weather moonset
+glyph  weather moon third quarter
+glyph  weather moon waning crescent 1
+glyph  weather moon waning crescent 2
+glyph  weather moon waning crescent 3
+glyph  weather moon waning crescent 4
+glyph  weather moon waning crescent 5
+glyph  weather moon waning crescent 6
+glyph  weather moon waning gibbous 1
+glyph  weather moon waning gibbous 2
+glyph  weather moon waning gibbous 3
+glyph  weather moon waning gibbous 4
+glyph  weather moon waning gibbous 5
+glyph  weather moon waning gibbous 6
+glyph  weather moon waxing crescent 1
+glyph  weather moon waxing crescent 2
+glyph  weather moon waxing crescent 3
+glyph  weather moon waxing crescent 4
+glyph  weather moon waxing crescent 5
+glyph  weather moon waxing crescent 6
+glyph  weather moon waxing gibbous 1
+glyph  weather moon waxing gibbous 2
+glyph  weather moon waxing gibbous 3
+glyph  weather moon waxing gibbous 4
+glyph  weather moon waxing gibbous 5
+glyph  weather moon waxing gibbous 6
+glyph  weather na
+glyph  weather night alt cloudy
+glyph  weather night alt cloudy gusts
+glyph  weather night alt cloudy high
+glyph  weather night alt cloudy windy
+glyph  weather night alt hail
+glyph  weather night alt lightning
+glyph  weather night alt partly cloudy
+glyph  weather night alt rain
+glyph  weather night alt rain mix
+glyph  weather night alt rain wind
+glyph  weather night alt showers
+glyph  weather night alt sleet
+glyph  weather night alt sleet storm
+glyph  weather night alt snow
+glyph  weather night alt snow thunderstorm
+glyph  weather night alt snow wind
+glyph  weather night alt sprinkle
+glyph  weather night alt storm showers
+glyph  weather night alt thunderstorm
+glyph  weather night clear
+glyph  weather night cloudy
+glyph  weather night cloudy gusts
+glyph  weather night cloudy high
+glyph  weather night cloudy windy
+glyph  weather night fog
+glyph  weather night hail
+glyph  weather night lightning
+glyph  weather night partly cloudy
+glyph  weather night rain
+glyph  weather night rain mix
+glyph  weather night rain wind
+glyph  weather night showers
+glyph  weather night sleet
+glyph  weather night sleet storm
+glyph  weather night snow
+glyph  weather night snow thunderstorm
+glyph  weather night snow wind
+glyph  weather night sprinkle
+glyph  weather night storm showers
+glyph  weather night thunderstorm
+glyph  weather rain
+glyph  weather raindrop
+glyph  weather raindrops
+glyph  weather rain mix
+glyph  weather rain wind
+glyph  weather refresh
+glyph  weather refresh alt
+glyph  weather sandstorm
+glyph  weather showers
+glyph  weather sleet
+glyph  weather small craft advisory
+glyph  weather smog
+glyph  weather smoke
+glyph  weather snow
+glyph  weather snowflake cold
+glyph  weather snow wind
+glyph  weather solar eclipse
+glyph  weather sprinkle
+glyph  weather stars
+glyph  weather storm showers
+glyph  weather storm warning
+glyph  weather strong wind
+glyph  weather sunrise
+glyph  weather sunset
+glyph  weather thermometer
+glyph  weather thermometer exterior
+glyph  weather thermometer internal
+glyph  weather thunderstorm
+glyph  weather time 1
+glyph  weather time 10
+glyph  weather time 11
+glyph  weather time 12
+glyph  weather time 2
+glyph  weather time 3
+glyph  weather time 4
+glyph  weather time 5
+glyph  weather time 6
+glyph  weather time 7
+glyph  weather time 8
+glyph  weather time 9
+glyph  weather tornado
+glyph  weather train
+glyph  weather tsunami
+glyph  weather umbrella
+glyph  weather volcano
+glyph  weather wind beaufort 0
+glyph  weather wind beaufort 1
+glyph  weather wind beaufort 10
+glyph  weather wind beaufort 11
+glyph  weather wind beaufort 12
+glyph  weather wind beaufort 2
+glyph  weather wind beaufort 3
+glyph  weather wind beaufort 4
+glyph  weather wind beaufort 5
+glyph  weather wind beaufort 6
+glyph  weather wind beaufort 7
+glyph  weather wind beaufort 8
+glyph  weather wind beaufort 9
+glyph  weather wind direction
+glyph  weather wind east
+glyph  weather wind north
+glyph  weather wind north east
+glyph  weather wind north west
+glyph  weather wind south
+glyph  weather wind south east
+glyph  weather wind south west
+glyph  weather wind west
+glyph  weather windy
+glyph ﬔ mdi arrow collapse
+glyph ﬕ mdi arrow expand
+glyph ﬗ mdi bridge
+glyph ﬓ mdi application
+glyph ﬖ mdi bowl
+glyph אָ mdi account settings
+glyph אּ mdi account settings variant
+glyph ﬡ mdi format vertical align center
+glyph אַ mdi webhook
+glyph ﭏ mdi map marker minus
+glyph בּ mdi apple keyboard caps
+glyph בֿ mdi human male
+glyph גּ mdi apple keyboard command
+glyph דּ mdi apple keyboard control
+glyph ﬢ mdi format vertical align top
+glyph הּ mdi apple keyboard option
+glyph ﬣ mdi hackernews
+glyph וּ mdi apple keyboard shift
+glyph וֹ mdi human handsup
+glyph זּ mdi box shadow
+glyph טּ mdi cards outline
+glyph יּ mdi cards playing outline
+glyph יִ mdi format horizontal align center
+glyph ײַ mdi format horizontal align right
+glyph ךּ mdi checkbox multiple blank circle
+glyph כּ mdi checkbox multiple blank circle outline
+glyph ﬤ mdi help circle outline
+glyph כֿ mdi information variant
+glyph לּ mdi checkbox multiple marked circle
+glyph ﬥ mdi json
+glyph מּ mdi cloud sync
+glyph ﬦ mdi lambda
+glyph נּ mdi directions fork
+glyph סּ mdi eraser variant
+glyph ﬠ mdi format vertical align bottom
+glyph ףּ mdi face profile
+glyph פּ mdi file tree
+glyph פֿ mdi lead pencil
+glyph צּ mdi gas cylinder
+glyph קּ mdi grease pencil
+glyph רּ mdi human female
+glyph ﬧ mdi matrix
+glyph שּ mdi human greeting
+glyph שׁ mdi sigma lower
+glyph שׂ mdi source branch
+glyph שּׁ mdi source merge
+glyph שּׂ mdi tune
+glyph תּ mdi human handsdown
+glyph ﬨ mdi meteor
+glyph ﭐ mdi map marker plus
+glyph ﭑ mdi marker
+glyph ﯪ mdi magnify minus outline
+glyph ﯫ mdi magnify plus outline
+glyph ﲗ mdi arrow expand up
+glyph ﰀ mdi pillar
+glyph ﲘ mdi book secure
+glyph ﰁ mdi pistol
+glyph ﲙ mdi book unsecure
+glyph ﱤ mdi circle outline
+glyph ﱥ mdi alert octagram
+glyph ﱦ mdi atom
+glyph ﲚ mdi bus articulated end
+glyph ﳟ mdi nintendo switch
+glyph ﰂ mdi plus box outline
+glyph ﱧ mdi ceiling light
+glyph ﲛ mdi bus articulated front
+glyph ﳠ mdi null
+glyph ﯬ mdi mailbox
+glyph ﯭ mdi medical bag
+glyph ﯮ mdi message settings
+glyph ﯯ mdi message settings variant
+glyph ﯲ mdi download network
+glyph ﯳ mdi help network
+glyph ﯰ mdi minus box outline
+glyph ﯱ mdi network
+glyph ﯵ mdi npm
+glyph ﯴ mdi upload network
+glyph ﱨ mdi chart bar stacked
+glyph ﯹ mdi page layout footer
+glyph ﯺ mdi page layout header
+glyph ﯻ mdi page layout sidebar left
+glyph ﰃ mdi plus outline
+glyph ﱩ mdi chart line stacked
+glyph ﰄ mdi prescription
+glyph ﯶ mdi nut
+glyph ﯷ mdi octagram
+glyph ﯸ mdi page layout body
+glyph ﴼ mdi video 4k box
+glyph ﴽ mdi video input antenna
+glyph ﲜ mdi bus double decker
+glyph ﰅ mdi printer settings
+glyph ﲝ mdi bus school
+glyph ﰆ mdi react
+glyph ﲞ mdi bus side
+glyph ﰇ mdi restart
+glyph ﱪ mdi decagram
+glyph ﱫ mdi decagram outline
+glyph ﲟ mdi camera gopro
+glyph ﱬ mdi dice multiple
+glyph ﳡ mdi passport
+glyph ﰈ mdi rewind outline
+glyph ﱭ mdi dice d10
+glyph ﲠ mdi camera metering center
+glyph ﳢ mdi periodic table co2
+glyph ﱮ mdi folder open
+glyph ﰉ mdi rhombus
+glyph ﱯ mdi guitar acoustic
+glyph ﰊ mdi rhombus outline
+glyph ﭒ mdi message plus
+glyph ﭓ mdi microscope
+glyph ﭔ mdi move resize
+glyph ﭕ mdi move resize variant
+glyph ﭖ mdi paw off
+glyph ﭗ mdi phone minus
+glyph ﭘ mdi phone plus
+glyph ﭙ mdi pot
+glyph ﭚ mdi pot mix
+glyph ﭛ mdi serial port
+glyph ﭜ mdi shape circle plus
+glyph ﭝ mdi shape polygon plus
+glyph ﲡ mdi camera metering matrix
+glyph ﰋ mdi roomba
+glyph ﲢ mdi camera metering partial
+glyph ﰌ mdi run
+glyph ﲣ mdi camera metering spot
+glyph ﰍ mdi search web
+glyph ﱰ mdi loading
+glyph ﱱ mdi lock reset
+glyph ﲤ mdi cannabis
+glyph ﱲ mdi ninja
+glyph ﳣ mdi pipe
+glyph ﰎ mdi shovel
+glyph ﱳ mdi octagram outline
+glyph ﲥ mdi car convertible
+glyph ﳤ mdi pipe disconnected
+glyph ﱴ mdi pencil circle outline
+glyph ﰏ mdi shovel off
+glyph ﱵ mdi selection off
+glyph ﰐ mdi signal 2g
+glyph ﰑ mdi signal 3g
+glyph ﱶ mdi set all
+glyph ﱷ mdi set center
+glyph ﲦ mdi car estate
+glyph ﳥ mdi power socket eu
+glyph ﱸ mdi set center right
+glyph ﰒ mdi signal 4g
+glyph ﱹ mdi set left
+glyph ﳦ mdi power socket uk
+glyph ﱺ mdi set left center
+glyph ﰓ mdi signal hspa
+glyph ﱻ mdi set left right
+glyph ﰔ mdi signal hspa plus
+glyph ﭦ mdi stop circle outline
+glyph ﭧ mdi test tube
+glyph ﭨ mdi text shadow
+glyph ﭩ mdi tune vertical
+glyph ﭞ mdi shape rectangle plus
+glyph ﭟ mdi shape square plus
+glyph ﭠ mdi skip next circle
+glyph ﭡ mdi skip next circle outline
+glyph ﭢ mdi skip previous circle
+glyph ﭣ mdi skip previous circle outline
+glyph ﭤ mdi spray
+glyph ﭥ mdi stop circle
+glyph ﲧ mdi car hatchback
+glyph ﰕ mdi snowflake
+glyph ﲨ mdi car pickup
+glyph ﰖ mdi source commit
+glyph ﴁ mdi artist
+glyph ﴝ mdi finance
+glyph ﴂ mdi atlassian
+glyph ﴞ mdi flash circle
+glyph ﭶ mdi bow tie
+glyph ﭷ mdi calendar range
+glyph ﭸ mdi currency usd off
+glyph ﭹ mdi flash red eye
+glyph ﭳ mdi bandcamp
+glyph ﭴ mdi credit card plus
+glyph ﭵ mdi itunes
+glyph ﭲ mdi xaml
+glyph ﭺ mdi oar
+glyph ﭻ mdi piano
+glyph ﭼ mdi weather lightning rainy
+glyph ﭽ mdi weather snowy rainy
+glyph ﮁ mdi delete circle
+glyph ﭿ mdi tower beach
+glyph ﮀ mdi tower fire
+glyph ﭾ mdi yin yang
+glyph ﲩ mdi car side
+glyph ﰗ mdi source commit end
+glyph ﲪ mdi car sports
+glyph ﰘ mdi source commit end local
+glyph ﳿ mdi account plus outline
+glyph ﴛ mdi fan off
+glyph ﴀ mdi allo
+glyph ﴜ mdi file percent
+glyph ﲫ mdi caravan
+glyph ﰙ mdi source commit local
+glyph ﰚ mdi source commit next local
+glyph ﲬ mdi cctv
+glyph ﰛ mdi source commit start
+glyph ﴃ mdi azure
+glyph ﴟ mdi floor plan
+glyph ﴄ mdi basketball
+glyph ﴠ mdi forum outline
+glyph ﱛ mdi volume plus
+glyph ﮈ mdi security home
+glyph ﮉ mdi tag heart
+glyph ﮄ mdi gondola
+glyph ﮅ mdi inbox
+glyph ﮂ mdi dna
+glyph ﮃ mdi hamburger
+glyph ﮆ mdi reorder horizontal
+glyph ﮇ mdi reorder vertical
+glyph ﱜ mdi volume minus
+glyph ﮌ mdi alarm snooze
+glyph ﮍ mdi baby buggy
+glyph ﮊ mdi skull
+glyph ﮋ mdi solid
+glyph ﲭ mdi chart donut
+glyph ﰜ mdi source commit start next local
+glyph ﴴ mdi table of contents
+glyph ﲮ mdi chart donut variant
+glyph ﰝ mdi speaker wireless
+glyph ﴵ mdi table row
+glyph ﲯ mdi chart line variant
+glyph ﰞ mdi stadium
+glyph ﴶ mdi table settings
+glyph ﴎ mdi battery charging wireless 90
+glyph ﴪ mdi karate
+glyph ﲰ mdi chili hot
+glyph ﳧ mdi power socket us
+glyph ﰟ mdi svg
+glyph ﳨ mdi rice
+glyph ﴱ mdi ship wheel
+glyph ﴗ mdi delete restore
+glyph ﳻ mdi video 3d
+glyph ﴘ mdi door
+glyph ﳼ mdi wall
+glyph ﴉ mdi battery charging wireless 40
+glyph ﴥ mdi home heart
+glyph ﴭ mdi phone return
+glyph ﴷ mdi television box
+glyph ﴊ mdi battery charging wireless 50
+glyph ﴦ mdi hot tub
+glyph ﴮ mdi poker chip
+glyph ﴸ mdi television classic off
+glyph ﴋ mdi battery charging wireless 60
+glyph ﴧ mdi hulu
+glyph ﴯ mdi shape
+glyph ﴹ mdi television off
+glyph ﴍ mdi battery charging wireless 80
+glyph ﴩ mdi image off
+glyph ﴌ mdi battery charging wireless 70
+glyph ﴨ mdi ice cream
+glyph ﳩ mdi ring
+glyph ﴰ mdi shape outline
+glyph ﳪ mdi sass
+glyph ﴲ mdi soccer field
+glyph ﴙ mdi door closed
+glyph ﳽ mdi xmpp
+glyph ﳾ mdi account multiple plus outline
+glyph ﴚ mdi door open
+glyph ﲱ mdi chili medium
+glyph ﰠ mdi tag plus
+glyph ﲲ mdi chili mild
+glyph ﴏ mdi battery charging wireless alert
+glyph ﴫ mdi ladybug
+glyph ﲳ mdi cloud braces
+glyph ﰡ mdi tag remove
+glyph ﴅ mdi battery charging wireless
+glyph ﴡ mdi golf
+glyph ﴆ mdi battery charging wireless 10
+glyph ﴢ mdi google home
+glyph ﲴ mdi cloud tags
+glyph ﰢ mdi ticket percent
+glyph ﲵ mdi console line
+glyph ﰣ mdi tilde
+glyph ﲶ mdi corn
+glyph ﰤ mdi treasure chest
+glyph ﴐ mdi battery charging wireless outline
+glyph ﴬ mdi notebook
+glyph ﲷ mdi currency chf
+glyph ﰥ mdi truck trailer
+glyph ﴇ mdi battery charging wireless 20
+glyph ﴣ mdi guy fawkes mask
+glyph ﴈ mdi battery charging wireless 30
+glyph ﴤ mdi home account
+glyph ﲸ mdi currency cny
+glyph ﰦ mdi view parallel
+glyph ﴳ mdi table column
+glyph ﴺ mdi towing
+glyph ﰧ mdi view sequential
+glyph ﴑ mdi bitcoin
+glyph ﳵ mdi thought bubble outline
+glyph ﴒ mdi briefcase outline
+glyph ﳶ mdi trackpad
+glyph ﲹ mdi currency eth
+glyph ﴻ mdi upload multiple
+glyph ﰨ mdi washing machine
+glyph ﲺ mdi currency jpy
+glyph ﰩ mdi webpack
+glyph ﲻ mdi currency krw
+glyph ﰪ mdi widgets
+glyph ﴓ mdi cellphone wireless
+glyph ﳷ mdi ultra high definition
+glyph ﴔ mdi clover
+glyph ﳸ mdi van passenger
+glyph ﲼ mdi currency sign
+glyph ﰫ mdi wiiu
+glyph ﰬ mdi arrow down bold
+glyph ﲽ mdi currency twd
+glyph ﴕ mdi comment question
+glyph ﳹ mdi van utility
+glyph ﴖ mdi content save outline
+glyph ﳺ mdi vanish
+glyph ﰭ mdi arrow down bold box
+glyph ﲾ mdi desktop classic
+glyph ﰮ mdi arrow down bold box outline
+glyph ﲿ mdi dip switch
+glyph ﰯ mdi arrow left bold
+glyph ﳀ mdi donkey
+glyph ﰰ mdi arrow left bold box
+glyph ﳁ mdi dots horizontal circle
+glyph ﰱ mdi arrow left bold box outline
+glyph ﱼ mdi set none
+glyph ﰲ mdi arrow right bold
+glyph ﱽ mdi set right
+glyph ﭪ mdi cart off
+glyph ﭫ mdi chart gantt
+glyph ﭬ mdi chart scatterplot hexbin
+glyph ﭭ mdi chart timeline
+glyph ﭮ mdi discord
+glyph ﭯ mdi file restore
+glyph ﭰ mdi language c
+glyph ﭱ mdi language cpp
+glyph ﰳ mdi arrow right bold box
+glyph ﳂ mdi dots vertical circle
+glyph ﰴ mdi arrow right bold box outline
+glyph ﳃ mdi ear hearing
+glyph ﰵ mdi arrow up bold
+glyph ﱾ mdi shield half full
+glyph ﰶ mdi arrow up bold box
+glyph ﱿ mdi sign direction
+glyph ﰷ mdi arrow up bold box outline
+glyph ﲀ mdi sign text
+glyph ﰸ mdi cancel
+glyph ﳄ mdi elephant
+glyph ﳅ mdi eventbrite
+glyph ﰹ mdi file account
+glyph ﳆ mdi food croissant
+glyph ﰺ mdi gesture double tap
+glyph ﳇ mdi forklift
+glyph ﰻ mdi gesture swipe down
+glyph ﳫ mdi send secure
+glyph ﲁ mdi signal off
+glyph ﳈ mdi fuel
+glyph ﰼ mdi gesture swipe left
+glyph ﳬ mdi soy sauce
+glyph ﲂ mdi square root
+glyph ﰽ mdi gesture swipe right
+glyph ﲃ mdi sticker emoji
+glyph ﰾ mdi gesture swipe up
+glyph ﲄ mdi summit
+glyph ﮎ mdi beaker
+glyph ﮏ mdi bomb
+glyph ﮐ mdi calendar question
+glyph ﮑ mdi camera burst
+glyph ﯓ mdi flash outline
+glyph ﯔ mdi format font
+glyph ﯕ mdi format page break
+glyph ﯖ mdi format pilcrow
+glyph ﮒ mdi code tags check
+glyph ﮓ mdi coins
+glyph ﮔ mdi crop rotate
+glyph ﮕ mdi developer board
+glyph ﮚ mdi emoticon excited
+glyph ﮛ mdi folder star
+glyph ﮜ mdi format color text
+glyph ﮝ mdi format section
+glyph ﮖ mdi do not disturb
+glyph ﮗ mdi do not disturb off
+glyph ﮘ mdi douban
+glyph ﮙ mdi emoticon dead
+glyph ﳉ mdi gesture
+glyph ﰿ mdi gesture tap
+glyph ﱀ mdi gesture two double tap
+glyph ﳊ mdi google analytics
+glyph ﱁ mdi gesture two tap
+glyph ﳋ mdi google assistant
+glyph ﳌ mdi headphones off
+glyph ﱂ mdi humble bundle
+glyph ﳭ mdi standard definition
+glyph ﲅ mdi sword cross
+glyph ﳍ mdi high definition
+glyph ﱃ mdi kickstarter
+glyph ﲆ mdi truck fast
+glyph ﱄ mdi netflix
+glyph ﲇ mdi yammer
+glyph ﲈ mdi cast off
+glyph ﳎ mdi home assistant
+glyph ﱅ mdi onenote
+glyph ﳏ mdi home automation
+glyph ﱆ mdi periscope
+glyph ﳐ mdi home circle
+glyph ﱇ mdi uber
+glyph ﲉ mdi help box
+glyph ﳑ mdi language go
+glyph ﱈ mdi vector radius
+glyph ﱉ mdi xbox controller battery alert
+glyph ﱊ mdi xbox controller battery empty
+glyph ﳒ mdi language r
+glyph ﱋ mdi xbox controller battery full
+glyph ﳓ mdi lava lamp
+glyph ﱌ mdi xbox controller battery low
+glyph ﳔ mdi led strip
+glyph ﱍ mdi xbox controller battery medium
+glyph ﲊ mdi timer sand full
+glyph ﲋ mdi waves
+glyph ﲌ mdi alarm bell
+glyph ﳕ mdi locker
+glyph ﳮ mdi surround sound 2 0
+glyph ﱎ mdi xbox controller battery unknown
+glyph ﲍ mdi alarm light
+glyph ﳖ mdi locker multiple
+glyph ﳯ mdi surround sound 3 1
+glyph ﲎ mdi android head
+glyph ﱏ mdi clipboard plus
+glyph ﲏ mdi approval
+glyph ﱐ mdi file plus
+glyph ﮞ mdi gradient
+glyph ﮟ mdi home outline
+glyph ﮠ mdi message bulleted
+glyph ﮡ mdi message bulleted off
+glyph ﮢ mdi nuke
+glyph ﮣ mdi power plug
+glyph ﳙ mdi metronome tick
+glyph ﱑ mdi format align bottom
+glyph ﳗ mdi map marker outline
+glyph ﱒ mdi format align middle
+glyph ﳘ mdi metronome
+glyph ﱓ mdi format align top
+glyph ﱔ mdi format list checks
+glyph ﮪ mdi subway
+glyph ﮫ mdi timer sand empty
+glyph ﮬ mdi transit transfer
+glyph ﮭ mdi unity
+glyph ﮨ mdi format rotate 90
+glyph ﮦ mdi restore
+glyph ﮧ mdi robot
+glyph ﮩ mdi scanner
+glyph ﮤ mdi power plug off
+glyph ﮥ mdi publish
+glyph ﯠ mdi hook
+glyph ﯡ mdi hook off
+glyph ﯙ mdi github face
+glyph ﯚ mdi google keep
+glyph ﯗ mdi garage
+glyph ﯘ mdi garage open
+glyph ﯝ mdi heart half
+glyph ﯛ mdi google photos
+glyph ﯜ mdi heart half full
+glyph ﯢ mdi infinity
+glyph ﯣ mdi language swift
+glyph ﯞ mdi heart half outline
+glyph ﯟ mdi hexagon multiple
+glyph ﲐ mdi arrow collapse down
+glyph ﯨ mdi lock pattern
+glyph ﯩ mdi loop
+glyph ﱝ mdi volume mute
+glyph ﱕ mdi format quote open
+glyph ﳚ mdi micro sd
+glyph ﱖ mdi grid large
+glyph ﳛ mdi mixer
+glyph ﱗ mdi heart off
+glyph ﳜ mdi movie roll
+glyph ﲑ mdi arrow collapse left
+glyph ﲒ mdi arrow collapse right
+glyph ﲓ mdi arrow collapse up
+glyph ﳝ mdi mushroom
+glyph ﱘ mdi music
+glyph ﳰ mdi surround sound 5 1
+glyph ﲔ mdi arrow expand down
+glyph ﳞ mdi mushroom outline
+glyph ﳱ mdi surround sound 7 1
+glyph ﲕ mdi arrow expand left
+glyph ﱙ mdi music off
+glyph ﲖ mdi arrow expand right
+glyph ﱚ mdi tab plus
+glyph ﯼ mdi page layout sidebar right
+glyph ﯽ mdi pencil circle
+glyph ﯾ mdi pentagon
+glyph ﯿ mdi pentagon outline
+glyph ﯤ mdi language typescript
+glyph ﯥ mdi laptop off
+glyph ﯦ mdi lightbulb on
+glyph ﯧ mdi lightbulb on outline
+glyph ﮰ mdi angular
+glyph ﮱ mdi dolby
+glyph ﮮ mdi update
+glyph ﮯ mdi watch vibrate
+glyph 不 mdi rotate right variant
+glyph 並 mdi view headline
+glyph 串 mdi pine tree box
+glyph 丹 mdi rewind
+glyph 亂 mdi pocket
+glyph 了 mdi sort alphabetical
+glyph 亮 mdi script
+glyph 什 mdi target
+glyph 令 mdi sim off
+glyph 侀 mdi view quilt
+glyph 來 mdi projector
+glyph 例 mdi snapchat
+glyph 侮 mdi tree
+glyph 便 mdi rotate left variant
+glyph 倫 mdi step backward
+glyph 僚 mdi sort ascending
+glyph 僧 mdi trello
+glyph 兀 mdi theater
+glyph 充 mdi view stream
+glyph 免 mdi trending down
+glyph 全 mdi view module
+glyph 兩 mdi sd
+glyph 六 mdi star outline
+glyph 冀 mdi view week
+glyph 况 mdi view list
+glyph 冷 mdi projector screen
+glyph 凉 mdi seal
+glyph 凌 mdi repeat
+glyph 凜 mdi rename box
+glyph 凞 mdi ticket
+glyph 切 mdi telegram
+glyph 列 mdi shuffle
+glyph 利 mdi stove
+glyph 刺 mdi teamviewer
+glyph 劉 mdi spotlight
+glyph 力 mdi server
+glyph 劣 mdi shuffle disabled
+glyph 勇 mdi vimeo
+glyph 勉 mdi trending neutral
+glyph 勒 mdi reload
+glyph 勞 mdi pulse
+glyph 勤 mdi trending up
+glyph 勵 mdi seat legroom reduced
+glyph 勺 mdi venmo
+glyph 北 mdi rotate 3d
+glyph 匿 mdi table column plus after
+glyph 卑 mdi triangle
+glyph 卵 mdi pokeball
+glyph 參 mdi rss box
+glyph 句 mdi pinterest
+glyph 吏 mdi subway variant
+glyph 吝 mdi table column remove
+glyph 呂 mdi seat recline extra
+glyph 咽 mdi shuffle variant
+glyph 啕 mdi vk box
+glyph 喇 mdi play circle
+glyph 喙 mdi vk circle
+glyph 喝 mdi triangle outline
+glyph 喝 mdi vk
+glyph 嗀 mdi theme light dark
+glyph 嗢 mdi vlc
+glyph 嘆 mdi trophy
+glyph 器 mdi trophy award
+glyph 囹 mdi sitemap
+glyph 塀 mdi trophy outline
+glyph 塚 mdi thumb down
+glyph 塚 mdi voicemail
+glyph 塞 mdi ruler
+glyph 墨 mdi trophy variant
+glyph 墳 mdi volume high
+glyph 壘 mdi record rec
+glyph 壟 mdi ray start arrow
+glyph 奄 mdi volume low
+glyph 奈 mdi play circle outline
+glyph 契 mdi play
+glyph 奔 mdi volume medium
+glyph 女 mdi seat recline normal
+glyph 婢 mdi volume off
+glyph 嬨 mdi vpn
+glyph 宅 mdi temperature fahrenheit
+glyph 寧 mdi ribbon
+glyph 寧 mdi skip backward
+glyph 寮 mdi sort descending
+glyph 尿 mdi sort numeric
+glyph 屢 mdi recycle
+glyph 層 mdi trophy variant outline
+glyph 履 mdi sunglasses
+glyph 屮 mdi truck
+glyph 崙 mdi step backward 2
+glyph 嵐 mdi popcorn
+glyph 嶺 mdi skip forward
+glyph 年 mdi server off
+glyph 度 mdi television
+glyph 廉 mdi silverware
+glyph 廊 mdi presentation play
+glyph 廒 mdi walk
+glyph 廓 mdi texture
+glyph 廙 mdi wallet
+glyph 廬 mdi security
+glyph 弄 mdi ray start end
+glyph 彩 mdi wallet giftcard
+glyph 律 mdi stethoscope
+glyph 復 mdi rotate right
+glyph 徭 mdi wallet membership
+glyph 念 mdi silverware fork
+glyph 怒 mdi road
+glyph 怜 mdi skip next
+glyph 恵 mdi view carousel
+glyph 悔 mdi truck delivery
+glyph 惘 mdi wallet travel
+glyph 惡 mdi sort
+glyph 愈 mdi watch
+glyph 慄 mdi stocking
+glyph 慎 mdi wan
+glyph 慠 mdi watch import
+glyph 慨 mdi tshirt crew
+glyph 憎 mdi tshirt v
+glyph 憎 mdi watch export
+glyph 憐 mdi server plus
+glyph 懲 mdi tumblr
+glyph 懲 mdi water
+glyph 懶 mdi play pause
+glyph 戀 mdi server remove
+glyph 戮 mdi steam
+glyph 戴 mdi water off
+glyph 拉 mdi power settings
+glyph 拏 mdi reproduction
+glyph 拓 mdi television guide
+glyph 拾 mdi school
+glyph 捻 mdi silverware spoon
+glyph 掠 mdi screen rotation lock
+glyph 揄 mdi water percent
+glyph 搜 mdi water pump
+glyph 摒 mdi weather cloudy
+glyph 撚 mdi server security
+glyph 擄 mdi puzzle
+glyph 敏 mdi tumblr reblog
+glyph 敖 mdi weather fog
+glyph 數 mdi routes
+glyph 料 mdi sort variant
+glyph 旅 mdi security network
+glyph 既 mdi twitch
+glyph 易 mdi swap horizontal
+glyph 晴 mdi thumb up
+glyph 晴 mdi weather hail
+glyph 暈 mdi spellcheck
+glyph 暑 mdi twitter
+glyph 暴 mdi tennis
+glyph 曆 mdi server minus
+glyph 更 mdi pill
+glyph 朗 mdi printer
+glyph 朗 mdi weather lightning
+glyph 望 mdi weather night
+glyph 李 mdi swap vertical
+glyph 杖 mdi weather partlycloudy
+glyph 杻 mdi spotlight beam
+glyph 林 mdi table row remove
+glyph 柳 mdi square inc
+glyph 栗 mdi stop
+glyph 梁 mdi seat flat
+glyph 梅 mdi twitter box
+glyph 梨 mdi swim
+glyph 樂 mdi plus
+glyph 樂 mdi resize bottom right
+glyph 樂 mdi soundcloud
+glyph 樓 mdi reddit
+glyph 櫓 mdi qrcode
+glyph 欄 mdi polaroid
+glyph 歷 mdi server network
+glyph 歹 mdi weather pouring
+glyph 殮 mdi silverware variant
+glyph 殺 mdi satellite variant
+glyph 殺 mdi weather rainy
+glyph 沈 mdi scale bathroom
+glyph 泌 mdi router wireless
+glyph 泥 mdi switch
+glyph 洛 mdi plus box
+glyph 洞 mdi temperature kelvin
+glyph 流 mdi square inc cash
+glyph 流 mdi weather snowy
+glyph 浪 mdi printer 3d
+glyph 海 mdi twitter circle
+glyph 淋 mdi tablet
+glyph 淚 mdi redo
+glyph 淪 mdi step forward
+glyph 渚 mdi twitter retweet
+glyph 溜 mdi stack overflow
+glyph 溺 mdi table column plus before
+glyph 滋 mdi weather sunset
+glyph 滑 mdi pine tree
+glyph 滛 mdi weather sunny
+glyph 漏 mdi redo variant
+glyph 漢 mdi ubuntu
+glyph 漢 mdi weather sunset down
+glyph 漣 mdi settings
+glyph 濫 mdi pound
+glyph 濾 mdi select
+glyph 瀞 mdi weather sunset up
+glyph 炙 mdi tag outline
+glyph 烈 mdi sigma
+glyph 烙 mdi plus circle
+glyph 煉 mdi settings box
+glyph 煮 mdi umbraco
+glyph 煮 mdi weather windy
+glyph 燎 mdi source fork
+glyph 燐 mdi table column width
+glyph 爐 mdi qrcode scan
+glyph 爛 mdi poll
+glyph 爫 mdi umbrella
+glyph 爵 mdi web
+glyph 牢 mdi read
+glyph 犯 mdi webcam
+glyph 狀 mdi tag multiple
+glyph 狼 mdi printer alert
+glyph 猪 mdi ticket account
+glyph 猪 mdi weight
+glyph 獵 mdi sim alert
+glyph 率 mdi road variant
+glyph 率 mdi store
+glyph 玲 mdi skip previous
+glyph 珞 mdi plus circle multiple outline
+glyph 理 mdi sword
+glyph 琉 mdi stairs
+glyph 琢 mdi umbrella outline
+glyph 瑩 mdi skype
+glyph 瑱 mdi weight kilogram
+glyph 璉 mdi shape plus
+glyph 璘 mdi table edit
+glyph 甆 mdi whatsapp
+glyph 画 mdi wheelchair accessibility
+glyph 留 mdi star
+glyph 略 mdi screwdriver
+glyph 異 mdi rocket
+glyph 痢 mdi sync
+glyph 瘝 mdi white balance auto
+glyph 瘟 mdi white balance incandescent
+glyph 療 mdi source pull
+glyph 癩 mdi play protected content
+glyph 益 mdi ticket confirmation
+glyph 益 mdi white balance iridescent
+glyph 盛 mdi white balance sunny
+glyph 盧 mdi quadcopter
+glyph 直 mdi wifi
+glyph 省 mdi run fast
+glyph 着 mdi wii
+glyph 睊 mdi wifi off
+glyph 瞧 mdi weather windy variant
+glyph 硫 mdi star circle
+glyph 碌 mdi radioactive
+glyph 碑 mdi undo
+glyph 磊 mdi youtube tv
+glyph 磌 mdi wikipedia
+glyph 磻 mdi rotate left
+glyph 礪 mdi select all
+glyph 礼 mdi tie
+glyph 社 mdi undo variant
+glyph 祈 mdi unfold more horizontal
+glyph 祉 mdi unfold less horizontal
+glyph 祐 mdi ungroup
+glyph 祖 mdi untappd
+glyph 祝 mdi upload
+glyph 神 mdi timelapse
+glyph 祥 mdi timer
+glyph 祿 mdi radiobox blank
+glyph 禍 mdi usb
+glyph 禎 mdi vector arrange above
+glyph 福 mdi timer 10
+glyph 禮 mdi snowman
+glyph 秊 mdi share
+glyph 稜 mdi repeat off
+glyph 穀 mdi vector arrange below
+glyph 突 mdi vector circle
+glyph 窱 mdi window close
+glyph 立 mdi tablet ipad
+glyph 笠 mdi tag
+glyph 節 mdi vector circle variant
+glyph 節 mdi window closed
+glyph 簾 mdi sim
+glyph 籠 mdi ray vertex
+glyph 类 mdi window maximize
+glyph 粒 mdi tag faces
+glyph 精 mdi timer off
+glyph 糖 mdi temperature celsius
+glyph 糧 mdi seat flat angled
+glyph 紐 mdi star half
+glyph 索 mdi rss
+glyph 累 mdi refresh
+glyph 絛 mdi window minimize
+glyph 綠 mdi radiobox marked
+glyph 綾 mdi repeat once
+glyph 練 mdi share variant
+glyph 練 mdi vector combine
+glyph 練 mdi window open
+glyph 縉 mdi vector curve
+glyph 縷 mdi regex
+glyph 繁 mdi vector difference
+glyph 缾 mdi window restore
+glyph 署 mdi vector difference ab
+glyph 罹 mdi sync alert
+glyph 羅 mdi playlist minus
+glyph 羚 mdi skype business
+glyph 羽 mdi timer sand
+glyph 老 mdi quality high
+glyph 者 mdi vector difference ba
+glyph 者 mdi windows
+glyph 聆 mdi slack
+glyph 聯 mdi shield
+glyph 聾 mdi lastpass
+glyph 肋 mdi remote
+glyph 臘 mdi power socket
+glyph 臨 mdi tablet android
+glyph 臭 mdi vector intersection
+glyph 舘 mdi view dashboard
+glyph 良 mdi seat individual suite
+glyph 艹 mdi vector line
+glyph 艹 mdi vector point
+glyph 若 mdi screen rotation
+glyph 茶 mdi taxi
+glyph 荒 mdi wordpress
+glyph 菉 mdi raspberrypi
+glyph 華 mdi worker
+glyph 菱 mdi replay
+glyph 落 mdi plus circle outline
+glyph 葉 mdi sale
+glyph 著 mdi vector polygon
+glyph 蓮 mdi shopping
+glyph 蓼 mdi speaker
+glyph 藍 mdi pound box
+glyph 藺 mdi table large
+glyph 蘆 mdi quicktime
+glyph 蘒 mdi toggle switch
+glyph 蘭 mdi poll box
+glyph 蘿 mdi playlist play
+glyph 虜 mdi radar
+glyph 蝹 mdi wrap
+glyph 螺 mdi playlist plus
+glyph 蠟 mdi presentation
+glyph 行 mdi terrain
+glyph 裂 mdi sign caution
+glyph 裏 mdi sync off
+glyph 裡 mdi tab
+glyph 裸 mdi playlist remove
+glyph 褐 mdi vector polyline
+glyph 襁 mdi wrench
+glyph 襤 mdi power
+glyph 覆 mdi wunderlist
+glyph 見 mdi text to speech off
+glyph 視 mdi vector selection
+glyph 視 mdi xbox
+glyph 說 mdi satellite
+glyph 說 mdi signal
+glyph 調 mdi xbox controller
+glyph 請 mdi xda
+glyph 諒 mdi seat legroom extra
+glyph 論 mdi ray start
+glyph 諭 mdi xing circle
+glyph 諸 mdi tooltip
+glyph 諸 mdi xbox controller off
+glyph 諾 mdi responsive
+glyph 諾 mdi xing box
+glyph 謁 mdi vector triangle
+glyph 謁 mdi xing
+glyph 謹 mdi vector union
+glyph 謹 mdi xml
+glyph 識 mdi tag text outline
+glyph 讀 mdi reply all
+glyph 變 mdi yeast
+glyph 豈 mdi pig
+glyph 賂 mdi receipt
+glyph 賈 mdi pin off
+glyph 賓 mdi verified
+glyph 贈 mdi vibrate
+glyph 贈 mdi yelp
+glyph 路 mdi radiator
+glyph 車 mdi pin
+glyph 輦 mdi shield outline
+glyph 輪 mdi step forward 2
+glyph 輸 mdi youtube play
+glyph 輻 mdi tent
+glyph 轢 mdi server network off
+glyph 辰 mdi scale
+glyph 辶 mdi video
+glyph 連 mdi shopping music
+glyph 逸 mdi tooltip outline
+glyph 逸 mdi video off
+glyph 遲 mdi zip box
+glyph 遼 mdi speaker off
+glyph 邏 mdi playstation
+glyph 郎 mdi professional hexagon
+glyph 郞 mdi transcribe close
+glyph 都 mdi tooltip outline plus
+glyph 酪 mdi plus network
+glyph 醙 mdi surround sound
+glyph 醴 mdi soccer
+glyph 里 mdi tab unselected
+glyph 量 mdi seat legroom normal
+glyph 金 mdi play box outline
+glyph 鈴 mdi sleep
+glyph 鉶 mdi vector rectangle
+glyph 錄 mdi ray end
+glyph 鍊 mdi shredder
+glyph 閭 mdi select inverse
+glyph 阮 mdi spotify
+glyph 陋 mdi relative scale
+glyph 降 mdi text to speech
+glyph 陵 mdi reply
+glyph 陸 mdi steering
+glyph 陼 mdi playlist check
+glyph 隆 mdi store 24 hour
+glyph 隣 mdi table row height
+glyph 隷 mdi transfer
+glyph 隸 mdi sofa
+glyph 離 mdi table
+glyph 難 mdi format line style
+glyph 難 mdi video switch
+glyph 零 mdi sleep off
+glyph 雷 mdi record
+glyph 露 mdi radio
+glyph 靈 mdi smoking
+glyph 靖 mdi format line weight
+glyph 靖 mdi timer 3
+glyph 韛 mdi translate
+glyph 響 mdi view agenda
+glyph 響 mdi voice
+glyph 頋 mdi opacity
+glyph 領 mdi smoking off
+glyph 頻 mdi near me
+glyph 頻 mdi view array
+glyph 類 mdi star off
+glyph 飯 mdi traffic light
+glyph 飼 mdi train
+glyph 館 mdi tram
+glyph 駱 mdi plus one
+glyph 驪 mdi select off
+glyph 鬒 mdi clock alert
+glyph 魯 mdi radio handheld
+glyph 鱗 mdi table row plus after
+glyph 鶴 mdi transcribe
+glyph 鷺 mdi radio tower
+glyph 鸞 mdi polymer
+glyph 鹿 mdi ray end arrow
+glyph 麗 mdi selection
+glyph 麟 mdi table row plus before
+glyph 黎 mdi send
+glyph 齃 mdi book minus
+glyph 龍 mdi speedometer
+glyph 龎 mdi book open page variant
+glyph 龜 mdi human pregnant
+glyph 龜 mdi pinterest box
+glyph 龜 mdi pizza
+glyph 﨎 mdi thermometer
+glyph 﨏 mdi thermometer lines
+glyph 﨑 mdi thumb down outline
+glyph 﨓 mdi thumb up outline
+glyph 﨔 mdi thumbs up down
+glyph 﨟 mdi timetable
+glyph 﨡 mdi toggle switch off
+glyph 﨣 mdi tooltip edit
+glyph 﨤 mdi tooltip image
+glyph 﨧 mdi tooltip text
+glyph 﨨 mdi tooth
+glyph 﨩 mdi tor
+glyph 㮝 mdi account multiple minus
+glyph 䀘 mdi airplane landing
+glyph 䀹 mdi airplane takeoff
+glyph 𢡄 mdi scale balance
+glyph 𢡊 mdi sticker
+glyph 𣏕 mdi account card details
+glyph 𤋮 mdi view column
+glyph 𥉉 mdi alert circle outline
+glyph 𥳐 mdi altimeter
+glyph 𧻓 mdi animation
+emoji 😀 grinning face
+emoji 😃 grinning face with big eyes
+emoji 😄 grinning face with smiling eyes
+emoji 😁 beaming face with smiling eyes
+emoji 😆 grinning squinting face
+emoji 😅 grinning face with sweat
+emoji 🤣 rolling on the floor laughing
+emoji 😂 face with tears of joy
+emoji 🙂 slightly smiling face
+emoji 🙃 upside-down face
+emoji 🫠 melting face
+emoji 😉 winking face
+emoji 😊 smiling face with smiling eyes
+emoji 😇 smiling face with halo
+emoji 🥰 smiling face with hearts
+emoji 😍 smiling face with heart-eyes
+emoji 🤩 star-struck
+emoji 😘 face blowing a kiss
+emoji 😗 kissing face
+emoji ☺️ smiling face
+emoji 😚 kissing face with closed eyes
+emoji 😙 kissing face with smiling eyes
+emoji 🥲 smiling face with tear
+emoji 😋 face savoring food
+emoji 😛 face with tongue
+emoji 😜 winking face with tongue
+emoji 🤪 zany face
+emoji 😝 squinting face with tongue
+emoji 🤑 money-mouth face
+emoji 🤗 smiling face with open hands
+emoji 🤭 face with hand over mouth
+emoji 🫢 face with open eyes and hand over mouth
+emoji 🫣 face with peeking eye
+emoji 🤫 shushing face
+emoji 🤔 thinking face
+emoji 🫡 saluting face
+emoji 🤐 zipper-mouth face
+emoji 🤨 face with raised eyebrow
+emoji 😐 neutral face
+emoji 😑 expressionless face
+emoji 😶 face without mouth
+emoji 🫥 dotted line face
+emoji 😶‍🌫️ face in clouds
+emoji 😏 smirking face
+emoji 😒 unamused face
+emoji 🙄 face with rolling eyes
+emoji 😬 grimacing face
+emoji 😮‍💨 face exhaling
+emoji 🤥 lying face
+emoji 🫨 shaking face
+emoji 🙂‍↔️ head shaking horizontally
+emoji 🙂‍↕️ head shaking vertically
+emoji 😌 relieved face
+emoji 😔 pensive face
+emoji 😪 sleepy face
+emoji 🤤 drooling face
+emoji 😴 sleeping face
+emoji 🫩 face with bags under eyes
+emoji 😷 face with medical mask
+emoji 🤒 face with thermometer
+emoji 🤕 face with head-bandage
+emoji 🤢 nauseated face
+emoji 🤮 face vomiting
+emoji 🤧 sneezing face
+emoji 🥵 hot face
+emoji 🥶 cold face
+emoji 🥴 woozy face
+emoji 😵 face with crossed-out eyes
+emoji 😵‍💫 face with spiral eyes
+emoji 🤯 exploding head
+emoji 🤠 cowboy hat face
+emoji 🥳 partying face
+emoji 🥸 disguised face
+emoji 😎 smiling face with sunglasses
+emoji 🤓 nerd face
+emoji 🧐 face with monocle
+emoji 😕 confused face
+emoji 🫤 face with diagonal mouth
+emoji 😟 worried face
+emoji 🙁 slightly frowning face
+emoji ☹️ frowning face
+emoji 😮 face with open mouth
+emoji 😯 hushed face
+emoji 😲 astonished face
+emoji 😳 flushed face
+emoji 🥺 pleading face
+emoji 🥹 face holding back tears
+emoji 😦 frowning face with open mouth
+emoji 😧 anguished face
+emoji 😨 fearful face
+emoji 😰 anxious face with sweat
+emoji 😥 sad but relieved face
+emoji 😢 crying face
+emoji 😭 loudly crying face
+emoji 😱 face screaming in fear
+emoji 😖 confounded face
+emoji 😣 persevering face
+emoji 😞 disappointed face
+emoji 😓 downcast face with sweat
+emoji 😩 weary face
+emoji 😫 tired face
+emoji 🥱 yawning face
+emoji 😤 face with steam from nose
+emoji 😡 enraged face
+emoji 😠 angry face
+emoji 🤬 face with symbols on mouth
+emoji 😈 smiling face with horns
+emoji 👿 angry face with horns
+emoji 💀 skull
+emoji ☠️ skull and crossbones
+emoji 💩 pile of poo
+emoji 🤡 clown face
+emoji 👹 ogre
+emoji 👺 goblin
+emoji 👻 ghost
+emoji 👽 alien
+emoji 👾 alien monster
+emoji 🤖 robot
+emoji 😺 grinning cat
+emoji 😸 grinning cat with smiling eyes
+emoji 😹 cat with tears of joy
+emoji 😻 smiling cat with heart-eyes
+emoji 😼 cat with wry smile
+emoji 😽 kissing cat
+emoji 🙀 weary cat
+emoji 😿 crying cat
+emoji 😾 pouting cat
+emoji 🙈 see-no-evil monkey
+emoji 🙉 hear-no-evil monkey
+emoji 🙊 speak-no-evil monkey
+emoji 💌 love letter
+emoji 💘 heart with arrow
+emoji 💝 heart with ribbon
+emoji 💖 sparkling heart
+emoji 💗 growing heart
+emoji 💓 beating heart
+emoji 💞 revolving hearts
+emoji 💕 two hearts
+emoji 💟 heart decoration
+emoji ❣️ heart exclamation
+emoji 💔 broken heart
+emoji ❤️‍🔥 heart on fire
+emoji ❤️‍🩹 mending heart
+emoji ❤️ red heart
+emoji 🩷 pink heart
+emoji 🧡 orange heart
+emoji 💛 yellow heart
+emoji 💚 green heart
+emoji 💙 blue heart
+emoji 🩵 light blue heart
+emoji 💜 purple heart
+emoji 🤎 brown heart
+emoji 🖤 black heart
+emoji 🩶 grey heart
+emoji 🤍 white heart
+emoji 💋 kiss mark
+emoji 💯 hundred points
+emoji 💢 anger symbol
+emoji 💥 collision
+emoji 💫 dizzy
+emoji 💦 sweat droplets
+emoji 💨 dashing away
+emoji 🕳️ hole
+emoji 💬 speech balloon
+emoji 👁️‍🗨️ eye in speech bubble
+emoji 🗨️ left speech bubble
+emoji 🗯️ right anger bubble
+emoji 💭 thought balloon
+emoji 💤 ZZZ
+emoji 👋 waving hand
+emoji 🤚 raised back of hand
+emoji 🖐️ hand with fingers splayed
+emoji ✋ raised hand
+emoji 🖖 vulcan salute
+emoji 🫱 rightwards hand
+emoji 🫲 leftwards hand
+emoji 🫳 palm down hand
+emoji 🫴 palm up hand
+emoji 🫷 leftwards pushing hand
+emoji 🫸 rightwards pushing hand
+emoji 👌 OK hand
+emoji 🤌 pinched fingers
+emoji 🤏 pinching hand
+emoji ✌️ victory hand
+emoji 🤞 crossed fingers
+emoji 🫰 hand with index finger and thumb crossed
+emoji 🤟 love-you gesture
+emoji 🤘 sign of the horns
+emoji 🤙 call me hand
+emoji 👈 backhand index pointing left
+emoji 👉 backhand index pointing right
+emoji 👆 backhand index pointing up
+emoji 🖕 middle finger
+emoji 👇 backhand index pointing down
+emoji ☝️ index pointing up
+emoji 🫵 index pointing at the viewer
+emoji 👍 thumbs up
+emoji 👎 thumbs down
+emoji ✊ raised fist
+emoji 👊 oncoming fist
+emoji 🤛 left-facing fist
+emoji 🤜 right-facing fist
+emoji 👏 clapping hands
+emoji 🙌 raising hands
+emoji 🫶 heart hands
+emoji 👐 open hands
+emoji 🤲 palms up together
+emoji 🤝 handshake
+emoji 🙏 folded hands
+emoji ✍️ writing hand
+emoji 💅 nail polish
+emoji 🤳 selfie
+emoji 💪 flexed biceps
+emoji 🦾 mechanical arm
+emoji 🦿 mechanical leg
+emoji 🦵 leg
+emoji 🦶 foot
+emoji 👂 ear
+emoji 🦻 ear with hearing aid
+emoji 👃 nose
+emoji 🧠 brain
+emoji 🫀 anatomical heart
+emoji 🫁 lungs
+emoji 🦷 tooth
+emoji 🦴 bone
+emoji 👀 eyes
+emoji 👁️ eye
+emoji 👅 tongue
+emoji 👄 mouth
+emoji 🫦 biting lip
+emoji 👶 baby
+emoji 🧒 child
+emoji 👦 boy
+emoji 👧 girl
+emoji 🧑 person
+emoji 👱 person: blond hair
+emoji 👨 man
+emoji 🧔 person: beard
+emoji 🧔‍♂️ man: beard
+emoji 🧔‍♀️ woman: beard
+emoji 👨‍🦰 man: red hair
+emoji 👨‍🦱 man: curly hair
+emoji 👨‍🦳 man: white hair
+emoji 👨‍🦲 man: bald
+emoji 👩 woman
+emoji 👩‍🦰 woman: red hair
+emoji 🧑‍🦰 person: red hair
+emoji 👩‍🦱 woman: curly hair
+emoji 🧑‍🦱 person: curly hair
+emoji 👩‍🦳 woman: white hair
+emoji 🧑‍🦳 person: white hair
+emoji 👩‍🦲 woman: bald
+emoji 🧑‍🦲 person: bald
+emoji 👱‍♀️ woman: blond hair
+emoji 👱‍♂️ man: blond hair
+emoji 🧓 older person
+emoji 👴 old man
+emoji 👵 old woman
+emoji 🙍 person frowning
+emoji 🙍‍♂️ man frowning
+emoji 🙍‍♀️ woman frowning
+emoji 🙎 person pouting
+emoji 🙎‍♂️ man pouting
+emoji 🙎‍♀️ woman pouting
+emoji 🙅 person gesturing NO
+emoji 🙅‍♂️ man gesturing NO
+emoji 🙅‍♀️ woman gesturing NO
+emoji 🙆 person gesturing OK
+emoji 🙆‍♂️ man gesturing OK
+emoji 🙆‍♀️ woman gesturing OK
+emoji 💁 person tipping hand
+emoji 💁‍♂️ man tipping hand
+emoji 💁‍♀️ woman tipping hand
+emoji 🙋 person raising hand
+emoji 🙋‍♂️ man raising hand
+emoji 🙋‍♀️ woman raising hand
+emoji 🧏 deaf person
+emoji 🧏‍♂️ deaf man
+emoji 🧏‍♀️ deaf woman
+emoji 🙇 person bowing
+emoji 🙇‍♂️ man bowing
+emoji 🙇‍♀️ woman bowing
+emoji 🤦 person facepalming
+emoji 🤦‍♂️ man facepalming
+emoji 🤦‍♀️ woman facepalming
+emoji 🤷 person shrugging
+emoji 🤷‍♂️ man shrugging
+emoji 🤷‍♀️ woman shrugging
+emoji 🧑‍⚕️ health worker
+emoji 👨‍⚕️ man health worker
+emoji 👩‍⚕️ woman health worker
+emoji 🧑‍🎓 student
+emoji 👨‍🎓 man student
+emoji 👩‍🎓 woman student
+emoji 🧑‍🏫 teacher
+emoji 👨‍🏫 man teacher
+emoji 👩‍🏫 woman teacher
+emoji 🧑‍⚖️ judge
+emoji 👨‍⚖️ man judge
+emoji 👩‍⚖️ woman judge
+emoji 🧑‍🌾 farmer
+emoji 👨‍🌾 man farmer
+emoji 👩‍🌾 woman farmer
+emoji 🧑‍🍳 cook
+emoji 👨‍🍳 man cook
+emoji 👩‍🍳 woman cook
+emoji 🧑‍🔧 mechanic
+emoji 👨‍🔧 man mechanic
+emoji 👩‍🔧 woman mechanic
+emoji 🧑‍🏭 factory worker
+emoji 👨‍🏭 man factory worker
+emoji 👩‍🏭 woman factory worker
+emoji 🧑‍💼 office worker
+emoji 👨‍💼 man office worker
+emoji 👩‍💼 woman office worker
+emoji 🧑‍🔬 scientist
+emoji 👨‍🔬 man scientist
+emoji 👩‍🔬 woman scientist
+emoji 🧑‍💻 technologist
+emoji 👨‍💻 man technologist
+emoji 👩‍💻 woman technologist
+emoji 🧑‍🎤 singer
+emoji 👨‍🎤 man singer
+emoji 👩‍🎤 woman singer
+emoji 🧑‍🎨 artist
+emoji 👨‍🎨 man artist
+emoji 👩‍🎨 woman artist
+emoji 🧑‍✈️ pilot
+emoji 👨‍✈️ man pilot
+emoji 👩‍✈️ woman pilot
+emoji 🧑‍🚀 astronaut
+emoji 👨‍🚀 man astronaut
+emoji 👩‍🚀 woman astronaut
+emoji 🧑‍🚒 firefighter
+emoji 👨‍🚒 man firefighter
+emoji 👩‍🚒 woman firefighter
+emoji 👮 police officer
+emoji 👮‍♂️ man police officer
+emoji 👮‍♀️ woman police officer
+emoji 🕵️ detective
+emoji 🕵️‍♂️ man detective
+emoji 🕵️‍♀️ woman detective
+emoji 💂 guard
+emoji 💂‍♂️ man guard
+emoji 💂‍♀️ woman guard
+emoji 🥷 ninja
+emoji 👷 construction worker
+emoji 👷‍♂️ man construction worker
+emoji 👷‍♀️ woman construction worker
+emoji 🫅 person with crown
+emoji 🤴 prince
+emoji 👸 princess
+emoji 👳 person wearing turban
+emoji 👳‍♂️ man wearing turban
+emoji 👳‍♀️ woman wearing turban
+emoji 👲 person with skullcap
+emoji 🧕 woman with headscarf
+emoji 🤵 person in tuxedo
+emoji 🤵‍♂️ man in tuxedo
+emoji 🤵‍♀️ woman in tuxedo
+emoji 👰 person with veil
+emoji 👰‍♂️ man with veil
+emoji 👰‍♀️ woman with veil
+emoji 🤰 pregnant woman
+emoji 🫃 pregnant man
+emoji 🫄 pregnant person
+emoji 🤱 breast-feeding
+emoji 👩‍🍼 woman feeding baby
+emoji 👨‍🍼 man feeding baby
+emoji 🧑‍🍼 person feeding baby
+emoji 👼 baby angel
+emoji 🎅 Santa Claus
+emoji 🤶 Mrs. Claus
+emoji 🧑‍🎄 Mx Claus
+emoji 🦸 superhero
+emoji 🦸‍♂️ man superhero
+emoji 🦸‍♀️ woman superhero
+emoji 🦹 supervillain
+emoji 🦹‍♂️ man supervillain
+emoji 🦹‍♀️ woman supervillain
+emoji 🧙 mage
+emoji 🧙‍♂️ man mage
+emoji 🧙‍♀️ woman mage
+emoji 🧚 fairy
+emoji 🧚‍♂️ man fairy
+emoji 🧚‍♀️ woman fairy
+emoji 🧛 vampire
+emoji 🧛‍♂️ man vampire
+emoji 🧛‍♀️ woman vampire
+emoji 🧜 merperson
+emoji 🧜‍♂️ merman
+emoji 🧜‍♀️ mermaid
+emoji 🧝 elf
+emoji 🧝‍♂️ man elf
+emoji 🧝‍♀️ woman elf
+emoji 🧞 genie
+emoji 🧞‍♂️ man genie
+emoji 🧞‍♀️ woman genie
+emoji 🧟 zombie
+emoji 🧟‍♂️ man zombie
+emoji 🧟‍♀️ woman zombie
+emoji 🧌 troll
+emoji 💆 person getting massage
+emoji 💆‍♂️ man getting massage
+emoji 💆‍♀️ woman getting massage
+emoji 💇 person getting haircut
+emoji 💇‍♂️ man getting haircut
+emoji 💇‍♀️ woman getting haircut
+emoji 🚶 person walking
+emoji 🚶‍♂️ man walking
+emoji 🚶‍♀️ woman walking
+emoji 🚶‍➡️ person walking facing right
+emoji 🚶‍♀️‍➡️ woman walking facing right
+emoji 🚶‍♂️‍➡️ man walking facing right
+emoji 🧍 person standing
+emoji 🧍‍♂️ man standing
+emoji 🧍‍♀️ woman standing
+emoji 🧎 person kneeling
+emoji 🧎‍♂️ man kneeling
+emoji 🧎‍♀️ woman kneeling
+emoji 🧎‍➡️ person kneeling facing right
+emoji 🧎‍♀️‍➡️ woman kneeling facing right
+emoji 🧎‍♂️‍➡️ man kneeling facing right
+emoji 🧑‍🦯 person with white cane
+emoji 🧑‍🦯‍➡️ person with white cane facing right
+emoji 👨‍🦯 man with white cane
+emoji 👨‍🦯‍➡️ man with white cane facing right
+emoji 👩‍🦯 woman with white cane
+emoji 👩‍🦯‍➡️ woman with white cane facing right
+emoji 🧑‍🦼 person in motorized wheelchair
+emoji 🧑‍🦼‍➡️ person in motorized wheelchair facing right
+emoji 👨‍🦼 man in motorized wheelchair
+emoji 👨‍🦼‍➡️ man in motorized wheelchair facing right
+emoji 👩‍🦼 woman in motorized wheelchair
+emoji 👩‍🦼‍➡️ woman in motorized wheelchair facing right
+emoji 🧑‍🦽 person in manual wheelchair
+emoji 🧑‍🦽‍➡️ person in manual wheelchair facing right
+emoji 👨‍🦽 man in manual wheelchair
+emoji 👨‍🦽‍➡️ man in manual wheelchair facing right
+emoji 👩‍🦽 woman in manual wheelchair
+emoji 👩‍🦽‍➡️ woman in manual wheelchair facing right
+emoji 🏃 person running
+emoji 🏃‍♂️ man running
+emoji 🏃‍♀️ woman running
+emoji 🏃‍➡️ person running facing right
+emoji 🏃‍♀️‍➡️ woman running facing right
+emoji 🏃‍♂️‍➡️ man running facing right
+emoji 💃 woman dancing
+emoji 🕺 man dancing
+emoji 🕴️ person in suit levitating
+emoji 👯 people with bunny ears
+emoji 👯‍♂️ men with bunny ears
+emoji 👯‍♀️ women with bunny ears
+emoji 🧖 person in steamy room
+emoji 🧖‍♂️ man in steamy room
+emoji 🧖‍♀️ woman in steamy room
+emoji 🧗 person climbing
+emoji 🧗‍♂️ man climbing
+emoji 🧗‍♀️ woman climbing
+emoji 🤺 person fencing
+emoji 🏇 horse racing
+emoji ⛷️ skier
+emoji 🏂 snowboarder
+emoji 🏌️ person golfing
+emoji 🏌️‍♂️ man golfing
+emoji 🏌️‍♀️ woman golfing
+emoji 🏄 person surfing
+emoji 🏄‍♂️ man surfing
+emoji 🏄‍♀️ woman surfing
+emoji 🚣 person rowing boat
+emoji 🚣‍♂️ man rowing boat
+emoji 🚣‍♀️ woman rowing boat
+emoji 🏊 person swimming
+emoji 🏊‍♂️ man swimming
+emoji 🏊‍♀️ woman swimming
+emoji ⛹️ person bouncing ball
+emoji ⛹️‍♂️ man bouncing ball
+emoji ⛹️‍♀️ woman bouncing ball
+emoji 🏋️ person lifting weights
+emoji 🏋️‍♂️ man lifting weights
+emoji 🏋️‍♀️ woman lifting weights
+emoji 🚴 person biking
+emoji 🚴‍♂️ man biking
+emoji 🚴‍♀️ woman biking
+emoji 🚵 person mountain biking
+emoji 🚵‍♂️ man mountain biking
+emoji 🚵‍♀️ woman mountain biking
+emoji 🤸 person cartwheeling
+emoji 🤸‍♂️ man cartwheeling
+emoji 🤸‍♀️ woman cartwheeling
+emoji 🤼 people wrestling
+emoji 🤼‍♂️ men wrestling
+emoji 🤼‍♀️ women wrestling
+emoji 🤽 person playing water polo
+emoji 🤽‍♂️ man playing water polo
+emoji 🤽‍♀️ woman playing water polo
+emoji 🤾 person playing handball
+emoji 🤾‍♂️ man playing handball
+emoji 🤾‍♀️ woman playing handball
+emoji 🤹 person juggling
+emoji 🤹‍♂️ man juggling
+emoji 🤹‍♀️ woman juggling
+emoji 🧘 person in lotus position
+emoji 🧘‍♂️ man in lotus position
+emoji 🧘‍♀️ woman in lotus position
+emoji 🛀 person taking bath
+emoji 🛌 person in bed
+emoji 🧑‍🤝‍🧑 people holding hands
+emoji 👭 women holding hands
+emoji 👫 woman and man holding hands
+emoji 👬 men holding hands
+emoji 💏 kiss
+emoji 👩‍❤️‍💋‍👨 kiss: woman, man
+emoji 👨‍❤️‍💋‍👨 kiss: man, man
+emoji 👩‍❤️‍💋‍👩 kiss: woman, woman
+emoji 💑 couple with heart
+emoji 👩‍❤️‍👨 couple with heart: woman, man
+emoji 👨‍❤️‍👨 couple with heart: man, man
+emoji 👩‍❤️‍👩 couple with heart: woman, woman
+emoji 👨‍👩‍👦 family: man, woman, boy
+emoji 👨‍👩‍👧 family: man, woman, girl
+emoji 👨‍👩‍👧‍👦 family: man, woman, girl, boy
+emoji 👨‍👩‍👦‍👦 family: man, woman, boy, boy
+emoji 👨‍👩‍👧‍👧 family: man, woman, girl, girl
+emoji 👨‍👨‍👦 family: man, man, boy
+emoji 👨‍👨‍👧 family: man, man, girl
+emoji 👨‍👨‍👧‍👦 family: man, man, girl, boy
+emoji 👨‍👨‍👦‍👦 family: man, man, boy, boy
+emoji 👨‍👨‍👧‍👧 family: man, man, girl, girl
+emoji 👩‍👩‍👦 family: woman, woman, boy
+emoji 👩‍👩‍👧 family: woman, woman, girl
+emoji 👩‍👩‍👧‍👦 family: woman, woman, girl, boy
+emoji 👩‍👩‍👦‍👦 family: woman, woman, boy, boy
+emoji 👩‍👩‍👧‍👧 family: woman, woman, girl, girl
+emoji 👨‍👦 family: man, boy
+emoji 👨‍👦‍👦 family: man, boy, boy
+emoji 👨‍👧 family: man, girl
+emoji 👨‍👧‍👦 family: man, girl, boy
+emoji 👨‍👧‍👧 family: man, girl, girl
+emoji 👩‍👦 family: woman, boy
+emoji 👩‍👦‍👦 family: woman, boy, boy
+emoji 👩‍👧 family: woman, girl
+emoji 👩‍👧‍👦 family: woman, girl, boy
+emoji 👩‍👧‍👧 family: woman, girl, girl
+emoji 🗣️ speaking head
+emoji 👤 bust in silhouette
+emoji 👥 busts in silhouette
+emoji 🫂 people hugging
+emoji 👪 family
+emoji 🧑‍🧑‍🧒 family: adult, adult, child
+emoji 🧑‍🧑‍🧒‍🧒 family: adult, adult, child, child
+emoji 🧑‍🧒 family: adult, child
+emoji 🧑‍🧒‍🧒 family: adult, child, child
+emoji 👣 footprints
+emoji 🫆 fingerprint
+emoji 🐵 monkey face
+emoji 🐒 monkey
+emoji 🦍 gorilla
+emoji 🦧 orangutan
+emoji 🐶 dog face
+emoji 🐕 dog
+emoji 🦮 guide dog
+emoji 🐕‍🦺 service dog
+emoji 🐩 poodle
+emoji 🐺 wolf
+emoji 🦊 fox
+emoji 🦝 raccoon
+emoji 🐱 cat face
+emoji 🐈 cat
+emoji 🐈‍⬛ black cat
+emoji 🦁 lion
+emoji 🐯 tiger face
+emoji 🐅 tiger
+emoji 🐆 leopard
+emoji 🐴 horse face
+emoji 🫎 moose
+emoji 🫏 donkey
+emoji 🐎 horse
+emoji 🦄 unicorn
+emoji 🦓 zebra
+emoji 🦌 deer
+emoji 🦬 bison
+emoji 🐮 cow face
+emoji 🐂 ox
+emoji 🐃 water buffalo
+emoji 🐄 cow
+emoji 🐷 pig face
+emoji 🐖 pig
+emoji 🐗 boar
+emoji 🐽 pig nose
+emoji 🐏 ram
+emoji 🐑 ewe
+emoji 🐐 goat
+emoji 🐪 camel
+emoji 🐫 two-hump camel
+emoji 🦙 llama
+emoji 🦒 giraffe
+emoji 🐘 elephant
+emoji 🦣 mammoth
+emoji 🦏 rhinoceros
+emoji 🦛 hippopotamus
+emoji 🐭 mouse face
+emoji 🐁 mouse
+emoji 🐀 rat
+emoji 🐹 hamster
+emoji 🐰 rabbit face
+emoji 🐇 rabbit
+emoji 🐿️ chipmunk
+emoji 🦫 beaver
+emoji 🦔 hedgehog
+emoji 🦇 bat
+emoji 🐻 bear
+emoji 🐻‍❄️ polar bear
+emoji 🐨 koala
+emoji 🐼 panda
+emoji 🦥 sloth
+emoji 🦦 otter
+emoji 🦨 skunk
+emoji 🦘 kangaroo
+emoji 🦡 badger
+emoji 🐾 paw prints
+emoji 🦃 turkey
+emoji 🐔 chicken
+emoji 🐓 rooster
+emoji 🐣 hatching chick
+emoji 🐤 baby chick
+emoji 🐥 front-facing baby chick
+emoji 🐦 bird
+emoji 🐧 penguin
+emoji 🕊️ dove
+emoji 🦅 eagle
+emoji 🦆 duck
+emoji 🦢 swan
+emoji 🦉 owl
+emoji 🦤 dodo
+emoji 🪶 feather
+emoji 🦩 flamingo
+emoji 🦚 peacock
+emoji 🦜 parrot
+emoji 🪽 wing
+emoji 🐦‍⬛ black bird
+emoji 🪿 goose
+emoji 🐦‍🔥 phoenix
+emoji 🐸 frog
+emoji 🐊 crocodile
+emoji 🐢 turtle
+emoji 🦎 lizard
+emoji 🐍 snake
+emoji 🐲 dragon face
+emoji 🐉 dragon
+emoji 🦕 sauropod
+emoji 🦖 T-Rex
+emoji 🐳 spouting whale
+emoji 🐋 whale
+emoji 🐬 dolphin
+emoji 🦭 seal
+emoji 🐟 fish
+emoji 🐠 tropical fish
+emoji 🐡 blowfish
+emoji 🦈 shark
+emoji 🐙 octopus
+emoji 🐚 spiral shell
+emoji 🪸 coral
+emoji 🪼 jellyfish
+emoji 🦀 crab
+emoji 🦞 lobster
+emoji 🦐 shrimp
+emoji 🦑 squid
+emoji 🦪 oyster
+emoji 🐌 snail
+emoji 🦋 butterfly
+emoji 🐛 bug
+emoji 🐜 ant
+emoji 🐝 honeybee
+emoji 🪲 beetle
+emoji 🐞 lady beetle
+emoji 🦗 cricket
+emoji 🪳 cockroach
+emoji 🕷️ spider
+emoji 🕸️ spider web
+emoji 🦂 scorpion
+emoji 🦟 mosquito
+emoji 🪰 fly
+emoji 🪱 worm
+emoji 🦠 microbe
+emoji 💐 bouquet
+emoji 🌸 cherry blossom
+emoji 💮 white flower
+emoji 🪷 lotus
+emoji 🏵️ rosette
+emoji 🌹 rose
+emoji 🥀 wilted flower
+emoji 🌺 hibiscus
+emoji 🌻 sunflower
+emoji 🌼 blossom
+emoji 🌷 tulip
+emoji 🪻 hyacinth
+emoji 🌱 seedling
+emoji 🪴 potted plant
+emoji 🌲 evergreen tree
+emoji 🌳 deciduous tree
+emoji 🌴 palm tree
+emoji 🌵 cactus
+emoji 🌾 sheaf of rice
+emoji 🌿 herb
+emoji ☘️ shamrock
+emoji 🍀 four leaf clover
+emoji 🍁 maple leaf
+emoji 🍂 fallen leaf
+emoji 🍃 leaf fluttering in wind
+emoji 🪹 empty nest
+emoji 🪺 nest with eggs
+emoji 🍄 mushroom
+emoji 🪾 leafless tree
+emoji 🍇 grapes
+emoji 🍈 melon
+emoji 🍉 watermelon
+emoji 🍊 tangerine
+emoji 🍋 lemon
+emoji 🍋‍🟩 lime
+emoji 🍌 banana
+emoji 🍍 pineapple
+emoji 🥭 mango
+emoji 🍎 red apple
+emoji 🍏 green apple
+emoji 🍐 pear
+emoji 🍑 peach
+emoji 🍒 cherries
+emoji 🍓 strawberry
+emoji 🫐 blueberries
+emoji 🥝 kiwi fruit
+emoji 🍅 tomato
+emoji 🫒 olive
+emoji 🥥 coconut
+emoji 🥑 avocado
+emoji 🍆 eggplant
+emoji 🥔 potato
+emoji 🥕 carrot
+emoji 🌽 ear of corn
+emoji 🌶️ hot pepper
+emoji 🫑 bell pepper
+emoji 🥒 cucumber
+emoji 🥬 leafy green
+emoji 🥦 broccoli
+emoji 🧄 garlic
+emoji 🧅 onion
+emoji 🥜 peanuts
+emoji 🫘 beans
+emoji 🌰 chestnut
+emoji 🫚 ginger root
+emoji 🫛 pea pod
+emoji 🍄‍🟫 brown mushroom
+emoji 🫜 root vegetable
+emoji 🍞 bread
+emoji 🥐 croissant
+emoji 🥖 baguette bread
+emoji 🫓 flatbread
+emoji 🥨 pretzel
+emoji 🥯 bagel
+emoji 🥞 pancakes
+emoji 🧇 waffle
+emoji 🧀 cheese wedge
+emoji 🍖 meat on bone
+emoji 🍗 poultry leg
+emoji 🥩 cut of meat
+emoji 🥓 bacon
+emoji 🍔 hamburger
+emoji 🍟 french fries
+emoji 🍕 pizza
+emoji 🌭 hot dog
+emoji 🥪 sandwich
+emoji 🌮 taco
+emoji 🌯 burrito
+emoji 🫔 tamale
+emoji 🥙 stuffed flatbread
+emoji 🧆 falafel
+emoji 🥚 egg
+emoji 🍳 cooking
+emoji 🥘 shallow pan of food
+emoji 🍲 pot of food
+emoji 🫕 fondue
+emoji 🥣 bowl with spoon
+emoji 🥗 green salad
+emoji 🍿 popcorn
+emoji 🧈 butter
+emoji 🧂 salt
+emoji 🥫 canned food
+emoji 🍱 bento box
+emoji 🍘 rice cracker
+emoji 🍙 rice ball
+emoji 🍚 cooked rice
+emoji 🍛 curry rice
+emoji 🍜 steaming bowl
+emoji 🍝 spaghetti
+emoji 🍠 roasted sweet potato
+emoji 🍢 oden
+emoji 🍣 sushi
+emoji 🍤 fried shrimp
+emoji 🍥 fish cake with swirl
+emoji 🥮 moon cake
+emoji 🍡 dango
+emoji 🥟 dumpling
+emoji 🥠 fortune cookie
+emoji 🥡 takeout box
+emoji 🍦 soft ice cream
+emoji 🍧 shaved ice
+emoji 🍨 ice cream
+emoji 🍩 doughnut
+emoji 🍪 cookie
+emoji 🎂 birthday cake
+emoji 🍰 shortcake
+emoji 🧁 cupcake
+emoji 🥧 pie
+emoji 🍫 chocolate bar
+emoji 🍬 candy
+emoji 🍭 lollipop
+emoji 🍮 custard
+emoji 🍯 honey pot
+emoji 🍼 baby bottle
+emoji 🥛 glass of milk
+emoji ☕ hot beverage
+emoji 🫖 teapot
+emoji 🍵 teacup without handle
+emoji 🍶 sake
+emoji 🍾 bottle with popping cork
+emoji 🍷 wine glass
+emoji 🍸 cocktail glass
+emoji 🍹 tropical drink
+emoji 🍺 beer mug
+emoji 🍻 clinking beer mugs
+emoji 🥂 clinking glasses
+emoji 🥃 tumbler glass
+emoji 🫗 pouring liquid
+emoji 🥤 cup with straw
+emoji 🧋 bubble tea
+emoji 🧃 beverage box
+emoji 🧉 mate
+emoji 🧊 ice
+emoji 🥢 chopsticks
+emoji 🍽️ fork and knife with plate
+emoji 🍴 fork and knife
+emoji 🥄 spoon
+emoji 🔪 kitchen knife
+emoji 🫙 jar
+emoji 🏺 amphora
+emoji 🌍 globe showing Europe-Africa
+emoji 🌎 globe showing Americas
+emoji 🌏 globe showing Asia-Australia
+emoji 🌐 globe with meridians
+emoji 🗺️ world map
+emoji 🗾 map of Japan
+emoji 🧭 compass
+emoji 🏔️ snow-capped mountain
+emoji ⛰️ mountain
+emoji 🌋 volcano
+emoji 🗻 mount fuji
+emoji 🏕️ camping
+emoji 🏖️ beach with umbrella
+emoji 🏜️ desert
+emoji 🏝️ desert island
+emoji 🏞️ national park
+emoji 🏟️ stadium
+emoji 🏛️ classical building
+emoji 🏗️ building construction
+emoji 🧱 brick
+emoji 🪨 rock
+emoji 🪵 wood
+emoji 🛖 hut
+emoji 🏘️ houses
+emoji 🏚️ derelict house
+emoji 🏠 house
+emoji 🏡 house with garden
+emoji 🏢 office building
+emoji 🏣 Japanese post office
+emoji 🏤 post office
+emoji 🏥 hospital
+emoji 🏦 bank
+emoji 🏨 hotel
+emoji 🏩 love hotel
+emoji 🏪 convenience store
+emoji 🏫 school
+emoji 🏬 department store
+emoji 🏭 factory
+emoji 🏯 Japanese castle
+emoji 🏰 castle
+emoji 💒 wedding
+emoji 🗼 Tokyo tower
+emoji 🗽 Statue of Liberty
+emoji ⛪ church
+emoji 🕌 mosque
+emoji 🛕 hindu temple
+emoji 🕍 synagogue
+emoji ⛩️ shinto shrine
+emoji 🕋 kaaba
+emoji ⛲ fountain
+emoji ⛺ tent
+emoji 🌁 foggy
+emoji 🌃 night with stars
+emoji 🏙️ cityscape
+emoji 🌄 sunrise over mountains
+emoji 🌅 sunrise
+emoji 🌆 cityscape at dusk
+emoji 🌇 sunset
+emoji 🌉 bridge at night
+emoji ♨️ hot springs
+emoji 🎠 carousel horse
+emoji 🛝 playground slide
+emoji 🎡 ferris wheel
+emoji 🎢 roller coaster
+emoji 💈 barber pole
+emoji 🎪 circus tent
+emoji 🚂 locomotive
+emoji 🚃 railway car
+emoji 🚄 high-speed train
+emoji 🚅 bullet train
+emoji 🚆 train
+emoji 🚇 metro
+emoji 🚈 light rail
+emoji 🚉 station
+emoji 🚊 tram
+emoji 🚝 monorail
+emoji 🚞 mountain railway
+emoji 🚋 tram car
+emoji 🚌 bus
+emoji 🚍 oncoming bus
+emoji 🚎 trolleybus
+emoji 🚐 minibus
+emoji 🚑 ambulance
+emoji 🚒 fire engine
+emoji 🚓 police car
+emoji 🚔 oncoming police car
+emoji 🚕 taxi
+emoji 🚖 oncoming taxi
+emoji 🚗 automobile
+emoji 🚘 oncoming automobile
+emoji 🚙 sport utility vehicle
+emoji 🛻 pickup truck
+emoji 🚚 delivery truck
+emoji 🚛 articulated lorry
+emoji 🚜 tractor
+emoji 🏎️ racing car
+emoji 🏍️ motorcycle
+emoji 🛵 motor scooter
+emoji 🦽 manual wheelchair
+emoji 🦼 motorized wheelchair
+emoji 🛺 auto rickshaw
+emoji 🚲 bicycle
+emoji 🛴 kick scooter
+emoji 🛹 skateboard
+emoji 🛼 roller skate
+emoji 🚏 bus stop
+emoji 🛣️ motorway
+emoji 🛤️ railway track
+emoji 🛢️ oil drum
+emoji ⛽ fuel pump
+emoji 🛞 wheel
+emoji 🚨 police car light
+emoji 🚥 horizontal traffic light
+emoji 🚦 vertical traffic light
+emoji 🛑 stop sign
+emoji 🚧 construction
+emoji ⚓ anchor
+emoji 🛟 ring buoy
+emoji ⛵ sailboat
+emoji 🛶 canoe
+emoji 🚤 speedboat
+emoji 🛳️ passenger ship
+emoji ⛴️ ferry
+emoji 🛥️ motor boat
+emoji 🚢 ship
+emoji ✈️ airplane
+emoji 🛩️ small airplane
+emoji 🛫 airplane departure
+emoji 🛬 airplane arrival
+emoji 🪂 parachute
+emoji 💺 seat
+emoji 🚁 helicopter
+emoji 🚟 suspension railway
+emoji 🚠 mountain cableway
+emoji 🚡 aerial tramway
+emoji 🛰️ satellite
+emoji 🚀 rocket
+emoji 🛸 flying saucer
+emoji 🛎️ bellhop bell
+emoji 🧳 luggage
+emoji ⌛ hourglass done
+emoji ⏳ hourglass not done
+emoji ⌚ watch
+emoji ⏰ alarm clock
+emoji ⏱️ stopwatch
+emoji ⏲️ timer clock
+emoji 🕰️ mantelpiece clock
+emoji 🕛 twelve o’clock
+emoji 🕧 twelve-thirty
+emoji 🕐 one o’clock
+emoji 🕜 one-thirty
+emoji 🕑 two o’clock
+emoji 🕝 two-thirty
+emoji 🕒 three o’clock
+emoji 🕞 three-thirty
+emoji 🕓 four o’clock
+emoji 🕟 four-thirty
+emoji 🕔 five o’clock
+emoji 🕠 five-thirty
+emoji 🕕 six o’clock
+emoji 🕡 six-thirty
+emoji 🕖 seven o’clock
+emoji 🕢 seven-thirty
+emoji 🕗 eight o’clock
+emoji 🕣 eight-thirty
+emoji 🕘 nine o’clock
+emoji 🕤 nine-thirty
+emoji 🕙 ten o’clock
+emoji 🕥 ten-thirty
+emoji 🕚 eleven o’clock
+emoji 🕦 eleven-thirty
+emoji 🌑 new moon
+emoji 🌒 waxing crescent moon
+emoji 🌓 first quarter moon
+emoji 🌔 waxing gibbous moon
+emoji 🌕 full moon
+emoji 🌖 waning gibbous moon
+emoji 🌗 last quarter moon
+emoji 🌘 waning crescent moon
+emoji 🌙 crescent moon
+emoji 🌚 new moon face
+emoji 🌛 first quarter moon face
+emoji 🌜 last quarter moon face
+emoji 🌡️ thermometer
+emoji ☀️ sun
+emoji 🌝 full moon face
+emoji 🌞 sun with face
+emoji 🪐 ringed planet
+emoji ⭐ star
+emoji 🌟 glowing star
+emoji 🌠 shooting star
+emoji 🌌 milky way
+emoji ☁️ cloud
+emoji ⛅ sun behind cloud
+emoji ⛈️ cloud with lightning and rain
+emoji 🌤️ sun behind small cloud
+emoji 🌥️ sun behind large cloud
+emoji 🌦️ sun behind rain cloud
+emoji 🌧️ cloud with rain
+emoji 🌨️ cloud with snow
+emoji 🌩️ cloud with lightning
+emoji 🌪️ tornado
+emoji 🌫️ fog
+emoji 🌬️ wind face
+emoji 🌀 cyclone
+emoji 🌈 rainbow
+emoji 🌂 closed umbrella
+emoji ☂️ umbrella
+emoji ☔ umbrella with rain drops
+emoji ⛱️ umbrella on ground
+emoji ⚡ high voltage
+emoji ❄️ snowflake
+emoji ☃️ snowman
+emoji ⛄ snowman without snow
+emoji ☄️ comet
+emoji 🔥 fire
+emoji 💧 droplet
+emoji 🌊 water wave
+emoji 🎃 jack-o-lantern
+emoji 🎄 Christmas tree
+emoji 🎆 fireworks
+emoji 🎇 sparkler
+emoji 🧨 firecracker
+emoji ✨ sparkles
+emoji 🎈 balloon
+emoji 🎉 party popper
+emoji 🎊 confetti ball
+emoji 🎋 tanabata tree
+emoji 🎍 pine decoration
+emoji 🎎 Japanese dolls
+emoji 🎏 carp streamer
+emoji 🎐 wind chime
+emoji 🎑 moon viewing ceremony
+emoji 🧧 red envelope
+emoji 🎀 ribbon
+emoji 🎁 wrapped gift
+emoji 🎗️ reminder ribbon
+emoji 🎟️ admission tickets
+emoji 🎫 ticket
+emoji 🎖️ military medal
+emoji 🏆 trophy
+emoji 🏅 sports medal
+emoji 🥇 1st place medal
+emoji 🥈 2nd place medal
+emoji 🥉 3rd place medal
+emoji ⚽ soccer ball
+emoji ⚾ baseball
+emoji 🥎 softball
+emoji 🏀 basketball
+emoji 🏐 volleyball
+emoji 🏈 american football
+emoji 🏉 rugby football
+emoji 🎾 tennis
+emoji 🥏 flying disc
+emoji 🎳 bowling
+emoji 🏏 cricket game
+emoji 🏑 field hockey
+emoji 🏒 ice hockey
+emoji 🥍 lacrosse
+emoji 🏓 ping pong
+emoji 🏸 badminton
+emoji 🥊 boxing glove
+emoji 🥋 martial arts uniform
+emoji 🥅 goal net
+emoji ⛳ flag in hole
+emoji ⛸️ ice skate
+emoji 🎣 fishing pole
+emoji 🤿 diving mask
+emoji 🎽 running shirt
+emoji 🎿 skis
+emoji 🛷 sled
+emoji 🥌 curling stone
+emoji 🎯 bullseye
+emoji 🪀 yo-yo
+emoji 🪁 kite
+emoji 🔫 water pistol
+emoji 🎱 pool 8 ball
+emoji 🔮 crystal ball
+emoji 🪄 magic wand
+emoji 🎮 video game
+emoji 🕹️ joystick
+emoji 🎰 slot machine
+emoji 🎲 game die
+emoji 🧩 puzzle piece
+emoji 🧸 teddy bear
+emoji 🪅 piñata
+emoji 🪩 mirror ball
+emoji 🪆 nesting dolls
+emoji ♠️ spade suit
+emoji ♥️ heart suit
+emoji ♦️ diamond suit
+emoji ♣️ club suit
+emoji ♟️ chess pawn
+emoji 🃏 joker
+emoji 🀄 mahjong red dragon
+emoji 🎴 flower playing cards
+emoji 🎭 performing arts
+emoji 🖼️ framed picture
+emoji 🎨 artist palette
+emoji 🧵 thread
+emoji 🪡 sewing needle
+emoji 🧶 yarn
+emoji 🪢 knot
+emoji 👓 glasses
+emoji 🕶️ sunglasses
+emoji 🥽 goggles
+emoji 🥼 lab coat
+emoji 🦺 safety vest
+emoji 👔 necktie
+emoji 👕 t-shirt
+emoji 👖 jeans
+emoji 🧣 scarf
+emoji 🧤 gloves
+emoji 🧥 coat
+emoji 🧦 socks
+emoji 👗 dress
+emoji 👘 kimono
+emoji 🥻 sari
+emoji 🩱 one-piece swimsuit
+emoji 🩲 briefs
+emoji 🩳 shorts
+emoji 👙 bikini
+emoji 👚 woman’s clothes
+emoji 🪭 folding hand fan
+emoji 👛 purse
+emoji 👜 handbag
+emoji 👝 clutch bag
+emoji 🛍️ shopping bags
+emoji 🎒 backpack
+emoji 🩴 thong sandal
+emoji 👞 man’s shoe
+emoji 👟 running shoe
+emoji 🥾 hiking boot
+emoji 🥿 flat shoe
+emoji 👠 high-heeled shoe
+emoji 👡 woman’s sandal
+emoji 🩰 ballet shoes
+emoji 👢 woman’s boot
+emoji 🪮 hair pick
+emoji 👑 crown
+emoji 👒 woman’s hat
+emoji 🎩 top hat
+emoji 🎓 graduation cap
+emoji 🧢 billed cap
+emoji 🪖 military helmet
+emoji ⛑️ rescue worker’s helmet
+emoji 📿 prayer beads
+emoji 💄 lipstick
+emoji 💍 ring
+emoji 💎 gem stone
+emoji 🔇 muted speaker
+emoji 🔈 speaker low volume
+emoji 🔉 speaker medium volume
+emoji 🔊 speaker high volume
+emoji 📢 loudspeaker
+emoji 📣 megaphone
+emoji 📯 postal horn
+emoji 🔔 bell
+emoji 🔕 bell with slash
+emoji 🎼 musical score
+emoji 🎵 musical note
+emoji 🎶 musical notes
+emoji 🎙️ studio microphone
+emoji 🎚️ level slider
+emoji 🎛️ control knobs
+emoji 🎤 microphone
+emoji 🎧 headphone
+emoji 📻 radio
+emoji 🎷 saxophone
+emoji 🪗 accordion
+emoji 🎸 guitar
+emoji 🎹 musical keyboard
+emoji 🎺 trumpet
+emoji 🎻 violin
+emoji 🪕 banjo
+emoji 🥁 drum
+emoji 🪘 long drum
+emoji 🪇 maracas
+emoji 🪈 flute
+emoji 🪉 harp
+emoji 📱 mobile phone
+emoji 📲 mobile phone with arrow
+emoji ☎️ telephone
+emoji 📞 telephone receiver
+emoji 📟 pager
+emoji 📠 fax machine
+emoji 🔋 battery
+emoji 🪫 low battery
+emoji 🔌 electric plug
+emoji 💻 laptop
+emoji 🖥️ desktop computer
+emoji 🖨️ printer
+emoji ⌨️ keyboard
+emoji 🖱️ computer mouse
+emoji 🖲️ trackball
+emoji 💽 computer disk
+emoji 💾 floppy disk
+emoji 💿 optical disk
+emoji 📀 dvd
+emoji 🧮 abacus
+emoji 🎥 movie camera
+emoji 🎞️ film frames
+emoji 📽️ film projector
+emoji 🎬 clapper board
+emoji 📺 television
+emoji 📷 camera
+emoji 📸 camera with flash
+emoji 📹 video camera
+emoji 📼 videocassette
+emoji 🔍 magnifying glass tilted left
+emoji 🔎 magnifying glass tilted right
+emoji 🕯️ candle
+emoji 💡 light bulb
+emoji 🔦 flashlight
+emoji 🏮 red paper lantern
+emoji 🪔 diya lamp
+emoji 📔 notebook with decorative cover
+emoji 📕 closed book
+emoji 📖 open book
+emoji 📗 green book
+emoji 📘 blue book
+emoji 📙 orange book
+emoji 📚 books
+emoji 📓 notebook
+emoji 📒 ledger
+emoji 📃 page with curl
+emoji 📜 scroll
+emoji 📄 page facing up
+emoji 📰 newspaper
+emoji 🗞️ rolled-up newspaper
+emoji 📑 bookmark tabs
+emoji 🔖 bookmark
+emoji 🏷️ label
+emoji 💰 money bag
+emoji 🪙 coin
+emoji 💴 yen banknote
+emoji 💵 dollar banknote
+emoji 💶 euro banknote
+emoji 💷 pound banknote
+emoji 💸 money with wings
+emoji 💳 credit card
+emoji 🧾 receipt
+emoji 💹 chart increasing with yen
+emoji ✉️ envelope
+emoji 📧 e-mail
+emoji 📨 incoming envelope
+emoji 📩 envelope with arrow
+emoji 📤 outbox tray
+emoji 📥 inbox tray
+emoji 📦 package
+emoji 📫 closed mailbox with raised flag
+emoji 📪 closed mailbox with lowered flag
+emoji 📬 open mailbox with raised flag
+emoji 📭 open mailbox with lowered flag
+emoji 📮 postbox
+emoji 🗳️ ballot box with ballot
+emoji ✏️ pencil
+emoji ✒️ black nib
+emoji 🖋️ fountain pen
+emoji 🖊️ pen
+emoji 🖌️ paintbrush
+emoji 🖍️ crayon
+emoji 📝 memo
+emoji 💼 briefcase
+emoji 📁 file folder
+emoji 📂 open file folder
+emoji 🗂️ card index dividers
+emoji 📅 calendar
+emoji 📆 tear-off calendar
+emoji 🗒️ spiral notepad
+emoji 🗓️ spiral calendar
+emoji 📇 card index
+emoji 📈 chart increasing
+emoji 📉 chart decreasing
+emoji 📊 bar chart
+emoji 📋 clipboard
+emoji 📌 pushpin
+emoji 📍 round pushpin
+emoji 📎 paperclip
+emoji 🖇️ linked paperclips
+emoji 📏 straight ruler
+emoji 📐 triangular ruler
+emoji ✂️ scissors
+emoji 🗃️ card file box
+emoji 🗄️ file cabinet
+emoji 🗑️ wastebasket
+emoji 🔒 locked
+emoji 🔓 unlocked
+emoji 🔏 locked with pen
+emoji 🔐 locked with key
+emoji 🔑 key
+emoji 🗝️ old key
+emoji 🔨 hammer
+emoji 🪓 axe
+emoji ⛏️ pick
+emoji ⚒️ hammer and pick
+emoji 🛠️ hammer and wrench
+emoji 🗡️ dagger
+emoji ⚔️ crossed swords
+emoji 💣 bomb
+emoji 🪃 boomerang
+emoji 🏹 bow and arrow
+emoji 🛡️ shield
+emoji 🪚 carpentry saw
+emoji 🔧 wrench
+emoji 🪛 screwdriver
+emoji 🔩 nut and bolt
+emoji ⚙️ gear
+emoji 🗜️ clamp
+emoji ⚖️ balance scale
+emoji 🦯 white cane
+emoji 🔗 link
+emoji ⛓️‍💥 broken chain
+emoji ⛓️ chains
+emoji 🪝 hook
+emoji 🧰 toolbox
+emoji 🧲 magnet
+emoji 🪜 ladder
+emoji 🪏 shovel
+emoji ⚗️ alembic
+emoji 🧪 test tube
+emoji 🧫 petri dish
+emoji 🧬 dna
+emoji 🔬 microscope
+emoji 🔭 telescope
+emoji 📡 satellite antenna
+emoji 💉 syringe
+emoji 🩸 drop of blood
+emoji 💊 pill
+emoji 🩹 adhesive bandage
+emoji 🩼 crutch
+emoji 🩺 stethoscope
+emoji 🩻 x-ray
+emoji 🚪 door
+emoji 🛗 elevator
+emoji 🪞 mirror
+emoji 🪟 window
+emoji 🛏️ bed
+emoji 🛋️ couch and lamp
+emoji 🪑 chair
+emoji 🚽 toilet
+emoji 🪠 plunger
+emoji 🚿 shower
+emoji 🛁 bathtub
+emoji 🪤 mouse trap
+emoji 🪒 razor
+emoji 🧴 lotion bottle
+emoji 🧷 safety pin
+emoji 🧹 broom
+emoji 🧺 basket
+emoji 🧻 roll of paper
+emoji 🪣 bucket
+emoji 🧼 soap
+emoji 🫧 bubbles
+emoji 🪥 toothbrush
+emoji 🧽 sponge
+emoji 🧯 fire extinguisher
+emoji 🛒 shopping cart
+emoji 🚬 cigarette
+emoji ⚰️ coffin
+emoji 🪦 headstone
+emoji ⚱️ funeral urn
+emoji 🧿 nazar amulet
+emoji 🪬 hamsa
+emoji 🗿 moai
+emoji 🪧 placard
+emoji 🪪 identification card
+emoji 🏧 ATM sign
+emoji 🚮 litter in bin sign
+emoji 🚰 potable water
+emoji ♿ wheelchair symbol
+emoji 🚹 men’s room
+emoji 🚺 women’s room
+emoji 🚻 restroom
+emoji 🚼 baby symbol
+emoji 🚾 water closet
+emoji 🛂 passport control
+emoji 🛃 customs
+emoji 🛄 baggage claim
+emoji 🛅 left luggage
+emoji ⚠️ warning
+emoji 🚸 children crossing
+emoji ⛔ no entry
+emoji 🚫 prohibited
+emoji 🚳 no bicycles
+emoji 🚭 no smoking
+emoji 🚯 no littering
+emoji 🚱 non-potable water
+emoji 🚷 no pedestrians
+emoji 📵 no mobile phones
+emoji 🔞 no one under eighteen
+emoji ☢️ radioactive
+emoji ☣️ biohazard
+emoji ⬆️ up arrow
+emoji ↗️ up-right arrow
+emoji ➡️ right arrow
+emoji ↘️ down-right arrow
+emoji ⬇️ down arrow
+emoji ↙️ down-left arrow
+emoji ⬅️ left arrow
+emoji ↖️ up-left arrow
+emoji ↕️ up-down arrow
+emoji ↔️ left-right arrow
+emoji ↩️ right arrow curving left
+emoji ↪️ left arrow curving right
+emoji ⤴️ right arrow curving up
+emoji ⤵️ right arrow curving down
+emoji 🔃 clockwise vertical arrows
+emoji 🔄 counterclockwise arrows button
+emoji 🔙 BACK arrow
+emoji 🔚 END arrow
+emoji 🔛 ON! arrow
+emoji 🔜 SOON arrow
+emoji 🔝 TOP arrow
+emoji 🛐 place of worship
+emoji ⚛️ atom symbol
+emoji 🕉️ om
+emoji ✡️ star of David
+emoji ☸️ wheel of dharma
+emoji ☯️ yin yang
+emoji ✝️ latin cross
+emoji ☦️ orthodox cross
+emoji ☪️ star and crescent
+emoji ☮️ peace symbol
+emoji 🕎 menorah
+emoji 🔯 dotted six-pointed star
+emoji 🪯 khanda
+emoji ♈ Aries
+emoji ♉ Taurus
+emoji ♊ Gemini
+emoji ♋ Cancer
+emoji ♌ Leo
+emoji ♍ Virgo
+emoji ♎ Libra
+emoji ♏ Scorpio
+emoji ♐ Sagittarius
+emoji ♑ Capricorn
+emoji ♒ Aquarius
+emoji ♓ Pisces
+emoji ⛎ Ophiuchus
+emoji 🔀 shuffle tracks button
+emoji 🔁 repeat button
+emoji 🔂 repeat single button
+emoji ▶️ play button
+emoji ⏩ fast-forward button
+emoji ⏭️ next track button
+emoji ⏯️ play or pause button
+emoji ◀️ reverse button
+emoji ⏪ fast reverse button
+emoji ⏮️ last track button
+emoji 🔼 upwards button
+emoji ⏫ fast up button
+emoji 🔽 downwards button
+emoji ⏬ fast down button
+emoji ⏸️ pause button
+emoji ⏹️ stop button
+emoji ⏺️ record button
+emoji ⏏️ eject button
+emoji 🎦 cinema
+emoji 🔅 dim button
+emoji 🔆 bright button
+emoji 📶 antenna bars
+emoji 🛜 wireless
+emoji 📳 vibration mode
+emoji 📴 mobile phone off
+emoji ♀️ female sign
+emoji ♂️ male sign
+emoji ⚧️ transgender symbol
+emoji ✖️ multiply
+emoji ➕ plus
+emoji ➖ minus
+emoji ➗ divide
+emoji 🟰 heavy equals sign
+emoji ♾️ infinity
+emoji ‼️ double exclamation mark
+emoji ⁉️ exclamation question mark
+emoji ❓ red question mark
+emoji ❔ white question mark
+emoji ❕ white exclamation mark
+emoji ❗ red exclamation mark
+emoji 〰️ wavy dash
+emoji 💱 currency exchange
+emoji 💲 heavy dollar sign
+emoji ⚕️ medical symbol
+emoji ♻️ recycling symbol
+emoji ⚜️ fleur-de-lis
+emoji 🔱 trident emblem
+emoji 📛 name badge
+emoji 🔰 Japanese symbol for beginner
+emoji ⭕ hollow red circle
+emoji ✅ check mark button
+emoji ☑️ check box with check
+emoji ✔️ check mark
+emoji ❌ cross mark
+emoji ❎ cross mark button
+emoji ➰ curly loop
+emoji ➿ double curly loop
+emoji 〽️ part alternation mark
+emoji ✳️ eight-spoked asterisk
+emoji ✴️ eight-pointed star
+emoji ❇️ sparkle
+emoji ©️ copyright
+emoji ®️ registered
+emoji ™️ trade mark
+emoji 🫟 splatter
+emoji #️⃣ keycap: #
+emoji *️⃣ keycap: *
+emoji 0️⃣ keycap: 0
+emoji 1️⃣ keycap: 1
+emoji 2️⃣ keycap: 2
+emoji 3️⃣ keycap: 3
+emoji 4️⃣ keycap: 4
+emoji 5️⃣ keycap: 5
+emoji 6️⃣ keycap: 6
+emoji 7️⃣ keycap: 7
+emoji 8️⃣ keycap: 8
+emoji 9️⃣ keycap: 9
+emoji 🔟 keycap: 10
+emoji 🔠 input latin uppercase
+emoji 🔡 input latin lowercase
+emoji 🔢 input numbers
+emoji 🔣 input symbols
+emoji 🔤 input latin letters
+emoji 🅰️ A button (blood type)
+emoji 🆎 AB button (blood type)
+emoji 🅱️ B button (blood type)
+emoji 🆑 CL button
+emoji 🆒 COOL button
+emoji 🆓 FREE button
+emoji ℹ️ information
+emoji 🆔 ID button
+emoji Ⓜ️ circled M
+emoji 🆕 NEW button
+emoji 🆖 NG button
+emoji 🅾️ O button (blood type)
+emoji 🆗 OK button
+emoji 🅿️ P button
+emoji 🆘 SOS button
+emoji 🆙 UP! button
+emoji 🆚 VS button
+emoji 🈁 Japanese “here” button
+emoji 🈂️ Japanese “service charge” button
+emoji 🈷️ Japanese “monthly amount” button
+emoji 🈶 Japanese “not free of charge” button
+emoji 🈯 Japanese “reserved” button
+emoji 🉐 Japanese “bargain” button
+emoji 🈹 Japanese “discount” button
+emoji 🈚 Japanese “free of charge” button
+emoji 🈲 Japanese “prohibited” button
+emoji 🉑 Japanese “acceptable” button
+emoji 🈸 Japanese “application” button
+emoji 🈴 Japanese “passing grade” button
+emoji 🈳 Japanese “vacancy” button
+emoji ㊗️ Japanese “congratulations” button
+emoji ㊙️ Japanese “secret” button
+emoji 🈺 Japanese “open for business” button
+emoji 🈵 Japanese “no vacancy” button
+emoji 🔴 red circle
+emoji 🟠 orange circle
+emoji 🟡 yellow circle
+emoji 🟢 green circle
+emoji 🔵 blue circle
+emoji 🟣 purple circle
+emoji 🟤 brown circle
+emoji ⚫ black circle
+emoji ⚪ white circle
+emoji 🟥 red square
+emoji 🟧 orange square
+emoji 🟨 yellow square
+emoji 🟩 green square
+emoji 🟦 blue square
+emoji 🟪 purple square
+emoji 🟫 brown square
+emoji ⬛ black large square
+emoji ⬜ white large square
+emoji ◼️ black medium square
+emoji ◻️ white medium square
+emoji ◾ black medium-small square
+emoji ◽ white medium-small square
+emoji ▪️ black small square
+emoji ▫️ white small square
+emoji 🔶 large orange diamond
+emoji 🔷 large blue diamond
+emoji 🔸 small orange diamond
+emoji 🔹 small blue diamond
+emoji 🔺 red triangle pointed up
+emoji 🔻 red triangle pointed down
+emoji 💠 diamond with a dot
+emoji 🔘 radio button
+emoji 🔳 white square button
+emoji 🔲 black square button
+emoji 🏁 chequered flag
+emoji 🚩 triangular flag
+emoji 🎌 crossed flags
+emoji 🏴 black flag
+emoji 🏳️ white flag
+emoji 🏳️‍🌈 rainbow flag
+emoji 🏳️‍⚧️ transgender flag
+emoji 🏴‍☠️ pirate flag
+emoji 🇦🇨 flag: Ascension Island
+emoji 🇦🇩 flag: Andorra
+emoji 🇦🇪 flag: United Arab Emirates
+emoji 🇦🇫 flag: Afghanistan
+emoji 🇦🇬 flag: Antigua & Barbuda
+emoji 🇦🇮 flag: Anguilla
+emoji 🇦🇱 flag: Albania
+emoji 🇦🇲 flag: Armenia
+emoji 🇦🇴 flag: Angola
+emoji 🇦🇶 flag: Antarctica
+emoji 🇦🇷 flag: Argentina
+emoji 🇦🇸 flag: American Samoa
+emoji 🇦🇹 flag: Austria
+emoji 🇦🇺 flag: Australia
+emoji 🇦🇼 flag: Aruba
+emoji 🇦🇽 flag: Åland Islands
+emoji 🇦🇿 flag: Azerbaijan
+emoji 🇧🇦 flag: Bosnia & Herzegovina
+emoji 🇧🇧 flag: Barbados
+emoji 🇧🇩 flag: Bangladesh
+emoji 🇧🇪 flag: Belgium
+emoji 🇧🇫 flag: Burkina Faso
+emoji 🇧🇬 flag: Bulgaria
+emoji 🇧🇭 flag: Bahrain
+emoji 🇧🇮 flag: Burundi
+emoji 🇧🇯 flag: Benin
+emoji 🇧🇱 flag: St. Barthélemy
+emoji 🇧🇲 flag: Bermuda
+emoji 🇧🇳 flag: Brunei
+emoji 🇧🇴 flag: Bolivia
+emoji 🇧🇶 flag: Caribbean Netherlands
+emoji 🇧🇷 flag: Brazil
+emoji 🇧🇸 flag: Bahamas
+emoji 🇧🇹 flag: Bhutan
+emoji 🇧🇻 flag: Bouvet Island
+emoji 🇧🇼 flag: Botswana
+emoji 🇧🇾 flag: Belarus
+emoji 🇧🇿 flag: Belize
+emoji 🇨🇦 flag: Canada
+emoji 🇨🇨 flag: Cocos (Keeling) Islands
+emoji 🇨🇩 flag: Congo - Kinshasa
+emoji 🇨🇫 flag: Central African Republic
+emoji 🇨🇬 flag: Congo - Brazzaville
+emoji 🇨🇭 flag: Switzerland
+emoji 🇨🇮 flag: Côte d’Ivoire
+emoji 🇨🇰 flag: Cook Islands
+emoji 🇨🇱 flag: Chile
+emoji 🇨🇲 flag: Cameroon
+emoji 🇨🇳 flag: China
+emoji 🇨🇴 flag: Colombia
+emoji 🇨🇵 flag: Clipperton Island
+emoji 🇨🇶 flag: Sark
+emoji 🇨🇷 flag: Costa Rica
+emoji 🇨🇺 flag: Cuba
+emoji 🇨🇻 flag: Cape Verde
+emoji 🇨🇼 flag: Curaçao
+emoji 🇨🇽 flag: Christmas Island
+emoji 🇨🇾 flag: Cyprus
+emoji 🇨🇿 flag: Czechia
+emoji 🇩🇪 flag: Germany
+emoji 🇩🇬 flag: Diego Garcia
+emoji 🇩🇯 flag: Djibouti
+emoji 🇩🇰 flag: Denmark
+emoji 🇩🇲 flag: Dominica
+emoji 🇩🇴 flag: Dominican Republic
+emoji 🇩🇿 flag: Algeria
+emoji 🇪🇦 flag: Ceuta & Melilla
+emoji 🇪🇨 flag: Ecuador
+emoji 🇪🇪 flag: Estonia
+emoji 🇪🇬 flag: Egypt
+emoji 🇪🇭 flag: Western Sahara
+emoji 🇪🇷 flag: Eritrea
+emoji 🇪🇸 flag: Spain
+emoji 🇪🇹 flag: Ethiopia
+emoji 🇪🇺 flag: European Union
+emoji 🇫🇮 flag: Finland
+emoji 🇫🇯 flag: Fiji
+emoji 🇫🇰 flag: Falkland Islands
+emoji 🇫🇲 flag: Micronesia
+emoji 🇫🇴 flag: Faroe Islands
+emoji 🇫🇷 flag: France
+emoji 🇬🇦 flag: Gabon
+emoji 🇬🇧 flag: United Kingdom
+emoji 🇬🇩 flag: Grenada
+emoji 🇬🇪 flag: Georgia
+emoji 🇬🇫 flag: French Guiana
+emoji 🇬🇬 flag: Guernsey
+emoji 🇬🇭 flag: Ghana
+emoji 🇬🇮 flag: Gibraltar
+emoji 🇬🇱 flag: Greenland
+emoji 🇬🇲 flag: Gambia
+emoji 🇬🇳 flag: Guinea
+emoji 🇬🇵 flag: Guadeloupe
+emoji 🇬🇶 flag: Equatorial Guinea
+emoji 🇬🇷 flag: Greece
+emoji 🇬🇸 flag: South Georgia & South Sandwich Islands
+emoji 🇬🇹 flag: Guatemala
+emoji 🇬🇺 flag: Guam
+emoji 🇬🇼 flag: Guinea-Bissau
+emoji 🇬🇾 flag: Guyana
+emoji 🇭🇰 flag: Hong Kong SAR China
+emoji 🇭🇲 flag: Heard & McDonald Islands
+emoji 🇭🇳 flag: Honduras
+emoji 🇭🇷 flag: Croatia
+emoji 🇭🇹 flag: Haiti
+emoji 🇭🇺 flag: Hungary
+emoji 🇮🇨 flag: Canary Islands
+emoji 🇮🇩 flag: Indonesia
+emoji 🇮🇪 flag: Ireland
+emoji 🇮🇱 flag: Israel
+emoji 🇮🇲 flag: Isle of Man
+emoji 🇮🇳 flag: India
+emoji 🇮🇴 flag: British Indian Ocean Territory
+emoji 🇮🇶 flag: Iraq
+emoji 🇮🇷 flag: Iran
+emoji 🇮🇸 flag: Iceland
+emoji 🇮🇹 flag: Italy
+emoji 🇯🇪 flag: Jersey
+emoji 🇯🇲 flag: Jamaica
+emoji 🇯🇴 flag: Jordan
+emoji 🇯🇵 flag: Japan
+emoji 🇰🇪 flag: Kenya
+emoji 🇰🇬 flag: Kyrgyzstan
+emoji 🇰🇭 flag: Cambodia
+emoji 🇰🇮 flag: Kiribati
+emoji 🇰🇲 flag: Comoros
+emoji 🇰🇳 flag: St. Kitts & Nevis
+emoji 🇰🇵 flag: North Korea
+emoji 🇰🇷 flag: South Korea
+emoji 🇰🇼 flag: Kuwait
+emoji 🇰🇾 flag: Cayman Islands
+emoji 🇰🇿 flag: Kazakhstan
+emoji 🇱🇦 flag: Laos
+emoji 🇱🇧 flag: Lebanon
+emoji 🇱🇨 flag: St. Lucia
+emoji 🇱🇮 flag: Liechtenstein
+emoji 🇱🇰 flag: Sri Lanka
+emoji 🇱🇷 flag: Liberia
+emoji 🇱🇸 flag: Lesotho
+emoji 🇱🇹 flag: Lithuania
+emoji 🇱🇺 flag: Luxembourg
+emoji 🇱🇻 flag: Latvia
+emoji 🇱🇾 flag: Libya
+emoji 🇲🇦 flag: Morocco
+emoji 🇲🇨 flag: Monaco
+emoji 🇲🇩 flag: Moldova
+emoji 🇲🇪 flag: Montenegro
+emoji 🇲🇫 flag: St. Martin
+emoji 🇲🇬 flag: Madagascar
+emoji 🇲🇭 flag: Marshall Islands
+emoji 🇲🇰 flag: North Macedonia
+emoji 🇲🇱 flag: Mali
+emoji 🇲🇲 flag: Myanmar (Burma)
+emoji 🇲🇳 flag: Mongolia
+emoji 🇲🇴 flag: Macao SAR China
+emoji 🇲🇵 flag: Northern Mariana Islands
+emoji 🇲🇶 flag: Martinique
+emoji 🇲🇷 flag: Mauritania
+emoji 🇲🇸 flag: Montserrat
+emoji 🇲🇹 flag: Malta
+emoji 🇲🇺 flag: Mauritius
+emoji 🇲🇻 flag: Maldives
+emoji 🇲🇼 flag: Malawi
+emoji 🇲🇽 flag: Mexico
+emoji 🇲🇾 flag: Malaysia
+emoji 🇲🇿 flag: Mozambique
+emoji 🇳🇦 flag: Namibia
+emoji 🇳🇨 flag: New Caledonia
+emoji 🇳🇪 flag: Niger
+emoji 🇳🇫 flag: Norfolk Island
+emoji 🇳🇬 flag: Nigeria
+emoji 🇳🇮 flag: Nicaragua
+emoji 🇳🇱 flag: Netherlands
+emoji 🇳🇴 flag: Norway
+emoji 🇳🇵 flag: Nepal
+emoji 🇳🇷 flag: Nauru
+emoji 🇳🇺 flag: Niue
+emoji 🇳🇿 flag: New Zealand
+emoji 🇴🇲 flag: Oman
+emoji 🇵🇦 flag: Panama
+emoji 🇵🇪 flag: Peru
+emoji 🇵🇫 flag: French Polynesia
+emoji 🇵🇬 flag: Papua New Guinea
+emoji 🇵🇭 flag: Philippines
+emoji 🇵🇰 flag: Pakistan
+emoji 🇵🇱 flag: Poland
+emoji 🇵🇲 flag: St. Pierre & Miquelon
+emoji 🇵🇳 flag: Pitcairn Islands
+emoji 🇵🇷 flag: Puerto Rico
+emoji 🇵🇸 flag: Palestinian Territories
+emoji 🇵🇹 flag: Portugal
+emoji 🇵🇼 flag: Palau
+emoji 🇵🇾 flag: Paraguay
+emoji 🇶🇦 flag: Qatar
+emoji 🇷🇪 flag: Réunion
+emoji 🇷🇴 flag: Romania
+emoji 🇷🇸 flag: Serbia
+emoji 🇷🇺 flag: Russia
+emoji 🇷🇼 flag: Rwanda
+emoji 🇸🇦 flag: Saudi Arabia
+emoji 🇸🇧 flag: Solomon Islands
+emoji 🇸🇨 flag: Seychelles
+emoji 🇸🇩 flag: Sudan
+emoji 🇸🇪 flag: Sweden
+emoji 🇸🇬 flag: Singapore
+emoji 🇸🇭 flag: St. Helena
+emoji 🇸🇮 flag: Slovenia
+emoji 🇸🇯 flag: Svalbard & Jan Mayen
+emoji 🇸🇰 flag: Slovakia
+emoji 🇸🇱 flag: Sierra Leone
+emoji 🇸🇲 flag: San Marino
+emoji 🇸🇳 flag: Senegal
+emoji 🇸🇴 flag: Somalia
+emoji 🇸🇷 flag: Suriname
+emoji 🇸🇸 flag: South Sudan
+emoji 🇸🇹 flag: São Tomé & Príncipe
+emoji 🇸🇻 flag: El Salvador
+emoji 🇸🇽 flag: Sint Maarten
+emoji 🇸🇾 flag: Syria
+emoji 🇸🇿 flag: Eswatini
+emoji 🇹🇦 flag: Tristan da Cunha
+emoji 🇹🇨 flag: Turks & Caicos Islands
+emoji 🇹🇩 flag: Chad
+emoji 🇹🇫 flag: French Southern Territories
+emoji 🇹🇬 flag: Togo
+emoji 🇹🇭 flag: Thailand
+emoji 🇹🇯 flag: Tajikistan
+emoji 🇹🇰 flag: Tokelau
+emoji 🇹🇱 flag: Timor-Leste
+emoji 🇹🇲 flag: Turkmenistan
+emoji 🇹🇳 flag: Tunisia
+emoji 🇹🇴 flag: Tonga
+emoji 🇹🇷 flag: Türkiye
+emoji 🇹🇹 flag: Trinidad & Tobago
+emoji 🇹🇻 flag: Tuvalu
+emoji 🇹🇼 flag: Taiwan
+emoji 🇹🇿 flag: Tanzania
+emoji 🇺🇦 flag: Ukraine
+emoji 🇺🇬 flag: Uganda
+emoji 🇺🇲 flag: U.S. Outlying Islands
+emoji 🇺🇳 flag: United Nations
+emoji 🇺🇸 flag: United States
+emoji 🇺🇾 flag: Uruguay
+emoji 🇺🇿 flag: Uzbekistan
+emoji 🇻🇦 flag: Vatican City
+emoji 🇻🇨 flag: St. Vincent & Grenadines
+emoji 🇻🇪 flag: Venezuela
+emoji 🇻🇬 flag: British Virgin Islands
+emoji 🇻🇮 flag: U.S. Virgin Islands
+emoji 🇻🇳 flag: Vietnam
+emoji 🇻🇺 flag: Vanuatu
+emoji 🇼🇫 flag: Wallis & Futuna
+emoji 🇼🇸 flag: Samoa
+emoji 🇽🇰 flag: Kosovo
+emoji 🇾🇪 flag: Yemen
+emoji 🇾🇹 flag: Mayotte
+emoji 🇿🇦 flag: South Africa
+emoji 🇿🇲 flag: Zambia
+emoji 🇿🇼 flag: Zimbabwe
+emoji 🏴󠁧󠁢󠁥󠁮󠁧󠁿 flag: England
+emoji 🏴󠁧󠁢󠁳󠁣󠁴󠁿 flag: Scotland
+emoji 🏴󠁧󠁢󠁷󠁬󠁳󠁿 flag: Wales

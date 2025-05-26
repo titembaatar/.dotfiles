@@ -1,0 +1,113 @@
+#!/usr/bin/env bash
+set -e
+source "$HOME"/.dotfiles/pkg
+
+FZF_DEFAULT_OPTS='
+  --color=fg:-1,fg+:#90bbaa,bg:-1,bg+:#21362d
+  --color=hl:#f0c3cb,hl+:#ff6b6b,info:#afaf87,marker:#2b879e
+  --color=prompt:#f0c3cb,spinner:#d5b3e5,pointer:#d5b3e5,header:#87afaf
+  --color=border:#2d493d,label:#aeaeae,query:#d9d9d9
+  --padding="1" --prompt="icon: " --marker="&" --pointer="*"'
+
+emoji_dir="$HOME/.dotfiles/env/personal/emoji"
+emoji_file="$emoji_dir/emoji.txt"
+nerd_icons_file="$emoji_dir/nerd_icons.txt"
+combined_file="$emoji_dir/combined_icons.txt"
+
+mkdir -p "$emoji_dir"
+
+download_emoji_list() {
+  curl -s "https://unicode.org/Public/emoji/latest/emoji-test.txt" | \
+    grep -v '^#' | \
+    grep "fully-qualified" | \
+    sed -E 's/^.+# ([^ ]+) E[0-9.]+ (.+)/\1 \2/' | \
+    grep -v "skin tone" > "$emoji_file"
+}
+
+download_nerd_icons() {
+  local temp_dir=$(mktemp -d)
+
+  local scripts=(
+    "i_fa.sh"
+    "i_fae.sh"
+    "i_dev.sh"
+    "i_oct.sh"
+    "i_cod.sh"
+    "i_seti.sh"
+    "i_custom.sh"
+    "i_linux.sh"
+    "i_ple.sh"
+    "i_pom.sh"
+    "i_powerline.sh"
+    "i_weather.sh"
+    "i_material.sh"
+  )
+
+  log_info "downloading nerd font scripts..."
+
+  for script in "${scripts[@]}"; do
+    local url="https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/bin/scripts/lib/$script"
+    if curl -sLf "$url" -o "$temp_dir/$script" 2>/dev/null; then
+      log_info "downloaded $script"
+    else
+      log_warn "could not download $script"
+    fi
+  done
+
+  log_info "extracting icons..."
+
+  local temp_icons="$temp_dir/all_icons.txt"
+  for script_file in "$temp_dir"/*.sh; do
+    [ -f "$script_file" ] || continue
+
+    grep "^i='.*' i_.*=\$i$" "$script_file" | while read line; do
+      icon=$(echo "$line" | sed "s/^i='\(.*\)' i_.*=\$i$/\1/")
+      name=$(echo "$line" | sed "s/^i='.*' i_\(.*\)=\$i$/\1/")
+      readable_name=$(echo "$name" | sed 's/_/ /g')
+
+      if [[ -n "$icon" && -n "$readable_name" ]]; then
+        echo "$icon $readable_name"
+      fi
+    done >> "$temp_icons"
+  done
+
+  sort "$temp_icons" | uniq > "$nerd_icons_file"
+  rm -rf "$temp_dir"
+  log_success "nerd icons saved to $nerd_icons_file"
+}
+
+create_combined_list() {
+  {
+    if [ -f "$nerd_icons_file" ]; then
+      sed 's/^/glyph /' "$nerd_icons_file"
+    fi
+
+    if [ -f "$emoji_file" ]; then
+      sed 's/^/emoji /' "$emoji_file"
+    fi
+  } > "$combined_file"
+}
+
+if [ ! -f "$emoji_file" ]; then
+  log_info "downloading emoji list..."
+  download_emoji_list
+fi
+
+if [ ! -f "$nerd_icons_file" ]; then
+  log_info "downloading nerd icons..."
+  download_nerd_icons
+fi
+
+create_combined_list
+
+selected=$(cat "$combined_file" | FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS" fzf)
+
+if [ -z "$selected" ]; then
+  exit 0
+fi
+
+icon=$(echo "$selected" | awk '{print $2}')
+
+if [ -n "$icon" ]; then
+  echo -n "$icon" | wl-copy
+fi
