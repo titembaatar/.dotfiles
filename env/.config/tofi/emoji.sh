@@ -1,66 +1,65 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -e
 
-TOFI="$HOME/.dotfiles/env/.config/tofi"
-
-EMOJI_FILE="$TOFI/emoji.txt"
-EMOJI_FREQ="$TOFI/emoji_frequency.txt"
-TOFI_CONFIG="$TOFI/config"
+tofi_dir="$HOME/.dotfiles/env/.config/tofi"
+tofi_config="$tofi_dir/config"
+emoji_file="$tofi_dir/emoji.txt"
+emoji_freq="$tofi_dir/emoji_frequency.txt"
 
 download_emoji_list() {
-    curl -s "https://unicode.org/Public/emoji/latest/emoji-test.txt" | \
+  curl -s "https://unicode.org/Public/emoji/latest/emoji-test.txt" | \
     grep -v '^#' | \
     grep "fully-qualified" | \
     sed -E 's/^.+# ([^ ]+) E[0-9.]+ (.+)/\1 \2/' | \
-    grep -v "skin tone" > "$EMOJI_FILE"
+    grep -v "skin tone" > $emoji_file
 }
 
-if [ ! -f "$EMOJI_FILE" ]; then
-    mkdir -p "$(dirname "$EMOJI_FILE")"
-    download_emoji_list
+if [ ! -f "$emoji_file" ]; then
+  touch $emoji_file
+  download_emoji_list
 fi
 
-if [ ! -f "$EMOJI_FREQ" ]; then
-    touch "$EMOJI_FREQ"
+if [ ! -f $emoji_freq ]; then
+  touch $emoji_freq
 fi
 
-if [ -s "$EMOJI_FREQ" ]; then
-    frequent_emojis=$(awk -F'|' '{print $2}' "$EMOJI_FREQ")
+if [ -s $emoji_freq ]; then
+  frequent_emojis=$(awk -F'|' '{print $2}' $emoji_freq)
 
-    remaining_emojis=$(grep -v -F "$frequent_emojis" "$EMOJI_FILE" || echo "")
+  remaining_emojis=$(grep -v -F "$frequent_emojis" $emoji_file || echo)
 
-    if [ -n "$remaining_emojis" ]; then
-        combined_list=$(echo "$frequent_emojis"; echo "$remaining_emojis")
-    fi
+  if [ -n "$remaining_emojis" ]; then
+    combined_list=$(echo "$frequent_emojis"; echo "$remaining_emojis")
+  fi
 else
-    combined_list=$(cat "$EMOJI_FILE")
+  combined_list=$(cat $emoji_file)
 fi
 
-selected=$(echo "$combined_list" | tofi --config "$TOFI_CONFIG")
+selected=$(echo "$combined_list" | tofi --config $tofi_config)
 
 if [ -z "$selected" ]; then
-    exit 0
+  exit 0
 fi
 
 emoji=$(echo "$selected" | awk '{print $1}')
 
 if [ -n "$emoji" ]; then
-    if grep -q "$selected" "$EMOJI_FREQ"; then
-        new_freq_file=$(awk -v selected="$selected" '
-            $0 ~ selected {
-                split($0, parts, "|")
-                count = parts[1] + 1
-                print count "|" selected
-            }
-            $0 !~ selected {
-                print $0
-            }
-        ' "$EMOJI_FREQ")
-        echo "$new_freq_file" > "$EMOJI_FREQ"
-    else
-        echo "1|$selected" >> "$EMOJI_FREQ"
-    fi
+  if grep -q "$selected" "$emoji_freq"; then
+    new_freq_file=$(awk -v selected="$selected" '
+      $0 ~ selected {
+        split($0, parts, "|")
+        count = parts[1] + 1
+        print count "|" selected
+      }
+      $0 !~ selected {
+        print $0
+      } ' $emoji_freq)
 
-    sort -t'|' -k1,1nr -o "$EMOJI_FREQ" "$EMOJI_FREQ"
+    echo "$new_freq_file" > "$emoji_freq"
+  else
+    echo "1|$selected" >> "$emoji_freq"
+  fi
 
-    echo -n "$emoji" | wl-copy
+  sort -t'|' -k1,1nr -o "$emoji_freq" "$emoji_freq"
+  echo -n "$emoji" | wl-copy
 fi
