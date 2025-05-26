@@ -3,37 +3,9 @@
 include /etc/sway/config.d/*
 
 ###
-##  VARIABLES
+##  COLORSCHEME SARNAI
 #
 
-# Mod4 = logo key, Mod1 = Alt
-set $mod Mod4
-set $alt Mod1
-
-# VIIIIIIIIM
-set $left  h
-set $down  j
-set $up    k
-set $right l
-
-# Monitor
-set $d1 "DP-1"
-set $d2 "DP-2"
-
-# Apps
-set $term    alacritty
-set $browser zen-browser
-set $music   $term -e cmus
-set $chat    gtk-launch dev.vencord.Vesktop
-set $menu    tofi-drun | xargs swaymsg exec --
-
-# Scripts
-set $tofi-emoji $HOME/.config/tofi/emoji.sh
-
-# Exit mode
-set $exit "[l]ogout [s]leep [r]eboot [p]oweroff"
-
-# Colorscheme sarnai
 set $base       #172620
 set $surface    #21362d
 set $overlay    #2d493d
@@ -50,6 +22,39 @@ set $mus        #9deaea
 set $yargui     #d5b3e5
 
 ###
+##  VARIABLES
+#
+
+# Mod4 = logo key, Mod1 = Alt
+set $mod Mod4
+set $alt Mod1
+
+# VIIIIIIIIM
+set $left  h
+set $down  j
+set $up    k
+set $right l
+
+# monitor
+set $d1 "DP-1"
+set $d2 "DP-2"
+
+# apps
+set $term    alacritty
+set $menu    tofi-drun | xargs swaymsg exec --
+set $browser zen-browser
+set $music   $term -e cmus
+set $chat    gtk-launch dev.vencord.Vesktop
+
+# scripts
+set $sessioniser     $HOME/.dotfiles/env/.local/bin/tmux-sessioniser
+set $ssh-sessioniser $HOME/.dotfiles/env/.local/bin/ssh-sessioniser
+set $fzf-cmus        $HOME/.dotfiles/env/.local/bin/fzf-cmus
+
+# exit mode
+set $exit "[l]ogout [s]leep [r]eboot [p]oweroff"
+
+###
 ##  EXEC
 #
 
@@ -60,7 +65,7 @@ exec_always "killall waybar || true; waybar"
 ##  OPTS
 #
 
-# Displays
+# displays
 output $d1 {
   bg /home/titem/Pictures/gowall/OI001188.jpg fill
   resolution 2560x1440 position 1440,560
@@ -70,7 +75,7 @@ output $d2 {
   resolution 1440x2560 transform 270 position 0,0
 }
 
-# Workspace
+# workspace
 workspace 1 output $d1
 workspace 2 output $d1
 workspace 3 output $d1
@@ -82,7 +87,7 @@ workspace 8 output $d2
 workspace 9 output $d2
 workspace 0 output $d2
 
-# Window
+# window
 default_border 					pixel 2
 default_floating_border normal
 for_window [window_role="pop-up"] floating enable
@@ -90,6 +95,7 @@ for_window [window_role="bubble"] floating enable
 for_window [window_role="dialog"] floating enable
 for_window [window_type="dialog"] floating enable
 for_window [class="MEGAsync" title="MEGAsync"] floating enable
+for_window [title="sessioniser"] fullscreen enable
 
 # target                title    bg      text   indicator	border
 client.focused          $base    $sarnai $base  $sarnai  $sarnai
@@ -99,10 +105,10 @@ client.urgent           $anis    $base   $anis  $surface $anis
 client.placeholder      $surface $base   $text  $surface $surface
 client.background       $base
 
-# Cursor
+# cursor
 seat seat0 xcursor_theme phinger-cursors-light 40
 
-# Keyboard
+# keyboard
 input "type:keyboard" {
   xkb_layout us
   xkb_options compose:ralt
@@ -112,9 +118,7 @@ input "type:keyboard" {
 ##  KEYMAPS
 #
 
-# Modes
-
-# Exit mode
+# exit mode
 mode $exit {
   bindsym --to-code {
     l exec swaymsg exit
@@ -129,7 +133,7 @@ mode $exit {
 }
 bindsym --to-code $mod+x mode $exit
 
-# Resize mode
+# resize mode
 mode "resize" {
 	bindsym $left  resize shrink width  5
 	bindsym $down  resize grow   height 5
@@ -141,31 +145,31 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 
-# User keybinds
+# launcher
+bindsym $mod+d exec $menu
+bindsym $mod+u exec $term -T sessioniser -e $sessioniser
+bindsym $mod+i exec $term -T sessioniser -e $ssh-sessioniser
+bindsym $mod+m exec $term -T sessioniser -e $fzf-cmus
 
-# Launcher
-bindsym $mod+d      exec $menu
-bindsym $mod+period exec $tofi-emoji
-
-# Apps
+# apps
 bindsym $mod+Return       exec $term
 bindsym $mod+bracketleft  exec $music
 bindsym $mod+bracketright exec $chat
 bindsym $mod+backslash    exec $browser
 bindsym $mod+Shift+backslash exec wine ~/.wine/drive_c/users/titem/AppData/Roaming/Path\ of\ Building\ Community\ \(PoE2\)/Path\ of\ Building-PoE2.exe
 
-# Screenshot
+# screenshot
 bindsym $mod+p       exec grimshot savecopy active
 bindsym $mod+Shift+p exec grimshot savecopy window
 bindsym $mod+Alt+p   exec grimshot savecopy area
 
-# Volume via PulseAudio
+# volume via PulseAudio
 bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
 bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
 bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
 bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
 
-# Brightness via brightnessctl
+# brightness via brightnessctl
 bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
@@ -173,22 +177,22 @@ bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 ##  SWAY KEYMAPS
 #
 
-# Reload the configuration file
+# reload the configuration file
 bindsym $mod+Shift+c reload
 
-# Move focus
+# move focus
 bindsym $mod+$left  focus left
 bindsym $mod+$down  focus down
 bindsym $mod+$up    focus up
 bindsym $mod+$right focus right
 
-# Move focused window
+# move focused window
 bindsym $mod+Shift+$left  move left
 bindsym $mod+Shift+$down  move down
 bindsym $mod+Shift+$up    move up
 bindsym $mod+Shift+$right move right
 
-# Switch workspace
+# switch workspace
 bindsym $mod+Ctrl+$left  workspace prev
 bindsym $mod+Ctrl+$right workspace next
 bindsym $mod+1           workspace number 1
@@ -202,7 +206,7 @@ bindsym $mod+8           workspace number 8
 bindsym $mod+9           workspace number 9
 bindsym $mod+0           workspace number 10
 
-# Move focus to workspace
+# move focus to workspace
 bindsym $mod+Shift+1 move container to workspace number 1
 bindsym $mod+Shift+2 move container to workspace number 2
 bindsym $mod+Shift+3 move container to workspace number 3
@@ -214,22 +218,22 @@ bindsym $mod+Shift+8 move container to workspace number 8
 bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
 
-# Kill focused window
+# kill focused window
 bindsym $mod+Shift+q kill
 
-# Exit sway
+# exit sway
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
-# Slipts
+# slipts
 bindsym $mod+b splith
 bindsym $mod+v splitv
 
-# Layouts
+# layouts
 bindsym $mod+f fullscreen
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-# Toggle the current focus between tiling and floating mode
+# toggle the current focus between tiling and floating mode
 bindsym $mod+space floating toggle
 
