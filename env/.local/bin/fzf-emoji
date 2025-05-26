@@ -100,7 +100,7 @@ fi
 
 create_combined_list
 
-selected=$(cat "$combined_file" | FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS" fzf)
+selected=$(FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS" fzf < $combined_file)
 
 if [ -z "$selected" ]; then
   exit 0
