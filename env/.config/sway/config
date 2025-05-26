@@ -158,7 +158,7 @@ bindsym $mod+Return       exec $term
 bindsym $mod+bracketleft  exec $music
 bindsym $mod+bracketright exec $chat
 bindsym $mod+backslash    exec $browser
-bindsym $mod+Shift+backslash exec wine ~/.wine/drive_c/users/titem/AppData/Roaming/Path\ of\ Building\ Community\ \(PoE2\)/Path\ of\ Building-PoE2.exe
+bindsym $mod+Shift+backslash exec wine $HOME/.wine/drive_c/users/titem/AppData/Roaming/Path\ of\ Building\ Community\ \(PoE2\)/Path\ of\ Building-PoE2.exe
 
 # screenshot
 bindsym $mod+p       exec grimshot savecopy active
