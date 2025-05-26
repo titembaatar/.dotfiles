@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -e
-source "$HOME"/.dotfiles/pkg
+source $HOME/.dotfiles/pkg
 
 dotfiles_dir="$HOME/.dotfiles"
 runs_dir="$dotfiles_dir/runs"

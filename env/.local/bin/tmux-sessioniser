@@ -1,16 +1,10 @@
 #!/usr/bin/env bash
 set -e
+source $HOME/.config/fzf/config
 
 # All credits go to ThePrimeagen
 # https://github.com/ThePrimeagen/tmux-sessionizer
 # modified to work at sway level
-
-FZF_DEFAULT_OPTS='
-  --color=fg:-1,fg+:#90bbaa,bg:-1,bg+:#21362d
-  --color=hl:#f0c3cb,hl+:#ff6b6b,info:#afaf87,marker:#2b879e
-  --color=prompt:#f0c3cb,spinner:#d5b3e5,pointer:#d5b3e5,header:#87afaf
-  --color=border:#2d493d,label:#aeaeae,query:#d9d9d9
-  --padding="1" --prompt="code: " --marker="&" --pointer="*"'
 
 switch_to() {
   if swaymsg -t get_tree --raw | jq -e '.. | .name? // empty | select(. == "tmux")' >/dev/null; then
@@ -27,7 +21,7 @@ has_session() {
 hydrate() {
   if [ -f "$2"/.hydration ]; then
     tmux send-keys -t "$1" "source $2/.hydration" c-M
-  elif [ -f "$HOME"/.hydration ]; then
+  elif [ -f "$HOME/.hydration" ]; then
     tmux send-keys -t "$1" "source $HOME/.hydration" c-M
   fi
 }
@@ -36,14 +30,14 @@ if [[ $# -eq 1 ]]; then
   selected=$1
 else
   selected=$(find \
-    "$HOME" \
-    "$HOME"/personal/ \
-    "$HOME"/forks/ \
-    "$HOME"/src/ \
-    "$HOME"/.dotfiles/env/.config/ \
+    $HOME \
+    $HOME/personal/ \
+    $HOME/forks/ \
+    $HOME/src/ \
+    $HOME/.dotfiles/env/.config/ \
     /mnt/yesugen/ \
     -mindepth 1 -maxdepth 1 -type d | \
-    FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS" fzf)
+    fzf --prompt "code: ")
 fi
 
 if [[ -z $selected ]]; then
