@@ -4,6 +4,23 @@ source $HOME/.dotfiles/pkg
 
 dotfiles_dir="$HOME/.dotfiles"
 runs_dir="$dotfiles_dir/runs"
+grep=""
+
+while [[ $# -gt 0 ]]; do
+  case $1 in
+    --help|-h)
+      echo "Usage: $0 [OPTIONS] [GREP_PATTERN]"
+      echo
+      echo "Options:"
+      echo "  --help, -h"
+      exit 0
+      ;;
+    *)
+      grep="$1"
+      shift
+      ;;
+  esac
+done
 
 if [[ ! -d "$dotfiles_dir" ]]; then
   log_error "$dotfiles_dir not found"
@@ -15,12 +32,6 @@ if [[ ! -d "$runs_dir" ]]; then
   exit 1
 fi
 
-grep=""
-
-if [ -n "$1" ]; then
-  grep="$1"
-fi
-
 scripts=$(find "$runs_dir" -mindepth 1 -maxdepth 1 -executable | sort)
 
 if [[ -z "$scripts" ]]; then
@@ -28,13 +39,24 @@ if [[ -z "$scripts" ]]; then
   exit 1
 fi
 
+filtered_scripts=()
 for script in $scripts; do
   script_name=$(basename "$script")
 
-  if echo "$script_name" | grep -vq "$grep"; then
-    log_info "grep '$grep' filtered out $script_name"
+  if [[ -n "$grep" ]] && ! echo "$script_name" | grep -q "$grep"; then
     continue
   fi
+
+  filtered_scripts+=("$script")
+done
+
+if [[ ${#filtered_scripts[@]} -eq 0 ]]; then
+  log_warn "no scripts match the criteria"
+  exit 1
+fi
+
+for script in "${filtered_scripts[@]}"; do
+  script_name=$(basename "$script")
 
   if ! "$script"; then
     log_error "$script_name failed"
@@ -48,4 +70,3 @@ cd "$dotfiles_dir"
 stow env
 
 log_success "all scripts completed successfully!"
-
