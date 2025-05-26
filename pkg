@@ -9,13 +9,28 @@ PURPLE='\033[0;35m'
 NC='\033[0m'
 
 install() {
-  if command -v dnf &>/dev/null;then
-    sudo dnf -qy install "$@"
-    sudo dnf -qy mark user "$@"
-  elif command -v pacman &>/dev/null;then
-    sudo pacman -S --needed --noconfirm "$@"
-  elif command -v apt &>/dev/null;then
-    sudo apt install -y "$@"
+  local to_install=()
+
+  for pkg in "$@"; do
+    if ! command -v "$pkg" &>/dev/null; then
+      to_install+=("$pkg")
+    else
+      log_info "$pkg already installed, skipping"
+    fi
+  done
+
+  if [ ${#to_install[@]} -eq 0 ]; then
+    return 0
+  fi
+
+  log_info "Installing: ${to_install[*]}"
+  if command -v dnf &>/dev/null; then
+    sudo dnf -qy install "${to_install[@]}"
+    sudo dnf -qy mark user "${to_install[@]}"
+  elif command -v pacman &>/dev/null; then
+    sudo pacman -S --needed --noconfirm "${to_install[@]}"
+  elif command -v apt &>/dev/null; then
+    sudo apt install -y "${to_install[@]}"
   fi
 }
 
