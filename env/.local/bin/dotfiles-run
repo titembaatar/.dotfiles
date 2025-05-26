@@ -21,7 +21,7 @@ if [ -n "$1" ]; then
   grep="$1"
 fi
 
-scripts=$(find "$runs_dir" -mindepth 1 -maxdepth 1 -executable)
+scripts=$(find "$runs_dir" -mindepth 1 -maxdepth 1 -executable | sort)
 
 if [[ -z "$scripts" ]]; then
   log_warn "no executable scripts found in $runs_dir"
