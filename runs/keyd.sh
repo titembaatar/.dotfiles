@@ -2,12 +2,12 @@
 set -e
 source "$HOME"/.dotfiles/pkg
 
-src_keyd="$HOME/src/keyd"
+src_dir="$HOME/src/keyd"
 
-if [ ! -d "$src_keyd" ];then
-  mkdir -p "$src_keyd"
-  git clone https://github.com/rvaiya/keyd "$src_keyd"
-  cd "$src_keyd"
+if [ ! -d "$src_dir" ];then
+  mkdir -p "$src_dir"
+  git clone https://github.com/rvaiya/keyd "$src_dir"
+  cd "$src_dir"
   make && sudo make install
 else
   log_info "keyd already installed. Skipping."
