@@ -104,8 +104,8 @@ seat seat0 xcursor_theme phinger-cursors-light 40
 
 # Keyboard
 input "type:keyboard" {
-  xkb_layout us,us(intl)
-  xkb_options grp:rctrl_toggle
+  xkb_layout us
+  xkb_options compose:ralt
 }
 
 ###
