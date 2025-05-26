@@ -34,6 +34,18 @@ install() {
   fi
 }
 
+copr_add() {
+  if ! command -v dnf &>/dev/null; then
+    return 0
+  fi
+
+  if dnf copr list 2>/dev/null | grep -q "$1"; then
+    log_info "copr $1 already enabled, skipping"
+  else
+    sudo dnf copr enable -y "$1"
+  fi
+}
+
 log_info() {
   echo -e "${BLUE}[INFO ]${NC} $1"
 }

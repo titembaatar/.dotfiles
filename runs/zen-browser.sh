@@ -2,5 +2,5 @@
 set -e
 source "$HOME"/.dotfiles/pkg
 
-sudo dnf copr enable -y sneexy/zen-browser
+copr_add sneexy/zen-browser
 install zen-browser
