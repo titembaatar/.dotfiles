@@ -155,6 +155,7 @@ bindsym $mod+period exec $term -T sessioniser -e $fzf-emoji
 
 # apps
 bindsym $mod+Return       exec $term
+bindsym $mod+Shift+Return exec $term -T tmux -e tmux
 bindsym $mod+bracketleft  exec $music
 bindsym $mod+bracketright exec $chat
 bindsym $mod+backslash    exec $browser
