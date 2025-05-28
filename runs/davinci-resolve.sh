@@ -12,7 +12,7 @@ cleanup() {
   if [[ $exit_code -ne 0 ]]; then
     log_error "installation failed, cleaning up..."
 
-    if [[ -d "$run_dir" ]]; then
+    if [[ -d $run_dir ]]; then
       log_info "removing temporary run directory: $run_dir"
       rm -rf "$run_dir"
     fi
@@ -24,7 +24,7 @@ cleanup() {
 
     log_error "Cleanup completed. You can safely re-run this script."
   else
-    if [[ -d "$run_dir" ]]; then
+    if [[ -d $run_dir ]]; then
       log_info "Cleaning up temporary files"
       rm -rf "$run_dir"
     fi
@@ -33,7 +33,7 @@ cleanup() {
 
 trap cleanup EXIT
 
-if [ -d /opt/resolve/ ]; then
+if [ -d "/opt/resolve/" ]; then
   log_info "Davinci Resolve already installed, skipping."
   exit 0
 fi
@@ -49,7 +49,7 @@ fi
 install libxcrypt-compat libcurl libcurl-devel mesa-libGLU fuse-libs unzip wget
 
 # wget davinci resolve
-mkdir -p "$src_dir" "$run_dir"
+mkdir -p $src_dir $run_dir
 
 if [[ ! -f "$src_dir/DaVinci_Resolve_Studio_$version\_Linux.zip" ]]; then
   log_info "downloading DaVinci Resolve..."

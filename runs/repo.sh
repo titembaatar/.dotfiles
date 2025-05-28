@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -e
-source "$HOME"/.dotfiles/pkg
+source $HOME/.dotfiles/pkg
 
 if ! command -v git &>/dev/null; then
   install git

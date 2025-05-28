@@ -1,73 +1,74 @@
 #!/usr/bin/env bash
 set -e
-source "$HOME"/.dotfiles/pkg
+source $HOME/.dotfiles/pkg
 
-if [ -f "$HOME"/.dotfiles/env/.local/share/fonts/IosevkaNerdFont/IosevkaNerdFont-Regular.ttf ]; then
+if [ -f $HOME/.dotfiles/env/.local/share/fonts/IosevkaNerdFont/IosevkaNerdFont-Regular.ttf ]; then
   log_info "Custom Iosevka font already installed."
   exit 0
 fi
 
-IOSEVKA_SRC="$HOME/src/Iosevka"
-NERD_FONTS_PATCHER="$HOME/src/nerd-fonts-patcher"
-FONT_OUTPUT_DIR="$HOME/.dotfiles/env/.local/share/fonts/IosevkaNerdFont"
-TEMP_DIR="/tmp/iosevka-build"
+src_dir="$HOME/src/Iosevka"
+nerd_fonts_patcher="$HOME/src/nerd-fonts-patcher"
+fonts_dir="$HOME/.dotfiles/env/.local/share/fonts/IosevkaNerdFont"
+tmp_dir="/tmp/iosevka-build"
 
 install nodejs npm ttfautohint fontforge python3 wget unzip
 
-if [ ! -d "$IOSEVKA_SRC" ]; then
-  mkdir -p "$(dirname "$IOSEVKA_SRC")"
+if [ ! -d $src_dir ]; then
+  mkdir -p "$(dirname $src_dir)"
   wget -O /tmp/iosevka.zip https://github.com/be5invis/Iosevka/archive/refs/heads/main.zip
   unzip /tmp/iosevka.zip -d /tmp/
-  mv /tmp/Iosevka-main "$IOSEVKA_SRC"
+  mv /tmp/Iosevka-main $src_dir
   rm /tmp/iosevka.zip
 fi
 
-if [ ! -d "$NERD_FONTS_PATCHER" ]; then
-  mkdir -p "$NERD_FONTS_PATCHER"
+if [ ! -d $nerd_fonts_patcher ]; then
+  mkdir -p $nerd_fonts_patcher
   wget -O /tmp/FontPatcher.zip https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FontPatcher.zip
-  unzip /tmp/FontPatcher.zip -d "$NERD_FONTS_PATCHER"
+  unzip /tmp/FontPatcher.zip -d $nerd_fonts_patcher
   rm /tmp/FontPatcher.zip
 fi
 
-cd "$IOSEVKA_SRC"
+cd $src_dir
 
 cp "$HOME/.config/iosevka/private-build-plans.toml" ./
 npm install
 npm run build -- ttf-unhinted::Iosevka
 
-TEMP_DIR="/tmp/iosevka-build"
-if [[ -z "$TEMP_DIR" || "$TEMP_DIR" == "/" || "$TEMP_DIR" == "/tmp" ]]; then
-  log_error "invalid TEMP_DIR value: '$TEMP_DIR'"
+tmp_dir="/tmp/iosevka-build"
+
+if [[ -z $tmp_dir || $tmp_dir == "/" || $tmp_dir == "/tmp" ]]; then
+  log_error "invalid TEMP_DIR value: '$tmp_dir'"
   exit 1
 fi
 
-mkdir -p "$TEMP_DIR"
-[[ -d "$TEMP_DIR" ]] && rm -rf "${TEMP_DIR:?}"/*
+mkdir -p $tmp_dir
+[[ -d $tmp_dir ]] && rm -rf "${tmp_dir:?}"/*
 
-cp dist/Iosevka/TTF-Unhinted/*.ttf "$TEMP_DIR/"
+cp dist/Iosevka/TTF-Unhinted/*.ttf "$tmp_dir/"
 
-cd "$NERD_FONTS_PATCHER"
+cd $nerd_fonts_patcher
 
-for font_file in "$TEMP_DIR"/*.ttf; do
+for font_file in "$tmp_dir"/*.ttf; do
   log_info "patching $(basename "$font_file")..."
   fontforge -script font-patcher \
     --complete \
     --careful \
     --progressbars \
-    --outputdir "$TEMP_DIR/patched" \
+    --outputdir "$tmp_dir/patched" \
     "$font_file"
 done
 
-mkdir -p "$FONT_OUTPUT_DIR"
-cp "$TEMP_DIR/patched"/*.ttf "$FONT_OUTPUT_DIR/"
+mkdir -p $fonts_dir
+cp "$tmp_dir/patched"/*.ttf "$fonts_dir/"
 
-if [[ -d "$TEMP_DIR" && "$TEMP_DIR" != "/" && "$TEMP_DIR" != "/tmp" ]]; then
-  rm -rf "${TEMP_DIR:?}"
+if [[ -d $tmp_dir && $tmp_dir != "/" && $tmp_dir != "/tmp" ]]; then
+  rm -rf "${tmp_dir:?}"
 fi
 
 fc-cache -fv
 
-cd "$HOME"/.dotfiles
+cd $HOME/.dotfiles
 stow env
 
 echo
