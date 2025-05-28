@@ -10,3 +10,4 @@ selected_album=$(find $music_path -mindepth 2 -maxdepth 2 -type d | \
 
 cmus-remote -q "$music_path/$selected_album"
 cmus-remote -n
+cmus-remote -p
