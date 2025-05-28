@@ -44,7 +44,7 @@ set $term    alacritty
 set $menu    tofi-drun | xargs swaymsg exec --
 set $browser zen-browser
 set $music   $term -e cmus
-set $chat    gtk-launch dev.vencord.Vesktop
+set $chat    $term -e $HOME/.local/bin/discordo
 
 # scripts
 set $sessioniser     $HOME/.dotfiles/env/.local/bin/tmux-sessioniser
@@ -82,11 +82,11 @@ workspace 2 output $d1
 workspace 3 output $d1
 workspace 4 output $d1
 workspace 5 output $d1
-workspace 6 output $d2
-workspace 7 output $d2
-workspace 8 output $d2
-workspace 9 output $d2
-workspace 0 output $d2
+workspace 6 output $d2 layout splitv
+workspace 7 output $d2 layout splitv
+workspace 8 output $d2 layout splitv
+workspace 9 output $d2 layout splitv
+workspace 0 output $d2 layout splitv
 
 # window
 default_border 					pixel 2
