@@ -1,0 +1,15 @@
+[manager]
+sort_by = "natural"
+sort_sensitive = false
+sort_reverse = false
+sort_dir_first = true
+sort_translit = true
+linemode = "permissions"
+show_hidden = true
+title_format = "{cwd}"
+
+[preview]
+wrap = "no"
+
+[input]
+cursor_blink = true
