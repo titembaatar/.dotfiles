@@ -96,6 +96,7 @@ for_window [window_role="bubble"] floating enable
 for_window [window_role="dialog"] floating enable
 for_window [window_type="dialog"] floating enable
 for_window [class="MEGAsync" title="MEGAsync"] floating enable
+for_window [title="sessioniser"] floating enable
 for_window [title="sessioniser"] fullscreen enable
 
 # target                title    bg      text   indicator	border
