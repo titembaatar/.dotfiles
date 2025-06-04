@@ -8,6 +8,6 @@ selected_album=$(find $music_path -mindepth 2 -maxdepth 2 -type d | \
   sed "s|$music_path/||" | \
   fzf --prompt "music: ")
 
-cmus-remote -q "$music_path/$selected_album"
-cmus-remote -n
-cmus-remote -p
+cmus-remote -c -q "$music_path/$selected_album"
+sleep 0.1
+cmus-remote -n -p
