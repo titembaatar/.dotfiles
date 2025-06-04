@@ -15,6 +15,7 @@
   "modules-right": [
     "network",
 		"disk",
+		"memory",
     "pulseaudio",
 		"clock"
 	],
@@ -55,6 +56,15 @@
     "states": {
       "warning": 50,
       "critical": 80
+    }
+	},
+
+	"memory": {
+		"format": "[<span rise='1pt'></span> {used}G]",
+		"tooltip-format": "MEM: {avail}G available, {used}/{total}G\nSWAP: {swapAvail}G available, {swapUsed}/{swapTotal}G",
+    "states": {
+      "warning": 80,
+      "critical": 90
     }
 	},
 

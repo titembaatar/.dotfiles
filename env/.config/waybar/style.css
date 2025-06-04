@@ -84,15 +84,18 @@ label.module {
   color: @anis;
 }
 
-#disk {
+#disk,
+#memory {
   color: @nuur;
 }
 
-#disk.warning {
+#disk.warning,
+#memory.warning {
   color: @chatsalgan;
 }
 
-#disk.critical {
+#disk.critical,
+#memory.critical {
   color: @anis;
 }
 
