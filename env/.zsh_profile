@@ -1,8 +1,8 @@
 # path
 addToPath() {
-    if [[ ! -z "$2" ]] || [[ "$PATH" != *"$1"* ]]; then
-        export PATH=$1:$PATH
-    fi
+  if [[ ! -z "$2" ]] || [[ "$PATH" != *"$1"* ]]; then
+    export PATH=$1:$PATH
+  fi
 }
 
 addToPath "$HOME/.local/bin"
