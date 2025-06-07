@@ -47,10 +47,12 @@ set $music   $term -e cmus
 set $chat    $term -e $HOME/.local/bin/discordo
 
 # scripts
-set $sessioniser     $HOME/.dotfiles/env/.local/bin/tmux-sessioniser
-set $ssh-sessioniser $HOME/.dotfiles/env/.local/bin/ssh-sessioniser
-set $fzf-cmus        $HOME/.dotfiles/env/.local/bin/fzf-cmus
-set $fzf-emoji       $HOME/.dotfiles/env/.local/bin/fzf-emoji
+set $sessioniser     $HOME/.local/bin/tmux-sessioniser
+set $ssh-sessioniser $HOME/.local/bin/ssh-sessioniser
+set $fzf-cmus        $HOME/.local/bin/fzf-cmus
+set $fzf-emoji       $HOME/.local/bin/fzf-emoji
+set $pob             $HOME/.local/bin/pob
+set $pob2            $HOME/.local/bin/pob2
 
 # exit mode
 set $exit "[l]ogout [s]leep [r]eboot [p]oweroff"
@@ -158,8 +160,10 @@ bindsym $mod+period exec $term -T sessioniser -e $fzf-emoji
 bindsym $mod+Return       exec $term -T tmux -e tmux new -A -s home
 bindsym $mod+bracketleft  exec $music
 bindsym $mod+bracketright exec $chat
+bindsym $mod+braceleft    exec $pob
+bindsym $mod+braceright   exec $pob2
 bindsym $mod+backslash    exec $browser
-bindsym $mod+Shift+backslash exec wine $HOME/.wine/drive_c/users/titem/AppData/Roaming/Path\ of\ Building\ Community\ \(PoE2\)/Path\ of\ Building-PoE2.exe
+bindsym $mod+bar          exec steam
 
 # screenshot
 bindsym $mod+p       exec grimshot savecopy active

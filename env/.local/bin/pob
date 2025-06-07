@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -e
+
+wine "$HOME/.wine/drive_c/users/titem/AppData/Roaming/Path of Building Community/Path of Building.exe"
