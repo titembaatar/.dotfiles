@@ -104,8 +104,8 @@
 	],
   "modules-center": ["sway/window"],
   "modules-right": [
-		"clock",
-		"custom/spacer"
+    "pulseaudio",
+		"clock"
 	],
 
 	"sway/workspaces": {
@@ -123,9 +123,25 @@
 		"max-length": 50
 	},
 
+	"pulseaudio": {
+		"format": "[<span rise='1pt'>{icon}</span> {volume}]",
+    "format-muted": "[<span rise='1pt'></span> 00]",
+    "format-icons": {
+      "default": ["", "", ""]
+    },
+		"scroll-step": 1,
+		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"on-click-right": "pavucontrol",
+    "states": {
+      "high": 100,
+      "mid": 40,
+      "low": 10
+    }
+	},
+
   "clock": {
-		"tooltip": false,
-    "format": "[{:%y%m%d.%H:%M}]",
-		"interval": 30
+    "format": "[<span rise='1pt'>󰨳</span> {:%m%d.%H%M}]",
+		"interval": 60,
+    "tooltip-format": "<tt>{calendar}</tt>"
   }
 }]
