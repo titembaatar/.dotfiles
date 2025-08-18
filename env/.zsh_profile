@@ -13,6 +13,8 @@ alias rzsh="source $HOME/.zshrc"
 alias vim="nvim"
 alias lzg="lazygit"
 alias lzd="lazydocker"
+alias mdu="du -h --max-depth=1 ./"
+alias trash="rm -rf /mnt/yesugei/.Trash-1000/*"
 
 alias dot="cd $HOME/.dotfiles"
 alias souen="cd /mnt/yesugei/souen/ && yazi"
@@ -23,6 +25,7 @@ export BROWSER="zen-browser"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_SCREENSHOTS_DIR="$HOME/Pictures/Screenshots/"
 
 # ohmyposh
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/titem.toml)"
