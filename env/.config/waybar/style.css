@@ -26,7 +26,7 @@ window#waybar {
 
 label.module {
   color: @base;
-  padding: 0 .4em;
+  padding: 0 0.4rem;
 }
 
 /* LEFT /// WORKSPACES */
@@ -35,7 +35,7 @@ label.module {
 }
 
 #custom-homelab.up {
-  color: @uvs;
+  color: @sarnai;
 }
 
 #custom-homelab.down {
@@ -72,8 +72,20 @@ label.module {
 }
 
 /* RIGHT /// MODULES */
+#bluetooth.on {
+  color: @sarnai;
+}
+
+#bluetooth.off {
+  color: @anis;
+}
+
+#bluetooth.connected {
+  color: @nuur;
+}
+
 #network {
-  color: @uvs;
+  color: @sarnai;
 }
 
 #network.disabled {

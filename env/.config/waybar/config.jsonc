@@ -13,6 +13,7 @@
   "modules-center": [ "sway/window" ],
 
   "modules-right": [
+    "bluetooth",
     "network",
 		"disk",
 		"memory",
@@ -21,7 +22,7 @@
 	],
 
   "custom/homelab": {
-    "format": "[<span rise='1pt'> {text}</span>]",
+    "format": "[<span rise='1pt'></span> {text}]",
     "exec": "$HOME/.config/waybar/scripts/homelab.sh 2> /dev/null",
     "interval": 30,
     "return-type": "json"
@@ -39,15 +40,26 @@
 	},
 
 	"sway/window": {
-		"format": "[{title}]",
+		"format": "{title}",
 		"max-length": 50
 	},
 
+  "bluetooth": {
+    "on-click": "bluetoothctl power on",
+    "on-click-middle": "bluetoothctl power off",
+		"format-on": "[<span rise='1pt'>󰂯</span> {status}]",
+		"format-off": "[<span rise='1pt'>󰂲</span> {status}]",
+    "format-connected": "[<span rise='1pt'>󰂱</span> {status}]",
+    "tooltip-format": "{controller_alias}\t{controller_address}",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+  },
+
 	"network": {
 		"tooltip": false,
-		"format": "[<span rise='1pt'>󰈀 up</span>]",
-		"format-disabled": "[<span rise='1pt'>󰈀 nil</span>]",
-		"format-disconnected": "[<span rise='1pt'>󰈀 down</span>]"
+		"format": "[<span rise='1pt'>󰈀</span> on]",
+		"format-disabled": "[<span rise='1pt'>󰈀</span> off]",
+		"format-disconnected": "[<span rise='1pt'>󰈀</span> dsc]"
 	},
 
 	"disk": {
@@ -60,7 +72,7 @@
 	},
 
 	"memory": {
-		"format": "[<span rise='1pt'></span> {used}G]",
+		"format": "[<span rise='1pt'></span> {percentage}%]",
 		"tooltip-format": "MEM: {avail}G available, {used}/{total}G\nSWAP: {swapAvail}G available, {swapUsed}/{swapTotal}G",
     "states": {
       "warning": 80,
