@@ -1,7 +1,7 @@
 #!/bin/bash
 
-NODES=("10.0.0.10" "10.0.0.11" "10.0.0.12")
-NODE_NAMES=("mukhulai" "borchi" "borokhul")
+NODES=("10.0.0.10" "10.0.0.11" "10.0.0.12" "10.0.0.13" "10.0.0.19")
+NODE_NAMES=("NAS" "worker1" "worker2" "worker3" "backup")
 TIMEOUT=2
 HEALTHY=true
 TOOLTIP=""
