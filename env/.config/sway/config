@@ -41,12 +41,12 @@ set $d2 "DP-2"
 
 # apps
 set $term    alacritty
-set $menu    tofi-drun | xargs swaymsg exec --
 set $browser zen-browser
 set $music   $term -e cmus
 set $chat    $term -e $HOME/.local/bin/discordo
 
 # scripts
+set $fzf-drun        $HOME/.local/bin/fzf-drun | xargs swaymsg exec --
 set $sessioniser     $HOME/.local/bin/tmux-sessioniser
 set $ssh-sessioniser $HOME/.local/bin/ssh-sessioniser
 set $fzf-cmus        $HOME/.local/bin/fzf-cmus
@@ -150,7 +150,7 @@ bindsym $mod+r mode "resize"
 
 
 # launcher
-bindsym $mod+d      exec $menu
+bindsym $mod+d      exec $term -T sessioniser -e sh -c '$fzf-drun | xargs swaymsg exec --'
 bindsym $mod+u      exec $term -T sessioniser -e $sessioniser
 bindsym $mod+i      exec $term -T sessioniser -e $ssh-sessioniser
 bindsym $mod+m      exec $term -T sessioniser -e $fzf-cmus

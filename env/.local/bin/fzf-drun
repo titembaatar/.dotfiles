@@ -1,0 +1,185 @@
+#!/usr/bin/env bash
+set -euo pipefail
+source "$HOME/.config/fzf/config"
+
+
+cache_dir="${XDG_CACHE_HOME:-$HOME/.cache}/fzf-drun"
+cache_file="$cache_dir/applications.cache"
+history_file="$cache_dir/history"
+maz_history=1000
+
+get_data_dirs() {
+    local xdg_data_home="${XDG_DATA_HOME:-$HOME/.local/share}"
+    local xdg_data_dirs="${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
+    echo "$xdg_data_home:$xdg_data_dirs"
+}
+
+find_desktop_files() {
+  local IFS=':'
+  local -a data_dirs
+  mapfile -t -d ':' data_dirs < <(get_data_dirs)
+  local -A seen_ids
+  local tmpfile
+
+  tmpfile=$(mktemp)
+
+  for dir in "${data_dirs[@]}"; do
+    local app_dir="$dir/applications"
+    [[ -d "$app_dir" ]] || continue
+
+    while IFS= read -r -d '' filepath; do
+      local relpath="${filepath#"$app_dir"/}"
+      local id="${relpath//\//-}"
+
+      if [[ -z "${seen_ids[$id]:-}" ]]; then
+        seen_ids[$id]=1
+
+        local name exec nodisplay terminal hidden
+        name=$(grep -m1 "^Name=" "$filepath" 2>/dev/null | cut -d= -f2- | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+        exec=$(grep -m1 "^Exec=" "$filepath" 2>/dev/null | cut -d= -f2-)
+        nodisplay=$(grep -m1 "^NoDisplay=" "$filepath" 2>/dev/null | cut -d= -f2-)
+        terminal=$(grep -m1 "^Terminal=" "$filepath" 2>/dev/null | cut -d= -f2-)
+        hidden=$(grep -m1 "^Hidden=" "$filepath" 2>/dev/null | cut -d= -f2-)
+
+
+        [[ "$nodisplay" == "true" ]] && continue
+        [[ "$hidden" == "true" ]] && continue
+        [[ -z "$name" || -z "$exec" ]] && continue
+
+        echo "$name|$filepath|${terminal:-false}" >> "$tmpfile"
+      fi
+    done < <(find "$app_dir" -name "*.desktop" -type f -print0 2>/dev/null)
+  done
+
+  sort -t'|' -k1,1 "$tmpfile"
+  rm -f "$tmpfile"
+}
+
+is_cache_valid() {
+  [[ -f "$cache_file" ]] || return 1
+
+  local cache_time
+  cache_time=$(stat -c %Y "$cache_file" 2>/dev/null || echo 0)
+  local IFS=':'
+  local -a data_dirs
+  mapfile -t -d ':' data_dirs < <(get_data_dirs)
+
+  for dir in "${data_dirs[@]}"; do
+    local app_dir="$dir/applications"
+    [[ -d "$app_dir" ]] || continue
+
+    local dir_time
+    dir_time=$(stat -c %Y "$app_dir" 2>/dev/null || echo 0)
+    if (( dir_time > cache_time )); then
+      return 1
+    fi
+  done
+
+  return 0
+}
+
+get_applications() {
+  if is_cache_valid; then
+    cat "$cache_file"
+  else
+    mkdir -p "$cache_dir"
+    find_desktop_files | tee "$cache_file"
+  fi
+}
+
+load_history() {
+  [[ -f "$history_file" ]] || return 0
+  cat "$history_file"
+}
+
+add_to_history() {
+  local name="$1"
+  local -A counts
+
+  mkdir -p "$cache_dir"
+
+  while IFS='|' read -r hist_name count; do
+    counts["$hist_name"]=$count
+  done < <(load_history)
+
+  counts["$name"]=$(( ${counts["$name"]:-0} + 1 ))
+
+  {
+    for key in "${!counts[@]}"; do
+      echo "$key|${counts[$key]}"
+    done
+  } | sort -t'|' -k2,2nr | head -n "$maz_history" > "$history_file"
+}
+
+sort_by_history() {
+  local tmpfile
+  tmpfile=$(mktemp)
+  cat > "$tmpfile"
+  local -A history_counts
+
+  while IFS='|' read -r hist_name count; do
+    history_counts["$hist_name"]=$count
+  done < <(load_history)
+
+  {
+    while IFS='|' read -r name filepath terminal; do
+      local count=${history_counts["$name"]:-0}
+      if (( count > 0 )); then
+        echo "$count|$name|$filepath|$terminal"
+      fi
+    done < "$tmpfile" | sort -t'|' -k1,1nr | cut -d'|' -f2-
+
+    while IFS='|' read -r name filepath terminal; do
+      local count=${history_counts["$name"]:-0}
+      if (( count == 0 )); then
+        echo "$name|$filepath|$terminal"
+      fi
+    done < "$tmpfile"
+  }
+
+  rm -f "$tmpfile"
+}
+
+launch_app() {
+  local filepath="$1"
+  local terminal="$2"
+  local exec_line
+  exec_line=$(grep -m1 "^Exec=" "$filepath" | cut -d= -f2-)
+
+  exec_line=$(echo "$exec_line" | sed -E 's/%[fFuUick]//g')
+
+  if [[ "$terminal" == "true" ]]; then
+    local term="${TERMINAL:-alacritty}"
+    if [[ -n "$term" ]]; then
+      echo "$term -e sh -c \"$exec_line\""
+    else
+      echo "Error: No terminal emulator found" >&2
+      exit 1
+    fi
+  else
+    echo "$exec_line"
+  fi
+}
+
+main() {
+  local apps selected
+
+  apps=$(get_applications | sort_by_history)
+  selected=$(echo "$apps" | fzf \
+    --delimiter '|' \
+    --with-nth '{1}' \
+    --prompt '; ' )
+
+  if [[ -n "$selected" ]]; then
+    local name filepath terminal
+
+    name=$(echo "$selected" | cut -d'|' -f1)
+    filepath=$(echo "$selected" | cut -d'|' -f2)
+    terminal=$(echo "$selected" | cut -d'|' -f3)
+
+    add_to_history "$name"
+    launch_app "$filepath" "$terminal"
+  fi
+}
+
+main "$@"
