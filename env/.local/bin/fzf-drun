@@ -1,185 +1,159 @@
 #!/usr/bin/env bash
 set -euo pipefail
-source "$HOME/.config/fzf/config"
+source $HOME/.config/fzf/config
 
+CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/fzf-launcher"
+CACHE_FILE="$CACHE_DIR/apps.cache"
+HISTORY_FILE="$CACHE_DIR/history"
+CACHE_MAX_AGE=3600
 
-cache_dir="${XDG_CACHE_HOME:-$HOME/.cache}/fzf-drun"
-cache_file="$cache_dir/applications.cache"
-history_file="$cache_dir/history"
-maz_history=1000
-
-get_data_dirs() {
-    local xdg_data_home="${XDG_DATA_HOME:-$HOME/.local/share}"
-    local xdg_data_dirs="${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
-    echo "$xdg_data_home:$xdg_data_dirs"
-}
+mkdir -p "$CACHE_DIR"
 
 find_desktop_files() {
-  local IFS=':'
-  local -a data_dirs
-  mapfile -t -d ':' data_dirs < <(get_data_dirs)
-  local -A seen_ids
-  local tmpfile
+  local dirs=(
+    "/usr/share/applications"
+    "/usr/local/share/applications"
+    "/var/lib/flatpak/exports/share/applications"
+    "$HOME/.local/share/applications"
+    "$HOME/.local/share/flatpak/exports/share/applications"
+  )
 
-  tmpfile=$(mktemp)
+  for dir in "${dirs[@]}"; do
+    [[ -d "$dir" ]] && find "$dir" -name "*.desktop" -type f 2>/dev/null
+  done
+}
 
-  for dir in "${data_dirs[@]}"; do
-    local app_dir="$dir/applications"
-    [[ -d "$app_dir" ]] || continue
+parse_desktop_files() {
+  local file name exec hidden nodisplay terminal in_desktop_entry path
 
-    while IFS= read -r -d '' filepath; do
-      local relpath="${filepath#"$app_dir"/}"
-      local id="${relpath//\//-}"
+  while IFS= read -r file; do
+    name=""
+    exec=""
+    path=""
+    hidden="false"
+    nodisplay="false"
+    terminal="false"
+    in_desktop_entry="false"
 
-      if [[ -z "${seen_ids[$id]:-}" ]]; then
-        seen_ids[$id]=1
-
-        local name exec nodisplay terminal hidden
-        name=$(grep -m1 "^Name=" "$filepath" 2>/dev/null | cut -d= -f2- | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
-        exec=$(grep -m1 "^Exec=" "$filepath" 2>/dev/null | cut -d= -f2-)
-        nodisplay=$(grep -m1 "^NoDisplay=" "$filepath" 2>/dev/null | cut -d= -f2-)
-        terminal=$(grep -m1 "^Terminal=" "$filepath" 2>/dev/null | cut -d= -f2-)
-        hidden=$(grep -m1 "^Hidden=" "$filepath" 2>/dev/null | cut -d= -f2-)
-
-
-        [[ "$nodisplay" == "true" ]] && continue
-        [[ "$hidden" == "true" ]] && continue
-        [[ -z "$name" || -z "$exec" ]] && continue
-
-        echo "$name|$filepath|${terminal:-false}" >> "$tmpfile"
+    while IFS= read -r line; do
+      if [[ "$line" == "[Desktop Entry]" ]]; then
+        in_desktop_entry="true"
+        continue
+      elif [[ "$line" =~ ^\[.*\]$ ]]; then
+        in_desktop_entry="false"
+        continue
       fi
-    done < <(find "$app_dir" -name "*.desktop" -type f -print0 2>/dev/null)
-  done
 
-  sort -t'|' -k1,1 "$tmpfile"
-  rm -f "$tmpfile"
+      [[ "$in_desktop_entry" == "false" ]] && continue
+
+      case "$line" in
+        Name=*) 
+          [[ -z "$name" ]] && name="${line#Name=}"
+          ;;
+        Exec=*) exec="${line#Exec=}" ;;
+        Path=*) path="${line#Path=}" ;;
+        Hidden=true) hidden="true" ;;
+        NoDisplay=true) nodisplay="true" ;;
+        Terminal=true) terminal="true" ;;
+      esac
+    done < "$file"
+
+    [[ "$hidden" == "true" || "$nodisplay" == "true" ]] && continue
+    [[ -z "$name" || -z "$exec" ]] && continue
+    exec=$(echo "$exec" | sed 's/%[fFuUdDnNickvm]//g' | sed 's/  */ /g' | xargs)
+    echo "$name|$exec|$terminal|$path|$file"
+  done
 }
 
-is_cache_valid() {
-  [[ -f "$cache_file" ]] || return 1
-
-  local cache_time
-  cache_time=$(stat -c %Y "$cache_file" 2>/dev/null || echo 0)
-  local IFS=':'
-  local -a data_dirs
-  mapfile -t -d ':' data_dirs < <(get_data_dirs)
-
-  for dir in "${data_dirs[@]}"; do
-    local app_dir="$dir/applications"
-    [[ -d "$app_dir" ]] || continue
-
-    local dir_time
-    dir_time=$(stat -c %Y "$app_dir" 2>/dev/null || echo 0)
-    if (( dir_time > cache_time )); then
-      return 1
-    fi
-  done
-
-  return 0
+build_cache() {
+  find_desktop_files | parse_desktop_files | sort -u > "$CACHE_FILE"
 }
 
-get_applications() {
-  if is_cache_valid; then
-    cat "$cache_file"
-  else
-    mkdir -p "$cache_dir"
-    find_desktop_files | tee "$cache_file"
+needs_cache_refresh() {
+  [[ ! -f "$CACHE_FILE" ]] && return 0
+
+  local cache_age=$(( $(date +%s) - $(stat -c %Y "$CACHE_FILE" 2>/dev/null || stat -f %m "$CACHE_FILE" 2>/dev/null || echo 0) ))
+  [[ $cache_age -gt $CACHE_MAX_AGE ]] && return 0
+
+  return 1
+}
+
+get_app_list() {
+  local history_map=""
+
+  if [[ -f "$HISTORY_FILE" ]]; then
+    history_map=$(awk '{count[$0]++} END {for (app in count) print count[app], app}' "$HISTORY_FILE")
   fi
-}
 
-load_history() {
-  [[ -f "$history_file" ]] || return 0
-  cat "$history_file"
+  while IFS='|' read -r name exec terminal path file; do
+    local freq=0
+    if [[ -n "$history_map" ]]; then
+      freq=$(echo "$history_map" | grep -F "$name" | awk '{print $1}' || echo 0)
+    fi
+
+    printf "%05d|%s|%s|%s|%s|%s\n" "$freq" "$name" "$exec" "$terminal" "$path" "$file"
+  done < "$CACHE_FILE" | sort -rn -t'|' -k1 | cut -d'|' -f2-
 }
 
 add_to_history() {
-  local name="$1"
-  local -A counts
+  local app_name="$1"
+  echo "$app_name" >> "$HISTORY_FILE"
 
-  mkdir -p "$cache_dir"
-
-  while IFS='|' read -r hist_name count; do
-    counts["$hist_name"]=$count
-  done < <(load_history)
-
-  counts["$name"]=$(( ${counts["$name"]:-0} + 1 ))
-
-  {
-    for key in "${!counts[@]}"; do
-      echo "$key|${counts[$key]}"
-    done
-  } | sort -t'|' -k2,2nr | head -n "$maz_history" > "$history_file"
-}
-
-sort_by_history() {
-  local tmpfile
-  tmpfile=$(mktemp)
-  cat > "$tmpfile"
-  local -A history_counts
-
-  while IFS='|' read -r hist_name count; do
-    history_counts["$hist_name"]=$count
-  done < <(load_history)
-
-  {
-    while IFS='|' read -r name filepath terminal; do
-      local count=${history_counts["$name"]:-0}
-      if (( count > 0 )); then
-        echo "$count|$name|$filepath|$terminal"
-      fi
-    done < "$tmpfile" | sort -t'|' -k1,1nr | cut -d'|' -f2-
-
-    while IFS='|' read -r name filepath terminal; do
-      local count=${history_counts["$name"]:-0}
-      if (( count == 0 )); then
-        echo "$name|$filepath|$terminal"
-      fi
-    done < "$tmpfile"
-  }
-
-  rm -f "$tmpfile"
+  if [[ $(wc -l < "$HISTORY_FILE") -gt 1000 ]]; then
+    tail -n 1000 "$HISTORY_FILE" > "$HISTORY_FILE.tmp"
+    mv "$HISTORY_FILE.tmp" "$HISTORY_FILE"
+  fi
 }
 
 launch_app() {
-  local filepath="$1"
-  local terminal="$2"
-  local exec_line
-  exec_line=$(grep -m1 "^Exec=" "$filepath" | cut -d= -f2-)
+  local name="$1"
+  local exec="$2"
+  local terminal="$3"
+  local path="$4"
 
-  exec_line=$(echo "$exec_line" | sed -E 's/%[fFuUick]//g')
+  add_to_history "$name"
 
-  if [[ "$terminal" == "true" ]]; then
-    local term="${TERMINAL:-alacritty}"
-    if [[ -n "$term" ]]; then
-      echo "$term -e sh -c \"$exec_line\""
+  local launch_cmd="$exec"
+  if [[ -n "$path" && -d "$path" ]]; then
+    launch_cmd="cd '$path' && $exec"
+  fi
+
+  if [[ -n "$SWAYSOCK" ]]; then
+    if [[ "$terminal" == "true" ]]; then
+      swaymsg exec "alacritty -e sh -c '$launch_cmd'" >/dev/null 2>&1
     else
-      echo "Error: No terminal emulator found" >&2
-      exit 1
+      swaymsg exec "$launch_cmd" >/dev/null 2>&1
+    fi
+  elif [[ -n "$HYPRLAND_INSTANCE_SIGNATURE" ]]; then
+    if [[ "$terminal" == "true" ]]; then
+      hyprctl dispatch exec "alacritty -e sh -c '$launch_cmd'" >/dev/null 2>&1
+    else
+      hyprctl dispatch exec "$launch_cmd" >/dev/null 2>&1
     fi
   else
-    echo "$exec_line"
+    if [[ "$terminal" == "true" ]]; then
+      setsid alacritty -e sh -c "$launch_cmd" &>/dev/null &
+    else
+      setsid sh -c "$launch_cmd" &>/dev/null &
+    fi
+    disown
   fi
 }
 
 main() {
-  local apps selected
-
-  apps=$(get_applications | sort_by_history)
-  selected=$(echo "$apps" | fzf \
-    --delimiter '|' \
-    --with-nth '{1}' \
-    --prompt '; ' )
-
-  if [[ -n "$selected" ]]; then
-    local name filepath terminal
-
-    name=$(echo "$selected" | cut -d'|' -f1)
-    filepath=$(echo "$selected" | cut -d'|' -f2)
-    terminal=$(echo "$selected" | cut -d'|' -f3)
-
-    add_to_history "$name"
-    launch_app "$filepath" "$terminal"
+  if needs_cache_refresh; then
+    build_cache
   fi
-}
 
-main "$@"
+  local selected
+  selected=$(get_app_list | fzf \
+    --delimiter='|' \
+    --with-nth='{1}' \
+    --prompt="; ")
+
+    [[ -z "$selected" ]] && exit 0
+    IFS='|' read -r name exec terminal path file <<< "$selected"
+    launch_app "$name" "$exec" "$terminal" "$path"
+  }
+
+main

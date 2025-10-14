@@ -39,20 +39,19 @@ set $right l
 set $d1 "DP-1"
 set $d2 "DP-2"
 
-# apps
-set $term    alacritty
-set $browser zen-browser
-set $music   $term -e cmus
-set $chat    $term -e $HOME/.local/bin/discordo
-
 # scripts
-set $fzf-drun        $HOME/.local/bin/fzf-drun | xargs swaymsg exec --
+set $fzf-drun        $HOME/.dotfiles/env/.local/bin/fzf-drun
 set $sessioniser     $HOME/.local/bin/tmux-sessioniser
 set $ssh-sessioniser $HOME/.local/bin/ssh-sessioniser
 set $fzf-cmus        $HOME/.local/bin/fzf-cmus
 set $fzf-emoji       $HOME/.local/bin/fzf-emoji
 set $pob             $HOME/.local/bin/pob
 set $pob2            $HOME/.local/bin/pob2
+
+# apps
+set $term    alacritty
+set $browser zen-browser
+set $music   $term -e cmus
 
 # exit mode
 set $exit "[l]ogout [s]leep [r]eboot [p]oweroff"
@@ -150,7 +149,7 @@ bindsym $mod+r mode "resize"
 
 
 # launcher
-bindsym $mod+d      exec $term -T sessioniser -e sh -c '$fzf-drun | xargs swaymsg exec --'
+bindsym $mod+d      exec $term -T sessioniser -e $fzf-drun
 bindsym $mod+u      exec $term -T sessioniser -e $sessioniser
 bindsym $mod+i      exec $term -T sessioniser -e $ssh-sessioniser
 bindsym $mod+m      exec $term -T sessioniser -e $fzf-cmus
