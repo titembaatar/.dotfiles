@@ -1,13 +1,15 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -e
 source $HOME/.config/fzf/config
 
-CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/fzf-launcher"
+CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/fzf-drun"
 CACHE_FILE="$CACHE_DIR/apps.cache"
 HISTORY_FILE="$CACHE_DIR/history"
 CACHE_MAX_AGE=3600
 
-mkdir -p "$CACHE_DIR"
+if [ ! -d "$CACHE_DIR" ]; then
+  mkdir -p "$CACHE_DIR"
+fi
 
 find_desktop_files() {
   local dirs=(
