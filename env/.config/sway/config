@@ -199,8 +199,6 @@ bindsym $mod+Shift+$up    move up
 bindsym $mod+Shift+$right move right
 
 # switch workspace
-bindsym $mod+Ctrl+$left  workspace prev
-bindsym $mod+Ctrl+$right workspace next
 bindsym $mod+1           workspace number 1
 bindsym $mod+2           workspace number 2
 bindsym $mod+3           workspace number 3
@@ -225,7 +223,7 @@ bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+w kill
 
 # exit sway
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
@@ -237,7 +235,7 @@ bindsym $mod+v splitv
 # layouts
 bindsym $mod+f fullscreen
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+bindsym $mod+t layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle the current focus between tiling and floating mode
