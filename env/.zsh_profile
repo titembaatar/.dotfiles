@@ -19,6 +19,8 @@ alias trash="rm -rf /mnt/yesugei/.Trash-1000/*"
 alias dot="cd $HOME/.dotfiles"
 alias souen="cd /mnt/yesugei/souen/ && yazi"
 
+alias poetrade="'$HOME/Downloads/Awakened-PoE-Trade-'*.AppImage --no-overlay --listen=localhost:5555 > /dev/null 2>&1 & disown"
+
 # defaults
 export EDITOR="nvim"
 export BROWSER="zen-browser"
