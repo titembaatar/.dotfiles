@@ -150,19 +150,21 @@ bindsym $mod+r mode "resize"
 
 # launcher
 bindsym $mod+d      exec $term -T sessioniser -e $fzf-drun
-bindsym $mod+u      exec $term -T sessioniser -e $sessioniser
-bindsym $mod+i      exec $term -T sessioniser -e $ssh-sessioniser
 bindsym $mod+m      exec $term -T sessioniser -e $fzf-cmus
 bindsym $mod+period exec $term -T sessioniser -e $fzf-emoji
+bindsym $mod+u      exec $term -T sessioniser -e $sessioniser
+bindsym $mod+i      exec $term -T sessioniser -e $ssh-sessioniser
 
 # apps
 bindsym $mod+Return       exec $term -T tmux -e tmux new -A -s home
 bindsym $mod+bracketleft  exec $music
 bindsym $mod+bracketright exec $chat
+bindsym $mod+backslash    exec $browser
+
+# gaming
+bindsym $mod+bar          exec steam
 bindsym $mod+braceleft    exec $pob
 bindsym $mod+braceright   exec $pob2
-bindsym $mod+backslash    exec $browser
-bindsym $mod+bar          exec steam
 
 # screenshot
 bindsym $mod+p       exec grimshot savecopy active
