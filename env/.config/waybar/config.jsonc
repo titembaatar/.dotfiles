@@ -14,15 +14,15 @@
 
   "modules-right": [
     "bluetooth",
-    "network",
 		"disk",
+		"cpu",
 		"memory",
     "pulseaudio",
 		"clock"
 	],
 
   "custom/homelab": {
-    "format": "[<span rise='1pt'></span> {text}]",
+    "format": "[<span rise='1pt'></span>]",
     "exec": "$HOME/.config/waybar/scripts/homelab.sh 2> /dev/null",
     "interval": 30,
     "return-type": "json"
@@ -45,59 +45,62 @@
 	},
 
   "bluetooth": {
-    "on-click": "bluetoothctl power on",
+    "on-click": "$HOME/.config/waybar/scripts/bluetooth.sh",
     "on-click-middle": "bluetoothctl power off",
-		"format-on": "[<span rise='1pt'>󰂯</span> {status}]",
-		"format-off": "[<span rise='1pt'>󰂲</span> {status}]",
-    "format-connected": "[<span rise='1pt'>󰂱</span> {status}]",
+    "on-click-right": "bluetoothctl power on",
+		"format-on": "[<span rise='1pt'>󰂯</span>]",
+		"format-off": "[<span rise='1pt'>󰂲</span>]",
+    "format-connected": "[<span rise='1pt'>󰂱</span>]",
     "tooltip-format": "{controller_alias}\t{controller_address}",
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
   },
 
-	"network": {
-		"tooltip": false,
-		"format": "[<span rise='1pt'>󰈀</span> on]",
-		"format-disabled": "[<span rise='1pt'>󰈀</span> off]",
-		"format-disconnected": "[<span rise='1pt'>󰈀</span> dsc]"
-	},
-
-	"disk": {
-		"format": "[<span rise='1pt'>󰋊</span> {percentage_free}%]",
-		"path": "/mnt/yesugei/",
+  "disk": {
+    "format": "[<span rise='1pt'>󰋊</span>] {percentage_used}%",
+    "path": "/mnt/yesugei/",
     "states": {
-      "warning": 50,
-      "critical": 80
+      "warning": 70,
+      "critical": 85
     }
-	},
+  },
 
-	"memory": {
-		"format": "[<span rise='1pt'></span> {percentage}%]",
-		"tooltip-format": "MEM: {avail}G available, {used}/{total}G\nSWAP: {swapAvail}G available, {swapUsed}/{swapTotal}G",
+  "cpu": {
+    "format": "[<span rise='1pt'></span>] {usage}%",
+    "interval": 10,
     "states": {
-      "warning": 80,
-      "critical": 90
+      "warning": 70,
+      "critical": 85
     }
-	},
+  },
+
+  "memory": {
+    "format": "[<span rise='1pt'></span>] {percentage}%",
+    "tooltip-format": "MEM: {avail}G available, {used}/{total}G\nSWAP: {swapAvail}G available, {swapUsed}/{swapTotal}G",
+    "states": {
+      "warning": 70,
+      "critical": 85
+    }
+  },
 
 	"pulseaudio": {
-		"format": "[<span rise='1pt'>{icon}</span> {volume}]",
-    "format-muted": "[<span rise='1pt'></span> 00]",
+		"format": "[<span rise='1pt'>{icon}</span>] {volume}%",
+    "format-muted": "[<span rise='1pt'></span>] 00%",
     "format-icons": {
       "default": ["", "", ""]
     },
 		"scroll-step": 1,
-		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click": "$HOME/.config/waybar/scripts/pulseaudio.sh",
 		"on-click-right": "pavucontrol",
     "states": {
-      "high": 100,
-      "mid": 40,
+      "high": 80,
+      "mid": 45,
       "low": 10
     }
 	},
 
   "clock": {
-    "format": "[<span rise='1pt'>󰨳</span> {:%m%d.%H%M}]",
+    "format": "[<span rise='1pt'>󰨳</span>] {:%m%d.%H%M}",
 		"interval": 60,
     "tooltip-format": "<tt>{calendar}</tt>"
   }
@@ -136,8 +139,8 @@
 	},
 
 	"pulseaudio": {
-		"format": "[<span rise='1pt'>{icon}</span> {volume}]",
-    "format-muted": "[<span rise='1pt'></span> 00]",
+		"format": "[<span rise='1pt'>{icon}</span>] {volume}%",
+    "format-muted": "[<span rise='1pt'></span>] 00%",
     "format-icons": {
       "default": ["", "", ""]
     },
@@ -152,7 +155,7 @@
 	},
 
   "clock": {
-    "format": "[<span rise='1pt'>󰨳</span> {:%m%d.%H%M}]",
+    "format": "[<span rise='1pt'>󰨳</span>] {:%m%d.%H%M}",
 		"interval": 60,
     "tooltip-format": "<tt>{calendar}</tt>"
   }

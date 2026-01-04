@@ -14,10 +14,11 @@
 @define-color mus rgb (157, 234, 234);
 @define-color yargui rgb (213, 179, 229);
 
-/* GLOBAL */
+/* STYLE */
 * {
-  font-family: Iosevka Nerd Font;
+  font-family: Iosevka Nerd Font Propo;
   font-size: 12pt;
+  font-weight: 700;
 }
 
 window#waybar {
@@ -26,112 +27,70 @@ window#waybar {
 
 label.module {
   color: @base;
-  padding: 0 0.4rem;
+  margin: 0 0.4rem;
 }
 
-/* LEFT /// WORKSPACES */
+#workspaces button {
+  padding: 0 0.4em;
+}
+
 #custom-homelab {
   margin-left: 1rem;
 }
 
-#custom-homelab.up {
-  color: @sarnai;
-}
-
-#custom-homelab.down {
-  color: @anis;
-}
-
-#workspaces button {
-  color: @muted;
-  border-radius: 0;
-  padding: 0 .4em;
-}
-
-#workspaces button.visible {
-  color: @sarnai;
-  font-weight: bold;
-}
-
-#workspaces button.urgent {
-  color: @anis;
-}
-
-#workspaces button.empty {
-  color: @muted;
-}
-
-/* LEFT /// MODE */
-#mode {
-  color: @chatsalgan;
-}
-
-/* CENTER /// SWAY WINDOW */
-#window {
-  color: @subtle;
-}
-
-/* RIGHT /// MODULES */
-#bluetooth.on {
-  color: @sarnai;
-}
-
-#bluetooth.off {
-  color: @anis;
-}
-
+#custom-homelab.up,
+#workspaces button.visible,
 #bluetooth.connected {
-  color: @nuur;
-}
-
-#network {
   color: @sarnai;
 }
 
-#network.disabled {
-  color: @muted;
-}
-
-#network.disconnected {
-  color: @anis;
-}
-
-#disk,
-#memory {
-  color: @nuur;
-}
-
-#disk.warning,
-#memory.warning {
-  color: @chatsalgan;
-}
-
+#custom-homelab.down,
+#workspaces button.urgent,
+#bluetooth.off,
 #disk.critical,
-#memory.critical {
+#cpu.critical,
+#memory.critical,
+#pulseaudio.muted {
   color: @anis;
 }
 
+#mode,
+#disk.warning,
+#cpu.warning,
+#memory.warning,
 #pulseaudio {
   color: @chatsalgan;
+}
+
+#disk {
+  color: @els;
+}
+
+#cpu {
+  color: @uvs;
+}
+
+#memory {
+  color: @nuur;
 }
 
 #pulseaudio.high {
   color: @mus;
 }
 
-#pulseaudio.mid {
-  color: @subtle;
+#clock {
+  margin-right: 1rem;
+  color: @yargui;
 }
 
+#workspaces button,
+#workspaces button.empty,
+#bluetooth.on,
 #pulseaudio.low {
   color: @muted;
 }
 
-#pulseaudio.muted {
-  color: @muted;
-}
-
-#clock {
-  margin-right: 1rem;
-  color: @yargui;
+#window,
+#pulseaudio.mid {
+  color: @subtle;
 }
