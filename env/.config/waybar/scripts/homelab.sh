@@ -1,32 +1,42 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-NODES=("10.0.0.10" "10.0.0.11" "10.0.0.12" "10.0.0.13" "10.0.0.19")
-NODE_NAMES=("NAS" "worker1" "worker2" "worker3" "backup")
-TIMEOUT=2
-HEALTHY=true
-TOOLTIP=""
+declare -A nodes=(
+  [nas]="10.0.0.10"
+  [worker1]="10.0.0.11"
+  [worker2]="10.0.0.12"
+  [worker3]="10.0.0.13"
+  [backup]="10.0.0.19"
+)
 
-for i in "${!NODES[@]}"; do
-  TOOLTIP+="${NODE_NAMES[$i]}: "
+timeout=2
+healthy=true
+tooltip=""
 
-  if ping -c 1 -W $TIMEOUT "${NODES[$i]}" > /dev/null 2>&1; then
-    TOOLTIP+="up"
+readarray -t keys < <(printf "%s\n" "${!nodes[@]}" | sort -V)
+
+for ((idx=0; idx<${#keys[@]}; idx++)); do
+  i="${keys[$idx]}"
+  tooltip+="$i: "
+
+  if ping -c 1 -W "$timeout" "${nodes[$i]}" >/dev/null 2>&1; then
+    tooltip+="up"
   else
-    TOOLTIP+="down"
-    HEALTHY=false
+    tooltip+="down"
+    healthy=false
   fi
 
-  if [ "$i" -lt $((${#NODES[@]} - 1)) ]; then
-    TOOLTIP+="\n"
+  if [[ $idx -lt $((${#keys[@]} - 1)) ]]; then
+    tooltip+="\n"
   fi
 done
 
-if $HEALTHY; then
-  TEXT="up"
-  CLASS="up"
+declare text class
+if $healthy; then
+  text="up"
+  class="up"
 else
-  TEXT="down"
-  CLASS="down"
+  text="down"
+  class="down"
 fi
 
-echo "{\"text\": \"$TEXT\", \"class\": \"$CLASS\", \"tooltip\": \"$TOOLTIP\"}"
+echo "{\"text\": \"$text\", \"class\": \"$class\", \"tooltip\": \"$tooltip\"}"
