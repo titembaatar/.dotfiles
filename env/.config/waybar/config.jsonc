@@ -1,26 +1,28 @@
 [{
-	"name": "main",
+  "name": "main",
   "layer": "top",
-	"height": 24,
-	"output": "DP-1",
+  "height": 24,
+  "output": "DP-1",
 
   "modules-left": [
-		"custom/homelab",
-		"sway/workspaces",
-		"sway/mode"
-	],
+    "custom/homelab",
+    "sway/workspaces",
+    "sway/mode"
+  ],
 
-  "modules-center": [ "sway/window" ],
+  "modules-center": [
+    "sway/window"
+  ],
 
   "modules-right": [
     "bluetooth",
-		"custom/tailscale",
-		"disk",
-		"cpu",
-		"memory",
+    "custom/tailscale",
+    "disk",
+    "cpu",
+    "memory",
     "pulseaudio",
-		"clock"
-	],
+    "clock"
+  ],
 
   "custom/homelab": {
     "format": "[<span rise='1pt'></span>]",
@@ -37,28 +39,28 @@
     "return-type": "json"
   },
 
-	"sway/workspaces": {
+  "sway/workspaces": {
     "format": "[{name}]",
-		"disable-scroll": true,
-		"disable-click": true
-	},
+    "disable-scroll": true,
+    "disable-click": true
+  },
 
-	"sway/mode": {
-		"format": "; {}",
+  "sway/mode": {
+    "format": "; {}",
     "max-length": 75
-	},
+  },
 
-	"sway/window": {
-		"format": "{title}",
-		"max-length": 50
-	},
+  "sway/window": {
+    "format": "{title}",
+    "max-length": 50
+  },
 
   "bluetooth": {
     "on-click": "$HOME/.config/waybar/scripts/bluetooth.sh",
     "on-click-middle": "bluetoothctl power off",
     "on-click-right": "bluetoothctl power on",
-		"format-on": "[<span rise='1pt'>󰂯</span>]",
-		"format-off": "[<span rise='1pt'>󰂲</span>]",
+    "format-on": "[<span rise='1pt'>󰂯</span>]",
+    "format-off": "[<span rise='1pt'>󰂲</span>]",
     "format-connected": "[<span rise='1pt'>󰂱</span>]",
     "tooltip-format": "{controller_alias}\t{controller_address}",
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
@@ -93,80 +95,82 @@
     }
   },
 
-	"pulseaudio": {
-		"format": "[<span rise='1pt'>{icon}</span>] {volume}%",
+  "pulseaudio": {
+    "format": "[<span rise='1pt'>{icon}</span>] {volume}%",
     "format-muted": "[<span rise='1pt'></span>] 00%",
     "format-icons": {
       "default": ["", "", ""]
     },
-		"scroll-step": 1,
+    "scroll-step": 1,
     "on-click": "$HOME/.config/waybar/scripts/pulseaudio.sh",
-		"on-click-right": "pavucontrol",
+    "on-click-right": "pavucontrol",
     "states": {
       "high": 80,
       "mid": 45,
       "low": 10
     }
-	},
+  },
 
   "clock": {
     "format": "[<span rise='1pt'>󰨳</span>] {:%m%d.%H%M}",
-		"interval": 60,
+    "interval": 60,
     "tooltip-format": "<tt>{calendar}</tt>"
   }
 },
 {
-	"name": "second",
+  "name": "second",
   "layer": "top",
-	"height": 24,
-	"output": "DP-2",
+  "height": 24,
+  "output": "DP-2",
 
   "modules-left": [
-		"custom/spacer",
-		"sway/workspaces",
-		"custom/spacer",
-		"sway/mode"
-	],
+    "custom/spacer",
+    "sway/workspaces",
+    "custom/spacer",
+    "sway/mode"
+  ],
+
   "modules-center": ["sway/window"],
+
   "modules-right": [
     "pulseaudio",
-		"clock"
-	],
+    "clock"
+  ],
 
-	"sway/workspaces": {
-		"format": "[{name}]",
-		"disable-scroll": true,
-		"disable-click": true
-	},
+  "sway/workspaces": {
+    "format": "[{name}]",
+    "disable-scroll": true,
+    "disable-click": true
+  },
 
-	"sway/mode": {
-		"format": "; {}",
+  "sway/mode": {
+    "format": "; {}",
     "max-length": 75
-	},
+  },
 
-	"sway/window": {
-		"max-length": 50
-	},
+  "sway/window": {
+    "max-length": 50
+  },
 
-	"pulseaudio": {
-		"format": "[<span rise='1pt'>{icon}</span>] {volume}%",
+  "pulseaudio": {
+    "format": "[<span rise='1pt'>{icon}</span>] {volume}%",
     "format-muted": "[<span rise='1pt'></span>] 00%",
     "format-icons": {
       "default": ["", "", ""]
     },
-		"scroll-step": 1,
-		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-		"on-click-right": "pavucontrol",
+    "scroll-step": 1,
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pavucontrol",
     "states": {
       "high": 100,
       "mid": 40,
       "low": 10
     }
-	},
+  },
 
   "clock": {
     "format": "[<span rise='1pt'>󰨳</span>] {:%m%d.%H%M}",
-		"interval": 60,
+    "interval": 60,
     "tooltip-format": "<tt>{calendar}</tt>"
   }
 }]
