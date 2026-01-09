@@ -2,7 +2,7 @@
 set -e
 source $HOME/.config/fzf/config
 
-music_path="/mnt/juerbiesu/media/music"
+music_path="/mnt/data/media/music"
 
 selected_album=$(find $music_path -mindepth 2 -maxdepth 2 -type d | \
   sed "s|$music_path/||" | \
