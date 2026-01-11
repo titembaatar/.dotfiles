@@ -972,6 +972,18 @@ glyph  dev yugabytedb
 glyph  dev yunohost
 glyph  dev zend
 glyph  dev zig
+glyph  extra progress empty left
+glyph  extra progress empty mid
+glyph  extra progress empty right
+glyph  extra progress full left
+glyph  extra progress full mid
+glyph  extra progress full right
+glyph  extra progress spinner 1
+glyph  extra progress spinner 2
+glyph  extra progress spinner 3
+glyph  extra progress spinner 4
+glyph  extra progress spinner 5
+glyph  extra progress spinner 6
 glyph  fa 500px
 glyph  fa accessible icon
 glyph  fa accusoft
@@ -2622,7 +2634,3813 @@ glyph ﬄ mdi qqchat
 glyph ﬀ mdi page last
 glyph ﬁ mdi phone classic
 glyph ﬂ mdi priority high
+glyph ⏻ iec power
+glyph ⭘ iec power off
+glyph ⏽ iec power on
+glyph ⏾ iec sleep mode
+glyph ⏼ iec toggle power
 glyph  indent line
+glyph  linux almalinux
+glyph  linux alpine
+glyph  linux aosc
+glyph  linux apple
+glyph  linux archcraft
+glyph  linux archlabs
+glyph  linux archlinux
+glyph  linux arcolinux
+glyph  linux arduino
+glyph  linux artix
+glyph  linux awesome
+glyph  linux biglinux
+glyph  linux bspwm
+glyph  linux budgie
+glyph  linux centos
+glyph  linux cinnamon
+glyph  linux codeberg
+glyph  linux coreos
+glyph  linux crystal
+glyph  linux debian
+glyph  linux deepin
+glyph  linux devuan
+glyph  linux docker
+glyph  linux dwm
+glyph  linux elementary
+glyph  linux endeavour
+glyph  linux enlightenment
+glyph  linux fdroid
+glyph  linux fedora
+glyph  linux fedora inverse
+glyph  linux ferris
+glyph  linux flathub
+glyph  linux fluxbox
+glyph  linux forgejo
+glyph  linux fosdem
+glyph  linux freebsd
+glyph  linux freecad
+glyph  linux freedesktop
+glyph  linux garuda
+glyph  linux gentoo
+glyph  linux gimp
+glyph  linux gitea
+glyph  linux gnome
+glyph  linux gnu guix
+glyph  linux gtk
+glyph  linux hyperbola
+glyph  linux hyprland
+glyph  linux i3
+glyph  linux illumos
+glyph  linux inkscape
+glyph  linux jwm
+glyph  linux kali linux
+glyph  linux kde
+glyph  linux kde neon
+glyph  linux kdenlive
+glyph  linux kde plasma
+glyph  linux kicad
+glyph  linux krita
+glyph  linux kubuntu
+glyph  linux kubuntu inverse
+glyph  linux leap
+glyph  linux libreoffice
+glyph  linux libreofficebase
+glyph  linux libreofficecalc
+glyph  linux libreofficedraw
+glyph  linux libreofficeimpress
+glyph  linux libreofficemath
+glyph  linux libreofficewriter
+glyph  linux linuxmint
+glyph  linux linuxmint inverse
+glyph  linux locos
+glyph  linux lxde
+glyph  linux lxle
+glyph  linux lxqt
+glyph  linux mageia
+glyph  linux mandriva
+glyph  linux manjaro
+glyph  linux mate
+glyph  linux mpv
+glyph  linux mxlinux
+glyph  linux neovim
+glyph  linux nixos
+glyph  linux nobara
+glyph  linux octoprint
+glyph  linux openbsd
+glyph  linux openscad
+glyph  linux opensuse
+glyph  linux osh
+glyph  linux oshwa
+glyph  linux osi
+glyph  linux parabola
+glyph  linux parrot
+glyph  linux pop os
+glyph  linux postmarketos
+glyph  linux prusaslicer
+glyph  linux puppy
+glyph  linux qt
+glyph  linux qtile
+glyph  linux qubesos
+glyph  linux raspberry pi
+glyph  linux redhat
+glyph  linux reprap
+glyph  linux riscv
+glyph  linux river
+glyph  linux rocky linux
+glyph  linux sabayon
+glyph  linux slackware
+glyph  linux slackware inverse
+glyph  linux snappy
+glyph  linux solus
+glyph  linux sway
+glyph  linux tails
+glyph  linux thunderbird
+glyph  linux tor
+glyph  linux trisquel
+glyph  linux tumbleweed
+glyph  linux tux
+glyph  linux typst
+glyph  linux ubuntu
+glyph  linux ubuntu inverse
+glyph  linux vanilla
+glyph  linux void
+glyph  linux vscodium
+glyph  linux wayland
+glyph  linux wikimedia
+glyph  linux xerolinux
+glyph  linux xfce
+glyph  linux xmonad
+glyph  linux xorg
+glyph  linux zorin
+glyph 󱛠 md abacus
+glyph 󱌨 md abjad arabic
+glyph 󱌩 md abjad hebrew
+glyph 󰇉 md ab testing
+glyph 󱌪 md abugida devanagari
+glyph 󱌫 md abugida thai
+glyph 󰀃 md access point
+glyph 󱔸 md access point check
+glyph 󱔹 md access point minus
+glyph 󰀂 md access point network
+glyph 󰯡 md access point network off
+glyph 󱔑 md access point off
+glyph 󱔺 md access point plus
+glyph 󱔻 md access point remove
+glyph 󰀄 md account
+glyph 󰀅 md account alert
+glyph 󰭐 md account alert outline
+glyph 󱡨 md account arrow down
+glyph 󱡩 md account arrow down outline
+glyph 󰭑 md account arrow left
+glyph 󰭒 md account arrow left outline
+glyph 󰭓 md account arrow right
+glyph 󰭔 md account arrow right outline
+glyph 󱡧 md account arrow up
+glyph 󱡪 md account arrow up outline
+glyph 󰀆 md account box
+glyph 󰤴 md account box multiple
+glyph 󱀊 md account box multiple outline
+glyph 󰀇 md account box outline
+glyph 󱋟 md account cancel
+glyph 󱋠 md account cancel outline
+glyph 󱂗 md account cash
+glyph 󱂘 md account cash outline
+glyph 󰀈 md account check
+glyph 󰯢 md account check outline
+glyph 󰪉 md account child
+glyph 󰪊 md account child circle
+glyph 󱃈 md account child outline
+glyph 󰀉 md account circle
+glyph 󰭕 md account circle outline
+glyph 󰭖 md account clock
+glyph 󰭗 md account clock outline
+glyph 󱍰 md account cog
+glyph 󱍱 md account cog outline
+glyph 󰀊 md account convert
+glyph 󱌁 md account convert outline
+glyph 󰺛 md account cowboy hat
+glyph 󱟳 md account cowboy hat outline
+glyph 󰘱 md account details
+glyph 󱍲 md account details outline
+glyph 󰚼 md account edit
+glyph 󰿻 md account edit outline
+glyph 󰐠 md account eye
+glyph 󱉻 md account eye outline
+glyph 󰤶 md account filter
+glyph 󰾝 md account filter outline
+glyph 󰡉 md account group
+glyph 󰭘 md account group outline
+glyph 󰖵 md account hard hat
+glyph 󱨟 md account hard hat outline
+glyph 󰢙 md account heart
+glyph 󰯣 md account heart outline
+glyph 󱠕 md account injury
+glyph 󱠖 md account injury outline
+glyph 󰀋 md account key
+glyph 󰯤 md account key outline
+glyph 󱅞 md account lock
+glyph 󱥠 md account lock open
+glyph 󱥡 md account lock open outline
+glyph 󱅟 md account lock outline
+glyph 󰀍 md account minus
+glyph 󰫬 md account minus outline
+glyph 󰀎 md account multiple
+glyph 󰣅 md account multiple check
+glyph 󱇾 md account multiple check outline
+glyph 󰗓 md account multiple minus
+glyph 󰯥 md account multiple minus outline
+glyph 󰀏 md account multiple outline
+glyph 󰀐 md account multiple plus
+glyph 󰠀 md account multiple plus outline
+glyph 󱈊 md account multiple remove
+glyph 󱈋 md account multiple remove outline
+glyph 󰠃 md account music
+glyph 󰳩 md account music outline
+glyph 󰀑 md account network
+glyph 󰯦 md account network outline
+glyph 󰀒 md account off
+glyph 󰯧 md account off outline
+glyph 󰀓 md account outline
+glyph 󰀔 md account plus
+glyph 󰠁 md account plus outline
+glyph 󰭙 md account question
+glyph 󰭚 md account question outline
+glyph 󱔫 md account reactivate
+glyph 󱔬 md account reactivate outline
+glyph 󰀕 md account remove
+glyph 󰫭 md account remove outline
+glyph 󱨠 md account school
+glyph 󱨡 md account school outline
+glyph 󰀖 md account search
+glyph 󰤵 md account search outline
+glyph 󰘰 md account settings
+glyph 󱃉 md account settings outline
+glyph 󰀗 md account star
+glyph 󰯨 md account star outline
+glyph 󰪋 md account supervisor
+glyph 󰪌 md account supervisor circle
+glyph 󱓬 md account supervisor circle outline
+glyph 󱄭 md account supervisor outline
+glyph 󰀙 md account switch
+glyph 󰓋 md account switch outline
+glyph 󱤛 md account sync
+glyph 󱤜 md account sync outline
+glyph 󰳣 md account tie
+glyph 󱢘 md account tie hat
+glyph 󱢙 md account tie hat outline
+glyph 󱃊 md account tie outline
+glyph 󱌈 md account tie voice
+glyph 󱌊 md account tie voice off
+glyph 󱌋 md account tie voice off outline
+glyph 󱌉 md account tie voice outline
+glyph 󱪌 md account tie woman
+glyph 󰗋 md account voice
+glyph 󰻔 md account voice off
+glyph 󱢚 md account wrench
+glyph 󱢛 md account wrench outline
+glyph 󰀚 md adjust
+glyph 󱤪 md advertisements
+glyph 󱤫 md advertisements off
+glyph 󰯩 md airbag
+glyph 󰀜 md airballoon
+glyph 󱀋 md airballoon outline
+glyph 󰀛 md air conditioner
+glyph 󰵃 md air filter
+glyph 󰶬 md air horn
+glyph 󱂙 md air humidifier
+glyph 󱑦 md air humidifier off
+glyph 󰀝 md airplane
+glyph 󱡺 md airplane alert
+glyph 󱡻 md airplane check
+glyph 󱡼 md airplane clock
+glyph 󱡽 md airplane cog
+glyph 󱡾 md airplane edit
+glyph 󰗔 md airplane landing
+glyph 󱡿 md airplane marker
+glyph 󱢀 md airplane minus
+glyph 󰀞 md airplane off
+glyph 󱢁 md airplane plus
+glyph 󱢂 md airplane remove
+glyph 󱢃 md airplane search
+glyph 󱢄 md airplane settings
+glyph 󰗕 md airplane takeoff
+glyph 󰡋 md airport
+glyph 󰵄 md air purifier
+glyph 󰀠 md alarm
+glyph 󰞎 md alarm bell
+glyph 󰀡 md alarm check
+glyph 󰞏 md alarm light
+glyph 󱜞 md alarm light off
+glyph 󱜟 md alarm light off outline
+glyph 󰯪 md alarm light outline
+glyph 󰀢 md alarm multiple
+glyph 󰹱 md alarm note
+glyph 󰹲 md alarm note off
+glyph 󰀣 md alarm off
+glyph 󱗄 md alarm panel
+glyph 󱗅 md alarm panel outline
+glyph 󰀤 md alarm plus
+glyph 󰚎 md alarm snooze
+glyph 󰀥 md album
+glyph 󰀦 md alert
+glyph 󰀧 md alert box
+glyph 󰳤 md alert box outline
+glyph 󰀨 md alert circle
+glyph 󱇭 md alert circle check
+glyph 󱇮 md alert circle check outline
+glyph 󰗖 md alert circle outline
+glyph 󰚽 md alert decagram
+glyph 󰳥 md alert decagram outline
+glyph 󱒻 md alert minus
+glyph 󱒾 md alert minus outline
+glyph 󰀩 md alert octagon
+glyph 󰳦 md alert octagon outline
+glyph 󰝧 md alert octagram
+glyph 󰳧 md alert octagram outline
+glyph 󰀪 md alert outline
+glyph 󱒺 md alert plus
+glyph 󱒽 md alert plus outline
+glyph 󱒼 md alert remove
+glyph 󱒿 md alert remove outline
+glyph 󱇎 md alert rhombus
+glyph 󱇏 md alert rhombus outline
+glyph 󰢚 md alien
+glyph 󱃋 md alien outline
+glyph 󱇃 md align horizontal center
+glyph 󱥢 md align horizontal distribute
+glyph 󱇂 md align horizontal left
+glyph 󱇄 md align horizontal right
+glyph 󱇅 md align vertical bottom
+glyph 󱇆 md align vertical center
+glyph 󱥣 md align vertical distribute
+glyph 󱇇 md align vertical top
+glyph 󱉘 md allergy
+glyph 󰚾 md all inclusive
+glyph 󱢍 md all inclusive box
+glyph 󱢎 md all inclusive box outline
+glyph 󰀫 md alpha
+glyph 󰫮 md alpha a
+glyph 󰬈 md alpha a box
+glyph 󰯫 md alpha a box outline
+glyph 󰯬 md alpha a circle
+glyph 󰯭 md alpha a circle outline
+glyph 󰫯 md alpha b
+glyph 󰬉 md alpha b box
+glyph 󰯮 md alpha b box outline
+glyph 󰯯 md alpha b circle
+glyph 󰯰 md alpha b circle outline
+glyph 󱌬 md alphabet aurebesh
+glyph 󱌭 md alphabet cyrillic
+glyph 󱌮 md alphabet greek
+glyph 󰀬 md alphabetical
+glyph 󱀌 md alphabetical off
+glyph 󱀍 md alphabetical variant
+glyph 󱀎 md alphabetical variant off
+glyph 󱌯 md alphabet latin
+glyph 󱌰 md alphabet piqad
+glyph 󱌷 md alphabet tengwar
+glyph 󰫰 md alpha c
+glyph 󰬊 md alpha c box
+glyph 󰯱 md alpha c box outline
+glyph 󰯲 md alpha c circle
+glyph 󰯳 md alpha c circle outline
+glyph 󰫱 md alpha d
+glyph 󰬋 md alpha d box
+glyph 󰯴 md alpha d box outline
+glyph 󰯵 md alpha d circle
+glyph 󰯶 md alpha d circle outline
+glyph 󰫲 md alpha e
+glyph 󰬌 md alpha e box
+glyph 󰯷 md alpha e box outline
+glyph 󰯸 md alpha e circle
+glyph 󰯹 md alpha e circle outline
+glyph 󰫳 md alpha f
+glyph 󰬍 md alpha f box
+glyph 󰯺 md alpha f box outline
+glyph 󰯻 md alpha f circle
+glyph 󰯼 md alpha f circle outline
+glyph 󰫴 md alpha g
+glyph 󰬎 md alpha g box
+glyph 󰯽 md alpha g box outline
+glyph 󰯾 md alpha g circle
+glyph 󰯿 md alpha g circle outline
+glyph 󰫵 md alpha h
+glyph 󰬏 md alpha h box
+glyph 󰰀 md alpha h box outline
+glyph 󰰁 md alpha h circle
+glyph 󰰂 md alpha h circle outline
+glyph 󰫶 md alpha i
+glyph 󰬐 md alpha i box
+glyph 󰰃 md alpha i box outline
+glyph 󰰄 md alpha i circle
+glyph 󰰅 md alpha i circle outline
+glyph 󰫷 md alpha j
+glyph 󰬑 md alpha j box
+glyph 󰰆 md alpha j box outline
+glyph 󰰇 md alpha j circle
+glyph 󰰈 md alpha j circle outline
+glyph 󰫸 md alpha k
+glyph 󰬒 md alpha k box
+glyph 󰰉 md alpha k box outline
+glyph 󰰊 md alpha k circle
+glyph 󰰋 md alpha k circle outline
+glyph 󰫹 md alpha l
+glyph 󰬓 md alpha l box
+glyph 󰰌 md alpha l box outline
+glyph 󰰍 md alpha l circle
+glyph 󰰎 md alpha l circle outline
+glyph 󰫺 md alpha m
+glyph 󰬔 md alpha m box
+glyph 󰰏 md alpha m box outline
+glyph 󰰐 md alpha m circle
+glyph 󰰑 md alpha m circle outline
+glyph 󰫻 md alpha n
+glyph 󰬕 md alpha n box
+glyph 󰰒 md alpha n box outline
+glyph 󰰓 md alpha n circle
+glyph 󰰔 md alpha n circle outline
+glyph 󰫼 md alpha o
+glyph 󰬖 md alpha o box
+glyph 󰰕 md alpha o box outline
+glyph 󰰖 md alpha o circle
+glyph 󰰗 md alpha o circle outline
+glyph 󰫽 md alpha p
+glyph 󰬗 md alpha p box
+glyph 󰰘 md alpha p box outline
+glyph 󰰙 md alpha p circle
+glyph 󰰚 md alpha p circle outline
+glyph 󰫾 md alpha q
+glyph 󰬘 md alpha q box
+glyph 󰰛 md alpha q box outline
+glyph 󰰜 md alpha q circle
+glyph 󰰝 md alpha q circle outline
+glyph 󰫿 md alpha r
+glyph 󰬙 md alpha r box
+glyph 󰰞 md alpha r box outline
+glyph 󰰟 md alpha r circle
+glyph 󰰠 md alpha r circle outline
+glyph 󰬀 md alpha s
+glyph 󰬚 md alpha s box
+glyph 󰰡 md alpha s box outline
+glyph 󰰢 md alpha s circle
+glyph 󰰣 md alpha s circle outline
+glyph 󰬁 md alpha t
+glyph 󰬛 md alpha t box
+glyph 󰰤 md alpha t box outline
+glyph 󰰥 md alpha t circle
+glyph 󰰦 md alpha t circle outline
+glyph 󰬂 md alpha u
+glyph 󰬜 md alpha u box
+glyph 󰰧 md alpha u box outline
+glyph 󰰨 md alpha u circle
+glyph 󰰩 md alpha u circle outline
+glyph 󰬃 md alpha v
+glyph 󰬝 md alpha v box
+glyph 󰰪 md alpha v box outline
+glyph 󰰫 md alpha v circle
+glyph 󰰬 md alpha v circle outline
+glyph 󰬄 md alpha w
+glyph 󰬞 md alpha w box
+glyph 󰰭 md alpha w box outline
+glyph 󰰮 md alpha w circle
+glyph 󰰯 md alpha w circle outline
+glyph 󰬅 md alpha x
+glyph 󰬟 md alpha x box
+glyph 󰰰 md alpha x box outline
+glyph 󰰱 md alpha x circle
+glyph 󰰲 md alpha x circle outline
+glyph 󰬆 md alpha y
+glyph 󰬠 md alpha y box
+glyph 󰰳 md alpha y box outline
+glyph 󰰴 md alpha y circle
+glyph 󰰵 md alpha y circle outline
+glyph 󰬇 md alpha z
+glyph 󰬡 md alpha z box
+glyph 󰰶 md alpha z box outline
+glyph 󰰷 md alpha z circle
+glyph 󰰸 md alpha z circle outline
+glyph 󰗗 md altimeter
+glyph 󰀯 md ambulance
+glyph 󰳨 md ammunition
+glyph 󰪍 md ampersand
+glyph 󰀰 md amplifier
+glyph 󱆵 md amplifier off
+glyph 󰀱 md anchor
+glyph 󰀲 md android
+glyph 󰵅 md android messages
+glyph 󰀴 md android studio
+glyph 󰤷 md angle acute
+glyph 󰤸 md angle obtuse
+glyph 󰤹 md angle right
+glyph 󰚲 md angular
+glyph 󰚿 md angularjs
+glyph 󰗘 md animation
+glyph 󰪏 md animation outline
+glyph 󰤺 md animation play
+glyph 󰪐 md animation play outline
+glyph 󱂚 md ansible
+glyph 󱄙 md antenna
+glyph 󰢛 md anvil
+glyph 󱀏 md apache kafka
+glyph 󱂛 md api
+glyph 󱉗 md api off
+glyph 󰀵 md apple
+glyph 󰀶 md apple finder
+glyph 󰀸 md apple icloud
+glyph 󰀷 md apple ios
+glyph 󰘲 md apple keyboard caps
+glyph 󰘳 md apple keyboard command
+glyph 󰘴 md apple keyboard control
+glyph 󰘵 md apple keyboard option
+glyph 󰘶 md apple keyboard shift
+glyph 󰀹 md apple safari
+glyph 󰣆 md application
+glyph 󱃵 md application array
+glyph 󱃶 md application array outline
+glyph 󱃷 md application braces
+glyph 󱃸 md application braces outline
+glyph 󰲋 md application brackets
+glyph 󰲌 md application brackets outline
+glyph 󰙵 md application cog
+glyph 󱕷 md application cog outline
+glyph 󰂮 md application edit
+glyph 󰘙 md application edit outline
+glyph 󰶭 md application export
+glyph 󰶮 md application import
+glyph 󰘔 md application outline
+glyph 󱃹 md application parentheses
+glyph 󱃺 md application parentheses outline
+glyph 󰭠 md application settings
+glyph 󱕕 md application settings outline
+glyph 󱃻 md application variable
+glyph 󱃼 md application variable outline
+glyph 󰾞 md approximately equal
+glyph 󰾟 md approximately equal box
+glyph 󰀻 md apps
+glyph 󰵆 md apps box
+glyph 󰣇 md arch
+glyph 󰀼 md archive
+glyph 󱓽 md archive alert
+glyph 󱓾 md archive alert outline
+glyph 󱉙 md archive arrow down
+glyph 󱉚 md archive arrow down outline
+glyph 󱉛 md archive arrow up
+glyph 󱉜 md archive arrow up outline
+glyph 󱝋 md archive cancel
+glyph 󱝌 md archive cancel outline
+glyph 󱝍 md archive check
+glyph 󱝎 md archive check outline
+glyph 󱝏 md archive clock
+glyph 󱝐 md archive clock outline
+glyph 󱝑 md archive cog
+glyph 󱝒 md archive cog outline
+glyph 󱝓 md archive edit
+glyph 󱝔 md archive edit outline
+glyph 󱝕 md archive eye
+glyph 󱝖 md archive eye outline
+glyph 󱝗 md archive lock
+glyph 󱝘 md archive lock open
+glyph 󱝙 md archive lock open outline
+glyph 󱝚 md archive lock outline
+glyph 󱝛 md archive marker
+glyph 󱝜 md archive marker outline
+glyph 󱝝 md archive minus
+glyph 󱝞 md archive minus outline
+glyph 󱝟 md archive music
+glyph 󱝠 md archive music outline
+glyph 󱝡 md archive off
+glyph 󱝢 md archive off outline
+glyph 󱈎 md archive outline
+glyph 󱝣 md archive plus
+glyph 󱝤 md archive plus outline
+glyph 󱝥 md archive refresh
+glyph 󱝦 md archive refresh outline
+glyph 󱝧 md archive remove
+glyph 󱝨 md archive remove outline
+glyph 󱝩 md archive search
+glyph 󱝪 md archive search outline
+glyph 󱝫 md archive settings
+glyph 󱝬 md archive settings outline
+glyph 󱝭 md archive star
+glyph 󱝮 md archive star outline
+glyph 󱝯 md archive sync
+glyph 󱝰 md archive sync outline
+glyph 󰿗 md arm flex
+glyph 󰿖 md arm flex outline
+glyph 󰀽 md arrange bring forward
+glyph 󰀾 md arrange bring to front
+glyph 󰀿 md arrange send backward
+glyph 󰁀 md arrange send to back
+glyph 󰁁 md arrow all
+glyph 󰁂 md arrow bottom left
+glyph 󱥤 md arrow bottom left bold box
+glyph 󱥥 md arrow bottom left bold box outline
+glyph 󰦷 md arrow bottom left bold outline
+glyph 󰦸 md arrow bottom left thick
+glyph 󱦶 md arrow bottom left thin
+glyph 󱖖 md arrow bottom left thin circle outline
+glyph 󰁃 md arrow bottom right
+glyph 󱥦 md arrow bottom right bold box
+glyph 󱥧 md arrow bottom right bold box outline
+glyph 󰦹 md arrow bottom right bold outline
+glyph 󰦺 md arrow bottom right thick
+glyph 󱦷 md arrow bottom right thin
+glyph 󱖕 md arrow bottom right thin circle outline
+glyph 󰘕 md arrow collapse
+glyph 󰁄 md arrow collapse all
+glyph 󰞒 md arrow collapse down
+glyph 󰡌 md arrow collapse horizontal
+glyph 󰞓 md arrow collapse left
+glyph 󰞔 md arrow collapse right
+glyph 󰞕 md arrow collapse up
+glyph 󰡍 md arrow collapse vertical
+glyph 󰦻 md arrow decision
+glyph 󰦼 md arrow decision auto
+glyph 󰦽 md arrow decision auto outline
+glyph 󰦾 md arrow decision outline
+glyph 󰁅 md arrow down
+glyph 󰜮 md arrow down bold
+glyph 󰜯 md arrow down bold box
+glyph 󰜰 md arrow down bold box outline
+glyph 󰁇 md arrow down bold circle
+glyph 󰁈 md arrow down bold circle outline
+glyph 󰁉 md arrow down bold hexagon outline
+glyph 󰦿 md arrow down bold outline
+glyph 󰛀 md arrow down box
+glyph 󰳛 md arrow down circle
+glyph 󰳜 md arrow down circle outline
+glyph 󰁊 md arrow down drop circle
+glyph 󰁋 md arrow down drop circle outline
+glyph 󱞡 md arrow down left
+glyph 󱞢 md arrow down left bold
+glyph 󱞣 md arrow down right
+glyph 󱞤 md arrow down right bold
+glyph 󰁆 md arrow down thick
+glyph 󱦳 md arrow down thin
+glyph 󱖙 md arrow down thin circle outline
+glyph 󰘖 md arrow expand
+glyph 󰁌 md arrow expand all
+glyph 󰞖 md arrow expand down
+glyph 󰡎 md arrow expand horizontal
+glyph 󰞗 md arrow expand left
+glyph 󰞘 md arrow expand right
+glyph 󰞙 md arrow expand up
+glyph 󰡏 md arrow expand vertical
+glyph 󱅛 md arrow horizontal lock
+glyph 󰁍 md arrow left
+glyph 󰜱 md arrow left bold
+glyph 󰜲 md arrow left bold box
+glyph 󰜳 md arrow left bold box outline
+glyph 󰁏 md arrow left bold circle
+glyph 󰁐 md arrow left bold circle outline
+glyph 󰁑 md arrow left bold hexagon outline
+glyph 󰧀 md arrow left bold outline
+glyph 󱞥 md arrow left bottom
+glyph 󱞦 md arrow left bottom bold
+glyph 󰛁 md arrow left box
+glyph 󰳝 md arrow left circle
+glyph 󰳞 md arrow left circle outline
+glyph 󰁒 md arrow left drop circle
+glyph 󰁓 md arrow left drop circle outline
+glyph 󰹳 md arrow left right
+glyph 󰹴 md arrow left right bold
+glyph 󰧁 md arrow left right bold outline
+glyph 󰁎 md arrow left thick
+glyph 󱦱 md arrow left thin
+glyph 󱖚 md arrow left thin circle outline
+glyph 󱞧 md arrow left top
+glyph 󱞨 md arrow left top bold
+glyph 󱡀 md arrow projectile
+glyph 󱠿 md arrow projectile multiple
+glyph 󰁔 md arrow right
+glyph 󰜴 md arrow right bold
+glyph 󰜵 md arrow right bold box
+glyph 󰜶 md arrow right bold box outline
+glyph 󰁖 md arrow right bold circle
+glyph 󰁗 md arrow right bold circle outline
+glyph 󰁘 md arrow right bold hexagon outline
+glyph 󰧂 md arrow right bold outline
+glyph 󱞩 md arrow right bottom
+glyph 󱞪 md arrow right bottom bold
+glyph 󰛂 md arrow right box
+glyph 󰳟 md arrow right circle
+glyph 󰳠 md arrow right circle outline
+glyph 󰁙 md arrow right drop circle
+glyph 󰁚 md arrow right drop circle outline
+glyph 󰁕 md arrow right thick
+glyph 󱦰 md arrow right thin
+glyph 󱖘 md arrow right thin circle outline
+glyph 󱞫 md arrow right top
+glyph 󱞬 md arrow right top bold
+glyph 󰤻 md arrow split horizontal
+glyph 󰤼 md arrow split vertical
+glyph 󰁛 md arrow top left
+glyph 󱥨 md arrow top left bold box
+glyph 󱥩 md arrow top left bold box outline
+glyph 󰧃 md arrow top left bold outline
+glyph 󰹵 md arrow top left bottom right
+glyph 󰹶 md arrow top left bottom right bold
+glyph 󰧄 md arrow top left thick
+glyph 󱦵 md arrow top left thin
+glyph 󱖓 md arrow top left thin circle outline
+glyph 󰁜 md arrow top right
+glyph 󱥪 md arrow top right bold box
+glyph 󱥫 md arrow top right bold box outline
+glyph 󰧅 md arrow top right bold outline
+glyph 󰹷 md arrow top right bottom left
+glyph 󰹸 md arrow top right bottom left bold
+glyph 󰧆 md arrow top right thick
+glyph 󱦴 md arrow top right thin
+glyph 󱖔 md arrow top right thin circle outline
+glyph 󱞭 md arrow u down left
+glyph 󱞮 md arrow u down left bold
+glyph 󱞯 md arrow u down right
+glyph 󱞰 md arrow u down right bold
+glyph 󱞱 md arrow u left bottom
+glyph 󱞲 md arrow u left bottom bold
+glyph 󱞳 md arrow u left top
+glyph 󱞴 md arrow u left top bold
+glyph 󰁝 md arrow up
+glyph 󰜷 md arrow up bold
+glyph 󰜸 md arrow up bold box
+glyph 󰜹 md arrow up bold box outline
+glyph 󰁟 md arrow up bold circle
+glyph 󰁠 md arrow up bold circle outline
+glyph 󰁡 md arrow up bold hexagon outline
+glyph 󰧇 md arrow up bold outline
+glyph 󰛃 md arrow up box
+glyph 󰳡 md arrow up circle
+glyph 󰳢 md arrow up circle outline
+glyph 󰹹 md arrow up down
+glyph 󰹺 md arrow up down bold
+glyph 󰧈 md arrow up down bold outline
+glyph 󰁢 md arrow up drop circle
+glyph 󰁣 md arrow up drop circle outline
+glyph 󱞽 md arrow up left
+glyph 󱞾 md arrow up left bold
+glyph 󱞿 md arrow up right
+glyph 󱟀 md arrow up right bold
+glyph 󰁞 md arrow up thick
+glyph 󱦲 md arrow up thin
+glyph 󱖗 md arrow up thin circle outline
+glyph 󱞵 md arrow u right bottom
+glyph 󱞶 md arrow u right bottom bold
+glyph 󱞷 md arrow u right top
+glyph 󱞸 md arrow u right top bold
+glyph 󱞹 md arrow u up left
+glyph 󱞺 md arrow u up left bold
+glyph 󱞻 md arrow u up right
+glyph 󱞼 md arrow u up right bold
+glyph 󱅜 md arrow vertical lock
+glyph 󰭛 md artstation
+glyph 󰨤 md aspect ratio
+glyph 󰁤 md assistant
+glyph 󰛄 md asterisk
+glyph 󱨧 md asterisk circle outline
+glyph 󰁥 md at
+glyph 󰠄 md atlassian
+glyph 󰵇 md atm
+glyph 󰝨 md atom
+glyph 󰹻 md atom variant
+glyph 󰁦 md attachment
+glyph 󱫁 md attachment check
+glyph 󱧄 md attachment lock
+glyph 󱫂 md attachment minus
+glyph 󱫃 md attachment off
+glyph 󱫄 md attachment plus
+glyph 󱫅 md attachment remove
+glyph 󱡫 md audio input rca
+glyph 󱡬 md audio input stereo minijack
+glyph 󱡭 md audio input xlr
+glyph 󰤽 md audio video
+glyph 󱆶 md audio video off
+glyph 󰡐 md augmented reality
+glyph 󱍾 md auto download
+glyph 󰁨 md auto fix
+glyph 󰁪 md autorenew
+glyph 󱧧 md autorenew off
+glyph 󰁩 md auto upload
+glyph 󰁫 md av timer
+glyph 󰸏 md aws
+glyph 󰣈 md axe
+glyph 󱡂 md axe battle
+glyph 󰵈 md axis
+glyph 󰵉 md axis arrow
+glyph 󱐎 md axis arrow info
+glyph 󰵊 md axis arrow lock
+glyph 󰵋 md axis lock
+glyph 󰵌 md axis x arrow
+glyph 󰵍 md axis x arrow lock
+glyph 󰵎 md axis x rotate clockwise
+glyph 󰵏 md axis x rotate counterclockwise
+glyph 󰵐 md axis x y arrow lock
+glyph 󰵑 md axis y arrow
+glyph 󰵒 md axis y arrow lock
+glyph 󰵓 md axis y rotate clockwise
+glyph 󰵔 md axis y rotate counterclockwise
+glyph 󰵕 md axis z arrow
+glyph 󰵖 md axis z arrow lock
+glyph 󰵗 md axis z rotate clockwise
+glyph 󰵘 md axis z rotate counterclockwise
+glyph 󰨥 md babel
+glyph 󰁬 md baby
+glyph 󰼹 md baby bottle
+glyph 󰼺 md baby bottle outline
+glyph 󱏠 md baby buggy
+glyph 󰚏 md baby carriage
+glyph 󰾠 md baby carriage off
+glyph 󰹼 md baby face
+glyph 󰹽 md baby face outline
+glyph 󰁭 md backburger
+glyph 󰁮 md backspace
+glyph 󰭜 md backspace outline
+glyph 󰹾 md backspace reverse
+glyph 󰹿 md backspace reverse outline
+glyph 󰁯 md backup restore
+glyph 󰻕 md bacteria
+glyph 󰻖 md bacteria outline
+glyph 󰶧 md badge account
+glyph 󰶨 md badge account alert
+glyph 󰶩 md badge account alert outline
+glyph 󰸍 md badge account horizontal
+glyph 󰸎 md badge account horizontal outline
+glyph 󰶪 md badge account outline
+glyph 󰡑 md badminton
+glyph 󰼻 md bag carry on
+glyph 󰵥 md bag carry on check
+glyph 󰼼 md bag carry on off
+glyph 󰼽 md bag checked
+glyph 󰸐 md bag personal
+glyph 󰸑 md bag personal off
+glyph 󰸒 md bag personal off outline
+glyph 󰸓 md bag personal outline
+glyph 󱖋 md bag suitcase
+glyph 󱖍 md bag suitcase off
+glyph 󱖎 md bag suitcase off outline
+glyph 󱖌 md bag suitcase outline
+glyph 󰼾 md baguette
+glyph 󱠗 md balcony
+glyph 󰨦 md balloon
+glyph 󰧉 md ballot
+glyph 󰧊 md ballot outline
+glyph 󰰹 md ballot recount
+glyph 󰰺 md ballot recount outline
+glyph 󰶯 md bandage
+glyph 󰁰 md bank
+glyph 󱙕 md bank check
+glyph 󰶰 md bank minus
+glyph 󱙖 md bank off
+glyph 󱙗 md bank off outline
+glyph 󰺀 md bank outline
+glyph 󰶱 md bank plus
+glyph 󰶲 md bank remove
+glyph 󰨧 md bank transfer
+glyph 󰨨 md bank transfer in
+glyph 󰨩 md bank transfer out
+glyph 󰁱 md barcode
+glyph 󱈶 md barcode off
+glyph 󰁲 md barcode scan
+glyph 󰁳 md barley
+glyph 󰭝 md barley off
+glyph 󰭞 md barn
+glyph 󰁴 md barrel
+glyph 󱨨 md barrel outline
+glyph 󰡒 md baseball
+glyph 󰡓 md baseball bat
+glyph 󱗬 md baseball diamond
+glyph 󱗭 md baseball diamond outline
+glyph 󱆃 md bash
+glyph 󰁶 md basket
+glyph 󰠆 md basketball
+glyph 󰰻 md basketball hoop
+glyph 󰰼 md basketball hoop outline
+glyph 󱣥 md basket check
+glyph 󱣦 md basket check outline
+glyph 󰁷 md basket fill
+glyph 󱔣 md basket minus
+glyph 󱔤 md basket minus outline
+glyph 󱔥 md basket off
+glyph 󱔦 md basket off outline
+glyph 󱆁 md basket outline
+glyph 󱔧 md basket plus
+glyph 󱔨 md basket plus outline
+glyph 󱔩 md basket remove
+glyph 󱔪 md basket remove outline
+glyph 󰁸 md basket unfill
+glyph 󰭟 md bat
+glyph 󱠘 md bathtub
+glyph 󱠙 md bathtub outline
+glyph 󰁹 md battery
+glyph 󰁺 md battery 10
+glyph 󰤾 md battery 10 bluetooth
+glyph 󰁻 md battery 20
+glyph 󰤿 md battery 20 bluetooth
+glyph 󰁼 md battery 30
+glyph 󰥀 md battery 30 bluetooth
+glyph 󰁽 md battery 40
+glyph 󰥁 md battery 40 bluetooth
+glyph 󰁾 md battery 50
+glyph 󰥂 md battery 50 bluetooth
+glyph 󰁿 md battery 60
+glyph 󰥃 md battery 60 bluetooth
+glyph 󰂀 md battery 70
+glyph 󰥄 md battery 70 bluetooth
+glyph 󰂁 md battery 80
+glyph 󰥅 md battery 80 bluetooth
+glyph 󰂂 md battery 90
+glyph 󰥆 md battery 90 bluetooth
+glyph 󰂃 md battery alert
+glyph 󰥇 md battery alert bluetooth
+glyph 󱃌 md battery alert variant
+glyph 󱃍 md battery alert variant outline
+glyph 󱟞 md battery arrow down
+glyph 󱟟 md battery arrow down outline
+glyph 󱟠 md battery arrow up
+glyph 󱟡 md battery arrow up outline
+glyph 󰥈 md battery bluetooth
+glyph 󰥉 md battery bluetooth variant
+glyph 󰂄 md battery charging
+glyph 󰢜 md battery charging 10
+glyph 󰂅 md battery charging 100
+glyph 󰂆 md battery charging 20
+glyph 󰂇 md battery charging 30
+glyph 󰂈 md battery charging 40
+glyph 󰢝 md battery charging 50
+glyph 󰂉 md battery charging 60
+glyph 󰢞 md battery charging 70
+glyph 󰂊 md battery charging 80
+glyph 󰂋 md battery charging 90
+glyph 󱊦 md battery charging high
+glyph 󱊤 md battery charging low
+glyph 󱊥 md battery charging medium
+glyph 󰢟 md battery charging outline
+glyph 󰠇 md battery charging wireless
+glyph 󰠈 md battery charging wireless 10
+glyph 󰠉 md battery charging wireless 20
+glyph 󰠊 md battery charging wireless 30
+glyph 󰠋 md battery charging wireless 40
+glyph 󰠌 md battery charging wireless 50
+glyph 󰠍 md battery charging wireless 60
+glyph 󰠎 md battery charging wireless 70
+glyph 󰠏 md battery charging wireless 80
+glyph 󰠐 md battery charging wireless 90
+glyph 󰠑 md battery charging wireless alert
+glyph 󰠒 md battery charging wireless outline
+glyph 󱟢 md battery check
+glyph 󱟣 md battery check outline
+glyph 󱧥 md battery clock
+glyph 󱧦 md battery clock outline
+glyph 󱈏 md battery heart
+glyph 󱈐 md battery heart outline
+glyph 󱈑 md battery heart variant
+glyph 󱊣 md battery high
+glyph 󱞜 md battery lock
+glyph 󱞝 md battery lock open
+glyph 󱊡 md battery low
+glyph 󱊢 md battery medium
+glyph 󱟤 md battery minus
+glyph 󱟥 md battery minus outline
+glyph 󰂌 md battery minus variant
+glyph 󰂍 md battery negative
+glyph 󱉝 md battery off
+glyph 󱉞 md battery off outline
+glyph 󰂎 md battery outline
+glyph 󱟦 md battery plus
+glyph 󱟧 md battery plus outline
+glyph 󰂏 md battery plus variant
+glyph 󰂐 md battery positive
+glyph 󱟨 md battery remove
+glyph 󱟩 md battery remove outline
+glyph 󱠴 md battery sync
+glyph 󱠵 md battery sync outline
+glyph 󰂑 md battery unknown
+glyph 󰥊 md battery unknown bluetooth
+glyph 󰂒 md beach
+glyph 󰳪 md beaker
+glyph 󱈩 md beaker alert
+glyph 󱈪 md beaker alert outline
+glyph 󱈫 md beaker check
+glyph 󱈬 md beaker check outline
+glyph 󱈭 md beaker minus
+glyph 󱈮 md beaker minus outline
+glyph 󰚐 md beaker outline
+glyph 󱈯 md beaker plus
+glyph 󱈰 md beaker plus outline
+glyph 󱈱 md beaker question
+glyph 󱈲 md beaker question outline
+glyph 󱈳 md beaker remove
+glyph 󱈴 md beaker remove outline
+glyph 󰋣 md bed
+glyph 󰿔 md bed double
+glyph 󰿓 md bed double outline
+glyph 󰢠 md bed empty
+glyph 󰿒 md bed king
+glyph 󰿑 md bed king outline
+glyph 󰂙 md bed outline
+glyph 󰿐 md bed queen
+glyph 󰿛 md bed queen outline
+glyph 󱁭 md bed single
+glyph 󱁮 md bed single outline
+glyph 󰾡 md bee
+glyph 󰾢 md bee flower
+glyph 󱏭 md beehive off outline
+glyph 󱃎 md beehive outline
+glyph 󱓢 md beekeeper
+glyph 󰂘 md beer
+glyph 󱌌 md beer outline
+glyph 󰂚 md bell
+glyph 󰵙 md bell alert
+glyph 󰺁 md bell alert outline
+glyph 󱅫 md bell badge
+glyph 󰅸 md bell badge outline
+glyph 󱏧 md bell cancel
+glyph 󱏨 md bell cancel outline
+glyph 󱇥 md bell check
+glyph 󱇦 md bell check outline
+glyph 󰵚 md bell circle
+glyph 󰵛 md bell circle outline
+glyph 󱨩 md bell cog
+glyph 󱨪 md bell cog outline
+glyph 󱏩 md bell minus
+glyph 󱏪 md bell minus outline
+glyph 󰂛 md bell off
+glyph 󰪑 md bell off outline
+glyph 󰂜 md bell outline
+glyph 󰂝 md bell plus
+glyph 󰪒 md bell plus outline
+glyph 󱏫 md bell remove
+glyph 󱏬 md bell remove outline
+glyph 󰂞 md bell ring
+glyph 󰂟 md bell ring outline
+glyph 󰂠 md bell sleep
+glyph 󰪓 md bell sleep outline
+glyph 󰂡 md beta
+glyph 󰧋 md betamax
+glyph 󰸔 md biathlon
+glyph 󱂜 md bicycle
+glyph 󱈵 md bicycle basket
+glyph 󱢜 md bicycle cargo
+glyph 󱖴 md bicycle electric
+glyph 󱗩 md bicycle penny farthing
+glyph 󰂣 md bike
+glyph 󱄟 md bike fast
+glyph 󱀐 md billboard
+glyph 󰭡 md billiards
+glyph 󰭢 md billiards rack
+glyph 󰂥 md binoculars
+glyph 󰂦 md bio
+glyph 󰂧 md biohazard
+glyph 󱗆 md bird
+glyph 󰂨 md bitbucket
+glyph 󰠓 md bitcoin
+glyph 󰂩 md black mesa
+glyph 󰳫 md blender
+glyph 󱠚 md blender outline
+glyph 󰂫 md blender software
+glyph 󰂬 md blinds
+glyph 󱨫 md blinds horizontal
+glyph 󱨬 md blinds horizontal closed
+glyph 󱀑 md blinds open
+glyph 󱨭 md blinds vertical
+glyph 󱨮 md blinds vertical closed
+glyph 󰂭 md block helper
+glyph 󰳬 md blood bag
+glyph 󰂯 md bluetooth
+glyph 󰂰 md bluetooth audio
+glyph 󰂱 md bluetooth connect
+glyph 󰂲 md bluetooth off
+glyph 󰂳 md bluetooth settings
+glyph 󰂴 md bluetooth transfer
+glyph 󰂵 md blur
+glyph 󰂶 md blur linear
+glyph 󰂷 md blur off
+glyph 󰂸 md blur radial
+glyph 󰶳 md bolt
+glyph 󰚑 md bomb
+glyph 󰛅 md bomb off
+glyph 󰂹 md bone
+glyph 󱧠 md bone off
+glyph 󰂺 md book
+glyph 󱎭 md book account
+glyph 󱎮 md book account outline
+glyph 󱙼 md book alert
+glyph 󱙽 md book alert outline
+glyph 󰘝 md book alphabet
+glyph 󱙾 md book arrow down
+glyph 󱙿 md book arrow down outline
+glyph 󱚀 md book arrow left
+glyph 󱚁 md book arrow left outline
+glyph 󱚂 md book arrow right
+glyph 󱚃 md book arrow right outline
+glyph 󱚄 md book arrow up
+glyph 󱚅 md book arrow up outline
+glyph 󱚆 md book cancel
+glyph 󱚇 md book cancel outline
+glyph 󱓳 md book check
+glyph 󱓴 md book check outline
+glyph 󱚈 md book clock
+glyph 󱚉 md book clock outline
+glyph 󱚊 md book cog
+glyph 󱚋 md book cog outline
+glyph 󰂢 md book cross
+glyph 󱚌 md book edit
+glyph 󱚍 md book edit outline
+glyph 󱛉 md book education
+glyph 󱛊 md book education outline
+glyph 󱨝 md book heart
+glyph 󱨞 md book heart outline
+glyph 󱁯 md book information variant
+glyph 󰞚 md book lock
+glyph 󰞛 md book lock open
+glyph 󱚎 md book lock open outline
+glyph 󱚏 md book lock outline
+glyph 󰃀 md bookmark
+glyph 󱥬 md bookmark box multiple
+glyph 󱥭 md bookmark box multiple outline
+glyph 󰃁 md bookmark check
+glyph 󱍻 md bookmark check outline
+glyph 󱚐 md book marker
+glyph 󱚑 md book marker outline
+glyph 󰧌 md bookmark minus
+glyph 󰧍 md bookmark minus outline
+glyph 󰸕 md bookmark multiple
+glyph 󰸖 md bookmark multiple outline
+glyph 󰃂 md bookmark music
+glyph 󱍹 md bookmark music outline
+glyph 󰧎 md bookmark off
+glyph 󰧏 md bookmark off outline
+glyph 󰃃 md bookmark outline
+glyph 󰃅 md bookmark plus
+glyph 󰃄 md bookmark plus outline
+glyph 󰃆 md bookmark remove
+glyph 󱍺 md bookmark remove outline
+glyph 󰗙 md book minus
+glyph 󰪔 md book minus multiple
+glyph 󰤋 md book minus multiple outline
+glyph 󱚒 md book minus outline
+glyph 󰂻 md book multiple
+glyph 󰐶 md book multiple outline
+glyph 󰁧 md book music
+glyph 󱚓 md book music outline
+glyph 󱚔 md book off
+glyph 󱚕 md book off outline
+glyph 󰂽 md book open
+glyph 󰂾 md book open blank variant
+glyph 󰭣 md book open outline
+glyph 󰗚 md book open page variant
+glyph 󱗖 md book open page variant outline
+glyph 󱓷 md book open variant
+glyph 󰭤 md book outline
+glyph 󰺂 md book play
+glyph 󰺃 md book play outline
+glyph 󰗛 md book plus
+glyph 󰪕 md book plus multiple
+glyph 󰫞 md book plus multiple outline
+glyph 󱚖 md book plus outline
+glyph 󱚗 md book refresh
+glyph 󱚘 md book refresh outline
+glyph 󰪗 md book remove
+glyph 󰪖 md book remove multiple
+glyph 󰓊 md book remove multiple outline
+glyph 󱚙 md book remove outline
+glyph 󰺄 md book search
+glyph 󰺅 md book search outline
+glyph 󱚚 md book settings
+glyph 󱚛 md book settings outline
+glyph 󱉟 md bookshelf
+glyph 󱚜 md book sync
+glyph 󱛈 md book sync outline
+glyph 󰂿 md book variant
+glyph 󰂼 md book variant multiple
+glyph 󰗜 md boombox
+glyph 󱃏 md boomerang
+glyph 󰺆 md boom gate
+glyph 󰺇 md boom gate alert
+glyph 󰺈 md boom gate alert outline
+glyph 󰺉 md boom gate arrow down
+glyph 󰺊 md boom gate arrow down outline
+glyph 󰺌 md boom gate arrow up
+glyph 󰺍 md boom gate arrow up outline
+glyph 󰺋 md boom gate outline
+glyph 󱟹 md boom gate up
+glyph 󱟺 md boom gate up outline
+glyph 󰛆 md bootstrap
+glyph 󰃇 md border all
+glyph 󰢡 md border all variant
+glyph 󰃈 md border bottom
+glyph 󰢢 md border bottom variant
+glyph 󰃉 md border color
+glyph 󰃊 md border horizontal
+glyph 󰃋 md border inside
+glyph 󰃌 md border left
+glyph 󰢣 md border left variant
+glyph 󰃍 md border none
+glyph 󰢤 md border none variant
+glyph 󰃎 md border outside
+glyph 󰃏 md border right
+glyph 󰢥 md border right variant
+glyph 󰃐 md border style
+glyph 󰃑 md border top
+glyph 󰢦 md border top variant
+glyph 󰃒 md border vertical
+glyph 󱁰 md bottle soda
+glyph 󱁱 md bottle soda classic
+glyph 󱍣 md bottle soda classic outline
+glyph 󱁲 md bottle soda outline
+glyph 󱄮 md bottle tonic
+glyph 󱄯 md bottle tonic outline
+glyph 󱄰 md bottle tonic plus
+glyph 󱄱 md bottle tonic plus outline
+glyph 󱄲 md bottle tonic skull
+glyph 󱄳 md bottle tonic skull outline
+glyph 󰡔 md bottle wine
+glyph 󱌐 md bottle wine outline
+glyph 󱡁 md bow arrow
+glyph 󰊎 md bowl
+glyph 󰃓 md bowling
+glyph 󰘗 md bowl mix
+glyph 󰋤 md bowl mix outline
+glyph 󰊩 md bowl outline
+glyph 󰙸 md bow tie
+glyph 󰃔 md box
+glyph 󰃕 md box cutter
+glyph 󰭊 md box cutter off
+glyph 󰭥 md boxing glove
+glyph 󰘷 md box shadow
+glyph 󰧐 md braille
+glyph 󰧑 md brain
+glyph 󰳮 md bread slice
+glyph 󰳯 md bread slice outline
+glyph 󰘘 md bridge
+glyph 󰃖 md briefcase
+glyph 󰳰 md briefcase account
+glyph 󰳱 md briefcase account outline
+glyph 󱪍 md briefcase arrow left right
+glyph 󱪎 md briefcase arrow left right outline
+glyph 󱪏 md briefcase arrow up down
+glyph 󱪐 md briefcase arrow up down outline
+glyph 󰃗 md briefcase check
+glyph 󱌞 md briefcase check outline
+glyph 󱃐 md briefcase clock
+glyph 󱃑 md briefcase clock outline
+glyph 󰃘 md briefcase download
+glyph 󰰽 md briefcase download outline
+glyph 󰪘 md briefcase edit
+glyph 󰰾 md briefcase edit outline
+glyph 󱟙 md briefcase eye
+glyph 󱟚 md briefcase eye outline
+glyph 󰨪 md briefcase minus
+glyph 󰰿 md briefcase minus outline
+glyph 󱙘 md briefcase off
+glyph 󱙙 md briefcase off outline
+glyph 󰠔 md briefcase outline
+glyph 󰨫 md briefcase plus
+glyph 󰱀 md briefcase plus outline
+glyph 󰨬 md briefcase remove
+glyph 󰱁 md briefcase remove outline
+glyph 󰨭 md briefcase search
+glyph 󰱂 md briefcase search outline
+glyph 󰃙 md briefcase upload
+glyph 󰱃 md briefcase upload outline
+glyph 󱒔 md briefcase variant
+glyph 󱙚 md briefcase variant off
+glyph 󱙛 md briefcase variant off outline
+glyph 󱒕 md briefcase variant outline
+glyph 󰃚 md brightness 1
+glyph 󰃛 md brightness 2
+glyph 󰃜 md brightness 3
+glyph 󰃝 md brightness 4
+glyph 󰃞 md brightness 5
+glyph 󰃟 md brightness 6
+glyph 󰃠 md brightness 7
+glyph 󰃡 md brightness auto
+glyph 󰳲 md brightness percent
+glyph 󱜠 md broadcast
+glyph 󱜡 md broadcast off
+glyph 󰃢 md broom
+glyph 󰃣 md brush
+glyph 󱝱 md brush off
+glyph 󱨍 md brush outline
+glyph 󱠓 md brush variant
+glyph 󱐕 md bucket
+glyph 󱐖 md bucket outline
+glyph 󰕸 md buffet
+glyph 󰃤 md bug
+glyph 󰨮 md bug check
+glyph 󰨯 md bug check outline
+glyph 󰶴 md bugle
+glyph 󰨰 md bug outline
+glyph 󱨯 md bulkhead light
+glyph 󰬢 md bulldozer
+glyph 󰳳 md bullet
+glyph 󰃥 md bulletin board
+glyph 󰃦 md bullhorn
+glyph 󰬣 md bullhorn outline
+glyph 󱥮 md bullhorn variant
+glyph 󱥯 md bullhorn variant outline
+glyph 󰗝 md bullseye
+glyph 󰣉 md bullseye arrow
+glyph 󱋧 md bulma
+glyph 󱌂 md bunk bed
+glyph 󰂗 md bunk bed outline
+glyph 󰃧 md bus
+glyph 󰪙 md bus alert
+glyph 󰞜 md bus articulated end
+glyph 󰞝 md bus articulated front
+glyph 󰣊 md bus clock
+glyph 󰞞 md bus double decker
+glyph 󱤝 md bus electric
+glyph 󱈒 md bus marker
+glyph 󰼿 md bus multiple
+glyph 󰞟 md bus school
+glyph 󰞠 md bus side
+glyph 󱀒 md bus stop
+glyph 󱀓 md bus stop covered
+glyph 󱀔 md bus stop uncovered
+glyph 󱖉 md butterfly
+glyph 󱖊 md butterfly outline
+glyph 󱢌 md cabin a frame
+glyph 󱎔 md cable data
+glyph 󰃨 md cached
+glyph 󰶵 md cactus
+glyph 󰃩 md cake
+glyph 󰃪 md cake layered
+glyph 󰃫 md cake variant
+glyph 󱟰 md cake variant outline
+glyph 󰃬 md calculator
+glyph 󰪚 md calculator variant
+glyph 󱖦 md calculator variant outline
+glyph 󰃭 md calendar
+glyph 󰻗 md calendar account
+glyph 󰻘 md calendar account outline
+glyph 󰨱 md calendar alert
+glyph 󱄴 md calendar arrow left
+glyph 󱄵 md calendar arrow right
+glyph 󰃮 md calendar blank
+glyph 󱁳 md calendar blank multiple
+glyph 󰭦 md calendar blank outline
+glyph 󰃯 md calendar check
+glyph 󰱄 md calendar check outline
+glyph 󰃰 md calendar clock
+glyph 󱛡 md calendar clock outline
+glyph 󱢝 md calendar collapse horizontal
+glyph 󱕻 md calendar cursor
+glyph 󰢧 md calendar edit
+glyph 󱙬 md calendar end
+glyph 󱢞 md calendar expand horizontal
+glyph 󰬤 md calendar export
+glyph 󰧒 md calendar heart
+glyph 󰬥 md calendar import
+glyph 󱙁 md calendar lock
+glyph 󱙂 md calendar lock outline
+glyph 󰵜 md calendar minus
+glyph 󰸗 md calendar month
+glyph 󰸘 md calendar month outline
+glyph 󰃱 md calendar multiple
+glyph 󰃲 md calendar multiple check
+glyph 󰨲 md calendar multiselect
+glyph 󰭧 md calendar outline
+glyph 󰃳 md calendar plus
+glyph 󰚒 md calendar question
+glyph 󰙹 md calendar range
+glyph 󰭨 md calendar range outline
+glyph 󰇡 md calendar refresh
+glyph 󰈃 md calendar refresh outline
+glyph 󰃴 md calendar remove
+glyph 󰱅 md calendar remove outline
+glyph 󰥌 md calendar search
+glyph 󰧓 md calendar star
+glyph 󱙭 md calendar start
+glyph 󰺎 md calendar sync
+glyph 󰺏 md calendar sync outline
+glyph 󰃵 md calendar text
+glyph 󰱆 md calendar text outline
+glyph 󰃶 md calendar today
+glyph 󱨰 md calendar today outline
+glyph 󰨳 md calendar week
+glyph 󰨴 md calendar week begin
+glyph 󱨱 md calendar week begin outline
+glyph 󱨲 md calendar week end
+glyph 󰻙 md calendar weekend
+glyph 󱨳 md calendar week end outline
+glyph 󰻚 md calendar weekend outline
+glyph 󱨴 md calendar week outline
+glyph 󰃷 md call made
+glyph 󰃸 md call merge
+glyph 󰃹 md call missed
+glyph 󰃺 md call received
+glyph 󰃻 md call split
+glyph 󰃼 md camcorder
+glyph 󰃿 md camcorder off
+glyph 󰄀 md camera
+glyph 󰣋 md camera account
+glyph 󰚓 md camera burst
+glyph 󰭩 md camera control
+glyph 󱡱 md camera document
+glyph 󱡲 md camera document off
+glyph 󰄁 md camera enhance
+glyph 󰭪 md camera enhance outline
+glyph 󱗙 md camera flip
+glyph 󱗚 md camera flip outline
+glyph 󰄂 md camera front
+glyph 󰄃 md camera front variant
+glyph 󰞡 md camera gopro
+glyph 󰣌 md camera image
+glyph 󰄄 md camera iris
+glyph 󱨔 md camera lock
+glyph 󱨕 md camera lock outline
+glyph 󱦧 md camera marker
+glyph 󱦨 md camera marker outline
+glyph 󰞢 md camera metering center
+glyph 󰞣 md camera metering matrix
+glyph 󰞤 md camera metering partial
+glyph 󰞥 md camera metering spot
+glyph 󰗟 md camera off
+glyph 󱦿 md camera off outline
+glyph 󰵝 md camera outline
+glyph 󰄅 md camera party mode
+glyph 󰻛 md camera plus
+glyph 󰻜 md camera plus outline
+glyph 󰄆 md camera rear
+glyph 󰄇 md camera rear variant
+glyph 󰸙 md camera retake
+glyph 󰸚 md camera retake outline
+glyph 󰄈 md camera switch
+glyph 󰡊 md camera switch outline
+glyph 󰄉 md camera timer
+glyph 󰶶 md camera wireless
+glyph 󰶷 md camera wireless outline
+glyph 󰻝 md campfire
+glyph 󰜺 md cancel
+glyph 󱟒 md candelabra
+glyph 󱟓 md candelabra fire
+glyph 󰗢 md candle
+glyph 󱥰 md candy
+glyph 󰄊 md candycane
+glyph 󱥱 md candy off
+glyph 󱥲 md candy off outline
+glyph 󱥳 md candy outline
+glyph 󰞦 md cannabis
+glyph 󱙮 md cannabis off
+glyph 󰪛 md caps lock
+glyph 󰄋 md car
+glyph 󱀕 md car 2 plus
+glyph 󱀖 md car 3 plus
+glyph 󱓀 md carabiner
+glyph 󱎲 md car arrow left
+glyph 󱎳 md car arrow right
+glyph 󰞭 md caravan
+glyph 󰸛 md car back
+glyph 󰄌 md car battery
+glyph 󰱇 md car brake abs
+glyph 󰱈 md car brake alert
+glyph 󱤉 md car brake fluid level
+glyph 󰵞 md car brake hold
+glyph 󱤊 md car brake low pressure
+glyph 󰵟 md car brake parking
+glyph 󱀗 md car brake retarder
+glyph 󱤋 md car brake temperature
+glyph 󱤌 md car brake worn linings
+glyph 󰾣 md car child seat
+glyph 󱥴 md car clock
+glyph 󱀘 md car clutch
+glyph 󱏌 md car cog
+glyph 󰄍 md car connected
+glyph 󰞧 md car convertible
+glyph 󱀙 md car coolant level
+glyph 󰵠 md car cruise control
+glyph 󰭯 md card
+glyph 󰗒 md card account details
+glyph 󰶫 md card account details outline
+glyph 󰊣 md card account details star
+glyph 󰛛 md card account details star outline
+glyph 󰆎 md card account mail
+glyph 󰺘 md card account mail outline
+glyph 󰺙 md card account phone
+glyph 󰺚 md card account phone outline
+glyph 󰭰 md card bulleted
+glyph 󰭱 md card bulleted off
+glyph 󰭲 md card bulleted off outline
+glyph 󰭳 md card bulleted outline
+glyph 󰭴 md card bulleted settings
+glyph 󰭵 md card bulleted settings outline
+glyph 󰵡 md car defrost front
+glyph 󰵢 md car defrost rear
+glyph 󱘀 md card minus
+glyph 󱘁 md card minus outline
+glyph 󱟱 md card multiple
+glyph 󱟲 md card multiple outline
+glyph 󱘂 md card off
+glyph 󱘃 md card off outline
+glyph 󰭫 md car door
+glyph 󱂝 md car door lock
+glyph 󰭶 md card outline
+glyph 󱇿 md card plus
+glyph 󱈀 md card plus outline
+glyph 󱘄 md card remove
+glyph 󱘅 md card remove outline
+glyph 󰘸 md cards
+glyph 󰣎 md cards club
+glyph 󱢟 md cards club outline
+glyph 󰣏 md cards diamond
+glyph 󱀝 md cards diamond outline
+glyph 󱁴 md card search
+glyph 󱁵 md card search outline
+glyph 󰘹 md cards outline
+glyph 󱢡 md cards playing
+glyph 󱢢 md cards playing club
+glyph 󱢣 md cards playing club multiple
+glyph 󱢤 md cards playing club multiple outline
+glyph 󱢥 md cards playing club outline
+glyph 󱢦 md cards playing diamond
+glyph 󱢧 md cards playing diamond multiple
+glyph 󱢨 md cards playing diamond multiple outline
+glyph 󱢩 md cards playing diamond outline
+glyph 󱢪 md cards playing heart
+glyph 󱢫 md cards playing heart multiple
+glyph 󱢬 md cards playing heart multiple outline
+glyph 󱢭 md cards playing heart outline
+glyph 󰘺 md cards playing outline
+glyph 󱢮 md cards playing spade
+glyph 󱢯 md cards playing spade multiple
+glyph 󱢰 md cards playing spade multiple outline
+glyph 󱢱 md cards playing spade outline
+glyph 󰣑 md cards spade
+glyph 󱢲 md cards spade outline
+glyph 󰛇 md cards variant
+glyph 󰭷 md card text
+glyph 󰭸 md card text outline
+glyph 󰭬 md car electric
+glyph 󱖵 md car electric outline
+glyph 󱘏 md car emergency
+glyph 󰱉 md car esp
+glyph 󰞨 md car estate
+glyph 󰞩 md car hatchback
+glyph 󱆾 md car info
+glyph 󰭭 md car key
+glyph 󱔭 md car lifted pickup
+glyph 󱤍 md car light alert
+glyph 󰱊 md car light dimmed
+glyph 󰱋 md car light fog
+glyph 󰱌 md car light high
+glyph 󰣍 md car limousine
+glyph 󰭮 md car multiple
+glyph 󰸜 md car off
+glyph 󱓭 md car outline
+glyph 󰵣 md car parking lights
+glyph 󰞪 md car pickup
+glyph 󰄏 md carrot
+glyph 󰾤 md car seat
+glyph 󰾥 md car seat cooler
+glyph 󰾦 md car seat heater
+glyph 󱡹 md car select
+glyph 󱏍 md car settings
+glyph 󰽀 md car shift pattern
+glyph 󰞫 md car side
+glyph 󱤎 md car speed limiter
+glyph 󰞬 md car sports
+glyph 󰄐 md cart
+glyph 󰵦 md cart arrow down
+glyph 󰱎 md cart arrow right
+glyph 󰵧 md cart arrow up
+glyph 󱗪 md cart check
+glyph 󱣠 md cart heart
+glyph 󰱍 md car tire alert
+glyph 󰵨 md cart minus
+glyph 󰙫 md cart off
+glyph 󰄑 md cart outline
+glyph 󰄒 md cart plus
+glyph 󰵤 md car traction control
+glyph 󰵩 md cart remove
+glyph 󱀚 md car turbocharger
+glyph 󱗫 md cart variant
+glyph 󰄎 md car wash
+glyph 󱀛 md car windshield
+glyph 󱀜 md car windshield outline
+glyph 󱡸 md car wireless
+glyph 󱠔 md car wrench
+glyph 󰄓 md case sensitive alt
+glyph 󰄔 md cash
+glyph 󰄕 md cash 100
+glyph 󱓮 md cash check
+glyph 󱪑 md cash clock
+glyph 󱡜 md cash fast
+glyph 󱓪 md cash lock
+glyph 󱓫 md cash lock open
+glyph 󰶸 md cash marker
+glyph 󱉠 md cash minus
+glyph 󰄖 md cash multiple
+glyph 󱉡 md cash plus
+glyph 󰪜 md cash refund
+glyph 󰳴 md cash register
+glyph 󱉢 md cash remove
+glyph 󱪒 md cash sync
+glyph 󰧔 md cassette
+glyph 󰄘 md cast
+glyph 󱀞 md cast audio
+glyph 󱝉 md cast audio variant
+glyph 󰄙 md cast connected
+glyph 󰸝 md cast education
+glyph 󰄚 md castle
+glyph 󰞊 md cast off
+glyph 󰀟 md cast variant
+glyph 󰄛 md cat
+glyph 󰞮 md cctv
+glyph 󱡟 md cctv off
+glyph 󱞗 md ceiling fan
+glyph 󱞘 md ceiling fan light
+glyph 󰝩 md ceiling light
+glyph 󱣝 md ceiling light multiple
+glyph 󱣞 md ceiling light multiple outline
+glyph 󱟇 md ceiling light outline
+glyph 󰄜 md cellphone
+glyph 󰧕 md cellphone arrow down
+glyph 󱧅 md cellphone arrow down variant
+glyph 󰄞 md cellphone basic
+glyph 󱎗 md cellphone charging
+glyph 󱟽 md cellphone check
+glyph 󰥑 md cellphone cog
+glyph 󰄟 md cellphone dock
+glyph 󰽁 md cellphone information
+glyph 󰥎 md cellphone key
+glyph 󰄡 md cellphone link
+glyph 󰄢 md cellphone link off
+glyph 󰥏 md cellphone lock
+glyph 󱠺 md cellphone marker
+glyph 󰣓 md cellphone message
+glyph 󱃒 md cellphone message off
+glyph 󰺐 md cellphone nfc
+glyph 󱋘 md cellphone nfc off
+glyph 󰥐 md cellphone off
+glyph 󱀟 md cellphone play
+glyph 󰥍 md cellphone remove
+glyph 󰨵 md cellphone screenshot
+glyph 󰄣 md cellphone settings
+glyph 󰥒 md cellphone sound
+glyph 󰣒 md cellphone text
+glyph 󰠕 md cellphone wireless
+glyph 󱄚 md centos
+glyph 󰄤 md certificate
+glyph 󱆈 md certificate outline
+glyph 󰽈 md chair rolling
+glyph 󰄥 md chair school
+glyph 󱞓 md chandelier
+glyph 󰱏 md charity
+glyph 󰄦 md chart arc
+glyph 󰄧 md chart areaspline
+glyph 󰺑 md chart areaspline variant
+glyph 󰄨 md chart bar
+glyph 󰝪 md chart bar stacked
+glyph 󰱐 md chart bell curve
+glyph 󰾧 md chart bell curve cumulative
+glyph 󱕍 md chart box
+glyph 󱕎 md chart box outline
+glyph 󱕏 md chart box plus outline
+glyph 󰗣 md chart bubble
+glyph 󰞯 md chart donut
+glyph 󰞰 md chart donut variant
+glyph 󰙬 md chart gantt
+glyph 󰄩 md chart histogram
+glyph 󰄪 md chart line
+glyph 󰝫 md chart line stacked
+glyph 󰞱 md chart line variant
+glyph 󰣔 md chart multiline
+glyph 󱈓 md chart multiple
+glyph 󰄫 md chart pie
+glyph 󱎀 md chart ppf
+glyph 󱇟 md chart sankey
+glyph 󱇠 md chart sankey variant
+glyph 󰺒 md chart scatter plot
+glyph 󰙭 md chart scatter plot hexbin
+glyph 󰙮 md chart timeline
+glyph 󰺓 md chart timeline variant
+glyph 󱖶 md chart timeline variant shimmer
+glyph 󰺔 md chart tree
+glyph 󱤘 md chart waterfall
+glyph 󰭹 md chat
+glyph 󰭺 md chat alert
+glyph 󱋉 md chat alert outline
+glyph 󱐐 md chat minus
+glyph 󱐓 md chat minus outline
+glyph 󰻞 md chat outline
+glyph 󱐏 md chat plus
+glyph 󱐒 md chat plus outline
+glyph 󰭻 md chat processing
+glyph 󱋊 md chat processing outline
+glyph 󱜸 md chat question
+glyph 󱜹 md chat question outline
+glyph 󱐑 md chat remove
+glyph 󱐔 md chat remove outline
+glyph 󱋑 md chat sleep
+glyph 󱋒 md chat sleep outline
+glyph 󰄬 md check
+glyph 󰄭 md check all
+glyph 󰸞 md check bold
+glyph 󰪝 md checkbook
+glyph 󰄮 md checkbox blank
+glyph 󱅶 md checkbox blank badge
+glyph 󰄗 md checkbox blank badge outline
+glyph 󰄯 md checkbox blank circle
+glyph 󰄰 md checkbox blank circle outline
+glyph 󱋬 md checkbox blank off
+glyph 󱋭 md checkbox blank off outline
+glyph 󰄱 md checkbox blank outline
+glyph 󰡖 md checkbox intermediate
+glyph 󰄲 md checkbox marked
+glyph 󰄳 md checkbox marked circle
+glyph 󰄴 md checkbox marked circle outline
+glyph 󱤧 md checkbox marked circle plus outline
+glyph 󰄵 md checkbox marked outline
+glyph 󰄶 md checkbox multiple blank
+glyph 󰘻 md checkbox multiple blank circle
+glyph 󰘼 md checkbox multiple blank circle outline
+glyph 󰄷 md checkbox multiple blank outline
+glyph 󰄸 md checkbox multiple marked
+glyph 󰘽 md checkbox multiple marked circle
+glyph 󰘾 md checkbox multiple marked circle outline
+glyph 󰄹 md checkbox multiple marked outline
+glyph 󰱑 md checkbox multiple outline
+glyph 󰱒 md checkbox outline
+glyph 󰗠 md check circle
+glyph 󰗡 md check circle outline
+glyph 󰞑 md check decagram
+glyph 󱝀 md check decagram outline
+glyph 󰄺 md checkerboard
+glyph 󱈂 md checkerboard minus
+glyph 󱈁 md checkerboard plus
+glyph 󱈃 md checkerboard remove
+glyph 󰱓 md check network
+glyph 󰱔 md check network outline
+glyph 󰡕 md check outline
+glyph 󰸟 md check underline
+glyph 󰸠 md check underline circle
+glyph 󰸡 md check underline circle outline
+glyph 󱊹 md cheese
+glyph 󱏮 md cheese off
+glyph 󰭼 md chef hat
+glyph 󰄻 md chemical weapon
+glyph 󰡜 md chess bishop
+glyph 󰡗 md chess king
+glyph 󰡘 md chess knight
+glyph 󰡙 md chess pawn
+glyph 󰡚 md chess queen
+glyph 󰡛 md chess rook
+glyph 󰄼 md chevron double down
+glyph 󰄽 md chevron double left
+glyph 󰄾 md chevron double right
+glyph 󰄿 md chevron double up
+glyph 󰅀 md chevron down
+glyph 󰧖 md chevron down box
+glyph 󰧗 md chevron down box outline
+glyph 󰬦 md chevron down circle
+glyph 󰬧 md chevron down circle outline
+glyph 󰅁 md chevron left
+glyph 󰧘 md chevron left box
+glyph 󰧙 md chevron left box outline
+glyph 󰬨 md chevron left circle
+glyph 󰬩 md chevron left circle outline
+glyph 󰅂 md chevron right
+glyph 󰧚 md chevron right box
+glyph 󰧛 md chevron right box outline
+glyph 󰬪 md chevron right circle
+glyph 󰬫 md chevron right circle outline
+glyph 󰶹 md chevron triple down
+glyph 󰶺 md chevron triple left
+glyph 󰶻 md chevron triple right
+glyph 󰶼 md chevron triple up
+glyph 󰅃 md chevron up
+glyph 󰧜 md chevron up box
+glyph 󰧝 md chevron up box outline
+glyph 󰬬 md chevron up circle
+glyph 󰬭 md chevron up circle outline
+glyph 󱟪 md chili alert
+glyph 󱟫 md chili alert outline
+glyph 󰞲 md chili hot
+glyph 󱟬 md chili hot outline
+glyph 󰞳 md chili medium
+glyph 󱟭 md chili medium outline
+glyph 󰞴 md chili mild
+glyph 󱟮 md chili mild outline
+glyph 󱑧 md chili off
+glyph 󱟯 md chili off outline
+glyph 󰘚 md chip
+glyph 󰅄 md church
+glyph 󱆉 md cigar
+glyph 󱐛 md cigar off
+glyph 󱗜 md circle box
+glyph 󱗝 md circle box outline
+glyph 󰺕 md circle double
+glyph 󰣕 md circle edit outline
+glyph 󰺖 md circle expand
+glyph 󱎕 md circle half
+glyph 󱎖 md circle half full
+glyph 󰧞 md circle medium
+glyph 󰬸 md circle multiple
+glyph 󰚕 md circle multiple outline
+glyph 󱃓 md circle off outline
+glyph 󱡓 md circle opacity
+glyph 󰪞 md circle slice 1
+glyph 󰪟 md circle slice 2
+glyph 󰪠 md circle slice 3
+glyph 󰪡 md circle slice 4
+glyph 󰪢 md circle slice 5
+glyph 󰪣 md circle slice 6
+glyph 󰪤 md circle slice 7
+glyph 󰪥 md circle slice 8
+glyph 󰧟 md circle small
+glyph 󰸢 md circular saw
+glyph 󰅆 md city
+glyph 󰨶 md city variant
+glyph 󰨷 md city variant outline
+glyph 󰅇 md clipboard
+glyph 󰅈 md clipboard account
+glyph 󰱕 md clipboard account outline
+glyph 󰅉 md clipboard alert
+glyph 󰳷 md clipboard alert outline
+glyph 󰅊 md clipboard arrow down
+glyph 󰱖 md clipboard arrow down outline
+glyph 󰅋 md clipboard arrow left
+glyph 󰳸 md clipboard arrow left outline
+glyph 󰳹 md clipboard arrow right
+glyph 󰳺 md clipboard arrow right outline
+glyph 󰱗 md clipboard arrow up
+glyph 󰱘 md clipboard arrow up outline
+glyph 󰅎 md clipboard check
+glyph 󱉣 md clipboard check multiple
+glyph 󱉤 md clipboard check multiple outline
+glyph 󰢨 md clipboard check outline
+glyph 󱛢 md clipboard clock
+glyph 󱛣 md clipboard clock outline
+glyph 󱓥 md clipboard edit
+glyph 󱓦 md clipboard edit outline
+glyph 󱉥 md clipboard file
+glyph 󱉦 md clipboard file outline
+glyph 󰛈 md clipboard flow
+glyph 󱄗 md clipboard flow outline
+glyph 󱃔 md clipboard list
+glyph 󱃕 md clipboard list outline
+glyph 󱘘 md clipboard minus
+glyph 󱘙 md clipboard minus outline
+glyph 󱉧 md clipboard multiple
+glyph 󱉨 md clipboard multiple outline
+glyph 󱘚 md clipboard off
+glyph 󱘛 md clipboard off outline
+glyph 󰅌 md clipboard outline
+glyph 󰱙 md clipboard play
+glyph 󱉩 md clipboard play multiple
+glyph 󱉪 md clipboard play multiple outline
+glyph 󰱚 md clipboard play outline
+glyph 󰝑 md clipboard plus
+glyph 󱌟 md clipboard plus outline
+glyph 󰡝 md clipboard pulse
+glyph 󰡞 md clipboard pulse outline
+glyph 󱘜 md clipboard remove
+glyph 󱘝 md clipboard remove outline
+glyph 󱘞 md clipboard search
+glyph 󱘟 md clipboard search outline
+glyph 󰅍 md clipboard text
+glyph 󱣹 md clipboard text clock
+glyph 󱣺 md clipboard text clock outline
+glyph 󱉫 md clipboard text multiple
+glyph 󱉬 md clipboard text multiple outline
+glyph 󱘠 md clipboard text off
+glyph 󱘡 md clipboard text off outline
+glyph 󰨸 md clipboard text outline
+glyph 󰱛 md clipboard text play
+glyph 󰱜 md clipboard text play outline
+glyph 󱘢 md clipboard text search
+glyph 󱘣 md clipboard text search outline
+glyph 󰅏 md clippy
+glyph 󰥔 md clock
+glyph 󰥕 md clock alert
+glyph 󰗎 md clock alert outline
+glyph 󰾨 md clock check
+glyph 󰾩 md clock check outline
+glyph 󰺗 md clock digital
+glyph 󱦺 md clock edit
+glyph 󱦻 md clock edit outline
+glyph 󰅑 md clock end
+glyph 󰅒 md clock fast
+glyph 󰅓 md clock in
+glyph 󱡣 md clock minus
+glyph 󱡤 md clock minus outline
+glyph 󰅔 md clock out
+glyph 󰅐 md clock outline
+glyph 󱡡 md clock plus
+glyph 󱡢 md clock plus outline
+glyph 󱡥 md clock remove
+glyph 󱡦 md clock remove outline
+glyph 󰅕 md clock start
+glyph 󱑆 md clock time eight
+glyph 󱑒 md clock time eight outline
+glyph 󱑉 md clock time eleven
+glyph 󱑕 md clock time eleven outline
+glyph 󱑃 md clock time five
+glyph 󱑏 md clock time five outline
+glyph 󱑂 md clock time four
+glyph 󱑎 md clock time four outline
+glyph 󱑇 md clock time nine
+glyph 󱑓 md clock time nine outline
+glyph 󱐿 md clock time one
+glyph 󱑋 md clock time one outline
+glyph 󱑅 md clock time seven
+glyph 󱑑 md clock time seven outline
+glyph 󱑄 md clock time six
+glyph 󱑐 md clock time six outline
+glyph 󱑈 md clock time ten
+glyph 󱑔 md clock time ten outline
+glyph 󱑁 md clock time three
+glyph 󱑍 md clock time three outline
+glyph 󱑊 md clock time twelve
+glyph 󱑖 md clock time twelve outline
+glyph 󱑀 md clock time two
+glyph 󱑌 md clock time two outline
+glyph 󰅖 md close
+glyph 󰅗 md close box
+glyph 󰱝 md close box multiple
+glyph 󰱞 md close box multiple outline
+glyph 󰅘 md close box outline
+glyph 󰅙 md close circle
+glyph 󰘪 md close circle multiple
+glyph 󰢃 md close circle multiple outline
+glyph 󰅚 md close circle outline
+glyph 󰅞 md closed caption
+glyph 󰶽 md closed caption outline
+glyph 󰅛 md close network
+glyph 󰱟 md close network outline
+glyph 󰅜 md close octagon
+glyph 󰅝 md close octagon outline
+glyph 󰛉 md close outline
+glyph 󱎘 md close thick
+glyph 󰅟 md cloud
+glyph 󰧠 md cloud alert
+glyph 󰞵 md cloud braces
+glyph 󰅠 md cloud check
+glyph 󱋌 md cloud check outline
+glyph 󰅡 md cloud circle
+glyph 󰅢 md cloud download
+glyph 󰭽 md cloud download outline
+glyph 󱇱 md cloud lock
+glyph 󱇲 md cloud lock outline
+glyph 󰅤 md cloud off outline
+glyph 󰅣 md cloud outline
+glyph 󱨵 md cloud percent
+glyph 󱨶 md cloud percent outline
+glyph 󰅥 md cloud print
+glyph 󰅦 md cloud print outline
+glyph 󰨹 md cloud question
+glyph 󰔪 md cloud refresh
+glyph 󰥖 md cloud search
+glyph 󰥗 md cloud search outline
+glyph 󰘿 md cloud sync
+glyph 󱋖 md cloud sync outline
+glyph 󰞶 md cloud tags
+glyph 󰅧 md cloud upload
+glyph 󰭾 md cloud upload outline
+glyph 󰠖 md clover
+glyph 󱀠 md coach lamp
+glyph 󱨷 md coach lamp variant
+glyph 󱂞 md coat rack
+glyph 󰅨 md code array
+glyph 󰅩 md code braces
+glyph 󱃖 md code braces box
+glyph 󰅪 md code brackets
+glyph 󰅫 md code equal
+glyph 󰅬 md code greater than
+glyph 󰅭 md code greater than or equal
+glyph 󰘦 md code json
+glyph 󰅮 md code less than
+glyph 󰅯 md code less than or equal
+glyph 󰅰 md code not equal
+glyph 󰅱 md code not equal variant
+glyph 󰅲 md code parentheses
+glyph 󱃗 md code parentheses box
+glyph 󰅵 md codepen
+glyph 󰅳 md code string
+glyph 󰅴 md code tags
+glyph 󰚔 md code tags check
+glyph 󰅶 md coffee
+glyph 󱂟 md coffee maker
+glyph 󱤱 md coffee maker check
+glyph 󱤲 md coffee maker check outline
+glyph 󱠛 md coffee maker outline
+glyph 󰾪 md coffee off
+glyph 󰾫 md coffee off outline
+glyph 󰛊 md coffee outline
+glyph 󰅷 md coffee to go
+glyph 󱌎 md coffee to go outline
+glyph 󰭿 md coffin
+glyph 󰒓 md cog
+glyph 󰒔 md cog box
+glyph 󱇝 md cog clockwise
+glyph 󱇞 md cog counterclockwise
+glyph 󱏎 md cog off
+glyph 󱏏 md cog off outline
+glyph 󰢻 md cog outline
+glyph 󱤳 md cog pause
+glyph 󱤴 md cog pause outline
+glyph 󱤵 md cog play
+glyph 󱤶 md cog play outline
+glyph 󱑞 md cog refresh
+glyph 󱑟 md cog refresh outline
+glyph 󰣖 md cogs
+glyph 󱤷 md cog stop
+glyph 󱤸 md cog stop outline
+glyph 󱑠 md cog sync
+glyph 󱑡 md cog sync outline
+glyph 󱁛 md cog transfer
+glyph 󱁜 md cog transfer outline
+glyph 󰙀 md collage
+glyph 󰪦 md collapse all
+glyph 󰪧 md collapse all outline
+glyph 󰅹 md color helper
+glyph 󰸣 md comma
+glyph 󰸫 md comma box
+glyph 󰸤 md comma box outline
+glyph 󰸥 md comma circle
+glyph 󰸦 md comma circle outline
+glyph 󰅺 md comment
+glyph 󰅻 md comment account
+glyph 󰅼 md comment account outline
+glyph 󰅽 md comment alert
+glyph 󰅾 md comment alert outline
+glyph 󰧡 md comment arrow left
+glyph 󰧢 md comment arrow left outline
+glyph 󰧣 md comment arrow right
+glyph 󰧤 md comment arrow right outline
+glyph 󱖮 md comment bookmark
+glyph 󱖯 md comment bookmark outline
+glyph 󰅿 md comment check
+glyph 󰆀 md comment check outline
+glyph 󱆿 md comment edit
+glyph 󱋄 md comment edit outline
+glyph 󰨺 md comment eye
+glyph 󰨻 md comment eye outline
+glyph 󱖰 md comment flash
+glyph 󱖱 md comment flash outline
+glyph 󱗟 md comment minus
+glyph 󱗠 md comment minus outline
+glyph 󰡟 md comment multiple
+glyph 󰆁 md comment multiple outline
+glyph 󱗡 md comment off
+glyph 󱗢 md comment off outline
+glyph 󰆂 md comment outline
+glyph 󰧥 md comment plus
+glyph 󰆃 md comment plus outline
+glyph 󰆄 md comment processing
+glyph 󰆅 md comment processing outline
+glyph 󰠗 md comment question
+glyph 󰆆 md comment question outline
+glyph 󱀡 md comment quote
+glyph 󱀢 md comment quote outline
+glyph 󰗞 md comment remove
+glyph 󰆇 md comment remove outline
+glyph 󰨼 md comment search
+glyph 󰨽 md comment search outline
+glyph 󰆈 md comment text
+glyph 󰡠 md comment text multiple
+glyph 󰡡 md comment text multiple outline
+glyph 󰆉 md comment text outline
+glyph 󰆊 md compare
+glyph 󱒒 md compare horizontal
+glyph 󱢳 md compare remove
+glyph 󱒓 md compare vertical
+glyph 󰆋 md compass
+glyph 󰮀 md compass off
+glyph 󰮁 md compass off outline
+glyph 󰆌 md compass outline
+glyph 󱎂 md compass rose
+glyph 󱨸 md compost
+glyph 󱥌 md cone
+glyph 󱥍 md cone off
+glyph 󱘖 md connection
+glyph 󰆍 md console
+glyph 󰞷 md console line
+glyph 󰢩 md console network
+glyph 󰱠 md console network outline
+glyph 󱃘 md consolidate
+glyph 󰵪 md contactless payment
+glyph 󰌡 md contactless payment circle
+glyph 󰐈 md contactless payment circle outline
+glyph 󰛋 md contacts
+glyph 󰖸 md contacts outline
+glyph 󰨾 md contain
+glyph 󰨿 md contain end
+glyph 󰩀 md contain start
+glyph 󰆏 md content copy
+glyph 󰆐 md content cut
+glyph 󰆑 md content duplicate
+glyph 󰆒 md content paste
+glyph 󰆓 md content save
+glyph 󰽂 md content save alert
+glyph 󰽃 md content save alert outline
+glyph 󰆔 md content save all
+glyph 󰽄 md content save all outline
+glyph 󱣪 md content save check
+glyph 󱣫 md content save check outline
+glyph 󱑛 md content save cog
+glyph 󱑜 md content save cog outline
+glyph 󰳻 md content save edit
+glyph 󰳼 md content save edit outline
+glyph 󰸧 md content save move
+glyph 󰸨 md content save move outline
+glyph 󱙃 md content save off
+glyph 󱙄 md content save off outline
+glyph 󰠘 md content save outline
+glyph 󰘛 md content save settings
+glyph 󰬮 md content save settings outline
+glyph 󰆕 md contrast
+glyph 󰆖 md contrast box
+glyph 󰆗 md contrast circle
+glyph 󰮂 md controller classic
+glyph 󰮃 md controller classic outline
+glyph 󰆘 md cookie
+glyph 󱛐 md cookie alert
+glyph 󱛑 md cookie alert outline
+glyph 󱛒 md cookie check
+glyph 󱛓 md cookie check outline
+glyph 󱛤 md cookie clock
+glyph 󱛥 md cookie clock outline
+glyph 󱛔 md cookie cog
+glyph 󱛕 md cookie cog outline
+glyph 󱛦 md cookie edit
+glyph 󱛧 md cookie edit outline
+glyph 󱛨 md cookie lock
+glyph 󱛩 md cookie lock outline
+glyph 󱛚 md cookie minus
+glyph 󱛛 md cookie minus outline
+glyph 󱛪 md cookie off
+glyph 󱛫 md cookie off outline
+glyph 󱛞 md cookie outline
+glyph 󱛖 md cookie plus
+glyph 󱛗 md cookie plus outline
+glyph 󱛬 md cookie refresh
+glyph 󱛭 md cookie refresh outline
+glyph 󱛘 md cookie remove
+glyph 󱛙 md cookie remove outline
+glyph 󱛜 md cookie settings
+glyph 󱛝 md cookie settings outline
+glyph 󰏈 md coolant temperature
+glyph 󱤹 md copyleft
+glyph 󰗦 md copyright
+glyph 󰥘 md cordova
+glyph 󰞸 md corn
+glyph 󱏯 md corn off
+glyph 󱑹 md cosine wave
+glyph 󰆙 md counter
+glyph 󱠜 md countertop
+glyph 󱠝 md countertop outline
+glyph 󰆚 md cow
+glyph 󱣼 md cow off
+glyph 󰻟 md cpu 32 bit
+glyph 󰻠 md cpu 64 bit
+glyph 󱦋 md cradle
+glyph 󱦑 md cradle outline
+glyph 󰡢 md crane
+glyph 󰙴 md creation
+glyph 󰵫 md creative commons
+glyph 󰿯 md credit card
+glyph 󱏐 md credit card check
+glyph 󱏑 md credit card check outline
+glyph 󱤏 md credit card chip
+glyph 󱤐 md credit card chip outline
+glyph 󰻡 md credit card clock
+glyph 󰻢 md credit card clock outline
+glyph 󱟗 md credit card edit
+glyph 󱟘 md credit card edit outline
+glyph 󱤑 md credit card fast
+glyph 󱤒 md credit card fast outline
+glyph 󱣧 md credit card lock
+glyph 󱣨 md credit card lock outline
+glyph 󰚨 md credit card marker
+glyph 󰶾 md credit card marker outline
+glyph 󰾬 md credit card minus
+glyph 󰾭 md credit card minus outline
+glyph 󰿰 md credit card multiple
+glyph 󰆜 md credit card multiple outline
+glyph 󰿱 md credit card off
+glyph 󰗤 md credit card off outline
+glyph 󰆛 md credit card outline
+glyph 󰿲 md credit card plus
+glyph 󰙶 md credit card plus outline
+glyph 󱙅 md credit card refresh
+glyph 󱙆 md credit card refresh outline
+glyph 󰿳 md credit card refund
+glyph 󰪨 md credit card refund outline
+glyph 󰾮 md credit card remove
+glyph 󰾯 md credit card remove outline
+glyph 󰿴 md credit card scan
+glyph 󰆝 md credit card scan outline
+glyph 󱙇 md credit card search
+glyph 󱙈 md credit card search outline
+glyph 󰿵 md credit card settings
+glyph 󰣗 md credit card settings outline
+glyph 󱙉 md credit card sync
+glyph 󱙊 md credit card sync outline
+glyph 󰠂 md credit card wireless
+glyph 󰕺 md credit card wireless off
+glyph 󰕻 md credit card wireless off outline
+glyph 󰵬 md credit card wireless outline
+glyph 󰵭 md cricket
+glyph 󰆞 md crop
+glyph 󰆟 md crop free
+glyph 󰆠 md crop landscape
+glyph 󰆡 md crop portrait
+glyph 󰚖 md crop rotate
+glyph 󰆢 md crop square
+glyph 󰥓 md cross
+glyph 󰳭 md cross bolnisi
+glyph 󰳵 md cross celtic
+glyph 󰆣 md crosshairs
+glyph 󰆤 md crosshairs gps
+glyph 󰽅 md crosshairs off
+glyph 󱄶 md crosshairs question
+glyph 󰳶 md cross outline
+glyph 󱥵 md crowd
+glyph 󰆥 md crown
+glyph 󱟜 md crown circle
+glyph 󱟝 md crown circle outline
+glyph 󱇐 md crown outline
+glyph 󰥙 md cryengine
+glyph 󰬯 md crystal ball
+glyph 󰆦 md cube
+glyph 󱐜 md cube off
+glyph 󱐝 md cube off outline
+glyph 󰆧 md cube outline
+glyph 󰮄 md cube scan
+glyph 󰆨 md cube send
+glyph 󰆩 md cube unfolded
+glyph 󰆪 md cup
+glyph 󰽆 md cupboard
+glyph 󰽇 md cupboard outline
+glyph 󰥚 md cupcake
+glyph 󰗥 md cup off
+glyph 󱍽 md cup off outline
+glyph 󱌏 md cup outline
+glyph 󰆫 md cup water
+glyph 󰡣 md curling
+glyph 󰡤 md currency bdt
+glyph 󰮅 md currency brl
+glyph 󰆬 md currency btc
+glyph 󰞺 md currency cny
+glyph 󰞻 md currency eth
+glyph 󰆭 md currency eur
+glyph 󱌕 md currency eur off
+glyph 󱨹 md currency fra
+glyph 󰆮 md currency gbp
+glyph 󰱡 md currency ils
+glyph 󰆯 md currency inr
+glyph 󰞼 md currency jpy
+glyph 󰞽 md currency krw
+glyph 󰡥 md currency kzt
+glyph 󱔒 md currency mnt
+glyph 󰆰 md currency ngn
+glyph 󰧦 md currency php
+glyph 󰺜 md currency rial
+glyph 󰆱 md currency rub
+glyph 󱥶 md currency rupee
+glyph 󰞾 md currency sign
+glyph 󰆲 md currency try
+glyph 󰞿 md currency twd
+glyph 󰇁 md currency usd
+glyph 󰙺 md currency usd off
+glyph 󱒀 md current ac
+glyph 󰥜 md current dc
+glyph 󰇀 md cursor default
+glyph 󰳽 md cursor default click
+glyph 󰳾 md cursor default click outline
+glyph 󱄧 md cursor default gesture
+glyph 󱄨 md cursor default gesture outline
+glyph 󰆿 md cursor default outline
+glyph 󰆾 md cursor move
+glyph 󰆽 md cursor pointer
+glyph 󰗧 md cursor text
+glyph 󱡆 md curtains
+glyph 󱡇 md curtains closed
+glyph 󱥎 md cylinder
+glyph 󱥏 md cylinder off
+glyph 󱗻 md dance ballroom
+glyph 󱕸 md dance pole
+glyph 󰆼 md database
+glyph 󱘺 md database alert
+glyph 󱘤 md database alert outline
+glyph 󱘻 md database arrow down
+glyph 󱘥 md database arrow down outline
+glyph 󱘼 md database arrow left
+glyph 󱘦 md database arrow left outline
+glyph 󱘽 md database arrow right
+glyph 󱘧 md database arrow right outline
+glyph 󱘾 md database arrow up
+glyph 󱘨 md database arrow up outline
+glyph 󰪩 md database check
+glyph 󱘩 md database check outline
+glyph 󱘿 md database clock
+glyph 󱘪 md database clock outline
+glyph 󱙋 md database cog
+glyph 󱙌 md database cog outline
+glyph 󰮆 md database edit
+glyph 󱘫 md database edit outline
+glyph 󰥞 md database export
+glyph 󱘬 md database export outline
+glyph 󱤟 md database eye
+glyph 󱤠 md database eye off
+glyph 󱤡 md database eye off outline
+glyph 󱤢 md database eye outline
+glyph 󰥝 md database import
+glyph 󱘭 md database import outline
+glyph 󰪪 md database lock
+glyph 󱘮 md database lock outline
+glyph 󱋶 md database marker
+glyph 󱘯 md database marker outline
+glyph 󰆻 md database minus
+glyph 󱘰 md database minus outline
+glyph 󱙀 md database off
+glyph 󱘱 md database off outline
+glyph 󱘲 md database outline
+glyph 󰆺 md database plus
+glyph 󱘳 md database plus outline
+glyph 󰗂 md database refresh
+glyph 󱘴 md database refresh outline
+glyph 󰴀 md database remove
+glyph 󱘵 md database remove outline
+glyph 󰡦 md database search
+glyph 󱘶 md database search outline
+glyph 󰴁 md database settings
+glyph 󱘷 md database settings outline
+glyph 󰳿 md database sync
+glyph 󱘸 md database sync outline
+glyph 󱔼 md data matrix
+glyph 󱔽 md data matrix edit
+glyph 󱔾 md data matrix minus
+glyph 󱔿 md data matrix plus
+glyph 󱕀 md data matrix remove
+glyph 󱕁 md data matrix scan
+glyph 󰮇 md deathly hallows
+glyph 󰣘 md death star
+glyph 󰣙 md death star variant
+glyph 󰣚 md debian
+glyph 󰆹 md debug step into
+glyph 󰆸 md debug step out
+glyph 󰆷 md debug step over
+glyph 󰝬 md decagram
+glyph 󰝭 md decagram outline
+glyph 󱂡 md decimal
+glyph 󱂢 md decimal comma
+glyph 󱂣 md decimal comma decrease
+glyph 󱂤 md decimal comma increase
+glyph 󰆶 md decimal decrease
+glyph 󰆵 md decimal increase
+glyph 󰆴 md delete
+glyph 󱂥 md delete alert
+glyph 󱂦 md delete alert outline
+glyph 󰚃 md delete circle
+glyph 󰮈 md delete circle outline
+glyph 󱕖 md delete clock
+glyph 󱕗 md delete clock outline
+glyph 󰛌 md delete empty
+glyph 󰺝 md delete empty outline
+glyph 󰗨 md delete forever
+glyph 󰮉 md delete forever outline
+glyph 󱂧 md delete off
+glyph 󱂨 md delete off outline
+glyph 󰧧 md delete outline
+glyph 󰠙 md delete restore
+glyph 󰗩 md delete sweep
+glyph 󰱢 md delete sweep outline
+glyph 󰆳 md delete variant
+glyph 󰇂 md delta
+glyph 󱈹 md desk
+glyph 󰥟 md desk lamp
+glyph 󰇃 md deskphone
+glyph 󰟀 md desktop classic
+glyph 󰇄 md desktop mac
+glyph 󰧨 md desktop mac dashboard
+glyph 󰇅 md desktop tower
+glyph 󰪫 md desktop tower monitor
+glyph 󰇆 md details
+glyph 󰚗 md developer board
+glyph 󰇇 md deviantart
+glyph 󰾰 md devices
+glyph 󰵮 md dev to
+glyph 󰥋 md dharmachakra
+glyph 󱄦 md diabetes
+glyph 󰘜 md dialpad
+glyph 󰱣 md diameter
+glyph 󰱤 md diameter outline
+glyph 󰱥 md diameter variant
+glyph 󰮊 md diamond
+glyph 󰮋 md diamond outline
+glyph 󰇈 md diamond stone
+glyph 󰇊 md dice 1
+glyph 󱅊 md dice 1 outline
+glyph 󰇋 md dice 2
+glyph 󱅋 md dice 2 outline
+glyph 󰇌 md dice 3
+glyph 󱅌 md dice 3 outline
+glyph 󰇍 md dice 4
+glyph 󱅍 md dice 4 outline
+glyph 󰇎 md dice 5
+glyph 󱅎 md dice 5 outline
+glyph 󰇏 md dice 6
+glyph 󱅏 md dice 6 outline
+glyph 󱅓 md dice d10
+glyph 󰝯 md dice d10 outline
+glyph 󱅔 md dice d12
+glyph 󰡧 md dice d12 outline
+glyph 󱅕 md dice d20
+glyph 󰗪 md dice d20 outline
+glyph 󱅐 md dice d4
+glyph 󰗫 md dice d4 outline
+glyph 󱅑 md dice d6
+glyph 󰗭 md dice d6 outline
+glyph 󱅒 md dice d8
+glyph 󰗬 md dice d8 outline
+glyph 󰝮 md dice multiple
+glyph 󱅖 md dice multiple outline
+glyph 󱈷 md digital ocean
+glyph 󰟁 md dip switch
+glyph 󰇐 md directions
+glyph 󰙁 md directions fork
+glyph 󰗮 md disc
+glyph 󰇑 md disc alert
+glyph 󰙯 md discord
+glyph 󰥠 md disc player
+glyph 󰪬 md dishwasher
+glyph 󱆸 md dishwasher alert
+glyph 󱆹 md dishwasher off
+glyph 󰇒 md disqus
+glyph 󱇉 md distribute horizontal center
+glyph 󱇈 md distribute horizontal left
+glyph 󱇊 md distribute horizontal right
+glyph 󱇋 md distribute vertical bottom
+glyph 󱇌 md distribute vertical center
+glyph 󱇍 md distribute vertical top
+glyph 󱡷 md diversify
+glyph 󱥷 md diving
+glyph 󰶿 md diving flippers
+glyph 󰷀 md diving helmet
+glyph 󰷁 md diving scuba
+glyph 󰷂 md diving scuba flag
+glyph 󰷃 md diving scuba tank
+glyph 󰷄 md diving scuba tank multiple
+glyph 󰷅 md diving snorkel
+glyph 󰇔 md division
+glyph 󰇕 md division box
+glyph 󰩁 md dlna
+glyph 󰚄 md dna
+glyph 󰇖 md dns
+glyph 󰮌 md dns outline
+glyph 󱂩 md dock bottom
+glyph 󰡨 md docker
+glyph 󱂪 md dock left
+glyph 󱂫 md dock right
+glyph 󱔓 md dock top
+glyph 󱂬 md dock window
+glyph 󰩂 md doctor
+glyph 󰩃 md dog
+glyph 󰪭 md dog service
+glyph 󰩄 md dog side
+glyph 󱛮 md dog side off
+glyph 󰚳 md dolby
+glyph 󰺞 md dolly
+glyph 󱢴 md dolphin
+glyph 󰇗 md domain
+glyph 󰵯 md domain off
+glyph 󱂭 md domain plus
+glyph 󱂮 md domain remove
+glyph 󱐞 md dome light
+glyph 󱀣 md domino mask
+glyph 󰟂 md donkey
+glyph 󰠚 md door
+glyph 󱋦 md doorbell
+glyph 󰡩 md doorbell video
+glyph 󰠛 md door closed
+glyph 󱂯 md door closed lock
+glyph 󰠜 md door open
+glyph 󱠞 md door sliding
+glyph 󱠟 md door sliding lock
+glyph 󱠠 md door sliding open
+glyph 󰪮 md dot net
+glyph 󱥸 md dots circle
+glyph 󱗼 md dots grid
+glyph 󱗿 md dots hexagon
+glyph 󰇘 md dots horizontal
+glyph 󰟃 md dots horizontal circle
+glyph 󰮍 md dots horizontal circle outline
+glyph 󱗽 md dots square
+glyph 󱗾 md dots triangle
+glyph 󰇙 md dots vertical
+glyph 󰟄 md dots vertical circle
+glyph 󰮎 md dots vertical circle outline
+glyph 󰇚 md download
+glyph 󱑢 md download box
+glyph 󱑣 md download box outline
+glyph 󱑤 md download circle
+glyph 󱑥 md download circle outline
+glyph 󱌠 md download lock
+glyph 󱌡 md download lock outline
+glyph 󰧩 md download multiple
+glyph 󰛴 md download network
+glyph 󰱦 md download network outline
+glyph 󱂰 md download off
+glyph 󱂱 md download off outline
+glyph 󰮏 md download outline
+glyph 󰇛 md drag
+glyph 󰇜 md drag horizontal
+glyph 󱋰 md drag horizontal variant
+glyph 󰮐 md drag variant
+glyph 󰇝 md drag vertical
+glyph 󱋱 md drag vertical variant
+glyph 󰴂 md drama masks
+glyph 󰽉 md draw
+glyph 󰇞 md drawing
+glyph 󰇟 md drawing box
+glyph 󱦹 md draw pen
+glyph 󰽊 md dresser
+glyph 󰽋 md dresser outline
+glyph 󰇢 md drone
+glyph 󰇣 md dropbox
+glyph 󰇤 md drupal
+glyph 󰇥 md duck
+glyph 󰇦 md dumbbell
+glyph 󰱧 md dump truck
+glyph 󱡏 md earbuds
+glyph 󱡐 md earbuds off
+glyph 󱡑 md earbuds off outline
+glyph 󱡒 md earbuds outline
+glyph 󰟅 md ear hearing
+glyph 󱫮 md ear hearing loop
+glyph 󰩅 md ear hearing off
+glyph 󰇧 md earth
+glyph 󱌑 md earth arrow right
+glyph 󰛍 md earth box
+glyph 󱐇 md earth box minus
+glyph 󰛎 md earth box off
+glyph 󱐆 md earth box plus
+glyph 󱐈 md earth box remove
+glyph 󱐄 md earth minus
+glyph 󰇨 md earth off
+glyph 󱐃 md earth plus
+glyph 󱐅 md earth remove
+glyph 󰪯 md egg
+glyph 󰪰 md egg easter
+glyph 󱡊 md egg fried
+glyph 󱏰 md egg off
+glyph 󱏱 md egg off outline
+glyph 󱏲 md egg outline
+glyph 󱕫 md eiffel tower
+glyph 󰧪 md eight track
+glyph 󰇪 md eject
+glyph 󰮑 md eject outline
+glyph 󰺟 md electric switch
+glyph 󱃙 md electric switch closed
+glyph 󱀤 md electron framework
+glyph 󰟆 md elephant
+glyph 󰇫 md elevation decline
+glyph 󰇬 md elevation rise
+glyph 󰇭 md elevator
+glyph 󱋂 md elevator down
+glyph 󱎁 md elevator passenger
+glyph 󱥹 md elevator passenger off
+glyph 󱥺 md elevator passenger off outline
+glyph 󱥻 md elevator passenger outline
+glyph 󱋁 md elevator up
+glyph 󰺠 md ellipse
+glyph 󰺡 md ellipse outline
+glyph 󰇮 md email
+glyph 󰛏 md email alert
+glyph 󰵂 md email alert outline
+glyph 󰴃 md email box
+glyph 󰪱 md email check
+glyph 󰪲 md email check outline
+glyph 󰻣 md email edit
+glyph 󰻤 md email edit outline
+glyph 󱡯 md email fast
+glyph 󱡰 md email fast outline
+glyph 󰇱 md email lock
+glyph 󰮒 md email mark as unread
+glyph 󰻥 md email minus
+glyph 󰻦 md email minus outline
+glyph 󰻧 md email multiple
+glyph 󰻨 md email multiple outline
+glyph 󰾱 md email newsletter
+glyph 󱏣 md email off
+glyph 󱏤 md email off outline
+glyph 󰇯 md email open
+glyph 󰻩 md email open multiple
+glyph 󰻪 md email open multiple outline
+glyph 󰗯 md email open outline
+glyph 󰇰 md email outline
+glyph 󰧫 md email plus
+glyph 󰧬 md email plus outline
+glyph 󱃚 md email receive
+glyph 󱃛 md email receive outline
+glyph 󱙡 md email remove
+glyph 󱙢 md email remove outline
+glyph 󱥛 md email seal
+glyph 󱥜 md email seal outline
+glyph 󰥡 md email search
+glyph 󰥢 md email search outline
+glyph 󱃜 md email send
+glyph 󱃝 md email send outline
+glyph 󱋇 md email sync
+glyph 󱋈 md email sync outline
+glyph 󰗰 md email variant
+glyph 󰬰 md ember
+glyph 󰚴 md emby
+glyph 󰱨 md emoticon
+glyph 󰱩 md emoticon angry
+glyph 󰱪 md emoticon angry outline
+glyph 󱃞 md emoticon confused
+glyph 󱃟 md emoticon confused outline
+glyph 󰱫 md emoticon cool
+glyph 󰇳 md emoticon cool outline
+glyph 󰱬 md emoticon cry
+glyph 󰱭 md emoticon cry outline
+glyph 󰱮 md emoticon dead
+glyph 󰚛 md emoticon dead outline
+glyph 󰱯 md emoticon devil
+glyph 󰇴 md emoticon devil outline
+glyph 󰱰 md emoticon excited
+glyph 󰚜 md emoticon excited outline
+glyph 󰽌 md emoticon frown
+glyph 󰽍 md emoticon frown outline
+glyph 󰱱 md emoticon happy
+glyph 󰇵 md emoticon happy outline
+glyph 󰱲 md emoticon kiss
+glyph 󰱳 md emoticon kiss outline
+glyph 󱈔 md emoticon lol
+glyph 󱈕 md emoticon lol outline
+glyph 󰱴 md emoticon neutral
+glyph 󰇶 md emoticon neutral outline
+glyph 󰇲 md emoticon outline
+glyph 󰇷 md emoticon poop
+glyph 󰱵 md emoticon poop outline
+glyph 󰱶 md emoticon sad
+glyph 󰇸 md emoticon sad outline
+glyph 󱕼 md emoticon sick
+glyph 󱕽 md emoticon sick outline
+glyph 󰇹 md emoticon tongue
+glyph 󰱷 md emoticon tongue outline
+glyph 󰱸 md emoticon wink
+glyph 󰱹 md emoticon wink outline
+glyph 󰇺 md engine
+glyph 󰩆 md engine off
+glyph 󰩇 md engine off outline
+glyph 󰇻 md engine outline
+glyph 󱃠 md epsilon
+glyph 󰇼 md equal
+glyph 󰇽 md equal box
+glyph 󰺢 md equalizer
+glyph 󰺣 md equalizer outline
+glyph 󰇾 md eraser
+glyph 󰙂 md eraser variant
+glyph 󰇿 md escalator
+glyph 󱎙 md escalator box
+glyph 󱋀 md escalator down
+glyph 󱊿 md escalator up
+glyph 󰱺 md eslint
+glyph 󰪳 md et
+glyph 󰡪 md ethereum
+glyph 󰈀 md ethernet
+glyph 󰈁 md ethernet cable
+glyph 󰈂 md ethernet cable off
+glyph 󰈄 md evernote
+glyph 󱔙 md ev plug ccs1
+glyph 󱔚 md ev plug ccs2
+glyph 󱔛 md ev plug chademo
+glyph 󱔜 md ev plug tesla
+glyph 󱔝 md ev plug type1
+glyph 󱔞 md ev plug type2
+glyph 󰗱 md ev station
+glyph 󱀥 md excavator
+glyph 󰈅 md exclamation
+glyph 󱈸 md exclamation thick
+glyph 󰩈 md exit run
+glyph 󰈆 md exit to app
+glyph 󰪴 md expand all
+glyph 󰪵 md expand all outline
+glyph 󰢮 md expansion card
+glyph 󰾲 md expansion card variant
+glyph 󰥣 md exponent
+glyph 󰥤 md exponent box
+glyph 󰈇 md export
+glyph 󰮓 md export variant
+glyph 󰈈 md eye
+glyph 󱣽 md eye arrow left
+glyph 󱣾 md eye arrow left outline
+glyph 󱣿 md eye arrow right
+glyph 󱤀 md eye arrow right outline
+glyph 󰴄 md eye check
+glyph 󰴅 md eye check outline
+glyph 󰮔 md eye circle
+glyph 󰮕 md eye circle outline
+glyph 󰈊 md eyedropper
+glyph 󱏝 md eyedropper minus
+glyph 󱏟 md eyedropper off
+glyph 󱏜 md eyedropper plus
+glyph 󱏞 md eyedropper remove
+glyph 󰈋 md eyedropper variant
+glyph 󱀦 md eye minus
+glyph 󱀧 md eye minus outline
+glyph 󰈉 md eye off
+glyph 󰛑 md eye off outline
+glyph 󰛐 md eye outline
+glyph 󰡫 md eye plus
+glyph 󰡬 md eye plus outline
+glyph 󱥼 md eye refresh
+glyph 󱥽 md eye refresh outline
+glyph 󱗣 md eye remove
+glyph 󱗤 md eye remove outline
+glyph 󰡭 md eye settings
+glyph 󰡮 md eye settings outline
+glyph 󰵰 md face agent
+glyph 󰈌 md facebook
+glyph 󰟝 md facebook gaming
+glyph 󰈎 md facebook messenger
+glyph 󰬱 md facebook workplace
+glyph 󰙃 md face man
+glyph 󰮖 md face man outline
+glyph 󰙄 md face man profile
+glyph 󱗌 md face man shimmer
+glyph 󱗍 md face man shimmer outline
+glyph 󱖆 md face mask
+glyph 󱖇 md face mask outline
+glyph 󰱻 md face recognition
+glyph 󱁷 md face woman
+glyph 󱁸 md face woman outline
+glyph 󱁶 md face woman profile
+glyph 󱗎 md face woman shimmer
+glyph 󱗏 md face woman shimmer outline
+glyph 󰈏 md factory
+glyph 󱘎 md family tree
+glyph 󰈐 md fan
+glyph 󱑬 md fan alert
+glyph 󱜝 md fan auto
+glyph 󱑭 md fan chevron down
+glyph 󱑮 md fan chevron up
+glyph 󱨺 md fan clock
+glyph 󱑰 md fan minus
+glyph 󰠝 md fan off
+glyph 󱑯 md fan plus
+glyph 󱑱 md fan remove
+glyph 󱑲 md fan speed 1
+glyph 󱑳 md fan speed 2
+glyph 󱑴 md fan speed 3
+glyph 󰈑 md fast forward
+glyph 󰵱 md fast forward 10
+glyph 󱤺 md fast forward 15
+glyph 󰴆 md fast forward 30
+glyph 󱇸 md fast forward 5
+glyph 󱘋 md fast forward 60
+glyph 󰛒 md fast forward outline
+glyph 󰈒 md fax
+glyph 󰛓 md feather
+glyph 󰩉 md feature search
+glyph 󰩊 md feature search outline
+glyph 󰣛 md fedora
+glyph 󱞚 md fence
+glyph 󱟶 md fence electric
+glyph 󱓁 md fencing
+glyph 󰺤 md ferris wheel
+glyph 󰈓 md ferry
+glyph 󰈔 md file
+glyph 󰜻 md file account
+glyph 󱀨 md file account outline
+glyph 󰩋 md file alert
+glyph 󰩌 md file alert outline
+glyph 󱪓 md file arrow left right
+glyph 󱪔 md file arrow left right outline
+glyph 󱪕 md file arrow up down
+glyph 󱪖 md file arrow up down outline
+glyph 󰪶 md file cabinet
+glyph 󰻫 md file cad
+glyph 󰻬 md file cad box
+glyph 󰷆 md file cancel
+glyph 󰷇 md file cancel outline
+glyph 󱆆 md file certificate
+glyph 󱆇 md file certificate outline
+glyph 󰈕 md file chart
+glyph 󱧆 md file chart check
+glyph 󱧇 md file chart check outline
+glyph 󱀩 md file chart outline
+glyph 󰈖 md file check
+glyph 󰸩 md file check outline
+glyph 󱋡 md file clock
+glyph 󱋢 md file clock outline
+glyph 󰈗 md file cloud
+glyph 󱀪 md file cloud outline
+glyph 󰈮 md file code
+glyph 󱀫 md file code outline
+glyph 󱁻 md file cog
+glyph 󱁼 md file cog outline
+glyph 󰢪 md file compare
+glyph 󰈘 md file delimited
+glyph 󰺥 md file delimited outline
+glyph 󰈙 md file document
+glyph 󱪗 md file document alert
+glyph 󱪘 md file document alert outline
+glyph 󱪙 md file document check
+glyph 󱪚 md file document check outline
+glyph 󰷈 md file document edit
+glyph 󰷉 md file document edit outline
+glyph 󱪛 md file document minus
+glyph 󱪜 md file document minus outline
+glyph 󱔗 md file document multiple
+glyph 󱔘 md file document multiple outline
+glyph 󰧮 md file document outline
+glyph 󱪝 md file document plus
+glyph 󱪞 md file document plus outline
+glyph 󱪟 md file document remove
+glyph 󱪠 md file document remove outline
+glyph 󰥥 md file download
+glyph 󰥦 md file download outline
+glyph 󱇧 md file edit
+glyph 󱇨 md file edit outline
+glyph 󰈛 md file excel
+glyph 󰈜 md file excel box
+glyph 󱀬 md file excel box outline
+glyph 󱀭 md file excel outline
+glyph 󰈝 md file export
+glyph 󱀮 md file export outline
+glyph 󰷊 md file eye
+glyph 󰷋 md file eye outline
+glyph 󰈞 md file find
+glyph 󰮗 md file find outline
+glyph 󰵸 md file gif box
+glyph 󰘓 md file hidden
+glyph 󰈟 md file image
+glyph 󱝲 md file image marker
+glyph 󱝳 md file image marker outline
+glyph 󱤻 md file image minus
+glyph 󱤼 md file image minus outline
+glyph 󰺰 md file image outline
+glyph 󱤽 md file image plus
+glyph 󱤾 md file image plus outline
+glyph 󱤿 md file image remove
+glyph 󱥀 md file image remove outline
+glyph 󰈠 md file import
+glyph 󱀯 md file import outline
+glyph 󰈥 md file jpg box
+glyph 󱆄 md file key
+glyph 󱆅 md file key outline
+glyph 󱅷 md file link
+glyph 󱅸 md file link outline
+glyph 󰈡 md file lock
+glyph 󱧈 md file lock open
+glyph 󱧉 md file lock open outline
+glyph 󱀰 md file lock outline
+glyph 󱝴 md file marker
+glyph 󱝵 md file marker outline
+glyph 󱪡 md file minus
+glyph 󱪢 md file minus outline
+glyph 󰪹 md file move
+glyph 󱀱 md file move outline
+glyph 󰈢 md file multiple
+glyph 󱀲 md file multiple outline
+glyph 󰈣 md file music
+glyph 󰸪 md file music outline
+glyph 󰈤 md file outline
+glyph 󰈦 md file pdf box
+glyph 󰠞 md file percent
+glyph 󱀳 md file percent outline
+glyph 󱅹 md file phone
+glyph 󱅺 md file phone outline
+glyph 󰝒 md file plus
+glyph 󰻭 md file plus outline
+glyph 󰸭 md file png box
+glyph 󰈧 md file powerpoint
+glyph 󰈨 md file powerpoint box
+glyph 󱀴 md file powerpoint box outline
+glyph 󱀵 md file powerpoint outline
+glyph 󰈩 md file presentation box
+glyph 󰡯 md file question
+glyph 󱀶 md file question outline
+glyph 󰤘 md file refresh
+glyph 󰕁 md file refresh outline
+glyph 󰮘 md file remove
+glyph 󱀷 md file remove outline
+glyph 󰬲 md file replace
+glyph 󰬳 md file replace outline
+glyph 󰙰 md file restore
+glyph 󱀸 md file restore outline
+glyph 󱨻 md file rotate left
+glyph 󱨼 md file rotate left outline
+glyph 󱨽 md file rotate right
+glyph 󱨾 md file rotate right outline
+glyph 󰱼 md file search
+glyph 󰱽 md file search outline
+glyph 󰈪 md file send
+glyph 󱀹 md file send outline
+glyph 󱁹 md file settings
+glyph 󱁺 md file settings outline
+glyph 󱧃 md file sign
+glyph 󱀺 md file star
+glyph 󱀻 md file star outline
+glyph 󰾴 md file swap
+glyph 󰾵 md file swap outline
+glyph 󱈖 md file sync
+glyph 󱈗 md file sync outline
+glyph 󰱾 md file table
+glyph 󱃡 md file table box
+glyph 󱃢 md file table box multiple
+glyph 󱃣 md file table box multiple outline
+glyph 󱃤 md file table box outline
+glyph 󰱿 md file table outline
+glyph 󰙅 md file tree
+glyph 󱏒 md file tree outline
+glyph 󰣜 md file undo
+glyph 󱀼 md file undo outline
+glyph 󰩍 md file upload
+glyph 󰩎 md file upload outline
+glyph 󰈫 md file video
+glyph 󰸬 md file video outline
+glyph 󰈬 md file word
+glyph 󰈭 md file word box
+glyph 󱀽 md file word box outline
+glyph 󱀾 md file word outline
+glyph 󰈯 md film
+glyph 󰈰 md filmstrip
+glyph 󰌲 md filmstrip box
+glyph 󰴘 md filmstrip box multiple
+glyph 󰈱 md filmstrip off
+glyph 󰈲 md filter
+glyph 󱣬 md filter check
+glyph 󱣭 md filter check outline
+glyph 󱪣 md filter cog
+glyph 󱪤 md filter cog outline
+glyph 󱃥 md filter menu
+glyph 󱃦 md filter menu outline
+glyph 󰻮 md filter minus
+glyph 󰻯 md filter minus outline
+glyph 󱨿 md filter multiple
+glyph 󱩀 md filter multiple outline
+glyph 󱓯 md filter off
+glyph 󱓰 md filter off outline
+glyph 󰈳 md filter outline
+glyph 󰻰 md filter plus
+glyph 󰻱 md filter plus outline
+glyph 󰈴 md filter remove
+glyph 󰈵 md filter remove outline
+glyph 󱪥 md filter settings
+glyph 󱪦 md filter settings outline
+glyph 󰈶 md filter variant
+glyph 󱄒 md filter variant minus
+glyph 󱄓 md filter variant plus
+glyph 󱀿 md filter variant remove
+glyph 󰠟 md finance
+glyph 󰛔 md find replace
+glyph 󰈷 md fingerprint
+glyph 󰺱 md fingerprint off
+glyph 󰈸 md fire
+glyph 󱗗 md fire alert
+glyph 󰥧 md firebase
+glyph 󱠇 md fire circle
+glyph 󰻲 md fire extinguisher
+glyph 󰈹 md firefox
+glyph 󱄷 md fire hydrant
+glyph 󱄸 md fire hydrant alert
+glyph 󱄹 md fire hydrant off
+glyph 󱜢 md fire off
+glyph 󰸮 md fireplace
+glyph 󰸯 md fireplace off
+glyph 󰢫 md fire truck
+glyph 󰖾 md firewire
+glyph 󰸰 md firework
+glyph 󱜣 md firework off
+glyph 󰈺 md fish
+glyph 󰻳 md fishbowl
+glyph 󰻴 md fishbowl outline
+glyph 󱏳 md fish off
+glyph 󰻵 md fit to page
+glyph 󰻶 md fit to page outline
+glyph 󱣴 md fit to screen
+glyph 󱣵 md fit to screen outline
+glyph 󰈻 md flag
+glyph 󰈼 md flag checkered
+glyph 󰮙 md flag minus
+glyph 󱂲 md flag minus outline
+glyph 󱣮 md flag off
+glyph 󱣯 md flag off outline
+glyph 󰈽 md flag outline
+glyph 󰮚 md flag plus
+glyph 󱂳 md flag plus outline
+glyph 󰮛 md flag remove
+glyph 󱂴 md flag remove outline
+glyph 󰈿 md flag triangle
+glyph 󰉀 md flag variant
+glyph 󰈾 md flag variant outline
+glyph 󰵲 md flare
+glyph 󰉁 md flash
+glyph 󰻷 md flash alert
+glyph 󰻸 md flash alert outline
+glyph 󰉂 md flash auto
+glyph 󰉄 md flashlight
+glyph 󰉅 md flashlight off
+glyph 󰉃 md flash off
+glyph 󰛕 md flash outline
+glyph 󰙻 md flash red eye
+glyph 󰂓 md flask
+glyph 󰂔 md flask empty
+glyph 󱈺 md flask empty minus
+glyph 󱈻 md flask empty minus outline
+glyph 󱏴 md flask empty off
+glyph 󱏵 md flask empty off outline
+glyph 󰂕 md flask empty outline
+glyph 󱈼 md flask empty plus
+glyph 󱈽 md flask empty plus outline
+glyph 󱈾 md flask empty remove
+glyph 󱈿 md flask empty remove outline
+glyph 󱉀 md flask minus
+glyph 󱉁 md flask minus outline
+glyph 󱏶 md flask off
+glyph 󱏷 md flask off outline
+glyph 󰂖 md flask outline
+glyph 󱉂 md flask plus
+glyph 󱉃 md flask plus outline
+glyph 󱉄 md flask remove
+glyph 󱉅 md flask remove outline
+glyph 󱉋 md flask round bottom
+glyph 󱉌 md flask round bottom empty
+glyph 󱉍 md flask round bottom empty outline
+glyph 󱉎 md flask round bottom outline
+glyph 󱌃 md fleur de lis
+glyph 󱃧 md flip horizontal
+glyph 󰉇 md flip to back
+glyph 󰉈 md flip to front
+glyph 󱃨 md flip vertical
+glyph 󰣝 md floor lamp
+glyph 󱁀 md floor lamp dual
+glyph 󱟎 md floor lamp dual outline
+glyph 󱟈 md floor lamp outline
+glyph 󱝇 md floor lamp torchiere
+glyph 󱟖 md floor lamp torchiere outline
+glyph 󱁁 md floor lamp torchiere variant
+glyph 󱟏 md floor lamp torchiere variant outline
+glyph 󰠡 md floor plan
+glyph 󰉉 md floppy
+glyph 󰧯 md floppy variant
+glyph 󰉊 md flower
+glyph 󰧰 md flower outline
+glyph 󱢅 md flower pollen
+glyph 󱢆 md flower pollen outline
+glyph 󰴈 md flower poppy
+glyph 󰧱 md flower tulip
+glyph 󰧲 md flower tulip outline
+glyph 󰽎 md focus auto
+glyph 󰽏 md focus field
+glyph 󰽐 md focus field horizontal
+glyph 󰽑 md focus field vertical
+glyph 󰉋 md folder
+glyph 󰉌 md folder account
+glyph 󰮜 md folder account outline
+glyph 󰷌 md folder alert
+glyph 󰷍 md folder alert outline
+glyph 󱧨 md folder arrow down
+glyph 󱧩 md folder arrow down outline
+glyph 󱧪 md folder arrow left
+glyph 󱧫 md folder arrow left outline
+glyph 󱧬 md folder arrow left right
+glyph 󱧭 md folder arrow left right outline
+glyph 󱧮 md folder arrow right
+glyph 󱧯 md folder arrow right outline
+glyph 󱧰 md folder arrow up
+glyph 󱧱 md folder arrow up down
+glyph 󱧲 md folder arrow up down outline
+glyph 󱧳 md folder arrow up outline
+glyph 󱧴 md folder cancel
+glyph 󱧵 md folder cancel outline
+glyph 󱥾 md folder check
+glyph 󱥿 md folder check outline
+glyph 󰪺 md folder clock
+glyph 󰪻 md folder clock outline
+glyph 󱁿 md folder cog
+glyph 󱂀 md folder cog outline
+glyph 󰉍 md folder download
+glyph 󱃩 md folder download outline
+glyph 󰣞 md folder edit
+glyph 󰷎 md folder edit outline
+glyph 󱞊 md folder eye
+glyph 󱞋 md folder eye outline
+glyph 󱧶 md folder file
+glyph 󱧷 md folder file outline
+glyph 󰉎 md folder google drive
+glyph 󱃪 md folder heart
+glyph 󱃫 md folder heart outline
+glyph 󱞞 md folder hidden
+glyph 󱂵 md folder home
+glyph 󱂶 md folder home outline
+glyph 󰉏 md folder image
+glyph 󱂷 md folder information
+glyph 󱂸 md folder information outline
+glyph 󰢬 md folder key
+glyph 󰢭 md folder key network
+glyph 󰲀 md folder key network outline
+glyph 󱃬 md folder key outline
+glyph 󰉐 md folder lock
+glyph 󰉑 md folder lock open
+glyph 󱪧 md folder lock open outline
+glyph 󱪨 md folder lock outline
+glyph 󱉭 md folder marker
+glyph 󱉮 md folder marker outline
+glyph 󰉒 md folder move
+glyph 󱉆 md folder move outline
+glyph 󰉓 md folder multiple
+glyph 󰉔 md folder multiple image
+glyph 󰉕 md folder multiple outline
+glyph 󱑾 md folder multiple plus
+glyph 󱑿 md folder multiple plus outline
+glyph 󱍙 md folder music
+glyph 󱍚 md folder music outline
+glyph 󰡰 md folder network
+glyph 󰲁 md folder network outline
+glyph 󱧸 md folder off
+glyph 󱧹 md folder off outline
+glyph 󰝰 md folder open
+glyph 󰷏 md folder open outline
+glyph 󰉖 md folder outline
+glyph 󱧺 md folder play
+glyph 󱧻 md folder play outline
+glyph 󰉗 md folder plus
+glyph 󰮝 md folder plus outline
+glyph 󰴉 md folder pound
+glyph 󰴊 md folder pound outline
+glyph 󱧊 md folder question
+glyph 󱧋 md folder question outline
+glyph 󰝉 md folder refresh
+glyph 󰕂 md folder refresh outline
+glyph 󰉘 md folder remove
+glyph 󰮞 md folder remove outline
+glyph 󰥨 md folder search
+glyph 󰥩 md folder search outline
+glyph 󱁽 md folder settings
+glyph 󱁾 md folder settings outline
+glyph 󰚝 md folder star
+glyph 󱏓 md folder star multiple
+glyph 󱏔 md folder star multiple outline
+glyph 󰮟 md folder star outline
+glyph 󰾶 md folder swap
+glyph 󰾷 md folder swap outline
+glyph 󰴋 md folder sync
+glyph 󰴌 md folder sync outline
+glyph 󱋣 md folder table
+glyph 󱋤 md folder table outline
+glyph 󰲂 md folder text
+glyph 󰲃 md folder text outline
+glyph 󰉙 md folder upload
+glyph 󱃭 md folder upload outline
+glyph 󱧼 md folder wrench
+glyph 󱧽 md folder wrench outline
+glyph 󰛫 md folder zip
+glyph 󰞹 md folder zip outline
+glyph 󰀺 md font awesome
+glyph 󰉚 md food
+glyph 󰉛 md food apple
+glyph 󰲄 md food apple outline
+glyph 󰟈 md food croissant
+glyph 󱐟 md food drumstick
+glyph 󱑨 md food drumstick off
+glyph 󱑩 md food drumstick off outline
+glyph 󱐠 md food drumstick outline
+glyph 󰗲 md food fork drink
+glyph 󱕲 md food halal
+glyph 󱡋 md food hot dog
+glyph 󱕳 md food kosher
+glyph 󰗳 md food off
+glyph 󱤕 md food off outline
+glyph 󱤖 md food outline
+glyph 󱑪 md food steak
+glyph 󱑫 md food steak off
+glyph 󱠶 md food takeout box
+glyph 󱠷 md food takeout box outline
+glyph 󱜜 md food turkey
+glyph 󰉜 md food variant
+glyph 󱏥 md food variant off
+glyph 󰉝 md football
+glyph 󰉞 md football australian
+glyph 󰉟 md football helmet
+glyph 󰽒 md foot print
+glyph 󱢗 md forest
+glyph 󰟉 md forklift
+glyph 󰝓 md format align bottom
+glyph 󰉠 md format align center
+glyph 󰉡 md format align justify
+glyph 󰉢 md format align left
+glyph 󰝔 md format align middle
+glyph 󰉣 md format align right
+glyph 󰝕 md format align top
+glyph 󰪼 md format annotation minus
+glyph 󰙆 md format annotation plus
+glyph 󰉤 md format bold
+glyph 󰉥 md format clear
+glyph 󰉦 md format color fill
+glyph 󰸱 md format color highlight
+glyph 󱌓 md format color marker cancel
+glyph 󰚞 md format color text
+glyph 󰣟 md format columns
+glyph 󰉧 md format float center
+glyph 󰉨 md format float left
+glyph 󰉩 md format float none
+glyph 󰉪 md format float right
+glyph 󰛖 md format font
+glyph 󰧳 md format font size decrease
+glyph 󰧴 md format font size increase
+glyph 󰉫 md format header 1
+glyph 󰉬 md format header 2
+glyph 󰉭 md format header 3
+glyph 󰉮 md format header 4
+glyph 󰉯 md format header 5
+glyph 󰉰 md format header 6
+glyph 󰉱 md format header decrease
+glyph 󰉲 md format header equal
+glyph 󰉳 md format header increase
+glyph 󰉴 md format header pound
+glyph 󰘞 md format horizontal align center
+glyph 󰘟 md format horizontal align left
+glyph 󰘠 md format horizontal align right
+glyph 󰉵 md format indent decrease
+glyph 󰉶 md format indent increase
+glyph 󰉷 md format italic
+glyph 󰬴 md format letter case
+glyph 󰬵 md format letter case lower
+glyph 󰬶 md format letter case upper
+glyph 󰾸 md format letter ends with
+glyph 󰾹 md format letter matches
+glyph 󱥖 md format letter spacing
+glyph 󰾺 md format letter starts with
+glyph 󰉸 md format line spacing
+glyph 󰗈 md format line style
+glyph 󰗉 md format line weight
+glyph 󰉹 md format list bulleted
+glyph 󰷐 md format list bulleted square
+glyph 󰺲 md format list bulleted triangle
+glyph 󰉺 md format list bulleted type
+glyph 󰥪 md format list checkbox
+glyph 󰝖 md format list checks
+glyph 󱡠 md format list group
+glyph 󰉻 md format list numbered
+glyph 󰴍 md format list numbered rtl
+glyph 󱉯 md format list text
+glyph 󰺳 md format overline
+glyph 󰛗 md format page break
+glyph 󱤗 md format page split
+glyph 󰉼 md format paint
+glyph 󰉽 md format paragraph
+glyph 󰛘 md format pilcrow
+glyph 󰉾 md format quote close
+glyph 󱆨 md format quote close outline
+glyph 󰝗 md format quote open
+glyph 󱆧 md format quote open outline
+glyph 󰚪 md format rotate 90
+glyph 󰚟 md format section
+glyph 󰉿 md format size
+glyph 󰊀 md format strikethrough
+glyph 󰊁 md format strikethrough variant
+glyph 󰊂 md format subscript
+glyph 󰊃 md format superscript
+glyph 󰊄 md format text
+glyph 󰴑 md format textbox
+glyph 󰊅 md format textdirection l to r
+glyph 󰊆 md format textdirection r to l
+glyph 󰾻 md format text rotation angle down
+glyph 󰾼 md format text rotation angle up
+glyph 󰵳 md format text rotation down
+glyph 󰾽 md format text rotation down vertical
+glyph 󰵴 md format text rotation none
+glyph 󰾾 md format text rotation up
+glyph 󰾿 md format text rotation vertical
+glyph 󰸲 md format text variant
+glyph 󱔏 md format text variant outline
+glyph 󰴎 md format text wrapping clip
+glyph 󰴏 md format text wrapping overflow
+glyph 󰴐 md format text wrapping wrap
+glyph 󰗴 md format title
+glyph 󰊇 md format underline
+glyph 󱣩 md format underline wavy
+glyph 󰘡 md format vertical align bottom
+glyph 󰘢 md format vertical align center
+glyph 󰘣 md format vertical align top
+glyph 󰊈 md format wrap inline
+glyph 󰊉 md format wrap square
+glyph 󰊊 md format wrap tight
+glyph 󰊋 md format wrap top bottom
+glyph 󱐀 md form dropdown
+glyph 󱐁 md form select
+glyph 󱂕 md form textarea
+glyph 󰘎 md form textbox
+glyph 󱍝 md form textbox lock
+glyph 󰟵 md form textbox password
+glyph 󰊌 md forum
+glyph 󱪩 md forum minus
+glyph 󱪪 md forum minus outline
+glyph 󰠢 md forum outline
+glyph 󱪫 md forum plus
+glyph 󱪬 md forum plus outline
+glyph 󱪭 md forum remove
+glyph 󱪮 md forum remove outline
+glyph 󰊍 md forward
+glyph 󰵵 md forwardburger
+glyph 󰥫 md fountain
+glyph 󰴒 md fountain pen
+glyph 󰴓 md fountain pen tip
+glyph 󱦒 md fraction one half
+glyph 󰣠 md freebsd
+glyph 󱥗 md french fries
+glyph 󰺴 md frequently asked questions
+glyph 󰊐 md fridge
+glyph 󱆱 md fridge alert
+glyph 󱆲 md fridge alert outline
+glyph 󰊒 md fridge bottom
+glyph 󱗮 md fridge industrial
+glyph 󱗯 md fridge industrial alert
+glyph 󱗰 md fridge industrial alert outline
+glyph 󱗱 md fridge industrial off
+glyph 󱗲 md fridge industrial off outline
+glyph 󱗳 md fridge industrial outline
+glyph 󱆯 md fridge off
+glyph 󱆰 md fridge off outline
+glyph 󰊏 md fridge outline
+glyph 󰊑 md fridge top
+glyph 󱗴 md fridge variant
+glyph 󱗵 md fridge variant alert
+glyph 󱗶 md fridge variant alert outline
+glyph 󱗷 md fridge variant off
+glyph 󱗸 md fridge variant off outline
+glyph 󱗹 md fridge variant outline
+glyph 󱁂 md fruit cherries
+glyph 󱏸 md fruit cherries off
+glyph 󱁃 md fruit citrus
+glyph 󱏹 md fruit citrus off
+glyph 󱁄 md fruit grapes
+glyph 󱁅 md fruit grapes outline
+glyph 󱨎 md fruit pear
+glyph 󱁆 md fruit pineapple
+glyph 󱁇 md fruit watermelon
+glyph 󰟊 md fuel
+glyph 󱢵 md fuel cell
+glyph 󰊓 md fullscreen
+glyph 󰊔 md fullscreen exit
+glyph 󰊕 md function
+glyph 󰡱 md function variant
+glyph 󱂁 md furigana horizontal
+glyph 󱂂 md furigana vertical
+glyph 󰲅 md fuse
+glyph 󱐭 md fuse alert
+glyph 󰲆 md fuse blade
+glyph 󱐬 md fuse off
+glyph 󰊖 md gamepad
+glyph 󰸳 md gamepad circle
+glyph 󰸴 md gamepad circle down
+glyph 󰸵 md gamepad circle left
+glyph 󰸶 md gamepad circle outline
+glyph 󰸷 md gamepad circle right
+glyph 󰸸 md gamepad circle up
+glyph 󰸹 md gamepad down
+glyph 󰸺 md gamepad left
+glyph 󱤙 md gamepad outline
+glyph 󰸻 md gamepad right
+glyph 󰸼 md gamepad round
+glyph 󰸽 md gamepad round down
+glyph 󰸾 md gamepad round left
+glyph 󰸿 md gamepad round outline
+glyph 󰹀 md gamepad round right
+glyph 󰹁 md gamepad round up
+glyph 󰺵 md gamepad square
+glyph 󰺶 md gamepad square outline
+glyph 󰹂 md gamepad up
+glyph 󰊗 md gamepad variant
+glyph 󰺷 md gamepad variant outline
+glyph 󱃮 md gamma
+glyph 󰷑 md gantry crane
+glyph 󰛙 md garage
+glyph 󰡲 md garage alert
+glyph 󱋕 md garage alert variant
+glyph 󱟻 md garage lock
+glyph 󰛚 md garage open
+glyph 󱋔 md garage open variant
+glyph 󱋓 md garage variant
+glyph 󱟼 md garage variant lock
+glyph 󱨛 md gas burner
+glyph 󰙇 md gas cylinder
+glyph 󰊘 md gas station
+glyph 󱐉 md gas station off
+glyph 󱐊 md gas station off outline
+glyph 󰺸 md gas station outline
+glyph 󰊙 md gate
+glyph 󱟸 md gate alert
+glyph 󰣡 md gate and
+glyph 󱟷 md gate arrow left
+glyph 󱅩 md gate arrow right
+glyph 󰣢 md gate nand
+glyph 󰣣 md gate nor
+glyph 󰣤 md gate not
+glyph 󱅪 md gate open
+glyph 󰣥 md gate or
+glyph 󰣦 md gate xnor
+glyph 󰣧 md gate xor
+glyph 󰹃 md gatsby
+glyph 󰊚 md gauge
+glyph 󰡳 md gauge empty
+glyph 󰡴 md gauge full
+glyph 󰡵 md gauge low
+glyph 󰊛 md gavel
+glyph 󰊜 md gender female
+glyph 󰊝 md gender male
+glyph 󰊞 md gender male female
+glyph 󱄿 md gender male female variant
+glyph 󱅀 md gender non binary
+glyph 󰊟 md gender transgender
+glyph 󰣨 md gentoo
+glyph 󰟋 md gesture
+glyph 󰜼 md gesture double tap
+glyph 󰪽 md gesture pinch
+glyph 󰪾 md gesture spread
+glyph 󰵶 md gesture swipe
+glyph 󰜽 md gesture swipe down
+glyph 󰪿 md gesture swipe horizontal
+glyph 󰜾 md gesture swipe left
+glyph 󰜿 md gesture swipe right
+glyph 󰝀 md gesture swipe up
+glyph 󰫀 md gesture swipe vertical
+glyph 󰝁 md gesture tap
+glyph 󱊩 md gesture tap box
+glyph 󱊨 md gesture tap button
+glyph 󰵷 md gesture tap hold
+glyph 󰝂 md gesture two double tap
+glyph 󰝃 md gesture two tap
+glyph 󰊠 md ghost
+glyph 󰧵 md ghost off
+glyph 󱙜 md ghost off outline
+glyph 󱙝 md ghost outline
+glyph 󰹄 md gift
+glyph 󱛯 md gift off
+glyph 󱛰 md gift off outline
+glyph 󱛱 md gift open
+glyph 󱛲 md gift open outline
+glyph 󰊡 md gift outline
+glyph 󰊢 md git
+glyph 󰊤 md github
+glyph 󰮠 md gitlab
+glyph 󰍖 md glass cocktail
+glyph 󱗦 md glass cocktail off
+glyph 󰊪 md glasses
+glyph 󰊥 md glass flute
+glyph 󱡳 md glass fragile
+glyph 󰊦 md glass mug
+glyph 󱗧 md glass mug off
+glyph 󱄖 md glass mug variant
+glyph 󱗨 md glass mug variant off
+glyph 󱌍 md glass pint outline
+glyph 󰊧 md glass stange
+glyph 󰊨 md glass tulip
+glyph 󰡶 md glass wine
+glyph 󱋗 md globe light
+glyph 󰣩 md globe model
+glyph 󰊫 md gmail
+glyph 󰊬 md gnome
+glyph 󰮡 md gog
+glyph 󰵹 md go kart
+glyph 󰵺 md go kart track
+glyph 󱉏 md gold
+glyph 󰠣 md golf
+glyph 󱆤 md golf cart
+glyph 󱂃 md golf tee
+glyph 󰚆 md gondola
+glyph 󰵻 md goodreads
+glyph 󰊭 md google
+glyph 󰲇 md google ads
+glyph 󰟌 md google analytics
+glyph 󰟍 md google assistant
+glyph 󰊮 md google cardboard
+glyph 󰊯 md google chrome
+glyph 󰊰 md google circles
+glyph 󰊱 md google circles communities
+glyph 󰊲 md google circles extended
+glyph 󰊳 md google circles group
+glyph 󰋀 md google classroom
+glyph 󱇶 md google cloud
+glyph 󰊴 md google controller
+glyph 󰊵 md google controller off
+glyph 󱍢 md google downasaur
+glyph 󰊶 md google drive
+glyph 󰊷 md google earth
+glyph 󰥬 md google fit
+glyph 󰊸 md google glass
+glyph 󰋉 md google hangouts
+glyph 󰠤 md google home
+glyph 󰛜 md google keep
+glyph 󰧶 md google lens
+glyph 󰗵 md google maps
+glyph 󱁈 md google my business
+glyph 󰊹 md google nearby
+glyph 󰊼 md google play
+glyph 󰊽 md google plus
+glyph 󰺹 md google podcast
+glyph 󰧷 md google spreadsheet
+glyph 󰲈 md google street view
+glyph 󰊿 md google translate
+glyph 󱝊 md gradient horizontal
+glyph 󰚠 md gradient vertical
+glyph 󰵼 md grain
+glyph 󱁉 md graph
+glyph 󱁊 md graph outline
+glyph 󰡷 md graphql
+glyph 󱔐 md grass
+glyph 󰮢 md grave stone
+glyph 󰙈 md grease pencil
+glyph 󰥭 md greater than
+glyph 󰥮 md greater than or equal
+glyph 󰀭 md greenhouse
+glyph 󰋁 md grid
+glyph 󰝘 md grid large
+glyph 󰋂 md grid off
+glyph 󰹅 md grill
+glyph 󱆊 md grill outline
+glyph 󰋃 md group
+glyph 󰝱 md guitar acoustic
+glyph 󰋄 md guitar electric
+glyph 󰋅 md guitar pick
+glyph 󰋆 md guitar pick outline
+glyph 󰠥 md guy fawkes mask
+glyph 󱩁 md gymnastics
+glyph 󰫁 md hail
+glyph 󱃯 md hair dryer
+glyph 󱃰 md hair dryer outline
+glyph 󰮣 md halloween
+glyph 󰚅 md hamburger
+glyph 󱝶 md hamburger check
+glyph 󱝷 md hamburger minus
+glyph 󱝸 md hamburger off
+glyph 󱝹 md hamburger plus
+glyph 󱝺 md hamburger remove
+glyph 󰣪 md hammer
+glyph 󱌢 md hammer screwdriver
+glyph 󱢇 md hammer sickle
+glyph 󱌣 md hammer wrench
+glyph 󰹆 md hand back left
+glyph 󱠰 md hand back left off
+glyph 󱠲 md hand back left off outline
+glyph 󱠬 md hand back left outline
+glyph 󰹇 md hand back right
+glyph 󱠱 md hand back right off
+glyph 󱠳 md hand back right off outline
+glyph 󱠭 md hand back right outline
+glyph 󰽓 md handball
+glyph 󱥋 md hand clap
+glyph 󱩂 md hand clap off
+glyph 󱢏 md hand coin
+glyph 󱢐 md hand coin outline
+glyph 󱄾 md handcuffs
+glyph 󱢶 md hand extended
+glyph 󱢷 md hand extended outline
+glyph 󱠫 md hand front left
+glyph 󱠮 md hand front left outline
+glyph 󰩏 md hand front right
+glyph 󱠯 md hand front right outline
+glyph 󱃱 md hand heart
+glyph 󱕾 md hand heart outline
+glyph 󰩐 md hand okay
+glyph 󰩑 md hand peace
+glyph 󰩒 md hand peace variant
+glyph 󰩓 md hand pointing down
+glyph 󰩔 md hand pointing left
+glyph 󰋇 md hand pointing right
+glyph 󰩕 md hand pointing up
+glyph 󰹈 md hand saw
+glyph 󱈘 md handshake
+glyph 󱖡 md handshake outline
+glyph 󰕹 md hands pray
+glyph 󱕿 md hand wash
+glyph 󱖀 md hand wash outline
+glyph 󱎟 md hand water
+glyph 󱠡 md hand wave
+glyph 󱠢 md hand wave outline
+glyph 󰋈 md hanger
+glyph 󰋊 md harddisk
+glyph 󱁋 md harddisk plus
+glyph 󱁌 md harddisk remove
+glyph 󰥯 md hard hat
+glyph 󰮤 md hat fedora
+glyph 󰲉 md hazard lights
+glyph 󰵽 md hdr
+glyph 󰵾 md hdr off
+glyph 󱍞 md head
+glyph 󱌸 md head alert
+glyph 󱌹 md head alert outline
+glyph 󱌺 md head check
+glyph 󱌻 md head check outline
+glyph 󱌼 md head cog
+glyph 󱌽 md head cog outline
+glyph 󱌾 md head dots horizontal
+glyph 󱌿 md head dots horizontal outline
+glyph 󱍀 md head flash
+glyph 󱍁 md head flash outline
+glyph 󱍂 md head heart
+glyph 󱍃 md head heart outline
+glyph 󱍄 md head lightbulb
+glyph 󱍅 md head lightbulb outline
+glyph 󱍆 md head minus
+glyph 󱍇 md head minus outline
+glyph 󱍟 md head outline
+glyph 󰋋 md headphones
+glyph 󰥰 md headphones bluetooth
+glyph 󰋌 md headphones box
+glyph 󰟎 md headphones off
+glyph 󰋍 md headphones settings
+glyph 󱍈 md head plus
+glyph 󱍉 md head plus outline
+glyph 󱍊 md head question
+glyph 󱍋 md head question outline
+glyph 󱍌 md head remove
+glyph 󱍍 md head remove outline
+glyph 󰋎 md headset
+glyph 󰋏 md headset dock
+glyph 󰋐 md headset off
+glyph 󱍎 md head snowflake
+glyph 󱍏 md head snowflake outline
+glyph 󱍐 md head sync
+glyph 󱍑 md head sync outline
+glyph 󰋑 md heart
+glyph 󰋒 md heart box
+glyph 󰋓 md heart box outline
+glyph 󰋔 md heart broken
+glyph 󰴔 md heart broken outline
+glyph 󰥱 md heart circle
+glyph 󰥲 md heart circle outline
+glyph 󱙣 md heart cog
+glyph 󱙤 md heart cog outline
+glyph 󰻹 md heart flash
+glyph 󰛟 md heart half
+glyph 󰛞 md heart half full
+glyph 󰛠 md heart half outline
+glyph 󱐯 md heart minus
+glyph 󱐲 md heart minus outline
+glyph 󰩖 md heart multiple
+glyph 󰩗 md heart multiple outline
+glyph 󰝙 md heart off
+glyph 󱐴 md heart off outline
+glyph 󰋕 md heart outline
+glyph 󱐮 md heart plus
+glyph 󱐱 md heart plus outline
+glyph 󰗶 md heart pulse
+glyph 󱐰 md heart remove
+glyph 󱐳 md heart remove outline
+glyph 󱙥 md heart settings
+glyph 󱙦 md heart settings outline
+glyph 󱪯 md heating coil
+glyph 󱩃 md heat pump
+glyph 󱩄 md heat pump outline
+glyph 󱩅 md heat wave
+glyph 󰫂 md helicopter
+glyph 󰋖 md help
+glyph 󰞋 md help box
+glyph 󰋗 md help circle
+glyph 󰘥 md help circle outline
+glyph 󰛵 md help network
+glyph 󰲊 md help network outline
+glyph 󰮥 md help rhombus
+glyph 󰮦 md help rhombus outline
+glyph 󱊧 md hexadecimal
+glyph 󰋘 md hexagon
+glyph 󰛡 md hexagon multiple
+glyph 󱃲 md hexagon multiple outline
+glyph 󰋙 md hexagon outline
+glyph 󰫃 md hexagon slice 1
+glyph 󰫄 md hexagon slice 2
+glyph 󰫅 md hexagon slice 3
+glyph 󰫆 md hexagon slice 4
+glyph 󰫇 md hexagon slice 5
+glyph 󰫈 md hexagon slice 6
+glyph 󰫉 md hexagram
+glyph 󰫊 md hexagram outline
+glyph 󰟏 md high definition
+glyph 󰡸 md high definition box
+glyph 󰗷 md highway
+glyph 󰵿 md hiking
+glyph 󰋚 md history
+glyph 󰡹 md hockey puck
+glyph 󰡺 md hockey sticks
+glyph 󰋛 md hololens
+glyph 󰋜 md home
+glyph 󰠦 md home account
+glyph 󰡻 md home alert
+glyph 󱗐 md home alert outline
+glyph 󰺺 md home analytics
+glyph 󰟐 md home assistant
+glyph 󰟑 md home automation
+glyph 󱤁 md home battery
+glyph 󱤂 md home battery outline
+glyph 󰟒 md home circle
+glyph 󱁍 md home circle outline
+glyph 󰴕 md home city
+glyph 󰴖 md home city outline
+glyph 󱨒 md home clock
+glyph 󱨓 md home clock outline
+glyph 󱅙 md home edit
+glyph 󱅚 md home edit outline
+glyph 󰾛 md home export outline
+glyph 󰻺 md home flood
+glyph 󰷒 md home floor 0
+glyph 󰶀 md home floor 1
+glyph 󰶁 md home floor 2
+glyph 󰶂 md home floor 3
+glyph 󰶃 md home floor a
+glyph 󰶄 md home floor b
+glyph 󰶅 md home floor g
+glyph 󰶆 md home floor l
+glyph 󰷓 md home floor negative 1
+glyph 󰷔 md home group
+glyph 󱧁 md home group minus
+glyph 󱧀 md home group plus
+glyph 󱧂 md home group remove
+glyph 󰠧 md home heart
+glyph 󰾜 md home import outline
+glyph 󱉑 md home lightbulb
+glyph 󱉒 md home lightbulb outline
+glyph 󱤃 md home lightning bolt
+glyph 󱤄 md home lightning bolt outline
+glyph 󰣫 md home lock
+glyph 󰣬 md home lock open
+glyph 󰗸 md home map marker
+glyph 󰥴 md home minus
+glyph 󱏕 md home minus outline
+glyph 󰋝 md home modern
+glyph 󱩆 md home off
+glyph 󱩇 md home off outline
+glyph 󰚡 md home outline
+glyph 󰥵 md home plus
+glyph 󱏖 md home plus outline
+glyph 󱉇 md home remove
+glyph 󱏗 md home remove outline
+glyph 󱄫 md home roof
+glyph 󱎰 md home search
+glyph 󱎱 md home search outline
+glyph 󱞔 md home switch
+glyph 󱞕 md home switch outline
+glyph 󰽔 md home thermometer
+glyph 󰽕 md home thermometer outline
+glyph 󰋞 md home variant
+glyph 󰮧 md home variant outline
+glyph 󰛢 md hook
+glyph 󰛣 md hook off
+glyph 󰹖 md hoop house
+glyph 󰋟 md hops
+glyph 󱃳 md horizontal rotate clockwise
+glyph 󱃴 md horizontal rotate counterclockwise
+glyph 󱖿 md horse
+glyph 󱗀 md horse human
+glyph 󰩘 md horseshoe
+glyph 󱗁 md horse variant
+glyph 󱡮 md horse variant fast
+glyph 󰿶 md hospital
+glyph 󰋠 md hospital box
+glyph 󰿷 md hospital box outline
+glyph 󰋡 md hospital building
+glyph 󰋢 md hospital marker
+glyph 󰠨 md hot tub
+glyph 󱑸 md hours 24
+glyph 󰴗 md hubspot
+glyph 󰠩 md hulu
+glyph 󰋦 md human
+glyph 󱎋 md human baby changing table
+glyph 󱖁 md human cane
+glyph 󱖛 md human capacity decrease
+glyph 󱖜 md human capacity increase
+glyph 󰋧 md human child
+glyph 󱦀 md human dolly
+glyph 󱓨 md human edit
+glyph 󰙉 md human female
+glyph 󰩙 md human female boy
+glyph 󱗉 md human female dance
+glyph 󰩚 md human female female
+glyph 󰩛 md human female girl
+glyph 󱟄 md human greeting
+glyph 󱖝 md human greeting proximity
+glyph 󰙊 md human greeting variant
+glyph 󰙋 md human handsdown
+glyph 󰙌 md human handsup
+glyph 󰙍 md human male
+glyph 󰢐 md human male board
+glyph 󰡆 md human male board poll
+glyph 󰩜 md human male boy
+glyph 󱎌 md human male child
+glyph 󰋨 md human male female
+glyph 󱠣 md human male female child
+glyph 󰩝 md human male girl
+glyph 󰻻 md human male height
+glyph 󰻼 md human male height variant
+glyph 󰩞 md human male male
+glyph 󱡈 md human non binary
+glyph 󰗏 md human pregnant
+glyph 󱕱 md human queue
+glyph 󱇩 md human scooter
+glyph 󱎍 md human wheelchair
+glyph 󱦁 md human white cane
+glyph 󰝄 md humble bundle
+glyph 󱍒 md hvac
+glyph 󱖞 md hvac off
+glyph 󱌤 md hydraulic oil level
+glyph 󱌥 md hydraulic oil temperature
+glyph 󱢔 md hydrogen station
+glyph 󱋥 md hydro power
 glyph  mdi access point
 glyph  mdi access point network
 glyph  mdi account
@@ -2918,6 +6736,8 @@ glyph  mdi cast
 glyph  mdi cast connected
 glyph  mdi castle
 glyph  mdi cat
+glyph 󰠪 md ice cream
+glyph 󰹒 md ice cream off
 glyph  mdi cellphone
 glyph  mdi cellphone android
 glyph  mdi cellphone basic
@@ -2926,6 +6746,7 @@ glyph  mdi cellphone iphone
 glyph  mdi cellphone link
 glyph  mdi cellphone link off
 glyph  mdi cellphone settings
+glyph 󰻽 md ice pop
 glyph  mdi certificate
 glyph  mdi chair school
 glyph  mdi chart arc
@@ -3095,6 +6916,7 @@ glyph 﫦 mdi cursor text
 glyph  mdi database
 glyph  mdi database minus
 glyph  mdi database plus
+glyph 󰿀 md id card
 glyph  mdi debug step into
 glyph  mdi debug step out
 glyph  mdi debug step over
@@ -3106,6 +6928,9 @@ glyph 﫧 mdi delete forever
 glyph 﫨 mdi delete sweep
 glyph  mdi delete variant
 glyph  mdi delta
+glyph 󰻾 md identifier
+glyph 󱌱 md ideogram cjk
+glyph 󱌲 md ideogram cjk variant
 glyph  mdi deskphone
 glyph  mdi desktop mac
 glyph  mdi desktop tower
@@ -3535,6 +7360,50 @@ glyph 﫼 mdi logout variant
 glyph  mdi looks
 glyph  mdi loupe
 glyph  mdi lumx
+glyph 󰋩 md image
+glyph 󰋪 md image album
+glyph 󰋫 md image area
+glyph 󰋬 md image area close
+glyph 󰿁 md image auto adjust
+glyph 󰋭 md image broken
+glyph 󰋮 md image broken variant
+glyph 󱇣 md image edit
+glyph 󱇤 md image edit outline
+glyph 󰋰 md image filter black white
+glyph 󰋱 md image filter center focus
+glyph 󰻿 md image filter center focus strong
+glyph 󰼀 md image filter center focus strong outline
+glyph 󰋲 md image filter center focus weak
+glyph 󰋳 md image filter drama
+glyph 󰋴 md image filter frames
+glyph 󰋵 md image filter hdr
+glyph 󰋶 md image filter none
+glyph 󰋷 md image filter tilt shift
+glyph 󰋸 md image filter vintage
+glyph 󰹉 md image frame
+glyph 󱪰 md image lock
+glyph 󱪱 md image lock outline
+glyph 󱝻 md image marker
+glyph 󱝼 md image marker outline
+glyph 󱐙 md image minus
+glyph 󰧸 md image move
+glyph 󰋹 md image multiple
+glyph 󰋯 md image multiple outline
+glyph 󰠫 md image off
+glyph 󱇑 md image off outline
+glyph 󰥶 md image outline
+glyph 󰡼 md image plus
+glyph 󱧾 md image refresh
+glyph 󱧿 md image refresh outline
+glyph 󱐘 md image remove
+glyph 󰥷 md image search
+glyph 󰥸 md image search outline
+glyph 󰲍 md image size select actual
+glyph 󰲎 md image size select large
+glyph 󰲏 md image size select small
+glyph 󱨀 md image sync
+glyph 󱨁 md image sync outline
+glyph 󱘍 md image text
 glyph  mdi magnet
 glyph  mdi magnet on
 glyph  mdi magnify
@@ -3597,6 +7466,7 @@ glyph  mdi mouse off
 glyph  mdi mouse variant
 glyph  mdi mouse variant off
 glyph  mdi movie
+glyph 󰋺 md import
 glyph  mdi multiplication
 glyph  mdi multiplication box
 glyph  mdi music box
@@ -3614,6 +7484,23 @@ glyph  mdi music note whole
 glyph  mdi nature
 glyph  mdi nature people
 glyph  mdi navigation
+glyph 󰚇 md inbox
+glyph 󰋻 md inbox arrow down
+glyph 󱉰 md inbox arrow down outline
+glyph 󰏑 md inbox arrow up
+glyph 󱉱 md inbox arrow up outline
+glyph 󱉲 md inbox full
+glyph 󱉳 md inbox full outline
+glyph 󰢰 md inbox multiple
+glyph 󰮨 md inbox multiple outline
+glyph 󱉴 md inbox outline
+glyph 󱖟 md inbox remove
+glyph 󱖠 md inbox remove outline
+glyph 󰗹 md incognito
+glyph 󱐡 md incognito circle
+glyph 󱐢 md incognito circle off
+glyph 󰁵 md incognito off
+glyph 󱡌 md induction
 glyph  mdi needle
 glyph  mdi nest protect
 glyph  mdi nest thermostat
@@ -3622,6 +7509,12 @@ glyph  mdi newspaper
 glyph  mdi nfc
 glyph  mdi nfc tap
 glyph  mdi nfc variant
+glyph 󰛤 md infinity
+glyph 󰋼 md information
+glyph 󱞌 md information off
+glyph 󱞍 md information off outline
+glyph 󰋽 md information outline
+glyph 󰙎 md information variant
 glyph  mdi nodejs
 glyph  mdi note
 glyph ﮶ mdi note multiple
@@ -3631,6 +7524,9 @@ glyph  mdi note plus
 glyph  mdi note plus outline
 glyph  mdi note text
 glyph  mdi notification clear all
+glyph 󰋾 md instagram
+glyph 󱁎 md instrument triangle
+glyph 󱤓 md integrated circuit chip
 glyph  mdi numeric
 glyph  mdi numeric 0 box
 glyph  mdi numeric 0 box multiple outline
@@ -3666,6 +7562,9 @@ glyph  mdi numeric 9 plus box
 glyph  mdi numeric 9 plus box multiple outline
 glyph  mdi numeric 9 plus box outline
 glyph  mdi nutrition
+glyph 󰌁 md invert colors
+glyph 󰹊 md invert colors off
+glyph 󱋨 md iobroker
 glyph  mdi octagon
 glyph  mdi octagon outline
 glyph  mdi odnoklassniki
@@ -3682,6 +7581,7 @@ glyph  mdi orbit
 glyph  mdi ornament
 glyph  mdi ornament variant
 glyph  mdi owl
+glyph 󰩟 md ip
 glyph  mdi package
 glyph  mdi package down
 glyph  mdi package up
@@ -3731,9 +7631,17 @@ glyph  mdi pi
 glyph  mdi pi box
 glyph ﮹ mdi plane shield
 glyph ﮸ mdi plex
+glyph 󰩠 md ip network
+glyph 󰲐 md ip network outline
+glyph 󰲑 md ipod
+glyph 󱦂 md ip outline
+glyph 󱠤 md iron
+glyph 󱠸 md iron board
+glyph 󱠥 md iron outline
 glyph ﬇ mdi rowing
 glyph ﬈ mdi saxophone
 glyph ﬉ mdi signal variant
+glyph 󱁏 md island
 glyph ﱢ mdi square
 glyph ﱡ mdi square outline
 glyph ﬊ mdi stackexchange
@@ -3746,6 +7654,7 @@ glyph ﳳ mdi textbox password
 glyph ﳴ mdi thought bubble
 glyph ﱞ mdi unfold less vertical
 glyph ﱟ mdi unfold more vertical
+glyph 󱂹 md iv bag
 glyph  mdi vector square
 glyph ﴾ mdi video input component
 glyph ﴿ mdi video input hdmi
@@ -3762,6 +7671,3124 @@ glyph ﵃ mdi xamarin
 glyph ﵄ mdi xamarin outline
 glyph ﵅ mdi youtube creator studio
 glyph ﵆ mdi youtube gaming
+glyph 󰷕 md jabber
+glyph 󰌂 md jeepney
+glyph 󰼁 md jellyfish
+glyph 󰼂 md jellyfish outline
+glyph 󰌃 md jira
+glyph 󰡽 md jquery
+glyph 󰌄 md jsfiddle
+glyph 󱋿 md jump rope
+glyph 󰶇 md kabaddi
+glyph 󱕘 md kangaroo
+glyph 󰠬 md karate
+glyph 󰢯 md kayaking
+glyph 󰌅 md keg
+glyph 󰗺 md kettle
+glyph 󱌗 md kettle alert
+glyph 󱌘 md kettle alert outline
+glyph 󱌀 md kettlebell
+glyph 󱌛 md kettle off
+glyph 󱌜 md kettle off outline
+glyph 󰽖 md kettle outline
+glyph 󱜼 md kettle pour over
+glyph 󱌙 md kettle steam
+glyph 󱌚 md kettle steam outline
+glyph 󰌆 md key
+glyph 󱦃 md key alert
+glyph 󱦄 md key alert outline
+glyph 󱌒 md key arrow right
+glyph 󰌌 md keyboard
+glyph 󰌍 md keyboard backspace
+glyph 󰌎 md keyboard caps
+glyph 󰌏 md keyboard close
+glyph 󱊷 md keyboard esc
+glyph 󱊫 md keyboard f1
+glyph 󱊴 md keyboard f10
+glyph 󱊵 md keyboard f11
+glyph 󱊶 md keyboard f12
+glyph 󱊬 md keyboard f2
+glyph 󱊭 md keyboard f3
+glyph 󱊮 md keyboard f4
+glyph 󱊯 md keyboard f5
+glyph 󱊰 md keyboard f6
+glyph 󱊱 md keyboard f7
+glyph 󱊲 md keyboard f8
+glyph 󱊳 md keyboard f9
+glyph 󰌐 md keyboard off
+glyph 󰹋 md keyboard off outline
+glyph 󰥻 md keyboard outline
+glyph 󰌑 md keyboard return
+glyph 󰧹 md keyboard settings
+glyph 󰧺 md keyboard settings outline
+glyph 󱁐 md keyboard space
+glyph 󰌒 md keyboard tab
+glyph 󰌥 md keyboard tab reverse
+glyph 󰌓 md keyboard variant
+glyph 󱕴 md key chain
+glyph 󱕵 md key chain variant
+glyph 󰌇 md key change
+glyph 󱆟 md key link
+glyph 󰌈 md key minus
+glyph 󰷖 md key outline
+glyph 󰌉 md key plus
+glyph 󰌊 md key remove
+glyph 󱆞 md key star
+glyph 󰌋 md key variant
+glyph 󰿂 md key wireless
+glyph 󱃽 md khanda
+glyph 󰝅 md kickstarter
+glyph 󱦅 md kite
+glyph 󱦆 md kite outline
+glyph 󱝄 md kitesurfing
+glyph 󱍛 md klingon
+glyph 󰧻 md knife
+glyph 󰧼 md knife military
+glyph 󱜿 md koala
+glyph 󰌔 md kodi
+glyph 󱃾 md kubernetes
+glyph 󰌕 md label
+glyph 󱍵 md label multiple
+glyph 󱍶 md label multiple outline
+glyph 󰫋 md label off
+glyph 󰫌 md label off outline
+glyph 󰌖 md label outline
+glyph 󱋪 md label percent
+glyph 󱋫 md label percent outline
+glyph 󰫍 md label variant
+glyph 󰫎 md label variant outline
+glyph 󱖢 md ladder
+glyph 󰠭 md ladybug
+glyph 󰘧 md lambda
+glyph 󰚵 md lamp
+glyph 󱟐 md lamp outline
+glyph 󱕶 md lamps
+glyph 󱟑 md lamps outline
+glyph 󰌗 md lan
+glyph 󱊪 md lan check
+glyph 󰌘 md lan connect
+glyph 󱪲 md land fields
+glyph 󰌙 md lan disconnect
+glyph 󱪳 md land plots
+glyph 󱪴 md land plots circle
+glyph 󱪵 md land plots circle variant
+glyph 󱪶 md land rows horizontal
+glyph 󱪷 md land rows vertical
+glyph 󱩈 md landslide
+glyph 󱩉 md landslide outline
+glyph 󰙱 md language c
+glyph 󰙲 md language cpp
+glyph 󰌛 md language csharp
+glyph 󰌜 md language css3
+glyph 󱈚 md language fortran
+glyph 󰟓 md language go
+glyph 󰲒 md language haskell
+glyph 󰌝 md language html5
+glyph 󰬷 md language java
+glyph 󰌞 md language javascript
+glyph 󱈙 md language kotlin
+glyph 󰢱 md language lua
+glyph 󰍔 md language markdown
+glyph 󰽛 md language markdown outline
+glyph 󰌟 md language php
+glyph 󰌠 md language python
+glyph 󰟔 md language r
+glyph 󰴭 md language ruby
+glyph 󰫏 md language ruby on rails
+glyph 󱘗 md language rust
+glyph 󰛥 md language swift
+glyph 󰛦 md language typescript
+glyph 󰙳 md language xaml
+glyph 󰌚 md lan pending
+glyph 󰌢 md laptop
+glyph 󱩊 md laptop account
+glyph 󰛧 md laptop off
+glyph 󰫐 md laravel
+glyph 󱒄 md laser pointer
+glyph 󰼃 md lasso
+glyph 󰑆 md lastpass
+glyph 󰽗 md latitude
+glyph 󰌧 md launch
+glyph 󰟕 md lava lamp
+glyph 󰌨 md layers
+glyph 󱢒 md layers edit
+glyph 󰹌 md layers minus
+glyph 󰌩 md layers off
+glyph 󰧽 md layers off outline
+glyph 󰧾 md layers outline
+glyph 󰹍 md layers plus
+glyph 󰹎 md layers remove
+glyph 󱈆 md layers search
+glyph 󱈇 md layers search outline
+glyph 󰽘 md layers triple
+glyph 󰽙 md layers triple outline
+glyph 󰙏 md lead pencil
+glyph 󰌪 md leaf
+glyph 󱤅 md leaf circle
+glyph 󱤆 md leaf circle outline
+glyph 󰲓 md leaf maple
+glyph 󱋚 md leaf maple off
+glyph 󱋙 md leaf off
+glyph 󰷗 md leak
+glyph 󰷘 md leak off
+glyph 󱫰 md lecturn
+glyph 󰌫 md led off
+glyph 󰌬 md led on
+glyph 󰌭 md led outline
+glyph 󰟖 md led strip
+glyph 󱁑 md led strip variant
+glyph 󱩋 md led strip variant off
+glyph 󰌮 md led variant off
+glyph 󰌯 md led variant on
+glyph 󰌰 md led variant outline
+glyph 󱅽 md leek
+glyph 󰥼 md less than
+glyph 󰥽 md less than or equal
+glyph 󰌱 md library
+glyph 󱨢 md library outline
+glyph 󰮩 md library shelves
+glyph 󰿃 md license
+glyph 󰡾 md lifebuoy
+glyph 󰌵 md lightbulb
+glyph 󱧡 md lightbulb alert
+glyph 󱧢 md lightbulb alert outline
+glyph 󱠀 md lightbulb auto
+glyph 󱠁 md lightbulb auto outline
+glyph 󱈈 md lightbulb cfl
+glyph 󱈉 md lightbulb cfl off
+glyph 󱉵 md lightbulb cfl spiral
+glyph 󱋃 md lightbulb cfl spiral off
+glyph 󱠄 md lightbulb fluorescent tube
+glyph 󱠅 md lightbulb fluorescent tube outline
+glyph 󱉓 md lightbulb group
+glyph 󱋍 md lightbulb group off
+glyph 󱋎 md lightbulb group off outline
+glyph 󱉔 md lightbulb group outline
+glyph 󱉕 md lightbulb multiple
+glyph 󱋏 md lightbulb multiple off
+glyph 󱋐 md lightbulb multiple off outline
+glyph 󱉖 md lightbulb multiple outline
+glyph 󱩌 md lightbulb night
+glyph 󱩍 md lightbulb night outline
+glyph 󰹏 md lightbulb off
+glyph 󰹐 md lightbulb off outline
+glyph 󰛨 md lightbulb on
+glyph 󱩎 md lightbulb on 10
+glyph 󱩏 md lightbulb on 20
+glyph 󱩐 md lightbulb on 30
+glyph 󱩑 md lightbulb on 40
+glyph 󱩒 md lightbulb on 50
+glyph 󱩓 md lightbulb on 60
+glyph 󱩔 md lightbulb on 70
+glyph 󱩕 md lightbulb on 80
+glyph 󱩖 md lightbulb on 90
+glyph 󰛩 md lightbulb on outline
+glyph 󰌶 md lightbulb outline
+glyph 󱧣 md lightbulb question
+glyph 󱧤 md lightbulb question outline
+glyph 󱟴 md lightbulb spot
+glyph 󱟵 md lightbulb spot off
+glyph 󱠂 md lightbulb variant
+glyph 󱠃 md lightbulb variant outline
+glyph 󱦇 md light flood down
+glyph 󱦈 md light flood up
+glyph 󰧿 md lighthouse
+glyph 󰨀 md lighthouse on
+glyph 󱐋 md lightning bolt
+glyph 󰠠 md lightning bolt circle
+glyph 󱐌 md lightning bolt outline
+glyph 󱞛 md light recessed
+glyph 󰥾 md light switch
+glyph 󱨤 md light switch off
+glyph 󰘤 md line scan
+glyph 󱑶 md lingerie
+glyph 󰌷 md link
+glyph 󰴚 md link box
+glyph 󰴛 md link box outline
+glyph 󰴜 md link box variant
+glyph 󰴝 md link box variant outline
+glyph 󰌻 md linkedin
+glyph 󱂺 md link lock
+glyph 󰌸 md link off
+glyph 󰲔 md link plus
+glyph 󰌹 md link variant
+glyph 󱃿 md link variant minus
+glyph 󰌺 md link variant off
+glyph 󱄀 md link variant plus
+glyph 󱄁 md link variant remove
+glyph 󰌽 md linux
+glyph 󰣭 md linux mint
+glyph 󱎵 md lipstick
+glyph 󱠦 md liquid spot
+glyph 󱤞 md liquor
+glyph 󱖫 md list status
+glyph 󰩡 md litecoin
+glyph 󰝲 md loading
+glyph 󰿄 md location enter
+glyph 󰿅 md location exit
+glyph 󰌾 md lock
+glyph 󰣮 md lock alert
+glyph 󱗑 md lock alert outline
+glyph 󱎚 md lock check
+glyph 󱚨 md lock check outline
+glyph 󰥿 md lock clock
+glyph 󰟗 md locker
+glyph 󰟘 md locker multiple
+glyph 󱚩 md lock minus
+glyph 󱚪 md lock minus outline
+glyph 󱙱 md lock off
+glyph 󱙲 md lock off outline
+glyph 󰌿 md lock open
+glyph 󱎛 md lock open alert
+glyph 󱗒 md lock open alert outline
+glyph 󱎜 md lock open check
+glyph 󱚫 md lock open check outline
+glyph 󱚬 md lock open minus
+glyph 󱚭 md lock open minus outline
+glyph 󰍀 md lock open outline
+glyph 󱚮 md lock open plus
+glyph 󱚯 md lock open plus outline
+glyph 󱚰 md lock open remove
+glyph 󱚱 md lock open remove outline
+glyph 󰿆 md lock open variant
+glyph 󰿇 md lock open variant outline
+glyph 󰍁 md lock outline
+glyph 󰛪 md lock pattern
+glyph 󰗻 md lock plus
+glyph 󱚲 md lock plus outline
+glyph 󰣯 md lock question
+glyph 󱚳 md lock remove
+glyph 󱚴 md lock remove outline
+glyph 󰝳 md lock reset
+glyph 󰢲 md lock smart
+glyph 󰍂 md login
+glyph 󰍃 md logout
+glyph 󰗽 md logout variant
+glyph 󰽚 md longitude
+glyph 󰍄 md looks
+glyph 󱖂 md lotion
+glyph 󱖃 md lotion outline
+glyph 󱖄 md lotion plus
+glyph 󱖅 md lotion plus outline
+glyph 󰍅 md loupe
+glyph 󰍆 md lumx
+glyph 󱂄 md lungs
+glyph 󱡃 md mace
+glyph 󰌤 md magazine pistol
+glyph 󰌣 md magazine rifle
+glyph 󱡄 md magic staff
+glyph 󰍇 md magnet
+glyph 󰍈 md magnet on
+glyph 󰍉 md magnify
+glyph 󰦀 md magnify close
+glyph 󱡴 md magnify expand
+glyph 󰍊 md magnify minus
+glyph 󰩢 md magnify minus cursor
+glyph 󰛬 md magnify minus outline
+glyph 󰍋 md magnify plus
+glyph 󰩣 md magnify plus cursor
+glyph 󰛭 md magnify plus outline
+glyph 󱈌 md magnify remove cursor
+glyph 󱈍 md magnify remove outline
+glyph 󱉶 md magnify scan
+glyph 󰺻 md mail
+glyph 󰛮 md mailbox
+glyph 󰶈 md mailbox open
+glyph 󰶉 md mailbox open outline
+glyph 󰶊 md mailbox open up
+glyph 󰶋 md mailbox open up outline
+glyph 󰶌 md mailbox outline
+glyph 󰶍 md mailbox up
+glyph 󰶎 md mailbox up outline
+glyph 󱘊 md manjaro
+glyph 󰍍 md map
+glyph 󰮪 md mapbox
+glyph 󰺼 md map check
+glyph 󰺽 md map check outline
+glyph 󰴞 md map clock
+glyph 󰴟 md map clock outline
+glyph 󰨁 md map legend
+glyph 󰍎 md map marker
+glyph 󱣣 md map marker account
+glyph 󱣤 md map marker account outline
+glyph 󰼅 md map marker alert
+glyph 󰼆 md map marker alert outline
+glyph 󰲕 md map marker check
+glyph 󱋻 md map marker check outline
+glyph 󰍏 md map marker circle
+glyph 󰣰 md map marker distance
+glyph 󱄂 md map marker down
+glyph 󱋛 md map marker left
+glyph 󱋝 md map marker left outline
+glyph 󰙐 md map marker minus
+glyph 󱋹 md map marker minus outline
+glyph 󰍐 md map marker multiple
+glyph 󱉷 md map marker multiple outline
+glyph 󰍑 md map marker off
+glyph 󱋽 md map marker off outline
+glyph 󰟙 md map marker outline
+glyph 󰴠 md map marker path
+glyph 󰙑 md map marker plus
+glyph 󱋸 md map marker plus outline
+glyph 󰼇 md map marker question
+glyph 󰼈 md map marker question outline
+glyph 󰍒 md map marker radius
+glyph 󱋼 md map marker radius outline
+glyph 󰼉 md map marker remove
+glyph 󱋺 md map marker remove outline
+glyph 󰼊 md map marker remove variant
+glyph 󱋜 md map marker right
+glyph 󱋞 md map marker right outline
+glyph 󱘈 md map marker star
+glyph 󱘉 md map marker star outline
+glyph 󱄃 md map marker up
+glyph 󰦁 md map minus
+glyph 󰦂 md map outline
+glyph 󰦃 md map plus
+glyph 󰦄 md map search
+glyph 󰦅 md map search outline
+glyph 󰍓 md margin
+glyph 󰙒 md marker
+glyph 󰷙 md marker cancel
+glyph 󰍕 md marker check
+glyph 󰫑 md mastodon
+glyph 󰦆 md material design
+glyph 󰍗 md material ui
+glyph 󰍘 md math compass
+glyph 󰲖 md math cos
+glyph 󰿈 md math integral
+glyph 󰿉 md math integral box
+glyph 󱂅 md math log
+glyph 󰿊 md math norm
+glyph 󰿋 md math norm box
+glyph 󰲗 md math sin
+glyph 󰲘 md math tan
+glyph 󰘨 md matrix
+glyph 󰦇 md medal
+glyph 󱌦 md medal outline
+glyph 󰛯 md medical bag
+glyph 󱪸 md medical cotton swab
+glyph 󱅻 md meditation
+glyph 󰍛 md memory
+glyph 󱟔 md menorah
+glyph 󱟕 md menorah fire
+glyph 󰍜 md menu
+glyph 󰍝 md menu down
+glyph 󰚶 md menu down outline
+glyph 󰍞 md menu left
+glyph 󰨂 md menu left outline
+glyph 󰮫 md menu open
+glyph 󰍟 md menu right
+glyph 󰨃 md menu right outline
+glyph 󰩤 md menu swap
+glyph 󰩥 md menu swap outline
+glyph 󰍠 md menu up
+glyph 󰚷 md menu up outline
+glyph 󰽜 md merge
+glyph 󰍡 md message
+glyph 󰍢 md message alert
+glyph 󰨄 md message alert outline
+glyph 󱋲 md message arrow left
+glyph 󱋳 md message arrow left outline
+glyph 󱋴 md message arrow right
+glyph 󱋵 md message arrow right outline
+glyph 󱥁 md message badge
+glyph 󱥂 md message badge outline
+glyph 󱖬 md message bookmark
+glyph 󱖭 md message bookmark outline
+glyph 󰚢 md message bulleted
+glyph 󰚣 md message bulleted off
+glyph 󰛱 md message cog
+glyph 󱅲 md message cog outline
+glyph 󰍣 md message draw
+glyph 󱧌 md message fast
+glyph 󱧍 md message fast outline
+glyph 󱖩 md message flash
+glyph 󱖪 md message flash outline
+glyph 󰍤 md message image
+glyph 󱅬 md message image outline
+glyph 󰿌 md message lock
+glyph 󱅭 md message lock outline
+glyph 󱅮 md message minus
+glyph 󱅯 md message minus outline
+glyph 󱙍 md message off
+glyph 󱙎 md message off outline
+glyph 󰍥 md message outline
+glyph 󰙓 md message plus
+glyph 󱂻 md message plus outline
+glyph 󰍦 md message processing
+glyph 󱅰 md message processing outline
+glyph 󱜺 md message question
+glyph 󱜻 md message question outline
+glyph 󰍧 md message reply
+glyph 󱜽 md message reply outline
+glyph 󰍨 md message reply text
+glyph 󱜾 md message reply text outline
+glyph 󰛰 md message settings
+glyph 󱅱 md message settings outline
+glyph 󰚚 md message star
+glyph 󱉐 md message star outline
+glyph 󰍩 md message text
+glyph 󱅳 md message text clock
+glyph 󱅴 md message text clock outline
+glyph 󱧎 md message text fast
+glyph 󱧏 md message text fast outline
+glyph 󰿍 md message text lock
+glyph 󱅵 md message text lock outline
+glyph 󰍪 md message text outline
+glyph 󰍫 md message video
+glyph 󰘩 md meteor
+glyph 󱩗 md meter electric
+glyph 󱩘 md meter electric outline
+glyph 󱩙 md meter gas
+glyph 󱩚 md meter gas outline
+glyph 󰟚 md metronome
+glyph 󰟛 md metronome tick
+glyph 󰍬 md microphone
+glyph 󰢳 md microphone minus
+glyph 󰍭 md microphone off
+glyph 󰍮 md microphone outline
+glyph 󰢴 md microphone plus
+glyph 󱦉 md microphone question
+glyph 󱦊 md microphone question outline
+glyph 󰍯 md microphone settings
+glyph 󰍰 md microphone variant
+glyph 󰍱 md microphone variant off
+glyph 󰙔 md microscope
+glyph 󰟜 md micro sd
+glyph 󰍲 md microsoft
+glyph 󱎎 md microsoft access
+glyph 󰠅 md microsoft azure
+glyph 󰿕 md microsoft azure devops
+glyph 󰂤 md microsoft bing
+glyph 󰦈 md microsoft dynamics 365
+glyph 󰇩 md microsoft edge
+glyph 󱎏 md microsoft excel
+glyph 󰌀 md microsoft internet explorer
+glyph 󰏆 md microsoft office
+glyph 󰏊 md microsoft onedrive
+glyph 󰝇 md microsoft onenote
+glyph 󰴢 md microsoft outlook
+glyph 󱎐 md microsoft powerpoint
+glyph 󱎑 md microsoft sharepoint
+glyph 󰊻 md microsoft teams
+glyph 󰘐 md microsoft visual studio
+glyph 󰨞 md microsoft visual studio code
+glyph 󰖳 md microsoft windows
+glyph 󰨡 md microsoft windows classic
+glyph 󱎒 md microsoft word
+glyph 󰖹 md microsoft xbox
+glyph 󰖺 md microsoft xbox controller
+glyph 󰝋 md microsoft xbox controller battery alert
+glyph 󰨢 md microsoft xbox controller battery charging
+glyph 󰝌 md microsoft xbox controller battery empty
+glyph 󰝍 md microsoft xbox controller battery full
+glyph 󰝎 md microsoft xbox controller battery low
+glyph 󰝏 md microsoft xbox controller battery medium
+glyph 󰝐 md microsoft xbox controller battery unknown
+glyph 󰹯 md microsoft xbox controller menu
+glyph 󰖻 md microsoft xbox controller off
+glyph 󰹰 md microsoft xbox controller view
+glyph 󰲙 md microwave
+glyph 󱐣 md microwave off
+glyph 󰽝 md middleware
+glyph 󰽞 md middleware outline
+glyph 󰣱 md midi
+glyph 󰣲 md midi port
+glyph 󰷚 md mine
+glyph 󰍳 md minecraft
+glyph 󰨆 md minidisc
+glyph 󰨅 md mini sd
+glyph 󰍴 md minus
+glyph 󰍵 md minus box
+glyph 󱅁 md minus box multiple
+glyph 󱅂 md minus box multiple outline
+glyph 󰛲 md minus box outline
+glyph 󰍶 md minus circle
+glyph 󰍚 md minus circle multiple
+glyph 󰫓 md minus circle multiple outline
+glyph 󱑙 md minus circle off
+glyph 󱑚 md minus circle off outline
+glyph 󰍷 md minus circle outline
+glyph 󰍸 md minus network
+glyph 󰲚 md minus network outline
+glyph 󱘹 md minus thick
+glyph 󱇽 md mirror
+glyph 󱞟 md mirror rectangle
+glyph 󱞠 md mirror variant
+glyph 󰶏 md mixed martial arts
+glyph 󰡿 md mixed reality
+glyph 󰮬 md molecule
+glyph 󱋾 md molecule co
+glyph 󰟤 md molecule co2
+glyph 󰍹 md monitor
+glyph 󱩛 md monitor account
+glyph 󱧐 md monitor arrow down
+glyph 󱧑 md monitor arrow down variant
+glyph 󰦉 md monitor cellphone
+glyph 󰦊 md monitor cellphone star
+glyph 󰨇 md monitor dashboard
+glyph 󱋆 md monitor edit
+glyph 󱎴 md monitor eye
+glyph 󰷛 md monitor lock
+glyph 󰍺 md monitor multiple
+glyph 󰶐 md monitor off
+glyph 󰹑 md monitor screenshot
+glyph 󱒃 md monitor share
+glyph 󱄄 md monitor shimmer
+glyph 󱡶 md monitor small
+glyph 󰽟 md monitor speaker
+glyph 󰽠 md monitor speaker off
+glyph 󰷜 md monitor star
+glyph 󰽡 md moon first quarter
+glyph 󰽢 md moon full
+glyph 󰽣 md moon last quarter
+glyph 󰽤 md moon new
+glyph 󰽥 md moon waning crescent
+glyph 󰽦 md moon waning gibbous
+glyph 󰽧 md moon waxing crescent
+glyph 󰽨 md moon waxing gibbous
+glyph 󱂆 md moped
+glyph 󱖷 md moped electric
+glyph 󱖸 md moped electric outline
+glyph 󱖹 md moped outline
+glyph 󰍻 md more
+glyph 󱝈 md mortar pestle
+glyph 󰏱 md mortar pestle plus
+glyph 󱠧 md mosque
+glyph 󱌔 md mother heart
+glyph 󰴡 md mother nurse
+glyph 󱖲 md motion
+glyph 󱖳 md motion outline
+glyph 󱖐 md motion pause
+glyph 󱖒 md motion pause outline
+glyph 󱖏 md motion play
+glyph 󱖑 md motion play outline
+glyph 󰶑 md motion sensor
+glyph 󱐵 md motion sensor off
+glyph 󰍼 md motorbike
+glyph 󱖺 md motorbike electric
+glyph 󰍽 md mouse
+glyph 󰦋 md mouse bluetooth
+glyph 󱕐 md mouse move down
+glyph 󱕑 md mouse move up
+glyph 󱕒 md mouse move vertical
+glyph 󰍾 md mouse off
+glyph 󰍿 md mouse variant
+glyph 󰎀 md mouse variant off
+glyph 󰙕 md move resize
+glyph 󰙖 md move resize variant
+glyph 󰎁 md movie
+glyph 󱛳 md movie check
+glyph 󱛴 md movie check outline
+glyph 󱛵 md movie cog
+glyph 󱛶 md movie cog outline
+glyph 󱄢 md movie edit
+glyph 󱄣 md movie edit outline
+glyph 󱄤 md movie filter
+glyph 󱄥 md movie filter outline
+glyph 󱛷 md movie minus
+glyph 󱛸 md movie minus outline
+glyph 󱛹 md movie off
+glyph 󱛺 md movie off outline
+glyph 󰿎 md movie open
+glyph 󱛻 md movie open check
+glyph 󱛼 md movie open check outline
+glyph 󱛽 md movie open cog
+glyph 󱛾 md movie open cog outline
+glyph 󱛿 md movie open edit
+glyph 󱜀 md movie open edit outline
+glyph 󱜁 md movie open minus
+glyph 󱜂 md movie open minus outline
+glyph 󱜃 md movie open off
+glyph 󱜄 md movie open off outline
+glyph 󰿏 md movie open outline
+glyph 󱜅 md movie open play
+glyph 󱜆 md movie open play outline
+glyph 󱜇 md movie open plus
+glyph 󱜈 md movie open plus outline
+glyph 󱜉 md movie open remove
+glyph 󱜊 md movie open remove outline
+glyph 󱜋 md movie open settings
+glyph 󱜌 md movie open settings outline
+glyph 󱜍 md movie open star
+glyph 󱜎 md movie open star outline
+glyph 󰷝 md movie outline
+glyph 󱜏 md movie play
+glyph 󱜐 md movie play outline
+glyph 󱜑 md movie plus
+glyph 󱜒 md movie plus outline
+glyph 󱜓 md movie remove
+glyph 󱜔 md movie remove outline
+glyph 󰟞 md movie roll
+glyph 󱇒 md movie search
+glyph 󱇓 md movie search outline
+glyph 󱜕 md movie settings
+glyph 󱜖 md movie settings outline
+glyph 󱜗 md movie star
+glyph 󱜘 md movie star outline
+glyph 󱙯 md mower
+glyph 󱙰 md mower bag
+glyph 󰦌 md muffin
+glyph 󱢓 md multicast
+glyph 󰎂 md multiplication
+glyph 󰎃 md multiplication box
+glyph 󰟟 md mushroom
+glyph 󱏺 md mushroom off
+glyph 󱏻 md mushroom off outline
+glyph 󰟠 md mushroom outline
+glyph 󰝚 md music
+glyph 󰽩 md music accidental double flat
+glyph 󰽪 md music accidental double sharp
+glyph 󰽫 md music accidental flat
+glyph 󰽬 md music accidental natural
+glyph 󰽭 md music accidental sharp
+glyph 󰎄 md music box
+glyph 󰌳 md music box multiple
+glyph 󰼄 md music box multiple outline
+glyph 󰎅 md music box outline
+glyph 󰎆 md music circle
+glyph 󰫔 md music circle outline
+glyph 󰽮 md music clef alto
+glyph 󰽯 md music clef bass
+glyph 󰽰 md music clef treble
+glyph 󰎇 md music note
+glyph 󰗾 md music note bluetooth
+glyph 󰗿 md music note bluetooth off
+glyph 󰽱 md music note eighth dotted
+glyph 󰎉 md music note half
+glyph 󰽲 md music note half dotted
+glyph 󰎊 md music note off
+glyph 󰽳 md music note off outline
+glyph 󰽴 md music note outline
+glyph 󰷞 md music note plus
+glyph 󰎋 md music note quarter
+glyph 󰽵 md music note quarter dotted
+glyph 󰎌 md music note sixteenth
+glyph 󰽶 md music note sixteenth dotted
+glyph 󰎍 md music note whole
+glyph 󰽷 md music note whole dotted
+glyph 󰝛 md music off
+glyph 󰽸 md music rest eighth
+glyph 󰽹 md music rest half
+glyph 󰽺 md music rest quarter
+glyph 󰽻 md music rest sixteenth
+glyph 󰽼 md music rest whole
+glyph 󱗞 md mustache
+glyph 󰷟 md nail
+glyph 󰣳 md nas
+glyph 󰢀 md nativescript
+glyph 󰎎 md nature
+glyph 󰎏 md nature people
+glyph 󰎐 md navigation
+glyph 󱘇 md navigation outline
+glyph 󱣱 md navigation variant outline
+glyph 󰗍 md near me
+glyph 󰼋 md necklace
+glyph 󰎑 md needle
+glyph 󱧒 md needle off
+glyph 󰝆 md netflix
+glyph 󰛳 md network
+glyph 󰲛 md network off
+glyph 󰲜 md network off outline
+glyph 󰲝 md network outline
+glyph 󱫋 md network pos
+glyph 󰣴 md network strength 1
+glyph 󰣵 md network strength 1 alert
+glyph 󰣶 md network strength 2
+glyph 󰣷 md network strength 2 alert
+glyph 󰣸 md network strength 3
+glyph 󰣹 md network strength 3 alert
+glyph 󰣺 md network strength 4
+glyph 󰣻 md network strength 4 alert
+glyph 󱤚 md network strength 4 cog
+glyph 󰣼 md network strength off
+glyph 󰣽 md network strength off outline
+glyph 󰣾 md network strength outline
+glyph 󰎔 md new box
+glyph 󰎕 md newspaper
+glyph 󱥃 md newspaper check
+glyph 󰼌 md newspaper minus
+glyph 󰼍 md newspaper plus
+glyph 󱥄 md newspaper remove
+glyph 󱀁 md newspaper variant
+glyph 󱀂 md newspaper variant multiple
+glyph 󱀃 md newspaper variant multiple outline
+glyph 󱀄 md newspaper variant outline
+glyph 󰎖 md nfc
+glyph 󰹓 md nfc search variant
+glyph 󰎗 md nfc tap
+glyph 󰎘 md nfc variant
+glyph 󰹔 md nfc variant off
+glyph 󰝴 md ninja
+glyph 󱎓 md nintendo game boy
+glyph 󰟡 md nintendo switch
+glyph 󰖫 md nintendo wii
+glyph 󰜭 md nintendo wiiu
+glyph 󱄅 md nix
+glyph 󰎙 md nodejs
+glyph 󱅾 md noodles
+glyph 󰎚 md note
+glyph 󱝽 md note alert
+glyph 󱝾 md note alert outline
+glyph 󰠮 md notebook
+glyph 󱓵 md notebook check
+glyph 󱓶 md notebook check outline
+glyph 󱓧 md notebook edit
+glyph 󱓩 md notebook edit outline
+glyph 󱨋 md notebook heart
+glyph 󱨌 md notebook heart outline
+glyph 󱘐 md notebook minus
+glyph 󱘑 md notebook minus outline
+glyph 󰹕 md notebook multiple
+glyph 󰺿 md notebook outline
+glyph 󱘒 md notebook plus
+glyph 󱘓 md notebook plus outline
+glyph 󱘔 md notebook remove
+glyph 󱘕 md notebook remove outline
+glyph 󱝿 md note check
+glyph 󱞀 md note check outline
+glyph 󱞁 md note edit
+glyph 󱞂 md note edit outline
+glyph 󱙏 md note minus
+glyph 󱙐 md note minus outline
+glyph 󰚸 md note multiple
+glyph 󰚹 md note multiple outline
+glyph 󱞃 md note off
+glyph 󱞄 md note off outline
+glyph 󰎛 md note outline
+glyph 󰎜 md note plus
+glyph 󰎝 md note plus outline
+glyph 󰦍 md not equal
+glyph 󰦎 md not equal variant
+glyph 󱙑 md note remove
+glyph 󱙒 md note remove outline
+glyph 󱙓 md note search
+glyph 󱙔 md note search outline
+glyph 󰎞 md note text
+glyph 󱇗 md note text outline
+glyph 󰎟 md notification clear all
+glyph 󰛷 md npm
+glyph 󰚤 md nuke
+glyph 󰟢 md null
+glyph 󰎠 md numeric
+glyph 󰎡 md numeric 0 box
+glyph 󰼎 md numeric 0 box multiple
+glyph 󰎢 md numeric 0 box multiple outline
+glyph 󰎣 md numeric 0 box outline
+glyph 󰬺 md numeric 1
+glyph 󰿩 md numeric 10
+glyph 󰽽 md numeric 10 box
+glyph 󰿪 md numeric 10 box multiple
+glyph 󰿫 md numeric 10 box multiple outline
+glyph 󰽾 md numeric 10 box outline
+glyph 󰿬 md numeric 10 circle
+glyph 󰿭 md numeric 10 circle outline
+glyph 󰎤 md numeric 1 box
+glyph 󰼏 md numeric 1 box multiple
+glyph 󰎥 md numeric 1 box multiple outline
+glyph 󰎦 md numeric 1 box outline
+glyph 󰲠 md numeric 1 circle
+glyph 󰲡 md numeric 1 circle outline
+glyph 󰬻 md numeric 2
+glyph 󰎧 md numeric 2 box
+glyph 󰼐 md numeric 2 box multiple
+glyph 󰎨 md numeric 2 box multiple outline
+glyph 󰎩 md numeric 2 box outline
+glyph 󰲢 md numeric 2 circle
+glyph 󰲣 md numeric 2 circle outline
+glyph 󰬼 md numeric 3
+glyph 󰎪 md numeric 3 box
+glyph 󰼑 md numeric 3 box multiple
+glyph 󰎫 md numeric 3 box multiple outline
+glyph 󰎬 md numeric 3 box outline
+glyph 󰲤 md numeric 3 circle
+glyph 󰲥 md numeric 3 circle outline
+glyph 󰬽 md numeric 4
+glyph 󰎭 md numeric 4 box
+glyph 󰼒 md numeric 4 box multiple
+glyph 󰎲 md numeric 4 box multiple outline
+glyph 󰎮 md numeric 4 box outline
+glyph 󰲦 md numeric 4 circle
+glyph 󰲧 md numeric 4 circle outline
+glyph 󰬾 md numeric 5
+glyph 󰎱 md numeric 5 box
+glyph 󰼓 md numeric 5 box multiple
+glyph 󰎯 md numeric 5 box multiple outline
+glyph 󰎰 md numeric 5 box outline
+glyph 󰲨 md numeric 5 circle
+glyph 󰲩 md numeric 5 circle outline
+glyph 󰬿 md numeric 6
+glyph 󰎳 md numeric 6 box
+glyph 󰼔 md numeric 6 box multiple
+glyph 󰎴 md numeric 6 box multiple outline
+glyph 󰎵 md numeric 6 box outline
+glyph 󰲪 md numeric 6 circle
+glyph 󰲫 md numeric 6 circle outline
+glyph 󰭀 md numeric 7
+glyph 󰎶 md numeric 7 box
+glyph 󰼕 md numeric 7 box multiple
+glyph 󰎷 md numeric 7 box multiple outline
+glyph 󰎸 md numeric 7 box outline
+glyph 󰲬 md numeric 7 circle
+glyph 󰲭 md numeric 7 circle outline
+glyph 󰭁 md numeric 8
+glyph 󰎹 md numeric 8 box
+glyph 󰼖 md numeric 8 box multiple
+glyph 󰎺 md numeric 8 box multiple outline
+glyph 󰎻 md numeric 8 box outline
+glyph 󰲮 md numeric 8 circle
+glyph 󰲯 md numeric 8 circle outline
+glyph 󰭂 md numeric 9
+glyph 󰎼 md numeric 9 box
+glyph 󰼗 md numeric 9 box multiple
+glyph 󰎽 md numeric 9 box multiple outline
+glyph 󰎾 md numeric 9 box outline
+glyph 󰲰 md numeric 9 circle
+glyph 󰲱 md numeric 9 circle outline
+glyph 󰿮 md numeric 9 plus
+glyph 󰎿 md numeric 9 plus box
+glyph 󰼘 md numeric 9 plus box multiple
+glyph 󰏀 md numeric 9 plus box multiple outline
+glyph 󰏁 md numeric 9 plus box outline
+glyph 󰲲 md numeric 9 plus circle
+glyph 󰲳 md numeric 9 plus circle outline
+glyph 󱁒 md numeric negative 1
+glyph 󱧓 md numeric off
+glyph 󱗋 md numeric positive 1
+glyph 󰛸 md nut
+glyph 󰏂 md nutrition
+glyph 󱄆 md nuxt
+glyph 󰙼 md oar
+glyph 󰷠 md ocarina
+glyph 󱋩 md oci
+glyph 󱄺 md ocr
+glyph 󰏃 md octagon
+glyph 󰏄 md octagon outline
+glyph 󰛹 md octagram
+glyph 󰝵 md octagram outline
+glyph 󱥐 md octahedron
+glyph 󱥑 md octahedron off
+glyph 󰏅 md odnoklassniki
+glyph 󱈛 md offer
+glyph 󰦑 md office building
+glyph 󱥉 md office building cog
+glyph 󱥊 md office building cog outline
+glyph 󱔠 md office building marker
+glyph 󱔡 md office building marker outline
+glyph 󱔟 md office building outline
+glyph 󰏇 md oil
+glyph 󰼙 md oil lamp
+glyph 󱁓 md oil level
+glyph 󰿸 md oil temperature
+glyph 󰥳 md om
+glyph 󰏉 md omega
+glyph 󰢁 md onepassword
+glyph 󰮭 md one up
+glyph 󰗌 md opacity
+glyph 󰏍 md openid
+glyph 󰏋 md open in app
+glyph 󰏌 md open in new
+glyph 󰮮 md open source initiative
+glyph 󰏎 md opera
+glyph 󰀘 md orbit
+glyph 󱗛 md orbit variant
+glyph 󰈍 md order alphabetical ascending
+glyph 󰴇 md order alphabetical descending
+glyph 󰊾 md order bool ascending
+glyph 󰦏 md order bool ascending variant
+glyph 󱎄 md order bool descending
+glyph 󰦐 md order bool descending variant
+glyph 󰕅 md order numeric ascending
+glyph 󰕆 md order numeric descending
+glyph 󰭃 md origin
+glyph 󰏏 md ornament
+glyph 󰏐 md ornament variant
+glyph 󱁔 md outdoor lamp
+glyph 󱀅 md overscan
+glyph 󰏒 md owl
+glyph 󰏓 md package
+glyph 󰏔 md package down
+glyph 󰏕 md package up
+glyph 󰏖 md package variant
+glyph 󰏗 md package variant closed
+glyph 󱧔 md package variant closed minus
+glyph 󱧕 md package variant closed plus
+glyph 󱧖 md package variant closed remove
+glyph 󱧗 md package variant minus
+glyph 󱧘 md package variant plus
+glyph 󱧙 md package variant remove
+glyph 󰮯 md pac man
+glyph 󰘀 md page first
+glyph 󰘁 md page last
+glyph 󰛺 md page layout body
+glyph 󰛻 md page layout footer
+glyph 󰛼 md page layout header
+glyph 󰽿 md page layout header footer
+glyph 󰛽 md page layout sidebar left
+glyph 󰛾 md page layout sidebar right
+glyph 󰮰 md page next
+glyph 󰮱 md page next outline
+glyph 󰮲 md page previous
+glyph 󰮳 md page previous outline
+glyph 󱐗 md pail
+glyph 󱐷 md pail minus
+glyph 󱐼 md pail minus outline
+glyph 󱐹 md pail off
+glyph 󱐾 md pail off outline
+glyph 󱐺 md pail outline
+glyph 󱐶 md pail plus
+glyph 󱐻 md pail plus outline
+glyph 󱐸 md pail remove
+glyph 󱐽 md pail remove outline
+glyph 󰏘 md palette
+glyph 󰏙 md palette advanced
+glyph 󰸌 md palette outline
+glyph 󰢵 md palette swatch
+glyph 󱍜 md palette swatch outline
+glyph 󱥚 md palette swatch variant
+glyph 󱁕 md palm tree
+glyph 󰮴 md pan
+glyph 󰮵 md pan bottom left
+glyph 󰮶 md pan bottom right
+glyph 󰏚 md panda
+glyph 󰏛 md pandora
+glyph 󰮷 md pan down
+glyph 󰮸 md pan horizontal
+glyph 󰮹 md pan left
+glyph 󰏜 md panorama
+glyph 󰏝 md panorama fisheye
+glyph 󱤨 md panorama horizontal
+glyph 󰏞 md panorama horizontal outline
+glyph 󱦌 md panorama outline
+glyph 󱦍 md panorama sphere
+glyph 󱦎 md panorama sphere outline
+glyph 󱦏 md panorama variant
+glyph 󱦐 md panorama variant outline
+glyph 󱤩 md panorama vertical
+glyph 󰏟 md panorama vertical outline
+glyph 󱥟 md panorama wide angle
+glyph 󰏠 md panorama wide angle outline
+glyph 󰮺 md pan right
+glyph 󰮻 md pan top left
+glyph 󰮼 md pan top right
+glyph 󰮽 md pan up
+glyph 󰮾 md pan vertical
+glyph 󰏢 md paperclip
+glyph 󱫆 md paperclip check
+glyph 󱧚 md paperclip lock
+glyph 󱫇 md paperclip minus
+glyph 󱫈 md paperclip off
+glyph 󱫉 md paperclip plus
+glyph 󱫊 md paperclip remove
+glyph 󰏡 md paper cut vertical
+glyph 󱅗 md paper roll
+glyph 󱅘 md paper roll outline
+glyph 󰲴 md parachute
+glyph 󰲵 md parachute outline
+glyph 󱝅 md paragliding
+glyph 󰏣 md parking
+glyph 󱁖 md party popper
+glyph 󰟣 md passport
+glyph 󰷡 md passport biometric
+glyph 󱅠 md pasta
+glyph 󰾀 md patio heater
+glyph 󰢂 md patreon
+glyph 󰏤 md pause
+glyph 󰏥 md pause circle
+glyph 󰏦 md pause circle outline
+glyph 󰏧 md pause octagon
+glyph 󰏨 md pause octagon outline
+glyph 󰏩 md paw
+glyph 󰙗 md paw off
+glyph 󱙶 md paw off outline
+glyph 󱙵 md paw outline
+glyph 󰢄 md peace
+glyph 󰿼 md peanut
+glyph 󰿽 md peanut off
+glyph 󰿿 md peanut off outline
+glyph 󰿾 md peanut outline
+glyph 󰏪 md pen
+glyph 󰏫 md pencil
+glyph 󰏬 md pencil box
+glyph 󱅄 md pencil box multiple
+glyph 󱅅 md pencil box multiple outline
+glyph 󰏭 md pencil box outline
+glyph 󰛿 md pencil circle
+glyph 󰝶 md pencil circle outline
+glyph 󰏮 md pencil lock
+glyph 󰷧 md pencil lock outline
+glyph 󰷨 md pencil minus
+glyph 󰷩 md pencil minus outline
+glyph 󰏯 md pencil off
+glyph 󰷪 md pencil off outline
+glyph 󰲶 md pencil outline
+glyph 󰷫 md pencil plus
+glyph 󰷬 md pencil plus outline
+glyph 󰷭 md pencil remove
+glyph 󰷮 md pencil remove outline
+glyph 󱍓 md pencil ruler
+glyph 󰻀 md penguin
+glyph 󰷢 md pen lock
+glyph 󰷣 md pen minus
+glyph 󰷤 md pen off
+glyph 󰷥 md pen plus
+glyph 󰷦 md pen remove
+glyph 󰜁 md pentagon
+glyph 󰜀 md pentagon outline
+glyph 󱙧 md pentagram
+glyph 󰏰 md percent
+glyph 󱨂 md percent box
+glyph 󱨃 md percent box outline
+glyph 󱨄 md percent circle
+glyph 󱨅 md percent circle outline
+glyph 󱉸 md percent outline
+glyph 󰢶 md periodic table
+glyph 󰴣 md perspective less
+glyph 󰴤 md perspective more
+glyph 󱟅 md ph
+glyph 󰏲 md phone
+glyph 󰼚 md phone alert
+glyph 󱆎 md phone alert outline
+glyph 󰏳 md phone bluetooth
+glyph 󱆏 md phone bluetooth outline
+glyph 󱂼 md phone cancel
+glyph 󱆐 md phone cancel outline
+glyph 󱆩 md phone check
+glyph 󱆪 md phone check outline
+glyph 󰘂 md phone classic
+glyph 󱉹 md phone classic off
+glyph 󱧛 md phone clock
+glyph 󱕙 md phone dial
+glyph 󱕚 md phone dial outline
+glyph 󰏴 md phone forward
+glyph 󱆑 md phone forward outline
+glyph 󰏵 md phone hangup
+glyph 󱆒 md phone hangup outline
+glyph 󰏷 md phone incoming
+glyph 󱆓 md phone incoming outline
+glyph 󰏶 md phone in talk
+glyph 󱆂 md phone in talk outline
+glyph 󰏸 md phone lock
+glyph 󱆔 md phone lock outline
+glyph 󰏹 md phone log
+glyph 󱆕 md phone log outline
+glyph 󱆖 md phone message
+glyph 󱆗 md phone message outline
+glyph 󰙘 md phone minus
+glyph 󱆘 md phone minus outline
+glyph 󰏺 md phone missed
+glyph 󱆥 md phone missed outline
+glyph 󰷯 md phone off
+glyph 󱆦 md phone off outline
+glyph 󰏻 md phone outgoing
+glyph 󱆙 md phone outgoing outline
+glyph 󰷰 md phone outline
+glyph 󰏼 md phone paused
+glyph 󱆚 md phone paused outline
+glyph 󰙙 md phone plus
+glyph 󱆛 md phone plus outline
+glyph 󱦓 md phone refresh
+glyph 󱦔 md phone refresh outline
+glyph 󱔯 md phone remove
+glyph 󱔰 md phone remove outline
+glyph 󰠯 md phone return
+glyph 󱆜 md phone return outline
+glyph 󱆫 md phone ring
+glyph 󱆬 md phone ring outline
+glyph 󰢅 md phone rotate landscape
+glyph 󰢆 md phone rotate portrait
+glyph 󰏽 md phone settings
+glyph 󱆝 md phone settings outline
+glyph 󱦕 md phone sync
+glyph 󱦖 md phone sync outline
+glyph 󰏾 md phone voip
+glyph 󰏿 md pi
+glyph 󰙽 md piano
+glyph 󰚘 md piano off
+glyph 󰐀 md pi box
+glyph 󰢷 md pickaxe
+glyph 󰹗 md picture in picture bottom right
+glyph 󰹘 md picture in picture bottom right outline
+glyph 󰹙 md picture in picture top right
+glyph 󰹚 md picture in picture top right outline
+glyph 󰢇 md pier
+glyph 󰢈 md pier crane
+glyph 󰐁 md pig
+glyph 󱀇 md piggy bank
+glyph 󱙹 md piggy bank outline
+glyph 󱀆 md pig variant
+glyph 󱙸 md pig variant outline
+glyph 󰷱 md pi hole
+glyph 󰐂 md pill
+glyph 󰜂 md pillar
+glyph 󱩜 md pill off
+glyph 󰐃 md pin
+glyph 󰐅 md pine tree
+glyph 󰐆 md pine tree box
+glyph 󱐚 md pine tree fire
+glyph 󰐄 md pin off
+glyph 󰤰 md pin off outline
+glyph 󰤱 md pin outline
+glyph 󰐇 md pinterest
+glyph 󰫕 md pinwheel
+glyph 󰫖 md pinwheel outline
+glyph 󰟥 md pipe
+glyph 󰟦 md pipe disconnected
+glyph 󰢉 md pipe leak
+glyph 󱡍 md pipe valve
+glyph 󱍔 md pipe wrench
+glyph 󰨈 md pirate
+glyph 󰜃 md pistol
+glyph 󰢊 md piston
+glyph 󱕓 md pitchfork
+glyph 󰐉 md pizza
+glyph 󰐊 md play
+glyph 󱉺 md play box
+glyph 󱨖 md play box lock
+glyph 󱨗 md play box lock open
+glyph 󱨘 md play box lock open outline
+glyph 󱨙 md play box lock outline
+glyph 󰴙 md play box multiple
+glyph 󱏦 md play box multiple outline
+glyph 󰐋 md play box outline
+glyph 󰐌 md play circle
+glyph 󰐍 md play circle outline
+glyph 󰗇 md playlist check
+glyph 󰤀 md playlist edit
+glyph 󰐐 md playlist minus
+glyph 󰲸 md playlist music
+glyph 󰲹 md playlist music outline
+glyph 󰐑 md playlist play
+glyph 󰐒 md playlist plus
+glyph 󰐓 md playlist remove
+glyph 󰷲 md playlist star
+glyph 󰢋 md play network
+glyph 󰲷 md play network outline
+glyph 󰼛 md play outline
+glyph 󰐎 md play pause
+glyph 󰐏 md play protected content
+glyph 󰣿 md play speed
+glyph 󰚺 md plex
+glyph 󱦤 md pliers
+glyph 󰐕 md plus
+glyph 󰐖 md plus box
+glyph 󰌴 md plus box multiple
+glyph 󱅃 md plus box multiple outline
+glyph 󰜄 md plus box outline
+glyph 󰐗 md plus circle
+glyph 󰍌 md plus circle multiple
+glyph 󰐘 md plus circle multiple outline
+glyph 󰐙 md plus circle outline
+glyph 󱩝 md plus lock
+glyph 󱩞 md plus lock open
+glyph 󰦒 md plus minus
+glyph 󰦓 md plus minus box
+glyph 󱓉 md plus minus variant
+glyph 󰐚 md plus network
+glyph 󰲺 md plus network outline
+glyph 󰜅 md plus outline
+glyph 󱇬 md plus thick
+glyph 󰦔 md podcast
+glyph 󰴥 md podium
+glyph 󰴦 md podium bronze
+glyph 󰴧 md podium gold
+glyph 󰴨 md podium silver
+glyph 󰶒 md point of sale
+glyph 󰐝 md pokeball
+glyph 󰨉 md pokemon go
+glyph 󰠰 md poker chip
+glyph 󰐞 md polaroid
+glyph 󱅧 md police badge
+glyph 󱅨 md police badge outline
+glyph 󱠹 md police station
+glyph 󰐟 md poll
+glyph 󱓃 md polo
+glyph 󰐡 md polymer
+glyph 󰘆 md pool
+glyph 󱩟 md pool thermometer
+glyph 󰐢 md popcorn
+glyph 󱀈 md post
+glyph 󰲻 md postage stamp
+glyph 󱩠 md post lamp
+glyph 󱀉 md post outline
+glyph 󰋥 md pot
+glyph 󰙛 md pot mix
+glyph 󰙷 md pot mix outline
+glyph 󰋿 md pot outline
+glyph 󰙚 md pot steam
+glyph 󰌦 md pot steam outline
+glyph 󰐣 md pound
+glyph 󰐤 md pound box
+glyph 󱅿 md pound box outline
+glyph 󰐥 md power
+glyph 󰤁 md power cycle
+glyph 󰤂 md power off
+glyph 󰤃 md power on
+glyph 󰚥 md power plug
+glyph 󰚦 md power plug off
+glyph 󱐤 md power plug off outline
+glyph 󱐥 md power plug outline
+glyph 󰐦 md power settings
+glyph 󰨊 md powershell
+glyph 󰤄 md power sleep
+glyph 󰐧 md power socket
+glyph 󰤅 md power socket au
+glyph 󰾳 md power socket ch
+glyph 󱄇 md power socket de
+glyph 󰟧 md power socket eu
+glyph 󱄈 md power socket fr
+glyph 󱓿 md power socket it
+glyph 󱄉 md power socket jp
+glyph 󰟨 md power socket uk
+glyph 󰟩 md power socket us
+glyph 󰤆 md power standby
+glyph 󰜆 md prescription
+glyph 󰐨 md presentation
+glyph 󰐩 md presentation play
+glyph 󱕢 md pretzel
+glyph 󰐪 md printer
+glyph 󰐫 md printer 3d
+glyph 󰹛 md printer 3d nozzle
+glyph 󱇀 md printer 3d nozzle alert
+glyph 󱇁 md printer 3d nozzle alert outline
+glyph 󱢸 md printer 3d nozzle heat
+glyph 󱢹 md printer 3d nozzle heat outline
+glyph 󰹜 md printer 3d nozzle outline
+glyph 󰐬 md printer alert
+glyph 󱅆 md printer check
+glyph 󱑘 md printer eye
+glyph 󰹝 md printer off
+glyph 󱞅 md printer off outline
+glyph 󱞆 md printer outline
+glyph 󱁗 md printer pos
+glyph 󱑗 md printer search
+glyph 󰜇 md printer settings
+glyph 󰨋 md printer wireless
+glyph 󰘃 md priority high
+glyph 󰘄 md priority low
+glyph 󰐭 md professional hexagon
+glyph 󰲼 md progress alert
+glyph 󰦕 md progress check
+glyph 󰦖 md progress clock
+glyph 󱄊 md progress close
+glyph 󰦗 md progress download
+glyph 󱞇 md progress pencil
+glyph 󱔢 md progress question
+glyph 󱞈 md progress star
+glyph 󰦘 md progress upload
+glyph 󰲽 md progress wrench
+glyph 󰐮 md projector
+glyph 󱨣 md projector off
+glyph 󰐯 md projector screen
+glyph 󱠍 md projector screen off
+glyph 󱠎 md projector screen off outline
+glyph 󱜤 md projector screen outline
+glyph 󱠏 md projector screen variant
+glyph 󱠐 md projector screen variant off
+glyph 󱠑 md projector screen variant off outline
+glyph 󱠒 md projector screen variant outline
+glyph 󱍗 md propane tank
+glyph 󱍘 md propane tank outline
+glyph 󰿘 md protocol
+glyph 󰚧 md publish
+glyph 󱥅 md publish off
+glyph 󰐰 md pulse
+glyph 󱐂 md pump
+glyph 󰮿 md pumpkin
+glyph 󰼜 md purse
+glyph 󰼝 md purse outline
+glyph 󰐱 md puzzle
+glyph 󱐦 md puzzle check
+glyph 󱐧 md puzzle check outline
+glyph 󱓓 md puzzle edit
+glyph 󱓙 md puzzle edit outline
+glyph 󱓔 md puzzle heart
+glyph 󱓚 md puzzle heart outline
+glyph 󱓑 md puzzle minus
+glyph 󱓗 md puzzle minus outline
+glyph 󰩦 md puzzle outline
+glyph 󱓐 md puzzle plus
+glyph 󱓖 md puzzle plus outline
+glyph 󱓒 md puzzle remove
+glyph 󱓘 md puzzle remove outline
+glyph 󱓕 md puzzle star
+glyph 󱓛 md puzzle star outline
+glyph 󱥒 md pyramid
+glyph 󱥓 md pyramid off
+glyph 󰦙 md qi
+glyph 󰘅 md qqchat
+glyph 󰐲 md qrcode
+glyph 󰢸 md qrcode edit
+glyph 󱆌 md qrcode minus
+glyph 󱆋 md qrcode plus
+glyph 󱆍 md qrcode remove
+glyph 󰐳 md qrcode scan
+glyph 󰐴 md quadcopter
+glyph 󰐵 md quality high
+glyph 󰨌 md quality low
+glyph 󰨍 md quality medium
+glyph 󰴩 md quora
+glyph 󰤇 md rabbit
+glyph 󱩡 md rabbit variant
+glyph 󱩢 md rabbit variant outline
+glyph 󰶓 md racing helmet
+glyph 󰶔 md racquetball
+glyph 󰐷 md radar
+glyph 󰐸 md radiator
+glyph 󰫗 md radiator disabled
+glyph 󰫘 md radiator off
+glyph 󰐹 md radio
+glyph 󰐼 md radioactive
+glyph 󱡝 md radioactive circle
+glyph 󱡞 md radioactive circle outline
+glyph 󰻁 md radioactive off
+glyph 󰲾 md radio am
+glyph 󰐾 md radiobox marked
+glyph 󰲿 md radio fm
+glyph 󰐺 md radio handheld
+glyph 󱓅 md radiology box
+glyph 󱓆 md radiology box outline
+glyph 󱈜 md radio off
+glyph 󰐻 md radio tower
+glyph 󰳀 md radius
+glyph 󰳁 md radius outline
+glyph 󰼞 md railroad light
+glyph 󱕄 md rake
+glyph 󰐿 md raspberry pi
+glyph 󱨏 md raw
+glyph 󱨐 md raw off
+glyph 󰑀 md ray end
+glyph 󰑁 md ray end arrow
+glyph 󰑂 md ray start
+glyph 󰑃 md ray start arrow
+glyph 󰑄 md ray start end
+glyph 󱗘 md ray start vertex end
+glyph 󰑅 md ray vertex
+glyph 󱦗 md razor double edge
+glyph 󱦘 md razor single edge
+glyph 󰜈 md react
+glyph 󰑇 md read
+glyph 󰑉 md receipt
+glyph 󱧜 md receipt outline
+glyph 󱩣 md receipt text check
+glyph 󱩤 md receipt text check outline
+glyph 󱩥 md receipt text minus
+glyph 󱩦 md receipt text minus outline
+glyph 󱩧 md receipt text plus
+glyph 󱩨 md receipt text plus outline
+glyph 󱩩 md receipt text remove
+glyph 󱩪 md receipt text remove outline
+glyph 󰑊 md record
+glyph 󰻂 md record circle
+glyph 󰻃 md record circle outline
+glyph 󰦚 md record player
+glyph 󰑋 md record rec
+glyph 󰹞 md rectangle
+glyph 󰹟 md rectangle outline
+glyph 󰑌 md recycle
+glyph 󱎝 md recycle variant
+glyph 󰑍 md reddit
+glyph 󱄛 md redhat
+glyph 󰑎 md redo
+glyph 󰑏 md redo variant
+glyph 󰨎 md reflect horizontal
+glyph 󰨏 md reflect vertical
+glyph 󰑐 md refresh
+glyph 󱣲 md refresh auto
+glyph 󱍷 md refresh circle
+glyph 󰑑 md regex
+glyph 󰩧 md registered trademark
+glyph 󱖈 md reiterate
+glyph 󱒖 md relation many to many
+glyph 󱒗 md relation many to one
+glyph 󱒘 md relation many to one or many
+glyph 󱒙 md relation many to only one
+glyph 󱒚 md relation many to zero or many
+glyph 󱒛 md relation many to zero or one
+glyph 󱒜 md relation one or many to many
+glyph 󱒝 md relation one or many to one
+glyph 󱒞 md relation one or many to one or many
+glyph 󱒟 md relation one or many to only one
+glyph 󱒠 md relation one or many to zero or many
+glyph 󱒡 md relation one or many to zero or one
+glyph 󱒢 md relation one to many
+glyph 󱒣 md relation one to one
+glyph 󱒤 md relation one to one or many
+glyph 󱒥 md relation one to only one
+glyph 󱒦 md relation one to zero or many
+glyph 󱒧 md relation one to zero or one
+glyph 󱒨 md relation only one to many
+glyph 󱒩 md relation only one to one
+glyph 󱒪 md relation only one to one or many
+glyph 󱒫 md relation only one to only one
+glyph 󱒬 md relation only one to zero or many
+glyph 󱒭 md relation only one to zero or one
+glyph 󱒮 md relation zero or many to many
+glyph 󱒯 md relation zero or many to one
+glyph 󱒰 md relation zero or many to one or many
+glyph 󱒱 md relation zero or many to only one
+glyph 󱒲 md relation zero or many to zero or many
+glyph 󱒳 md relation zero or many to zero or one
+glyph 󱒴 md relation zero or one to many
+glyph 󱒵 md relation zero or one to one
+glyph 󱒶 md relation zero or one to one or many
+glyph 󱒷 md relation zero or one to only one
+glyph 󱒸 md relation zero or one to zero or many
+glyph 󱒹 md relation zero or one to zero or one
+glyph 󰑒 md relative scale
+glyph 󰑓 md reload
+glyph 󱄋 md reload alert
+glyph 󰢌 md reminder
+glyph 󰑔 md remote
+glyph 󰢹 md remote desktop
+glyph 󰻄 md remote off
+glyph 󰻅 md remote tv
+glyph 󰻆 md remote tv off
+glyph 󰑕 md rename box
+glyph 󰚈 md reorder horizontal
+glyph 󰚉 md reorder vertical
+glyph 󰑖 md repeat
+glyph 󰑗 md repeat off
+glyph 󰑘 md repeat once
+glyph 󰕇 md repeat variant
+glyph 󰑙 md replay
+glyph 󰑚 md reply
+glyph 󰑛 md reply all
+glyph 󰼟 md reply all outline
+glyph 󱆮 md reply circle
+glyph 󰼠 md reply outline
+glyph 󰑜 md reproduction
+glyph 󰭄 md resistor
+glyph 󰭅 md resistor nodes
+glyph 󰩨 md resize
+glyph 󰑝 md resize bottom right
+glyph 󰑞 md responsive
+glyph 󰜉 md restart
+glyph 󱄌 md restart alert
+glyph 󰶕 md restart off
+glyph 󰦛 md restore
+glyph 󱄍 md restore alert
+glyph 󰑟 md rewind
+glyph 󰴪 md rewind 10
+glyph 󱥆 md rewind 15
+glyph 󰶖 md rewind 30
+glyph 󱇹 md rewind 5
+glyph 󱘌 md rewind 60
+glyph 󰜊 md rewind outline
+glyph 󰜋 md rhombus
+glyph 󰨐 md rhombus medium
+glyph 󱓜 md rhombus medium outline
+glyph 󰜌 md rhombus outline
+glyph 󰨑 md rhombus split
+glyph 󱓝 md rhombus split outline
+glyph 󰑠 md ribbon
+glyph 󰟪 md rice
+glyph 󱖻 md rickshaw
+glyph 󱖼 md rickshaw electric
+glyph 󰟫 md ring
+glyph 󰹠 md rivet
+glyph 󰑡 md road
+glyph 󰑢 md road variant
+glyph 󱁘 md robber
+glyph 󰚩 md robot
+glyph 󱚝 md robot angry
+glyph 󱚞 md robot angry outline
+glyph 󱚟 md robot confused
+glyph 󱚠 md robot confused outline
+glyph 󱚡 md robot dead
+glyph 󱚢 md robot dead outline
+glyph 󱚣 md robot excited
+glyph 󱚤 md robot excited outline
+glyph 󱜙 md robot happy
+glyph 󱜚 md robot happy outline
+glyph 󰭆 md robot industrial
+glyph 󱨚 md robot industrial outline
+glyph 󱚥 md robot love
+glyph 󱚦 md robot love outline
+glyph 󱇷 md robot mower
+glyph 󱇳 md robot mower outline
+glyph 󱚧 md robot off
+glyph 󱙻 md robot off outline
+glyph 󱙺 md robot outline
+glyph 󰜍 md robot vacuum
+glyph 󰤈 md robot vacuum variant
+glyph 󰑣 md rocket
+glyph 󱓞 md rocket launch
+glyph 󱓟 md rocket launch outline
+glyph 󱎯 md rocket outline
+glyph 󱌧 md rodent
+glyph 󰴬 md rollerblade
+glyph 󰀮 md rollerblade off
+glyph 󱩫 md roller shade
+glyph 󱩬 md roller shade closed
+glyph 󰴫 md roller skate
+glyph 󰅅 md roller skate off
+glyph 󰯀 md rollupjs
+glyph 󱪹 md rolodex
+glyph 󱪺 md rolodex outline
+glyph 󱂉 md roman numeral 2
+glyph 󱂊 md roman numeral 3
+glyph 󱂋 md roman numeral 4
+glyph 󱂍 md roman numeral 6
+glyph 󱂎 md roman numeral 7
+glyph 󱂏 md roman numeral 8
+glyph 󱂐 md roman numeral 9
+glyph 󰢍 md room service
+glyph 󰶗 md room service outline
+glyph 󱦙 md rotate 360
+glyph 󰻇 md rotate 3d
+glyph 󰑤 md rotate 3d variant
+glyph 󰑥 md rotate left
+glyph 󰑦 md rotate left variant
+glyph 󰶘 md rotate orbit
+glyph 󰑧 md rotate right
+glyph 󰑨 md rotate right variant
+glyph 󰘇 md rounded corner
+glyph 󱇢 md router
+glyph 󱂇 md router network
+glyph 󰑩 md router wireless
+glyph 󱖣 md router wireless off
+glyph 󰩩 md router wireless settings
+glyph 󰑪 md routes
+glyph 󱁙 md routes clock
+glyph 󰘈 md rowing
+glyph 󰑫 md rss
+glyph 󰑬 md rss box
+glyph 󰼡 md rss off
+glyph 󱑵 md rug
+glyph 󰶙 md rugby
+glyph 󰑭 md ruler
+glyph 󰳂 md ruler square
+glyph 󰺾 md ruler square compass
+glyph 󰜎 md run
+glyph 󰑮 md run fast
+glyph 󱇔 md rv truck
+glyph 󰴮 md sack
+glyph 󰴯 md sack percent
+glyph 󰩪 md safe
+glyph 󱉼 md safe square
+glyph 󱉽 md safe square outline
+glyph 󰴰 md safety goggles
+glyph 󰻈 md sail boat
+glyph 󱫯 md sail boat sink
+glyph 󰑯 md sale
+glyph 󱨆 md sale outline
+glyph 󰢎 md salesforce
+glyph 󰟬 md sass
+glyph 󰑰 md satellite
+glyph 󰤉 md satellite uplink
+glyph 󰑱 md satellite variant
+glyph 󰢺 md sausage
+glyph 󱞉 md sausage off
+glyph 󰹡 md saw blade
+glyph 󱑺 md sawtooth wave
+glyph 󰘉 md saxophone
+glyph 󰑲 md scale
+glyph 󰗑 md scale balance
+glyph 󰑳 md scale bathroom
+glyph 󱁚 md scale off
+glyph 󱦸 md scale unbalanced
+glyph 󱏘 md scan helper
+glyph 󰚫 md scanner
+glyph 󰤊 md scanner off
+glyph 󰻉 md scatter plot
+glyph 󰻊 md scatter plot outline
+glyph 󱥘 md scent
+glyph 󱥙 md scent off
+glyph 󰑴 md school
+glyph 󱆀 md school outline
+glyph 󰩫 md scissors cutting
+glyph 󱖽 md scooter
+glyph 󱖾 md scooter electric
+glyph 󱉾 md scoreboard
+glyph 󱉿 md scoreboard outline
+glyph 󰑵 md screen rotation
+glyph 󰑸 md screen rotation lock
+glyph 󰑶 md screwdriver
+glyph 󰷳 md screw flat top
+glyph 󰷴 md screw lag
+glyph 󰷵 md screw machine flat top
+glyph 󰷶 md screw machine round top
+glyph 󰷷 md screw round top
+glyph 󰯁 md script
+glyph 󰑷 md script outline
+glyph 󰯂 md script text
+glyph 󱜥 md script text key
+glyph 󱜦 md script text key outline
+glyph 󰯃 md script text outline
+glyph 󱜧 md script text play
+glyph 󱜨 md script text play outline
+glyph 󰑹 md sd
+glyph 󰑺 md seal
+glyph 󰿙 md seal variant
+glyph 󰜏 md search web
+glyph 󰳃 md seat
+glyph 󰳅 md seatbelt
+glyph 󰑻 md seat flat
+glyph 󰑼 md seat flat angled
+glyph 󰑽 md seat individual suite
+glyph 󰑾 md seat legroom extra
+glyph 󰑿 md seat legroom normal
+glyph 󰒀 md seat legroom reduced
+glyph 󰳄 md seat outline
+glyph 󱉉 md seat passenger
+glyph 󰒁 md seat recline extra
+glyph 󰒂 md seat recline normal
+glyph 󰒃 md security
+glyph 󰒄 md security network
+glyph 󰹢 md seed
+glyph 󱏽 md seed off
+glyph 󱏾 md seed off outline
+glyph 󰹣 md seed outline
+glyph 󱩭 md seed plus
+glyph 󱩮 md seed plus outline
+glyph 󱖤 md seesaw
+glyph 󰻋 md segment
+glyph 󰒅 md select
+glyph 󰒆 md select all
+glyph 󰴱 md select color
+glyph 󰫙 md select compare
+glyph 󰩬 md select drag
+glyph 󰾂 md select group
+glyph 󰒇 md select inverse
+glyph 󰒉 md selection
+glyph 󰩭 md selection drag
+glyph 󰴲 md selection ellipse
+glyph 󰼢 md selection ellipse arrow inside
+glyph 󱟂 md selection ellipse remove
+glyph 󱊃 md selection marker
+glyph 󱊅 md selection multiple
+glyph 󱊄 md selection multiple marker
+glyph 󰝷 md selection off
+glyph 󱟃 md selection remove
+glyph 󱈅 md selection search
+glyph 󱊀 md select marker
+glyph 󱊁 md select multiple
+glyph 󱊂 md select multiple marker
+glyph 󰒈 md select off
+glyph 󰿚 md select place
+glyph 󱟁 md select remove
+glyph 󱈄 md select search
+glyph 󱌖 md semantic web
+glyph 󰒊 md send
+glyph 󱅡 md send check
+glyph 󱅢 md send check outline
+glyph 󰷸 md send circle
+glyph 󰷹 md send circle outline
+glyph 󱅣 md send clock
+glyph 󱅤 md send clock outline
+glyph 󰟭 md send lock
+glyph 󱅦 md send lock outline
+glyph 󱅥 md send outline
+glyph 󰙜 md serial port
+glyph 󰒋 md server
+glyph 󰒌 md server minus
+glyph 󰒍 md server network
+glyph 󰒎 md server network off
+glyph 󰒏 md server off
+glyph 󰒐 md server plus
+glyph 󰒑 md server remove
+glyph 󰒒 md server security
+glyph 󰝸 md set all
+glyph 󰝹 md set center
+glyph 󰝺 md set center right
+glyph 󰝻 md set left
+glyph 󰝼 md set left center
+glyph 󰝽 md set left right
+glyph 󱓠 md set merge
+glyph 󰝾 md set none
+glyph 󰝿 md set right
+glyph 󱓡 md set split
+glyph 󱑝 md set square
+glyph 󰩮 md settings helper
+glyph 󰦟 md set top box
+glyph 󱄎 md shaker
+glyph 󱄏 md shaker outline
+glyph 󰠱 md shape
+glyph 󰙝 md shape circle plus
+glyph 󰠲 md shape outline
+glyph 󱇺 md shape oval plus
+glyph 󰒕 md shape plus
+glyph 󰙞 md shape polygon plus
+glyph 󰙟 md shape rectangle plus
+glyph 󰙠 md shape square plus
+glyph 󱓺 md shape square rounded plus
+glyph 󰒖 md share
+glyph 󱇴 md share all
+glyph 󱇵 md share all outline
+glyph 󱆭 md share circle
+glyph 󰼣 md share off
+glyph 󰼤 md share off outline
+glyph 󰤲 md share outline
+glyph 󰒗 md share variant
+glyph 󱔔 md share variant outline
+glyph 󱢺 md shark
+glyph 󱙳 md shark fin
+glyph 󱙴 md shark fin outline
+glyph 󱢻 md shark off
+glyph 󰳆 md sheep
+glyph 󰒘 md shield
+glyph 󰢏 md shield account
+glyph 󰨒 md shield account outline
+glyph 󱖧 md shield account variant
+glyph 󱖨 md shield account variant outline
+glyph 󰚻 md shield airplane
+glyph 󰳇 md shield airplane outline
+glyph 󰻌 md shield alert
+glyph 󰻍 md shield alert outline
+glyph 󱏚 md shield bug
+glyph 󱏛 md shield bug outline
+glyph 󰾃 md shield car
+glyph 󰕥 md shield check
+glyph 󰳈 md shield check outline
+glyph 󰳉 md shield cross
+glyph 󰳊 md shield cross outline
+glyph 󱢼 md shield crown
+glyph 󱢽 md shield crown outline
+glyph 󱆠 md shield edit
+glyph 󱆡 md shield edit outline
+glyph 󱍠 md shield half
+glyph 󰞀 md shield half full
+glyph 󰚊 md shield home
+glyph 󰳋 md shield home outline
+glyph 󰯄 md shield key
+glyph 󰯅 md shield key outline
+glyph 󰴳 md shield link variant
+glyph 󰴴 md shield link variant outline
+glyph 󰦝 md shield lock
+glyph 󱦚 md shield lock open
+glyph 󱦛 md shield lock open outline
+glyph 󰳌 md shield lock outline
+glyph 󱠨 md shield moon
+glyph 󱠩 md shield moon outline
+glyph 󰦞 md shield off
+glyph 󰦜 md shield off outline
+glyph 󰒙 md shield outline
+glyph 󰫚 md shield plus
+glyph 󰫛 md shield plus outline
+glyph 󰂪 md shield refresh
+glyph 󰇠 md shield refresh outline
+glyph 󰫜 md shield remove
+glyph 󰫝 md shield remove outline
+glyph 󰶚 md shield search
+glyph 󱄻 md shield star
+glyph 󱄼 md shield star outline
+glyph 󱁝 md shield sun
+glyph 󱁞 md shield sun outline
+glyph 󱢾 md shield sword
+glyph 󱢿 md shield sword outline
+glyph 󱆢 md shield sync
+glyph 󱆣 md shield sync outline
+glyph 󱕅 md shimmer
+glyph 󱡎 md shipping pallet
+glyph 󰠳 md ship wheel
+glyph 󱗊 md shoe ballet
+glyph 󱗇 md shoe cleat
+glyph 󰭇 md shoe formal
+glyph 󰭈 md shoe heel
+glyph 󰷺 md shoe print
+glyph 󱗈 md shoe sneaker
+glyph 󰒚 md shopping
+glyph 󰒛 md shopping music
+glyph 󱇕 md shopping outline
+glyph 󰾄 md shopping search
+glyph 󱩯 md shopping search outline
+glyph 󱓹 md shore
+glyph 󰜐 md shovel
+glyph 󰜑 md shovel off
+glyph 󰦠 md shower
+glyph 󰦡 md shower head
+glyph 󰒜 md shredder
+glyph 󰒝 md shuffle
+glyph 󰒞 md shuffle disabled
+glyph 󰒟 md shuffle variant
+glyph 󱍿 md shuriken
+glyph 󱣀 md sickle
+glyph 󰒠 md sigma
+glyph 󰘫 md sigma lower
+glyph 󰒢 md signal
+glyph 󰜒 md signal 2g
+glyph 󰜓 md signal 3g
+glyph 󰜔 md signal 4g
+glyph 󰩯 md signal 5g
+glyph 󰢼 md signal cellular 1
+glyph 󰢽 md signal cellular 2
+glyph 󰢾 md signal cellular 3
+glyph 󰢿 md signal cellular outline
+glyph 󰹤 md signal distance variant
+glyph 󰜕 md signal hspa
+glyph 󰜖 md signal hspa plus
+glyph 󰞃 md signal off
+glyph 󰘊 md signal variant
+glyph 󰷻 md signature
+glyph 󰷼 md signature freehand
+glyph 󰷽 md signature image
+glyph 󰷾 md signature text
+glyph 󰒡 md sign caution
+glyph 󰞁 md sign direction
+glyph 󱀀 md sign direction minus
+glyph 󰿜 md sign direction plus
+glyph 󰿝 md sign direction remove
+glyph 󱓸 md sign pole
+glyph 󱄘 md sign real estate
+glyph 󰞂 md sign text
+glyph 󰭉 md silo
+glyph 󰒣 md silverware
+glyph 󰿞 md silverware clean
+glyph 󰒤 md silverware fork
+glyph 󰩰 md silverware fork knife
+glyph 󰒥 md silverware spoon
+glyph 󰒦 md silverware variant
+glyph 󰒧 md sim
+glyph 󰒨 md sim alert
+glyph 󱗓 md sim alert outline
+glyph 󰒩 md sim off
+glyph 󱗔 md sim off outline
+glyph 󱗕 md sim outline
+glyph 󱌝 md simple icons
+glyph 󰫟 md sina weibo
+glyph 󰥛 md sine wave
+glyph 󰒪 md sitemap
+glyph 󱦜 md sitemap outline
+glyph 󱎥 md size m
+glyph 󱎤 md size s
+glyph 󱎧 md size xl
+glyph 󱎣 md size xs
+glyph 󱎨 md size xxl
+glyph 󱎢 md size xxs
+glyph 󱎩 md size xxxl
+glyph 󰴵 md skate
+glyph 󱓂 md skateboard
+glyph 󰔁 md skateboarding
+glyph 󰚙 md skate off
+glyph 󰴶 md skew less
+glyph 󰴷 md skew more
+glyph 󱌄 md ski
+glyph 󱌅 md ski cross country
+glyph 󰒫 md skip backward
+glyph 󰼥 md skip backward outline
+glyph 󰒬 md skip forward
+glyph 󰼦 md skip forward outline
+glyph 󰒭 md skip next
+glyph 󰙡 md skip next circle
+glyph 󰙢 md skip next circle outline
+glyph 󰼧 md skip next outline
+glyph 󰒮 md skip previous
+glyph 󰙣 md skip previous circle
+glyph 󰙤 md skip previous circle outline
+glyph 󰼨 md skip previous outline
+glyph 󱌆 md ski water
+glyph 󰚌 md skull
+glyph 󰯆 md skull crossbones
+glyph 󰯇 md skull crossbones outline
+glyph 󰯈 md skull outline
+glyph 󱓇 md skull scan
+glyph 󱓈 md skull scan outline
+glyph 󰒯 md skype
+glyph 󰒰 md skype business
+glyph 󰒱 md slack
+glyph 󰿟 md slash forward
+glyph 󰿠 md slash forward box
+glyph 󰐛 md sledding
+glyph 󰒲 md sleep
+glyph 󰒳 md sleep off
+glyph 󱖥 md slide
+glyph 󰷿 md slope downhill
+glyph 󰸀 md slope uphill
+glyph 󱄔 md slot machine
+glyph 󱄕 md slot machine outline
+glyph 󱂽 md smart card
+glyph 󱣷 md smart card off
+glyph 󱣸 md smart card off outline
+glyph 󱂾 md smart card outline
+glyph 󱂿 md smart card reader
+glyph 󱃀 md smart card reader outline
+glyph 󰩱 md smog
+glyph 󱞙 md smoke
+glyph 󰎒 md smoke detector
+glyph 󱤮 md smoke detector alert
+glyph 󱤯 md smoke detector alert outline
+glyph 󱠉 md smoke detector off
+glyph 󱠊 md smoke detector off outline
+glyph 󱠈 md smoke detector outline
+glyph 󱠋 md smoke detector variant
+glyph 󱤰 md smoke detector variant alert
+glyph 󱠌 md smoke detector variant off
+glyph 󰒴 md smoking
+glyph 󰒵 md smoking off
+glyph 󱐍 md smoking pipe
+glyph 󱐨 md smoking pipe off
+glyph 󱙷 md snail
+glyph 󱔎 md snake
+glyph 󰒶 md snapchat
+glyph 󱌇 md snowboard
+glyph 󰜗 md snowflake
+glyph 󰼩 md snowflake alert
+glyph 󱩰 md snowflake check
+glyph 󱋋 md snowflake melt
+glyph 󱓣 md snowflake off
+glyph 󱩱 md snowflake thermometer
+glyph 󰼪 md snowflake variant
+glyph 󰒷 md snowman
+glyph 󰛝 md snowmobile
+glyph 󱩲 md snowshoeing
+glyph 󰒸 md soccer
+glyph 󰠴 md soccer field
+glyph 󱕹 md social distance 2 meters
+glyph 󱕺 md social distance 6 feet
+glyph 󰒹 md sofa
+glyph 󱕭 md sofa outline
+glyph 󱕮 md sofa single
+glyph 󱕯 md sofa single outline
+glyph 󰶛 md solar panel
+glyph 󰶜 md solar panel large
+glyph 󰩲 md solar power
+glyph 󱩳 md solar power variant
+glyph 󱩴 md solar power variant outline
+glyph 󱂒 md soldering iron
+glyph 󰚍 md solid
+glyph 󰐔 md sony playstation
+glyph 󰒺 md sort
+glyph 󰖽 md sort alphabetical ascending
+glyph 󱅈 md sort alphabetical ascending variant
+glyph 󰖿 md sort alphabetical descending
+glyph 󱅉 md sort alphabetical descending variant
+glyph 󰒻 md sort alphabetical variant
+glyph 󰒼 md sort ascending
+glyph 󱎅 md sort bool ascending
+glyph 󱎆 md sort bool ascending variant
+glyph 󱎇 md sort bool descending
+glyph 󱎈 md sort bool descending variant
+glyph 󱕇 md sort calendar ascending
+glyph 󱕈 md sort calendar descending
+glyph 󱕉 md sort clock ascending
+glyph 󱕊 md sort clock ascending outline
+glyph 󱕋 md sort clock descending
+glyph 󱕌 md sort clock descending outline
+glyph 󰒽 md sort descending
+glyph 󱎉 md sort numeric ascending
+glyph 󰤍 md sort numeric ascending variant
+glyph 󱎊 md sort numeric descending
+glyph 󰫒 md sort numeric descending variant
+glyph 󰒾 md sort numeric variant
+glyph 󰌼 md sort reverse variant
+glyph 󰒿 md sort variant
+glyph 󰳍 md sort variant lock
+glyph 󰳎 md sort variant lock open
+glyph 󱪻 md sort variant off
+glyph 󱅇 md sort variant remove
+glyph 󱟛 md soundbar
+glyph 󰓀 md soundcloud
+glyph 󰘬 md source branch
+glyph 󱓏 md source branch check
+glyph 󱓋 md source branch minus
+glyph 󱓊 md source branch plus
+glyph 󱓍 md source branch refresh
+glyph 󱓌 md source branch remove
+glyph 󱓎 md source branch sync
+glyph 󰜘 md source commit
+glyph 󰜙 md source commit end
+glyph 󰜚 md source commit end local
+glyph 󰜛 md source commit local
+glyph 󰜜 md source commit next local
+glyph 󰜝 md source commit start
+glyph 󰜞 md source commit start next local
+glyph 󰓁 md source fork
+glyph 󰘭 md source merge
+glyph 󰓂 md source pull
+glyph 󰳏 md source repository
+glyph 󰳐 md source repository multiple
+glyph 󰟮 md soy sauce
+glyph 󱏼 md soy sauce off
+glyph 󰳑 md spa
+glyph 󰯉 md space invaders
+glyph 󱎃 md space station
+glyph 󰹥 md spade
+glyph 󰳒 md spa outline
+glyph 󰓃 md speaker
+glyph 󰦢 md speaker bluetooth
+glyph 󰴸 md speaker multiple
+glyph 󰓄 md speaker off
+glyph 󰜟 md speaker wireless
+glyph 󱡅 md spear
+glyph 󰓅 md speedometer
+glyph 󰾅 md speedometer medium
+glyph 󰾆 md speedometer slow
+glyph 󰓆 md spellcheck
+glyph 󱥔 md sphere
+glyph 󱥕 md sphere off
+glyph 󱇪 md spider
+glyph 󱇫 md spider thread
+glyph 󰯊 md spider web
+glyph 󱓱 md spirit level
+glyph 󱐩 md spoon sugar
+glyph 󰓇 md spotify
+glyph 󰓈 md spotlight
+glyph 󰓉 md spotlight beam
+glyph 󰙥 md spray
+glyph 󰫠 md spray bottle
+glyph 󱁟 md sprinkler
+glyph 󱦝 md sprinkler fire
+glyph 󱁠 md sprinkler variant
+glyph 󰹦 md sprout
+glyph 󰹧 md sprout outline
+glyph 󰝤 md square
+glyph 󱔀 md square circle
+glyph 󰤌 md square edit outline
+glyph 󰨓 md square medium
+glyph 󰨔 md square medium outline
+glyph 󱋮 md square off
+glyph 󱋯 md square off outline
+glyph 󱡔 md square opacity
+glyph 󰝣 md square outline
+glyph 󰞄 md square root
+glyph 󰦣 md square root box
+glyph 󱓻 md square rounded
+glyph 󱨇 md square rounded badge
+glyph 󱨈 md square rounded badge outline
+glyph 󱓼 md square rounded outline
+glyph 󰨕 md square small
+glyph 󱑻 md square wave
+glyph 󰫡 md squeegee
+glyph 󰣀 md ssh
+glyph 󰘋 md stack exchange
+glyph 󰓌 md stack overflow
+glyph 󰍙 md stackpath
+glyph 󰿹 md stadium
+glyph 󰜠 md stadium variant
+glyph 󰓍 md stairs
+glyph 󱎞 md stairs box
+glyph 󱊾 md stairs down
+glyph 󱊽 md stairs up
+glyph 󰴹 md stamper
+glyph 󰟯 md standard definition
+glyph 󰓎 md star
+glyph 󰩳 md star box
+glyph 󱊆 md star box multiple
+glyph 󱊇 md star box multiple outline
+glyph 󰩴 md star box outline
+glyph 󱕦 md star check
+glyph 󱕪 md star check outline
+glyph 󰓏 md star circle
+glyph 󰦤 md star circle outline
+glyph 󱙨 md star cog
+glyph 󱙩 md star cog outline
+glyph 󰥹 md star crescent
+glyph 󰥺 md star david
+glyph 󰦥 md star face
+glyph 󰫢 md star four points
+glyph 󰫣 md star four points outline
+glyph 󰉆 md star half
+glyph 󰓐 md star half full
+glyph 󱕤 md star minus
+glyph 󱕨 md star minus outline
+glyph 󰓑 md star off
+glyph 󱕛 md star off outline
+glyph 󰓒 md star outline
+glyph 󱕣 md star plus
+glyph 󱕧 md star plus outline
+glyph 󱕥 md star remove
+glyph 󱕩 md star remove outline
+glyph 󱙪 md star settings
+glyph 󱙫 md star settings outline
+glyph 󱝁 md star shooting
+glyph 󱝂 md star shooting outline
+glyph 󰫤 md star three points
+glyph 󰫥 md star three points outline
+glyph 󱇯 md state machine
+glyph 󰓓 md steam
+glyph 󰓔 md steering
+glyph 󰤎 md steering off
+glyph 󰓕 md step backward
+glyph 󰓖 md step backward 2
+glyph 󰓗 md step forward
+glyph 󰓘 md step forward 2
+glyph 󰓙 md stethoscope
+glyph 󱍤 md sticker
+glyph 󱍥 md sticker alert
+glyph 󱍦 md sticker alert outline
+glyph 󱍧 md sticker check
+glyph 󱍨 md sticker check outline
+glyph 󰗐 md sticker circle outline
+glyph 󰞅 md sticker emoji
+glyph 󱍩 md sticker minus
+glyph 󱍪 md sticker minus outline
+glyph 󱍫 md sticker outline
+glyph 󱍬 md sticker plus
+glyph 󱍭 md sticker plus outline
+glyph 󱍮 md sticker remove
+glyph 󱍯 md sticker remove outline
+glyph 󱞎 md sticker text
+glyph 󱞏 md sticker text outline
+glyph 󰓚 md stocking
+glyph 󱂓 md stomach
+glyph 󱥝 md stool
+glyph 󱥞 md stool outline
+glyph 󰓛 md stop
+glyph 󰙦 md stop circle
+glyph 󰙧 md stop circle outline
+glyph 󱩵 md storage tank
+glyph 󱩶 md storage tank outline
+glyph 󰓜 md store
+glyph 󰓝 md store 24 hour
+glyph 󱣁 md store alert
+glyph 󱣂 md store alert outline
+glyph 󱣃 md store check
+glyph 󱣄 md store check outline
+glyph 󱣅 md store clock
+glyph 󱣆 md store clock outline
+glyph 󱣇 md store cog
+glyph 󱣈 md store cog outline
+glyph 󱣉 md store edit
+glyph 󱣊 md store edit outline
+glyph 󰟇 md storefront
+glyph 󱃁 md storefront outline
+glyph 󱣋 md store marker
+glyph 󱣌 md store marker outline
+glyph 󱙞 md store minus
+glyph 󱣍 md store minus outline
+glyph 󱣎 md store off
+glyph 󱣏 md store off outline
+glyph 󱍡 md store outline
+glyph 󱙟 md store plus
+glyph 󱣐 md store plus outline
+glyph 󱙠 md store remove
+glyph 󱣑 md store remove outline
+glyph 󱣒 md store search
+glyph 󱣓 md store search outline
+glyph 󱣔 md store settings
+glyph 󱣕 md store settings outline
+glyph 󰓞 md stove
+glyph 󱇖 md strategy
+glyph 󰼫 md stretch to page
+glyph 󰼬 md stretch to page outline
+glyph 󱊺 md string lights
+glyph 󱊻 md string lights off
+glyph 󰘌 md subdirectory arrow left
+glyph 󰘍 md subdirectory arrow right
+glyph 󱕬 md submarine
+glyph 󰨖 md subtitles
+glyph 󰨗 md subtitles outline
+glyph 󰚬 md subway
+glyph 󰶝 md subway alert variant
+glyph 󰓟 md subway variant
+glyph 󰞆 md summit
+glyph 󱩷 md sun clock
+glyph 󱩸 md sun clock outline
+glyph 󱦥 md sun compass
+glyph 󰓠 md sunglasses
+glyph 󱞖 md sun snowflake
+glyph 󱩹 md sun snowflake variant
+glyph 󱣖 md sun thermometer
+glyph 󱣗 md sun thermometer outline
+glyph 󱟾 md sun wireless
+glyph 󱟿 md sun wireless outline
+glyph 󱝆 md surfing
+glyph 󰗅 md surround sound
+glyph 󰟰 md surround sound 2 0
+glyph 󱜩 md surround sound 2 1
+glyph 󰟱 md surround sound 3 1
+glyph 󰟲 md surround sound 5 1
+glyph 󱜪 md surround sound 5 1 2
+glyph 󰟳 md surround sound 7 1
+glyph 󰜡 md svg
+glyph 󰓡 md swap horizontal
+glyph 󰯍 md swap horizontal bold
+glyph 󰿡 md swap horizontal circle
+glyph 󰿢 md swap horizontal circle outline
+glyph 󰣁 md swap horizontal variant
+glyph 󰓢 md swap vertical
+glyph 󰯎 md swap vertical bold
+glyph 󰿣 md swap vertical circle
+glyph 󰿤 md swap vertical circle outline
+glyph 󰣂 md swap vertical variant
+glyph 󰓣 md swim
+glyph 󰓤 md switch
+glyph 󰓥 md sword
+glyph 󰞇 md sword cross
+glyph 󱌳 md syllabary hangul
+glyph 󱌴 md syllabary hiragana
+glyph 󱌵 md syllabary katakana
+glyph 󱌶 md syllabary katakana halfwidth
+glyph 󱔁 md symbol
+glyph 󰫦 md symfony
+glyph 󰓦 md sync
+glyph 󰓧 md sync alert
+glyph 󱍸 md sync circle
+glyph 󰓨 md sync off
+glyph 󰓩 md tab
+glyph 󰓫 md table
+glyph 󱎹 md table account
+glyph 󱎺 md table alert
+glyph 󱎻 md table arrow down
+glyph 󱎼 md table arrow left
+glyph 󱎽 md table arrow right
+glyph 󱎾 md table arrow up
+glyph 󰨘 md table border
+glyph 󱎿 md table cancel
+glyph 󱁡 md table chair
+glyph 󱏀 md table check
+glyph 󱏁 md table clock
+glyph 󱏂 md table cog
+glyph 󰠵 md table column
+glyph 󰓬 md table column plus after
+glyph 󰓭 md table column plus before
+glyph 󰓮 md table column remove
+glyph 󰓯 md table column width
+glyph 󰓰 md table edit
+glyph 󱂔 md table eye
+glyph 󱏃 md table eye off
+glyph 󰖼 md table furniture
+glyph 󱈝 md table headers eye
+glyph 󱈞 md table headers eye off
+glyph 󱏄 md table heart
+glyph 󱏅 md table key
+glyph 󰓱 md table large
+glyph 󰾇 md table large plus
+glyph 󰾈 md table large remove
+glyph 󱏆 md table lock
+glyph 󰦦 md table merge cells
+glyph 󱏇 md table minus
+glyph 󱏈 md table multiple
+glyph 󱏉 md table network
+glyph 󰠶 md table of contents
+glyph 󱏊 md table off
+glyph 󱝃 md table picnic
+glyph 󱠼 md table pivot
+glyph 󰩵 md table plus
+glyph 󱎠 md table refresh
+glyph 󰩶 md table remove
+glyph 󰠷 md table row
+glyph 󰓲 md table row height
+glyph 󰓳 md table row plus after
+glyph 󰓴 md table row plus before
+glyph 󰓵 md table row remove
+glyph 󰤏 md table search
+glyph 󰠸 md table settings
+glyph 󱐪 md table split cell
+glyph 󱏋 md table star
+glyph 󱎡 md table sync
+glyph 󰓶 md tablet
+glyph 󰓷 md tablet android
+glyph 󰦧 md tablet cellphone
+glyph 󰻎 md tablet dashboard
+glyph 󰹨 md table tennis
+glyph 󰭋 md tab minus
+glyph 󰝜 md tab plus
+glyph 󰭌 md tab remove
+glyph 󱦞 md tab search
+glyph 󰓪 md tab unselected
+glyph 󰝢 md taco
+glyph 󰓹 md tag
+glyph 󱜫 md tag arrow down
+glyph 󱜬 md tag arrow down outline
+glyph 󱜭 md tag arrow left
+glyph 󱜮 md tag arrow left outline
+glyph 󱜯 md tag arrow right
+glyph 󱜰 md tag arrow right outline
+glyph 󱜱 md tag arrow up
+glyph 󱜲 md tag arrow up outline
+glyph 󱩺 md tag check
+glyph 󱩻 md tag check outline
+glyph 󰓺 md tag faces
+glyph 󰚋 md tag heart
+glyph 󰯏 md tag heart outline
+glyph 󰤐 md tag minus
+glyph 󱈟 md tag minus outline
+glyph 󰓻 md tag multiple
+glyph 󱋷 md tag multiple outline
+glyph 󱈠 md tag off
+glyph 󱈡 md tag off outline
+glyph 󰓼 md tag outline
+glyph 󰜢 md tag plus
+glyph 󱈢 md tag plus outline
+glyph 󰜣 md tag remove
+glyph 󱈣 md tag remove outline
+glyph 󱤇 md tag search
+glyph 󱤈 md tag search outline
+glyph 󱈤 md tag text
+glyph 󰓽 md tag text outline
+glyph 󱏿 md tailwind
+glyph 󱪼 md tally mark 1
+glyph 󱪽 md tally mark 2
+glyph 󱪾 md tally mark 3
+glyph 󱪿 md tally mark 4
+glyph 󱫀 md tally mark 5
+glyph 󰓸 md tangram
+glyph 󰴺 md tank
+glyph 󰿥 md tanker truck
+glyph 󱛟 md tape drive
+glyph 󰭍 md tape measure
+glyph 󰓾 md target
+glyph 󰯐 md target account
+glyph 󰩷 md target variant
+glyph 󰓿 md taxi
+glyph 󰶞 md tea
+glyph 󰔀 md teamviewer
+glyph 󰶟 md tea outline
+glyph 󱣻 md teddy bear
+glyph 󰭎 md telescope
+glyph 󰔂 md television
+glyph 󱍖 md television ambient light
+glyph 󰠹 md television box
+glyph 󰟴 md television classic
+glyph 󰠺 md television classic off
+glyph 󰔃 md television guide
+glyph 󰠻 md television off
+glyph 󰾉 md television pause
+glyph 󰻏 md television play
+glyph 󱄐 md television shimmer
+glyph 󰾊 md television stop
+glyph 󰔄 md temperature celsius
+glyph 󰔅 md temperature fahrenheit
+glyph 󰔆 md temperature kelvin
+glyph 󰶠 md tennis
+glyph 󰔇 md tennis ball
+glyph 󰔈 md tent
+glyph 󱁢 md terraform
+glyph 󰙨 md test tube
+glyph 󰤑 md test tube empty
+glyph 󰤒 md test tube off
+glyph 󰦨 md text
+glyph 󱕰 md text account
+glyph 󰈚 md text box
+glyph 󰺦 md text box check
+glyph 󰺧 md text box check outline
+glyph 󱩼 md text box edit
+glyph 󱩽 md text box edit outline
+glyph 󰺨 md text box minus
+glyph 󰺩 md text box minus outline
+glyph 󰪷 md text box multiple
+glyph 󰪸 md text box multiple outline
+glyph 󰧭 md text box outline
+glyph 󰺪 md text box plus
+glyph 󰺫 md text box plus outline
+glyph 󰺬 md text box remove
+glyph 󰺭 md text box remove outline
+glyph 󰺮 md text box search
+glyph 󰺯 md text box search outline
+glyph 󰦪 md text long
+glyph 󱄽 md text recognition
+glyph 󱎸 md text search
+glyph 󱩾 md text search variant
+glyph 󰙩 md text shadow
+glyph 󰦩 md text short
+glyph 󰔊 md text to speech
+glyph 󰔋 md text to speech off
+glyph 󰔌 md texture
+glyph 󰿦 md texture box
+glyph 󰔍 md theater
+glyph 󰔎 md theme light dark
+glyph 󰔏 md thermometer
+glyph 󰸁 md thermometer alert
+glyph 󱢕 md thermometer bluetooth
+glyph 󱩿 md thermometer check
+glyph 󰸂 md thermometer chevron down
+glyph 󰸃 md thermometer chevron up
+glyph 󱃂 md thermometer high
+glyph 󰔐 md thermometer lines
+glyph 󱃃 md thermometer low
+glyph 󰸄 md thermometer minus
+glyph 󱔱 md thermometer off
+glyph 󰸅 md thermometer plus
+glyph 󱪀 md thermometer water
+glyph 󰎓 md thermostat
+glyph 󰢑 md thermostat box
+glyph 󰟶 md thought bubble
+glyph 󰟷 md thought bubble outline
+glyph 󰔑 md thumb down
+glyph 󰔒 md thumb down outline
+glyph 󰔕 md thumbs up down
+glyph 󱤔 md thumbs up down outline
+glyph 󰔓 md thumb up
+glyph 󰔔 md thumb up outline
+glyph 󰔖 md ticket
+glyph 󰔗 md ticket account
+glyph 󰔘 md ticket confirmation
+glyph 󱎪 md ticket confirmation outline
+glyph 󰤓 md ticket outline
+glyph 󰜤 md ticket percent
+glyph 󱐫 md ticket percent outline
+glyph 󰔙 md tie
+glyph 󰜥 md tilde
+glyph 󱣳 md tilde off
+glyph 󰔚 md timelapse
+glyph 󰯑 md timeline
+glyph 󰾕 md timeline alert
+glyph 󰾘 md timeline alert outline
+glyph 󱔲 md timeline check
+glyph 󱔳 md timeline check outline
+glyph 󱇻 md timeline clock
+glyph 󱇼 md timeline clock outline
+glyph 󰾙 md timeline help
+glyph 󰾚 md timeline help outline
+glyph 󱔴 md timeline minus
+glyph 󱔵 md timeline minus outline
+glyph 󰯒 md timeline outline
+glyph 󰾖 md timeline plus
+glyph 󰾗 md timeline plus outline
+glyph 󱔶 md timeline remove
+glyph 󱔷 md timeline remove outline
+glyph 󰯓 md timeline text
+glyph 󰯔 md timeline text outline
+glyph 󱎫 md timer
+glyph 󰔜 md timer 10
+glyph 󰔝 md timer 3
+glyph 󱫌 md timer alert
+glyph 󱫍 md timer alert outline
+glyph 󱫎 md timer cancel
+glyph 󱫏 md timer cancel outline
+glyph 󱫐 md timer check
+glyph 󱫑 md timer check outline
+glyph 󱤥 md timer cog
+glyph 󱤦 md timer cog outline
+glyph 󱫒 md timer edit
+glyph 󱫓 md timer edit outline
+glyph 󱫔 md timer lock
+glyph 󱫕 md timer lock open
+glyph 󱫖 md timer lock open outline
+glyph 󱫗 md timer lock outline
+glyph 󱫘 md timer marker
+glyph 󱫙 md timer marker outline
+glyph 󱫚 md timer minus
+glyph 󱫛 md timer minus outline
+glyph 󱫜 md timer music
+glyph 󱫝 md timer music outline
+glyph 󱎬 md timer off
+glyph 󰔞 md timer off outline
+glyph 󰔛 md timer outline
+glyph 󱫞 md timer pause
+glyph 󱫟 md timer pause outline
+glyph 󱫠 md timer play
+glyph 󱫡 md timer play outline
+glyph 󱫢 md timer plus
+glyph 󱫣 md timer plus outline
+glyph 󱫤 md timer refresh
+glyph 󱫥 md timer refresh outline
+glyph 󱫦 md timer remove
+glyph 󱫧 md timer remove outline
+glyph 󰔟 md timer sand
+glyph 󱦟 md timer sand complete
+glyph 󰚭 md timer sand empty
+glyph 󰞌 md timer sand full
+glyph 󱦠 md timer sand paused
+glyph 󱤣 md timer settings
+glyph 󱤤 md timer settings outline
+glyph 󱫨 md timer star
+glyph 󱫩 md timer star outline
+glyph 󱫪 md timer stop
+glyph 󱫫 md timer stop outline
+glyph 󱫬 md timer sync
+glyph 󱫭 md timer sync outline
+glyph 󰔠 md timetable
+glyph 󱢖 md tire
+glyph 󱁣 md toaster
+glyph 󱆷 md toaster off
+glyph 󰳓 md toaster oven
+glyph 󰔡 md toggle switch
+glyph 󰔢 md toggle switch off
+glyph 󰨙 md toggle switch off outline
+glyph 󰨚 md toggle switch outline
+glyph 󱨥 md toggle switch variant
+glyph 󱨦 md toggle switch variant off
+glyph 󰦫 md toilet
+glyph 󰦬 md toolbox
+glyph 󰦭 md toolbox outline
+glyph 󱁤 md tools
+glyph 󰔣 md tooltip
+glyph 󰀌 md tooltip account
+glyph 󱠻 md tooltip cellphone
+glyph 󱕜 md tooltip check
+glyph 󱕝 md tooltip check outline
+glyph 󰔤 md tooltip edit
+glyph 󱋅 md tooltip edit outline
+glyph 󰔥 md tooltip image
+glyph 󰯕 md tooltip image outline
+glyph 󱕞 md tooltip minus
+glyph 󱕟 md tooltip minus outline
+glyph 󰔦 md tooltip outline
+glyph 󰯖 md tooltip plus
+glyph 󰔧 md tooltip plus outline
+glyph 󱕠 md tooltip remove
+glyph 󱕡 md tooltip remove outline
+glyph 󰔨 md tooltip text
+glyph 󰯗 md tooltip text outline
+glyph 󰣃 md tooth
+glyph 󱄩 md toothbrush
+glyph 󱄬 md toothbrush electric
+glyph 󱄪 md toothbrush paste
+glyph 󰔩 md tooth outline
+glyph 󱘆 md torch
+glyph 󰴻 md tortoise
+glyph 󱊸 md toslink
+glyph 󰦮 md tournament
+glyph 󰚁 md tower beach
+glyph 󰚂 md tower fire
+glyph 󱡵 md town hall
+glyph 󰠼 md tow truck
+glyph 󱊈 md toy brick
+glyph 󱊉 md toy brick marker
+glyph 󱊊 md toy brick marker outline
+glyph 󱊋 md toy brick minus
+glyph 󱊌 md toy brick minus outline
+glyph 󱊍 md toy brick outline
+glyph 󱊎 md toy brick plus
+glyph 󱊏 md toy brick plus outline
+glyph 󱊐 md toy brick remove
+glyph 󱊑 md toy brick remove outline
+glyph 󱊒 md toy brick search
+glyph 󱊓 md toy brick search outline
+glyph 󰤔 md track light
+glyph 󰟸 md trackpad
+glyph 󰤳 md trackpad lock
+glyph 󰢒 md tractor
+glyph 󱓄 md tractor variant
+glyph 󰩸 md trademark
+glyph 󱍼 md traffic cone
+glyph 󰔫 md traffic light
+glyph 󱠪 md traffic light outline
+glyph 󰔬 md train
+glyph 󰯘 md train car
+glyph 󱜳 md train car passenger
+glyph 󱜴 md train car passenger door
+glyph 󱜵 md train car passenger door open
+glyph 󱜶 md train car passenger variant
+glyph 󰣄 md train variant
+glyph 󰔭 md tram
+glyph 󰿧 md tram side
+glyph 󰔮 md transcribe
+glyph 󰔯 md transcribe close
+glyph 󱁥 md transfer
+glyph 󰶡 md transfer down
+glyph 󰶢 md transfer left
+glyph 󰔰 md transfer right
+glyph 󰶣 md transfer up
+glyph 󰴼 md transit connection
+glyph 󱕆 md transit connection horizontal
+glyph 󰴽 md transit connection variant
+glyph 󰾋 md transit detour
+glyph 󰤕 md transition
+glyph 󰤖 md transition masked
+glyph 󱔕 md transit skip
+glyph 󰚮 md transit transfer
+glyph 󰗊 md translate
+glyph 󰸆 md translate off
+glyph 󰴾 md transmission tower
+glyph 󱤬 md transmission tower export
+glyph 󱤭 md transmission tower import
+glyph 󱧝 md transmission tower off
+glyph 󰩹 md trash can
+glyph 󰩺 md trash can outline
+glyph 󱊔 md tray
+glyph 󱊕 md tray alert
+glyph 󰄠 md tray arrow down
+glyph 󰄝 md tray arrow up
+glyph 󱊖 md tray full
+glyph 󱊗 md tray minus
+glyph 󱊘 md tray plus
+glyph 󱊙 md tray remove
+glyph 󰜦 md treasure chest
+glyph 󰔱 md tree
+glyph 󰹩 md tree outline
+glyph 󰔲 md trello
+glyph 󰔳 md trending down
+glyph 󰔴 md trending neutral
+glyph 󰔵 md trending up
+glyph 󰔶 md triangle
+glyph 󰔷 md triangle outline
+glyph 󱨉 md triangle small down
+glyph 󱨊 md triangle small up
+glyph 󱑼 md triangle wave
+glyph 󰯙 md triforce
+glyph 󰔸 md trophy
+glyph 󰔹 md trophy award
+glyph 󰶤 md trophy broken
+glyph 󰔺 md trophy outline
+glyph 󰔻 md trophy variant
+glyph 󰔼 md trophy variant outline
+glyph 󰔽 md truck
+glyph 󱧞 md truck alert
+glyph 󱧟 md truck alert outline
+glyph 󱣘 md truck cargo container
+glyph 󰳔 md truck check
+glyph 󱊚 md truck check outline
+glyph 󰔾 md truck delivery
+glyph 󱊛 md truck delivery outline
+glyph 󰞈 md truck fast
+glyph 󱊜 md truck fast outline
+glyph 󱢑 md truck flatbed
+glyph 󱦮 md truck minus
+glyph 󱦽 md truck minus outline
+glyph 󱊝 md truck outline
+glyph 󱦭 md truck plus
+glyph 󱦼 md truck plus outline
+glyph 󱦯 md truck remove
+glyph 󱦾 md truck remove outline
+glyph 󱦦 md truck snowflake
+glyph 󰜧 md truck trailer
+glyph 󱂖 md trumpet
+glyph 󰩻 md tshirt crew
+glyph 󰔿 md tshirt crew outline
+glyph 󰩼 md tshirt v
+glyph 󰕀 md tshirt v outline
+glyph 󱪁 md tsunami
+glyph 󰤗 md tumble dryer
+glyph 󱆺 md tumble dryer alert
+glyph 󱆻 md tumble dryer off
+glyph 󰘮 md tune
+glyph 󱕂 md tune variant
+glyph 󰙪 md tune vertical
+glyph 󱕃 md tune vertical variant
+glyph 󱠽 md tunnel
+glyph 󱠾 md tunnel outline
+glyph 󱪂 md turbine
+glyph 󱜛 md turkey
+glyph 󰳕 md turnstile
+glyph 󰳖 md turnstile outline
+glyph 󰳗 md turtle
+glyph 󰕃 md twitch
+glyph 󰕄 md twitter
+glyph 󰦯 md two factor authentication
+glyph 󰼭 md typewriter
+glyph 󰯚 md ubisoft
+glyph 󰕈 md ubuntu
+glyph 󱃄 md ufo
+glyph 󱃅 md ufo outline
+glyph 󰟹 md ultra high definition
+glyph 󰕉 md umbraco
+glyph 󰕊 md umbrella
+glyph 󱢊 md umbrella beach
+glyph 󱢋 md umbrella beach outline
+glyph 󰦰 md umbrella closed
+glyph 󱏢 md umbrella closed outline
+glyph 󱏡 md umbrella closed variant
+glyph 󰕋 md umbrella outline
+glyph 󰕌 md undo
+glyph 󰕍 md undo variant
+glyph 󰕎 md unfold less horizontal
+glyph 󰝠 md unfold less vertical
+glyph 󰕏 md unfold more horizontal
+glyph 󰝡 md unfold more vertical
+glyph 󰕐 md ungroup
+glyph 󰻐 md unicode
+glyph 󱗂 md unicorn
+glyph 󱗃 md unicorn variant
+glyph 󱗥 md unicycle
+glyph 󰚯 md unity
+glyph 󰦱 md unreal
+glyph 󰚰 md update
+glyph 󰕒 md upload
+glyph 󱍳 md upload lock
+glyph 󱍴 md upload lock outline
+glyph 󰠽 md upload multiple
+glyph 󰛶 md upload network
+glyph 󰳘 md upload network outline
+glyph 󱃆 md upload off
+glyph 󱃇 md upload off outline
+glyph 󰸇 md upload outline
+glyph 󰕓 md usb
+glyph 󱊞 md usb flash drive
+glyph 󱊟 md usb flash drive outline
+glyph 󱇰 md usb port
+glyph 󱦡 md vacuum
+glyph 󱦢 md vacuum outline
+glyph 󱁦 md valve
+glyph 󱁧 md valve closed
+glyph 󱁨 md valve open
+glyph 󰟼 md vanish
+glyph 󱕔 md vanish quarter
+glyph 󱇡 md vanity light
+glyph 󰟺 md van passenger
+glyph 󰟻 md van utility
+glyph 󰫧 md variable
+glyph 󱄑 md variable box
+glyph 󰕔 md vector arrange above
+glyph 󰕕 md vector arrange below
+glyph 󰫨 md vector bezier
+glyph 󰕖 md vector circle
+glyph 󰕗 md vector circle variant
+glyph 󰕘 md vector combine
+glyph 󰕙 md vector curve
+glyph 󰕚 md vector difference
+glyph 󰕛 md vector difference ab
+glyph 󰕜 md vector difference ba
+glyph 󰢓 md vector ellipse
+glyph 󰕝 md vector intersection
+glyph 󰕞 md vector line
+glyph 󰿨 md vector link
+glyph 󰕟 md vector point
+glyph 󰕠 md vector polygon
+glyph 󱡖 md vector polygon variant
+glyph 󰕡 md vector polyline
+glyph 󱈥 md vector polyline edit
+glyph 󱈦 md vector polyline minus
+glyph 󱈧 md vector polyline plus
+glyph 󱈨 md vector polyline remove
+glyph 󰝊 md vector radius
+glyph 󰗆 md vector rectangle
+glyph 󰕢 md vector selection
+glyph 󰀁 md vector square
+glyph 󱡗 md vector square close
+glyph 󱣙 md vector square edit
+glyph 󱣚 md vector square minus
+glyph 󱡘 md vector square open
+glyph 󱣛 md vector square plus
+glyph 󱣜 md vector square remove
+glyph 󰕣 md vector triangle
+glyph 󰕤 md vector union
+glyph 󰨛 md vhs
+glyph 󰕦 md vibrate
+glyph 󰳙 md vibrate off
+glyph 󰕧 md video
+glyph 󱨜 md video 2d
+glyph 󰟽 md video 3d
+glyph 󱏙 md video 3d off
+glyph 󰻑 md video 3d variant
+glyph 󰠾 md video 4k box
+glyph 󰤙 md video account
+glyph 󰃽 md video box
+glyph 󰃾 md video box off
+glyph 󱁩 md video check
+glyph 󱁪 md video check outline
+glyph 󱔮 md video high definition
+glyph 󰤚 md video image
+glyph 󰠿 md video input antenna
+glyph 󰡀 md video input component
+glyph 󰡁 md video input hdmi
+glyph 󰾌 md video input scart
+glyph 󰡂 md video input svideo
+glyph 󱦩 md video marker
+glyph 󱦪 md video marker outline
+glyph 󰦲 md video minus
+glyph 󰊺 md video minus outline
+glyph 󰕨 md video off
+glyph 󰯛 md video off outline
+glyph 󰯜 md video outline
+glyph 󰦳 md video plus
+glyph 󰇓 md video plus outline
+glyph 󰤛 md video stabilization
+glyph 󰕩 md video switch
+glyph 󰞐 md video switch outline
+glyph 󰨜 md video vintage
+glyph 󰻒 md video wireless
+glyph 󰻓 md video wireless outline
+glyph 󰕪 md view agenda
+glyph 󱇘 md view agenda outline
+glyph 󰕫 md view array
+glyph 󱒅 md view array outline
+glyph 󰕬 md view carousel
+glyph 󱒆 md view carousel outline
+glyph 󰕭 md view column
+glyph 󱒇 md view column outline
+glyph 󰹪 md view comfy
+glyph 󱒈 md view comfy outline
+glyph 󰹫 md view compact
+glyph 󰹬 md view compact outline
+glyph 󰕮 md view dashboard
+glyph 󱥇 md view dashboard edit
+glyph 󱥈 md view dashboard edit outline
+glyph 󰨝 md view dashboard outline
+glyph 󰡃 md view dashboard variant
+glyph 󱒉 md view dashboard variant outline
+glyph 󰕯 md view day
+glyph 󱒊 md view day outline
+glyph 󱢈 md view gallery
+glyph 󱢉 md view gallery outline
+glyph 󰕰 md view grid
+glyph 󱇙 md view grid outline
+glyph 󰾍 md view grid plus
+glyph 󱇚 md view grid plus outline
+glyph 󰕱 md view headline
+glyph 󰕲 md view list
+glyph 󱒋 md view list outline
+glyph 󰕳 md view module
+glyph 󱒌 md view module outline
+glyph 󰜨 md view parallel
+glyph 󱒍 md view parallel outline
+glyph 󰕴 md view quilt
+glyph 󱒎 md view quilt outline
+glyph 󰜩 md view sequential
+glyph 󱒏 md view sequential outline
+glyph 󰯋 md view split horizontal
+glyph 󰯌 md view split vertical
+glyph 󰕵 md view stream
+glyph 󱒐 md view stream outline
+glyph 󰕶 md view week
+glyph 󱒑 md view week outline
+glyph 󰕷 md vimeo
+glyph 󰘏 md violin
+glyph 󰢔 md virtual reality
+glyph 󱎶 md virus
+glyph 󱣡 md virus off
+glyph 󱣢 md virus off outline
+glyph 󱎷 md virus outline
+glyph 󰕼 md vlc
+glyph 󰕽 md voicemail
+glyph 󱪃 md volcano
+glyph 󱪄 md volcano outline
+glyph 󰦴 md volleyball
+glyph 󰕾 md volume high
+glyph 󰕿 md volume low
+glyph 󰖀 md volume medium
+glyph 󰝞 md volume minus
+glyph 󰝟 md volume mute
+glyph 󰖁 md volume off
+glyph 󰝝 md volume plus
+glyph 󱄠 md volume source
+glyph 󰸈 md volume variant off
+glyph 󱄡 md volume vibrate
+glyph 󰨟 md vote
+glyph 󰨠 md vote outline
+glyph 󰖂 md vpn
+glyph 󰡄 md vuejs
+glyph 󰹭 md vuetify
+glyph 󰖃 md walk
+glyph 󰟾 md wall
+glyph 󰖄 md wallet
+glyph 󰖅 md wallet giftcard
+glyph 󰖆 md wallet membership
+glyph 󰯝 md wallet outline
+glyph 󰾎 md wallet plus
+glyph 󰾏 md wallet plus outline
+glyph 󰖇 md wallet travel
+glyph 󱨑 md wall fire
+glyph 󰸉 md wallpaper
+glyph 󰤜 md wall sconce
+glyph 󰤝 md wall sconce flat
+glyph 󱟉 md wall sconce flat outline
+glyph 󰐜 md wall sconce flat variant
+glyph 󱟊 md wall sconce flat variant outline
+glyph 󱟋 md wall sconce outline
+glyph 󰝈 md wall sconce round
+glyph 󱟌 md wall sconce round outline
+glyph 󰤞 md wall sconce round variant
+glyph 󱟍 md wall sconce round variant outline
+glyph 󰖈 md wan
+glyph 󰾐 md wardrobe
+glyph 󰾑 md wardrobe outline
+glyph 󰾁 md warehouse
+glyph 󰜪 md washing machine
+glyph 󱆼 md washing machine alert
+glyph 󱆽 md washing machine off
+glyph 󰖉 md watch
+glyph 󰖊 md watch export
+glyph 󰢕 md watch export variant
+glyph 󰖋 md watch import
+glyph 󰢖 md watch import variant
+glyph 󰢗 md watch variant
+glyph 󰚱 md watch vibrate
+glyph 󰳚 md watch vibrate off
+glyph 󰖌 md water
+glyph 󱔂 md water alert
+glyph 󱔃 md water alert outline
+glyph 󰾒 md water boiler
+glyph 󱆳 md water boiler alert
+glyph 󱆴 md water boiler off
+glyph 󱔄 md water check
+glyph 󱔅 md water check outline
+glyph 󱠆 md water circle
+glyph 󱡉 md waterfall
+glyph 󱒁 md watering can
+glyph 󱒂 md watering can outline
+glyph 󰘒 md watermark
+glyph 󱔆 md water minus
+glyph 󱔇 md water minus outline
+glyph 󰖍 md water off
+glyph 󱔈 md water off outline
+glyph 󱡕 md water opacity
+glyph 󰸊 md water outline
+glyph 󰖎 md water percent
+glyph 󱔉 md water percent alert
+glyph 󱔊 md water plus
+glyph 󱔋 md water plus outline
+glyph 󱊠 md water polo
+glyph 󰖏 md water pump
+glyph 󰾓 md water pump off
+glyph 󱔌 md water remove
+glyph 󱔍 md water remove outline
+glyph 󱟆 md water sync
+glyph 󱪅 md water thermometer
+glyph 󱪆 md water thermometer outline
+glyph 󱁫 md water well
+glyph 󱁬 md water well outline
+glyph 󰼮 md wave
+glyph 󱑽 md waveform
+glyph 󰞍 md waves
+glyph 󱡙 md waves arrow left
+glyph 󱡚 md waves arrow right
+glyph 󱡛 md waves arrow up
+glyph 󰯞 md waze
+glyph 󰖐 md weather cloudy
+glyph 󰼯 md weather cloudy alert
+glyph 󰹮 md weather cloudy arrow right
+glyph 󱣶 md weather cloudy clock
+glyph 󰖑 md weather fog
+glyph 󰖒 md weather hail
+glyph 󰼰 md weather hazy
+glyph 󰢘 md weather hurricane
+glyph 󰖓 md weather lightning
+glyph 󰙾 md weather lightning rainy
+glyph 󰖔 md weather night
+glyph 󰼱 md weather night partly cloudy
+glyph 󰖕 md weather partly cloudy
+glyph 󰼲 md weather partly lightning
+glyph 󰼳 md weather partly rainy
+glyph 󰼴 md weather partly snowy
+glyph 󰼵 md weather partly snowy rainy
+glyph 󰖖 md weather pouring
+glyph 󰖗 md weather rainy
+glyph 󰖘 md weather snowy
+glyph 󰼶 md weather snowy heavy
+glyph 󰙿 md weather snowy rainy
+glyph 󰖙 md weather sunny
+glyph 󰼷 md weather sunny alert
+glyph 󱓤 md weather sunny off
+glyph 󰖚 md weather sunset
+glyph 󰖛 md weather sunset down
+glyph 󰖜 md weather sunset up
+glyph 󰼸 md weather tornado
+glyph 󰖝 md weather windy
+glyph 󰖞 md weather windy variant
+glyph 󰖟 md web
+glyph 󰾔 md web box
+glyph 󰖠 md webcam
+glyph 󱜷 md webcam off
+glyph 󱞐 md web cancel
+glyph 󰞉 md web check
+glyph 󱉊 md web clock
+glyph 󰘯 md webhook
+glyph 󱂠 md web minus
+glyph 󰪎 md web off
+glyph 󰜫 md webpack
+glyph 󰀳 md web plus
+glyph 󱞑 md web refresh
+glyph 󰕑 md web remove
+glyph 󱉈 md webrtc
+glyph 󱞒 md web sync
+glyph 󰘑 md wechat
+glyph 󰖡 md weight
+glyph 󰴿 md weight gram
+glyph 󰖢 md weight kilogram
+glyph 󱅝 md weight lifter
+glyph 󰦵 md weight pound
+glyph 󰖣 md whatsapp
+glyph 󱓲 md wheel barrow
+glyph 󱪇 md wheelchair
+glyph 󰖤 md wheelchair accessibility
+glyph 󰦶 md whistle
+glyph 󱊼 md whistle outline
+glyph 󰖥 md white balance auto
+glyph 󰖦 md white balance incandescent
+glyph 󰖧 md white balance iridescent
+glyph 󰖨 md white balance sunny
+glyph 󰜬 md widgets
+glyph 󱍕 md widgets outline
+glyph 󰖩 md wifi
+glyph 󱚵 md wifi alert
+glyph 󱚶 md wifi arrow down
+glyph 󱚷 md wifi arrow left
+glyph 󱚸 md wifi arrow left right
+glyph 󱚹 md wifi arrow right
+glyph 󱚺 md wifi arrow up
+glyph 󱚻 md wifi arrow up down
+glyph 󱚼 md wifi cancel
+glyph 󱚽 md wifi check
+glyph 󱚾 md wifi cog
+glyph 󱚿 md wifi lock
+glyph 󱛀 md wifi lock open
+glyph 󱛁 md wifi marker
+glyph 󱛂 md wifi minus
+glyph 󰖪 md wifi off
+glyph 󱛃 md wifi plus
+glyph 󱛄 md wifi refresh
+glyph 󱛅 md wifi remove
+glyph 󱛆 md wifi settings
+glyph 󰸋 md wifi star
+glyph 󰤟 md wifi strength 1
+glyph 󰤠 md wifi strength 1 alert
+glyph 󰤡 md wifi strength 1 lock
+glyph 󱛋 md wifi strength 1 lock open
+glyph 󰤢 md wifi strength 2
+glyph 󰤣 md wifi strength 2 alert
+glyph 󰤤 md wifi strength 2 lock
+glyph 󱛌 md wifi strength 2 lock open
+glyph 󰤥 md wifi strength 3
+glyph 󰤦 md wifi strength 3 alert
+glyph 󰤧 md wifi strength 3 lock
+glyph 󱛍 md wifi strength 3 lock open
+glyph 󰤨 md wifi strength 4
+glyph 󰤩 md wifi strength 4 alert
+glyph 󰤪 md wifi strength 4 lock
+glyph 󱛎 md wifi strength 4 lock open
+glyph 󰤫 md wifi strength alert outline
+glyph 󱛏 md wifi strength lock open outline
+glyph 󰤬 md wifi strength lock outline
+glyph 󰤭 md wifi strength off
+glyph 󰤮 md wifi strength off outline
+glyph 󰤯 md wifi strength outline
+glyph 󱛇 md wifi sync
+glyph 󰖬 md wikipedia
+glyph 󰖭 md window close
+glyph 󰖮 md window closed
+glyph 󱇛 md window closed variant
+glyph 󰖯 md window maximize
+glyph 󰖰 md window minimize
+glyph 󰖱 md window open
+glyph 󱇜 md window open variant
+glyph 󰖲 md window restore
+glyph 󱄜 md window shutter
+glyph 󱄝 md window shutter alert
+glyph 󱪊 md window shutter cog
+glyph 󱄞 md window shutter open
+glyph 󱪋 md window shutter settings
+glyph 󱪈 md wind power
+glyph 󱪉 md wind power outline
+glyph 󱗺 md windsock
+glyph 󰶥 md wind turbine
+glyph 󱦫 md wind turbine alert
+glyph 󱦬 md wind turbine check
+glyph 󰫩 md wiper
+glyph 󰶦 md wiper wash
+glyph 󱣟 md wiper wash alert
+glyph 󱑷 md wizard hat
+glyph 󰖴 md wordpress
+glyph 󰖶 md wrap
+glyph 󰯟 md wrap disabled
+glyph 󰖷 md wrench
+glyph 󱦣 md wrench clock
+glyph 󰯠 md wrench outline
+glyph 󰡅 md xamarin
+glyph 󰗀 md xml
+glyph 󰟿 md xmpp
+glyph 󰭏 md yahoo
+glyph 󰗁 md yeast
+glyph 󰚀 md yin yang
+glyph 󱅼 md yoga
+glyph 󰗃 md youtube
+glyph 󰡈 md youtube gaming
+glyph 󰡇 md youtube studio
+glyph 󰵀 md youtube subscription
+glyph 󰑈 md youtube tv
+glyph 󱔖 md yurt
+glyph 󰫫 md zend
+glyph 󰵁 md zigbee
+glyph 󰗄 md zip box
+glyph 󰿺 md zip box outline
+glyph 󰨣 md zip disk
+glyph 󰩽 md zodiac aquarius
+glyph 󰩾 md zodiac aries
+glyph 󰩿 md zodiac cancer
+glyph 󰪀 md zodiac capricorn
+glyph 󰪁 md zodiac gemini
+glyph 󰪂 md zodiac leo
+glyph 󰪃 md zodiac libra
+glyph 󰪄 md zodiac pisces
+glyph 󰪅 md zodiac sagittarius
+glyph 󰪆 md zodiac scorpio
+glyph 󰪇 md zodiac taurus
+glyph 󰪈 md zodiac virgo
+glyph 󰫪 md z wave
 glyph  oct accessibility
 glyph  oct accessibility inset
 glyph  oct alert
