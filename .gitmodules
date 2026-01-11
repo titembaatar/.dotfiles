@@ -1,3 +1,3 @@
 [submodule "env/.config/nvim"]
 	path = env/.config/nvim
-    url = git@codeberg.org/titembaatar/init.nvim.git
+    url = git@codeberg.org:titembaatar/init.nvim.git
