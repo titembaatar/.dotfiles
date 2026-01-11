@@ -1,107 +1,74 @@
 #!/usr/bin/env bash
-set -e
+
 source $HOME/.config/fzf/config
-source $HOME/.dotfiles/pkg
 
 emoji_dir="$HOME/.dotfiles/env/personal/emoji"
 emoji_file="$emoji_dir/emoji.txt"
 nerd_icons_file="$emoji_dir/nerd_icons.txt"
 combined_file="$emoji_dir/combined_icons.txt"
 
-mkdir -p "$emoji_dir"
-
 download_emoji_list() {
-  curl -s "https://unicode.org/Public/emoji/latest/emoji-test.txt" | \
-    grep -v '^#' | \
-    grep "fully-qualified" | \
-    sed -E 's/^.+# ([^ ]+) E[0-9.]+ (.+)/\1 \2/' | \
-    grep -v "skin tone" > "$emoji_file"
-}
+    curl -s "https://unicode.org/Public/emoji/latest/emoji-test.txt" | \
+        grep -v '^#' | \
+        grep "fully-qualified" | \
+        sed -E 's/^.+# ([^ ]+) E[0-9.]+ (.+)/\1 \2/' | \
+        grep -v "skin tone" > "$emoji_file"
+    }
 
 download_nerd_icons() {
-  local temp_dir=$(mktemp -d)
+    local tmp_dir
+    tmp_dir=$(mktemp -d)
 
-  local scripts=(
-    "i_fa.sh"
-    "i_fae.sh"
-    "i_dev.sh"
-    "i_oct.sh"
-    "i_cod.sh"
-    "i_seti.sh"
-    "i_custom.sh"
-    "i_linux.sh"
-    "i_ple.sh"
-    "i_pom.sh"
-    "i_powerline.sh"
-    "i_weather.sh"
-    "i_material.sh"
-  )
+    api_url="https://api.github.com/repos/ryanoasis/nerd-fonts/contents/bin/scripts/lib"
+    mapfile -t scripts < <(curl -s "$api_url" | jq -r '.[].name | select(test("\\.sh$"))')
 
-  log_info "downloading nerd font scripts..."
+    for script in "${scripts[@]}"; do
+        [[ $script == "i_all" ]] && continue
 
-  for script in "${scripts[@]}"; do
-    local url="https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/bin/scripts/lib/$script"
-    if curl -sLf "$url" -o "$temp_dir/$script" 2>/dev/null; then
-      log_info "downloaded $script"
-    else
-      log_warn "could not download $script"
-    fi
-  done
+        local url="https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/bin/scripts/lib/$script"
 
-  log_info "extracting icons..."
+        if ! curl -sLf "$url" -o "$tmp_dir/$script" 2>/dev/null; then
+            echo "[WARN] could not download $script"
+        fi
+    done
 
-  local temp_icons="$temp_dir/all_icons.txt"
-  for script_file in "$temp_dir"/*.sh; do
-    [ -f "$script_file" ] || continue
+    local tmp_icons="$tmp_dir/all_icons.txt"
 
-    grep "^i='.*' i_.*=\$i$" "$script_file" | while read line; do
-      icon=$(echo "$line" | sed "s/^i='\(.*\)' i_.*=\$i$/\1/")
-      name=$(echo "$line" | sed "s/^i='.*' i_\(.*\)=\$i$/\1/")
-      readable_name=$(echo "$name" | sed 's/_/ /g')
+    for script_file in "$tmp_dir"/*.sh; do
+        [[ -f "$script_file" ]] || continue
 
-      if [[ -n "$icon" && -n "$readable_name" ]]; then
-        echo "$icon $readable_name"
-      fi
-    done >> "$temp_icons"
-  done
+        while IFS= read -r line; do
+            [[ $line =~ ^i=\'(.*)\'\ i_([^=]+)=\$i$ ]] || continue
+            printf '%s %s\n' "${BASH_REMATCH[1]}" "${BASH_REMATCH[2]//_/ }"
+        done < "$script_file"
 
-  sort "$temp_icons" | uniq > "$nerd_icons_file"
-  rm -rf "$temp_dir"
-  log_success "nerd icons saved to $nerd_icons_file"
+    done >> "$tmp_icons"
+
+    sort "$tmp_icons" | uniq > "$nerd_icons_file"
+    rm -rf "$tmp_dir"
 }
 
 create_combined_list() {
-  {
-    if [ -f "$nerd_icons_file" ]; then
-      sed 's/^/glyph /' "$nerd_icons_file"
-    fi
-
-    if [ -f "$emoji_file" ]; then
-      sed 's/^/emoji /' "$emoji_file"
-    fi
-  } > "$combined_file"
+    {
+        sed 's/^/glyph /' "$nerd_icons_file"
+        sed 's/^/emoji /' "$emoji_file"
+    } > "$combined_file"
 }
 
-if [ ! -f "$emoji_file" ]; then
-  log_info "downloading emoji list..."
-  download_emoji_list
-fi
+main() {
+    mkdir -p "$emoji_dir"
 
-if [ ! -f "$nerd_icons_file" ]; then
-  log_info "downloading nerd icons..."
-  download_nerd_icons
-fi
+    [[ ! -f "$emoji_file" ]] && download_emoji_list
+    [[ ! -f "$nerd_icons_file" ]] && download_nerd_icons
 
-create_combined_list
+    create_combined_list
 
-selected=$(fzf --prompt "icon: " < $combined_file)
+    selected=$(fzf --prompt "icon: " < $combined_file)
+    [[ -z "$selected" ]] && exit 0
 
-if [ -z "$selected" ]; then
-  exit 0
-fi
+    read -r _ icon <<< "$selected"
+    [[ -n "$icon" ]] && wl-copy "$icon"
+}
 
-icon=$(echo "$selected" | awk '{print $2}')
+main
 
-if [ -n "$icon" ]; then
-  echo -n "$icon" | wl-copy
-fi
