@@ -1,37 +1,26 @@
 #!/usr/bin/env bash
-set -e
-source $HOME/.config/fzf/config
+
+source "$HOME/.config/fzf/config"
 
 switch_to() {
-  if swaymsg -t get_tree --raw | jq -e '.. | .name? // empty | select(. == "tmux")' >/dev/null; then
-    tmux switch-client -t "$1"
-  else
-    swaymsg exec "alacritty -T tmux -e tmux attach-session -t $1"
-  fi
+    if swaymsg -t get_tree --raw | jq -e '.. | .name? // empty | select(. == "tmux")'; then
+        tmux switch-client -t "$1"
+    else
+        swaymsg exec "alacritty -T tmux -e tmux attach-session -t $1"
+    fi
 }
 
-has_session() {
-  tmux list-sessions 2>/dev/null | grep -q "^$1:"
-}
+mapfile -t hosts < <(awk '/^Host / {print $2}' "$HOME/.ssh/config")
 
-selected_host=$(grep -i '^Host' $HOME/.ssh/config | awk '{print $2}' | \
-  fzf --prompt "ssh: ")
+selected_host=$(printf '%s\n' "${hosts[@]}" | fzf --prompt "ssh: ")
 
-if [[ -z $selected_host ]]; then
-  exit 0
-fi
+[[ -z $selected_host ]] && exit 0
 
-selected_name=$(echo "$selected_host" | tr . _)
-tmux_running=$(pgrep tmux)
+selected_name=${selected_host//./_}
 
-if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
-  tmux new-session -ds "$selected_name"
-  tmux send-keys -t "$selected_name" "ssh $selected_host" C-m
-fi
-
-if ! has_session "$selected_name"; then
-  tmux new-session -ds "$selected_name"
-  tmux send-keys -t "$selected_name" "ssh $selected_host" C-m
+if ! tmux has-session -t "$selected_name" 2>/dev/null; then
+    tmux new-session -ds "$selected_name"
+    tmux send-keys -t "$selected_name" "ssh $selected_host" C-m
 fi
 
 switch_to "$selected_name"
