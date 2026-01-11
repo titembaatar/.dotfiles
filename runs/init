@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+dots_dir="$HOME/.dotfiles"
+scripts=$(ls "$dots_dir"/runs/*.sh)
+
+if [[ -z "$scripts" ]]; then
+    echo "[INFO] no scripts found."
+    exit 0
+fi
+
+for script in $scripts; do
+    $script || echo "[ERR ] $script failed."
+done
+
+stow -R $dots_dir/env

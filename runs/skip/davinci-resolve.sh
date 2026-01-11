@@ -4,9 +4,8 @@ source $HOME/.dotfiles/pkg
 
 src_dir="$HOME/src/davinci-resolve"
 run_dir="$src_dir/run"
-version="20.2.1"
-# download_url="https://swr.cloud.blackmagicdesign.com/DaVinciResolve/v$version/DaVinci_Resolve_Studio_$version\_Linux.zip"
-download_url="https://swr.cloud.blackmagicdesign.com/DaVinciResolve/v20.2.1/DaVinci_Resolve_20.2.1_Linux.zip?verify=1759344809-5vjtkNEqd3N6fAg9zS0t4LqNXnGnPy5TxcHbd2NVN5E%3D"
+version="20.3.1"
+# download_url="https://swr.cloud.blackmagicdesign.com/DaVinciResolve/v${version}/DaVinci_Resolve_Studio_${version}_Linux.zip?verify=1767795975-1His%2BGe%2B7rua5hdAihCvkbtxT423ttcxJsXHbvcqYKw%3D"
 
 cleanup() {
   local exit_code=$?
