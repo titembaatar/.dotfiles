@@ -59,8 +59,7 @@ label.module {
 #mode,
 #disk.warning,
 #cpu.warning,
-#memory.warning,
-#pulseaudio {
+#memory.warning {
   color: @chatsalgan;
 }
 
@@ -76,7 +75,7 @@ label.module {
   color: @nuur;
 }
 
-#pulseaudio.high {
+#pulseaudio {
   color: @mus;
 }
 
@@ -87,12 +86,10 @@ label.module {
 
 #workspaces button,
 #workspaces button.empty,
-#bluetooth.on,
-#pulseaudio.low {
+#bluetooth.on {
   color: @muted;
 }
 
-#window,
-#pulseaudio.mid {
+#window {
   color: @subtle;
 }

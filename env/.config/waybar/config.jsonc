@@ -2,7 +2,6 @@
   "name": "main",
   "layer": "top",
   "height": 24,
-  "output": "DP-1",
 
   "modules-left": [
     "custom/homelab",
@@ -97,75 +96,13 @@
 
   "pulseaudio": {
     "format": "[<span rise='1pt'>{icon}</span>] {volume}%",
-    "format-muted": "[<span rise='1pt'></span>] 00%",
+    "format-muted": "[<span rise='1pt'></span>]",
     "format-icons": {
       "default": ["", "", ""]
     },
     "scroll-step": 1,
     "on-click": "$HOME/.config/waybar/scripts/pulseaudio.sh",
-    "on-click-right": "pavucontrol",
-    "states": {
-      "high": 80,
-      "mid": 45,
-      "low": 10
-    }
-  },
-
-  "clock": {
-    "format": "[<span rise='1pt'>󰨳</span>] {:%m%d.%H%M}",
-    "interval": 60,
-    "tooltip-format": "<tt>{calendar}</tt>"
-  }
-},
-{
-  "name": "second",
-  "layer": "top",
-  "height": 24,
-  "output": "DP-2",
-
-  "modules-left": [
-    "custom/spacer",
-    "sway/workspaces",
-    "custom/spacer",
-    "sway/mode"
-  ],
-
-  "modules-center": ["sway/window"],
-
-  "modules-right": [
-    "pulseaudio",
-    "clock"
-  ],
-
-  "sway/workspaces": {
-    "format": "[{name}]",
-    "disable-scroll": true,
-    "disable-click": true
-  },
-
-  "sway/mode": {
-    "format": "; {}",
-    "max-length": 75
-  },
-
-  "sway/window": {
-    "max-length": 50
-  },
-
-  "pulseaudio": {
-    "format": "[<span rise='1pt'>{icon}</span>] {volume}%",
-    "format-muted": "[<span rise='1pt'></span>] 00%",
-    "format-icons": {
-      "default": ["", "", ""]
-    },
-    "scroll-step": 1,
-    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    "on-click-right": "pavucontrol",
-    "states": {
-      "high": 100,
-      "mid": 40,
-      "low": 10
-    }
+    "on-click-right": "pavucontrol"
   },
 
   "clock": {
