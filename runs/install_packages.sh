@@ -14,6 +14,7 @@ packages=(
 copr_packages=(
     "lihaohong/yazi"
     "sneexy/zen-browser"
+    "scottames/ghostty"
 )
 
 for package in "${packages[@]}"; do

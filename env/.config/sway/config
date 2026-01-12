@@ -49,7 +49,7 @@ set $pob             $HOME/.local/bin/pob
 set $pob2            $HOME/.local/bin/pob2
 
 # apps
-set $term    alacritty
+set $term    ghostty
 set $browser zen-browser
 set $music   $term -e cmus
 
@@ -149,14 +149,14 @@ bindsym $mod+r mode "resize"
 
 
 # launcher
-bindsym $mod+d      exec $term -T sessioniser -e $fzf-drun
-bindsym $mod+m      exec $term -T sessioniser -e $fzf-cmus
-bindsym $mod+period exec $term -T sessioniser -e $fzf-emoji
-bindsym $mod+u      exec $term -T sessioniser -e $sessioniser
-bindsym $mod+i      exec $term -T sessioniser -e $ssh-sessioniser
+bindsym $mod+d      exec $term --title=sessioniser -e $fzf-drun
+bindsym $mod+m      exec $term --title=sessioniser -e $fzf-cmus
+bindsym $mod+period exec $term --title=sessioniser -e $fzf-emoji
+bindsym $mod+u      exec $term --title=sessioniser -e $sessioniser
+bindsym $mod+i      exec $term --title=sessioniser -e $ssh-sessioniser
 
 # apps
-bindsym $mod+Return       exec $term -T tmux -e tmux new -A -s home
+bindsym $mod+Return       exec $term --title=tmux -e tmux new -A -s home
 bindsym $mod+bracketleft  exec $music
 bindsym $mod+bracketright exec $chat
 bindsym $mod+backslash    exec $browser
