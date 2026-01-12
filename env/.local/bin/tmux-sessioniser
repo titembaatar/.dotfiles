@@ -1,60 +1,54 @@
 #!/usr/bin/env bash
-set -e
-source $HOME/.config/fzf/config
 
 # All credits go to ThePrimeagen
 # https://github.com/ThePrimeagen/tmux-sessionizer
 # modified to work at sway level
 
-switch_to() {
-  if swaymsg -t get_tree --raw | jq -e '.. | .name? // empty | select(. == "tmux")' >/dev/null; then
-    tmux switch-client -t "$1"
-  else
-    swaymsg exec "alacritty -T tmux -e tmux attach-session -t $1"
-  fi
-}
+source "$HOME/.config/fzf/config"
 
-has_session() {
-  tmux list-sessions 2>/dev/null | grep -q "^$1:"
+search_dirs=(
+    "$HOME"
+    "$HOME/personal"
+    "$HOME/forks"
+    "$HOME/src"
+    "$HOME/.dotfiles/env/.config"
+)
+
+switch_to() {
+    if swaymsg -t get_tree --raw | jq -e '.. | .name? // empty | select(. == "tmux")'; then
+        tmux switch-client -t "$1"
+    else
+        swaymsg exec "alacritty -T tmux -e tmux attach-session -t $1"
+    fi
 }
 
 hydrate() {
-  if [ -f "$2"/.hydration ]; then
-    tmux send-keys -t "$1" "source $2/.hydration" c-M
-  elif [ -f "$HOME/.hydration" ]; then
-    tmux send-keys -t "$1" "source $HOME/.hydration" c-M
-  fi
+    local session="$1" dir="$2"
+    local file
+
+    if [[ -f "$dir/.hydration" ]]; then
+        file="$dir/.hydration"
+    elif [[ -f "$HOME/.hydration" ]]; then
+        file="$HOME/.hydration"
+    fi
+
+    tmux send-keys -t "$session" "source $file" C-m
 }
 
 if [[ $# -eq 1 ]]; then
-  selected=$1
+    selected="$1"
 else
-  selected=$(find \
-    $HOME \
-    $HOME/personal/ \
-    $HOME/forks/ \
-    $HOME/src/ \
-    $HOME/.dotfiles/env/.config/ \
-    /mnt/yesugen/ \
-    -mindepth 1 -maxdepth 1 -type d | \
-    fzf --prompt "code: ")
+    selected=$(find "${search_dirs[@]}" -mindepth 1 -maxdepth 1 -type d 2>/dev/null | fzf --prompt "code: ")
 fi
 
-if [[ -z $selected ]]; then
-  exit 0
-fi
+[[ -z "$selected" ]] && exit 0
 
-selected_name=$(basename "$selected" | tr . _)
-tmux_running=$(pgrep tmux)
+selected_name="${selected##*/}"
+selected_name="${selected_name//./_}"
 
-if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
-  tmux new-session -ds "$selected_name" -c "$selected"
-  hydrate "$selected_name" "$selected"
-fi
-
-if ! has_session "$selected_name"; then
-  tmux new-session -ds "$selected_name" -c "$selected"
-  hydrate "$selected_name" "$selected"
+if ! tmux has-session -t="$selected_name" 2>/dev/null; then
+    tmux new-session -ds "$selected_name" -c "$selected"
+    hydrate "$selected_name" "$selected"
 fi
 
 switch_to "$selected_name"
