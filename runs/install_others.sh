@@ -18,7 +18,7 @@ packages=(
 )
 
 build_neovim() {
-    cd $src_dir/neovim || exit
+    cd "$src_dir"/neovim || exit
     git fetch origin
     git checkout stable
     git pull origin stable
@@ -27,23 +27,23 @@ build_neovim() {
 }
 
 build_keyd() {
-    cd $src_dir/keyd || exit
+    cd "$src_dir"/keyd || exit
     make && sudo make install
-    sudo ln -fs $HOME/.dotfiles/env/.config/keyd/default.conf /etc/keyd/
+    sudo ln -fs "$HOME"/.dotfiles/env/.config/keyd/default.conf /etc/keyd/
     sudo systemctl enable --now keyd
 }
 
 main() {
-    mkdir -p $src_dir
+    mkdir -p "$src_dir"
 
     for util in "${utils[@]}"; do
-        if ! command -v $util; then
-            sudo dnf install -y $util
+        if ! command -v "$util"; then
+            sudo dnf install -y "$util"
         fi
     done
 
     for package in "${packages[@]}"; do
-        git clone https://github.com/"$package" $src_dir
+        git clone https://github.com/"$package" "$src_dir"
     done
 
     build_neovim

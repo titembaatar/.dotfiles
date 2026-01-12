@@ -14,7 +14,7 @@ check_prereq() {
         sudo dnf install git
     fi
 
-    mkdir -p $HOME/{personal,forks,src}
+    mkdir -p "$HOME"/{personal,forks,src}
 }
 
 git_clone() {
@@ -26,14 +26,14 @@ git_clone() {
         return 0
     fi
 
-    git clone --recurse-submodules ssh://git@"$repo".git $dest
+    git clone --recurse-submodules ssh://git@"$repo".git "$dest"
 }
 
 main() {
     check_prereq
 
     for repo in "${!repos[@]}"; do
-        git_clone $repo ${repos[$repo]}
+        git_clone "$repo" "${repos[$repo]}"
     done
 }
 

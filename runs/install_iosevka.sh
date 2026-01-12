@@ -26,8 +26,8 @@ check_prerequisites() {
     fi
 
     for util in "${utils[@]}"; do
-        if ! command -v $util >/dev/null 2>&1; then
-            sudo dnf install -y $util
+        if ! command -v "$util" >/dev/null 2>&1; then
+            sudo dnf install -y "$util"
         fi
     done
 }
@@ -82,12 +82,12 @@ main() {
     check_prerequisites
 
     dl_and_extract "iosevka" \
-        $iosevka_dir \
+        "$iosevka_dir" \
         "Iosevka-main" \
         "https://github.com/be5invis/Iosevka/archive/refs/heads/main.zip"
 
     dl_and_extract "nerd_patcher" \
-        $nerd_patcher_dir \
+        "$nerd_patcher_dir" \
         "FontPatcher" \
         "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FontPatcher.zip"
 
@@ -95,7 +95,7 @@ main() {
     patch_nerd_font
     install_font
 
-    cd $HOME/.dotfiles || exit 1
+    cd "$HOME"/.dotfiles || exit 1
     stow -R env
 }
 

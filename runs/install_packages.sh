@@ -18,13 +18,13 @@ copr_packages=(
 )
 
 for package in "${packages[@]}"; do
-    sudo dnf install -y $package
+    sudo dnf install -y "$package"
 done
 
 for copr_package in "${copr_packages[@]}"; do
-    sudo dnf copr enable $copr_package
+    sudo dnf copr enable "$copr_package"
 
     package_name=${copr_package##*/}
-    sudo dnf install -y $package_name
+    sudo dnf install -y "$package_name"
 done
 
