@@ -1,46 +1,47 @@
 #!/usr/bin/env bash
-set -euo pipefail
-source "$HOME/.config/fzf/config"
-shopt -s nullglob
 
-DIRS=(
-  /usr/share/applications
-  /usr/local/share/applications
-  /var/lib/flatpak/exports/share/applications
+source "$HOME/.config/fzf/config"
+
+dirs=(
+  "/usr/share/applications"
+  "/usr/local/share/applications"
+  "/var/lib/flatpak/exports/share/applications"
   "$HOME/.local/share/applications"
 )
 
-find_apps() {
-  local desktop_files=()
-  for dir in "${DIRS[@]}"; do
-    [[ -d "$dir" ]] && desktop_files+=("$dir"/*.desktop)
-  done
-
-  (( ${#desktop_files[@]} == 0 )) && return 1
-
-  awk -F'=' '
-    /^Name=/ { gsub(/^[[:space:]]+|[[:space:]]+$/, "", $2); name = $2 }
-    /^Exec=/ { if (name) { print name "\t" $2; name = "" } }
-  ' "${desktop_files[@]}" | sort -u
+get_apps() {
+    find "${dirs[@]}" -name "*.desktop" -exec awk '
+        /^\[Desktop Entry\]/ { main=1 }
+        /^\[/ && !/^\[Desktop Entry\]/ { main=0 }
+        main && /^Name=/ {
+            n = substr($0, index($0, "=") + 1)
+        }
+        main && /^Exec=/ {
+            e = substr($0, index($0, "=") + 1)
+            if(n != "") print n "|" e;
+            n=""
+        }' {} + | sort -u
 }
 
 fzf_drun() {
   local selected exec_cmd
 
-  selected=$(find_apps | fzf \
+  selected=$(get_apps | fzf \
     --prompt="; " \
-    --delimiter='\t' \
+    --delimiter='|' \
     --with-nth='{1}')
 
   [[ -z "$selected" ]] && return 0
 
-  exec_cmd=$(echo "$selected" | awk -F'\t' '{print $2}')
+  exec_cmd=${selected##*|}
 
-  [[ -z "$exec_cmd" ]] && return 1
+  # Remove %u and other placeholders
+  exec_cmd=$(sed -E 's/%[fFuUdDnNiIcCkKvVmM]//g' <<< "$exec_cmd")
 
-  exec_cmd=$(echo "$exec_cmd" | sed -E 's/%[fFuUdDnNiIcCkKvVmM]//g')
+  # flatpack thingies
+  exec_cmd=${exec_cmd%@@u*}
 
-  swaymsg exec -- "$exec_cmd" >/dev/null 2>&1
+  swaymsg exec -- "$exec_cmd"
 }
 
 fzf_drun
