@@ -90,7 +90,7 @@ workspace 9 output $d2 layout splitv
 workspace 0 output $d2 layout splitv
 
 # window
-default_border 					pixel 2
+default_border pixel 2
 default_floating_border normal
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="bubble"] floating enable
@@ -138,10 +138,10 @@ bindsym --to-code $mod+x mode $exit
 
 # resize mode
 mode "resize" {
-	bindsym $left  resize shrink width  5
-	bindsym $down  resize grow   height 5
-	bindsym $up    resize shrink height 5
-	bindsym $right resize grow   width  5
+	bindsym $left  resize shrink width  50
+	bindsym $down  resize grow   height 50
+	bindsym $up    resize shrink height 50
+	bindsym $right resize grow   width  50
 
 	bindsym Escape mode "default"
 }
