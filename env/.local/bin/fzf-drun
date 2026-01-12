@@ -31,7 +31,7 @@ fzf_drun() {
     --delimiter='|' \
     --with-nth='{1}')
 
-  [[ -z "$selected" ]] && return 0
+  [[ -z "$selected" ]] && exit 0
 
   exec_cmd=${selected##*|}
 
