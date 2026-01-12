@@ -18,7 +18,7 @@ selected_host=$(printf '%s\n' "${hosts[@]}" | fzf --prompt "ssh: ")
 
 selected_name=${selected_host//./_}
 
-if ! tmux has-session -t "$selected_name" 2>/dev/null; then
+if ! tmux has-session -t "$selected_name"; then
     tmux new-session -ds "$selected_name"
     tmux send-keys -t "$selected_name" "ssh $selected_host" C-m
 fi

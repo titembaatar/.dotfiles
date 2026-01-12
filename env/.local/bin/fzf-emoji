@@ -63,7 +63,7 @@ main() {
 
     create_combined_list
 
-    selected=$(fzf --prompt "icon: " < $combined_file)
+    selected=$(fzf --prompt "icon: " < "$combined_file")
     [[ -z "$selected" ]] && exit 0
 
     read -r _ icon <<< "$selected"

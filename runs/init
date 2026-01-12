@@ -12,4 +12,4 @@ for script in $scripts; do
     $script || echo "[ERR ] $script failed."
 done
 
-stow -R $dots_dir/env
+stow -R "$dots_dir"/env
