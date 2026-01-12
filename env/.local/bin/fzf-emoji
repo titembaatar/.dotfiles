@@ -13,7 +13,7 @@ download_emoji_list() {
         grep "fully-qualified" | \
         sed -E 's/^.+# ([^ ]+) E[0-9.]+ (.+)/\1 \2/' | \
         grep -v "skin tone" > "$emoji_file"
-    }
+}
 
 download_nerd_icons() {
     local tmp_dir
@@ -56,18 +56,17 @@ create_combined_list() {
 }
 
 main() {
-    mkdir -p "$emoji_dir"
-
+    [[ ! -d "$emoji_dir" ]] && mkdir -p "$emoji_dir"
     [[ ! -f "$emoji_file" ]] && download_emoji_list
     [[ ! -f "$nerd_icons_file" ]] && download_nerd_icons
-
-    create_combined_list
+    [[ ! -f "$combined_file" ]] && create_combined_list
 
     selected=$(fzf --prompt "icon: " < "$combined_file")
     [[ -z "$selected" ]] && exit 0
 
-    read -r _ icon <<< "$selected"
-    [[ -n "$icon" ]] && wl-copy "$icon"
+    icon="${selected#* }"
+    icon="${icon%% *}"
+    wl-copy "$icon"
 }
 
 main
