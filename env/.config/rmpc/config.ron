@@ -1,0 +1,62 @@
+#![enable(implicit_some)]
+#![enable(unwrap_newtypes)]
+#![enable(unwrap_variant_newtypes)]
+(
+    theme: Some("sarnai"),
+    volume_step: 10,
+    keybinds: (
+        global: {
+            "q": Quit,
+            "-": VolumeDown,
+            "=": VolumeUp,
+            "L": NextTab,
+            "H": PreviousTab,
+            "1": SwitchToTab("Queue"),
+            "2": SwitchToTab("Artists"),
+            "3": SwitchToTab("Playlists"),
+            "4": SwitchToTab("Search"),
+            "R": ToggleRandom,
+            "r": ToggleRepeat,
+            "C": ToggleConsume,
+            "s": ToggleSingle,
+            "c": TogglePause,
+        },
+        navigation: {
+            "k": Up,
+            "j": Down,
+            "h": Left,
+            "l": Right,
+            "D": Delete,
+            "a": AddReplace,
+            "A": AddAllReplace,
+            "i": Insert,
+            "I": InsertAll,
+        },
+        queue: {
+        },
+    ),
+    tabs: [
+        (
+            name: "Queue",
+            pane: Split(
+                direction: Vertical,
+                panes: [
+                    (size: "40%", pane: Pane(AlbumArt), borders: "BOTTOM"),
+                    (size: "60%", pane: Pane(Queue))
+                ],
+            ),
+        ),
+        (
+            name: "Artists",
+            pane: Pane(Artists),
+        ),
+        (
+            name: "Playlists",
+            pane: Pane(Playlists),
+        ),
+        (
+            name: "Search",
+            pane: Pane(Search),
+        ),
+    ],
+)

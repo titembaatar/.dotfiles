@@ -11,6 +11,7 @@ addToPath() {
 
 addToPath "$HOME/.local/bin"
 addToPath "/usr/local/go/bin"
+addToPath "/home/titem/.cargo/bin"
 
 # aliases
 alias rzsh="source $HOME/.zshrc"
