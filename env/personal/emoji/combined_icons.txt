@@ -12588,6 +12588,7 @@ emoji 😮 face with open mouth
 emoji 😯 hushed face
 emoji 😲 astonished face
 emoji 😳 flushed face
+emoji 🫪 distorted face
 emoji 🥺 pleading face
 emoji 🥹 face holding back tears
 emoji 😦 frowning face with open mouth
@@ -12661,6 +12662,7 @@ emoji 🤍 white heart
 emoji 💋 kiss mark
 emoji 💯 hundred points
 emoji 💢 anger symbol
+emoji 🫯 fight cloud
 emoji 💥 collision
 emoji 💫 dizzy
 emoji 💦 sweat droplets
@@ -12905,6 +12907,7 @@ emoji 🧟 zombie
 emoji 🧟‍♂️ man zombie
 emoji 🧟‍♀️ woman zombie
 emoji 🧌 troll
+emoji 🫈 hairy creature
 emoji 💆 person getting massage
 emoji 💆‍♂️ man getting massage
 emoji 💆‍♀️ woman getting massage
@@ -12950,6 +12953,7 @@ emoji 🏃‍♀️ woman running
 emoji 🏃‍➡️ person running facing right
 emoji 🏃‍♀️‍➡️ woman running facing right
 emoji 🏃‍♂️‍➡️ man running facing right
+emoji 🧑‍🩰 ballet dancer
 emoji 💃 woman dancing
 emoji 🕺 man dancing
 emoji 🕴️ person in suit levitating
@@ -13158,6 +13162,7 @@ emoji 🦖 T-Rex
 emoji 🐳 spouting whale
 emoji 🐋 whale
 emoji 🐬 dolphin
+emoji 🫍 orca
 emoji 🦭 seal
 emoji 🐟 fish
 emoji 🐠 tropical fish
@@ -13357,6 +13362,7 @@ emoji 🗾 map of Japan
 emoji 🧭 compass
 emoji 🏔️ snow-capped mountain
 emoji ⛰️ mountain
+emoji 🛘 landslide
 emoji 🌋 volcano
 emoji 🗻 mount fuji
 emoji 🏕️ camping
@@ -13717,10 +13723,11 @@ emoji 🎤 microphone
 emoji 🎧 headphone
 emoji 📻 radio
 emoji 🎷 saxophone
+emoji 🎺 trumpet
+emoji 🪊 trombone
 emoji 🪗 accordion
 emoji 🎸 guitar
 emoji 🎹 musical keyboard
-emoji 🎺 trumpet
 emoji 🎻 violin
 emoji 🪕 banjo
 emoji 🥁 drum
@@ -13781,8 +13788,9 @@ emoji 🗞️ rolled-up newspaper
 emoji 📑 bookmark tabs
 emoji 🔖 bookmark
 emoji 🏷️ label
-emoji 💰 money bag
 emoji 🪙 coin
+emoji 💰 money bag
+emoji 🪎 treasure chest
 emoji 💴 yen banknote
 emoji 💵 dollar banknote
 emoji 💶 euro banknote

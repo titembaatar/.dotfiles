@@ -83,6 +83,7 @@
 😯 hushed face
 😲 astonished face
 😳 flushed face
+🫪 distorted face
 🥺 pleading face
 🥹 face holding back tears
 😦 frowning face with open mouth
@@ -156,6 +157,7 @@
 💋 kiss mark
 💯 hundred points
 💢 anger symbol
+🫯 fight cloud
 💥 collision
 💫 dizzy
 💦 sweat droplets
@@ -400,6 +402,7 @@
 🧟‍♂️ man zombie
 🧟‍♀️ woman zombie
 🧌 troll
+🫈 hairy creature
 💆 person getting massage
 💆‍♂️ man getting massage
 💆‍♀️ woman getting massage
@@ -445,6 +448,7 @@
 🏃‍➡️ person running facing right
 🏃‍♀️‍➡️ woman running facing right
 🏃‍♂️‍➡️ man running facing right
+🧑‍🩰 ballet dancer
 💃 woman dancing
 🕺 man dancing
 🕴️ person in suit levitating
@@ -653,6 +657,7 @@
 🐳 spouting whale
 🐋 whale
 🐬 dolphin
+🫍 orca
 🦭 seal
 🐟 fish
 🐠 tropical fish
@@ -852,6 +857,7 @@
 🧭 compass
 🏔️ snow-capped mountain
 ⛰️ mountain
+🛘 landslide
 🌋 volcano
 🗻 mount fuji
 🏕️ camping
@@ -1212,10 +1218,11 @@
 🎧 headphone
 📻 radio
 🎷 saxophone
+🎺 trumpet
+🪊 trombone
 🪗 accordion
 🎸 guitar
 🎹 musical keyboard
-🎺 trumpet
 🎻 violin
 🪕 banjo
 🥁 drum
@@ -1276,8 +1283,9 @@
 📑 bookmark tabs
 🔖 bookmark
 🏷️ label
-💰 money bag
 🪙 coin
+💰 money bag
+🪎 treasure chest
 💴 yen banknote
 💵 dollar banknote
 💶 euro banknote
