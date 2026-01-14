@@ -3,24 +3,30 @@
 source "$HOME/.config/fzf/config"
 
 switch_to() {
+    local session=$1
+
     if swaymsg -t get_tree --raw | jq -e '.. | .name? // empty | select(. == "tmux")'; then
-        tmux switch-client -t "$1"
+        tmux switch-client -t "$session"
     else
-        swaymsg exec "alacritty -T tmux -e tmux attach-session -t $1"
+        swaymsg exec alacritty -T tmux -e tmux attach-session -t "$session"
     fi
 }
 
-mapfile -t hosts < <(awk '/^Host / {print $2}' "$HOME/.ssh/config")
+get_hosts() {
+    while read -r line; do
+        [[ $line == Host\ * ]] || continue
+        local host="${line#Host }"
+        printf '%s\n' "$host"
+    done < "$HOME/.ssh/config"
+}
 
-selected_host=$(printf '%s\n' "${hosts[@]}" | fzf --prompt "ssh: ")
-
+selected_host=$(get_hosts | fzf --prompt "ssh: ")
 [[ -z $selected_host ]] && exit 0
+selected_host=${selected_host//./_}
 
-selected_name=${selected_host//./_}
-
-if ! tmux has-session -t "$selected_name"; then
-    tmux new-session -ds "$selected_name"
-    tmux send-keys -t "$selected_name" "ssh $selected_host" C-m
+if ! tmux has-session -t "$selected_host"; then
+    tmux new-session -ds "$selected_host"
+    tmux send-keys -t "$selected_host" "ssh $selected_host" C-m
 fi
 
-switch_to "$selected_name"
+switch_to "$selected_host"
