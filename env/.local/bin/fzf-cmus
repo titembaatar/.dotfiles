@@ -1,13 +1,25 @@
 #!/usr/bin/env bash
 
-source $HOME/.config/fzf/config
+export PATH="$HOME/.cargo/bin":$PATH
+source "$HOME/.config/fzf/config"
 
 music_path="/mnt/data/media/music"
 
-selected_album=$(find $music_path -mindepth 2 -maxdepth 2 -type d | \
-  sed "s|$music_path/||" | \
-  fzf --prompt "music: ")
+albums=$(find "$music_path" -mindepth 2 -maxdepth 2 -type d)
 
-cmus-remote -c -q "$music_path/$selected_album"
-sleep 0.1
-cmus-remote -n -p
+selected=$(fzf --prompt "music: " -d '/' --with-nth 6.. <<< "$albums")
+[[ -z "$selected" ]] && exit 0
+
+# RMPC
+relative_selected=${selected#*/music/}
+
+rmpc clear
+rmpc add "$relative_selected"
+rmpc play
+
+# CMUS
+# cmus-remote -c -q "$selected"
+# sleep 0.1
+# cmus-remote -n -p
+
+
