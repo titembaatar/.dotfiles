@@ -17,14 +17,11 @@ copr_packages=(
     "scottames/ghostty"
 )
 
-for package in "${packages[@]}"; do
-    sudo dnf install -y "$package"
-done
+sudo dnf install -y "${packages[@]}"
 
 for copr_package in "${copr_packages[@]}"; do
     sudo dnf copr enable "$copr_package"
-
-    package_name=${copr_package##*/}
-    sudo dnf install -y "$package_name"
 done
+
+sudo dnf install -y "${copr_packages[@]##*/}"
 
