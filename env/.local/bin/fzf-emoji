@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source $HOME/.config/fzf/config
+source "$HOME/.config/fzf/config"
 
 emoji_dir="$HOME/.dotfiles/env/personal/emoji"
 emoji_file="$emoji_dir/emoji.txt"
@@ -8,11 +8,17 @@ nerd_icons_file="$emoji_dir/nerd_icons.txt"
 combined_file="$emoji_dir/combined_icons.txt"
 
 download_emoji_list() {
-    curl -s "https://unicode.org/Public/emoji/latest/emoji-test.txt" | \
-        grep -v '^#' | \
-        grep "fully-qualified" | \
-        sed -E 's/^.+# ([^ ]+) E[0-9.]+ (.+)/\1 \2/' | \
-        grep -v "skin tone" > "$emoji_file"
+    while IFS= read -r line; do
+        [[ "$line" =~ ^# ]] || [[ -z "$line" ]] && continue
+        [[ "$line" != *"fully-qualified"* ]] && continue
+        [[ "$line" == *"skin tone"* ]] && continue
+
+        data="${line#*# }"
+        emoji="${data%% *}"
+        description="${data#* * }"
+
+        printf '%s %s\n' "$emoji" "$description"
+    done < <(curl -s "https://unicode.org/Public/emoji/latest/emoji-test.txt") > "$emoji_file"
 }
 
 download_nerd_icons() {
@@ -26,7 +32,6 @@ download_nerd_icons() {
         [[ $script == "i_all" ]] && continue
 
         local url="https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/bin/scripts/lib/$script"
-
         if ! curl -sLf "$url" -o "$tmp_dir/$script" 2>/dev/null; then
             echo "[WARN] could not download $script"
         fi
@@ -49,10 +54,12 @@ download_nerd_icons() {
 }
 
 create_combined_list() {
-    {
-        sed 's/^/glyph /' "$nerd_icons_file"
-        sed 's/^/emoji /' "$emoji_file"
-    } > "$combined_file"
+    (
+        mapfile -t glyphs < "$nerd_icons_file"
+        printf 'glyph %s\n' "${glyphs[@]}"
+        mapfile -t emojis < "$emoji_file"
+        printf 'emoji %s\n' "${emojis[@]}"
+    ) > "$combined_file"
 }
 
 main() {
