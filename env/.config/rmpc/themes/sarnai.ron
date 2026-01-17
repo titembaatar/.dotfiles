@@ -135,12 +135,12 @@
                     (kind: Property(Status(Duration))),
                 ],
                 center: [
-                    (kind: Property(Song(Artist)), style: (modifiers: "Bold"),
-                        default: (kind: Text("Unknown"), style: (fg: "magenta", modifiers: "Bold"))
+                    (kind: Property(Song(Artist)), style: (fg: "blue", modifiers: "Bold"),
+                        default: (kind: Text("Unknown"), style: (fg: "red", modifiers: "Bold"))
                     ),
-                    (kind: Text(" - ")),
-                    (kind: Property(Song(Album)),
-                        default: (kind: Text("Unknown Album"))
+                    (kind: Text(" /// ")),
+                    (kind: Property(Song(Album)), style: (fg: "cyan"),
+                        default: (kind: Text("Unknown Album"), style: (fg: "red"))
                     )
                 ],
                 right: [
@@ -179,7 +179,7 @@
         (
             kind: Group([
                 (kind: Property(Artist)),
-                (kind: Text(" - ")),
+                (kind: Text(" /// ")),
                 (kind: Property(Title)),
             ]),
             default: (kind: Property(Filename))
