@@ -1,0 +1,221 @@
+{
+  "$schema": "https://opencode.ai/theme.json",
+  "defs": {
+    "base": "#172620",
+    "surface": "#21362D",
+    "overlay": "#2d493d",
+    "muted": "#4e7e6b",
+    "subtle": "#90bbaa",
+    "text": "#dfece7",
+    "sarnai": "#f0c3cb",
+    "anis": "#ff6b6b",
+    "chatsalgan": "#e5951a",
+    "els": "#cca24d",
+    "uvs": "#80b946",
+    "nuur": "#2b879e",
+    "mus": "#9deaea",
+    "yargui": "#d5b3e5"
+  },
+  "theme": {
+    "primary": {
+      "dark": "mus",
+      "light": "mus"
+    },
+    "secondary": {
+      "dark": "sarnai",
+      "light": "sarnai"
+    },
+    "accent": {
+      "dark": "yargui",
+      "light": "yargui"
+    },
+    "error": {
+      "dark": "anis",
+      "light": "anis"
+    },
+    "warning": {
+      "dark": "chatsalgan",
+      "light": "chatsalgan"
+    },
+    "success": {
+      "dark": "uvs",
+      "light": "uvs"
+    },
+    "info": {
+      "dark": "nuur",
+      "light": "nuur"
+    },
+    "text": {
+      "dark": "text",
+      "light": "text"
+    },
+    "textMuted": {
+      "dark": "subtle",
+      "light": "subtle"
+    },
+    "background": {
+      "dark": "base",
+      "light": "base"
+    },
+    "backgroundPanel": {
+      "dark": "surface",
+      "light": "surface"
+    },
+    "backgroundElement": {
+      "dark": "overlay",
+      "light": "overlay"
+    },
+    "border": {
+      "dark": "subtle",
+      "light": "subtle"
+    },
+    "borderActive": {
+      "dark": "sarnai",
+      "light": "sarnai"
+    },
+    "borderSubtle": {
+      "dark": "muted",
+      "light": "muted"
+    },
+    "diffAdded": {
+      "dark": "uvs",
+      "light": "uvs"
+    },
+    "diffRemoved": {
+      "dark": "anis",
+      "light": "anis"
+    },
+    "diffContext": {
+      "dark": "nuur",
+      "light": "nuur"
+    },
+    "diffHunkHeader": {
+      "dark": "mus",
+      "light": "mus"
+    },
+    "diffHighlightAdded": {
+      "dark": "uvs",
+      "light": "uvs"
+    },
+    "diffHighlightRemoved": {
+      "dark": "anis",
+      "light": "anis"
+    },
+    "diffAddedBg": {
+      "dark": "#293F26",
+      "light": "#293F26"
+    },
+    "diffRemovedBg": {
+      "dark": "#3E322D",
+      "light": "#3E322D"
+    },
+    "diffContextBg": {
+      "dark": "surface",
+      "light": "surface"
+    },
+    "diffLineNumber": {
+      "dark": "subtle",
+      "light": "subtle"
+    },
+    "diffAddedLineNumberBg": {
+      "dark": "#293F26",
+      "light": "#293F26"
+    },
+    "diffRemovedLineNumberBg": {
+      "dark": "#3E322D",
+      "light": "#3E322D"
+    },
+    "markdownText": {
+      "dark": "text",
+      "light": "text"
+    },
+    "markdownHeading": {
+      "dark": "mus",
+      "light": "mus"
+    },
+    "markdownLink": {
+      "dark": "nuur",
+      "light": "nuur"
+    },
+    "markdownLinkText": {
+      "dark": "text",
+      "light": "text"
+    },
+    "markdownCode": {
+      "dark": "els",
+      "light": "els"
+    },
+    "markdownBlockQuote": {
+      "dark": "els",
+      "light": "els"
+    },
+    "markdownEmph": {
+      "dark": "chatsalgan",
+      "light": "chatsalgan"
+    },
+    "markdownStrong": {
+      "dark": "anis",
+      "light": "anis"
+    },
+    "markdownHorizontalRule": {
+      "dark": "subtle",
+      "light": "subtle"
+    },
+    "markdownListItem": {
+      "dark": "nuur",
+      "light": "nuur"
+    },
+    "markdownListEnumeration": {
+      "dark": "sarnai",
+      "light": "sarnai"
+    },
+    "markdownImage": {
+      "dark": "els",
+      "light": "els"
+    },
+    "markdownImageText": {
+      "dark": "text",
+      "light": "text"
+    },
+    "markdownCodeBlock": {
+      "dark": "#15231D",
+      "light": "#15231D"
+    },
+    "syntaxComment": {
+      "dark": "muted",
+      "light": "muted"
+    },
+    "syntaxKeyword": {
+      "dark": "nuur",
+      "light": "nuur"
+    },
+    "syntaxFunction": {
+      "dark": "sarnai",
+      "light": "sarnai"
+    },
+    "syntaxVariable": {
+      "dark": "text",
+      "light": "text"
+    },
+    "syntaxString": {
+      "dark": "els",
+      "light": "els"
+    },
+    "syntaxNumber": {
+      "dark": "els",
+      "light": "els"
+    },
+    "syntaxType": {
+      "dark": "mus",
+      "light": "mus"
+    },
+    "syntaxOperator": {
+      "dark": "subtle",
+      "light": "subtle"
+    },
+    "syntaxPunctuation": {
+      "dark": "subtle",
+      "light": "subtle"
+    }
+  }
+}

@@ -1,0 +1,2 @@
+FROM ministral-3:14b
+PARAMETER num_ctx 16384
