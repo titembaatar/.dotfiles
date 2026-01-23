@@ -7,6 +7,9 @@
     keybinds: (
         global: {
             "q": Quit,
+            ":": CommandMode,
+            "u": Update,
+            "U": Rescan,
             "-": VolumeDown,
             "=": VolumeUp,
             "L": NextTab,
@@ -20,6 +23,8 @@
             "C": ToggleConsume,
             "s": ToggleSingle,
             "c": TogglePause,
+            ",": PreviousTrack,
+            ".": NextTrack,
         },
         navigation: {
             "k": Up,
@@ -48,7 +53,7 @@
         ),
         (
             name: "Artists",
-            pane: Pane(Artists),
+            pane: Pane(AlbumArtists),
         ),
         (
             name: "Playlists",
