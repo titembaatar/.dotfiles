@@ -138,10 +138,10 @@ bindsym --to-code $mod+x mode $exit
 
 # resize mode
 mode "resize" {
-	bindsym $left  resize shrink width  50
-	bindsym $down  resize grow   height 50
-	bindsym $up    resize shrink height 50
-	bindsym $right resize grow   width  50
+	bindsym $left  resize shrink width  5ppt
+	bindsym $up    resize grow   height 5ppt
+	bindsym $down  resize shrink height 5ppt
+	bindsym $right resize grow   width  5ppt
 
 	bindsym Escape mode "default"
 }
