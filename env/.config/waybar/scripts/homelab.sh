@@ -1,42 +1,41 @@
 #!/usr/bin/env bash
 
-declare -A nodes=(
-  [nas]="10.0.0.10"
-  [worker1]="10.0.0.11"
-  [worker2]="10.0.0.12"
-  [worker3]="10.0.0.13"
-  [backup]="10.0.0.19"
+nodes=(
+	# ip:name
+	"10.0.0.10:nas"
+	"10.0.0.11:worker1"
+	"10.0.0.12:worker2"
+	"10.0.0.13:worker3"
+	"10.0.0.19:backup"
 )
 
 timeout=2
 healthy=true
 tooltip=""
 
-readarray -t keys < <(printf "%s\n" "${!nodes[@]}" | sort -V)
+for node in "${nodes[@]}"; do
+	name=${node#*:}
+	ip=${node%:*}
+	status="up"
 
-for ((idx=0; idx<${#keys[@]}; idx++)); do
-  i="${keys[$idx]}"
-  tooltip+="$i: "
+	if ! ping -c 1 -W "$timeout" "$ip" &>/dev/null; then
+		status="down"
+		healthy=false
+	fi
 
-  if ping -c 1 -W "$timeout" "${nodes[$i]}" >/dev/null 2>&1; then
-    tooltip+="up"
-  else
-    tooltip+="down"
-    healthy=false
-  fi
+	tooltip+="$name\t| $ip | $status"
 
-  if [[ $idx -lt $((${#keys[@]} - 1)) ]]; then
-    tooltip+="\n"
-  fi
+	if [[ $node != "${nodes[-1]}" ]]; then
+		tooltip+="\n"
+	fi
 done
 
-declare text class
-if $healthy; then
-  text="up"
-  class="up"
-else
-  text="down"
-  class="down"
+text="up"
+class="up"
+if [[ $healthy = false ]]; then
+	text="down"
+	class="down"
 fi
 
-echo "{\"text\": \"$text\", \"class\": \"$class\", \"tooltip\": \"$tooltip\"}"
+printf '{"text": "%s", "class": "%s", "tooltip": "%s"}' \
+	"$text" "$class" "$tooltip"
