@@ -10,65 +10,79 @@ mkdir -p "$extract_dir" "$organised_dir"
 trap 'rm -rf "$tmp_dir"' EXIT
 
 log() {
-    local log_level=$1 log_msg=$2
+	local log_level=$1 log_msg=$2
 
-    printf "[%s] %s\n" "$log_level" "$log_msg"
+	printf "[%s] %s\n" "$log_level" "$log_msg"
+}
+
+extract_zips() {
+	while read -r zip; do
+		local dir_name
+		dir_name=$(basename "$zip" .zip)
+		unzip -q -o "$zip" -d "$extract_dir/$dir_name"
+		log "INFO" "$dir_name.zip unzipped."
+	done < <(find "$dl_dir" -maxdepth 1 -name "*.zip")
+}
+
+sanitize() {
+	local val=${1,,}
+	val=${val//[\/\?\:]/_}
+	printf "%s" "${val// /_}"
+}
+
+parse_flac() {
+	local flac=$1
+	artist="unknown" date="0000" album="unknown" song="unknown" i="00"
+
+	while IFS='=' read -r key value; do
+		case "${key}" in
+			ALBUMARTIST) artist=$(sanitize "$value") ;;
+			ALBUM)       album=$(sanitize "$value") ;;
+			DATE)        date=${value%%-*} ;;
+			TITLE)       song=$(sanitize "$value") ;;
+			TRACKNUMBER) i=$(printf "%02d" "${value%/*}") ;;
+		esac
+	done < <(metaflac --show-tag=ALBUMARTIST --show-tag=ALBUM \
+		--show-tag=DATE --show-tag=TITLE --show-tag=TRACKNUMBER \
+		"$flac")
+	}
+
+process_flac() {
+	local flac=$1
+
+	parse_flac "$flac"
+
+
+	local album_dir="$organised_dir/$artist/${date}_$album"
+	mkdir -p "$album_dir"
+
+	local song_file="[$artist] [${date}_$album] ${i}_$song.flac"
+	mv "$flac" "$album_dir/$song_file"
+
+	if [[ ! -f "$album_dir/cover.jpg" ]]; then
+		find "$(dirname "$flac")" -maxdepth 1 -type f \
+			\( -iname "*.jpg" -o -iname "*.png" \) \
+			-exec cp -n {} "$album_dir/cover.jpg" \;
+	fi
 }
 
 process_flacs() {
-    command -v metaflac &>/dev/null || sudo dnf install -y flac &>/dev/null
-
-    while read -d '' -r flac_file; do
-        local artist_name="unknown" album_date="0000" album_name="unknown"
-        local song_name="unknown" song_index="00"
-
-        while IFS='=' read -r key value; do
-            value=${value//[\/\?\:]/_}
-
-            case "${key}" in
-                ALBUMARTIST) artist_name=${value,,}; artist_name=${artist_name// /_};;
-                ALBUM) album_name=${value,,}; album_name=${album_name// /_};;
-                DATE) album_date=${value%%-*};;
-                TITLE)
-                    song_name=${value,,}
-                    song_name=${song_name//[ . (]/_}
-                    song_name=${song_name//)/}
-                    song_name=${song_name//__/_}
-                    ;;
-                TRACKNUMBER) song_index=${value%_*};;
-            esac
-        done < <(metaflac --show-tag=ALBUMARTIST --show-tag=ALBUM --show-tag=DATE \
-            --show-tag=TITLE --show-tag=TRACKNUMBER "$flac_file")
-
-        [[ ${#song_index} -lt 2 ]] && song_index="0$song_index"
-
-        local target_dir="$organised_dir/$artist_name/${album_date}_$album_name"
-        local filename="[$artist_name] [${album_date}_$album_name] ${song_index}_$song_name.flac"
-        local flac_path
-        flac_path=$(dirname "$flac_file")
-
-        mkdir -p "$target_dir"
-        find "$flac_path" -maxdepth 1 -type f \
-            \( -iname "*.jpg" -o -iname "*.png" \) \
-            -exec cp -n {} "$target_dir/cover.jpg" \;
-        mv "$flac_file" "$target_dir/$filename"
-    done< <(find "$extract_dir" -type f -name "*.flac" -print0)
+	while read -d '' -r flac_file; do
+		process_flac "$flac_file"
+	done< <(find "$extract_dir" -type f -name "*.flac" -print0)
 }
 
 main() {
-    while read -r zip; do
-        local dir_name
-        dir_name=$(basename "$zip" .zip)
-        unzip -q -o "$zip" -d "$extract_dir/$dir_name"
-        log "INFO" "$dir_name.zip unzipped."
-    done < <(find "$dl_dir" -maxdepth 1 -name "*.zip")
+	extract_zips
 
-    process_flacs
+	command -v metaflac &>/dev/null || sudo dnf install -y flac &>/dev/null
 
-    log "INFO" "moving files to $music_library"
-    cp -rn "$organised_dir"/* "$music_library"
+	process_flacs
 
-    find "$dl_dir" -maxdepth 1 -name "*.zip" -delete
+	log "INFO" "moving files to $music_library"
+	cp -rn "$organised_dir"/* "$music_library"
+
+	find "$dl_dir" -maxdepth 1 -name "*.zip" -delete
 }
 
 main
