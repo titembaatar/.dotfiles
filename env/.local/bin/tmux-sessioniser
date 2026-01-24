@@ -7,39 +7,42 @@
 source "$HOME/.config/fzf/config"
 
 search_dirs=(
-    "$HOME"
-    "$HOME/personal"
-    "$HOME/forks"
-    "$HOME/src"
-    "$HOME/.dotfiles/env/.config"
+	"$HOME"
+	"$HOME/personal"
+	"$HOME/forks"
+	"$HOME/src"
+	"$HOME/.dotfiles/env/.config"
 )
 
 switch_to() {
-    local session=$1
+	local session=$1
 
-    if swaymsg -t get_tree --raw | jq -e '.. | .name? // empty | select(. == "tmux")'; then
-        tmux switch-client -t "$session"
-    else
-        swaymsg exec alacritty -T tmux -e tmux attach-session -t "$session"
-    fi
+	if swaymsg -t get_tree --raw |
+		jq -e '.. | .name? // empty | select(. == "tmux")'; then
+		tmux switch-client -t "$session"
+	else
+		swaymsg exec ghostty --title=tmux \
+			-e tmux attach-session -t "$session"
+	fi
 }
 
 hydrate() {
-    local session="$1" dir="$2" file
+	local session="$1" dir="$2" file
 
-    if [[ -f "$dir/.hydration" ]]; then
-        file="$dir/.hydration"
-    elif [[ -f "$HOME/.hydration" ]]; then
-        file="$HOME/.hydration"
-    fi
+	if [[ -f "$dir/.hydration" ]]; then
+		file="$dir/.hydration"
+	elif [[ -f "$HOME/.hydration" ]]; then
+		file="$HOME/.hydration"
+	fi
 
-    tmux send-keys -t "$session" "source $file" C-m
+	tmux send-keys -t "$session" "source $file" C-m
 }
 
 if [[ $# -eq 1 ]]; then
-    selected="$1"
+	selected="$1"
 else
-    selected=$(find "${search_dirs[@]}" -mindepth 1 -maxdepth 1 -type d | fzf --prompt "code: ")
+	selected=$(find "${search_dirs[@]}" -maxdepth 1 -type d |
+		fzf --prompt "code: ")
 fi
 
 [[ -z "$selected" ]] && exit 0
@@ -48,8 +51,8 @@ selected_name="${selected##*/}"
 selected_name="${selected_name//./_}"
 
 if ! tmux has-session -t="$selected_name" 2>/dev/null; then
-    tmux new-session -ds "$selected_name" -c "$selected"
-    hydrate "$selected_name" "$selected"
+	tmux new-session -ds "$selected_name" -c "$selected"
+	hydrate "$selected_name" "$selected"
 fi
 
 switch_to "$selected_name"

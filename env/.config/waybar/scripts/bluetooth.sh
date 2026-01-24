@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-set -e
 
 mac="18:9C:2C:B2:FF:67"
 
-if bluetoothctl info "$mac" | grep -q "Connected: yes"; then
-    bluetoothctl disconnect "$mac"
-else
-    bluetoothctl connect "$mac"
+if bluetoothctl devices Connected; then
+	bluetoothctl disconnect "$mac"
+	exit 0
 fi
+
+bluetoothctl connect "$mac"

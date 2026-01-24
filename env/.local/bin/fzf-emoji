@@ -8,72 +8,74 @@ nerd_icons_file="$emoji_dir/nerd_icons.txt"
 combined_file="$emoji_dir/combined_icons.txt"
 
 download_emoji_list() {
-    while IFS= read -r line; do
-        [[ "$line" =~ ^# ]] || [[ -z "$line" ]] && continue
-        [[ "$line" != *"fully-qualified"* ]] && continue
-        [[ "$line" == *"skin tone"* ]] && continue
+	url="https://unicode.org/Public/emoji/latest/emoji-test.txt"
 
-        data="${line#*# }"
-        emoji="${data%% *}"
-        description="${data#* * }"
+	while IFS= read -r line; do
+		[[ "$line" =~ ^# ]] || [[ -z "$line" ]] && continue
+		[[ "$line" != *"fully-qualified"* ]] && continue
+		[[ "$line" == *"skin tone"* ]] && continue
 
-        printf '%s %s\n' "$emoji" "$description"
-    done < <(curl -s "https://unicode.org/Public/emoji/latest/emoji-test.txt") > "$emoji_file"
+		data="${line#*# }"
+		emoji="${data%% *}"
+		description="${data#* * }"
+
+		printf '%s %s\n' "$emoji" "$description"
+	done < <(curl -s "$url") > "$emoji_file"
 }
 
 download_nerd_icons() {
-    local tmp_dir
-    tmp_dir=$(mktemp -d)
+	local tmp_dir
+	tmp_dir=$(mktemp -d)
 
-    api_url="https://api.github.com/repos/ryanoasis/nerd-fonts/contents/bin/scripts/lib"
-    mapfile -t scripts < <(curl -s "$api_url" | jq -r '.[].name | select(test("\\.sh$"))')
+	api_url="https://api.github.com/repos/ryanoasis/nerd-fonts/contents/bin/scripts/lib"
+	mapfile -t scripts < <(curl -s "$api_url" | jq -r '.[].name | select(test("\\.sh$"))')
 
-    for script in "${scripts[@]}"; do
-        [[ $script == "i_all" ]] && continue
+	for script in "${scripts[@]}"; do
+		[[ $script == "i_all" ]] && continue
 
-        local url="https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/bin/scripts/lib/$script"
-        if ! curl -sLf "$url" -o "$tmp_dir/$script" 2>/dev/null; then
-            echo "[WARN] could not download $script"
-        fi
-    done
+		local url="https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/bin/scripts/lib/$script"
+		if ! curl -sLf "$url" -o "$tmp_dir/$script" 2>/dev/null; then
+			echo "[WARN] could not download $script"
+		fi
+	done
 
-    local tmp_icons="$tmp_dir/all_icons.txt"
+	local tmp_icons="$tmp_dir/all_icons.txt"
 
-    for script_file in "$tmp_dir"/*.sh; do
-        [[ -f "$script_file" ]] || continue
+	for script_file in "$tmp_dir"/*.sh; do
+		[[ -f "$script_file" ]] || continue
 
-        while IFS= read -r line; do
-            [[ $line =~ ^i=\'(.*)\'\ i_([^=]+)=\$i$ ]] || continue
-            printf '%s %s\n' "${BASH_REMATCH[1]}" "${BASH_REMATCH[2]//_/ }"
-        done < "$script_file"
+		while IFS= read -r line; do
+			[[ $line =~ ^i=\'(.*)\'\ i_([^=]+)=\$i$ ]] || continue
+			printf '%s %s\n' "${BASH_REMATCH[1]}" "${BASH_REMATCH[2]//_/ }"
+		done < "$script_file"
 
-    done >> "$tmp_icons"
+	done >> "$tmp_icons"
 
-    sort "$tmp_icons" | uniq > "$nerd_icons_file"
-    rm -rf "$tmp_dir"
+	sort "$tmp_icons" | uniq > "$nerd_icons_file"
+	rm -rf "$tmp_dir"
 }
 
 create_combined_list() {
-    (
-        mapfile -t glyphs < "$nerd_icons_file"
-        printf 'glyph %s\n' "${glyphs[@]}"
-        mapfile -t emojis < "$emoji_file"
-        printf 'emoji %s\n' "${emojis[@]}"
-    ) > "$combined_file"
+	(
+		mapfile -t glyphs < "$nerd_icons_file"
+		printf 'glyph %s\n' "${glyphs[@]}"
+		mapfile -t emojis < "$emoji_file"
+		printf 'emoji %s\n' "${emojis[@]}"
+	) > "$combined_file"
 }
 
 main() {
-    [[ ! -d "$emoji_dir" ]] && mkdir -p "$emoji_dir"
-    [[ ! -f "$emoji_file" ]] && download_emoji_list
-    [[ ! -f "$nerd_icons_file" ]] && download_nerd_icons
-    [[ ! -f "$combined_file" ]] && create_combined_list
+	[[ ! -d "$emoji_dir" ]] && mkdir -p "$emoji_dir"
+	[[ ! -f "$emoji_file" ]] && download_emoji_list
+	[[ ! -f "$nerd_icons_file" ]] && download_nerd_icons
+	[[ ! -f "$combined_file" ]] && create_combined_list
 
-    selected=$(fzf --prompt "icon: " < "$combined_file")
-    [[ -z "$selected" ]] && exit 0
+	selected=$(fzf --prompt "icon: " < "$combined_file")
+	[[ -z "$selected" ]] && exit 0
 
-    icon="${selected#* }"
-    icon="${icon%% *}"
-    wl-copy "$icon"
+	icon="${selected#* }"
+	icon="${icon%% *}"
+	wl-copy "$icon"
 }
 
 main

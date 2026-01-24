@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-set -e
 
-wine "$HOME/.wine/drive_c/users/titem/AppData/Roaming/Path of Building Community (PoE2)/Path of Building-PoE2.exe"
+roaming="$HOME/.wine/drive_c/users/titem/AppData/Roaming"
+wine "$roaming/Path of Building Community (PoE2)/Path of Building-PoE2.exe"
