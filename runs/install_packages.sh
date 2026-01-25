@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 packages=(
+	lua
+	luarocks
 	alacritty
 	cmus
 	fzf
@@ -9,6 +11,7 @@ packages=(
 	tmux
 	waybar
 	zsh
+	chafa
 )
 
 copr_packages=(
