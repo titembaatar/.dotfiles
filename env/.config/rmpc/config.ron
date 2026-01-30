@@ -3,6 +3,8 @@
 #![enable(unwrap_variant_newtypes)]
 (
     theme: Some("sarnai"),
+    select_current_song_on_change: true,
+    center_current_song_on_change: true,
     volume_step: 10,
     keybinds: (
         global: {

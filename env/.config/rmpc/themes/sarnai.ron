@@ -158,6 +158,13 @@
                         off_style: (fg: "#4e7e6b")
                     )))),
                     (kind: Text("|")),
+                    (kind: Property(Status(SingleV2(
+                        on_label: "sgl",
+                        off_label: "sgl",
+                        on_style: (fg: "magenta"),
+                        off_style: (fg: "#4e7e6b")
+                    )))),
+                    (kind: Text("|")),
                     (kind: Property(Status(ConsumeV2(
                         on_label: "cnsm",
                         off_label: "cnsm",
