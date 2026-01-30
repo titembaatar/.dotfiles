@@ -1,1 +1,1 @@
-source $HOME/.config/fzf/config
+source "$HOME/.config/fzf/config"
