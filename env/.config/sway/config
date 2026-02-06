@@ -1,25 +1,8 @@
 # `man 5 sway`
 
 include /etc/sway/config.d/*
-
-###
-##  COLORSCHEME SARNAI
-#
-
-set $base       #172620
-set $surface    #21362d
-set $overlay    #2d493d
-set $muted      #4e7e6b
-set $subtle     #90bbaa
-set $text       #dfece7
-set $sarnai     #f0c3cb
-set $anis       #ff6b6b
-set $chatsalgan #e5951a
-set $els        #cca24d
-set $uvs        #80b946
-set $nuur       #2b879e
-set $mus        #9deaea
-set $yargui     #d5b3e5
+include ./sarnai
+exec_always "killall waybar || true; waybar"
 
 ###
 ##  VARIABLES
@@ -57,23 +40,16 @@ set $music   $term --title=rmpc -e $HOME/.cargo/bin/rmpc
 set $exit "[l]ogout [s]leep [r]eboot [p]oweroff"
 
 ###
-##  EXEC
-#
-
-# waybar:
-exec_always "killall waybar || true; waybar"
-
-###
 ##  OPTS
 #
 
 # displays
 output $d1 {
-  bg /home/titem/Pictures/gowall/OI001188.jpg fill
+bg /home/titem/Pictures/wallpapers/saran_h_1.jpg fill
   resolution 2560x1440 position 1440,560
 }
 output $d2 {
-  bg /home/titem/Pictures/gowall/OI001236.jpg fill
+  bg /home/titem/Pictures/wallpapers/saran_v_2.jpg fill
   resolution 1440x2560 transform 270 position 0,0
 }
 
@@ -99,14 +75,6 @@ for_window [window_type="dialog"] floating enable
 for_window [class="MEGAsync" title="MEGAsync"] floating enable
 for_window [title="sessioniser"] floating enable
 for_window [title="sessioniser"] fullscreen enable
-
-# target                title    bg      text   indicator	border
-client.focused          $base    $sarnai $base  $sarnai  $sarnai
-client.focused_inactive $muted   $base   $muted $muted   $muted
-client.unfocused        $muted   $base   $muted $sarnai  $muted
-client.urgent           $anis    $base   $anis  $surface $anis
-client.placeholder      $surface $base   $text  $surface $surface
-client.background       $base
 
 # cursor
 seat seat0 xcursor_theme phinger-cursors-light 40
@@ -147,7 +115,6 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-
 # launcher
 bindsym $mod+d      exec $term --title=sessioniser -e $fzf-drun
 bindsym $mod+m      exec $term --title=sessioniser -e $fzf-cmus
@@ -167,9 +134,9 @@ bindsym $mod+braceleft    exec $pob
 bindsym $mod+braceright   exec $pob2
 
 # screenshot
-bindsym $mod+p       exec grimshot savecopy active
-bindsym $mod+Shift+p exec grimshot savecopy window
-bindsym $mod+Alt+p   exec grimshot savecopy area
+bindsym $mod+p       exec grimshot savecopy --notify --wait 1 active
+bindsym $mod+Shift+p exec grimshot savecopy --notify --wait 1 window
+bindsym $mod+Alt+p   exec grimshot savecopy --notify --wait 1 area
 
 # volume via PulseAudio
 bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
@@ -197,16 +164,16 @@ bindsym $mod+Shift+$up    move up
 bindsym $mod+Shift+$right move right
 
 # switch workspace
-bindsym $mod+1           workspace number 1
-bindsym $mod+2           workspace number 2
-bindsym $mod+3           workspace number 3
-bindsym $mod+4           workspace number 4
-bindsym $mod+5           workspace number 5
-bindsym $mod+6           workspace number 6
-bindsym $mod+7           workspace number 7
-bindsym $mod+8           workspace number 8
-bindsym $mod+9           workspace number 9
-bindsym $mod+0           workspace number 10
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
 
 # move focus to workspace
 bindsym $mod+Shift+1 move container to workspace number 1
