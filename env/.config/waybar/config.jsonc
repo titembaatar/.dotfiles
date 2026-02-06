@@ -18,6 +18,7 @@
     "custom/tailscale",
     "disk",
     "cpu",
+    "custom/gpu",
     "memory",
     "pulseaudio",
     "clock"
@@ -55,9 +56,8 @@
   },
 
   "bluetooth": {
-    "on-click": "$HOME/.config/waybar/scripts/bluetooth.sh",
-    "on-click-middle": "bluetoothctl power off",
-    "on-click-right": "bluetoothctl power on",
+    "on-click": "$HOME/.config/waybar/scripts/bluetooth.sh --connect",
+    "on-click-middle": "$HOME/.config/waybar/scripts/bluetooth.sh --toggle",
     "format-on": "[<span rise='1pt'>󰂯</span>]",
     "format-off": "[<span rise='1pt'>󰂲</span>]",
     "format-connected": "[<span rise='1pt'>󰂱</span>]",
@@ -83,6 +83,13 @@
       "warning": 70,
       "critical": 85
     }
+  },
+
+  "custom/gpu": {
+    "format": "[<span rise='1pt'>󱎓</span>] {text}%",
+    "exec": "$HOME/.config/waybar/scripts/nvidia_gpu.sh",
+    "interval": 10,
+    "return-type": "json"
   },
 
   "memory": {

@@ -1,18 +1,18 @@
 /* SARNAI COLORS */
-@define-color base rgb (23, 38, 32);
-@define-color surface rgb (33, 54, 45);
-@define-color overlay rgb (45, 73, 61);
-@define-color muted rgb (78, 126, 107);
-@define-color subtle rgb (144, 187, 170);
-@define-color text rgb (223, 236, 231);
-@define-color sarnai rgb (240, 195, 203);
-@define-color anis rgb (255, 107, 107);
-@define-color	chatsalgan rgb (229, 149, 26);
-@define-color els rgb (204, 162, 77);
-@define-color uvs rgb (128, 185, 70);
-@define-color nuur rgb (43, 135, 158);
-@define-color mus rgb (157, 234, 234);
-@define-color yargui rgb (213, 179, 229);
+@define-color base       rgb (23,  38,  32);
+@define-color surface    rgb (33,  54,  45);
+@define-color overlay    rgb (45,  73,  61);
+@define-color muted      rgb (78,  126, 107);
+@define-color subtle     rgb (144, 187, 170);
+@define-color text       rgb (223, 236, 231);
+@define-color sarnai     rgb (240, 195, 203);
+@define-color anis       rgb (255, 107, 107);
+@define-color chatsalgan rgb (229, 149, 26);
+@define-color els        rgb (204, 162, 77);
+@define-color uvs        rgb (128, 185, 70);
+@define-color nuur       rgb (43,  135, 158);
+@define-color mus        rgb (157, 234, 234);
+@define-color yargui     rgb (213, 179, 229);
 
 /* STYLE */
 * {
@@ -50,6 +50,7 @@ label.module {
 #bluetooth.off,
 #disk.critical,
 #cpu.critical,
+#custom-gpu.critical,
 #memory.critical,
 #custom-tailscale.disconnected,
 #pulseaudio.muted {
@@ -59,18 +60,14 @@ label.module {
 #mode,
 #disk.warning,
 #cpu.warning,
+#custom-gpu.warning,
 #memory.warning {
   color: @chatsalgan;
 }
 
-#disk {
-  color: @els;
-}
-
-#cpu {
-  color: @uvs;
-}
-
+#disk,
+#cpu,
+#custom-gpu,
 #memory {
   color: @nuur;
 }
