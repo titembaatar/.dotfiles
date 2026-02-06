@@ -12,9 +12,8 @@ connect() {
 }
 
 toggle() {
-	power=$(bluetoothctl show | grep "Powered:")
-	power=${power#*: }
-	if [[ $power == "yes" ]]; then
+	power=$(bluetoothctl show | grep "Powered: yes")
+	if [[ $power ]]; then
 		bluetoothctl power off
 		exit 0
 	fi
