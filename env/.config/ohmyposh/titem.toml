@@ -34,7 +34,7 @@ final_space = true
 		background = 'transparent'
 		foreground = 'blue'
 		template = '{{ .Path }} '
-	
+
 		[blocks.segments.properties]
 			style = 'full'
 
