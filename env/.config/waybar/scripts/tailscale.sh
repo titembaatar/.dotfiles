@@ -44,8 +44,4 @@ case "$1" in
 
 	sudo tailscale up
 	;;
-*)
-	echo "usage: $0 {--status|--toggle}"
-	exit 1
-	;;
 esac

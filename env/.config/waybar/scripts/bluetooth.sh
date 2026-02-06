@@ -2,9 +2,27 @@
 
 mac="18:9C:2C:B2:FF:67"
 
-if bluetoothctl devices Connected; then
-	bluetoothctl disconnect "$mac"
-	exit 0
-fi
+connect() {
+	if [[ $(bluetoothctl devices Connected) ]]; then
+		bluetoothctl disconnect "$mac"
+		exit 0
+	fi
 
-bluetoothctl connect "$mac"
+	bluetoothctl connect "$mac"
+}
+
+toggle() {
+	power=$(bluetoothctl show | grep "Powered:")
+	power=${power#*: }
+	if [[ $power == "yes" ]]; then
+		bluetoothctl power off
+		exit 0
+	fi
+
+	bluetoothctl power on
+}
+
+case "$1" in
+	--connect) connect ;;
+	--toggle) toggle ;;
+esac
