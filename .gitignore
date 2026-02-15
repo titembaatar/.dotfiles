@@ -6,3 +6,4 @@ env/.config/mpd/log
 env/.config/mpd/state
 env/.config/mpd/sticker.sql
 AGENTS.md
+test.sh
