@@ -1,0 +1,4 @@
+10.0.0.10;vault;data
+10.0.0.10;vault;files
+10.0.0.10;flash;docker
+10.0.0.19;volume1;backup

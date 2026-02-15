@@ -1,9 +1,446 @@
 #!/usr/bin/env bash
 
-dots_dir="$HOME/.dotfiles"
+RED="\033[31m"
+GRE="\033[32m"
+YEL="\033[33m"
+BLU="\033[34m"
+MAG="\033[35m"
+NOC="\033[0m"
 
-while read -r script; do
-	"$script" || echo "[WARN] $script failed."
-done < <(find "$dots_dir/runs" -name "*.sh")
+DOTFILES_DIR="$HOME/.dotfiles"
+ENV_DIR="$DOTFILES_DIR/env"
+LISTS_DIR="$DOTFILES_DIR/runs/lists"
 
-stow -d "$HOME/.dotfiles" -t "$HOME" env
+declare DISTRO INSTALL_CMD UPDATE_CMD AI DEVICE_NAME GPU_TYPE GIT_USER GIT_MAIL
+
+log() {
+	local level=$1 msg=$2 date
+	date=$(date +"%F %T")
+	case "${level,,}" in
+		err | error)
+			printf "[%s] [$RED\0ERROR$NOC\0] %s\n" "$date" "$msg" >&2
+			exit 1
+			;;
+		war | warning)
+			printf "[%s] [$YEL\0WARN $NOC\0] %s\n" "$date" "$msg"
+			return 0
+			;;
+		inf | info)
+			printf "[%s] [$BLU\0INFO $NOC\0] %s\n" "$date" "$msg"
+			return 0
+			;;
+		suc | success)
+			printf "[%s] [$GRE\0YATA!$NOC\0] %s\n" "$date" "$msg"
+			return 0
+			;;
+	esac
+}
+
+get_var() {
+	log inf "Setup variables"
+	while [[ -z $DEVICE_NAME ]]; do
+		read -rp "Enter $MAG\0hostname$NOC\0: " DEVICE_NAME
+	done
+
+	until [[ $GPU_TYPE == 'nvidia' || $GPU_TYPE == 'amd' ]]; do
+		read -rp "Enter $MAG\0gpu$NOC\0: [nvidia/amd] " GPU_TYPE
+
+		if [[ "$GPU_TYPE" != "nvidia" && "$GPU_TYPE" != "amd" ]]; then
+			log err "$MAG$GPU_TYPE$NOC not supported"
+		fi
+	done
+
+	while [[ -z $GIT_USER ]]; do
+		read -rp "Enter $MAG\0git user.name$NOC\0: " GIT_USER
+	done
+
+	until [[ $GIT_MAIL == *@*.* ]]; do
+		read -rp "Enter $MAG\0git user.email$NOC\0: " GIT_MAIL
+	done
+
+	until [[ ${AI,,}  == 'y' || ${AI,,} == 'n' ]]; do
+		read -rp "Install $MAG\0local AI models$NOC\0 ? [y/n] " AI
+	done
+
+	log suc "Variables have been setup"
+}
+
+get_distro() {
+	[[ -f /etc/os-release ]] || log err "/etc/os-release missing."
+	. /etc/os-release
+	DISTRO=${ID_LIKE:-$ID}
+	case ${ID_LIKE:-$ID} in
+	fedora)
+		INSTALL_CMD="sudo dnf install -qy"
+		UPDATE_CMD="sudo dnf up -qy"
+		;;
+	debian)
+		INSTALL_CMD="sudo apt-get install -qy"
+		UPDATE_CMD="sudo apt-get update -qy && sudo apt-get upgrade -qy"
+		;;
+	suse)
+		INSTALL_CMD="sudo zypper in -qn"
+		UPDATE_CMD="sudo zypper dup -qn"
+		;;
+	# arch)
+	# 	INSTALL_CMD="sudo pacman -Sq --noconfirm --needed"
+	# 	UPDATE_CMD="sudo pacman -Syuq --noconfirm --needed"
+	# 	;;
+	*)
+		log err "Distro '$MAG${ID_LIKE:-ID}$NOC' not supported. Add it to get_distro()."
+		;;
+	esac
+}
+
+update_pkgs() {
+	log inf "Updating packages"
+	$UPDATE_CMD || log err "Packages update failed"
+	log suc "Packages have been updated"
+}
+
+set_stow() {
+	log inf "Stowing dotfiles"
+	$INSTALL_CMD stow
+	stow -d "$DOTFILES_DIR" -t "$HOME" env
+	log inf "Dotfiles have been stowed"
+
+}
+
+set_hostname() {
+	log inf 'Setting up hostname'
+	sudo hostnamectl set-hostname "$DEVICE_NAME"
+	log suc 'Hostname has been setup'
+}
+
+set_sudoer() {
+	log inf "Adding $MAG$USER$NOC to wheel group"
+	sudo usermod -aG wheel "$USER"
+
+	local wheel_file="/etc/sudoers.d/10_wheel"
+	if [[ -f $wheel_file ]]; then
+		log suc "$MAG$USER$NOC has been added to wheel group"
+		return 0
+	fi
+
+	local answer
+	until [[ ${answer,,} == 'y' || ${answer,,} == 'n' ]]; do
+		read -rp "Setup passwordless sudo for $MAG$USER ? [y/n] " answer
+		if [[ ${answer,,} == 'y' ]]; then
+			printf '%%wheel\tALL=(ALL)\tNOPASSWD: ALL\n' \
+				| sudo tee "$wheel_file" &>/dev/null
+			sudo chmod 0440 "$wheel_file"
+			log suc "Passwordless sudo has been setup for $MAG$USER$NOC"
+		fi
+	done
+
+	log suc "$MAG$USER$NOC has been added to wheel group"
+}
+
+set_mounts() {
+	log inf "Mounting NFS shares"
+	$INSTALL_CMD nfs-utils || $INSTALL_CMD nfs-common
+	local share_opts="nfs rw,defaults,soft,_netdev,noatime,nodiratime 0 0"
+	while read -r l; do
+		IFS=\; read -r ip dataset mount <<< "$l"
+		[[ -d "/mnt/$mount" ]] || sudo mkdir -p "/mnt/$mount"
+		grep -q "$ip:/$dataset/$mount" /etc/fstab && continue
+		printf "%s:/%s/%s\t/mnt/%s\t%s\n" \
+			"$ip" "$dataset" "$mount" "$mount" "$share_opts" \
+			| sudo tee -a /etc/fstab &>/dev/null
+	done < "$LISTS_DIR/mounts"
+
+	sudo systemctl daemon-reload
+	sudo mount -a
+	log suc "NFS shares have been mounted"
+}
+
+set_ssh() {
+	log inf "Setting up SSH"
+	local ssh_dir="$HOME/.ssh"
+	local ssh_config="$ssh_dir/config"
+	local key="$ssh_dir/$DEVICE_NAME"
+	mkdir -m 0700 "$ssh_dir"
+	touch "$ssh_config" && chmod 600 "$ssh_config"
+	ssh-keygen -t ed25519 -f "$key" -N ""
+	while read -r l; do
+		IFS=\; read -r ip host user <<< "$l"
+		grep -q "Host $host" "$ssh_config" && continue
+		ssh-copy-id -o StrictHostKeyChecking=no -i "$key.pub" "$user@$ip"
+		cat <<-EOF >> "$ssh_config"
+		Host $host
+		    HostName $ip
+		    User $user
+		    IdentityFile $key
+		EOF
+	done < "$LISTS_DIR/local_devices"
+
+	log suc "SSH has been setup"
+}
+
+set_git() {
+	log inf "Setting up git"
+	$INSTALL_CMD git
+	git config --global user.name "$GIT_USER"
+	git config --global user.email "$GIT_MAIL"
+
+	while read -r host; do
+		local ssh_config="$HOME/.ssh/config"
+		grep -q "Host $host" "$ssh_config" && continue
+
+		local key="$HOME/.ssh/git_${host%.*}"
+		ssh-keygen -t ed25519 -C "$GIT_MAIL" -f "$key" -N ""
+		cat <<-EOF >> "$ssh_config"
+		Host $host
+		    HostName $host
+		    User git
+		    IdentityFile $key
+		EOF
+	done < "$LISTS_DIR/git_hosts"
+
+	log suc "git has been setup"
+}
+
+set_repos() {
+	log inf "Setting up repos"
+	while read -r l; do
+		IFS=\; read -r host name dest <<< "$l"
+		dest_dir="$HOME/$dest"
+		[[ -d $dest_dir ]] || mkdir -p "$dest_dir"
+		[[ -d $dest_dir/${name#*/} ]] && continue
+		git clone --recurse-submodules \
+			"ssh://git@$host/$name.git" "$dest_dir"
+	done < "$LISTS_DIR/repos"
+
+	log suc "Repos have been setup"
+}
+
+get_pkgs() {
+	log inf "Installing packages"
+	to_install=()
+	while read -r pkg; do
+		[[ -z $pkg || $pkg =~ ^# ]] && continue
+
+		case $pkg in
+			fedora*)
+				[[ $DISTRO == 'fedora' ]] || continue
+				to_install+=("${pkg#fedora:}")
+				;;
+			copr*)
+				[[ $DISTRO == 'fedora' ]] || continue
+				copr_pkg=${pkg#copr:}
+				sudo dnf copr enable "$copr_pkg"
+				to_install+=("${copr_pkg#*/}")
+				;;
+			nfedora*)
+				[[ $DISTRO != 'fedora' ]] || continue
+				to_install+=("${pkg#nfedora:}")
+				;;
+		esac
+
+	done < "$LISTS_DIR/packages"
+
+	$INSTALL_CMD "${to_install[@]}"
+	log suc "Packages have been installed"
+}
+
+install_ai() {
+	[[ ${AI,,} == 'y' ]] || return 0
+
+	log inf "Installing AI local models"
+	$INSTALL_CMD ollama
+
+	local ollama_modelfiles="$ENV_DIR/.config/ollama/modelfiles"
+	mkdir -p "$ollama_modelfiles"
+	while read -r model; do
+		ollama pull "$model"
+		local modelfile="$ollama_modelfiles/Modelfile_$model"
+		if [[ ! -f $modelfile ]]; then
+			printf 'FROM %s\nPARAMETER num_ctx 16384' "$model" > "$modelfile"
+		fi
+
+		ollama create "$model"-16k -f "$modelfile"
+		ollama rm "$model"
+	done < "$LISTS_DIR/ai_models"
+
+	curl -fsSL https://opencode.ai/install | bash
+	log suc "AI local models have been install"
+}
+
+install_font() {
+	if fc-list : family | grep -qi "iosevka nerd font"; then
+		log inf "Custom Iosevka font already installed."
+		return 0
+	fi
+
+	local font_dir="$ENV_DIR/.local/share/fonts/IosevkaNerdFont"
+	if [[ -n $(ls -A "$font_dir") ]]; then
+		log inf "Custom Iosevka fonts already present. Skipping build"
+		fc-cache -fv
+		return 0
+	fi
+
+	log inf "Installing Iosevka font"
+	"$DOTFILES_DIR/runs/build_iosevka.sh" "$INSTALL_CMD" "$ENV_DIR" \
+		"$font_dir" || (log err "Iosevka build failed" && exit 1)
+	fc-cache -fv
+	log suc "Iosevka font has been installed"
+}
+
+install_others() {
+	log inf "Installing other softwares"
+
+	# Not in dnf pkgs manager
+	if [[ $DISTRO == 'fedora' ]] && ! command -v rmpc &>/dev/null; then
+		cargo install rmpc --locked
+	fi
+
+	# Oh My Posh
+	if ! command -v oh-my-posh &>/dev/null; then
+		curl -s https://ohmyposh.dev/install.sh | bash -s
+	fi
+
+	# Keyd
+	if ! command -v keyd &>/dev/null; then
+		local src_dir="$HOME/src"
+		[[ -d $src_dir ]] || mkdir -p "$src_dir"
+		git clone "https://github.com/rvaiya/keyd.git" "$src_dir"
+		cd "$src_dir/keyd" || log err "Could not cd into $src_dir/keyd"
+		make && sudo make install
+		sudo ln -fs "$ENV_DIR/.config/keyd/default.conf" \
+			/etc/keyd/
+		sudo systemctl enable --now keyd
+	fi
+
+	log suc "Others softwares have been installed"
+}
+
+post_fedora() {
+	$INSTALL_CMD \
+		https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-"$(rpm -E %fedora)".noarch.rpm \
+		https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-"$(rpm -E %fedora)".noarch.rpm
+
+	sudo dnf group upgrade core -qy
+	sudo dnf group install -qy multimedia sound-and-video
+	sudo dnf check-update
+	sudo dnf swap -qy ffmpeg-free ffmpeg --allowerasing
+	$INSTALL_CMD --exclude=gstreamer1-plugins-bad-free-devel \
+		gstreamer1-plugins-{bad-\*,good-\*,base} \
+		gstreamer1-plugin-openh264 gstreamer1-libav lame\* \
+		ffmpeg-libs libva libva-utils openh264 mozilla-openh264
+
+	case $GPU_TYPE in
+		nvidia)
+			$INSTALL_CMD libva-nvidia-driver kernel-devel \
+				kernel-headers gcc make dkms acpid \
+				libglvnd-glx libglvnd-opengl libglvnd-devel \
+				pkgconfig akmod-nvidia xorg-x11-drv-nvidia-cuda
+			;;
+		amd)
+			$INSTALL_CMD mesa-dri-drivers mesa-vulkan-drivers \
+				vulkan-loader mesa-libGLU
+			;;
+	esac
+
+	sudo dnf config-manager --set-enabled fedora-cisco-openh264
+}
+
+post_debian() {
+	$INSTALL_CMD libavcodec-extra
+	case $GPU_TYPE in
+		nvidia)
+			$INSTALL_CMD nvidia-kernel-dkms nvidia-driver
+			;;
+		amd)
+			deb http://deb.debian.org/debian bookworm main contrib non-free-firmware
+			sudo apt-get update -q
+			$INSTALL_CMD firmware-amd-graphics libgl1-mesa-dri \
+				libglx-mesa0 mesa-vulkan-drivers \
+				xserver-xorg-video-all
+			;;
+	esac
+
+}
+
+post_suse() {
+	printf "export ZYPP_MEDIANETWORK=1\n" >> "$ENV_DIR/.zsh_profile"
+	$INSTALL_CMD opi pipewire pipewire-pulseaudio
+	opi -n codecs
+	systemctl --user enable --now pipewire.{service,socket} \
+		pipewire-pulse.{service,socket} wireplumber.service
+
+	case $GPU_TYPE in
+		nvidia)
+			$INSTALL_CMD openSUSE-repos-Tumbleweed-NVIDIA
+			sudo zypper install-new-recommends
+			;;
+		amd)
+			$INSTALL_CMD kernel-firmware-amdgpu xf86-video-amdgpu
+			;;
+	esac
+}
+
+post_setup() {
+	log inf "Starting post installation"
+	$UPDATE_CMD
+
+	case $DISTRO in
+		fedora) post_fedora ;;
+		debian) post_debian ;;
+		suse)   post_suse   ;;
+	esac
+
+	if [[ $GPU_TYPE == 'nvidia' ]]; then
+		local tmp && tmp=$(mktemp)
+		trap 'rm -f "$tmp"' EXIT
+		local sway_dir="/usr/local/share/wayland-sessions"
+		local sway="$sway_dir/sway.desktop"
+		[[ -d $sway_dir ]] || sudo mkdir -p $sway_dir
+		[[ -f $sway ]] || sudo touch "$sway"
+		while IFS= read -r l; do
+			[[ $l == Exec=* ]] && l="Exec=sway --unsupported-gpu"
+			echo "$l" >> "$tmp"
+		done < "$sway"
+
+		sudo mv "$tmp" "$sway" && sudo chmod 644 "$sway"
+	fi
+
+	sudo fwupdmgr get-devices
+	sudo fwupdmgr refresh --force
+	sudo fwupdmgr get-updates
+	sudo fwupdmgr update
+
+	log suc "Post install has been done"
+}
+
+main() {
+	command -v sudo &>/dev/null || log err "sudo not available"
+
+	get_var        || log err "get_var() failed"
+	get_distro     || log err "get_distro() failed"
+	update_pkgs    || log err "update_pkgs() failed"
+	set_stow       || log err "set_stow() failed"
+	set_hostname   || log err "set_hostname() failed"
+	set_sudoer     || log err "set_sudoer() failed"
+	set_mounts     || log err "set_mounts() failed"
+	set_ssh        || log err "set_ssh() failed"
+	set_git        || log err "set_git() failed"
+	set_repos      || log err "set_repos() failed"
+	get_pkgs       || log err "get_pkgs() failed"
+	install_others || log err "install_others() failed"
+	install_font   || log err "install_font() failed"
+	install_ai     || log err "install_ai() failed"
+	post_setup     || log err "post_setup() failed"
+
+	log inf "Don't forget to setup codeberg/github ssh"
+	log inf "	codeberg key: $(cat "$HOME/.ssh/git_codeberg.pub")"
+	log inf "	github key: $(cat "$HOME/.ssh/git_github.pub")"
+
+	read -rp "Reboot now ? [y/n] " a
+	if [[ ${a,,} != "y" ]]; then
+		log war "Seriously, reboot."
+		exit 1
+	fi
+	sudo systemctl reboot
+}
+
+main
