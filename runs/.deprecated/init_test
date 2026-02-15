@@ -1,0 +1,434 @@
+#!/usr/bin/env bash
+
+RED="\033[31m"
+GRE="\033[32m"
+YEL="\033[33m"
+BLU="\033[34m"
+MAG="\033[35m"
+NOC="\033[0m"
+
+DISTRO=""
+INSTALL_CMD=""
+UPDATE_CMD=""
+AI=""
+
+DOTFILES_DIR="$HOME/.dotfiles"
+ENV_DIR="$DOTFILES_DIR/env"
+LISTS_DIR="$DOTFILES_DIR/runs/lists"
+
+hostname=""
+gpu=""
+git_user_name=""
+git_user_email=""
+
+log() {
+	level=$1
+	msg=$2
+	date=$(date +"%F %T")
+	case "${level,,}" in
+		error | err)
+			printf "[%s] [$RED\0ERROR$NOC\0] %s\n" "$date" "$msg"
+			;;
+		warning | war)
+			printf "[%s] [$YEL\0WARN $NOC\0] %s\n" "$date" "$msg"
+			;;
+		info | inf)
+			printf "[%s] [$BLU\0INFO $NOC\0] %s\n" "$date" "$msg"
+			;;
+		success | suc)
+			printf "[%s] [$GRE\0YATA!$NOC\0] %s\n" "$date" "$msg"
+			;;
+	esac
+}
+
+get_var() {
+	log inf "Setup variables"
+	while [[ -z $hostname ]]; do
+		read -rp "Enter $MAG\0hostname$NOC\0: " hostname
+	done
+
+	until [[ $gpu == 'nvidia' || $gpu == 'amd' ]]; do
+		read -rp "Enter $MAG\0gpu$NOC\0: [nvidia/amd] " gpu
+
+		if [[ "$gpu" != "nvidia" && "$gpu" != "amd" ]]; then
+			log err "$MAG$gpu$NOC not supported"
+			exit 1
+		fi
+	done
+
+	while [[ -z $git_user_name ]]; do
+		read -rp "Enter $MAG\0git user.name$NOC\0: " git_user_name
+	done
+
+	until [[ $git_user_email == *@*.* ]]; do
+		read -rp "Enter $MAG\0git user.email$NOC\0: " git_user_email
+	done
+
+	until [[ ${AI,,}  == 'y' || ${AI,,} == 'n' ]]; do
+		read -rp "Install $MAG\0local AI models$NOC\0 ? [y/n] " AI
+	done
+
+	log suc "Variables have been setup"
+}
+
+get_distro() {
+	DISTRO="fedora"
+	INSTALL_CMD="sudo dnf install -qy"
+	UPDATE_CMD="sudo dnf up -qy"
+
+	# TODO: one day when motivation
+	# if command -v zypper &>/dev/null; then
+	# 	DISTRO="opensuse"
+	# 	INSTALL_CMD="sudo zypper in -qn"
+	# 	UPDATE_CMD="sudo zypper dup -qn"
+	# elif command -v dnf &>/dev/null; then
+	# 	DISTRO="fedora"
+	# 	INSTALL_CMD="sudo dnf install -qy"
+	# 	UPDATE_CMD="sudo dnf up -qy"
+	# elif command -v pacman &>/dev/null; then
+	# 	DISTRO="arch"
+	# 	INSTALL_CMD="sudo pacman -Sq --noconfirm --needed"
+	# 	UPDATE_CMD="sudo pacman -Syuq --noconfirm --needed"
+	# elif command -v apt &>/dev/null; then
+	# 	DISTRO="debian"
+	# 	INSTALL_CMD="sudo apt-get install -qy"
+	# 	UPDATE_CMD="sudo apt-get update -qy && sudo apt-get upgrade -qy"
+	# else
+	# 	log err "Distro not supported. Add your distro name, install and
+	# 		update commands in the \`get_distro()\`"
+	# fi
+}
+
+update_pkgs() {
+	log inf "Updating packages"
+	$UPDATE_CMD || (log err "Packages update failed" && exit 1)
+	log suc "Packages have been updated"
+}
+
+set_hostname() {
+	log inf 'Setting up hostname'
+	command -v sudo &>/dev/null || $INSTALL_CMD sudo
+	sudo hostnamectl set-hostname "$hostname"
+	log suc 'Hostname has been setup'
+}
+
+set_sudoer() {
+	log inf "Adding $USER to wheel group"
+	sudo usermod -aG wheel "$USER"
+	read -rp "Setup passwordless sudo for $USER ? [y/n] " a
+	if [[ ${a,,} == 'y' ]]; then
+		tmp=$(sudo mktemp)
+		trap 'rm -f "$tmp"' EXIT
+		printf '%%wheel\tALL=(ALL)\tNOPASSWD: ALL\n' > "$tmp"
+		sudo mv "$tmp" /etc/sudoers.d/10_wheel
+		sudo chmod 0440 /etc/sudoers.d/10_wheel
+		log suc "Passwordless sudo has been setup for $USER"
+	fi
+
+	log suc "$USER has been added to wheel group"
+}
+
+set_mounts() {
+	log inf "Mounting NFS shares"
+	$INSTALL_CMD nfs-utils || $INSTALL_CMD nfs-common
+	local share_opts="nfs rw,defaults,soft,_netdev,noatime,nodiratime 0 0"
+	local mnt_dirs=()
+	while read -r l; do
+		IFS=: read -r ip dataset mount <<< "$l"
+		mnt_dirs+=("$mount")
+		printf "%s:/%s/%s\t/mnt/%s\t%s\n" \
+			"$ip" "$dataset" "$mount" "$mount" "$share_opts" \
+			| sudo tee -a /etc/fstab &>/dev/null
+	done < "$LISTS_DIR/mounts"
+
+	for mount in "${mnt_dirs[@]}"; do
+		sudo mkdir -p /mnt/"$mount"
+	done
+
+	sudo systemctl daemon-reload
+	sudo mount -a
+	log suc "NFS shares have been mounted"
+}
+
+set_ssh() {
+	log inf "Setting up SSH"
+	local ssh_dir="$HOME/.ssh"
+	local ssh_config="$ssh_dir/config"
+	local key="$ssh_dir/$hostname"
+	mkdir -m 0700 "$ssh_dir"
+	ssh-keygen -t ed25519 -f "$key" -N ""
+	touch "$ssh_config" && chmod 600 "$ssh_config"
+	while read -r l; do
+		IFS=: read -r ip host user <<< "$l"
+		ssh-copy-id -o StrictHostKeyChecking=no -i "$key.pub" "$user@$ip"
+		printf 'Host %s\n
+			\tHostName\t%s\n
+			\tUser\t%s\n
+			\tIdentityFile\t%s\n\n' \
+			"$host" "$ip" "$user" "$key" \
+			>> "$ssh_config"
+	done < "$LISTS_DIR/local_devices"
+
+	log suc "SSH has been setup"
+}
+
+set_git() {
+	log inf "Setting up git"
+	$INSTALL_CMD git
+	git config --global user.name "$git_user_name"
+	git config --global user.email "$git_user_email"
+
+	while read -r l; do
+		local host="$l"
+		local key="$HOME/.ssh/git_${host%.*}"
+		ssh-keygen -t ed25519 -C "$git_user_email" -f "$key" -N ""
+		printf 'Host %s\n
+			\tHostName\t%s\n
+			\tUser\tgit\n
+			\tIdentityFile\t%s\n\n' \
+			"$host" "$host" "$key" \
+			>> "$HOME/.ssh/config"
+	done < "$LISTS_DIR/git_hosts"
+
+	log suc "git has been setup"
+}
+
+set_repos() {
+	log inf "Setting up repos"
+	command -v git &>/dev/null || $INSTALL_CMD git
+	while read -r l; do
+		IFS=: read -r host name dest <<< "$l"
+		dest_dir="$HOME/$dest"
+		[[ -d $dest_dir ]] || mkdir -p "$dest_dir"
+		[[ -d $dest_dir/${name##*/} ]] && continue
+		git clone --recurse-submodules \
+			"ssh://git@$host/$name.git $dest_dir"
+	done < "$LISTS_DIR/repos"
+
+	log suc "Repos have been setup"
+}
+
+get_pkgs() {
+	log inf "Installing packages"
+	while read -r l; do
+		pkg=$l
+		if [[ $pkg == fedora* ]]; then
+			[[ $DISTRO == 'fedora' ]] || continue
+			pkg=${pkg#fedora:}
+		fi
+
+		if [[ $pkg == copr* ]]; then
+			[[ $DISTRO == 'fedora' ]] || continue
+			copr_pkg=${pkg#copr:}
+			pkg=${copr_pkg#*/}
+			sudo dnf copr enable "$copr_pkg"
+		fi
+
+		if [[ $pkg == nfedora* ]]; then
+			[[ $DISTRO != 'fedora' ]] || continue
+			pkg=${pkg#nfedora:}
+		fi
+
+		$INSTALL_CMD "$pkg"
+	done < "$LISTS_DIR/packages"
+	log suc "Packages have been installed"
+}
+
+install_ai() {
+	[[ $AI == 'y' ]] || return 0
+	log inf "Installing AI local models"
+	local ollama_config="$ENV_DIR/.config/ollama"
+	$INSTALL_CMD ollama
+	mkdir -p "$ollama_config/modelfiles"
+	while read -r model; do
+		ollama pull "$model"
+		local modelfile="$ollama_config/modelfiles/Modelfile_$model"
+		if [[ ! -f $modelfile ]]; then
+			printf 'FROM %s\nPARAMETER num_ctx 16384' "$model" \
+			> "$modelfile"
+		fi
+
+		ollama create "$model"-16k -f "$modelfile"
+		ollama rm "$model"
+	done < "$LISTS_DIR/ai_models"
+
+	curl -fsSL https://opencode.ai/install | bash
+	log suc "AI local models have been install"
+}
+
+install_font() {
+	log inf "Installing Iosevka font"
+	if fc-list : family | grep -qi "iosevka nerd font"; then
+		log inf "Custom Iosevka font already installed."
+		return 0
+	fi
+
+	local font_dir="$ENV_DIR/.local/share/fonts/IosevkaNerdFont"
+	if [[ -d $font_dir ]]; then
+		log inf "Custom Iosevka fonts already present"
+		until [[ ${a,,} == 'y' || ${a,,} == 'n' ]]; do
+			read -rp "	Reinstall ? [y/n] " a
+			if [[ ${a,,} == 'n' ]]; then
+				return 0
+			fi
+		done
+	fi
+
+	mkdir -p "$font_dir"
+
+	tmp_dir="$(mktemp -d /font_build)"
+	trap 'rm -rf "$tmp_dir"' EXIT
+	local tmp_iosevka="$tmp_dir/iosevka"
+	local tmp_patcher="$tmp_dir/patcher"
+	local tmp_font="$tmp_dir/font"
+	mkdir -p "$tmp_iosevka" "$tmp_patcher" "$tmp_font"
+
+	git clone https://github.com/ryanoasis/nerd-fonts.git "$tmp_patcher"
+	git clone --depth 1 \
+		https://github.com/be5invis/Iosevka.git "$tmp_iosevka"
+
+	$INSTALL_CMD nodejs npm ttfautohint fontforge python3 wget unzip
+	cd "$tmp_iosevka" || exit 1
+	cp -f "$ENV_DIR/.config/iosevka/private-build-plans.toml" ./
+	npm install
+	if ! npm run build -- ttf::Iosevka --jCmd=8; then
+		log err "Iosevka font generation failed"
+		exit 1
+	fi
+
+	while IFS= read -r -d '' ttf; do
+		fontforge -script "$tmp_patcher/font-patcher" --complete \
+			--careful --progressbars --outputdir "$tmp_font" \
+			"$ttf" > /dev/null 2>&1 \
+			|| log err "Iosevka $ttf patching failed"
+	done < <(find "$tmp_iosevka/dist" -name "*.ttf" -print0)
+
+	cp -f "$tmp_font/"*.ttf "$font_dir/"
+	fc-cache -fv
+	log suc "Iosevka font has been installed"
+}
+
+install_others() {
+	log inf "Installing other softwares"
+	src_dir="$HOME/src" && mkdir -p "$src_dir"
+
+	# Not in dnf pkgs manager
+	if [[ $DISTRO == 'fedora' ]]; then
+		cargo install rmpc --locked
+	fi
+
+	# Oh My Posh
+	curl -s https://ohmyposh.dev/install.sh | bash -s
+
+	# Keyd
+	git clone "https://github.com/rvaiya/keyd.git" "$src_dir"
+	keyd_dir="$src_dir/keyd"
+	cd "$keyd_dir" || (log err "Could not cd into $keyd_dir" && exit 1)
+	make && sudo make install
+	sudo ln -fs "$ENV_DIR/.config/keyd/default.conf" \
+		/etc/keyd/
+	sudo systemctl enable --now keyd
+
+	log suc "Others softwares have been installed"
+}
+
+# TODO: one day when motivation
+# post_opensuse() {
+# 	sudo zypper in -qn opi pipewire pipewire-pulseaudio
+# 	opi -n codecs
+#
+# 	if [[ $gpu == "nvidia" ]]; then
+# 		sudo zypper addrepo --refresh \
+# 			https://download.nvidia.com/opensuse/tumbleweed NVIDIA
+# 		sudo zypper install-new-recommends --repo nvidia
+# 	fi
+#
+# 	systemctl --user enable --now pipewire.{service,socket} \
+# 		pipewire-pulse.{service,socket} wireplumber.service
+# }
+
+post_fedora() {
+	sudo dnf install -qy \
+		https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-"$(rpm -E %fedora)".noarch.rpm \
+		https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-"$(rpm -E %fedora)".noarch.rpm
+
+	sudo dnf group upgrade core -qy
+	sudo dnf group install -qy multimedia sound-and-video
+	sudo dnf check-update
+	sudo dnf swap -qy ffmpeg-free ffmpeg --allowerasing
+	sudo dnf install -qy gstreamer1-plugins-{bad-\*,good-\*,base} \
+		gstreamer1-plugin-openh264 gstreamer1-libav lame\* \
+		--exclude=gstreamer1-plugins-bad-free-devel ffmpeg-libs libva \
+		libva-utils openh264 gstreamer1-plugin-openh264 \
+		mozilla-openh264
+
+	if [[ $gpu == "nvidia" ]]; then
+		sudo dnf install -qy libva-nvidia-driver kernel-devel \
+			kernel-headers gcc make dkms acpid libglvnd-glx \
+			libglvnd-opengl libglvnd-devel pkgconfig akmod-nvidia \
+			xorg-x11-drv-nvidia-cuda
+	elif [[ $gpu == "amd" ]]; then
+		sudo dnf install -qy mesa-dri-drivers mesa-vulkan-drivers \
+			vulkan-loader mesa-libGLU
+	fi
+
+	sudo dnf config-manager --set-enabled fedora-cisco-openh264
+
+	flatpak remote-delete fedora
+}
+
+post_setup() {
+	log inf "Starting post installation"
+	$UPDATE_CMD
+
+	# TODO: one day when motivation
+	# case $DISTRO in
+	# 	fedora)   post_fedora   ;;
+	# 	opensuse) post_opensuse ;;
+	# esac
+
+	post_fedora
+
+	flatpak remote-add --if-not-exists --subset=verified \
+		flathub https://flathub.org/repo/flathub.flatpakrepo
+
+	sudo fwupdmgr get-devices
+	sudo fwupdmgr refresh --force
+	sudo fwupdmgr get-updates
+	sudo fwupdmgr update
+
+	log suc "Post install has been done"
+}
+
+main() {
+	command -v stow &>/dev/null || $INSTALL_CMD stow
+	stow -d "$DOTFILES_DIR" -t "$HOME" env
+
+	get_var        || log err "get_var() failed"
+	get_distro     || log err "get_distro() failed"
+	update_pkgs    || log err "update_pkgs() failed"
+	set_hostname   || log err "set_hostname() failed"
+	set_sudoer     || log err "set_sudoer() failed"
+	set_mounts     || log err "set_mounts() failed"
+	set_ssh        || log err "set_ssh() failed"
+	set_git        || log err "set_git() failed"
+	set_repos      || log err "set_repos() failed"
+	get_pkgs       || log err "get_pkgs() failed"
+	install_others || log err "install_others() failed"
+	install_font   || log err "install_font() failed"
+	install_ai     || log err "install_ai() failed"
+	post_setup     || log err "post_setup() failed"
+
+	log inf "Don't forget to setup codeberg/github ssh"
+	log inf "	codeberg key: $(cat "$HOME/.ssh/git_codeberg.pub")"
+	log inf "	github key: $(cat "$HOME/.ssh/git_github.pub")"
+
+	read -rp "Reboot now ? [y/n] " a
+	if [[ ${a,,} != "y" ]]; then
+		log war "Seriously, reboot."
+		exit 1
+	fi
+	sudo systemctl reboot
+}
+
+main

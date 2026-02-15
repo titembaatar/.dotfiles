@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+runs_dir="$HOME/.dotfiles/runs"
+
+run_inits=$(find "$runs_dir" -name "init_*.sh")
+run_installs=$(find "$runs_dir" -name "install_*.sh")
+
+while read -r init; do
+	"$init" || echo "[WARN] $init failed."
+done < <($run_inits; $run_installs)
+
+stow -d "$HOME/.dotfiles" -t "$HOME" env
