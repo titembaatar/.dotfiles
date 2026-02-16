@@ -1,24 +1,37 @@
+# utils
 curl
 wget
 git
-lua
-luarocks
 stow
 fzf
-chafa
 bat
+btop
+chafa
 ranger
 mpd
+
+# lang
+lua
+luarocks
+
+# workflow
 sway
-zsh
 waybar
+zsh
 tmux
+neovim
+
+# apps
 steam
 vlc
 obs-studio
 
+# non fedora pkgs
+nfedora:ghostty
+nfedora:keyd
 nfedora:rmpc
 
+# fedora specific
 fedora:make
 fedora:cmake
 fedora:gcc
