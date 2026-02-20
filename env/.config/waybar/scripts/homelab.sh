@@ -9,33 +9,13 @@ nodes=(
 	"10.0.0.19:backup"
 )
 
-timeout=2
-healthy=true
-tooltip=""
-
+declare class="on" tooltip
 for node in "${nodes[@]}"; do
-	name=${node#*:}
 	ip=${node%:*}
-	status="up"
-
-	if ! ping -c 1 -W "$timeout" "$ip" &>/dev/null; then
-		status="down"
-		healthy=false
-	fi
-
-	tooltip+="$name\t| $ip | $status"
-
-	if [[ $node != "${nodes[-1]}" ]]; then
-		tooltip+="\n"
-	fi
+	ping -c 1 -W 2 "$ip" &>/dev/null || class="off"
+	tooltip+="${node#*:}\t| $ip | $class"
+	[[ $node == "${nodes[-1]}" ]] || tooltip+="\n"
 done
 
-text="up"
-class="up"
-if [[ $healthy = false ]]; then
-	text="down"
-	class="down"
-fi
-
-printf '{"text": "%s", "class": "%s", "tooltip": "%s"}' \
-	"$text" "$class" "$tooltip"
+printf '{"class": "%s", "tooltip": "%s"}' \
+	"$class" "$tooltip"

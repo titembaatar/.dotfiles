@@ -1,0 +1,29 @@
+{
+  "disk": {
+    "format": "󰋊 {percentage_used}%",
+    "path": "/mnt/yesugei/",
+    "states": {
+      "warning": 70,
+      "critical": 85
+    }
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "",
+    "format-icons": {
+      "alsa_output.usb-Generic_USB_Audio-00.HiFi__Speaker__sink": "󰋋",
+      "alsa_output.usb-Generic_USB_Audio-00.HiFi__SPDIF__sink": "󰓃",
+      "bluez_output.18:9C:2C:B2:FF:67": "󰂯"
+    },
+    "scroll-step": 1,
+    "states": {
+      "low": 25,
+      "normal": 80,
+      "warning": 100,
+      "critical": 999
+    },
+    "on-click": "$HOME/.config/waybar/scripts/pulseaudio.sh",
+    "on-click-right": "pavucontrol"
+  }
+}

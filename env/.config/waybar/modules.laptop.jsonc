@@ -1,0 +1,10 @@
+{
+  "disk": {
+    "format": "󰋊 {percentage_used}%",
+    "path": "/",
+    "states": {
+      "warning": 70,
+      "critical": 85
+    }
+  }
+}

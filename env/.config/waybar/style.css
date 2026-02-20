@@ -15,78 +15,118 @@
 @define-color yargui     rgb (213, 179, 229);
 
 /* STYLE */
-* {
+*
+{
   font-family: Iosevka Nerd Font Propo;
-  font-size: 12pt;
+  font-size: 16pt;
   font-weight: 700;
+  border: none;
+  min-height: 0;
 }
 
-window#waybar {
+window#waybar
+{
   background-color: @base;
+  color: @text;
 }
 
-label.module {
-  color: @base;
-  margin: 0 0.4rem;
+tooltip
+{
+  background-color: @base;
+  border: 2px solid @overlay;
 }
 
-#workspaces button {
-  padding: 0 0.4em;
+tooltip label
+{
+  color: @text;
 }
 
-#custom-homelab {
-  margin-left: 1rem;
+box.modules-left
+{
+  margin-left: 0.5em;
 }
 
-#custom-homelab.up,
-#workspaces button.visible,
-#custom-tailscale.connected,
-#bluetooth.connected {
-  color: @sarnai;
+box.modules-right
+{
+  margin-right: 0.5em;
 }
 
-#custom-homelab.down,
-#workspaces button.urgent,
-#bluetooth.off,
-#disk.critical,
-#cpu.critical,
-#custom-gpu.critical,
-#memory.critical,
-#custom-tailscale.disconnected,
-#pulseaudio.muted {
-  color: @anis;
+#workspaces button
+{
+  padding: 0 0.5em;
 }
 
-#mode,
-#disk.warning,
-#cpu.warning,
-#custom-gpu.warning,
-#memory.warning {
-  color: @chatsalgan;
+#workspaces button.empty
+, #custom-delimitor
+{
+  color: @overlay;
 }
 
-#disk,
-#cpu,
-#custom-gpu,
-#memory {
-  color: @nuur;
-}
-
-#pulseaudio {
-  color: @mus;
-}
-
-#clock {
-  margin-right: 1rem;
-  color: @yargui;
-}
-
-#workspaces button,
-#workspaces button.empty,
-#bluetooth.on {
+#pulseaudio.muted
+{
   color: @muted;
 }
 
-#window {
+#workspaces button
+, #window.module
+, #pulseaudio.low
+{
   color: @subtle;
 }
+
+.off
+, .critical
+, #disk.critical
+, #cpu.critical
+, #memory.critical
+, #pulseaudio.critical
+, #bluetooth.off
+{
+  color: @anis;
+}
+
+.warning
+, #workspaces button.urgent
+, #disk.warning
+, #cpu.warning
+, #memory.warning
+, #pulseaudio.warning
+{
+  color: @chatsalgan;
+}
+
+#memory
+{
+  color: @els;
+}
+
+#disk
+{
+  color: @uvs;
+}
+
+#cpu
+, #bluetooth.connected
+{
+  color: @nuur;
+}
+
+#pulseaudio
+, #pulseaudio.normal
+{
+  color: @mus;
+}
+
+#workspaces button.focused
+, .on
+, #bluetooth.on
+{
+  color: @sarnai;
+}
+
+#clock
+, #mode
+{
+  color: @yargui;
+}
+

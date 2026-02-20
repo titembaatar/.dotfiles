@@ -1,10 +1,13 @@
 [{
-  "name": "main",
-  "layer": "top",
-  "height": 24,
+  "spacing": 16,
+
+  "include": [
+		"~/.dotfiles/env/.config/waybar/modules.default.jsonc",
+		"~/.dotfiles/env/.config/waybar/modules.desktop.jsonc"
+		// "~/.dotfiles/env/.config/waybar/modules.laptop.jsonc"
+	],
 
   "modules-left": [
-    "custom/homelab",
     "sway/workspaces",
     "sway/mode"
   ],
@@ -14,107 +17,14 @@
   ],
 
   "modules-right": [
-    "bluetooth",
+    "custom/homelab",
     "custom/tailscale",
+    "bluetooth",
+    "custom/delimitor",
     "disk",
     "cpu",
-    "custom/gpu",
     "memory",
     "pulseaudio",
     "clock"
-  ],
-
-  "custom/homelab": {
-    "format": "[<span rise='1pt'></span>]",
-    "exec": "$HOME/.config/waybar/scripts/homelab.sh",
-    "interval": 30,
-    "return-type": "json"
-  },
-
-  "custom/tailscale": {
-    "format": "[<span rise='1pt'>{text}</span>]",
-    "exec": "$HOME/.config/waybar/scripts/tailscale.sh --status",
-    "on-click": "$HOME/.config/waybar/scripts/tailscale.sh --toggle",
-    "interval": 30,
-    "return-type": "json"
-  },
-
-  "sway/workspaces": {
-    "format": "[{name}]",
-    "disable-scroll": true,
-    "disable-click": true
-  },
-
-  "sway/mode": {
-    "format": "; {}",
-    "max-length": 75
-  },
-
-  "sway/window": {
-    "format": "{title}",
-    "max-length": 50
-  },
-
-  "bluetooth": {
-    "on-click": "$HOME/.config/waybar/scripts/bluetooth.sh --connect",
-    "on-click-middle": "$HOME/.config/waybar/scripts/bluetooth.sh --toggle",
-    "format-on": "[<span rise='1pt'>󰂯</span>]",
-    "format-off": "[<span rise='1pt'>󰂲</span>]",
-    "format-connected": "[<span rise='1pt'>󰂱</span>]",
-    "tooltip-format": "{controller_alias}\t{controller_address}",
-    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
-    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
-  },
-
-  "disk": {
-    "format": "[<span rise='1pt'>󰋊</span>] {percentage_used}%",
-    "path": "/mnt/yesugei/",
-    "states": {
-      "warning": 70,
-      "critical": 85
-    }
-  },
-
-  "cpu": {
-    "format": "[<span rise='1pt'></span>] {usage}%",
-    "interval": 10,
-    "tooltip-format": "ps -eo cmd,%cpu --sort=-%cpu | head",
-    "states": {
-      "warning": 70,
-      "critical": 85
-    }
-  },
-
-  "custom/gpu": {
-    "format": "[<span rise='1pt'>󱎓</span>] {text}%",
-    "exec": "$HOME/.config/waybar/scripts/nvidia_gpu.sh",
-    "interval": 10,
-    "return-type": "json"
-  },
-
-  "memory": {
-    "format": "[<span rise='1pt'></span>] {percentage}%",
-    "tooltip-format": "MEM: {avail}G available, {used}/{total}G\nSWAP: {swapAvail}G available, {swapUsed}/{swapTotal}G",
-    "states": {
-      "warning": 70,
-      "critical": 85
-    }
-  },
-
-  "pulseaudio": {
-    "format": "[<span rise='1pt'>{icon}</span>] {volume}%",
-    "format-muted": "[<span rise='1pt'></span>]",
-    "format-icons": {
-      "default": ["", "", ""]
-    },
-    "scroll-step": 1,
-    "on-click": "$HOME/.config/waybar/scripts/pulseaudio.sh",
-    "on-click-right": "pavucontrol"
-  },
-
-  "clock": {
-    "format": "[<span rise='1pt'>󰨳</span>] {:%m%d.%H%M}",
-    "interval": 60,
-    "tooltip-format": "<tt>{calendar}</tt>"
-  }
+  ]
 }]

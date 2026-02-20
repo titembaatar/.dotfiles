@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
-mac="18:9C:2C:B2:FF:67"
+MAC="18:9C:2C:B2:FF:67"
 
 connect() {
 	if [[ $(bluetoothctl devices Connected) ]]; then
-		bluetoothctl disconnect "$mac"
+		bluetoothctl disconnect "$MAC"
 		exit 0
 	fi
 
-	bluetoothctl connect "$mac"
+	bluetoothctl connect "$MAC"
 }
 
 toggle() {
