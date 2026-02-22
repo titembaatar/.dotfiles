@@ -1,30 +1,22 @@
-[{
-  "spacing": 16,
-
-  "include": [
-		"~/.dotfiles/env/.config/waybar/modules.default.jsonc",
-		"~/.dotfiles/env/.config/waybar/modules.desktop.jsonc"
-		// "~/.dotfiles/env/.config/waybar/modules.laptop.jsonc"
-	],
-
-  "modules-left": [
-    "sway/workspaces",
-    "sway/mode"
-  ],
-
-  "modules-center": [
-    "sway/window"
-  ],
-
-  "modules-right": [
-    "custom/homelab",
-    "custom/tailscale",
-    "bluetooth",
-    "custom/delimitor",
-    "disk",
-    "cpu",
-    "memory",
-    "pulseaudio",
-    "clock"
-  ]
-}]
+[
+  {
+    "output": "DP-1",
+    "include": [ "~/.dotfiles/env/.config/waybar/config.default.jsonc" ],
+    "modules-right": [
+      "custom/homelab",
+      "custom/tailscale",
+      "bluetooth",
+      "custom/delimitor",
+      "disk",
+      "cpu",
+      "memory",
+      "pulseaudio",
+      "clock"
+    ]
+  },
+  {
+    "output": "DP-2",
+    "include": [ "~/.dotfiles/env/.config/waybar/config.default.jsonc" ],
+    "modules-right": [ "pulseaudio", "clock" ]
+  }
+]

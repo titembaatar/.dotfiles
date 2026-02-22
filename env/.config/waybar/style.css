@@ -42,18 +42,28 @@ tooltip label
 }
 
 box.modules-left
+, box.modules-center
+, box.modules-right
 {
-  margin-left: 0.5em;
-}
-
-box.modules-right
-{
-  margin-right: 0.5em;
+  margin: 0 0.5em;
 }
 
 #workspaces button
 {
   padding: 0 0.5em;
+  border-radius: 0;
+
+}
+
+#workspaces button:hover
+{
+  background: @surface;
+}
+
+#workspaces button.focused
+{
+  background-color: @surface;
+  color: @sarnai;
 }
 
 #workspaces button.empty
@@ -117,8 +127,7 @@ box.modules-right
   color: @mus;
 }
 
-#workspaces button.focused
-, .on
+.on
 , #bluetooth.on
 {
   color: @sarnai;
