@@ -4,25 +4,17 @@ include /etc/sway/config.d/*
 include ./sarnai
 exec_always "killall waybar || true; waybar"
 
-###
-##  VARIABLES
-#
-
-# Mod4 = logo key, Mod1 = Alt
 set $mod Mod4
 set $alt Mod1
-
-# VIIIIIIIIM
-set $left  h
-set $down  j
-set $up    k
+set $left h
+set $down j
+set $up k
 set $right l
 
-# monitor
-set $d1 "DP-1"
-set $d2 "DP-2"
+set $term ghostty
+set $browser firefox
+set $music $term --title=rmpc -e $HOME/.cargo/bin/rmpc
 
-# scripts
 set $fzf-drun        $HOME/.dotfiles/env/.local/bin/fzf-drun
 set $sessioniser     $HOME/.local/bin/tmux-sessioniser
 set $ssh-sessioniser $HOME/.local/bin/ssh-sessioniser
@@ -31,29 +23,29 @@ set $fzf-emoji       $HOME/.local/bin/fzf-emoji
 set $pob             $HOME/.local/bin/pob
 set $pob2            $HOME/.local/bin/pob2
 
-# apps
-set $term    ghostty
-set $browser firefox
-set $music   $term --title=rmpc -e $HOME/.cargo/bin/rmpc
+set $d1 "DP-1"
+set $d2 "DP-2"
 
-# exit mode
-set $exit "[l]ogout [s]leep [r]eboot [p]oweroff"
+smart_borders no_gaps
+smart_gaps on
+default_border pixel 2
+default_floating_border normal
+gaps inner 4
+seat seat0 xcursor_theme phinger-cursors-light 40
+input "type:keyboard" {
+  xkb_layout us
+  xkb_options compose:ralt
+}
 
-###
-##  OPTS
-#
-
-# displays
 output $d1 {
-bg /home/titem/Pictures/wallpapers/saran_h_1.jpg fill
-  resolution 2560x1440 position 1440,560
+	bg /home/titem/Pictures/wallpapers/saran_h_1.jpg fill
+	resolution 2560x1440 position 1440,560
 }
 output $d2 {
-  bg /home/titem/Pictures/wallpapers/saran_v_2.jpg fill
-  resolution 1440x2560 transform 270 position 0,0
+	bg /home/titem/Pictures/wallpapers/saran_v_2.jpg fill
+	resolution 1440x2560 transform 270 position 0,0
 }
 
-# workspace
 workspace 1 output $d1
 workspace 2 output $d1
 workspace 3 output $d1
@@ -65,31 +57,32 @@ workspace 8 output $d2 layout splitv
 workspace 9 output $d2 layout splitv
 workspace 0 output $d2 layout splitv
 
-# window
-default_border pixel 2
-default_floating_border normal
-for_window [window_role="pop-up"] floating enable
-for_window [window_role="bubble"] floating enable
-for_window [window_role="dialog"] floating enable
-for_window [window_type="dialog"] floating enable
-for_window [class="MEGAsync" title="MEGAsync"] floating enable
-for_window [title="sessioniser"] floating enable
-for_window [title="sessioniser"] fullscreen enable
+for_window [window_role="pop-up|bubble|dialog"] floating enable
+for_window [window_type="dialog"]               floating enable
+for_window [title="sessioniser"]                floating enable, fullscreen enable
+for_window [class="MEGAsync"]                   floating enable
 
-# cursor
-seat seat0 xcursor_theme phinger-cursors-light 40
+assign [title="tmux"]     workspace 1
+assign [app_id="firefox"] workspace 2
+assign [class="steam"]    workspace 3
+assign [class="resolve"]  workspace 4
+assign [class="MEGAsync"] workspace 5
+assign [app_id="zen"]     workspace 6
+assign [title="rmpc"]     workspace 6
 
-# keyboard
-input "type:keyboard" {
-  xkb_layout us
-  xkb_options compose:ralt
+# keybinds
+
+mode "resize" {
+	bindsym {
+		$left  resize shrink width  5ppt
+		$up    resize grow   height 5ppt
+		$down  resize shrink height 5ppt
+		$right resize grow   width  5ppt
+		Escape mode   "default"
+	}
 }
 
-###
-##  KEYMAPS
-#
-
-# exit mode
+set $exit "[l]ogout [s]leep [r]eboot [p]oweroff"
 mode $exit {
   bindsym --to-code {
     l exec swaymsg exit
@@ -102,107 +95,89 @@ mode $exit {
     $mod+x mode "default"
   }
 }
-bindsym --to-code $mod+x mode $exit
 
-# resize mode
-mode "resize" {
-	bindsym $left  resize shrink width  5ppt
-	bindsym $up    resize grow   height 5ppt
-	bindsym $down  resize shrink height 5ppt
-	bindsym $right resize grow   width  5ppt
+set $search "[s]ession [S]SH [m]usic [.]👀"
+mode $search {
+	bindsym --to-code {
+		s       exec $term --title=sessioniser -e $sessioniser
+		Shift+s exec $term --title=sessioniser -e $ssh-sessioniser
+		m       exec $term --title=sessioniser -e $fzf-cmus
+		period  exec $term --title=sessioniser -e $fzf-emoji
 
-	bindsym Escape mode "default"
+		Return  mode "default"
+		Escape  mode "default"
+		$mod+s  mode "default"
+	}
+	bindsym --release {
+		s       mode "default"
+		Shift+s mode "default"
+		m       mode "default"
+		period  mode "default"
+	}
 }
-bindsym $mod+r mode "resize"
 
-# launcher
-bindsym $mod+d      exec $term --title=sessioniser -e $fzf-drun
-bindsym $mod+m      exec $term --title=sessioniser -e $fzf-cmus
-bindsym $mod+period exec $term --title=sessioniser -e $fzf-emoji
-bindsym $mod+u      exec $term --title=sessioniser -e $sessioniser
-bindsym $mod+i      exec $term --title=sessioniser -e $ssh-sessioniser
+bindsym {
+	# PERSONAL KEYMAPS
+	$mod+r           mode "resize"
+	--to-code $mod+x mode $exit
+	--to-code $mod+s mode $search
 
-# apps
-bindsym $mod+Return       exec $term --title=tmux -e tmux new -A -s home
-bindsym $mod+bracketleft  exec $music
-bindsym $mod+bracketright exec $chat
-bindsym $mod+backslash    exec $browser
+	$mod+Return exec $term --title=tmux -e tmux new -A -s home
+	$mod+b      exec $browser
+	$mod+d      exec $term --title=sessioniser -e $fzf-drun
+	$mod+m      exec $music
+	$mod+e      exec /opt/resolve/bin/resolve
 
-# gaming
-bindsym $mod+bar          exec steam
-bindsym $mod+braceleft    exec $pob
-bindsym $mod+braceright   exec $pob2
+	$mod+backslash  exec zen-browser
+	$mod+bar        exec steam
+	$mod+braceleft  exec $pob
+	$mod+braceright exec $pob2
 
-# screenshot
-bindsym $mod+p       exec grimshot savecopy --notify --wait 1 active
-bindsym $mod+Shift+p exec grimshot savecopy --notify --wait 1 window
-bindsym $mod+Alt+p   exec grimshot savecopy --notify --wait 1 area
+	$mod+p       exec grimshot savecopy --notify --wait 1 active
+	$mod+Shift+p exec grimshot savecopy --notify --wait 1 window
+	$mod+Alt+p   exec grimshot savecopy --notify --wait 1 area
 
-# volume via PulseAudio
-bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
-bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
-bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
-bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+	--locked XF86AudioMute        exec pactl set-sink-mute   \@DEFAULT_SINK@ toggle
+	--locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
+	--locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
+	--locked XF86AudioMicMute     exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
 
-###
-##  SWAY KEYMAPS
-#
+	# SWAY KEYMAPS
+	$mod+Shift+c reload
+	$mod+w       kill
+	$mod+f       fullscreen
+	$mod+space   floating toggle
+	$mod+c       splith
+	$mod+v       splitv
 
-# reload the configuration file
-bindsym $mod+Shift+c reload
+	$mod+$left        focus left
+	$mod+$down        focus down
+	$mod+$up          focus up
+	$mod+$right       focus right
+	$mod+Shift+$left  move  left
+	$mod+Shift+$down  move  down
+	$mod+Shift+$up    move  up
+	$mod+Shift+$right move  right
 
-# move focus
-bindsym $mod+$left  focus left
-bindsym $mod+$down  focus down
-bindsym $mod+$up    focus up
-bindsym $mod+$right focus right
+	$mod+1 workspace number 1
+	$mod+2 workspace number 2
+	$mod+3 workspace number 3
+	$mod+4 workspace number 4
+	$mod+5 workspace number 5
+	$mod+6 workspace number 6
+	$mod+7 workspace number 7
+	$mod+8 workspace number 8
+	$mod+9 workspace number 9
+	$mod+0 workspace number 10
 
-# move focused window
-bindsym $mod+Shift+$left  move left
-bindsym $mod+Shift+$down  move down
-bindsym $mod+Shift+$up    move up
-bindsym $mod+Shift+$right move right
-
-# switch workspace
-bindsym $mod+1 workspace number 1
-bindsym $mod+2 workspace number 2
-bindsym $mod+3 workspace number 3
-bindsym $mod+4 workspace number 4
-bindsym $mod+5 workspace number 5
-bindsym $mod+6 workspace number 6
-bindsym $mod+7 workspace number 7
-bindsym $mod+8 workspace number 8
-bindsym $mod+9 workspace number 9
-bindsym $mod+0 workspace number 10
-
-# move focus to workspace
-bindsym $mod+Shift+1 move container to workspace number 1
-bindsym $mod+Shift+2 move container to workspace number 2
-bindsym $mod+Shift+3 move container to workspace number 3
-bindsym $mod+Shift+4 move container to workspace number 4
-bindsym $mod+Shift+5 move container to workspace number 5
-bindsym $mod+Shift+6 move container to workspace number 6
-bindsym $mod+Shift+7 move container to workspace number 7
-bindsym $mod+Shift+8 move container to workspace number 8
-bindsym $mod+Shift+9 move container to workspace number 9
-bindsym $mod+Shift+0 move container to workspace number 10
-
-# kill focused window
-bindsym $mod+w kill
-
-# exit sway
-bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
-
-# slipts
-bindsym $mod+b splith
-bindsym $mod+v splitv
-
-# layouts
-bindsym $mod+f fullscreen
-bindsym $mod+s layout stacking
-bindsym $mod+t layout tabbed
-bindsym $mod+e layout toggle split
-
-# toggle the current focus between tiling and floating mode
-bindsym $mod+space floating toggle
-
+	$mod+Shift+1 move container to workspace number 1
+	$mod+Shift+2 move container to workspace number 2
+	$mod+Shift+3 move container to workspace number 3
+	$mod+Shift+4 move container to workspace number 4
+	$mod+Shift+5 move container to workspace number 5
+	$mod+Shift+6 move container to workspace number 6
+	$mod+Shift+7 move container to workspace number 7
+	$mod+Shift+8 move container to workspace number 8
+	$mod+Shift+9 move container to workspace number 9
+	$mod+Shift+0 move container to workspace number 10
+}
