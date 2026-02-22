@@ -26,8 +26,9 @@
 
 window#waybar
 {
-  background-color: @base;
   color: @text;
+  background-color: @base;
+  border-bottom: 2px solid @surface;
 }
 
 tooltip
@@ -64,6 +65,7 @@ box.modules-left
 {
   background-color: @surface;
   color: @sarnai;
+  box-shadow: inset 0 -2px 0 0 @sarnai;
 }
 
 #workspaces button.empty

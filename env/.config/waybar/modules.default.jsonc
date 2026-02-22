@@ -1,6 +1,6 @@
 {
   "custom/delimitor": {
-    "format": "///"
+    "format": "|"
   },
 
   "sway/workspaces": {
