@@ -12,6 +12,7 @@ set $up k
 set $right l
 
 set $term ghostty
+set $tmux $term --title=tmux -e tmux new -A -s home
 set $browser firefox
 set $music $term --title=rmpc -e $HOME/.cargo/bin/rmpc
 
@@ -25,6 +26,9 @@ set $pob2            $HOME/.local/bin/pob2
 
 set $d1 "DP-1"
 set $d2 "DP-2"
+
+exec $tmux
+exec $browser
 
 smart_borders no_gaps
 smart_gaps on
