@@ -26,6 +26,7 @@ set $pob2            $HOME/.local/bin/pob2
 
 set $d1 "DP-1"
 set $d2 "DP-2"
+set $l1 "eDP-1"
 
 exec $tmux
 exec $browser
@@ -48,6 +49,10 @@ output $d1 {
 output $d2 {
 	bg /mnt/files/pictures/wallpapers/saran_v_2.jpg fill
 	resolution 1440x2560 transform 270 position 0,0
+}
+output $l1 {
+	bg /mnt/files/pictures/wallpapers/saran_h_1.jpg fill
+	resolution 1920x1080 position 0,0
 }
 
 workspace 1 output $d1

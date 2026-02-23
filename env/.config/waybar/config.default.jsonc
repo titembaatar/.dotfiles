@@ -1,11 +1,6 @@
 {
   "height": 36,
   "spacing": 16,
-  "include": [
-    "~/.dotfiles/env/.config/waybar/modules.default.jsonc",
-    "~/.dotfiles/env/.config/waybar/modules.desktop.jsonc"
-    // "~/.dotfiles/env/.config/waybar/modules.laptop.jsonc"
-  ],
   "modules-left": [ "sway/workspaces", "sway/mode" ],
   "modules-center": [ "sway/window" ]
 }

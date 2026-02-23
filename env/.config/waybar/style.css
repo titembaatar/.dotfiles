@@ -93,6 +93,7 @@ box.modules-left
 , #memory.critical
 , #pulseaudio.critical
 , #bluetooth.off
+, #battery.off
 {
   color: @anis;
 }
@@ -103,6 +104,7 @@ box.modules-left
 , #cpu.warning
 , #memory.warning
 , #pulseaudio.warning
+, #battery.warning
 {
   color: @chatsalgan;
 }
@@ -131,6 +133,7 @@ box.modules-left
 
 .on
 , #bluetooth.on
+, #battery
 {
   color: @sarnai;
 }

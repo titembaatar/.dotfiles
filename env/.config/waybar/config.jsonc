@@ -1,7 +1,11 @@
 [
   {
     "output": "DP-1",
-    "include": [ "~/.dotfiles/env/.config/waybar/config.default.jsonc" ],
+    "include": [
+      "~/.dotfiles/env/.config/waybar/config.default.jsonc",
+      "~/.dotfiles/env/.config/waybar/modules.default.jsonc",
+      "~/.dotfiles/env/.config/waybar/modules.desktop.jsonc"
+    ],
     "modules-right": [
       "custom/homelab",
       "custom/tailscale",
@@ -16,7 +20,29 @@
   },
   {
     "output": "DP-2",
-    "include": [ "~/.dotfiles/env/.config/waybar/config.default.jsonc" ],
+    "include": [
+      "~/.dotfiles/env/.config/waybar/config.default.jsonc",
+      "~/.dotfiles/env/.config/waybar/modules.default.jsonc",
+      "~/.dotfiles/env/.config/waybar/modules.desktop.jsonc"
+    ],
     "modules-right": [ "pulseaudio", "clock" ]
+  },
+  {
+    "output": "eDP-1",
+    "include": [
+      "~/.dotfiles/env/.config/waybar/config.default.jsonc",
+      "~/.dotfiles/env/.config/waybar/modules.default.jsonc",
+      "~/.dotfiles/env/.config/waybar/modules.laptop.jsonc"
+    ],
+    "modules-right": [
+      "custom/homelab",
+      "custom/delimitor",
+      "battery",
+      "disk",
+      "cpu",
+      "memory",
+      "pulseaudio",
+      "clock"
+    ]
   }
 ]
