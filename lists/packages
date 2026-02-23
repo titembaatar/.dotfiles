@@ -20,7 +20,6 @@ arch:xorg-xwayland
 arch:xdg-desktop-portal-gtk
 arch:xdg-desktop-portal-wlr
 sway
-sway-bg
 sway-contrib
 wl-clipboard
 grim
