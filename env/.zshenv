@@ -1,4 +1,12 @@
-#!/usr/bin/env bash
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.opencode/bin:$PATH"
+export PATH="/usr/local/go/bin:$PATH"
+
+export EDITOR="nvim"
+export BROWSER="firefox"
+export XDG_SCREENSHOTS_DIR="$HOME/screenshots"
+export GRIM_DEFAULT_DIR="$XDG_SCREENSHOTS_DIR"
 
 export FZF_DEFAULT_OPTS='
   --color=fg:-1,fg+:#90bbaa,bg:-1,bg+:#21362d
