@@ -11,9 +11,9 @@ set $down j
 set $up k
 set $right l
 
-set $term ghostty
-set $tmux $term --title=tmux -e tmux new -A -s home
+set $term foot
 set $browser firefox
+set $tmux $term --title=tmux -e tmux new -A -s home
 set $music $term --title=rmpc -e $HOME/.cargo/bin/rmpc
 
 set $fzf-drun        $HOME/.dotfiles/env/.local/bin/fzf-drun
@@ -55,11 +55,6 @@ output $l1 {
 	resolution 1920x1080 position 0,0
 }
 
-workspace 1 output $d1
-workspace 2 output $d1
-workspace 3 output $d1
-workspace 4 output $d1
-workspace 5 output $d1
 workspace 6 output $d2 layout splitv
 workspace 7 output $d2 layout splitv
 workspace 8 output $d2 layout splitv
@@ -105,7 +100,7 @@ mode $exit {
   }
 }
 
-set $search "[s]ession [S]SH [m]usic [.]👀"
+set $search "[s]ession [S]SH [m]usic [.]"
 mode $search {
 	bindsym --to-code {
 		s       exec $term --title=sessioniser -e $sessioniser
