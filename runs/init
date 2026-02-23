@@ -444,7 +444,7 @@ post_arch() {
 install_post() {
 	log inf "Starting post installation"
 
-	if ! command -v zsh &>/dev/null; then
+	if command -v zsh &>/dev/null; then
 		sudo chsh -s "$(command -v zsh)" "$USER"
 	fi
 
