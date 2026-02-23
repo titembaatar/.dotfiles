@@ -41,7 +41,7 @@ log() {
 
 ask() {
 	local msg=$1 var=$2
-	read -rp "$(printf "%b" "$msg")" "${var?}"
+	read -rp "$(printf "%b\n" "$msg")" "${var?}"
 }
 
 get_var() {
@@ -55,7 +55,7 @@ get_var() {
 	done
 
 	until [[ ${YN_WHEEL_GROUP,,} =~ ^(y|yes|n|no)$ ]]; do
-		ask "Add $MAG$USER$NOC in wheel group ? [y/n] " YN_WHEEL_GROUP
+		ask "Add $MAG$USER$NOC in wheel group? [y/n] " YN_WHEEL_GROUP
 		[[ ! ${YN_WHEEL_GROUP,,} =~ ^(y|yes)$ ]] && continue
 		until [[ ${YN_PASSWORDLESS,,} =~ ^(y|yes|n|no)$ ]]; do
 			ask "Setup passwordless sudo for $MAG$USER$NOC? [y/n] " YN_PASSWORDLESS
@@ -518,4 +518,5 @@ main() {
 	log war "Seriously, ${YEL}reboot${NOC}."
 }
 
+clear
 main
