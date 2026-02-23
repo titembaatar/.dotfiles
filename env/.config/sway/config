@@ -42,11 +42,11 @@ input "type:keyboard" {
 }
 
 output $d1 {
-	bg /home/titem/Pictures/wallpapers/saran_h_1.jpg fill
+	bg /mnt/files/pictures/wallpapers/saran_h_1.jpg fill
 	resolution 2560x1440 position 1440,560
 }
 output $d2 {
-	bg /home/titem/Pictures/wallpapers/saran_v_2.jpg fill
+	bg /mnt/files/pictures/wallpapers/saran_v_2.jpg fill
 	resolution 1440x2560 transform 270 position 0,0
 }
 
