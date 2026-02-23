@@ -225,6 +225,20 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 user_pref("browser.tabs.closeWindowWithLastTab", false);
 user_pref("ui.key.menuAccessKey", 0);
 user_pref("ui.key.menuAccessKeyFocuses", false);
+user_pref("sidebar.verticalTabs", true);
+user_pref("sidebar.verticalTabs.dragToPinPromo.dismissed", true);
+user_pref("extensions.activeThemeID", "{40b7a150-07c7-4021-9c5e-8258b5e3cbc5}")
+user_pref("layout.css.prefers-color-scheme.content-override", 0)
+user_pref("browser.display.use_document_fonts", 0)
+user_pref("font.minimum-size.x-western", 12)
+user_pref("font.size.monospace.x-western", 14)
+user_pref("font.name.monospace.x-western", "Iosevka Nerd Font Propo")
+user_pref("font.name.sans-serif.x-western", "Iosevka Nerd Font Propo")
+user_pref("font.name.serif.x-western", "Iosevka Nerd Font Propo")
+user_pref("browser.startup.homepage", "chrome://browser/content/blanktab.html")
+user_pref("browser.startup.homepage_override.mstone", "	ignore")
+user_pref("browser.newtabpage.enabled", false)
+
 
 /****************************************************************************
  * SECTION: SMOOTHFOX                                                       *
