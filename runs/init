@@ -12,7 +12,7 @@ ENV_DIR="$DOTFILES_DIR/env"
 RUNS_DIR="$DOTFILES_DIR/runs"
 LISTS_DIR="$DOTFILES_DIR/lists"
 
-declare YN_AI YN_PASSWORDLESS YN_WHEEL_GROUP YN_HOSTNAME
+declare YN_AI YN_PASSWORDLESS YN_WHEEL_GROUP YN_HOSTNAME YN_GIT YN_STOW
 declare GIT_USER GIT_MAIL HOST_NAME
 declare DISTRO GPU_TYPE
 
@@ -39,34 +39,48 @@ log() {
 	esac
 }
 
+ask() {
+	local msg=$1 var=$2
+	read -rp "$(printf "%b" "$msg")" "${var?}"
+}
+
 get_var() {
 	log inf "Setup variables"
 	until [[ ${YN_HOSTNAME,,} =~ ^(y|yes|n|no)$ ]]; do
-		read -rp "Set $MAG\0hostname$NOC\0 ? [y/n] " YN_HOSTNAME
+		ask "Set ${MAG}hostname${NOC}? [y/n] " YN_HOSTNAME
 		[[ ! ${YN_HOSTNAME,,} =~ ^(y|yes)$ ]] && continue
 		while [[ -z $HOST_NAME ]]; do
-			read -rp "Enter $MAG\0hostname$NOC\0: " HOST_NAME
+			ask "Enter ${MAG}hostname${NOC}: " HOST_NAME
 		done
 	done
 
-	while [[ -z $GIT_USER ]]; do
-		read -rp "Enter $MAG\0git user.name$NOC\0: " GIT_USER
-	done
-
-	until [[ $GIT_MAIL == *@*.* ]]; do
-		read -rp "Enter $MAG\0git user.email$NOC\0: " GIT_MAIL
-	done
-
 	until [[ ${YN_WHEEL_GROUP,,} =~ ^(y|yes|n|no)$ ]]; do
-		read -rp "Add $MAG$USER$NOC in wheel group ? [y/n] " YN_WHEEL_GROUP
+		ask "Add $MAG$USER$NOC in wheel group ? [y/n] " YN_WHEEL_GROUP
 		[[ ! ${YN_WHEEL_GROUP,,} =~ ^(y|yes)$ ]] && continue
 		until [[ ${YN_PASSWORDLESS,,} =~ ^(y|yes|n|no)$ ]]; do
-			read -rp "Setup passwordless sudo for $MAG$USER$NOC ? [y/n] " YN_PASSWORDLESS
+			ask "Setup passwordless sudo for $MAG$USER$NOC? [y/n] " YN_PASSWORDLESS
+		done
+	done
+
+	until [[ ${YN_STOW,,} =~ ^(y|yes|n|no)$ ]]; do
+		ask "${RED}Nuke${NOC} your $HOME/.config and replace" \
+			"with $HOME/.dotfiles? [y/n] " YN_STOW
+	done
+
+	until [[ ${YN_GIT,,} =~ ^(y|yes|n|no)$ ]]; do
+		ask "Set ${MAG}git${NOC}? [y/n] " YN_GIT
+		[[ ! ${YN_GIT,,} =~ ^(y|yes)$ ]] && continue
+		while [[ -z $GIT_USER ]]; do
+			ask "Enter ${MAG}git user.name${NOC}: " GIT_USER
+		done
+
+		until [[ $GIT_MAIL == *@*.* ]]; do
+			ask "Enter ${MAG}git user.email${NOC}: " GIT_MAIL
 		done
 	done
 
 	until [[ ${YN_AI,,}  =~ ^(y|yes|n|no)$ ]]; do
-		read -rp "Install $MAG\0local AI models$NOC\0 ? [y/n] " YN_AI
+		ask "Install ${MAG}local AI models${NOC}? [y/n] " YN_AI
 	done
 
 	# FIXME probably doesn't work with integrated GPU + GPU ? IDK
@@ -115,13 +129,9 @@ install_dependencies() {
 }
 
 set_stow() {
-	log inf "Stowing dotfiles"
-	until [[ ${YN_STOW,,} =~ ^(y|yes|n|no)$ ]]; do
-		read -rp "This will $RED\0nuke$NOC your $HOME/.config
-		Continue ? [y/n] " YN_STOW
-		[[ ! ${YN_STOW,,} =~ ^(y|yes)$ ]] && continue
-	done
+	[[ ! ${YN_STOW,,} =~ ^(y|yes)$ ]] && return 0
 
+	log inf "Stowing dotfiles"
 	stow --adopt -t "$HOME" -d "$DOTFILES_DIR" env
 	git -C "$DOTFILES_DIR" reset --hard
 	log inf "Dotfiles have been stowed"
@@ -130,6 +140,7 @@ set_stow() {
 
 set_hostname() {
 	[[ ! ${YN_HOSTNAME,,} =~ ^(y|yes)$ ]] && return 0
+
 	log inf 'Setting up hostname'
 	sudo hostnamectl set-hostname "$HOST_NAME"
 	log suc 'Hostname has been setup'
@@ -137,22 +148,28 @@ set_hostname() {
 
 set_wheeler() {
 	[[ ! ${YN_WHEEL_GROUP,,} =~ ^(y|yes)$ ]] && return 0
+
 	log inf "Adding $MAG$USER$NOC to wheel group"
 	sudo usermod -aG wheel "$USER"
+	local wheel_file="/etc/sudoers.d/10_wheel"
+	printf '%s\tALL=(ALL)\tALL\n' "$USER" \
+		| sudo tee "$wheel_file" &>/dev/null
+	sudo chmod 0440 "$wheel_file"
 	log suc "$MAG$USER$NOC has been added to wheel group"
 
 	[[ ! ${YN_PASSWORDLESS,,} =~ ^(y|yes)$ ]] && return 0
+
 	log inf "Setting passwordless sudo for $MAG$USER$NOC"
-	local wheel_file="/etc/sudoers.d/10_wheel"
+	local user_file="/etc/sudoers.d/20_$USER"
 	printf '%s\tALL=(ALL)\tNOPASSWD: ALL\n' "$USER" \
-		| sudo tee "$wheel_file" &>/dev/null
-	sudo chmod 0440 "$wheel_file"
+		| sudo tee "$user_file" &>/dev/null
+	sudo chmod 0440 "$user_file"
 	log suc "Passwordless sudo has been setup for $MAG$USER$NOC"
 }
 
 set_mounts() {
 	log inf "Mounting NFS shares"
-	local share_opts="rw,defaults,soft,_netdev,noatime,nodiratime"
+	local share_opts="rw,defaults,soft,sync,_netdev,noatime,nodiratime"
 	while read -r l; do
 		IFS=\; read -r ip dataset mount <<< "$l"
 		sudo mkdir -p "/mnt/$mount"
@@ -193,6 +210,8 @@ set_ssh() {
 }
 
 set_git() {
+	[[ ! ${YN_GIT,,} =~ ^(y|yes)$ ]] && return 0
+
 	log inf "Setting up git"
 	git config --global user.name "$GIT_USER"
 	git config --global user.email "$GIT_MAIL"
@@ -202,7 +221,7 @@ set_git() {
 		grep -q "Host $host" "$ssh_config" && continue
 
 		local key="$HOME/.ssh/git_${host%.*}"
-		ssh-keygen -t ed25519 -C "$GIT_MAIL" -f "$key" -N ""
+		[[ ! -f $key ]] && ssh-keygen -t ed25519 -C "$GIT_MAIL" -f "$key" -N ""
 		cat <<-EOF >> "$ssh_config"
 		Host $host
 		    HostName $host
@@ -396,6 +415,8 @@ post_arch() {
 	esac
 
 	yay -S --noconfirm --needed "${to_install[@]}"
+
+	sudo systemctl enable --now NetworkManager-wait-online.service
 }
 
 # TODO needs proper testing
@@ -481,20 +502,20 @@ main() {
 	install_ai           || log err "install_ai() failed"
 	install_post         || log err "install_post() failed"
 
-	log inf "Don't forget to setup codeberg/github ssh"
+	log inf "Don't forget to setup ${MAG}codeberg/github ssh${NOC}"
 	while read -r host; do
 		local host_name=${host%.*}
 		local key="$HOME/.ssh/git_$host_name.pub"
 		[[ ! -f $key ]] && continue
-		log inf "	$host_name key: $(cat "$key")"
+		log inf "	$host_name key: $MAG$(cat "$key")$NOC"
 	done < "$LISTS_DIR/git_hosts"
 
 	until [[ ${YN_REBOOT,,} =~ ^(y|yes|n|no)$ ]]; do
-		read -rp "Reboot now ? [y/n] " YN_REBOOT
+		ask "${RED}Reboot now{$NOC} ? [y/n] " YN_REBOOT
 		[[ ! ${YN_REBOOT,,} =~ ^(y|yes)$ ]] && continue
 		sudo systemctl reboot
 	done
-	log war "Seriously, reboot."
+	log war "Seriously, ${YEL}reboot${NOC}."
 }
 
 main
