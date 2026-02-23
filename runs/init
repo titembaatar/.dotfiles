@@ -63,8 +63,7 @@ get_var() {
 	done
 
 	until [[ ${YN_STOW,,} =~ ^(y|yes|n|no)$ ]]; do
-		ask "${RED}Nuke${NOC} your $HOME/.config and replace" \
-			"with $HOME/.dotfiles? [y/n] " YN_STOW
+		ask "${RED}Nuke${NOC} your $HOME/.config and replace with $HOME/.dotfiles? [y/n] " YN_STOW
 	done
 
 	until [[ ${YN_GIT,,} =~ ^(y|yes|n|no)$ ]]; do
@@ -511,7 +510,7 @@ main() {
 	done < "$LISTS_DIR/git_hosts"
 
 	until [[ ${YN_REBOOT,,} =~ ^(y|yes|n|no)$ ]]; do
-		ask "${RED}Reboot now{$NOC} ? [y/n] " YN_REBOOT
+		ask "${RED}Reboot now${NOC} ? [y/n] " YN_REBOOT
 		[[ ! ${YN_REBOOT,,} =~ ^(y|yes)$ ]] && continue
 		sudo systemctl reboot
 	done
