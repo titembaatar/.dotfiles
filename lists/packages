@@ -1,22 +1,29 @@
 # utils
-curl
-wget
-git
-stow
 fzf
 bat
 btop
 chafa
 ranger
 mpd
+arch:keyd
+arch:rmpc
 
 # lang
 lua
 luarocks
+rust
+cargo
 
 # workflow
 sway
+sway-contrib
+wl-clipboard
+grim
+slurp
 waybar
+arch:xorg-xwayland
+arch:ghostty
+copr:scottames/ghostty
 zsh
 tmux
 neovim
@@ -25,20 +32,3 @@ neovim
 steam
 vlc
 obs-studio
-
-# non fedora pkgs
-nfedora:ghostty
-nfedora:keyd
-nfedora:rmpc
-
-# fedora specific
-fedora:make
-fedora:cmake
-fedora:gcc
-fedora:ninja-build
-fedora:gettext
-fedora:glibc-gconv-extra
-fedora:rust
-fedora:cargo
-fedora:openssl-devel
-copr:scottames/ghostty
