@@ -9,7 +9,7 @@
   },
 
   "sway/window": {
-    "max-length": 75
+    "max-length": 50
   },
 
   "custom/homelab": {

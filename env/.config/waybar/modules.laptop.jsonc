@@ -50,7 +50,6 @@
         "critical": 15
     },
     "format": "{icon} {capacity}%",
-    "format-icons": ["", "", "", "", ""],
-    "max-length": 25
+    "format-icons": ["", "", "", "", ""]
 }
 }
