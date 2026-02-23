@@ -144,7 +144,7 @@ set_wheeler() {
 	[[ ! ${YN_PASSWORDLESS,,} =~ ^(y|yes)$ ]] && return 0
 	log inf "Setting passwordless sudo for $MAG$USER$NOC"
 	local wheel_file="/etc/sudoers.d/10_wheel"
-	printf '%s\tALL=(ALL)\tPASSWORD: ALL\n' "$USER" \
+	printf '%s\tALL=(ALL)\tNOPASSWD: ALL\n' "$USER" \
 		| sudo tee "$wheel_file" &>/dev/null
 	sudo chmod 0440 "$wheel_file"
 	log suc "Passwordless sudo has been setup for $MAG$USER$NOC"
