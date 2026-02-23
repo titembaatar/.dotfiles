@@ -3,7 +3,6 @@ fzf
 bat
 btop
 chafa
-ranger
 mpd
 arch:keyd
 arch:rmpc
@@ -17,19 +16,19 @@ cargo
 # workflow
 arch:wayland-protocols
 arch:xorg-xwayland
-arch:xdg-desktop-portal-gtk
-arch:xdg-desktop-portal-wlr
 sway
 sway-contrib
 wl-clipboard
 grim
 slurp
 waybar
-arch:ghostty
-copr:scottames/ghostty
+foot
 zsh
 tmux
 neovim
+
+# arch:ghostty
+# copr:scottames/ghostty
 
 # apps
 firefox
